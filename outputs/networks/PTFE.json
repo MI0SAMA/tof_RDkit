@@ -1,0 +1,6568 @@
+{
+  "compound_id": "PTFE",
+  "name": "Polytetrafluoroethylene",
+  "smiles": "C(F)(F)C(F)(F)F",
+  "parent_formula": "C2F6",
+  "records": [
+    {
+      "formula": "C2F6",
+      "counts": {
+        "C": 2,
+        "F": 6
+      },
+      "exact_mass": 137.99041897638,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "source_compound_id": "PTFE",
+      "source_name": "Polytetrafluoroethylene",
+      "generation_type": "parent",
+      "path": [
+        "M"
+      ],
+      "broken_bonds": 0,
+      "h_shift": 0,
+      "adduct": null,
+      "neutral_losses": [],
+      "fragment_atom_indices": null,
+      "score": 1.0
+    },
+    {
+      "formula": "C2HF6",
+      "counts": {
+        "C": 2,
+        "F": 6,
+        "H": 1
+      },
+      "exact_mass": 138.99824400861,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "PTFE",
+      "source_name": "Polytetrafluoroethylene",
+      "generation_type": "adduct",
+      "path": [
+        "M",
+        "H"
+      ],
+      "broken_bonds": 0,
+      "h_shift": 0,
+      "adduct": "H",
+      "neutral_losses": [],
+      "fragment_atom_indices": null,
+      "score": 0.75
+    },
+    {
+      "formula": "C2F6",
+      "counts": {
+        "C": 2,
+        "F": 6
+      },
+      "exact_mass": 137.99041897638,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "PTFE",
+      "source_name": "Polytetrafluoroethylene",
+      "generation_type": "adduct",
+      "path": [
+        "M",
+        "H shift +1",
+        "-H"
+      ],
+      "broken_bonds": 0,
+      "h_shift": 1,
+      "adduct": "-H",
+      "neutral_losses": [],
+      "fragment_atom_indices": null,
+      "score": 0.7
+    },
+    {
+      "formula": "C2H2F6",
+      "counts": {
+        "C": 2,
+        "F": 6,
+        "H": 2
+      },
+      "exact_mass": 140.00606904084,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "PTFE",
+      "source_name": "Polytetrafluoroethylene",
+      "generation_type": "adduct",
+      "path": [
+        "M",
+        "H shift +1",
+        "H"
+      ],
+      "broken_bonds": 0,
+      "h_shift": 1,
+      "adduct": "H",
+      "neutral_losses": [],
+      "fragment_atom_indices": null,
+      "score": 0.7
+    },
+    {
+      "formula": "C2HF6",
+      "counts": {
+        "C": 2,
+        "F": 6,
+        "H": 1
+      },
+      "exact_mass": 138.99824400861,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "source_compound_id": "PTFE",
+      "source_name": "Polytetrafluoroethylene",
+      "generation_type": "h_shift",
+      "path": [
+        "M",
+        "H shift +1"
+      ],
+      "broken_bonds": 0,
+      "h_shift": 1,
+      "adduct": null,
+      "neutral_losses": [],
+      "fragment_atom_indices": null,
+      "score": 0.7
+    },
+    {
+      "formula": "C2H2F6",
+      "counts": {
+        "C": 2,
+        "F": 6,
+        "H": 2
+      },
+      "exact_mass": 140.00606904084,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "source_compound_id": "PTFE",
+      "source_name": "Polytetrafluoroethylene",
+      "generation_type": "h_shift",
+      "path": [
+        "M",
+        "H shift +2"
+      ],
+      "broken_bonds": 0,
+      "h_shift": 2,
+      "adduct": null,
+      "neutral_losses": [],
+      "fragment_atom_indices": null,
+      "score": 0.65
+    },
+    {
+      "formula": "C2H3F6",
+      "counts": {
+        "C": 2,
+        "F": 6,
+        "H": 3
+      },
+      "exact_mass": 141.01389407307,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "PTFE",
+      "source_name": "Polytetrafluoroethylene",
+      "generation_type": "adduct",
+      "path": [
+        "M",
+        "H shift +2",
+        "H"
+      ],
+      "broken_bonds": 0,
+      "h_shift": 2,
+      "adduct": "H",
+      "neutral_losses": [],
+      "fragment_atom_indices": null,
+      "score": 0.65
+    },
+    {
+      "formula": "C2HF6",
+      "counts": {
+        "C": 2,
+        "F": 6,
+        "H": 1
+      },
+      "exact_mass": 138.99824400861,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "PTFE",
+      "source_name": "Polytetrafluoroethylene",
+      "generation_type": "adduct",
+      "path": [
+        "M",
+        "H shift +2",
+        "-H"
+      ],
+      "broken_bonds": 0,
+      "h_shift": 2,
+      "adduct": "-H",
+      "neutral_losses": [],
+      "fragment_atom_indices": null,
+      "score": 0.65
+    },
+    {
+      "formula": "C2ClF6",
+      "counts": {
+        "C": 2,
+        "F": 6,
+        "Cl": 1
+      },
+      "exact_mass": 172.95927165838,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "PTFE",
+      "source_name": "Polytetrafluoroethylene",
+      "generation_type": "adduct",
+      "path": [
+        "M",
+        "Cl"
+      ],
+      "broken_bonds": 0,
+      "h_shift": 0,
+      "adduct": "Cl",
+      "neutral_losses": [],
+      "fragment_atom_indices": null,
+      "score": 0.63
+    },
+    {
+      "formula": "C2F6K",
+      "counts": {
+        "C": 2,
+        "F": 6,
+        "K": 1
+      },
+      "exact_mass": 176.95412546277998,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "PTFE",
+      "source_name": "Polytetrafluoroethylene",
+      "generation_type": "adduct",
+      "path": [
+        "M",
+        "K"
+      ],
+      "broken_bonds": 0,
+      "h_shift": 0,
+      "adduct": "K",
+      "neutral_losses": [],
+      "fragment_atom_indices": null,
+      "score": 0.63
+    },
+    {
+      "formula": "C2F6Na",
+      "counts": {
+        "C": 2,
+        "F": 6,
+        "Na": 1
+      },
+      "exact_mass": 160.98018825838,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "PTFE",
+      "source_name": "Polytetrafluoroethylene",
+      "generation_type": "adduct",
+      "path": [
+        "M",
+        "Na"
+      ],
+      "broken_bonds": 0,
+      "h_shift": 0,
+      "adduct": "Na",
+      "neutral_losses": [],
+      "fragment_atom_indices": null,
+      "score": 0.63
+    },
+    {
+      "formula": "C2F6O",
+      "counts": {
+        "C": 2,
+        "F": 6,
+        "O": 1
+      },
+      "exact_mass": 153.98533359595,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "PTFE",
+      "source_name": "Polytetrafluoroethylene",
+      "generation_type": "adduct",
+      "path": [
+        "M",
+        "O"
+      ],
+      "broken_bonds": 0,
+      "h_shift": 0,
+      "adduct": "O",
+      "neutral_losses": [],
+      "fragment_atom_indices": null,
+      "score": 0.63
+    },
+    {
+      "formula": "C2HF6O",
+      "counts": {
+        "C": 2,
+        "F": 6,
+        "O": 1,
+        "H": 1
+      },
+      "exact_mass": 154.99315862818,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "PTFE",
+      "source_name": "Polytetrafluoroethylene",
+      "generation_type": "adduct",
+      "path": [
+        "M",
+        "OH",
+        ";",
+        "M",
+        "H shift +1",
+        "O"
+      ],
+      "broken_bonds": 0,
+      "h_shift": 0,
+      "adduct": "OH",
+      "neutral_losses": [],
+      "fragment_atom_indices": null,
+      "score": 0.63
+    },
+    {
+      "formula": "C2F4",
+      "counts": {
+        "C": 2,
+        "F": 4
+      },
+      "exact_mass": 99.99361265092,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "PTFE",
+      "source_name": "Polytetrafluoroethylene",
+      "generation_type": "adduct",
+      "path": [
+        "break 1 bond(s)",
+        "-H",
+        ";",
+        "break 1 bond(s)",
+        "-H",
+        ";",
+        "break 1 bond(s)",
+        "-H",
+        ";",
+        "break 1 bond(s)",
+        "-H"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 0,
+      "adduct": "-H",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        0,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "score": 0.6
+    },
+    {
+      "formula": "C2F5",
+      "counts": {
+        "C": 2,
+        "F": 5
+      },
+      "exact_mass": 118.99201581365,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "source_compound_id": "PTFE",
+      "source_name": "Polytetrafluoroethylene",
+      "generation_type": "neutral_loss",
+      "path": [
+        "M",
+        "H shift +1",
+        "-HF"
+      ],
+      "broken_bonds": 0,
+      "h_shift": 1,
+      "adduct": null,
+      "neutral_losses": [
+        "HF"
+      ],
+      "fragment_atom_indices": null,
+      "score": 0.6
+    },
+    {
+      "formula": "C2H2F4",
+      "counts": {
+        "C": 2,
+        "F": 4,
+        "H": 2
+      },
+      "exact_mass": 102.00926271538,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "PTFE",
+      "source_name": "Polytetrafluoroethylene",
+      "generation_type": "adduct",
+      "path": [
+        "break 1 bond(s)",
+        "H",
+        ";",
+        "break 1 bond(s)",
+        "H",
+        ";",
+        "break 1 bond(s)",
+        "H",
+        ";",
+        "break 1 bond(s)",
+        "H"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 0,
+      "adduct": "H",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        0,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "score": 0.6
+    },
+    {
+      "formula": "C2HF4",
+      "counts": {
+        "C": 2,
+        "F": 4,
+        "H": 1
+      },
+      "exact_mass": 101.00143768315,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "source_compound_id": "PTFE",
+      "source_name": "Polytetrafluoroethylene",
+      "generation_type": "fragment",
+      "path": [
+        "break 1 bond(s)",
+        ";",
+        "break 1 bond(s)",
+        ";",
+        "break 1 bond(s)",
+        ";",
+        "break 1 bond(s)",
+        ";",
+        "break 1 bond(s)"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 0,
+      "adduct": null,
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        0,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "score": 0.6
+    },
+    {
+      "formula": "CF2",
+      "counts": {
+        "C": 1,
+        "F": 2
+      },
+      "exact_mass": 49.99680632546,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "PTFE",
+      "source_name": "Polytetrafluoroethylene",
+      "generation_type": "adduct",
+      "path": [
+        "break 1 bond(s)",
+        "-H",
+        ";",
+        "break 2 bond(s)",
+        "-H",
+        ";",
+        "break 2 bond(s)",
+        "H shift +1",
+        "-H"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 0,
+      "adduct": "-H",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        0,
+        1,
+        2,
+        7
+      ],
+      "score": 0.6
+    },
+    {
+      "formula": "CF3",
+      "counts": {
+        "C": 1,
+        "F": 3
+      },
+      "exact_mass": 68.99520948819,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "source_compound_id": "PTFE",
+      "source_name": "Polytetrafluoroethylene",
+      "generation_type": "fragment",
+      "path": [
+        "break 1 bond(s)",
+        ";",
+        "break 2 bond(s)",
+        ";",
+        "break 2 bond(s)"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 0,
+      "adduct": null,
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "score": 0.6
+    },
+    {
+      "formula": "CH2F2",
+      "counts": {
+        "C": 1,
+        "F": 2,
+        "H": 2
+      },
+      "exact_mass": 52.01245638992,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "PTFE",
+      "source_name": "Polytetrafluoroethylene",
+      "generation_type": "adduct",
+      "path": [
+        "break 1 bond(s)",
+        "H",
+        ";",
+        "break 2 bond(s)",
+        "H",
+        ";",
+        "break 2 bond(s)",
+        "H shift +1",
+        "H"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 0,
+      "adduct": "H",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        0,
+        1,
+        2,
+        7
+      ],
+      "score": 0.6
+    },
+    {
+      "formula": "CHF2",
+      "counts": {
+        "C": 1,
+        "F": 2,
+        "H": 1
+      },
+      "exact_mass": 51.00463135769,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "source_compound_id": "PTFE",
+      "source_name": "Polytetrafluoroethylene",
+      "generation_type": "fragment",
+      "path": [
+        "break 1 bond(s)",
+        ";",
+        "break 2 bond(s)",
+        ";",
+        "break 2 bond(s)",
+        ";",
+        "break 2 bond(s)"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 0,
+      "adduct": null,
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        0,
+        1,
+        2,
+        7
+      ],
+      "score": 0.6
+    },
+    {
+      "formula": "CHF3",
+      "counts": {
+        "C": 1,
+        "F": 3,
+        "H": 1
+      },
+      "exact_mass": 70.00303452042,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "PTFE",
+      "source_name": "Polytetrafluoroethylene",
+      "generation_type": "adduct",
+      "path": [
+        "break 1 bond(s)",
+        "H",
+        ";",
+        "break 2 bond(s)",
+        "H",
+        ";",
+        "break 2 bond(s)",
+        "H"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 0,
+      "adduct": "H",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "score": 0.6
+    },
+    {
+      "formula": "C2H2F6O",
+      "counts": {
+        "C": 2,
+        "F": 6,
+        "H": 2,
+        "O": 1
+      },
+      "exact_mass": 156.00098366041,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "PTFE",
+      "source_name": "Polytetrafluoroethylene",
+      "generation_type": "adduct",
+      "path": [
+        "M",
+        "H shift +1",
+        "OH",
+        ";",
+        "M",
+        "H shift +2",
+        "O"
+      ],
+      "broken_bonds": 0,
+      "h_shift": 1,
+      "adduct": "OH",
+      "neutral_losses": [],
+      "fragment_atom_indices": null,
+      "score": 0.58
+    },
+    {
+      "formula": "C2HClF6",
+      "counts": {
+        "C": 2,
+        "F": 6,
+        "H": 1,
+        "Cl": 1
+      },
+      "exact_mass": 173.96709669061,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "PTFE",
+      "source_name": "Polytetrafluoroethylene",
+      "generation_type": "adduct",
+      "path": [
+        "M",
+        "H shift +1",
+        "Cl"
+      ],
+      "broken_bonds": 0,
+      "h_shift": 1,
+      "adduct": "Cl",
+      "neutral_losses": [],
+      "fragment_atom_indices": null,
+      "score": 0.58
+    },
+    {
+      "formula": "C2HF6K",
+      "counts": {
+        "C": 2,
+        "F": 6,
+        "H": 1,
+        "K": 1
+      },
+      "exact_mass": 177.96195049501,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "PTFE",
+      "source_name": "Polytetrafluoroethylene",
+      "generation_type": "adduct",
+      "path": [
+        "M",
+        "H shift +1",
+        "K"
+      ],
+      "broken_bonds": 0,
+      "h_shift": 1,
+      "adduct": "K",
+      "neutral_losses": [],
+      "fragment_atom_indices": null,
+      "score": 0.58
+    },
+    {
+      "formula": "C2HF6Na",
+      "counts": {
+        "C": 2,
+        "F": 6,
+        "H": 1,
+        "Na": 1
+      },
+      "exact_mass": 161.98801329061,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "PTFE",
+      "source_name": "Polytetrafluoroethylene",
+      "generation_type": "adduct",
+      "path": [
+        "M",
+        "H shift +1",
+        "Na"
+      ],
+      "broken_bonds": 0,
+      "h_shift": 1,
+      "adduct": "Na",
+      "neutral_losses": [],
+      "fragment_atom_indices": null,
+      "score": 0.58
+    },
+    {
+      "formula": "C2F6",
+      "counts": {
+        "C": 2,
+        "F": 6
+      },
+      "exact_mass": 137.99041897638,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "source_compound_id": "PTFE",
+      "source_name": "Polytetrafluoroethylene",
+      "generation_type": "neutral_loss",
+      "path": [
+        "M",
+        "H shift +2",
+        "-H2"
+      ],
+      "broken_bonds": 0,
+      "h_shift": 2,
+      "adduct": null,
+      "neutral_losses": [
+        "H2"
+      ],
+      "fragment_atom_indices": null,
+      "score": 0.55
+    },
+    {
+      "formula": "C2HF5",
+      "counts": {
+        "C": 2,
+        "F": 5,
+        "H": 1
+      },
+      "exact_mass": 119.99984084588,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "source_compound_id": "PTFE",
+      "source_name": "Polytetrafluoroethylene",
+      "generation_type": "neutral_loss",
+      "path": [
+        "M",
+        "H shift +2",
+        "-HF"
+      ],
+      "broken_bonds": 0,
+      "h_shift": 2,
+      "adduct": null,
+      "neutral_losses": [
+        "HF"
+      ],
+      "fragment_atom_indices": null,
+      "score": 0.55
+    },
+    {
+      "formula": "C4HF12",
+      "counts": {
+        "C": 4,
+        "F": 12,
+        "H": 1
+      },
+      "exact_mass": 276.98866298499,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "PTFE",
+      "source_name": "Polytetrafluoroethylene",
+      "generation_type": "dimer",
+      "path": [
+        "2M",
+        "H"
+      ],
+      "broken_bonds": 0,
+      "h_shift": 0,
+      "adduct": "H",
+      "neutral_losses": [],
+      "fragment_atom_indices": null,
+      "score": 0.55
+    },
+    {
+      "formula": "C2F4",
+      "counts": {
+        "C": 2,
+        "F": 4
+      },
+      "exact_mass": 99.99361265092,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "source_compound_id": "PTFE",
+      "source_name": "Polytetrafluoroethylene",
+      "generation_type": "h_shift",
+      "path": [
+        "break 1 bond(s)",
+        "H shift -1",
+        ";",
+        "break 1 bond(s)",
+        "H shift -1",
+        ";",
+        "break 1 bond(s)",
+        "H shift -1",
+        ";",
+        "break 1 bond(s)",
+        "H shift -1"
+      ],
+      "broken_bonds": 1,
+      "h_shift": -1,
+      "adduct": null,
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        0,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "score": 0.5499999999999999
+    },
+    {
+      "formula": "C2H2F4",
+      "counts": {
+        "C": 2,
+        "F": 4,
+        "H": 2
+      },
+      "exact_mass": 102.00926271538,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "source_compound_id": "PTFE",
+      "source_name": "Polytetrafluoroethylene",
+      "generation_type": "h_shift",
+      "path": [
+        "break 1 bond(s)",
+        "H shift +1",
+        ";",
+        "break 1 bond(s)",
+        "H shift +1",
+        ";",
+        "break 1 bond(s)",
+        "H shift +1",
+        ";",
+        "break 1 bond(s)",
+        "H shift +1"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 1,
+      "adduct": null,
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        0,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "score": 0.5499999999999999
+    },
+    {
+      "formula": "C2H3F4",
+      "counts": {
+        "C": 2,
+        "F": 4,
+        "H": 3
+      },
+      "exact_mass": 103.01708774761,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "PTFE",
+      "source_name": "Polytetrafluoroethylene",
+      "generation_type": "adduct",
+      "path": [
+        "break 1 bond(s)",
+        "H shift +1",
+        "H",
+        ";",
+        "break 1 bond(s)",
+        "H shift +1",
+        "H",
+        ";",
+        "break 1 bond(s)",
+        "H shift +1",
+        "H"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 1,
+      "adduct": "H",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        0,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "score": 0.5499999999999999
+    },
+    {
+      "formula": "C2HF4",
+      "counts": {
+        "C": 2,
+        "F": 4,
+        "H": 1
+      },
+      "exact_mass": 101.00143768315,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "PTFE",
+      "source_name": "Polytetrafluoroethylene",
+      "generation_type": "adduct",
+      "path": [
+        "break 1 bond(s)",
+        "H shift -1",
+        "H",
+        ";",
+        "break 1 bond(s)",
+        "H shift -1",
+        "H",
+        ";",
+        "break 1 bond(s)",
+        "H shift -1",
+        "H"
+      ],
+      "broken_bonds": 1,
+      "h_shift": -1,
+      "adduct": "H",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        0,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "score": 0.5499999999999999
+    },
+    {
+      "formula": "C2HF4",
+      "counts": {
+        "C": 2,
+        "F": 4,
+        "H": 1
+      },
+      "exact_mass": 101.00143768315,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "PTFE",
+      "source_name": "Polytetrafluoroethylene",
+      "generation_type": "adduct",
+      "path": [
+        "break 1 bond(s)",
+        "H shift +1",
+        "-H",
+        ";",
+        "break 1 bond(s)",
+        "H shift +1",
+        "-H",
+        ";",
+        "break 1 bond(s)",
+        "H shift +1",
+        "-H"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 1,
+      "adduct": "-H",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        0,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "score": 0.5499999999999999
+    },
+    {
+      "formula": "CF2",
+      "counts": {
+        "C": 1,
+        "F": 2
+      },
+      "exact_mass": 49.99680632546,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "source_compound_id": "PTFE",
+      "source_name": "Polytetrafluoroethylene",
+      "generation_type": "h_shift",
+      "path": [
+        "break 1 bond(s)",
+        "H shift -1",
+        ";",
+        "break 2 bond(s)",
+        "H shift -1",
+        ";",
+        "break 2 bond(s)",
+        "H shift -1",
+        ";",
+        "break 2 bond(s)",
+        "H shift -1"
+      ],
+      "broken_bonds": 1,
+      "h_shift": -1,
+      "adduct": null,
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        0,
+        1,
+        2,
+        7
+      ],
+      "score": 0.5499999999999999
+    },
+    {
+      "formula": "CF3",
+      "counts": {
+        "C": 1,
+        "F": 3
+      },
+      "exact_mass": 68.99520948819,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "PTFE",
+      "source_name": "Polytetrafluoroethylene",
+      "generation_type": "adduct",
+      "path": [
+        "break 1 bond(s)",
+        "H shift +1",
+        "-H",
+        ";",
+        "break 2 bond(s)",
+        "H shift +1",
+        "-H",
+        ";",
+        "break 2 bond(s)",
+        "H shift +1",
+        "-H"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 1,
+      "adduct": "-H",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "score": 0.5499999999999999
+    },
+    {
+      "formula": "CH2F2",
+      "counts": {
+        "C": 1,
+        "F": 2,
+        "H": 2
+      },
+      "exact_mass": 52.01245638992,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "source_compound_id": "PTFE",
+      "source_name": "Polytetrafluoroethylene",
+      "generation_type": "h_shift",
+      "path": [
+        "break 1 bond(s)",
+        "H shift +1",
+        ";",
+        "break 2 bond(s)",
+        "H shift +1",
+        ";",
+        "break 2 bond(s)",
+        "H shift +2",
+        ";",
+        "break 2 bond(s)",
+        "H shift +1"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 1,
+      "adduct": null,
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        0,
+        1,
+        2,
+        7
+      ],
+      "score": 0.5499999999999999
+    },
+    {
+      "formula": "CH2F3",
+      "counts": {
+        "C": 1,
+        "F": 3,
+        "H": 2
+      },
+      "exact_mass": 71.01085955265,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "PTFE",
+      "source_name": "Polytetrafluoroethylene",
+      "generation_type": "adduct",
+      "path": [
+        "break 1 bond(s)",
+        "H shift +1",
+        "H",
+        ";",
+        "break 2 bond(s)",
+        "H shift +1",
+        "H",
+        ";",
+        "break 2 bond(s)",
+        "H shift +1",
+        "H"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 1,
+      "adduct": "H",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "score": 0.5499999999999999
+    },
+    {
+      "formula": "CH3F2",
+      "counts": {
+        "C": 1,
+        "F": 2,
+        "H": 3
+      },
+      "exact_mass": 53.02028142215,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "PTFE",
+      "source_name": "Polytetrafluoroethylene",
+      "generation_type": "adduct",
+      "path": [
+        "break 1 bond(s)",
+        "H shift +1",
+        "H",
+        ";",
+        "break 2 bond(s)",
+        "H shift +1",
+        "H",
+        ";",
+        "break 2 bond(s)",
+        "H shift +2",
+        "H"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 1,
+      "adduct": "H",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        0,
+        1,
+        2,
+        7
+      ],
+      "score": 0.5499999999999999
+    },
+    {
+      "formula": "CHF2",
+      "counts": {
+        "C": 1,
+        "F": 2,
+        "H": 1
+      },
+      "exact_mass": 51.00463135769,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "PTFE",
+      "source_name": "Polytetrafluoroethylene",
+      "generation_type": "adduct",
+      "path": [
+        "break 1 bond(s)",
+        "H shift -1",
+        "H",
+        ";",
+        "break 2 bond(s)",
+        "H shift -1",
+        "H",
+        ";",
+        "break 2 bond(s)",
+        "H"
+      ],
+      "broken_bonds": 1,
+      "h_shift": -1,
+      "adduct": "H",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        0,
+        1,
+        2,
+        7
+      ],
+      "score": 0.5499999999999999
+    },
+    {
+      "formula": "CHF2",
+      "counts": {
+        "C": 1,
+        "F": 2,
+        "H": 1
+      },
+      "exact_mass": 51.00463135769,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "PTFE",
+      "source_name": "Polytetrafluoroethylene",
+      "generation_type": "adduct",
+      "path": [
+        "break 1 bond(s)",
+        "H shift +1",
+        "-H",
+        ";",
+        "break 2 bond(s)",
+        "H shift +1",
+        "-H",
+        ";",
+        "break 2 bond(s)",
+        "H shift +2",
+        "-H"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 1,
+      "adduct": "-H",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        0,
+        1,
+        2,
+        7
+      ],
+      "score": 0.5499999999999999
+    },
+    {
+      "formula": "CHF3",
+      "counts": {
+        "C": 1,
+        "F": 3,
+        "H": 1
+      },
+      "exact_mass": 70.00303452042,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "source_compound_id": "PTFE",
+      "source_name": "Polytetrafluoroethylene",
+      "generation_type": "h_shift",
+      "path": [
+        "break 1 bond(s)",
+        "H shift +1",
+        ";",
+        "break 2 bond(s)",
+        "H shift +1",
+        ";",
+        "break 2 bond(s)",
+        "H shift +1"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 1,
+      "adduct": null,
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "score": 0.5499999999999999
+    },
+    {
+      "formula": "C2H2ClF6",
+      "counts": {
+        "C": 2,
+        "F": 6,
+        "H": 2,
+        "Cl": 1
+      },
+      "exact_mass": 174.97492172284,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "PTFE",
+      "source_name": "Polytetrafluoroethylene",
+      "generation_type": "adduct",
+      "path": [
+        "M",
+        "H shift +2",
+        "Cl"
+      ],
+      "broken_bonds": 0,
+      "h_shift": 2,
+      "adduct": "Cl",
+      "neutral_losses": [],
+      "fragment_atom_indices": null,
+      "score": 0.53
+    },
+    {
+      "formula": "C2H2F6K",
+      "counts": {
+        "C": 2,
+        "F": 6,
+        "H": 2,
+        "K": 1
+      },
+      "exact_mass": 178.96977552724,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "PTFE",
+      "source_name": "Polytetrafluoroethylene",
+      "generation_type": "adduct",
+      "path": [
+        "M",
+        "H shift +2",
+        "K"
+      ],
+      "broken_bonds": 0,
+      "h_shift": 2,
+      "adduct": "K",
+      "neutral_losses": [],
+      "fragment_atom_indices": null,
+      "score": 0.53
+    },
+    {
+      "formula": "C2H2F6Na",
+      "counts": {
+        "C": 2,
+        "F": 6,
+        "H": 2,
+        "Na": 1
+      },
+      "exact_mass": 162.99583832284,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "PTFE",
+      "source_name": "Polytetrafluoroethylene",
+      "generation_type": "adduct",
+      "path": [
+        "M",
+        "H shift +2",
+        "Na"
+      ],
+      "broken_bonds": 0,
+      "h_shift": 2,
+      "adduct": "Na",
+      "neutral_losses": [],
+      "fragment_atom_indices": null,
+      "score": 0.53
+    },
+    {
+      "formula": "C2H3F6O",
+      "counts": {
+        "C": 2,
+        "F": 6,
+        "H": 3,
+        "O": 1
+      },
+      "exact_mass": 157.00880869264,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "PTFE",
+      "source_name": "Polytetrafluoroethylene",
+      "generation_type": "adduct",
+      "path": [
+        "M",
+        "H shift +2",
+        "OH"
+      ],
+      "broken_bonds": 0,
+      "h_shift": 2,
+      "adduct": "OH",
+      "neutral_losses": [],
+      "fragment_atom_indices": null,
+      "score": 0.53
+    },
+    {
+      "formula": "C2F3",
+      "counts": {
+        "C": 2,
+        "F": 3
+      },
+      "exact_mass": 80.99520948819,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "source_compound_id": "PTFE",
+      "source_name": "Polytetrafluoroethylene",
+      "generation_type": "neutral_loss",
+      "path": [
+        "break 1 bond(s)",
+        "-HF",
+        ";",
+        "break 1 bond(s)",
+        "-HF",
+        ";",
+        "break 1 bond(s)",
+        "-HF",
+        ";",
+        "break 1 bond(s)",
+        "-HF"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 0,
+      "adduct": null,
+      "neutral_losses": [
+        "HF"
+      ],
+      "fragment_atom_indices": [
+        0,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "score": 0.5
+    },
+    {
+      "formula": "C2H2F4",
+      "counts": {
+        "C": 2,
+        "F": 4,
+        "H": 2
+      },
+      "exact_mass": 102.00926271538,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "PTFE",
+      "source_name": "Polytetrafluoroethylene",
+      "generation_type": "adduct",
+      "path": [
+        "break 1 bond(s)",
+        "H shift +2",
+        "-H",
+        ";",
+        "break 1 bond(s)",
+        "H shift +2",
+        "-H",
+        ";",
+        "break 1 bond(s)",
+        "H shift +2",
+        "-H"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 2,
+      "adduct": "-H",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        0,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "score": 0.5
+    },
+    {
+      "formula": "C2H3F4",
+      "counts": {
+        "C": 2,
+        "F": 4,
+        "H": 3
+      },
+      "exact_mass": 103.01708774761,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "source_compound_id": "PTFE",
+      "source_name": "Polytetrafluoroethylene",
+      "generation_type": "h_shift",
+      "path": [
+        "break 1 bond(s)",
+        "H shift +2",
+        ";",
+        "break 1 bond(s)",
+        "H shift +2",
+        ";",
+        "break 1 bond(s)",
+        "H shift +2",
+        ";",
+        "break 1 bond(s)",
+        "H shift +2"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 2,
+      "adduct": null,
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        0,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "score": 0.5
+    },
+    {
+      "formula": "C2H4F4",
+      "counts": {
+        "C": 2,
+        "F": 4,
+        "H": 4
+      },
+      "exact_mass": 104.02491277984,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "PTFE",
+      "source_name": "Polytetrafluoroethylene",
+      "generation_type": "adduct",
+      "path": [
+        "break 1 bond(s)",
+        "H shift +2",
+        "H",
+        ";",
+        "break 1 bond(s)",
+        "H shift +2",
+        "H",
+        ";",
+        "break 1 bond(s)",
+        "H shift +2",
+        "H"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 2,
+      "adduct": "H",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        0,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "score": 0.5
+    },
+    {
+      "formula": "CF",
+      "counts": {
+        "C": 1,
+        "F": 1
+      },
+      "exact_mass": 30.99840316273,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "source_compound_id": "PTFE",
+      "source_name": "Polytetrafluoroethylene",
+      "generation_type": "neutral_loss",
+      "path": [
+        "break 1 bond(s)",
+        "-HF",
+        ";",
+        "break 2 bond(s)",
+        "H shift +1",
+        "-H2",
+        ";",
+        "break 2 bond(s)",
+        "H shift +1",
+        "-H2"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 0,
+      "adduct": null,
+      "neutral_losses": [
+        "HF"
+      ],
+      "fragment_atom_indices": [
+        0,
+        1,
+        2,
+        7
+      ],
+      "score": 0.5
+    },
+    {
+      "formula": "CH2F2",
+      "counts": {
+        "C": 1,
+        "F": 2,
+        "H": 2
+      },
+      "exact_mass": 52.01245638992,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "PTFE",
+      "source_name": "Polytetrafluoroethylene",
+      "generation_type": "adduct",
+      "path": [
+        "break 1 bond(s)",
+        "H shift +2",
+        "-H",
+        ";",
+        "break 2 bond(s)",
+        "H shift +2",
+        "-H",
+        ";",
+        "break 2 bond(s)",
+        "H shift +2",
+        "-H"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 2,
+      "adduct": "-H",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        0,
+        1,
+        2,
+        7
+      ],
+      "score": 0.5
+    },
+    {
+      "formula": "CH2F3",
+      "counts": {
+        "C": 1,
+        "F": 3,
+        "H": 2
+      },
+      "exact_mass": 71.01085955265,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "source_compound_id": "PTFE",
+      "source_name": "Polytetrafluoroethylene",
+      "generation_type": "h_shift",
+      "path": [
+        "break 1 bond(s)",
+        "H shift +2",
+        ";",
+        "break 2 bond(s)",
+        "H shift +2",
+        ";",
+        "break 2 bond(s)",
+        "H shift +2"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 2,
+      "adduct": null,
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "score": 0.5
+    },
+    {
+      "formula": "CH3F2",
+      "counts": {
+        "C": 1,
+        "F": 2,
+        "H": 3
+      },
+      "exact_mass": 53.02028142215,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "source_compound_id": "PTFE",
+      "source_name": "Polytetrafluoroethylene",
+      "generation_type": "h_shift",
+      "path": [
+        "break 1 bond(s)",
+        "H shift +2",
+        ";",
+        "break 2 bond(s)",
+        "H shift +2",
+        ";",
+        "break 2 bond(s)",
+        "H shift +2",
+        ";",
+        "break 2 bond(s)",
+        "H shift +2"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 2,
+      "adduct": null,
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        0,
+        1,
+        2,
+        7
+      ],
+      "score": 0.5
+    },
+    {
+      "formula": "CH3F3",
+      "counts": {
+        "C": 1,
+        "F": 3,
+        "H": 3
+      },
+      "exact_mass": 72.01868458488,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "PTFE",
+      "source_name": "Polytetrafluoroethylene",
+      "generation_type": "adduct",
+      "path": [
+        "break 1 bond(s)",
+        "H shift +2",
+        "H",
+        ";",
+        "break 2 bond(s)",
+        "H shift +2",
+        "H",
+        ";",
+        "break 2 bond(s)",
+        "H shift +2",
+        "H"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 2,
+      "adduct": "H",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "score": 0.5
+    },
+    {
+      "formula": "CH4F2",
+      "counts": {
+        "C": 1,
+        "F": 2,
+        "H": 4
+      },
+      "exact_mass": 54.02810645438,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "PTFE",
+      "source_name": "Polytetrafluoroethylene",
+      "generation_type": "adduct",
+      "path": [
+        "break 1 bond(s)",
+        "H shift +2",
+        "H",
+        ";",
+        "break 2 bond(s)",
+        "H shift +2",
+        "H",
+        ";",
+        "break 2 bond(s)",
+        "H shift +2",
+        "H"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 2,
+      "adduct": "H",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        0,
+        1,
+        2,
+        7
+      ],
+      "score": 0.5
+    },
+    {
+      "formula": "CHF3",
+      "counts": {
+        "C": 1,
+        "F": 3,
+        "H": 1
+      },
+      "exact_mass": 70.00303452042,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "PTFE",
+      "source_name": "Polytetrafluoroethylene",
+      "generation_type": "adduct",
+      "path": [
+        "break 1 bond(s)",
+        "H shift +2",
+        "-H",
+        ";",
+        "break 2 bond(s)",
+        "H shift +2",
+        "-H",
+        ";",
+        "break 2 bond(s)",
+        "H shift +2",
+        "-H"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 2,
+      "adduct": "-H",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "score": 0.5
+    },
+    {
+      "formula": "C2H2F4O",
+      "counts": {
+        "C": 2,
+        "F": 4,
+        "H": 2,
+        "O": 1
+      },
+      "exact_mass": 118.00417733495,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "PTFE",
+      "source_name": "Polytetrafluoroethylene",
+      "generation_type": "adduct",
+      "path": [
+        "break 1 bond(s)",
+        "OH",
+        ";",
+        "break 1 bond(s)",
+        "H shift +1",
+        "O",
+        ";",
+        "break 1 bond(s)",
+        "OH"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 0,
+      "adduct": "OH",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        0,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "score": 0.48
+    },
+    {
+      "formula": "C2HClF4",
+      "counts": {
+        "C": 2,
+        "F": 4,
+        "H": 1,
+        "Cl": 1
+      },
+      "exact_mass": 135.97029036515,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "PTFE",
+      "source_name": "Polytetrafluoroethylene",
+      "generation_type": "adduct",
+      "path": [
+        "break 1 bond(s)",
+        "Cl",
+        ";",
+        "break 1 bond(s)",
+        "Cl",
+        ";",
+        "break 1 bond(s)",
+        "Cl",
+        ";",
+        "break 1 bond(s)",
+        "Cl"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 0,
+      "adduct": "Cl",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        0,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "score": 0.48
+    },
+    {
+      "formula": "C2HF4K",
+      "counts": {
+        "C": 2,
+        "F": 4,
+        "H": 1,
+        "K": 1
+      },
+      "exact_mass": 139.96514416955,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "PTFE",
+      "source_name": "Polytetrafluoroethylene",
+      "generation_type": "adduct",
+      "path": [
+        "break 1 bond(s)",
+        "K",
+        ";",
+        "break 1 bond(s)",
+        "K",
+        ";",
+        "break 1 bond(s)",
+        "K",
+        ";",
+        "break 1 bond(s)",
+        "K"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 0,
+      "adduct": "K",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        0,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "score": 0.48
+    },
+    {
+      "formula": "C2HF4Na",
+      "counts": {
+        "C": 2,
+        "F": 4,
+        "H": 1,
+        "Na": 1
+      },
+      "exact_mass": 123.99120696515,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "PTFE",
+      "source_name": "Polytetrafluoroethylene",
+      "generation_type": "adduct",
+      "path": [
+        "break 1 bond(s)",
+        "Na",
+        ";",
+        "break 1 bond(s)",
+        "Na",
+        ";",
+        "break 1 bond(s)",
+        "Na",
+        ";",
+        "break 1 bond(s)",
+        "Na"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 0,
+      "adduct": "Na",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        0,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "score": 0.48
+    },
+    {
+      "formula": "C2HF4O",
+      "counts": {
+        "C": 2,
+        "F": 4,
+        "H": 1,
+        "O": 1
+      },
+      "exact_mass": 116.99635230272,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "PTFE",
+      "source_name": "Polytetrafluoroethylene",
+      "generation_type": "adduct",
+      "path": [
+        "break 1 bond(s)",
+        "O",
+        ";",
+        "break 1 bond(s)",
+        "H shift -1",
+        "OH",
+        ";",
+        "break 1 bond(s)",
+        "O"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 0,
+      "adduct": "O",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        0,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "score": 0.48
+    },
+    {
+      "formula": "CClF3",
+      "counts": {
+        "C": 1,
+        "F": 3,
+        "Cl": 1
+      },
+      "exact_mass": 103.96406217019,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "PTFE",
+      "source_name": "Polytetrafluoroethylene",
+      "generation_type": "adduct",
+      "path": [
+        "break 1 bond(s)",
+        "Cl",
+        ";",
+        "break 2 bond(s)",
+        "Cl",
+        ";",
+        "break 2 bond(s)",
+        "Cl"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 0,
+      "adduct": "Cl",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "score": 0.48
+    },
+    {
+      "formula": "CF3K",
+      "counts": {
+        "C": 1,
+        "F": 3,
+        "K": 1
+      },
+      "exact_mass": 107.95891597459,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "PTFE",
+      "source_name": "Polytetrafluoroethylene",
+      "generation_type": "adduct",
+      "path": [
+        "break 1 bond(s)",
+        "K",
+        ";",
+        "break 2 bond(s)",
+        "K",
+        ";",
+        "break 2 bond(s)",
+        "K"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 0,
+      "adduct": "K",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "score": 0.48
+    },
+    {
+      "formula": "CF3Na",
+      "counts": {
+        "C": 1,
+        "F": 3,
+        "Na": 1
+      },
+      "exact_mass": 91.98497877019,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "PTFE",
+      "source_name": "Polytetrafluoroethylene",
+      "generation_type": "adduct",
+      "path": [
+        "break 1 bond(s)",
+        "Na",
+        ";",
+        "break 2 bond(s)",
+        "Na",
+        ";",
+        "break 2 bond(s)",
+        "Na"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 0,
+      "adduct": "Na",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "score": 0.48
+    },
+    {
+      "formula": "CF3O",
+      "counts": {
+        "C": 1,
+        "F": 3,
+        "O": 1
+      },
+      "exact_mass": 84.99012410776,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "PTFE",
+      "source_name": "Polytetrafluoroethylene",
+      "generation_type": "adduct",
+      "path": [
+        "break 1 bond(s)",
+        "O",
+        ";",
+        "break 2 bond(s)",
+        "O",
+        ";",
+        "break 2 bond(s)",
+        "O"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 0,
+      "adduct": "O",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "score": 0.48
+    },
+    {
+      "formula": "CH2F2O",
+      "counts": {
+        "C": 1,
+        "F": 2,
+        "H": 2,
+        "O": 1
+      },
+      "exact_mass": 68.00737100949,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "PTFE",
+      "source_name": "Polytetrafluoroethylene",
+      "generation_type": "adduct",
+      "path": [
+        "break 1 bond(s)",
+        "OH",
+        ";",
+        "break 1 bond(s)",
+        "H shift +1",
+        "O",
+        ";",
+        "break 2 bond(s)",
+        "OH"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 0,
+      "adduct": "OH",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        0,
+        1,
+        2,
+        7
+      ],
+      "score": 0.48
+    },
+    {
+      "formula": "CHClF2",
+      "counts": {
+        "C": 1,
+        "F": 2,
+        "H": 1,
+        "Cl": 1
+      },
+      "exact_mass": 85.97348403968999,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "PTFE",
+      "source_name": "Polytetrafluoroethylene",
+      "generation_type": "adduct",
+      "path": [
+        "break 1 bond(s)",
+        "Cl",
+        ";",
+        "break 2 bond(s)",
+        "Cl",
+        ";",
+        "break 2 bond(s)",
+        "H shift +1",
+        "Cl"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 0,
+      "adduct": "Cl",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        0,
+        1,
+        2,
+        7
+      ],
+      "score": 0.48
+    },
+    {
+      "formula": "CHF2K",
+      "counts": {
+        "C": 1,
+        "F": 2,
+        "H": 1,
+        "K": 1
+      },
+      "exact_mass": 89.96833784409,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "PTFE",
+      "source_name": "Polytetrafluoroethylene",
+      "generation_type": "adduct",
+      "path": [
+        "break 1 bond(s)",
+        "K",
+        ";",
+        "break 2 bond(s)",
+        "K",
+        ";",
+        "break 2 bond(s)",
+        "H shift +1",
+        "K"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 0,
+      "adduct": "K",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        0,
+        1,
+        2,
+        7
+      ],
+      "score": 0.48
+    },
+    {
+      "formula": "CHF2Na",
+      "counts": {
+        "C": 1,
+        "F": 2,
+        "H": 1,
+        "Na": 1
+      },
+      "exact_mass": 73.99440063969,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "PTFE",
+      "source_name": "Polytetrafluoroethylene",
+      "generation_type": "adduct",
+      "path": [
+        "break 1 bond(s)",
+        "Na",
+        ";",
+        "break 2 bond(s)",
+        "Na",
+        ";",
+        "break 2 bond(s)",
+        "H shift +1",
+        "Na"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 0,
+      "adduct": "Na",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        0,
+        1,
+        2,
+        7
+      ],
+      "score": 0.48
+    },
+    {
+      "formula": "CHF2O",
+      "counts": {
+        "C": 1,
+        "F": 2,
+        "H": 1,
+        "O": 1
+      },
+      "exact_mass": 66.99954597726,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "PTFE",
+      "source_name": "Polytetrafluoroethylene",
+      "generation_type": "adduct",
+      "path": [
+        "break 1 bond(s)",
+        "O",
+        ";",
+        "break 2 bond(s)",
+        "H shift -1",
+        "OH",
+        ";",
+        "break 2 bond(s)",
+        "O"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 0,
+      "adduct": "O",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        0,
+        1,
+        2,
+        7
+      ],
+      "score": 0.48
+    },
+    {
+      "formula": "CHF3O",
+      "counts": {
+        "C": 1,
+        "F": 3,
+        "O": 1,
+        "H": 1
+      },
+      "exact_mass": 85.99794913999,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "PTFE",
+      "source_name": "Polytetrafluoroethylene",
+      "generation_type": "adduct",
+      "path": [
+        "break 1 bond(s)",
+        "OH",
+        ";",
+        "break 1 bond(s)",
+        "H shift +1",
+        "O",
+        ";",
+        "break 2 bond(s)",
+        "OH"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 0,
+      "adduct": "OH",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "score": 0.48
+    },
+    {
+      "formula": "C2F3",
+      "counts": {
+        "C": 2,
+        "F": 3
+      },
+      "exact_mass": 80.99520948819,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "PTFE",
+      "source_name": "Polytetrafluoroethylene",
+      "generation_type": "adduct",
+      "path": [
+        "break 2 bond(s)",
+        "-H",
+        ";",
+        "break 2 bond(s)",
+        "-H",
+        ";",
+        "break 2 bond(s)",
+        "-H",
+        ";",
+        "break 2 bond(s)",
+        "-H"
+      ],
+      "broken_bonds": 2,
+      "h_shift": 0,
+      "adduct": "-H",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        0,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "score": 0.45
+    },
+    {
+      "formula": "C2H2F3",
+      "counts": {
+        "C": 2,
+        "F": 3,
+        "H": 2
+      },
+      "exact_mass": 83.01085955265,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "PTFE",
+      "source_name": "Polytetrafluoroethylene",
+      "generation_type": "adduct",
+      "path": [
+        "break 2 bond(s)",
+        "H",
+        ";",
+        "break 2 bond(s)",
+        "H",
+        ";",
+        "break 2 bond(s)",
+        "H",
+        ";",
+        "break 2 bond(s)",
+        "H"
+      ],
+      "broken_bonds": 2,
+      "h_shift": 0,
+      "adduct": "H",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        0,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "score": 0.45
+    },
+    {
+      "formula": "C2HF3",
+      "counts": {
+        "C": 2,
+        "F": 3,
+        "H": 1
+      },
+      "exact_mass": 82.00303452042,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "source_compound_id": "PTFE",
+      "source_name": "Polytetrafluoroethylene",
+      "generation_type": "fragment",
+      "path": [
+        "break 2 bond(s)",
+        ";",
+        "break 2 bond(s)",
+        ";",
+        "break 2 bond(s)",
+        ";",
+        "break 2 bond(s)",
+        ";",
+        "break 2 bond(s)"
+      ],
+      "broken_bonds": 2,
+      "h_shift": 0,
+      "adduct": null,
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        0,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "score": 0.45
+    },
+    {
+      "formula": "CF",
+      "counts": {
+        "C": 1,
+        "F": 1
+      },
+      "exact_mass": 30.99840316273,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "PTFE",
+      "source_name": "Polytetrafluoroethylene",
+      "generation_type": "adduct",
+      "path": [
+        "break 2 bond(s)",
+        "-H",
+        ";",
+        "break 2 bond(s)",
+        "-H"
+      ],
+      "broken_bonds": 2,
+      "h_shift": 0,
+      "adduct": "-H",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        0,
+        2,
+        7
+      ],
+      "score": 0.45
+    },
+    {
+      "formula": "CF2",
+      "counts": {
+        "C": 1,
+        "F": 2
+      },
+      "exact_mass": 49.99680632546,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "source_compound_id": "PTFE",
+      "source_name": "Polytetrafluoroethylene",
+      "generation_type": "fragment",
+      "path": [
+        "break 2 bond(s)",
+        ";",
+        "break 2 bond(s)",
+        ";",
+        "break 2 bond(s)"
+      ],
+      "broken_bonds": 2,
+      "h_shift": 0,
+      "adduct": null,
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        3,
+        5,
+        6
+      ],
+      "score": 0.45
+    },
+    {
+      "formula": "CH2F",
+      "counts": {
+        "C": 1,
+        "F": 1,
+        "H": 2
+      },
+      "exact_mass": 33.01405322719,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "PTFE",
+      "source_name": "Polytetrafluoroethylene",
+      "generation_type": "adduct",
+      "path": [
+        "break 2 bond(s)",
+        "H",
+        ";",
+        "break 2 bond(s)",
+        "H"
+      ],
+      "broken_bonds": 2,
+      "h_shift": 0,
+      "adduct": "H",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        0,
+        2,
+        7
+      ],
+      "score": 0.45
+    },
+    {
+      "formula": "CHF",
+      "counts": {
+        "C": 1,
+        "F": 1,
+        "H": 1
+      },
+      "exact_mass": 32.00622819496,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "source_compound_id": "PTFE",
+      "source_name": "Polytetrafluoroethylene",
+      "generation_type": "fragment",
+      "path": [
+        "break 2 bond(s)",
+        ";",
+        "break 2 bond(s)"
+      ],
+      "broken_bonds": 2,
+      "h_shift": 0,
+      "adduct": null,
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        0,
+        2,
+        7
+      ],
+      "score": 0.45
+    },
+    {
+      "formula": "C2F4",
+      "counts": {
+        "C": 2,
+        "F": 4
+      },
+      "exact_mass": 99.99361265092,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "source_compound_id": "PTFE",
+      "source_name": "Polytetrafluoroethylene",
+      "generation_type": "neutral_loss",
+      "path": [
+        "break 1 bond(s)",
+        "H shift +1",
+        "-H2",
+        ";",
+        "break 1 bond(s)",
+        "H shift +1",
+        "-H2",
+        ";",
+        "break 1 bond(s)",
+        "H shift +1",
+        "-H2"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 1,
+      "adduct": null,
+      "neutral_losses": [
+        "H2"
+      ],
+      "fragment_atom_indices": [
+        0,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "score": 0.44999999999999996
+    },
+    {
+      "formula": "C2HF3",
+      "counts": {
+        "C": 2,
+        "F": 3,
+        "H": 1
+      },
+      "exact_mass": 82.00303452042,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "source_compound_id": "PTFE",
+      "source_name": "Polytetrafluoroethylene",
+      "generation_type": "neutral_loss",
+      "path": [
+        "break 1 bond(s)",
+        "H shift +1",
+        "-HF",
+        ";",
+        "break 1 bond(s)",
+        "H shift +1",
+        "-HF",
+        ";",
+        "break 1 bond(s)",
+        "H shift +1",
+        "-HF"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 1,
+      "adduct": null,
+      "neutral_losses": [
+        "HF"
+      ],
+      "fragment_atom_indices": [
+        0,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "score": 0.44999999999999996
+    },
+    {
+      "formula": "CF2",
+      "counts": {
+        "C": 1,
+        "F": 2
+      },
+      "exact_mass": 49.99680632546,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "source_compound_id": "PTFE",
+      "source_name": "Polytetrafluoroethylene",
+      "generation_type": "neutral_loss",
+      "path": [
+        "break 1 bond(s)",
+        "H shift +1",
+        "-H2",
+        ";",
+        "break 1 bond(s)",
+        "H shift +1",
+        "-HF",
+        ";",
+        "break 2 bond(s)",
+        "H shift +1",
+        "-HF"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 1,
+      "adduct": null,
+      "neutral_losses": [
+        "H2"
+      ],
+      "fragment_atom_indices": [
+        0,
+        1,
+        2,
+        7
+      ],
+      "score": 0.44999999999999996
+    },
+    {
+      "formula": "CHF",
+      "counts": {
+        "C": 1,
+        "F": 1,
+        "H": 1
+      },
+      "exact_mass": 32.00622819496,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "source_compound_id": "PTFE",
+      "source_name": "Polytetrafluoroethylene",
+      "generation_type": "neutral_loss",
+      "path": [
+        "break 1 bond(s)",
+        "H shift +1",
+        "-HF",
+        ";",
+        "break 2 bond(s)",
+        "H shift +2",
+        "-H2",
+        ";",
+        "break 2 bond(s)",
+        "H shift +2",
+        "-H2"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 1,
+      "adduct": null,
+      "neutral_losses": [
+        "HF"
+      ],
+      "fragment_atom_indices": [
+        0,
+        1,
+        2,
+        7
+      ],
+      "score": 0.44999999999999996
+    },
+    {
+      "formula": "C4ClF12",
+      "counts": {
+        "C": 4,
+        "F": 12,
+        "Cl": 1
+      },
+      "exact_mass": 310.94969063476,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "PTFE",
+      "source_name": "Polytetrafluoroethylene",
+      "generation_type": "dimer",
+      "path": [
+        "2M",
+        "Cl"
+      ],
+      "broken_bonds": 0,
+      "h_shift": 0,
+      "adduct": "Cl",
+      "neutral_losses": [],
+      "fragment_atom_indices": null,
+      "score": 0.43
+    },
+    {
+      "formula": "C4F12Na",
+      "counts": {
+        "C": 4,
+        "F": 12,
+        "Na": 1
+      },
+      "exact_mass": 298.97060723476,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "PTFE",
+      "source_name": "Polytetrafluoroethylene",
+      "generation_type": "dimer",
+      "path": [
+        "2M",
+        "Na"
+      ],
+      "broken_bonds": 0,
+      "h_shift": 0,
+      "adduct": "Na",
+      "neutral_losses": [],
+      "fragment_atom_indices": null,
+      "score": 0.43
+    },
+    {
+      "formula": "C2ClF4",
+      "counts": {
+        "C": 2,
+        "F": 4,
+        "Cl": 1
+      },
+      "exact_mass": 134.96246533292,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "PTFE",
+      "source_name": "Polytetrafluoroethylene",
+      "generation_type": "adduct",
+      "path": [
+        "break 1 bond(s)",
+        "H shift -1",
+        "Cl",
+        ";",
+        "break 1 bond(s)",
+        "H shift -1",
+        "Cl",
+        ";",
+        "break 1 bond(s)",
+        "H shift -1",
+        "Cl"
+      ],
+      "broken_bonds": 1,
+      "h_shift": -1,
+      "adduct": "Cl",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        0,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "score": 0.42999999999999994
+    },
+    {
+      "formula": "C2F4K",
+      "counts": {
+        "C": 2,
+        "F": 4,
+        "K": 1
+      },
+      "exact_mass": 138.95731913731998,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "PTFE",
+      "source_name": "Polytetrafluoroethylene",
+      "generation_type": "adduct",
+      "path": [
+        "break 1 bond(s)",
+        "H shift -1",
+        "K",
+        ";",
+        "break 1 bond(s)",
+        "H shift -1",
+        "K",
+        ";",
+        "break 1 bond(s)",
+        "H shift -1",
+        "K"
+      ],
+      "broken_bonds": 1,
+      "h_shift": -1,
+      "adduct": "K",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        0,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "score": 0.42999999999999994
+    },
+    {
+      "formula": "C2F4Na",
+      "counts": {
+        "C": 2,
+        "F": 4,
+        "Na": 1
+      },
+      "exact_mass": 122.98338193292,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "PTFE",
+      "source_name": "Polytetrafluoroethylene",
+      "generation_type": "adduct",
+      "path": [
+        "break 1 bond(s)",
+        "H shift -1",
+        "Na",
+        ";",
+        "break 1 bond(s)",
+        "H shift -1",
+        "Na",
+        ";",
+        "break 1 bond(s)",
+        "H shift -1",
+        "Na"
+      ],
+      "broken_bonds": 1,
+      "h_shift": -1,
+      "adduct": "Na",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        0,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "score": 0.42999999999999994
+    },
+    {
+      "formula": "C2F4O",
+      "counts": {
+        "C": 2,
+        "F": 4,
+        "O": 1
+      },
+      "exact_mass": 115.98852727049,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "PTFE",
+      "source_name": "Polytetrafluoroethylene",
+      "generation_type": "adduct",
+      "path": [
+        "break 1 bond(s)",
+        "H shift -1",
+        "O",
+        ";",
+        "break 1 bond(s)",
+        "H shift -1",
+        "O",
+        ";",
+        "break 1 bond(s)",
+        "H shift -1",
+        "O"
+      ],
+      "broken_bonds": 1,
+      "h_shift": -1,
+      "adduct": "O",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        0,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "score": 0.42999999999999994
+    },
+    {
+      "formula": "C2H2ClF4",
+      "counts": {
+        "C": 2,
+        "F": 4,
+        "H": 2,
+        "Cl": 1
+      },
+      "exact_mass": 136.97811539738,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "PTFE",
+      "source_name": "Polytetrafluoroethylene",
+      "generation_type": "adduct",
+      "path": [
+        "break 1 bond(s)",
+        "H shift +1",
+        "Cl",
+        ";",
+        "break 1 bond(s)",
+        "H shift +1",
+        "Cl",
+        ";",
+        "break 1 bond(s)",
+        "H shift +1",
+        "Cl"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 1,
+      "adduct": "Cl",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        0,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "score": 0.42999999999999994
+    },
+    {
+      "formula": "C2H2F4K",
+      "counts": {
+        "C": 2,
+        "F": 4,
+        "H": 2,
+        "K": 1
+      },
+      "exact_mass": 140.97296920178,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "PTFE",
+      "source_name": "Polytetrafluoroethylene",
+      "generation_type": "adduct",
+      "path": [
+        "break 1 bond(s)",
+        "H shift +1",
+        "K",
+        ";",
+        "break 1 bond(s)",
+        "H shift +1",
+        "K",
+        ";",
+        "break 1 bond(s)",
+        "H shift +1",
+        "K"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 1,
+      "adduct": "K",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        0,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "score": 0.42999999999999994
+    },
+    {
+      "formula": "C2H2F4Na",
+      "counts": {
+        "C": 2,
+        "F": 4,
+        "H": 2,
+        "Na": 1
+      },
+      "exact_mass": 124.99903199738,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "PTFE",
+      "source_name": "Polytetrafluoroethylene",
+      "generation_type": "adduct",
+      "path": [
+        "break 1 bond(s)",
+        "H shift +1",
+        "Na",
+        ";",
+        "break 1 bond(s)",
+        "H shift +1",
+        "Na",
+        ";",
+        "break 1 bond(s)",
+        "H shift +1",
+        "Na"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 1,
+      "adduct": "Na",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        0,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "score": 0.42999999999999994
+    },
+    {
+      "formula": "C2H3F4O",
+      "counts": {
+        "C": 2,
+        "F": 4,
+        "H": 3,
+        "O": 1
+      },
+      "exact_mass": 119.01200236718,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "PTFE",
+      "source_name": "Polytetrafluoroethylene",
+      "generation_type": "adduct",
+      "path": [
+        "break 1 bond(s)",
+        "H shift +1",
+        "OH",
+        ";",
+        "break 1 bond(s)",
+        "H shift +2",
+        "O",
+        ";",
+        "break 1 bond(s)",
+        "H shift +1",
+        "OH"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 1,
+      "adduct": "OH",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        0,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "score": 0.42999999999999994
+    },
+    {
+      "formula": "CClF2",
+      "counts": {
+        "C": 1,
+        "F": 2,
+        "Cl": 1
+      },
+      "exact_mass": 84.96565900746,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "PTFE",
+      "source_name": "Polytetrafluoroethylene",
+      "generation_type": "adduct",
+      "path": [
+        "break 1 bond(s)",
+        "H shift -1",
+        "Cl",
+        ";",
+        "break 2 bond(s)",
+        "H shift -1",
+        "Cl",
+        ";",
+        "break 2 bond(s)",
+        "Cl"
+      ],
+      "broken_bonds": 1,
+      "h_shift": -1,
+      "adduct": "Cl",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        0,
+        1,
+        2,
+        7
+      ],
+      "score": 0.42999999999999994
+    },
+    {
+      "formula": "CF2K",
+      "counts": {
+        "C": 1,
+        "F": 2,
+        "K": 1
+      },
+      "exact_mass": 88.96051281186,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "PTFE",
+      "source_name": "Polytetrafluoroethylene",
+      "generation_type": "adduct",
+      "path": [
+        "break 1 bond(s)",
+        "H shift -1",
+        "K",
+        ";",
+        "break 2 bond(s)",
+        "H shift -1",
+        "K",
+        ";",
+        "break 2 bond(s)",
+        "K"
+      ],
+      "broken_bonds": 1,
+      "h_shift": -1,
+      "adduct": "K",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        0,
+        1,
+        2,
+        7
+      ],
+      "score": 0.42999999999999994
+    },
+    {
+      "formula": "CF2Na",
+      "counts": {
+        "C": 1,
+        "F": 2,
+        "Na": 1
+      },
+      "exact_mass": 72.98657560746,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "PTFE",
+      "source_name": "Polytetrafluoroethylene",
+      "generation_type": "adduct",
+      "path": [
+        "break 1 bond(s)",
+        "H shift -1",
+        "Na",
+        ";",
+        "break 2 bond(s)",
+        "H shift -1",
+        "Na",
+        ";",
+        "break 2 bond(s)",
+        "Na"
+      ],
+      "broken_bonds": 1,
+      "h_shift": -1,
+      "adduct": "Na",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        0,
+        1,
+        2,
+        7
+      ],
+      "score": 0.42999999999999994
+    },
+    {
+      "formula": "CF2O",
+      "counts": {
+        "C": 1,
+        "F": 2,
+        "O": 1
+      },
+      "exact_mass": 65.99172094503,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "PTFE",
+      "source_name": "Polytetrafluoroethylene",
+      "generation_type": "adduct",
+      "path": [
+        "break 1 bond(s)",
+        "H shift -1",
+        "O",
+        ";",
+        "break 2 bond(s)",
+        "H shift -1",
+        "O",
+        ";",
+        "break 2 bond(s)",
+        "O"
+      ],
+      "broken_bonds": 1,
+      "h_shift": -1,
+      "adduct": "O",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        0,
+        1,
+        2,
+        7
+      ],
+      "score": 0.42999999999999994
+    },
+    {
+      "formula": "CH2ClF2",
+      "counts": {
+        "C": 1,
+        "F": 2,
+        "H": 2,
+        "Cl": 1
+      },
+      "exact_mass": 86.98130907192,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "PTFE",
+      "source_name": "Polytetrafluoroethylene",
+      "generation_type": "adduct",
+      "path": [
+        "break 1 bond(s)",
+        "H shift +1",
+        "Cl",
+        ";",
+        "break 2 bond(s)",
+        "H shift +1",
+        "Cl",
+        ";",
+        "break 2 bond(s)",
+        "H shift +2",
+        "Cl"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 1,
+      "adduct": "Cl",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        0,
+        1,
+        2,
+        7
+      ],
+      "score": 0.42999999999999994
+    },
+    {
+      "formula": "CH2F2K",
+      "counts": {
+        "C": 1,
+        "F": 2,
+        "H": 2,
+        "K": 1
+      },
+      "exact_mass": 90.97616287632,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "PTFE",
+      "source_name": "Polytetrafluoroethylene",
+      "generation_type": "adduct",
+      "path": [
+        "break 1 bond(s)",
+        "H shift +1",
+        "K",
+        ";",
+        "break 2 bond(s)",
+        "H shift +1",
+        "K",
+        ";",
+        "break 2 bond(s)",
+        "H shift +2",
+        "K"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 1,
+      "adduct": "K",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        0,
+        1,
+        2,
+        7
+      ],
+      "score": 0.42999999999999994
+    },
+    {
+      "formula": "CH2F2Na",
+      "counts": {
+        "C": 1,
+        "F": 2,
+        "H": 2,
+        "Na": 1
+      },
+      "exact_mass": 75.00222567192,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "PTFE",
+      "source_name": "Polytetrafluoroethylene",
+      "generation_type": "adduct",
+      "path": [
+        "break 1 bond(s)",
+        "H shift +1",
+        "Na",
+        ";",
+        "break 2 bond(s)",
+        "H shift +1",
+        "Na",
+        ";",
+        "break 2 bond(s)",
+        "H shift +2",
+        "Na"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 1,
+      "adduct": "Na",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        0,
+        1,
+        2,
+        7
+      ],
+      "score": 0.42999999999999994
+    },
+    {
+      "formula": "CH2F3O",
+      "counts": {
+        "C": 1,
+        "F": 3,
+        "H": 2,
+        "O": 1
+      },
+      "exact_mass": 87.00577417222,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "PTFE",
+      "source_name": "Polytetrafluoroethylene",
+      "generation_type": "adduct",
+      "path": [
+        "break 1 bond(s)",
+        "H shift +1",
+        "OH",
+        ";",
+        "break 1 bond(s)",
+        "H shift +2",
+        "O",
+        ";",
+        "break 2 bond(s)",
+        "H shift +1",
+        "OH"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 1,
+      "adduct": "OH",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "score": 0.42999999999999994
+    },
+    {
+      "formula": "CH3F2O",
+      "counts": {
+        "C": 1,
+        "F": 2,
+        "H": 3,
+        "O": 1
+      },
+      "exact_mass": 69.01519604172,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "PTFE",
+      "source_name": "Polytetrafluoroethylene",
+      "generation_type": "adduct",
+      "path": [
+        "break 1 bond(s)",
+        "H shift +1",
+        "OH",
+        ";",
+        "break 1 bond(s)",
+        "H shift +2",
+        "O",
+        ";",
+        "break 2 bond(s)",
+        "H shift +1",
+        "OH"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 1,
+      "adduct": "OH",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        0,
+        1,
+        2,
+        7
+      ],
+      "score": 0.42999999999999994
+    },
+    {
+      "formula": "CHClF3",
+      "counts": {
+        "C": 1,
+        "F": 3,
+        "H": 1,
+        "Cl": 1
+      },
+      "exact_mass": 104.97188720241999,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "PTFE",
+      "source_name": "Polytetrafluoroethylene",
+      "generation_type": "adduct",
+      "path": [
+        "break 1 bond(s)",
+        "H shift +1",
+        "Cl",
+        ";",
+        "break 2 bond(s)",
+        "H shift +1",
+        "Cl",
+        ";",
+        "break 2 bond(s)",
+        "H shift +1",
+        "Cl"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 1,
+      "adduct": "Cl",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "score": 0.42999999999999994
+    },
+    {
+      "formula": "CHF3K",
+      "counts": {
+        "C": 1,
+        "F": 3,
+        "H": 1,
+        "K": 1
+      },
+      "exact_mass": 108.96674100682,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "PTFE",
+      "source_name": "Polytetrafluoroethylene",
+      "generation_type": "adduct",
+      "path": [
+        "break 1 bond(s)",
+        "H shift +1",
+        "K",
+        ";",
+        "break 2 bond(s)",
+        "H shift +1",
+        "K",
+        ";",
+        "break 2 bond(s)",
+        "H shift +1",
+        "K"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 1,
+      "adduct": "K",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "score": 0.42999999999999994
+    },
+    {
+      "formula": "CHF3Na",
+      "counts": {
+        "C": 1,
+        "F": 3,
+        "H": 1,
+        "Na": 1
+      },
+      "exact_mass": 92.99280380242,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "PTFE",
+      "source_name": "Polytetrafluoroethylene",
+      "generation_type": "adduct",
+      "path": [
+        "break 1 bond(s)",
+        "H shift +1",
+        "Na",
+        ";",
+        "break 2 bond(s)",
+        "H shift +1",
+        "Na",
+        ";",
+        "break 2 bond(s)",
+        "H shift +1",
+        "Na"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 1,
+      "adduct": "Na",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "score": 0.42999999999999994
+    },
+    {
+      "formula": "C2F3",
+      "counts": {
+        "C": 2,
+        "F": 3
+      },
+      "exact_mass": 80.99520948819,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "source_compound_id": "PTFE",
+      "source_name": "Polytetrafluoroethylene",
+      "generation_type": "h_shift",
+      "path": [
+        "break 2 bond(s)",
+        "H shift -1",
+        ";",
+        "break 2 bond(s)",
+        "H shift -1",
+        ";",
+        "break 2 bond(s)",
+        "H shift -1",
+        ";",
+        "break 2 bond(s)",
+        "H shift -1"
+      ],
+      "broken_bonds": 2,
+      "h_shift": -1,
+      "adduct": null,
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        0,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "score": 0.4
+    },
+    {
+      "formula": "C2H2F3",
+      "counts": {
+        "C": 2,
+        "F": 3,
+        "H": 2
+      },
+      "exact_mass": 83.01085955265,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "source_compound_id": "PTFE",
+      "source_name": "Polytetrafluoroethylene",
+      "generation_type": "neutral_loss",
+      "path": [
+        "break 1 bond(s)",
+        "H shift +2",
+        "-HF",
+        ";",
+        "break 1 bond(s)",
+        "H shift +2",
+        "-HF",
+        ";",
+        "break 1 bond(s)",
+        "H shift +2",
+        "-HF"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 2,
+      "adduct": null,
+      "neutral_losses": [
+        "HF"
+      ],
+      "fragment_atom_indices": [
+        0,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "score": 0.4
+    },
+    {
+      "formula": "C2H2F3",
+      "counts": {
+        "C": 2,
+        "F": 3,
+        "H": 2
+      },
+      "exact_mass": 83.01085955265,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "source_compound_id": "PTFE",
+      "source_name": "Polytetrafluoroethylene",
+      "generation_type": "h_shift",
+      "path": [
+        "break 2 bond(s)",
+        "H shift +1",
+        ";",
+        "break 2 bond(s)",
+        "H shift +1",
+        ";",
+        "break 2 bond(s)",
+        "H shift +1",
+        ";",
+        "break 2 bond(s)",
+        "H shift +1"
+      ],
+      "broken_bonds": 2,
+      "h_shift": 1,
+      "adduct": null,
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        0,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "score": 0.4
+    },
+    {
+      "formula": "C2H3F3",
+      "counts": {
+        "C": 2,
+        "F": 3,
+        "H": 3
+      },
+      "exact_mass": 84.01868458488,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "PTFE",
+      "source_name": "Polytetrafluoroethylene",
+      "generation_type": "adduct",
+      "path": [
+        "break 2 bond(s)",
+        "H shift +1",
+        "H",
+        ";",
+        "break 2 bond(s)",
+        "H shift +1",
+        "H",
+        ";",
+        "break 2 bond(s)",
+        "H shift +1",
+        "H"
+      ],
+      "broken_bonds": 2,
+      "h_shift": 1,
+      "adduct": "H",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        0,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "score": 0.4
+    },
+    {
+      "formula": "C2HF3",
+      "counts": {
+        "C": 2,
+        "F": 3,
+        "H": 1
+      },
+      "exact_mass": 82.00303452042,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "PTFE",
+      "source_name": "Polytetrafluoroethylene",
+      "generation_type": "adduct",
+      "path": [
+        "break 2 bond(s)",
+        "H shift -1",
+        "H",
+        ";",
+        "break 2 bond(s)",
+        "H shift -1",
+        "H",
+        ";",
+        "break 2 bond(s)",
+        "H shift -1",
+        "H"
+      ],
+      "broken_bonds": 2,
+      "h_shift": -1,
+      "adduct": "H",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        0,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "score": 0.4
+    },
+    {
+      "formula": "C2HF3",
+      "counts": {
+        "C": 2,
+        "F": 3,
+        "H": 1
+      },
+      "exact_mass": 82.00303452042,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "PTFE",
+      "source_name": "Polytetrafluoroethylene",
+      "generation_type": "adduct",
+      "path": [
+        "break 2 bond(s)",
+        "H shift +1",
+        "-H",
+        ";",
+        "break 2 bond(s)",
+        "H shift +1",
+        "-H",
+        ";",
+        "break 2 bond(s)",
+        "H shift +1",
+        "-H"
+      ],
+      "broken_bonds": 2,
+      "h_shift": 1,
+      "adduct": "-H",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        0,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "score": 0.4
+    },
+    {
+      "formula": "C2HF4",
+      "counts": {
+        "C": 2,
+        "F": 4,
+        "H": 1
+      },
+      "exact_mass": 101.00143768315,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "source_compound_id": "PTFE",
+      "source_name": "Polytetrafluoroethylene",
+      "generation_type": "neutral_loss",
+      "path": [
+        "break 1 bond(s)",
+        "H shift +2",
+        "-H2",
+        ";",
+        "break 1 bond(s)",
+        "H shift +2",
+        "-H2",
+        ";",
+        "break 1 bond(s)",
+        "H shift +2",
+        "-H2"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 2,
+      "adduct": null,
+      "neutral_losses": [
+        "H2"
+      ],
+      "fragment_atom_indices": [
+        0,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "score": 0.4
+    },
+    {
+      "formula": "CF",
+      "counts": {
+        "C": 1,
+        "F": 1
+      },
+      "exact_mass": 30.99840316273,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "source_compound_id": "PTFE",
+      "source_name": "Polytetrafluoroethylene",
+      "generation_type": "h_shift",
+      "path": [
+        "break 2 bond(s)",
+        "H shift -1",
+        ";",
+        "break 2 bond(s)",
+        "H shift -1"
+      ],
+      "broken_bonds": 2,
+      "h_shift": -1,
+      "adduct": null,
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        0,
+        2,
+        7
+      ],
+      "score": 0.4
+    },
+    {
+      "formula": "CF3",
+      "counts": {
+        "C": 1,
+        "F": 3
+      },
+      "exact_mass": 68.99520948819,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "source_compound_id": "PTFE",
+      "source_name": "Polytetrafluoroethylene",
+      "generation_type": "neutral_loss",
+      "path": [
+        "break 1 bond(s)",
+        "H shift +2",
+        "-H2",
+        ";",
+        "break 2 bond(s)",
+        "H shift +2",
+        "-CH3",
+        ";",
+        "break 2 bond(s)",
+        "H shift +2",
+        "-H2"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 2,
+      "adduct": null,
+      "neutral_losses": [
+        "H2"
+      ],
+      "fragment_atom_indices": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "score": 0.4
+    },
+    {
+      "formula": "CF4",
+      "counts": {
+        "C": 1,
+        "F": 4
+      },
+      "exact_mass": 87.99361265092,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "source_compound_id": "PTFE",
+      "source_name": "Polytetrafluoroethylene",
+      "generation_type": "neutral_loss",
+      "path": [
+        "break 1 bond(s)",
+        "H shift +2",
+        "-CH3",
+        ";",
+        "break 1 bond(s)",
+        "H shift +2",
+        "-CH3",
+        ";",
+        "break 1 bond(s)",
+        "H shift +2",
+        "-CH3"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 2,
+      "adduct": null,
+      "neutral_losses": [
+        "CH3"
+      ],
+      "fragment_atom_indices": [
+        0,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "score": 0.4
+    },
+    {
+      "formula": "CH2F",
+      "counts": {
+        "C": 1,
+        "F": 1,
+        "H": 2
+      },
+      "exact_mass": 33.01405322719,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "source_compound_id": "PTFE",
+      "source_name": "Polytetrafluoroethylene",
+      "generation_type": "neutral_loss",
+      "path": [
+        "break 1 bond(s)",
+        "H shift +2",
+        "-HF",
+        ";",
+        "break 2 bond(s)",
+        "H shift +2",
+        "-HF",
+        ";",
+        "break 2 bond(s)",
+        "H shift +2",
+        "-HF"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 2,
+      "adduct": null,
+      "neutral_losses": [
+        "HF"
+      ],
+      "fragment_atom_indices": [
+        0,
+        1,
+        2,
+        7
+      ],
+      "score": 0.4
+    },
+    {
+      "formula": "CH2F",
+      "counts": {
+        "C": 1,
+        "F": 1,
+        "H": 2
+      },
+      "exact_mass": 33.01405322719,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "source_compound_id": "PTFE",
+      "source_name": "Polytetrafluoroethylene",
+      "generation_type": "h_shift",
+      "path": [
+        "break 2 bond(s)",
+        "H shift +1",
+        ";",
+        "break 2 bond(s)",
+        "H shift +1"
+      ],
+      "broken_bonds": 2,
+      "h_shift": 1,
+      "adduct": null,
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        0,
+        2,
+        7
+      ],
+      "score": 0.4
+    },
+    {
+      "formula": "CH3F",
+      "counts": {
+        "C": 1,
+        "F": 1,
+        "H": 3
+      },
+      "exact_mass": 34.02187825942,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "PTFE",
+      "source_name": "Polytetrafluoroethylene",
+      "generation_type": "adduct",
+      "path": [
+        "break 2 bond(s)",
+        "H shift +1",
+        "H",
+        ";",
+        "break 2 bond(s)",
+        "H shift +1",
+        "H"
+      ],
+      "broken_bonds": 2,
+      "h_shift": 1,
+      "adduct": "H",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        0,
+        2,
+        7
+      ],
+      "score": 0.4
+    },
+    {
+      "formula": "CHF",
+      "counts": {
+        "C": 1,
+        "F": 1,
+        "H": 1
+      },
+      "exact_mass": 32.00622819496,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "PTFE",
+      "source_name": "Polytetrafluoroethylene",
+      "generation_type": "adduct",
+      "path": [
+        "break 2 bond(s)",
+        "H shift -1",
+        "H",
+        ";",
+        "break 2 bond(s)",
+        "H shift -1",
+        "H"
+      ],
+      "broken_bonds": 2,
+      "h_shift": -1,
+      "adduct": "H",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        0,
+        2,
+        7
+      ],
+      "score": 0.4
+    },
+    {
+      "formula": "CHF",
+      "counts": {
+        "C": 1,
+        "F": 1,
+        "H": 1
+      },
+      "exact_mass": 32.00622819496,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "PTFE",
+      "source_name": "Polytetrafluoroethylene",
+      "generation_type": "adduct",
+      "path": [
+        "break 2 bond(s)",
+        "H shift +1",
+        "-H",
+        ";",
+        "break 2 bond(s)",
+        "H shift +1",
+        "-H"
+      ],
+      "broken_bonds": 2,
+      "h_shift": 1,
+      "adduct": "-H",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        0,
+        2,
+        7
+      ],
+      "score": 0.4
+    },
+    {
+      "formula": "CHF2",
+      "counts": {
+        "C": 1,
+        "F": 2,
+        "H": 1
+      },
+      "exact_mass": 51.00463135769,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "source_compound_id": "PTFE",
+      "source_name": "Polytetrafluoroethylene",
+      "generation_type": "neutral_loss",
+      "path": [
+        "break 1 bond(s)",
+        "H shift +2",
+        "-H2",
+        ";",
+        "break 1 bond(s)",
+        "H shift +2",
+        "-HF",
+        ";",
+        "break 2 bond(s)",
+        "H shift +2",
+        "-HF"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 2,
+      "adduct": null,
+      "neutral_losses": [
+        "H2"
+      ],
+      "fragment_atom_indices": [
+        0,
+        1,
+        2,
+        7
+      ],
+      "score": 0.4
+    },
+    {
+      "formula": "CHF2",
+      "counts": {
+        "C": 1,
+        "F": 2,
+        "H": 1
+      },
+      "exact_mass": 51.00463135769,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "source_compound_id": "PTFE",
+      "source_name": "Polytetrafluoroethylene",
+      "generation_type": "h_shift",
+      "path": [
+        "break 2 bond(s)",
+        "H shift +1",
+        ";",
+        "break 2 bond(s)",
+        "H shift +1",
+        ";",
+        "break 2 bond(s)",
+        "H shift +1"
+      ],
+      "broken_bonds": 2,
+      "h_shift": 1,
+      "adduct": null,
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        3,
+        5,
+        6
+      ],
+      "score": 0.4
+    },
+    {
+      "formula": "F2",
+      "counts": {
+        "F": 2
+      },
+      "exact_mass": 37.99680632546,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "source_compound_id": "PTFE",
+      "source_name": "Polytetrafluoroethylene",
+      "generation_type": "neutral_loss",
+      "path": [
+        "break 1 bond(s)",
+        "H shift +2",
+        "-CH3",
+        ";",
+        "break 2 bond(s)",
+        "H shift +2",
+        "-CH3",
+        ";",
+        "break 2 bond(s)",
+        "H shift +2",
+        "-CH3"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 2,
+      "adduct": null,
+      "neutral_losses": [
+        "CH3"
+      ],
+      "fragment_atom_indices": [
+        0,
+        1,
+        2,
+        7
+      ],
+      "score": 0.4
+    },
+    {
+      "formula": "C2H3ClF4",
+      "counts": {
+        "C": 2,
+        "F": 4,
+        "H": 3,
+        "Cl": 1
+      },
+      "exact_mass": 137.98594042961,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "PTFE",
+      "source_name": "Polytetrafluoroethylene",
+      "generation_type": "adduct",
+      "path": [
+        "break 1 bond(s)",
+        "H shift +2",
+        "Cl",
+        ";",
+        "break 1 bond(s)",
+        "H shift +2",
+        "Cl",
+        ";",
+        "break 1 bond(s)",
+        "H shift +2",
+        "Cl"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 2,
+      "adduct": "Cl",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        0,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "score": 0.38
+    },
+    {
+      "formula": "C2H3F4K",
+      "counts": {
+        "C": 2,
+        "F": 4,
+        "H": 3,
+        "K": 1
+      },
+      "exact_mass": 141.98079423401,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "PTFE",
+      "source_name": "Polytetrafluoroethylene",
+      "generation_type": "adduct",
+      "path": [
+        "break 1 bond(s)",
+        "H shift +2",
+        "K",
+        ";",
+        "break 1 bond(s)",
+        "H shift +2",
+        "K",
+        ";",
+        "break 1 bond(s)",
+        "H shift +2",
+        "K"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 2,
+      "adduct": "K",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        0,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "score": 0.38
+    },
+    {
+      "formula": "C2H3F4Na",
+      "counts": {
+        "C": 2,
+        "F": 4,
+        "H": 3,
+        "Na": 1
+      },
+      "exact_mass": 126.00685702961,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "PTFE",
+      "source_name": "Polytetrafluoroethylene",
+      "generation_type": "adduct",
+      "path": [
+        "break 1 bond(s)",
+        "H shift +2",
+        "Na",
+        ";",
+        "break 1 bond(s)",
+        "H shift +2",
+        "Na",
+        ";",
+        "break 1 bond(s)",
+        "H shift +2",
+        "Na"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 2,
+      "adduct": "Na",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        0,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "score": 0.38
+    },
+    {
+      "formula": "C2H4F4O",
+      "counts": {
+        "C": 2,
+        "F": 4,
+        "H": 4,
+        "O": 1
+      },
+      "exact_mass": 120.01982739941,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "PTFE",
+      "source_name": "Polytetrafluoroethylene",
+      "generation_type": "adduct",
+      "path": [
+        "break 1 bond(s)",
+        "H shift +2",
+        "OH",
+        ";",
+        "break 1 bond(s)",
+        "H shift +2",
+        "OH",
+        ";",
+        "break 1 bond(s)",
+        "H shift +2",
+        "OH"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 2,
+      "adduct": "OH",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        0,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "score": 0.38
+    },
+    {
+      "formula": "CH2ClF3",
+      "counts": {
+        "C": 1,
+        "F": 3,
+        "H": 2,
+        "Cl": 1
+      },
+      "exact_mass": 105.97971223465,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "PTFE",
+      "source_name": "Polytetrafluoroethylene",
+      "generation_type": "adduct",
+      "path": [
+        "break 1 bond(s)",
+        "H shift +2",
+        "Cl",
+        ";",
+        "break 2 bond(s)",
+        "H shift +2",
+        "Cl",
+        ";",
+        "break 2 bond(s)",
+        "H shift +2",
+        "Cl"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 2,
+      "adduct": "Cl",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "score": 0.38
+    },
+    {
+      "formula": "CH2F3K",
+      "counts": {
+        "C": 1,
+        "F": 3,
+        "H": 2,
+        "K": 1
+      },
+      "exact_mass": 109.97456603905,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "PTFE",
+      "source_name": "Polytetrafluoroethylene",
+      "generation_type": "adduct",
+      "path": [
+        "break 1 bond(s)",
+        "H shift +2",
+        "K",
+        ";",
+        "break 2 bond(s)",
+        "H shift +2",
+        "K",
+        ";",
+        "break 2 bond(s)",
+        "H shift +2",
+        "K"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 2,
+      "adduct": "K",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "score": 0.38
+    },
+    {
+      "formula": "CH2F3Na",
+      "counts": {
+        "C": 1,
+        "F": 3,
+        "H": 2,
+        "Na": 1
+      },
+      "exact_mass": 94.00062883465,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "PTFE",
+      "source_name": "Polytetrafluoroethylene",
+      "generation_type": "adduct",
+      "path": [
+        "break 1 bond(s)",
+        "H shift +2",
+        "Na",
+        ";",
+        "break 2 bond(s)",
+        "H shift +2",
+        "Na",
+        ";",
+        "break 2 bond(s)",
+        "H shift +2",
+        "Na"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 2,
+      "adduct": "Na",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "score": 0.38
+    },
+    {
+      "formula": "CH3ClF2",
+      "counts": {
+        "C": 1,
+        "F": 2,
+        "H": 3,
+        "Cl": 1
+      },
+      "exact_mass": 87.98913410415,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "PTFE",
+      "source_name": "Polytetrafluoroethylene",
+      "generation_type": "adduct",
+      "path": [
+        "break 1 bond(s)",
+        "H shift +2",
+        "Cl",
+        ";",
+        "break 2 bond(s)",
+        "H shift +2",
+        "Cl",
+        ";",
+        "break 2 bond(s)",
+        "H shift +2",
+        "Cl"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 2,
+      "adduct": "Cl",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        0,
+        1,
+        2,
+        7
+      ],
+      "score": 0.38
+    },
+    {
+      "formula": "CH3F2K",
+      "counts": {
+        "C": 1,
+        "F": 2,
+        "H": 3,
+        "K": 1
+      },
+      "exact_mass": 91.98398790855,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "PTFE",
+      "source_name": "Polytetrafluoroethylene",
+      "generation_type": "adduct",
+      "path": [
+        "break 1 bond(s)",
+        "H shift +2",
+        "K",
+        ";",
+        "break 2 bond(s)",
+        "H shift +2",
+        "K",
+        ";",
+        "break 2 bond(s)",
+        "H shift +2",
+        "K"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 2,
+      "adduct": "K",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        0,
+        1,
+        2,
+        7
+      ],
+      "score": 0.38
+    },
+    {
+      "formula": "CH3F2Na",
+      "counts": {
+        "C": 1,
+        "F": 2,
+        "H": 3,
+        "Na": 1
+      },
+      "exact_mass": 76.01005070415,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "PTFE",
+      "source_name": "Polytetrafluoroethylene",
+      "generation_type": "adduct",
+      "path": [
+        "break 1 bond(s)",
+        "H shift +2",
+        "Na",
+        ";",
+        "break 2 bond(s)",
+        "H shift +2",
+        "Na",
+        ";",
+        "break 2 bond(s)",
+        "H shift +2",
+        "Na"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 2,
+      "adduct": "Na",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        0,
+        1,
+        2,
+        7
+      ],
+      "score": 0.38
+    },
+    {
+      "formula": "CH3F3O",
+      "counts": {
+        "C": 1,
+        "F": 3,
+        "H": 3,
+        "O": 1
+      },
+      "exact_mass": 88.01359920445,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "PTFE",
+      "source_name": "Polytetrafluoroethylene",
+      "generation_type": "adduct",
+      "path": [
+        "break 1 bond(s)",
+        "H shift +2",
+        "OH",
+        ";",
+        "break 2 bond(s)",
+        "H shift +2",
+        "OH",
+        ";",
+        "break 2 bond(s)",
+        "H shift +2",
+        "OH"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 2,
+      "adduct": "OH",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "score": 0.38
+    },
+    {
+      "formula": "CH4F2O",
+      "counts": {
+        "C": 1,
+        "F": 2,
+        "H": 4,
+        "O": 1
+      },
+      "exact_mass": 70.02302107395,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "PTFE",
+      "source_name": "Polytetrafluoroethylene",
+      "generation_type": "adduct",
+      "path": [
+        "break 1 bond(s)",
+        "H shift +2",
+        "OH",
+        ";",
+        "break 2 bond(s)",
+        "H shift +2",
+        "OH",
+        ";",
+        "break 2 bond(s)",
+        "H shift +2",
+        "OH"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 2,
+      "adduct": "OH",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        0,
+        1,
+        2,
+        7
+      ],
+      "score": 0.38
+    },
+    {
+      "formula": "C",
+      "counts": {
+        "C": 1
+      },
+      "exact_mass": 12.0,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "source_compound_id": "PTFE",
+      "source_name": "Polytetrafluoroethylene",
+      "generation_type": "neutral_loss",
+      "path": [
+        "break 2 bond(s)",
+        "-HF",
+        ";",
+        "break 2 bond(s)",
+        "-HF"
+      ],
+      "broken_bonds": 2,
+      "h_shift": 0,
+      "adduct": null,
+      "neutral_losses": [
+        "HF"
+      ],
+      "fragment_atom_indices": [
+        0,
+        2,
+        7
+      ],
+      "score": 0.35
+    },
+    {
+      "formula": "C2F2",
+      "counts": {
+        "C": 2,
+        "F": 2
+      },
+      "exact_mass": 61.99680632546,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "source_compound_id": "PTFE",
+      "source_name": "Polytetrafluoroethylene",
+      "generation_type": "neutral_loss",
+      "path": [
+        "break 2 bond(s)",
+        "-HF",
+        ";",
+        "break 2 bond(s)",
+        "-HF",
+        ";",
+        "break 2 bond(s)",
+        "-HF",
+        ";",
+        "break 2 bond(s)",
+        "-HF"
+      ],
+      "broken_bonds": 2,
+      "h_shift": 0,
+      "adduct": null,
+      "neutral_losses": [
+        "HF"
+      ],
+      "fragment_atom_indices": [
+        0,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "score": 0.35
+    },
+    {
+      "formula": "C2H2F3",
+      "counts": {
+        "C": 2,
+        "F": 3,
+        "H": 2
+      },
+      "exact_mass": 83.01085955265,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "PTFE",
+      "source_name": "Polytetrafluoroethylene",
+      "generation_type": "adduct",
+      "path": [
+        "break 2 bond(s)",
+        "H shift +2",
+        "-H",
+        ";",
+        "break 2 bond(s)",
+        "H shift +2",
+        "-H",
+        ";",
+        "break 2 bond(s)",
+        "H shift +2",
+        "-H"
+      ],
+      "broken_bonds": 2,
+      "h_shift": 2,
+      "adduct": "-H",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        0,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "score": 0.35
+    },
+    {
+      "formula": "C2H3F3",
+      "counts": {
+        "C": 2,
+        "F": 3,
+        "H": 3
+      },
+      "exact_mass": 84.01868458488,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "source_compound_id": "PTFE",
+      "source_name": "Polytetrafluoroethylene",
+      "generation_type": "h_shift",
+      "path": [
+        "break 2 bond(s)",
+        "H shift +2",
+        ";",
+        "break 2 bond(s)",
+        "H shift +2",
+        ";",
+        "break 2 bond(s)",
+        "H shift +2",
+        ";",
+        "break 2 bond(s)",
+        "H shift +2"
+      ],
+      "broken_bonds": 2,
+      "h_shift": 2,
+      "adduct": null,
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        0,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "score": 0.35
+    },
+    {
+      "formula": "C2H4F3",
+      "counts": {
+        "C": 2,
+        "F": 3,
+        "H": 4
+      },
+      "exact_mass": 85.02650961711,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "PTFE",
+      "source_name": "Polytetrafluoroethylene",
+      "generation_type": "adduct",
+      "path": [
+        "break 2 bond(s)",
+        "H shift +2",
+        "H",
+        ";",
+        "break 2 bond(s)",
+        "H shift +2",
+        "H",
+        ";",
+        "break 2 bond(s)",
+        "H shift +2",
+        "H"
+      ],
+      "broken_bonds": 2,
+      "h_shift": 2,
+      "adduct": "H",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        0,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "score": 0.35
+    },
+    {
+      "formula": "CH2F",
+      "counts": {
+        "C": 1,
+        "F": 1,
+        "H": 2
+      },
+      "exact_mass": 33.01405322719,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "PTFE",
+      "source_name": "Polytetrafluoroethylene",
+      "generation_type": "adduct",
+      "path": [
+        "break 2 bond(s)",
+        "H shift +2",
+        "-H",
+        ";",
+        "break 2 bond(s)",
+        "H shift +2",
+        "-H"
+      ],
+      "broken_bonds": 2,
+      "h_shift": 2,
+      "adduct": "-H",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        0,
+        2,
+        7
+      ],
+      "score": 0.35
+    },
+    {
+      "formula": "CH3F",
+      "counts": {
+        "C": 1,
+        "F": 1,
+        "H": 3
+      },
+      "exact_mass": 34.02187825942,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "source_compound_id": "PTFE",
+      "source_name": "Polytetrafluoroethylene",
+      "generation_type": "h_shift",
+      "path": [
+        "break 2 bond(s)",
+        "H shift +2",
+        ";",
+        "break 2 bond(s)",
+        "H shift +2"
+      ],
+      "broken_bonds": 2,
+      "h_shift": 2,
+      "adduct": null,
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        0,
+        2,
+        7
+      ],
+      "score": 0.35
+    },
+    {
+      "formula": "CH4F",
+      "counts": {
+        "C": 1,
+        "F": 1,
+        "H": 4
+      },
+      "exact_mass": 35.02970329165,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "PTFE",
+      "source_name": "Polytetrafluoroethylene",
+      "generation_type": "adduct",
+      "path": [
+        "break 2 bond(s)",
+        "H shift +2",
+        "H",
+        ";",
+        "break 2 bond(s)",
+        "H shift +2",
+        "H"
+      ],
+      "broken_bonds": 2,
+      "h_shift": 2,
+      "adduct": "H",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        0,
+        2,
+        7
+      ],
+      "score": 0.35
+    },
+    {
+      "formula": "C2H2F3O",
+      "counts": {
+        "C": 2,
+        "F": 3,
+        "H": 2,
+        "O": 1
+      },
+      "exact_mass": 99.00577417222,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "PTFE",
+      "source_name": "Polytetrafluoroethylene",
+      "generation_type": "adduct",
+      "path": [
+        "break 2 bond(s)",
+        "OH",
+        ";",
+        "break 2 bond(s)",
+        "H shift +1",
+        "O",
+        ";",
+        "break 2 bond(s)",
+        "OH"
+      ],
+      "broken_bonds": 2,
+      "h_shift": 0,
+      "adduct": "OH",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        0,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "score": 0.33
+    },
+    {
+      "formula": "C2HClF3",
+      "counts": {
+        "C": 2,
+        "F": 3,
+        "H": 1,
+        "Cl": 1
+      },
+      "exact_mass": 116.97188720241999,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "PTFE",
+      "source_name": "Polytetrafluoroethylene",
+      "generation_type": "adduct",
+      "path": [
+        "break 2 bond(s)",
+        "Cl",
+        ";",
+        "break 2 bond(s)",
+        "Cl",
+        ";",
+        "break 2 bond(s)",
+        "Cl",
+        ";",
+        "break 2 bond(s)",
+        "Cl"
+      ],
+      "broken_bonds": 2,
+      "h_shift": 0,
+      "adduct": "Cl",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        0,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "score": 0.33
+    },
+    {
+      "formula": "C2HF3K",
+      "counts": {
+        "C": 2,
+        "F": 3,
+        "H": 1,
+        "K": 1
+      },
+      "exact_mass": 120.96674100682,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "PTFE",
+      "source_name": "Polytetrafluoroethylene",
+      "generation_type": "adduct",
+      "path": [
+        "break 2 bond(s)",
+        "K",
+        ";",
+        "break 2 bond(s)",
+        "K",
+        ";",
+        "break 2 bond(s)",
+        "K",
+        ";",
+        "break 2 bond(s)",
+        "K"
+      ],
+      "broken_bonds": 2,
+      "h_shift": 0,
+      "adduct": "K",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        0,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "score": 0.33
+    },
+    {
+      "formula": "C2HF3Na",
+      "counts": {
+        "C": 2,
+        "F": 3,
+        "H": 1,
+        "Na": 1
+      },
+      "exact_mass": 104.99280380242,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "PTFE",
+      "source_name": "Polytetrafluoroethylene",
+      "generation_type": "adduct",
+      "path": [
+        "break 2 bond(s)",
+        "Na",
+        ";",
+        "break 2 bond(s)",
+        "Na",
+        ";",
+        "break 2 bond(s)",
+        "Na",
+        ";",
+        "break 2 bond(s)",
+        "Na"
+      ],
+      "broken_bonds": 2,
+      "h_shift": 0,
+      "adduct": "Na",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        0,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "score": 0.33
+    },
+    {
+      "formula": "C2HF3O",
+      "counts": {
+        "C": 2,
+        "F": 3,
+        "H": 1,
+        "O": 1
+      },
+      "exact_mass": 97.99794913999,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "PTFE",
+      "source_name": "Polytetrafluoroethylene",
+      "generation_type": "adduct",
+      "path": [
+        "break 2 bond(s)",
+        "O",
+        ";",
+        "break 2 bond(s)",
+        "H shift -1",
+        "OH",
+        ";",
+        "break 2 bond(s)",
+        "O"
+      ],
+      "broken_bonds": 2,
+      "h_shift": 0,
+      "adduct": "O",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        0,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "score": 0.33
+    },
+    {
+      "formula": "CH2FO",
+      "counts": {
+        "C": 1,
+        "F": 1,
+        "H": 2,
+        "O": 1
+      },
+      "exact_mass": 49.00896784676,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "PTFE",
+      "source_name": "Polytetrafluoroethylene",
+      "generation_type": "adduct",
+      "path": [
+        "break 2 bond(s)",
+        "OH",
+        ";",
+        "break 2 bond(s)",
+        "H shift +1",
+        "O",
+        ";",
+        "break 2 bond(s)",
+        "OH"
+      ],
+      "broken_bonds": 2,
+      "h_shift": 0,
+      "adduct": "OH",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        0,
+        2,
+        7
+      ],
+      "score": 0.33
+    },
+    {
+      "formula": "CHClF",
+      "counts": {
+        "C": 1,
+        "F": 1,
+        "H": 1,
+        "Cl": 1
+      },
+      "exact_mass": 66.97508087695999,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "PTFE",
+      "source_name": "Polytetrafluoroethylene",
+      "generation_type": "adduct",
+      "path": [
+        "break 2 bond(s)",
+        "Cl",
+        ";",
+        "break 2 bond(s)",
+        "Cl"
+      ],
+      "broken_bonds": 2,
+      "h_shift": 0,
+      "adduct": "Cl",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        0,
+        2,
+        7
+      ],
+      "score": 0.33
+    },
+    {
+      "formula": "CHFK",
+      "counts": {
+        "C": 1,
+        "F": 1,
+        "H": 1,
+        "K": 1
+      },
+      "exact_mass": 70.96993468136,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "PTFE",
+      "source_name": "Polytetrafluoroethylene",
+      "generation_type": "adduct",
+      "path": [
+        "break 2 bond(s)",
+        "K",
+        ";",
+        "break 2 bond(s)",
+        "K"
+      ],
+      "broken_bonds": 2,
+      "h_shift": 0,
+      "adduct": "K",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        0,
+        2,
+        7
+      ],
+      "score": 0.33
+    },
+    {
+      "formula": "CHFNa",
+      "counts": {
+        "C": 1,
+        "F": 1,
+        "H": 1,
+        "Na": 1
+      },
+      "exact_mass": 54.99599747696,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "PTFE",
+      "source_name": "Polytetrafluoroethylene",
+      "generation_type": "adduct",
+      "path": [
+        "break 2 bond(s)",
+        "Na",
+        ";",
+        "break 2 bond(s)",
+        "Na"
+      ],
+      "broken_bonds": 2,
+      "h_shift": 0,
+      "adduct": "Na",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        0,
+        2,
+        7
+      ],
+      "score": 0.33
+    },
+    {
+      "formula": "CHFO",
+      "counts": {
+        "C": 1,
+        "F": 1,
+        "H": 1,
+        "O": 1
+      },
+      "exact_mass": 48.00114281453,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "PTFE",
+      "source_name": "Polytetrafluoroethylene",
+      "generation_type": "adduct",
+      "path": [
+        "break 2 bond(s)",
+        "O",
+        ";",
+        "break 2 bond(s)",
+        "H shift -1",
+        "OH",
+        ";",
+        "break 2 bond(s)",
+        "O"
+      ],
+      "broken_bonds": 2,
+      "h_shift": 0,
+      "adduct": "O",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        0,
+        2,
+        7
+      ],
+      "score": 0.33
+    },
+    {
+      "formula": "C2HF2",
+      "counts": {
+        "C": 2,
+        "F": 2,
+        "H": 1
+      },
+      "exact_mass": 63.00463135769,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "source_compound_id": "PTFE",
+      "source_name": "Polytetrafluoroethylene",
+      "generation_type": "neutral_loss",
+      "path": [
+        "break 2 bond(s)",
+        "H shift +1",
+        "-HF",
+        ";",
+        "break 2 bond(s)",
+        "H shift +1",
+        "-HF",
+        ";",
+        "break 2 bond(s)",
+        "H shift +1",
+        "-HF"
+      ],
+      "broken_bonds": 2,
+      "h_shift": 1,
+      "adduct": null,
+      "neutral_losses": [
+        "HF"
+      ],
+      "fragment_atom_indices": [
+        0,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "score": 0.30000000000000004
+    },
+    {
+      "formula": "CH",
+      "counts": {
+        "C": 1,
+        "H": 1
+      },
+      "exact_mass": 13.00782503223,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "source_compound_id": "PTFE",
+      "source_name": "Polytetrafluoroethylene",
+      "generation_type": "neutral_loss",
+      "path": [
+        "break 2 bond(s)",
+        "H shift +1",
+        "-HF",
+        ";",
+        "break 2 bond(s)",
+        "H shift +1",
+        "-HF"
+      ],
+      "broken_bonds": 2,
+      "h_shift": 1,
+      "adduct": null,
+      "neutral_losses": [
+        "HF"
+      ],
+      "fragment_atom_indices": [
+        0,
+        2,
+        7
+      ],
+      "score": 0.30000000000000004
+    },
+    {
+      "formula": "C2ClF3",
+      "counts": {
+        "C": 2,
+        "F": 3,
+        "Cl": 1
+      },
+      "exact_mass": 115.96406217019,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "PTFE",
+      "source_name": "Polytetrafluoroethylene",
+      "generation_type": "adduct",
+      "path": [
+        "break 2 bond(s)",
+        "H shift -1",
+        "Cl",
+        ";",
+        "break 2 bond(s)",
+        "H shift -1",
+        "Cl",
+        ";",
+        "break 2 bond(s)",
+        "H shift -1",
+        "Cl"
+      ],
+      "broken_bonds": 2,
+      "h_shift": -1,
+      "adduct": "Cl",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        0,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "score": 0.28
+    },
+    {
+      "formula": "C2F3K",
+      "counts": {
+        "C": 2,
+        "F": 3,
+        "K": 1
+      },
+      "exact_mass": 119.95891597459,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "PTFE",
+      "source_name": "Polytetrafluoroethylene",
+      "generation_type": "adduct",
+      "path": [
+        "break 2 bond(s)",
+        "H shift -1",
+        "K",
+        ";",
+        "break 2 bond(s)",
+        "H shift -1",
+        "K",
+        ";",
+        "break 2 bond(s)",
+        "H shift -1",
+        "K"
+      ],
+      "broken_bonds": 2,
+      "h_shift": -1,
+      "adduct": "K",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        0,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "score": 0.28
+    },
+    {
+      "formula": "C2F3Na",
+      "counts": {
+        "C": 2,
+        "F": 3,
+        "Na": 1
+      },
+      "exact_mass": 103.98497877019,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "PTFE",
+      "source_name": "Polytetrafluoroethylene",
+      "generation_type": "adduct",
+      "path": [
+        "break 2 bond(s)",
+        "H shift -1",
+        "Na",
+        ";",
+        "break 2 bond(s)",
+        "H shift -1",
+        "Na",
+        ";",
+        "break 2 bond(s)",
+        "H shift -1",
+        "Na"
+      ],
+      "broken_bonds": 2,
+      "h_shift": -1,
+      "adduct": "Na",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        0,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "score": 0.28
+    },
+    {
+      "formula": "C2F3O",
+      "counts": {
+        "C": 2,
+        "F": 3,
+        "O": 1
+      },
+      "exact_mass": 96.99012410776,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "PTFE",
+      "source_name": "Polytetrafluoroethylene",
+      "generation_type": "adduct",
+      "path": [
+        "break 2 bond(s)",
+        "H shift -1",
+        "O",
+        ";",
+        "break 2 bond(s)",
+        "H shift -1",
+        "O",
+        ";",
+        "break 2 bond(s)",
+        "H shift -1",
+        "O"
+      ],
+      "broken_bonds": 2,
+      "h_shift": -1,
+      "adduct": "O",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        0,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "score": 0.28
+    },
+    {
+      "formula": "C2H2ClF3",
+      "counts": {
+        "C": 2,
+        "F": 3,
+        "H": 2,
+        "Cl": 1
+      },
+      "exact_mass": 117.97971223465,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "PTFE",
+      "source_name": "Polytetrafluoroethylene",
+      "generation_type": "adduct",
+      "path": [
+        "break 2 bond(s)",
+        "H shift +1",
+        "Cl",
+        ";",
+        "break 2 bond(s)",
+        "H shift +1",
+        "Cl",
+        ";",
+        "break 2 bond(s)",
+        "H shift +1",
+        "Cl"
+      ],
+      "broken_bonds": 2,
+      "h_shift": 1,
+      "adduct": "Cl",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        0,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "score": 0.28
+    },
+    {
+      "formula": "C2H2F3K",
+      "counts": {
+        "C": 2,
+        "F": 3,
+        "H": 2,
+        "K": 1
+      },
+      "exact_mass": 121.97456603905,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "PTFE",
+      "source_name": "Polytetrafluoroethylene",
+      "generation_type": "adduct",
+      "path": [
+        "break 2 bond(s)",
+        "H shift +1",
+        "K",
+        ";",
+        "break 2 bond(s)",
+        "H shift +1",
+        "K",
+        ";",
+        "break 2 bond(s)",
+        "H shift +1",
+        "K"
+      ],
+      "broken_bonds": 2,
+      "h_shift": 1,
+      "adduct": "K",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        0,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "score": 0.28
+    },
+    {
+      "formula": "C2H2F3Na",
+      "counts": {
+        "C": 2,
+        "F": 3,
+        "H": 2,
+        "Na": 1
+      },
+      "exact_mass": 106.00062883465,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "PTFE",
+      "source_name": "Polytetrafluoroethylene",
+      "generation_type": "adduct",
+      "path": [
+        "break 2 bond(s)",
+        "H shift +1",
+        "Na",
+        ";",
+        "break 2 bond(s)",
+        "H shift +1",
+        "Na",
+        ";",
+        "break 2 bond(s)",
+        "H shift +1",
+        "Na"
+      ],
+      "broken_bonds": 2,
+      "h_shift": 1,
+      "adduct": "Na",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        0,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "score": 0.28
+    },
+    {
+      "formula": "C2H3F3O",
+      "counts": {
+        "C": 2,
+        "F": 3,
+        "H": 3,
+        "O": 1
+      },
+      "exact_mass": 100.01359920445,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "PTFE",
+      "source_name": "Polytetrafluoroethylene",
+      "generation_type": "adduct",
+      "path": [
+        "break 2 bond(s)",
+        "H shift +1",
+        "OH",
+        ";",
+        "break 2 bond(s)",
+        "H shift +2",
+        "O",
+        ";",
+        "break 2 bond(s)",
+        "H shift +1",
+        "OH"
+      ],
+      "broken_bonds": 2,
+      "h_shift": 1,
+      "adduct": "OH",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        0,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "score": 0.28
+    },
+    {
+      "formula": "CClF",
+      "counts": {
+        "C": 1,
+        "F": 1,
+        "Cl": 1
+      },
+      "exact_mass": 65.96725584473,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "PTFE",
+      "source_name": "Polytetrafluoroethylene",
+      "generation_type": "adduct",
+      "path": [
+        "break 2 bond(s)",
+        "H shift -1",
+        "Cl",
+        ";",
+        "break 2 bond(s)",
+        "H shift -1",
+        "Cl"
+      ],
+      "broken_bonds": 2,
+      "h_shift": -1,
+      "adduct": "Cl",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        0,
+        2,
+        7
+      ],
+      "score": 0.28
+    },
+    {
+      "formula": "CFK",
+      "counts": {
+        "C": 1,
+        "F": 1,
+        "K": 1
+      },
+      "exact_mass": 69.96210964913,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "PTFE",
+      "source_name": "Polytetrafluoroethylene",
+      "generation_type": "adduct",
+      "path": [
+        "break 2 bond(s)",
+        "H shift -1",
+        "K",
+        ";",
+        "break 2 bond(s)",
+        "H shift -1",
+        "K"
+      ],
+      "broken_bonds": 2,
+      "h_shift": -1,
+      "adduct": "K",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        0,
+        2,
+        7
+      ],
+      "score": 0.28
+    },
+    {
+      "formula": "CFNa",
+      "counts": {
+        "C": 1,
+        "F": 1,
+        "Na": 1
+      },
+      "exact_mass": 53.98817244473,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "PTFE",
+      "source_name": "Polytetrafluoroethylene",
+      "generation_type": "adduct",
+      "path": [
+        "break 2 bond(s)",
+        "H shift -1",
+        "Na",
+        ";",
+        "break 2 bond(s)",
+        "H shift -1",
+        "Na"
+      ],
+      "broken_bonds": 2,
+      "h_shift": -1,
+      "adduct": "Na",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        0,
+        2,
+        7
+      ],
+      "score": 0.28
+    },
+    {
+      "formula": "CFO",
+      "counts": {
+        "C": 1,
+        "F": 1,
+        "O": 1
+      },
+      "exact_mass": 46.9933177823,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "PTFE",
+      "source_name": "Polytetrafluoroethylene",
+      "generation_type": "adduct",
+      "path": [
+        "break 2 bond(s)",
+        "H shift -1",
+        "O",
+        ";",
+        "break 2 bond(s)",
+        "H shift -1",
+        "O"
+      ],
+      "broken_bonds": 2,
+      "h_shift": -1,
+      "adduct": "O",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        0,
+        2,
+        7
+      ],
+      "score": 0.28
+    },
+    {
+      "formula": "CH2ClF",
+      "counts": {
+        "C": 1,
+        "F": 1,
+        "H": 2,
+        "Cl": 1
+      },
+      "exact_mass": 67.98290590919,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "PTFE",
+      "source_name": "Polytetrafluoroethylene",
+      "generation_type": "adduct",
+      "path": [
+        "break 2 bond(s)",
+        "H shift +1",
+        "Cl",
+        ";",
+        "break 2 bond(s)",
+        "H shift +1",
+        "Cl"
+      ],
+      "broken_bonds": 2,
+      "h_shift": 1,
+      "adduct": "Cl",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        0,
+        2,
+        7
+      ],
+      "score": 0.28
+    },
+    {
+      "formula": "CH2FK",
+      "counts": {
+        "C": 1,
+        "F": 1,
+        "H": 2,
+        "K": 1
+      },
+      "exact_mass": 71.97775971359,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "PTFE",
+      "source_name": "Polytetrafluoroethylene",
+      "generation_type": "adduct",
+      "path": [
+        "break 2 bond(s)",
+        "H shift +1",
+        "K",
+        ";",
+        "break 2 bond(s)",
+        "H shift +1",
+        "K"
+      ],
+      "broken_bonds": 2,
+      "h_shift": 1,
+      "adduct": "K",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        0,
+        2,
+        7
+      ],
+      "score": 0.28
+    },
+    {
+      "formula": "CH2FNa",
+      "counts": {
+        "C": 1,
+        "F": 1,
+        "H": 2,
+        "Na": 1
+      },
+      "exact_mass": 56.00382250919,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "PTFE",
+      "source_name": "Polytetrafluoroethylene",
+      "generation_type": "adduct",
+      "path": [
+        "break 2 bond(s)",
+        "H shift +1",
+        "Na",
+        ";",
+        "break 2 bond(s)",
+        "H shift +1",
+        "Na"
+      ],
+      "broken_bonds": 2,
+      "h_shift": 1,
+      "adduct": "Na",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        0,
+        2,
+        7
+      ],
+      "score": 0.28
+    },
+    {
+      "formula": "CH3FO",
+      "counts": {
+        "C": 1,
+        "F": 1,
+        "H": 3,
+        "O": 1
+      },
+      "exact_mass": 50.01679287899,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "PTFE",
+      "source_name": "Polytetrafluoroethylene",
+      "generation_type": "adduct",
+      "path": [
+        "break 2 bond(s)",
+        "H shift +1",
+        "OH",
+        ";",
+        "break 2 bond(s)",
+        "H shift +2",
+        "O",
+        ";",
+        "break 2 bond(s)",
+        "H shift +1",
+        "OH"
+      ],
+      "broken_bonds": 2,
+      "h_shift": 1,
+      "adduct": "OH",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        0,
+        2,
+        7
+      ],
+      "score": 0.28
+    },
+    {
+      "formula": "C2H2F2",
+      "counts": {
+        "C": 2,
+        "F": 2,
+        "H": 2
+      },
+      "exact_mass": 64.01245638992,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "source_compound_id": "PTFE",
+      "source_name": "Polytetrafluoroethylene",
+      "generation_type": "neutral_loss",
+      "path": [
+        "break 2 bond(s)",
+        "H shift +2",
+        "-HF",
+        ";",
+        "break 2 bond(s)",
+        "H shift +2",
+        "-HF",
+        ";",
+        "break 2 bond(s)",
+        "H shift +2",
+        "-HF"
+      ],
+      "broken_bonds": 2,
+      "h_shift": 2,
+      "adduct": null,
+      "neutral_losses": [
+        "HF"
+      ],
+      "fragment_atom_indices": [
+        0,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "score": 0.24999999999999997
+    },
+    {
+      "formula": "CH2",
+      "counts": {
+        "C": 1,
+        "H": 2
+      },
+      "exact_mass": 14.01565006446,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "source_compound_id": "PTFE",
+      "source_name": "Polytetrafluoroethylene",
+      "generation_type": "neutral_loss",
+      "path": [
+        "break 2 bond(s)",
+        "H shift +2",
+        "-HF",
+        ";",
+        "break 2 bond(s)",
+        "H shift +2",
+        "-HF"
+      ],
+      "broken_bonds": 2,
+      "h_shift": 2,
+      "adduct": null,
+      "neutral_losses": [
+        "HF"
+      ],
+      "fragment_atom_indices": [
+        0,
+        2,
+        7
+      ],
+      "score": 0.24999999999999997
+    },
+    {
+      "formula": "F",
+      "counts": {
+        "F": 1
+      },
+      "exact_mass": 18.99840316273,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "source_compound_id": "PTFE",
+      "source_name": "Polytetrafluoroethylene",
+      "generation_type": "neutral_loss",
+      "path": [
+        "break 2 bond(s)",
+        "H shift +2",
+        "-CH3",
+        ";",
+        "break 2 bond(s)",
+        "H shift +2",
+        "-CH3"
+      ],
+      "broken_bonds": 2,
+      "h_shift": 2,
+      "adduct": null,
+      "neutral_losses": [
+        "CH3"
+      ],
+      "fragment_atom_indices": [
+        0,
+        2,
+        7
+      ],
+      "score": 0.24999999999999997
+    },
+    {
+      "formula": "C2H3ClF3",
+      "counts": {
+        "C": 2,
+        "F": 3,
+        "H": 3,
+        "Cl": 1
+      },
+      "exact_mass": 118.98753726688,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "PTFE",
+      "source_name": "Polytetrafluoroethylene",
+      "generation_type": "adduct",
+      "path": [
+        "break 2 bond(s)",
+        "H shift +2",
+        "Cl",
+        ";",
+        "break 2 bond(s)",
+        "H shift +2",
+        "Cl",
+        ";",
+        "break 2 bond(s)",
+        "H shift +2",
+        "Cl"
+      ],
+      "broken_bonds": 2,
+      "h_shift": 2,
+      "adduct": "Cl",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        0,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "score": 0.22999999999999998
+    },
+    {
+      "formula": "C2H3F3K",
+      "counts": {
+        "C": 2,
+        "F": 3,
+        "H": 3,
+        "K": 1
+      },
+      "exact_mass": 122.98239107128,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "PTFE",
+      "source_name": "Polytetrafluoroethylene",
+      "generation_type": "adduct",
+      "path": [
+        "break 2 bond(s)",
+        "H shift +2",
+        "K",
+        ";",
+        "break 2 bond(s)",
+        "H shift +2",
+        "K",
+        ";",
+        "break 2 bond(s)",
+        "H shift +2",
+        "K"
+      ],
+      "broken_bonds": 2,
+      "h_shift": 2,
+      "adduct": "K",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        0,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "score": 0.22999999999999998
+    },
+    {
+      "formula": "C2H3F3Na",
+      "counts": {
+        "C": 2,
+        "F": 3,
+        "H": 3,
+        "Na": 1
+      },
+      "exact_mass": 107.00845386688,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "PTFE",
+      "source_name": "Polytetrafluoroethylene",
+      "generation_type": "adduct",
+      "path": [
+        "break 2 bond(s)",
+        "H shift +2",
+        "Na",
+        ";",
+        "break 2 bond(s)",
+        "H shift +2",
+        "Na",
+        ";",
+        "break 2 bond(s)",
+        "H shift +2",
+        "Na"
+      ],
+      "broken_bonds": 2,
+      "h_shift": 2,
+      "adduct": "Na",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        0,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "score": 0.22999999999999998
+    },
+    {
+      "formula": "C2H4F3O",
+      "counts": {
+        "C": 2,
+        "F": 3,
+        "H": 4,
+        "O": 1
+      },
+      "exact_mass": 101.02142423668,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "PTFE",
+      "source_name": "Polytetrafluoroethylene",
+      "generation_type": "adduct",
+      "path": [
+        "break 2 bond(s)",
+        "H shift +2",
+        "OH",
+        ";",
+        "break 2 bond(s)",
+        "H shift +2",
+        "OH",
+        ";",
+        "break 2 bond(s)",
+        "H shift +2",
+        "OH"
+      ],
+      "broken_bonds": 2,
+      "h_shift": 2,
+      "adduct": "OH",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        0,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "score": 0.22999999999999998
+    },
+    {
+      "formula": "CH3ClF",
+      "counts": {
+        "C": 1,
+        "F": 1,
+        "H": 3,
+        "Cl": 1
+      },
+      "exact_mass": 68.99073094142,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "PTFE",
+      "source_name": "Polytetrafluoroethylene",
+      "generation_type": "adduct",
+      "path": [
+        "break 2 bond(s)",
+        "H shift +2",
+        "Cl",
+        ";",
+        "break 2 bond(s)",
+        "H shift +2",
+        "Cl"
+      ],
+      "broken_bonds": 2,
+      "h_shift": 2,
+      "adduct": "Cl",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        0,
+        2,
+        7
+      ],
+      "score": 0.22999999999999998
+    },
+    {
+      "formula": "CH3FK",
+      "counts": {
+        "C": 1,
+        "F": 1,
+        "H": 3,
+        "K": 1
+      },
+      "exact_mass": 72.98558474582,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "PTFE",
+      "source_name": "Polytetrafluoroethylene",
+      "generation_type": "adduct",
+      "path": [
+        "break 2 bond(s)",
+        "H shift +2",
+        "K",
+        ";",
+        "break 2 bond(s)",
+        "H shift +2",
+        "K"
+      ],
+      "broken_bonds": 2,
+      "h_shift": 2,
+      "adduct": "K",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        0,
+        2,
+        7
+      ],
+      "score": 0.22999999999999998
+    },
+    {
+      "formula": "CH3FNa",
+      "counts": {
+        "C": 1,
+        "F": 1,
+        "H": 3,
+        "Na": 1
+      },
+      "exact_mass": 57.011647541420004,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "PTFE",
+      "source_name": "Polytetrafluoroethylene",
+      "generation_type": "adduct",
+      "path": [
+        "break 2 bond(s)",
+        "H shift +2",
+        "Na",
+        ";",
+        "break 2 bond(s)",
+        "H shift +2",
+        "Na"
+      ],
+      "broken_bonds": 2,
+      "h_shift": 2,
+      "adduct": "Na",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        0,
+        2,
+        7
+      ],
+      "score": 0.22999999999999998
+    },
+    {
+      "formula": "CH4FO",
+      "counts": {
+        "C": 1,
+        "F": 1,
+        "H": 4,
+        "O": 1
+      },
+      "exact_mass": 51.02461791122,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "PTFE",
+      "source_name": "Polytetrafluoroethylene",
+      "generation_type": "adduct",
+      "path": [
+        "break 2 bond(s)",
+        "H shift +2",
+        "OH",
+        ";",
+        "break 2 bond(s)",
+        "H shift +2",
+        "OH"
+      ],
+      "broken_bonds": 2,
+      "h_shift": 2,
+      "adduct": "OH",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        0,
+        2,
+        7
+      ],
+      "score": 0.22999999999999998
+    }
+  ]
+}

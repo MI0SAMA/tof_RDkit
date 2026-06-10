@@ -1,0 +1,26 @@
+io:
+  data_dir: "data"
+  spectra_glob: "data/**/*.txt"
+  compounds_file: "data/compounds.csv"
+  rf_candidates_file: "data/rf_candidates.csv"
+  output_dir: "outputs"
+spectrum:
+  min_mz: 1.0
+  max_mz: 2000.0
+  min_intensity: 0.0
+  top_n_peaks: 300
+  normalize_intensity: true
+  peak_match_ppm: 20
+  peak_match_da: 0.01
+fragmentation:
+  max_bond_breaks: 2
+  min_heavy_atoms_per_fragment: 2
+  allow_ring_bond_break: false
+  allow_aromatic_bond_break: false
+  max_generated_formulas_per_compound: 20000
+ion_rules:
+  h_shift_range: [-2, -1, 0, 1, 2]
+  common_adducts_positive: ["H", "Na", "K"]
+  common_adducts_negative: ["-H", "Cl", "O", "OH"]
+  neutral_losses: ["H2", "H2O", "CO", "CO2", "NH3", "CH3", "OH", "HCl", "HF"]
+  dimers: true

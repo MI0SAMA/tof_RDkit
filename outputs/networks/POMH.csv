@@ -1,0 +1,111 @@
+formula,counts,exact_mass,ion_mode,charge,source_compound_id,source_name,generation_type,path,broken_bonds,h_shift,adduct,neutral_losses,fragment_atom_indices,score
+C2H6O,"{'C': 2, 'H': 6, 'O': 1}",46.04186481295,neutral,0,POMH,Polyoxymethylene Homopolymer,parent,M,0,0,,,,1.0
+C2H5O,"{'C': 2, 'H': 5, 'O': 1}",45.03403978072,negative,-1,POMH,Polyoxymethylene Homopolymer,adduct,M | -H,0,0,-H,,,0.75
+C2H7O,"{'C': 2, 'H': 7, 'O': 1}",47.04968984518,positive,1,POMH,Polyoxymethylene Homopolymer,adduct,M | H,0,0,H,,,0.75
+C2H4O,"{'C': 2, 'H': 4, 'O': 1}",44.02621474849,negative,-1,POMH,Polyoxymethylene Homopolymer,adduct,M | H shift -1 | -H,0,-1,-H,,,0.7
+C2H5O,"{'C': 2, 'H': 5, 'O': 1}",45.03403978072,neutral,0,POMH,Polyoxymethylene Homopolymer,h_shift,M | H shift -1,0,-1,,,,0.7
+C2H6O,"{'C': 2, 'H': 6, 'O': 1}",46.04186481295,positive,1,POMH,Polyoxymethylene Homopolymer,adduct,M | H shift -1 | H,0,-1,H,,,0.7
+C2H6O,"{'C': 2, 'H': 6, 'O': 1}",46.04186481295,negative,-1,POMH,Polyoxymethylene Homopolymer,adduct,M | H shift +1 | -H,0,1,-H,,,0.7
+C2H7O,"{'C': 2, 'H': 7, 'O': 1}",47.04968984518,neutral,0,POMH,Polyoxymethylene Homopolymer,h_shift,M | H shift +1,0,1,,,,0.7
+C2H8O,"{'C': 2, 'H': 8, 'O': 1}",48.05751487741,positive,1,POMH,Polyoxymethylene Homopolymer,adduct,M | H shift +1 | H,0,1,H,,,0.7
+C2H3O,"{'C': 2, 'H': 3, 'O': 1}",43.01838971626,negative,-1,POMH,Polyoxymethylene Homopolymer,adduct,M | H shift -2 | -H,0,-2,-H,,,0.65
+C2H4,"{'C': 2, 'H': 4}",28.03130012892,neutral,0,POMH,Polyoxymethylene Homopolymer,neutral_loss,M | -H2O,0,0,,H2O,,0.65
+C2H4O,"{'C': 2, 'H': 4, 'O': 1}",44.02621474849,neutral,0,POMH,Polyoxymethylene Homopolymer,h_shift,M | H shift -2,0,-2,,,,0.65
+C2H4O,"{'C': 2, 'H': 4, 'O': 1}",44.02621474849,neutral,0,POMH,Polyoxymethylene Homopolymer,neutral_loss,M | -H2,0,0,,H2,,0.65
+C2H5,"{'C': 2, 'H': 5}",29.03912516115,neutral,0,POMH,Polyoxymethylene Homopolymer,neutral_loss,M | -OH | ; | M | H shift +1 | -H2O,0,0,,OH,,0.65
+C2H5O,"{'C': 2, 'H': 5, 'O': 1}",45.03403978072,positive,1,POMH,Polyoxymethylene Homopolymer,adduct,M | H shift -2 | H,0,-2,H,,,0.65
+C2H7O,"{'C': 2, 'H': 7, 'O': 1}",47.04968984518,negative,-1,POMH,Polyoxymethylene Homopolymer,adduct,M | H shift +2 | -H,0,2,-H,,,0.65
+C2H8O,"{'C': 2, 'H': 8, 'O': 1}",48.05751487741,neutral,0,POMH,Polyoxymethylene Homopolymer,h_shift,M | H shift +2,0,2,,,,0.65
+C2H9O,"{'C': 2, 'H': 9, 'O': 1}",49.06533990964,positive,1,POMH,Polyoxymethylene Homopolymer,adduct,M | H shift +2 | H,0,2,H,,,0.65
+CH3O,"{'C': 1, 'H': 3, 'O': 1}",31.01838971626,neutral,0,POMH,Polyoxymethylene Homopolymer,neutral_loss,M | -CH3 | ; | break 1 bond(s) | H shift +2 | -H2 | ; | break 1 bond(s) | H shift +2 | -H2,0,0,,CH3,,0.65
+CH6,"{'C': 1, 'H': 6}",18.04695019338,neutral,0,POMH,Polyoxymethylene Homopolymer,neutral_loss,M | -CO,0,0,,CO,,0.65
+C2H6ClO,"{'C': 2, 'H': 6, 'O': 1, 'Cl': 1}",81.01071749495,negative,-1,POMH,Polyoxymethylene Homopolymer,adduct,M | Cl,0,0,Cl,,,0.63
+C2H6KO,"{'C': 2, 'H': 6, 'O': 1, 'K': 1}",85.00557129935,positive,1,POMH,Polyoxymethylene Homopolymer,adduct,M | K,0,0,K,,,0.63
+C2H6NaO,"{'C': 2, 'H': 6, 'O': 1, 'Na': 1}",69.03163409495001,positive,1,POMH,Polyoxymethylene Homopolymer,adduct,M | Na,0,0,Na,,,0.63
+C2H6O2,"{'C': 2, 'H': 6, 'O': 2}",62.03677943252,negative,-1,POMH,Polyoxymethylene Homopolymer,adduct,M | O,0,0,O,,,0.63
+C2H7O2,"{'C': 2, 'H': 7, 'O': 2}",63.04460446475,negative,-1,POMH,Polyoxymethylene Homopolymer,adduct,M | OH | ; | M | H shift +1 | O,0,0,OH,,,0.63
+C2H3,"{'C': 2, 'H': 3}",27.02347509669,neutral,0,POMH,Polyoxymethylene Homopolymer,neutral_loss,M | H shift -1 | -H2O,0,-1,,H2O,,0.6
+C2H3O,"{'C': 2, 'H': 3, 'O': 1}",43.01838971626,neutral,0,POMH,Polyoxymethylene Homopolymer,neutral_loss,M | H shift -1 | -H2,0,-1,,H2,,0.6
+C2H5O,"{'C': 2, 'H': 5, 'O': 1}",45.03403978072,neutral,0,POMH,Polyoxymethylene Homopolymer,neutral_loss,M | H shift +1 | -H2,0,1,,H2,,0.6
+C2H6,"{'C': 2, 'H': 6}",30.04695019338,neutral,0,POMH,Polyoxymethylene Homopolymer,neutral_loss,M | H shift +1 | -OH | ; | M | H shift +2 | -H2O,0,1,,OH,,0.6
+CH2O,"{'C': 1, 'H': 2, 'O': 1}",30.01056468403,neutral,0,POMH,Polyoxymethylene Homopolymer,neutral_loss,M | H shift -1 | -CH3 | ; | break 1 bond(s) | H shift +1 | -H2 | ; | break 1 bond(s) | H shift +1 | -H2,0,-1,,CH3,,0.6
+CH2O,"{'O': 1, 'C': 1, 'H': 2}",30.01056468403,negative,-1,POMH,Polyoxymethylene Homopolymer,adduct,break 1 bond(s) | -H | ; | break 1 bond(s) | -H,1,0,-H,,"[1, 2, 6, 7, 8]",0.6
+CH3O,"{'O': 1, 'C': 1, 'H': 3}",31.01838971626,neutral,0,POMH,Polyoxymethylene Homopolymer,fragment,break 1 bond(s) | ; | break 1 bond(s),1,0,,,"[1, 2, 6, 7, 8]",0.6
+CH4O,"{'C': 1, 'H': 4, 'O': 1}",32.02621474849,neutral,0,POMH,Polyoxymethylene Homopolymer,neutral_loss,M | H shift +1 | -CH3,0,1,,CH3,,0.6
+CH4O,"{'O': 1, 'C': 1, 'H': 4}",32.02621474849,positive,1,POMH,Polyoxymethylene Homopolymer,adduct,break 1 bond(s) | H | ; | break 1 bond(s) | H,1,0,H,,"[1, 2, 6, 7, 8]",0.6
+CH5,"{'C': 1, 'H': 5}",17.03912516115,neutral,0,POMH,Polyoxymethylene Homopolymer,neutral_loss,M | H shift -1 | -CO,0,-1,,CO,,0.6
+CH7,"{'C': 1, 'H': 7}",19.05477522561,neutral,0,POMH,Polyoxymethylene Homopolymer,neutral_loss,M | H shift +1 | -CO,0,1,,CO,,0.6
+C2H5ClO,"{'C': 2, 'H': 5, 'O': 1, 'Cl': 1}",80.00289246272,negative,-1,POMH,Polyoxymethylene Homopolymer,adduct,M | H shift -1 | Cl,0,-1,Cl,,,0.58
+C2H5KO,"{'C': 2, 'H': 5, 'O': 1, 'K': 1}",83.99774626712,positive,1,POMH,Polyoxymethylene Homopolymer,adduct,M | H shift -1 | K,0,-1,K,,,0.58
+C2H5NaO,"{'C': 2, 'H': 5, 'O': 1, 'Na': 1}",68.02380906272,positive,1,POMH,Polyoxymethylene Homopolymer,adduct,M | H shift -1 | Na,0,-1,Na,,,0.58
+C2H5O2,"{'C': 2, 'H': 5, 'O': 2}",61.028954400290004,negative,-1,POMH,Polyoxymethylene Homopolymer,adduct,M | H shift -1 | O,0,-1,O,,,0.58
+C2H7ClO,"{'C': 2, 'H': 7, 'O': 1, 'Cl': 1}",82.01854252718,negative,-1,POMH,Polyoxymethylene Homopolymer,adduct,M | H shift +1 | Cl,0,1,Cl,,,0.58
+C2H7KO,"{'C': 2, 'H': 7, 'O': 1, 'K': 1}",86.01339633158,positive,1,POMH,Polyoxymethylene Homopolymer,adduct,M | H shift +1 | K,0,1,K,,,0.58
+C2H7NaO,"{'C': 2, 'H': 7, 'O': 1, 'Na': 1}",70.03945912718,positive,1,POMH,Polyoxymethylene Homopolymer,adduct,M | H shift +1 | Na,0,1,Na,,,0.58
+C2H8O2,"{'C': 2, 'H': 8, 'O': 2}",64.05242949698,negative,-1,POMH,Polyoxymethylene Homopolymer,adduct,M | H shift +1 | OH | ; | M | H shift +2 | O,0,1,OH,,,0.58
+C2H2,"{'C': 2, 'H': 2}",26.01565006446,neutral,0,POMH,Polyoxymethylene Homopolymer,neutral_loss,M | H shift -2 | -H2O,0,-2,,H2O,,0.55
+C2H2O,"{'C': 2, 'H': 2, 'O': 1}",42.01056468403,neutral,0,POMH,Polyoxymethylene Homopolymer,neutral_loss,M | H shift -2 | -H2,0,-2,,H2,,0.55
+C2H6O,"{'C': 2, 'H': 6, 'O': 1}",46.04186481295,neutral,0,POMH,Polyoxymethylene Homopolymer,neutral_loss,M | H shift +2 | -H2,0,2,,H2,,0.55
+C2H7,"{'C': 2, 'H': 7}",31.05477522561,neutral,0,POMH,Polyoxymethylene Homopolymer,neutral_loss,M | H shift +2 | -OH,0,2,,OH,,0.55
+C4H11O2,"{'C': 4, 'H': 11, 'O': 2}",91.07590459367,negative,-1,POMH,Polyoxymethylene Homopolymer,dimer,2M | -H,0,0,-H,,,0.55
+C4H13O2,"{'C': 4, 'H': 13, 'O': 2}",93.09155465813001,positive,1,POMH,Polyoxymethylene Homopolymer,dimer,2M | H,0,0,H,,,0.55
+CH4,"{'C': 1, 'H': 4}",16.03130012892,neutral,0,POMH,Polyoxymethylene Homopolymer,neutral_loss,M | H shift -2 | -CO | ; | break 1 bond(s) | H shift +2 | -OH | ; | break 1 bond(s) | H shift +2 | -OH,0,-2,,CO,,0.55
+CH5O,"{'C': 1, 'H': 5, 'O': 1}",33.03403978072,neutral,0,POMH,Polyoxymethylene Homopolymer,neutral_loss,M | H shift +2 | -CH3,0,2,,CH3,,0.55
+CH8,"{'C': 1, 'H': 8}",20.06260025784,neutral,0,POMH,Polyoxymethylene Homopolymer,neutral_loss,M | H shift +2 | -CO,0,2,,CO,,0.55
+CHO,"{'C': 1, 'H': 1, 'O': 1}",29.0027396518,neutral,0,POMH,Polyoxymethylene Homopolymer,neutral_loss,M | H shift -2 | -CH3 | ; | break 1 bond(s) | -H2 | ; | break 1 bond(s) | -H2,0,-2,,CH3,,0.55
+CH2O,"{'O': 1, 'C': 1, 'H': 2}",30.01056468403,neutral,0,POMH,Polyoxymethylene Homopolymer,h_shift,break 1 bond(s) | H shift -1 | ; | break 1 bond(s) | H shift -1,1,-1,,,"[1, 2, 6, 7, 8]",0.5499999999999999
+CH3O,"{'O': 1, 'C': 1, 'H': 3}",31.01838971626,positive,1,POMH,Polyoxymethylene Homopolymer,adduct,break 1 bond(s) | H shift -1 | H | ; | break 1 bond(s) | H shift -1 | H,1,-1,H,,"[1, 2, 6, 7, 8]",0.5499999999999999
+CH3O,"{'O': 1, 'C': 1, 'H': 3}",31.01838971626,negative,-1,POMH,Polyoxymethylene Homopolymer,adduct,break 1 bond(s) | H shift +1 | -H | ; | break 1 bond(s) | H shift +1 | -H,1,1,-H,,"[1, 2, 6, 7, 8]",0.5499999999999999
+CH4O,"{'O': 1, 'C': 1, 'H': 4}",32.02621474849,neutral,0,POMH,Polyoxymethylene Homopolymer,h_shift,break 1 bond(s) | H shift +1 | ; | break 1 bond(s) | H shift +1,1,1,,,"[1, 2, 6, 7, 8]",0.5499999999999999
+CH5O,"{'O': 1, 'C': 1, 'H': 5}",33.03403978072,positive,1,POMH,Polyoxymethylene Homopolymer,adduct,break 1 bond(s) | H shift +1 | H | ; | break 1 bond(s) | H shift +1 | H,1,1,H,,"[1, 2, 6, 7, 8]",0.5499999999999999
+CHO,"{'O': 1, 'C': 1, 'H': 1}",29.0027396518,negative,-1,POMH,Polyoxymethylene Homopolymer,adduct,break 1 bond(s) | H shift -1 | -H | ; | break 1 bond(s) | H shift -1 | -H,1,-1,-H,,"[1, 2, 6, 7, 8]",0.5499999999999999
+C2H4ClO,"{'C': 2, 'H': 4, 'O': 1, 'Cl': 1}",78.99506743049,negative,-1,POMH,Polyoxymethylene Homopolymer,adduct,M | H shift -2 | Cl,0,-2,Cl,,,0.53
+C2H4KO,"{'C': 2, 'H': 4, 'O': 1, 'K': 1}",82.98992123489,positive,1,POMH,Polyoxymethylene Homopolymer,adduct,M | H shift -2 | K,0,-2,K,,,0.53
+C2H4NaO,"{'C': 2, 'H': 4, 'O': 1, 'Na': 1}",67.01598403049,positive,1,POMH,Polyoxymethylene Homopolymer,adduct,M | H shift -2 | Na,0,-2,Na,,,0.53
+C2H4O2,"{'C': 2, 'H': 4, 'O': 2}",60.02112936806,negative,-1,POMH,Polyoxymethylene Homopolymer,adduct,M | H shift -2 | O,0,-2,O,,,0.53
+C2H8ClO,"{'C': 2, 'H': 8, 'O': 1, 'Cl': 1}",83.02636755941,negative,-1,POMH,Polyoxymethylene Homopolymer,adduct,M | H shift +2 | Cl,0,2,Cl,,,0.53
+C2H8KO,"{'C': 2, 'H': 8, 'O': 1, 'K': 1}",87.02122136381,positive,1,POMH,Polyoxymethylene Homopolymer,adduct,M | H shift +2 | K,0,2,K,,,0.53
+C2H8NaO,"{'C': 2, 'H': 8, 'O': 1, 'Na': 1}",71.04728415941,positive,1,POMH,Polyoxymethylene Homopolymer,adduct,M | H shift +2 | Na,0,2,Na,,,0.53
+C2H9O2,"{'C': 2, 'H': 9, 'O': 2}",65.06025452921,negative,-1,POMH,Polyoxymethylene Homopolymer,adduct,M | H shift +2 | OH,0,2,OH,,,0.53
+CH,"{'C': 1, 'H': 1}",13.00782503223,neutral,0,POMH,Polyoxymethylene Homopolymer,neutral_loss,break 1 bond(s) | -H2O | ; | break 1 bond(s) | H shift -1 | -OH | ; | break 1 bond(s) | -H2O,1,0,,H2O,"[1, 2, 6, 7, 8]",0.5
+CH2,"{'C': 1, 'H': 2}",14.01565006446,neutral,0,POMH,Polyoxymethylene Homopolymer,neutral_loss,break 1 bond(s) | -OH | ; | break 1 bond(s) | H shift +1 | -H2O | ; | break 1 bond(s) | -OH,1,0,,OH,"[1, 2, 6, 7, 8]",0.5
+CH2O,"{'O': 1, 'C': 1, 'H': 2}",30.01056468403,positive,1,POMH,Polyoxymethylene Homopolymer,adduct,break 1 bond(s) | H shift -2 | H | ; | break 1 bond(s) | H shift -2 | H,1,-2,H,,"[1, 2, 6, 7, 8]",0.5
+CH4O,"{'O': 1, 'C': 1, 'H': 4}",32.02621474849,negative,-1,POMH,Polyoxymethylene Homopolymer,adduct,break 1 bond(s) | H shift +2 | -H | ; | break 1 bond(s) | H shift +2 | -H,1,2,-H,,"[1, 2, 6, 7, 8]",0.5
+CH5O,"{'O': 1, 'C': 1, 'H': 5}",33.03403978072,neutral,0,POMH,Polyoxymethylene Homopolymer,h_shift,break 1 bond(s) | H shift +2 | ; | break 1 bond(s) | H shift +2,1,2,,,"[1, 2, 6, 7, 8]",0.5
+CH6O,"{'O': 1, 'C': 1, 'H': 6}",34.04186481295,positive,1,POMH,Polyoxymethylene Homopolymer,adduct,break 1 bond(s) | H shift +2 | H | ; | break 1 bond(s) | H shift +2 | H,1,2,H,,"[1, 2, 6, 7, 8]",0.5
+CHO,"{'O': 1, 'C': 1, 'H': 1}",29.0027396518,neutral,0,POMH,Polyoxymethylene Homopolymer,h_shift,break 1 bond(s) | H shift -2 | ; | break 1 bond(s) | H shift -2,1,-2,,,"[1, 2, 6, 7, 8]",0.5
+CO,"{'O': 1, 'C': 1}",27.99491461957,negative,-1,POMH,Polyoxymethylene Homopolymer,adduct,break 1 bond(s) | H shift -2 | -H | ; | break 1 bond(s) | H shift -2 | -H,1,-2,-H,,"[1, 2, 6, 7, 8]",0.5
+H3,{'H': 3},3.02347509669,neutral,0,POMH,Polyoxymethylene Homopolymer,neutral_loss,break 1 bond(s) | -CO | ; | break 1 bond(s) | -CO,1,0,,CO,"[1, 2, 6, 7, 8]",0.5
+O,{'O': 1},15.99491461957,neutral,0,POMH,Polyoxymethylene Homopolymer,neutral_loss,break 1 bond(s) | -CH3 | ; | break 1 bond(s) | -CH3,1,0,,CH3,"[1, 2, 6, 7, 8]",0.5
+CH3ClO,"{'O': 1, 'C': 1, 'H': 3, 'Cl': 1}",65.98724239826,negative,-1,POMH,Polyoxymethylene Homopolymer,adduct,break 1 bond(s) | Cl | ; | break 1 bond(s) | Cl,1,0,Cl,,"[1, 2, 6, 7, 8]",0.48
+CH3KO,"{'O': 1, 'C': 1, 'H': 3, 'K': 1}",69.98209620266,positive,1,POMH,Polyoxymethylene Homopolymer,adduct,break 1 bond(s) | K | ; | break 1 bond(s) | K,1,0,K,,"[1, 2, 6, 7, 8]",0.48
+CH3NaO,"{'O': 1, 'C': 1, 'H': 3, 'Na': 1}",54.00815899826,positive,1,POMH,Polyoxymethylene Homopolymer,adduct,break 1 bond(s) | Na | ; | break 1 bond(s) | Na,1,0,Na,,"[1, 2, 6, 7, 8]",0.48
+CH3O2,"{'O': 2, 'C': 1, 'H': 3}",47.01330433583,negative,-1,POMH,Polyoxymethylene Homopolymer,adduct,break 1 bond(s) | O | ; | break 1 bond(s) | H shift -1 | OH | ; | break 1 bond(s) | O,1,0,O,,"[1, 2, 6, 7, 8]",0.48
+CH4O2,"{'O': 2, 'C': 1, 'H': 4}",48.02112936806,negative,-1,POMH,Polyoxymethylene Homopolymer,adduct,break 1 bond(s) | OH | ; | break 1 bond(s) | H shift +1 | O | ; | break 1 bond(s) | OH,1,0,OH,,"[1, 2, 6, 7, 8]",0.48
+C,{'C': 1},12.0,neutral,0,POMH,Polyoxymethylene Homopolymer,neutral_loss,break 1 bond(s) | H shift -1 | -H2O | ; | break 1 bond(s) | H shift -2 | -OH | ; | break 1 bond(s) | H shift -1 | -H2O,1,-1,,H2O,"[1, 2, 6, 7, 8]",0.44999999999999996
+CH3,"{'C': 1, 'H': 3}",15.02347509669,neutral,0,POMH,Polyoxymethylene Homopolymer,neutral_loss,break 1 bond(s) | H shift +1 | -OH | ; | break 1 bond(s) | H shift +2 | -H2O | ; | break 1 bond(s) | H shift +1 | -OH,1,1,,OH,"[1, 2, 6, 7, 8]",0.44999999999999996
+CO,"{'O': 1, 'C': 1}",27.99491461957,neutral,0,POMH,Polyoxymethylene Homopolymer,neutral_loss,break 1 bond(s) | H shift -1 | -H2 | ; | break 1 bond(s) | H shift -1 | -H2,1,-1,,H2,"[1, 2, 6, 7, 8]",0.44999999999999996
+H2,{'H': 2},2.01565006446,neutral,0,POMH,Polyoxymethylene Homopolymer,neutral_loss,break 1 bond(s) | H shift -1 | -CO | ; | break 1 bond(s) | H shift -1 | -CO,1,-1,,CO,"[1, 2, 6, 7, 8]",0.44999999999999996
+H4,{'H': 4},4.03130012892,neutral,0,POMH,Polyoxymethylene Homopolymer,neutral_loss,break 1 bond(s) | H shift +1 | -CO | ; | break 1 bond(s) | H shift +1 | -CO,1,1,,CO,"[1, 2, 6, 7, 8]",0.44999999999999996
+HO,"{'O': 1, 'H': 1}",17.0027396518,neutral,0,POMH,Polyoxymethylene Homopolymer,neutral_loss,break 1 bond(s) | H shift +1 | -CH3 | ; | break 1 bond(s) | H shift +1 | -CH3,1,1,,CH3,"[1, 2, 6, 7, 8]",0.44999999999999996
+C4H12ClO2,"{'C': 4, 'H': 12, 'O': 2, 'Cl': 1}",127.0525823079,negative,-1,POMH,Polyoxymethylene Homopolymer,dimer,2M | Cl,0,0,Cl,,,0.43
+C4H12NaO2,"{'C': 4, 'H': 12, 'O': 2, 'Na': 1}",115.0734989079,positive,1,POMH,Polyoxymethylene Homopolymer,dimer,2M | Na,0,0,Na,,,0.43
+CH2ClO,"{'O': 1, 'C': 1, 'H': 2, 'Cl': 1}",64.97941736602999,negative,-1,POMH,Polyoxymethylene Homopolymer,adduct,break 1 bond(s) | H shift -1 | Cl | ; | break 1 bond(s) | H shift -1 | Cl,1,-1,Cl,,"[1, 2, 6, 7, 8]",0.42999999999999994
+CH2KO,"{'O': 1, 'C': 1, 'H': 2, 'K': 1}",68.97427117043,positive,1,POMH,Polyoxymethylene Homopolymer,adduct,break 1 bond(s) | H shift -1 | K | ; | break 1 bond(s) | H shift -1 | K,1,-1,K,,"[1, 2, 6, 7, 8]",0.42999999999999994
+CH2NaO,"{'O': 1, 'C': 1, 'H': 2, 'Na': 1}",53.00033396603,positive,1,POMH,Polyoxymethylene Homopolymer,adduct,break 1 bond(s) | H shift -1 | Na | ; | break 1 bond(s) | H shift -1 | Na,1,-1,Na,,"[1, 2, 6, 7, 8]",0.42999999999999994
+CH2O2,"{'O': 2, 'C': 1, 'H': 2}",46.0054793036,negative,-1,POMH,Polyoxymethylene Homopolymer,adduct,break 1 bond(s) | H shift -1 | O | ; | break 1 bond(s) | H shift -2 | OH | ; | break 1 bond(s) | H shift -1 | O,1,-1,O,,"[1, 2, 6, 7, 8]",0.42999999999999994
+CH4ClO,"{'O': 1, 'C': 1, 'H': 4, 'Cl': 1}",66.99506743049,negative,-1,POMH,Polyoxymethylene Homopolymer,adduct,break 1 bond(s) | H shift +1 | Cl | ; | break 1 bond(s) | H shift +1 | Cl,1,1,Cl,,"[1, 2, 6, 7, 8]",0.42999999999999994
+CH4KO,"{'O': 1, 'C': 1, 'H': 4, 'K': 1}",70.98992123489,positive,1,POMH,Polyoxymethylene Homopolymer,adduct,break 1 bond(s) | H shift +1 | K | ; | break 1 bond(s) | H shift +1 | K,1,1,K,,"[1, 2, 6, 7, 8]",0.42999999999999994
+CH4NaO,"{'O': 1, 'C': 1, 'H': 4, 'Na': 1}",55.01598403049,positive,1,POMH,Polyoxymethylene Homopolymer,adduct,break 1 bond(s) | H shift +1 | Na | ; | break 1 bond(s) | H shift +1 | Na,1,1,Na,,"[1, 2, 6, 7, 8]",0.42999999999999994
+CH5O2,"{'O': 2, 'C': 1, 'H': 5}",49.028954400290004,negative,-1,POMH,Polyoxymethylene Homopolymer,adduct,break 1 bond(s) | H shift +1 | OH | ; | break 1 bond(s) | H shift +2 | O | ; | break 1 bond(s) | H shift +1 | OH,1,1,OH,,"[1, 2, 6, 7, 8]",0.42999999999999994
+H,{'H': 1},1.00782503223,neutral,0,POMH,Polyoxymethylene Homopolymer,neutral_loss,break 1 bond(s) | H shift -2 | -CO | ; | break 1 bond(s) | H shift -2 | -CO,1,-2,,CO,"[1, 2, 6, 7, 8]",0.4
+H2O,"{'O': 1, 'H': 2}",18.01056468403,neutral,0,POMH,Polyoxymethylene Homopolymer,neutral_loss,break 1 bond(s) | H shift +2 | -CH3 | ; | break 1 bond(s) | H shift +2 | -CH3,1,2,,CH3,"[1, 2, 6, 7, 8]",0.4
+H5,{'H': 5},5.03912516115,neutral,0,POMH,Polyoxymethylene Homopolymer,neutral_loss,break 1 bond(s) | H shift +2 | -CO | ; | break 1 bond(s) | H shift +2 | -CO,1,2,,CO,"[1, 2, 6, 7, 8]",0.4
+CH5ClO,"{'O': 1, 'C': 1, 'H': 5, 'Cl': 1}",68.00289246272,negative,-1,POMH,Polyoxymethylene Homopolymer,adduct,break 1 bond(s) | H shift +2 | Cl | ; | break 1 bond(s) | H shift +2 | Cl,1,2,Cl,,"[1, 2, 6, 7, 8]",0.38
+CH5KO,"{'O': 1, 'C': 1, 'H': 5, 'K': 1}",71.99774626712,positive,1,POMH,Polyoxymethylene Homopolymer,adduct,break 1 bond(s) | H shift +2 | K | ; | break 1 bond(s) | H shift +2 | K,1,2,K,,"[1, 2, 6, 7, 8]",0.38
+CH5NaO,"{'O': 1, 'C': 1, 'H': 5, 'Na': 1}",56.023809062720005,positive,1,POMH,Polyoxymethylene Homopolymer,adduct,break 1 bond(s) | H shift +2 | Na | ; | break 1 bond(s) | H shift +2 | Na,1,2,Na,,"[1, 2, 6, 7, 8]",0.38
+CH6O2,"{'O': 2, 'C': 1, 'H': 6}",50.03677943252,negative,-1,POMH,Polyoxymethylene Homopolymer,adduct,break 1 bond(s) | H shift +2 | OH | ; | break 1 bond(s) | H shift +2 | OH,1,2,OH,,"[1, 2, 6, 7, 8]",0.38
+CHClO,"{'O': 1, 'C': 1, 'H': 1, 'Cl': 1}",63.9715923338,negative,-1,POMH,Polyoxymethylene Homopolymer,adduct,break 1 bond(s) | H shift -2 | Cl | ; | break 1 bond(s) | H shift -2 | Cl,1,-2,Cl,,"[1, 2, 6, 7, 8]",0.38
+CHKO,"{'O': 1, 'C': 1, 'H': 1, 'K': 1}",67.9664461382,positive,1,POMH,Polyoxymethylene Homopolymer,adduct,break 1 bond(s) | H shift -2 | K | ; | break 1 bond(s) | H shift -2 | K,1,-2,K,,"[1, 2, 6, 7, 8]",0.38
+CHNaO,"{'O': 1, 'C': 1, 'H': 1, 'Na': 1}",51.9925089338,positive,1,POMH,Polyoxymethylene Homopolymer,adduct,break 1 bond(s) | H shift -2 | Na | ; | break 1 bond(s) | H shift -2 | Na,1,-2,Na,,"[1, 2, 6, 7, 8]",0.38
+CHO2,"{'O': 2, 'C': 1, 'H': 1}",44.99765427137,negative,-1,POMH,Polyoxymethylene Homopolymer,adduct,break 1 bond(s) | H shift -2 | O | ; | break 1 bond(s) | H shift -2 | O,1,-2,O,,"[1, 2, 6, 7, 8]",0.38

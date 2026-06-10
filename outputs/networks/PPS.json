@@ -1,0 +1,4853 @@
+{
+  "compound_id": "PPS",
+  "name": "Polyphenylene Sulfide",
+  "smiles": "Sc1ccc(S)cc1",
+  "parent_formula": "C6H6S2",
+  "records": [
+    {
+      "formula": "C6H6S2",
+      "counts": {
+        "C": 6,
+        "H": 6,
+        "S": 2
+      },
+      "exact_mass": 141.99109254218,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "source_compound_id": "PPS",
+      "source_name": "Polyphenylene Sulfide",
+      "generation_type": "parent",
+      "path": [
+        "M"
+      ],
+      "broken_bonds": 0,
+      "h_shift": 0,
+      "adduct": null,
+      "neutral_losses": [],
+      "fragment_atom_indices": null,
+      "score": 1.0
+    },
+    {
+      "formula": "C6H5S2",
+      "counts": {
+        "C": 6,
+        "H": 5,
+        "S": 2
+      },
+      "exact_mass": 140.98326750995,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "PPS",
+      "source_name": "Polyphenylene Sulfide",
+      "generation_type": "adduct",
+      "path": [
+        "M",
+        "-H"
+      ],
+      "broken_bonds": 0,
+      "h_shift": 0,
+      "adduct": "-H",
+      "neutral_losses": [],
+      "fragment_atom_indices": null,
+      "score": 0.75
+    },
+    {
+      "formula": "C6H7S2",
+      "counts": {
+        "C": 6,
+        "H": 7,
+        "S": 2
+      },
+      "exact_mass": 142.99891757441,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "PPS",
+      "source_name": "Polyphenylene Sulfide",
+      "generation_type": "adduct",
+      "path": [
+        "M",
+        "H"
+      ],
+      "broken_bonds": 0,
+      "h_shift": 0,
+      "adduct": "H",
+      "neutral_losses": [],
+      "fragment_atom_indices": null,
+      "score": 0.75
+    },
+    {
+      "formula": "C6H4S2",
+      "counts": {
+        "C": 6,
+        "H": 4,
+        "S": 2
+      },
+      "exact_mass": 139.97544247772,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "PPS",
+      "source_name": "Polyphenylene Sulfide",
+      "generation_type": "adduct",
+      "path": [
+        "M",
+        "H shift -1",
+        "-H"
+      ],
+      "broken_bonds": 0,
+      "h_shift": -1,
+      "adduct": "-H",
+      "neutral_losses": [],
+      "fragment_atom_indices": null,
+      "score": 0.7
+    },
+    {
+      "formula": "C6H5S2",
+      "counts": {
+        "C": 6,
+        "H": 5,
+        "S": 2
+      },
+      "exact_mass": 140.98326750995,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "source_compound_id": "PPS",
+      "source_name": "Polyphenylene Sulfide",
+      "generation_type": "h_shift",
+      "path": [
+        "M",
+        "H shift -1"
+      ],
+      "broken_bonds": 0,
+      "h_shift": -1,
+      "adduct": null,
+      "neutral_losses": [],
+      "fragment_atom_indices": null,
+      "score": 0.7
+    },
+    {
+      "formula": "C6H6S2",
+      "counts": {
+        "C": 6,
+        "H": 6,
+        "S": 2
+      },
+      "exact_mass": 141.99109254218,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "PPS",
+      "source_name": "Polyphenylene Sulfide",
+      "generation_type": "adduct",
+      "path": [
+        "M",
+        "H shift -1",
+        "H"
+      ],
+      "broken_bonds": 0,
+      "h_shift": -1,
+      "adduct": "H",
+      "neutral_losses": [],
+      "fragment_atom_indices": null,
+      "score": 0.7
+    },
+    {
+      "formula": "C6H6S2",
+      "counts": {
+        "C": 6,
+        "H": 6,
+        "S": 2
+      },
+      "exact_mass": 141.99109254218,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "PPS",
+      "source_name": "Polyphenylene Sulfide",
+      "generation_type": "adduct",
+      "path": [
+        "M",
+        "H shift +1",
+        "-H"
+      ],
+      "broken_bonds": 0,
+      "h_shift": 1,
+      "adduct": "-H",
+      "neutral_losses": [],
+      "fragment_atom_indices": null,
+      "score": 0.7
+    },
+    {
+      "formula": "C6H7S2",
+      "counts": {
+        "C": 6,
+        "H": 7,
+        "S": 2
+      },
+      "exact_mass": 142.99891757441,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "source_compound_id": "PPS",
+      "source_name": "Polyphenylene Sulfide",
+      "generation_type": "h_shift",
+      "path": [
+        "M",
+        "H shift +1"
+      ],
+      "broken_bonds": 0,
+      "h_shift": 1,
+      "adduct": null,
+      "neutral_losses": [],
+      "fragment_atom_indices": null,
+      "score": 0.7
+    },
+    {
+      "formula": "C6H8S2",
+      "counts": {
+        "C": 6,
+        "H": 8,
+        "S": 2
+      },
+      "exact_mass": 144.00674260664,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "PPS",
+      "source_name": "Polyphenylene Sulfide",
+      "generation_type": "adduct",
+      "path": [
+        "M",
+        "H shift +1",
+        "H"
+      ],
+      "broken_bonds": 0,
+      "h_shift": 1,
+      "adduct": "H",
+      "neutral_losses": [],
+      "fragment_atom_indices": null,
+      "score": 0.7
+    },
+    {
+      "formula": "C5H3S2",
+      "counts": {
+        "C": 5,
+        "H": 3,
+        "S": 2
+      },
+      "exact_mass": 126.96761744549,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "source_compound_id": "PPS",
+      "source_name": "Polyphenylene Sulfide",
+      "generation_type": "neutral_loss",
+      "path": [
+        "M",
+        "-CH3"
+      ],
+      "broken_bonds": 0,
+      "h_shift": 0,
+      "adduct": null,
+      "neutral_losses": [
+        "CH3"
+      ],
+      "fragment_atom_indices": null,
+      "score": 0.65
+    },
+    {
+      "formula": "C6H3S2",
+      "counts": {
+        "C": 6,
+        "H": 3,
+        "S": 2
+      },
+      "exact_mass": 138.96761744549,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "PPS",
+      "source_name": "Polyphenylene Sulfide",
+      "generation_type": "adduct",
+      "path": [
+        "M",
+        "H shift -2",
+        "-H"
+      ],
+      "broken_bonds": 0,
+      "h_shift": -2,
+      "adduct": "-H",
+      "neutral_losses": [],
+      "fragment_atom_indices": null,
+      "score": 0.65
+    },
+    {
+      "formula": "C6H4S2",
+      "counts": {
+        "C": 6,
+        "H": 4,
+        "S": 2
+      },
+      "exact_mass": 139.97544247772,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "source_compound_id": "PPS",
+      "source_name": "Polyphenylene Sulfide",
+      "generation_type": "h_shift",
+      "path": [
+        "M",
+        "H shift -2"
+      ],
+      "broken_bonds": 0,
+      "h_shift": -2,
+      "adduct": null,
+      "neutral_losses": [],
+      "fragment_atom_indices": null,
+      "score": 0.65
+    },
+    {
+      "formula": "C6H4S2",
+      "counts": {
+        "C": 6,
+        "H": 4,
+        "S": 2
+      },
+      "exact_mass": 139.97544247772,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "source_compound_id": "PPS",
+      "source_name": "Polyphenylene Sulfide",
+      "generation_type": "neutral_loss",
+      "path": [
+        "M",
+        "-H2"
+      ],
+      "broken_bonds": 0,
+      "h_shift": 0,
+      "adduct": null,
+      "neutral_losses": [
+        "H2"
+      ],
+      "fragment_atom_indices": null,
+      "score": 0.65
+    },
+    {
+      "formula": "C6H5S2",
+      "counts": {
+        "C": 6,
+        "H": 5,
+        "S": 2
+      },
+      "exact_mass": 140.98326750995,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "PPS",
+      "source_name": "Polyphenylene Sulfide",
+      "generation_type": "adduct",
+      "path": [
+        "M",
+        "H shift -2",
+        "H"
+      ],
+      "broken_bonds": 0,
+      "h_shift": -2,
+      "adduct": "H",
+      "neutral_losses": [],
+      "fragment_atom_indices": null,
+      "score": 0.65
+    },
+    {
+      "formula": "C6H7S2",
+      "counts": {
+        "C": 6,
+        "H": 7,
+        "S": 2
+      },
+      "exact_mass": 142.99891757441,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "PPS",
+      "source_name": "Polyphenylene Sulfide",
+      "generation_type": "adduct",
+      "path": [
+        "M",
+        "H shift +2",
+        "-H"
+      ],
+      "broken_bonds": 0,
+      "h_shift": 2,
+      "adduct": "-H",
+      "neutral_losses": [],
+      "fragment_atom_indices": null,
+      "score": 0.65
+    },
+    {
+      "formula": "C6H8S2",
+      "counts": {
+        "C": 6,
+        "H": 8,
+        "S": 2
+      },
+      "exact_mass": 144.00674260664,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "source_compound_id": "PPS",
+      "source_name": "Polyphenylene Sulfide",
+      "generation_type": "h_shift",
+      "path": [
+        "M",
+        "H shift +2"
+      ],
+      "broken_bonds": 0,
+      "h_shift": 2,
+      "adduct": null,
+      "neutral_losses": [],
+      "fragment_atom_indices": null,
+      "score": 0.65
+    },
+    {
+      "formula": "C6H9S2",
+      "counts": {
+        "C": 6,
+        "H": 9,
+        "S": 2
+      },
+      "exact_mass": 145.01456763887,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "PPS",
+      "source_name": "Polyphenylene Sulfide",
+      "generation_type": "adduct",
+      "path": [
+        "M",
+        "H shift +2",
+        "H"
+      ],
+      "broken_bonds": 0,
+      "h_shift": 2,
+      "adduct": "H",
+      "neutral_losses": [],
+      "fragment_atom_indices": null,
+      "score": 0.65
+    },
+    {
+      "formula": "C6H6ClS2",
+      "counts": {
+        "C": 6,
+        "H": 6,
+        "S": 2,
+        "Cl": 1
+      },
+      "exact_mass": 176.95994522418,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "PPS",
+      "source_name": "Polyphenylene Sulfide",
+      "generation_type": "adduct",
+      "path": [
+        "M",
+        "Cl"
+      ],
+      "broken_bonds": 0,
+      "h_shift": 0,
+      "adduct": "Cl",
+      "neutral_losses": [],
+      "fragment_atom_indices": null,
+      "score": 0.63
+    },
+    {
+      "formula": "C6H6KS2",
+      "counts": {
+        "C": 6,
+        "H": 6,
+        "S": 2,
+        "K": 1
+      },
+      "exact_mass": 180.95479902858,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "PPS",
+      "source_name": "Polyphenylene Sulfide",
+      "generation_type": "adduct",
+      "path": [
+        "M",
+        "K"
+      ],
+      "broken_bonds": 0,
+      "h_shift": 0,
+      "adduct": "K",
+      "neutral_losses": [],
+      "fragment_atom_indices": null,
+      "score": 0.63
+    },
+    {
+      "formula": "C6H6NaS2",
+      "counts": {
+        "C": 6,
+        "H": 6,
+        "S": 2,
+        "Na": 1
+      },
+      "exact_mass": 164.98086182418,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "PPS",
+      "source_name": "Polyphenylene Sulfide",
+      "generation_type": "adduct",
+      "path": [
+        "M",
+        "Na"
+      ],
+      "broken_bonds": 0,
+      "h_shift": 0,
+      "adduct": "Na",
+      "neutral_losses": [],
+      "fragment_atom_indices": null,
+      "score": 0.63
+    },
+    {
+      "formula": "C6H6OS2",
+      "counts": {
+        "C": 6,
+        "H": 6,
+        "S": 2,
+        "O": 1
+      },
+      "exact_mass": 157.98600716175,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "PPS",
+      "source_name": "Polyphenylene Sulfide",
+      "generation_type": "adduct",
+      "path": [
+        "M",
+        "O"
+      ],
+      "broken_bonds": 0,
+      "h_shift": 0,
+      "adduct": "O",
+      "neutral_losses": [],
+      "fragment_atom_indices": null,
+      "score": 0.63
+    },
+    {
+      "formula": "C6H7OS2",
+      "counts": {
+        "C": 6,
+        "H": 7,
+        "S": 2,
+        "O": 1
+      },
+      "exact_mass": 158.99383219398,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "PPS",
+      "source_name": "Polyphenylene Sulfide",
+      "generation_type": "adduct",
+      "path": [
+        "M",
+        "OH",
+        ";",
+        "M",
+        "H shift +1",
+        "O"
+      ],
+      "broken_bonds": 0,
+      "h_shift": 0,
+      "adduct": "OH",
+      "neutral_losses": [],
+      "fragment_atom_indices": null,
+      "score": 0.63
+    },
+    {
+      "formula": "C5H2S2",
+      "counts": {
+        "C": 5,
+        "H": 2,
+        "S": 2
+      },
+      "exact_mass": 125.95979241326,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "source_compound_id": "PPS",
+      "source_name": "Polyphenylene Sulfide",
+      "generation_type": "neutral_loss",
+      "path": [
+        "M",
+        "H shift -1",
+        "-CH3"
+      ],
+      "broken_bonds": 0,
+      "h_shift": -1,
+      "adduct": null,
+      "neutral_losses": [
+        "CH3"
+      ],
+      "fragment_atom_indices": null,
+      "score": 0.6
+    },
+    {
+      "formula": "C5H4S2",
+      "counts": {
+        "C": 5,
+        "H": 4,
+        "S": 2
+      },
+      "exact_mass": 127.97544247772,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "source_compound_id": "PPS",
+      "source_name": "Polyphenylene Sulfide",
+      "generation_type": "neutral_loss",
+      "path": [
+        "M",
+        "H shift +1",
+        "-CH3"
+      ],
+      "broken_bonds": 0,
+      "h_shift": 1,
+      "adduct": null,
+      "neutral_losses": [
+        "CH3"
+      ],
+      "fragment_atom_indices": null,
+      "score": 0.6
+    },
+    {
+      "formula": "C6H3S2",
+      "counts": {
+        "C": 6,
+        "H": 3,
+        "S": 2
+      },
+      "exact_mass": 138.96761744549,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "source_compound_id": "PPS",
+      "source_name": "Polyphenylene Sulfide",
+      "generation_type": "neutral_loss",
+      "path": [
+        "M",
+        "H shift -1",
+        "-H2"
+      ],
+      "broken_bonds": 0,
+      "h_shift": -1,
+      "adduct": null,
+      "neutral_losses": [
+        "H2"
+      ],
+      "fragment_atom_indices": null,
+      "score": 0.6
+    },
+    {
+      "formula": "C6H4S",
+      "counts": {
+        "C": 6,
+        "S": 1,
+        "H": 4
+      },
+      "exact_mass": 108.00337130332,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "PPS",
+      "source_name": "Polyphenylene Sulfide",
+      "generation_type": "adduct",
+      "path": [
+        "break 1 bond(s)",
+        "-H",
+        ";",
+        "break 1 bond(s)",
+        "-H"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 0,
+      "adduct": "-H",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "score": 0.6
+    },
+    {
+      "formula": "C6H5S",
+      "counts": {
+        "C": 6,
+        "S": 1,
+        "H": 5
+      },
+      "exact_mass": 109.01119633555,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "source_compound_id": "PPS",
+      "source_name": "Polyphenylene Sulfide",
+      "generation_type": "fragment",
+      "path": [
+        "break 1 bond(s)",
+        ";",
+        "break 1 bond(s)"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 0,
+      "adduct": null,
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "score": 0.6
+    },
+    {
+      "formula": "C6H5S2",
+      "counts": {
+        "C": 6,
+        "H": 5,
+        "S": 2
+      },
+      "exact_mass": 140.98326750995,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "source_compound_id": "PPS",
+      "source_name": "Polyphenylene Sulfide",
+      "generation_type": "neutral_loss",
+      "path": [
+        "M",
+        "H shift +1",
+        "-H2"
+      ],
+      "broken_bonds": 0,
+      "h_shift": 1,
+      "adduct": null,
+      "neutral_losses": [
+        "H2"
+      ],
+      "fragment_atom_indices": null,
+      "score": 0.6
+    },
+    {
+      "formula": "C6H6S",
+      "counts": {
+        "C": 6,
+        "S": 1,
+        "H": 6
+      },
+      "exact_mass": 110.01902136778,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "PPS",
+      "source_name": "Polyphenylene Sulfide",
+      "generation_type": "adduct",
+      "path": [
+        "break 1 bond(s)",
+        "H",
+        ";",
+        "break 1 bond(s)",
+        "H"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 0,
+      "adduct": "H",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "score": 0.6
+    },
+    {
+      "formula": "C6H5ClS2",
+      "counts": {
+        "C": 6,
+        "H": 5,
+        "S": 2,
+        "Cl": 1
+      },
+      "exact_mass": 175.95212019195,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "PPS",
+      "source_name": "Polyphenylene Sulfide",
+      "generation_type": "adduct",
+      "path": [
+        "M",
+        "H shift -1",
+        "Cl"
+      ],
+      "broken_bonds": 0,
+      "h_shift": -1,
+      "adduct": "Cl",
+      "neutral_losses": [],
+      "fragment_atom_indices": null,
+      "score": 0.58
+    },
+    {
+      "formula": "C6H5KS2",
+      "counts": {
+        "C": 6,
+        "H": 5,
+        "S": 2,
+        "K": 1
+      },
+      "exact_mass": 179.94697399635,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "PPS",
+      "source_name": "Polyphenylene Sulfide",
+      "generation_type": "adduct",
+      "path": [
+        "M",
+        "H shift -1",
+        "K"
+      ],
+      "broken_bonds": 0,
+      "h_shift": -1,
+      "adduct": "K",
+      "neutral_losses": [],
+      "fragment_atom_indices": null,
+      "score": 0.58
+    },
+    {
+      "formula": "C6H5NaS2",
+      "counts": {
+        "C": 6,
+        "H": 5,
+        "S": 2,
+        "Na": 1
+      },
+      "exact_mass": 163.97303679195,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "PPS",
+      "source_name": "Polyphenylene Sulfide",
+      "generation_type": "adduct",
+      "path": [
+        "M",
+        "H shift -1",
+        "Na"
+      ],
+      "broken_bonds": 0,
+      "h_shift": -1,
+      "adduct": "Na",
+      "neutral_losses": [],
+      "fragment_atom_indices": null,
+      "score": 0.58
+    },
+    {
+      "formula": "C6H5OS2",
+      "counts": {
+        "C": 6,
+        "H": 5,
+        "S": 2,
+        "O": 1
+      },
+      "exact_mass": 156.97818212952,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "PPS",
+      "source_name": "Polyphenylene Sulfide",
+      "generation_type": "adduct",
+      "path": [
+        "M",
+        "H shift -1",
+        "O"
+      ],
+      "broken_bonds": 0,
+      "h_shift": -1,
+      "adduct": "O",
+      "neutral_losses": [],
+      "fragment_atom_indices": null,
+      "score": 0.58
+    },
+    {
+      "formula": "C6H7ClS2",
+      "counts": {
+        "C": 6,
+        "H": 7,
+        "S": 2,
+        "Cl": 1
+      },
+      "exact_mass": 177.96777025641,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "PPS",
+      "source_name": "Polyphenylene Sulfide",
+      "generation_type": "adduct",
+      "path": [
+        "M",
+        "H shift +1",
+        "Cl"
+      ],
+      "broken_bonds": 0,
+      "h_shift": 1,
+      "adduct": "Cl",
+      "neutral_losses": [],
+      "fragment_atom_indices": null,
+      "score": 0.58
+    },
+    {
+      "formula": "C6H7KS2",
+      "counts": {
+        "C": 6,
+        "H": 7,
+        "S": 2,
+        "K": 1
+      },
+      "exact_mass": 181.96262406081,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "PPS",
+      "source_name": "Polyphenylene Sulfide",
+      "generation_type": "adduct",
+      "path": [
+        "M",
+        "H shift +1",
+        "K"
+      ],
+      "broken_bonds": 0,
+      "h_shift": 1,
+      "adduct": "K",
+      "neutral_losses": [],
+      "fragment_atom_indices": null,
+      "score": 0.58
+    },
+    {
+      "formula": "C6H7NaS2",
+      "counts": {
+        "C": 6,
+        "H": 7,
+        "S": 2,
+        "Na": 1
+      },
+      "exact_mass": 165.98868685641,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "PPS",
+      "source_name": "Polyphenylene Sulfide",
+      "generation_type": "adduct",
+      "path": [
+        "M",
+        "H shift +1",
+        "Na"
+      ],
+      "broken_bonds": 0,
+      "h_shift": 1,
+      "adduct": "Na",
+      "neutral_losses": [],
+      "fragment_atom_indices": null,
+      "score": 0.58
+    },
+    {
+      "formula": "C6H8OS2",
+      "counts": {
+        "C": 6,
+        "H": 8,
+        "S": 2,
+        "O": 1
+      },
+      "exact_mass": 160.00165722621,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "PPS",
+      "source_name": "Polyphenylene Sulfide",
+      "generation_type": "adduct",
+      "path": [
+        "M",
+        "H shift +1",
+        "OH",
+        ";",
+        "M",
+        "H shift +2",
+        "O"
+      ],
+      "broken_bonds": 0,
+      "h_shift": 1,
+      "adduct": "OH",
+      "neutral_losses": [],
+      "fragment_atom_indices": null,
+      "score": 0.58
+    },
+    {
+      "formula": "C12H11S4",
+      "counts": {
+        "C": 12,
+        "H": 11,
+        "S": 4
+      },
+      "exact_mass": 282.97436005213,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "PPS",
+      "source_name": "Polyphenylene Sulfide",
+      "generation_type": "dimer",
+      "path": [
+        "2M",
+        "-H"
+      ],
+      "broken_bonds": 0,
+      "h_shift": 0,
+      "adduct": "-H",
+      "neutral_losses": [],
+      "fragment_atom_indices": null,
+      "score": 0.55
+    },
+    {
+      "formula": "C12H13S4",
+      "counts": {
+        "C": 12,
+        "H": 13,
+        "S": 4
+      },
+      "exact_mass": 284.99001011659,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "PPS",
+      "source_name": "Polyphenylene Sulfide",
+      "generation_type": "dimer",
+      "path": [
+        "2M",
+        "H"
+      ],
+      "broken_bonds": 0,
+      "h_shift": 0,
+      "adduct": "H",
+      "neutral_losses": [],
+      "fragment_atom_indices": null,
+      "score": 0.55
+    },
+    {
+      "formula": "C5H5S2",
+      "counts": {
+        "C": 5,
+        "H": 5,
+        "S": 2
+      },
+      "exact_mass": 128.98326750995,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "source_compound_id": "PPS",
+      "source_name": "Polyphenylene Sulfide",
+      "generation_type": "neutral_loss",
+      "path": [
+        "M",
+        "H shift +2",
+        "-CH3"
+      ],
+      "broken_bonds": 0,
+      "h_shift": 2,
+      "adduct": null,
+      "neutral_losses": [
+        "CH3"
+      ],
+      "fragment_atom_indices": null,
+      "score": 0.55
+    },
+    {
+      "formula": "C5HS2",
+      "counts": {
+        "C": 5,
+        "H": 1,
+        "S": 2
+      },
+      "exact_mass": 124.95196738103,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "source_compound_id": "PPS",
+      "source_name": "Polyphenylene Sulfide",
+      "generation_type": "neutral_loss",
+      "path": [
+        "M",
+        "H shift -2",
+        "-CH3"
+      ],
+      "broken_bonds": 0,
+      "h_shift": -2,
+      "adduct": null,
+      "neutral_losses": [
+        "CH3"
+      ],
+      "fragment_atom_indices": null,
+      "score": 0.55
+    },
+    {
+      "formula": "C6H2S2",
+      "counts": {
+        "C": 6,
+        "H": 2,
+        "S": 2
+      },
+      "exact_mass": 137.95979241326,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "source_compound_id": "PPS",
+      "source_name": "Polyphenylene Sulfide",
+      "generation_type": "neutral_loss",
+      "path": [
+        "M",
+        "H shift -2",
+        "-H2"
+      ],
+      "broken_bonds": 0,
+      "h_shift": -2,
+      "adduct": null,
+      "neutral_losses": [
+        "H2"
+      ],
+      "fragment_atom_indices": null,
+      "score": 0.55
+    },
+    {
+      "formula": "C6H6S2",
+      "counts": {
+        "C": 6,
+        "H": 6,
+        "S": 2
+      },
+      "exact_mass": 141.99109254218,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "source_compound_id": "PPS",
+      "source_name": "Polyphenylene Sulfide",
+      "generation_type": "neutral_loss",
+      "path": [
+        "M",
+        "H shift +2",
+        "-H2"
+      ],
+      "broken_bonds": 0,
+      "h_shift": 2,
+      "adduct": null,
+      "neutral_losses": [
+        "H2"
+      ],
+      "fragment_atom_indices": null,
+      "score": 0.55
+    },
+    {
+      "formula": "C6H3S",
+      "counts": {
+        "C": 6,
+        "S": 1,
+        "H": 3
+      },
+      "exact_mass": 106.99554627109,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "PPS",
+      "source_name": "Polyphenylene Sulfide",
+      "generation_type": "adduct",
+      "path": [
+        "break 1 bond(s)",
+        "H shift -1",
+        "-H",
+        ";",
+        "break 1 bond(s)",
+        "H shift -1",
+        "-H"
+      ],
+      "broken_bonds": 1,
+      "h_shift": -1,
+      "adduct": "-H",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "score": 0.5499999999999999
+    },
+    {
+      "formula": "C6H4S",
+      "counts": {
+        "C": 6,
+        "S": 1,
+        "H": 4
+      },
+      "exact_mass": 108.00337130332,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "source_compound_id": "PPS",
+      "source_name": "Polyphenylene Sulfide",
+      "generation_type": "h_shift",
+      "path": [
+        "break 1 bond(s)",
+        "H shift -1",
+        ";",
+        "break 1 bond(s)",
+        "H shift -1"
+      ],
+      "broken_bonds": 1,
+      "h_shift": -1,
+      "adduct": null,
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "score": 0.5499999999999999
+    },
+    {
+      "formula": "C6H5S",
+      "counts": {
+        "C": 6,
+        "S": 1,
+        "H": 5
+      },
+      "exact_mass": 109.01119633555,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "PPS",
+      "source_name": "Polyphenylene Sulfide",
+      "generation_type": "adduct",
+      "path": [
+        "break 1 bond(s)",
+        "H shift -1",
+        "H",
+        ";",
+        "break 1 bond(s)",
+        "H shift -1",
+        "H"
+      ],
+      "broken_bonds": 1,
+      "h_shift": -1,
+      "adduct": "H",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "score": 0.5499999999999999
+    },
+    {
+      "formula": "C6H5S",
+      "counts": {
+        "C": 6,
+        "S": 1,
+        "H": 5
+      },
+      "exact_mass": 109.01119633555,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "PPS",
+      "source_name": "Polyphenylene Sulfide",
+      "generation_type": "adduct",
+      "path": [
+        "break 1 bond(s)",
+        "H shift +1",
+        "-H",
+        ";",
+        "break 1 bond(s)",
+        "H shift +1",
+        "-H"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 1,
+      "adduct": "-H",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "score": 0.5499999999999999
+    },
+    {
+      "formula": "C6H6S",
+      "counts": {
+        "C": 6,
+        "S": 1,
+        "H": 6
+      },
+      "exact_mass": 110.01902136778,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "source_compound_id": "PPS",
+      "source_name": "Polyphenylene Sulfide",
+      "generation_type": "h_shift",
+      "path": [
+        "break 1 bond(s)",
+        "H shift +1",
+        ";",
+        "break 1 bond(s)",
+        "H shift +1"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 1,
+      "adduct": null,
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "score": 0.5499999999999999
+    },
+    {
+      "formula": "C6H7S",
+      "counts": {
+        "C": 6,
+        "S": 1,
+        "H": 7
+      },
+      "exact_mass": 111.02684640001,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "PPS",
+      "source_name": "Polyphenylene Sulfide",
+      "generation_type": "adduct",
+      "path": [
+        "break 1 bond(s)",
+        "H shift +1",
+        "H",
+        ";",
+        "break 1 bond(s)",
+        "H shift +1",
+        "H"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 1,
+      "adduct": "H",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "score": 0.5499999999999999
+    },
+    {
+      "formula": "C6H4ClS2",
+      "counts": {
+        "C": 6,
+        "H": 4,
+        "S": 2,
+        "Cl": 1
+      },
+      "exact_mass": 174.94429515971999,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "PPS",
+      "source_name": "Polyphenylene Sulfide",
+      "generation_type": "adduct",
+      "path": [
+        "M",
+        "H shift -2",
+        "Cl"
+      ],
+      "broken_bonds": 0,
+      "h_shift": -2,
+      "adduct": "Cl",
+      "neutral_losses": [],
+      "fragment_atom_indices": null,
+      "score": 0.53
+    },
+    {
+      "formula": "C6H4KS2",
+      "counts": {
+        "C": 6,
+        "H": 4,
+        "S": 2,
+        "K": 1
+      },
+      "exact_mass": 178.93914896412,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "PPS",
+      "source_name": "Polyphenylene Sulfide",
+      "generation_type": "adduct",
+      "path": [
+        "M",
+        "H shift -2",
+        "K"
+      ],
+      "broken_bonds": 0,
+      "h_shift": -2,
+      "adduct": "K",
+      "neutral_losses": [],
+      "fragment_atom_indices": null,
+      "score": 0.53
+    },
+    {
+      "formula": "C6H4NaS2",
+      "counts": {
+        "C": 6,
+        "H": 4,
+        "S": 2,
+        "Na": 1
+      },
+      "exact_mass": 162.96521175972,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "PPS",
+      "source_name": "Polyphenylene Sulfide",
+      "generation_type": "adduct",
+      "path": [
+        "M",
+        "H shift -2",
+        "Na"
+      ],
+      "broken_bonds": 0,
+      "h_shift": -2,
+      "adduct": "Na",
+      "neutral_losses": [],
+      "fragment_atom_indices": null,
+      "score": 0.53
+    },
+    {
+      "formula": "C6H4OS2",
+      "counts": {
+        "C": 6,
+        "H": 4,
+        "S": 2,
+        "O": 1
+      },
+      "exact_mass": 155.97035709729,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "PPS",
+      "source_name": "Polyphenylene Sulfide",
+      "generation_type": "adduct",
+      "path": [
+        "M",
+        "H shift -2",
+        "O"
+      ],
+      "broken_bonds": 0,
+      "h_shift": -2,
+      "adduct": "O",
+      "neutral_losses": [],
+      "fragment_atom_indices": null,
+      "score": 0.53
+    },
+    {
+      "formula": "C6H8ClS2",
+      "counts": {
+        "C": 6,
+        "H": 8,
+        "S": 2,
+        "Cl": 1
+      },
+      "exact_mass": 178.97559528864,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "PPS",
+      "source_name": "Polyphenylene Sulfide",
+      "generation_type": "adduct",
+      "path": [
+        "M",
+        "H shift +2",
+        "Cl"
+      ],
+      "broken_bonds": 0,
+      "h_shift": 2,
+      "adduct": "Cl",
+      "neutral_losses": [],
+      "fragment_atom_indices": null,
+      "score": 0.53
+    },
+    {
+      "formula": "C6H8KS2",
+      "counts": {
+        "C": 6,
+        "H": 8,
+        "S": 2,
+        "K": 1
+      },
+      "exact_mass": 182.97044909304,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "PPS",
+      "source_name": "Polyphenylene Sulfide",
+      "generation_type": "adduct",
+      "path": [
+        "M",
+        "H shift +2",
+        "K"
+      ],
+      "broken_bonds": 0,
+      "h_shift": 2,
+      "adduct": "K",
+      "neutral_losses": [],
+      "fragment_atom_indices": null,
+      "score": 0.53
+    },
+    {
+      "formula": "C6H8NaS2",
+      "counts": {
+        "C": 6,
+        "H": 8,
+        "S": 2,
+        "Na": 1
+      },
+      "exact_mass": 166.99651188864,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "PPS",
+      "source_name": "Polyphenylene Sulfide",
+      "generation_type": "adduct",
+      "path": [
+        "M",
+        "H shift +2",
+        "Na"
+      ],
+      "broken_bonds": 0,
+      "h_shift": 2,
+      "adduct": "Na",
+      "neutral_losses": [],
+      "fragment_atom_indices": null,
+      "score": 0.53
+    },
+    {
+      "formula": "C6H9OS2",
+      "counts": {
+        "C": 6,
+        "H": 9,
+        "S": 2,
+        "O": 1
+      },
+      "exact_mass": 161.00948225844,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "PPS",
+      "source_name": "Polyphenylene Sulfide",
+      "generation_type": "adduct",
+      "path": [
+        "M",
+        "H shift +2",
+        "OH"
+      ],
+      "broken_bonds": 0,
+      "h_shift": 2,
+      "adduct": "OH",
+      "neutral_losses": [],
+      "fragment_atom_indices": null,
+      "score": 0.53
+    },
+    {
+      "formula": "C5H2S",
+      "counts": {
+        "C": 5,
+        "S": 1,
+        "H": 2
+      },
+      "exact_mass": 93.98772123886,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "source_compound_id": "PPS",
+      "source_name": "Polyphenylene Sulfide",
+      "generation_type": "neutral_loss",
+      "path": [
+        "break 1 bond(s)",
+        "-CH3",
+        ";",
+        "break 1 bond(s)",
+        "-CH3"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 0,
+      "adduct": null,
+      "neutral_losses": [
+        "CH3"
+      ],
+      "fragment_atom_indices": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "score": 0.5
+    },
+    {
+      "formula": "C6H2S",
+      "counts": {
+        "C": 6,
+        "S": 1,
+        "H": 2
+      },
+      "exact_mass": 105.98772123886,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "PPS",
+      "source_name": "Polyphenylene Sulfide",
+      "generation_type": "adduct",
+      "path": [
+        "break 1 bond(s)",
+        "H shift -2",
+        "-H",
+        ";",
+        "break 1 bond(s)",
+        "H shift -2",
+        "-H"
+      ],
+      "broken_bonds": 1,
+      "h_shift": -2,
+      "adduct": "-H",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "score": 0.5
+    },
+    {
+      "formula": "C6H3S",
+      "counts": {
+        "C": 6,
+        "S": 1,
+        "H": 3
+      },
+      "exact_mass": 106.99554627109,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "source_compound_id": "PPS",
+      "source_name": "Polyphenylene Sulfide",
+      "generation_type": "h_shift",
+      "path": [
+        "break 1 bond(s)",
+        "H shift -2",
+        ";",
+        "break 1 bond(s)",
+        "H shift -2"
+      ],
+      "broken_bonds": 1,
+      "h_shift": -2,
+      "adduct": null,
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "score": 0.5
+    },
+    {
+      "formula": "C6H3S",
+      "counts": {
+        "C": 6,
+        "S": 1,
+        "H": 3
+      },
+      "exact_mass": 106.99554627109,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "source_compound_id": "PPS",
+      "source_name": "Polyphenylene Sulfide",
+      "generation_type": "neutral_loss",
+      "path": [
+        "break 1 bond(s)",
+        "-H2",
+        ";",
+        "break 1 bond(s)",
+        "-H2"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 0,
+      "adduct": null,
+      "neutral_losses": [
+        "H2"
+      ],
+      "fragment_atom_indices": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "score": 0.5
+    },
+    {
+      "formula": "C6H4S",
+      "counts": {
+        "C": 6,
+        "S": 1,
+        "H": 4
+      },
+      "exact_mass": 108.00337130332,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "PPS",
+      "source_name": "Polyphenylene Sulfide",
+      "generation_type": "adduct",
+      "path": [
+        "break 1 bond(s)",
+        "H shift -2",
+        "H",
+        ";",
+        "break 1 bond(s)",
+        "H shift -2",
+        "H"
+      ],
+      "broken_bonds": 1,
+      "h_shift": -2,
+      "adduct": "H",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "score": 0.5
+    },
+    {
+      "formula": "C6H6S",
+      "counts": {
+        "C": 6,
+        "S": 1,
+        "H": 6
+      },
+      "exact_mass": 110.01902136778,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "PPS",
+      "source_name": "Polyphenylene Sulfide",
+      "generation_type": "adduct",
+      "path": [
+        "break 1 bond(s)",
+        "H shift +2",
+        "-H",
+        ";",
+        "break 1 bond(s)",
+        "H shift +2",
+        "-H"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 2,
+      "adduct": "-H",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "score": 0.5
+    },
+    {
+      "formula": "C6H7S",
+      "counts": {
+        "C": 6,
+        "S": 1,
+        "H": 7
+      },
+      "exact_mass": 111.02684640001,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "source_compound_id": "PPS",
+      "source_name": "Polyphenylene Sulfide",
+      "generation_type": "h_shift",
+      "path": [
+        "break 1 bond(s)",
+        "H shift +2",
+        ";",
+        "break 1 bond(s)",
+        "H shift +2"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 2,
+      "adduct": null,
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "score": 0.5
+    },
+    {
+      "formula": "C6H8S",
+      "counts": {
+        "C": 6,
+        "S": 1,
+        "H": 8
+      },
+      "exact_mass": 112.03467143224,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "PPS",
+      "source_name": "Polyphenylene Sulfide",
+      "generation_type": "adduct",
+      "path": [
+        "break 1 bond(s)",
+        "H shift +2",
+        "H",
+        ";",
+        "break 1 bond(s)",
+        "H shift +2",
+        "H"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 2,
+      "adduct": "H",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "score": 0.5
+    },
+    {
+      "formula": "C6H5ClS",
+      "counts": {
+        "C": 6,
+        "S": 1,
+        "H": 5,
+        "Cl": 1
+      },
+      "exact_mass": 143.98004901755,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "PPS",
+      "source_name": "Polyphenylene Sulfide",
+      "generation_type": "adduct",
+      "path": [
+        "break 1 bond(s)",
+        "Cl",
+        ";",
+        "break 1 bond(s)",
+        "Cl"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 0,
+      "adduct": "Cl",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "score": 0.48
+    },
+    {
+      "formula": "C6H5KS",
+      "counts": {
+        "C": 6,
+        "S": 1,
+        "H": 5,
+        "K": 1
+      },
+      "exact_mass": 147.97490282195,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "PPS",
+      "source_name": "Polyphenylene Sulfide",
+      "generation_type": "adduct",
+      "path": [
+        "break 1 bond(s)",
+        "K",
+        ";",
+        "break 1 bond(s)",
+        "K"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 0,
+      "adduct": "K",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "score": 0.48
+    },
+    {
+      "formula": "C6H5NaS",
+      "counts": {
+        "C": 6,
+        "S": 1,
+        "H": 5,
+        "Na": 1
+      },
+      "exact_mass": 132.00096561755,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "PPS",
+      "source_name": "Polyphenylene Sulfide",
+      "generation_type": "adduct",
+      "path": [
+        "break 1 bond(s)",
+        "Na",
+        ";",
+        "break 1 bond(s)",
+        "Na"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 0,
+      "adduct": "Na",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "score": 0.48
+    },
+    {
+      "formula": "C6H5OS",
+      "counts": {
+        "C": 6,
+        "S": 1,
+        "H": 5,
+        "O": 1
+      },
+      "exact_mass": 125.00611095512,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "PPS",
+      "source_name": "Polyphenylene Sulfide",
+      "generation_type": "adduct",
+      "path": [
+        "break 1 bond(s)",
+        "O",
+        ";",
+        "break 1 bond(s)",
+        "H shift -1",
+        "OH",
+        ";",
+        "break 1 bond(s)",
+        "O"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 0,
+      "adduct": "O",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "score": 0.48
+    },
+    {
+      "formula": "C6H6OS",
+      "counts": {
+        "C": 6,
+        "S": 1,
+        "H": 6,
+        "O": 1
+      },
+      "exact_mass": 126.01393598735,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "PPS",
+      "source_name": "Polyphenylene Sulfide",
+      "generation_type": "adduct",
+      "path": [
+        "break 1 bond(s)",
+        "OH",
+        ";",
+        "break 1 bond(s)",
+        "H shift +1",
+        "O",
+        ";",
+        "break 1 bond(s)",
+        "OH"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 0,
+      "adduct": "OH",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "score": 0.48
+    },
+    {
+      "formula": "C6H3",
+      "counts": {
+        "C": 6,
+        "H": 3
+      },
+      "exact_mass": 75.02347509669,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "PPS",
+      "source_name": "Polyphenylene Sulfide",
+      "generation_type": "adduct",
+      "path": [
+        "break 2 bond(s)",
+        "-H"
+      ],
+      "broken_bonds": 2,
+      "h_shift": 0,
+      "adduct": "-H",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        1,
+        2,
+        3,
+        4,
+        6,
+        7,
+        9,
+        10,
+        12,
+        13
+      ],
+      "score": 0.45
+    },
+    {
+      "formula": "C6H4",
+      "counts": {
+        "C": 6,
+        "H": 4
+      },
+      "exact_mass": 76.03130012892,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "source_compound_id": "PPS",
+      "source_name": "Polyphenylene Sulfide",
+      "generation_type": "fragment",
+      "path": [
+        "break 2 bond(s)"
+      ],
+      "broken_bonds": 2,
+      "h_shift": 0,
+      "adduct": null,
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        1,
+        2,
+        3,
+        4,
+        6,
+        7,
+        9,
+        10,
+        12,
+        13
+      ],
+      "score": 0.45
+    },
+    {
+      "formula": "C6H5",
+      "counts": {
+        "C": 6,
+        "H": 5
+      },
+      "exact_mass": 77.03912516115,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "PPS",
+      "source_name": "Polyphenylene Sulfide",
+      "generation_type": "adduct",
+      "path": [
+        "break 2 bond(s)",
+        "H"
+      ],
+      "broken_bonds": 2,
+      "h_shift": 0,
+      "adduct": "H",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        1,
+        2,
+        3,
+        4,
+        6,
+        7,
+        9,
+        10,
+        12,
+        13
+      ],
+      "score": 0.45
+    },
+    {
+      "formula": "C5H3S",
+      "counts": {
+        "C": 5,
+        "S": 1,
+        "H": 3
+      },
+      "exact_mass": 94.99554627109,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "source_compound_id": "PPS",
+      "source_name": "Polyphenylene Sulfide",
+      "generation_type": "neutral_loss",
+      "path": [
+        "break 1 bond(s)",
+        "H shift +1",
+        "-CH3",
+        ";",
+        "break 1 bond(s)",
+        "H shift +1",
+        "-CH3"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 1,
+      "adduct": null,
+      "neutral_losses": [
+        "CH3"
+      ],
+      "fragment_atom_indices": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "score": 0.44999999999999996
+    },
+    {
+      "formula": "C5HS",
+      "counts": {
+        "C": 5,
+        "S": 1,
+        "H": 1
+      },
+      "exact_mass": 92.97989620663,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "source_compound_id": "PPS",
+      "source_name": "Polyphenylene Sulfide",
+      "generation_type": "neutral_loss",
+      "path": [
+        "break 1 bond(s)",
+        "H shift -1",
+        "-CH3",
+        ";",
+        "break 1 bond(s)",
+        "H shift -1",
+        "-CH3"
+      ],
+      "broken_bonds": 1,
+      "h_shift": -1,
+      "adduct": null,
+      "neutral_losses": [
+        "CH3"
+      ],
+      "fragment_atom_indices": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "score": 0.44999999999999996
+    },
+    {
+      "formula": "C6H2S",
+      "counts": {
+        "C": 6,
+        "S": 1,
+        "H": 2
+      },
+      "exact_mass": 105.98772123886,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "source_compound_id": "PPS",
+      "source_name": "Polyphenylene Sulfide",
+      "generation_type": "neutral_loss",
+      "path": [
+        "break 1 bond(s)",
+        "H shift -1",
+        "-H2",
+        ";",
+        "break 1 bond(s)",
+        "H shift -1",
+        "-H2"
+      ],
+      "broken_bonds": 1,
+      "h_shift": -1,
+      "adduct": null,
+      "neutral_losses": [
+        "H2"
+      ],
+      "fragment_atom_indices": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "score": 0.44999999999999996
+    },
+    {
+      "formula": "C6H4S",
+      "counts": {
+        "C": 6,
+        "S": 1,
+        "H": 4
+      },
+      "exact_mass": 108.00337130332,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "source_compound_id": "PPS",
+      "source_name": "Polyphenylene Sulfide",
+      "generation_type": "neutral_loss",
+      "path": [
+        "break 1 bond(s)",
+        "H shift +1",
+        "-H2",
+        ";",
+        "break 1 bond(s)",
+        "H shift +1",
+        "-H2"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 1,
+      "adduct": null,
+      "neutral_losses": [
+        "H2"
+      ],
+      "fragment_atom_indices": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "score": 0.44999999999999996
+    },
+    {
+      "formula": "C12H12ClS4",
+      "counts": {
+        "C": 12,
+        "H": 12,
+        "S": 4,
+        "Cl": 1
+      },
+      "exact_mass": 318.95103776636,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "PPS",
+      "source_name": "Polyphenylene Sulfide",
+      "generation_type": "dimer",
+      "path": [
+        "2M",
+        "Cl"
+      ],
+      "broken_bonds": 0,
+      "h_shift": 0,
+      "adduct": "Cl",
+      "neutral_losses": [],
+      "fragment_atom_indices": null,
+      "score": 0.43
+    },
+    {
+      "formula": "C12H12NaS4",
+      "counts": {
+        "C": 12,
+        "H": 12,
+        "S": 4,
+        "Na": 1
+      },
+      "exact_mass": 306.97195436636,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "PPS",
+      "source_name": "Polyphenylene Sulfide",
+      "generation_type": "dimer",
+      "path": [
+        "2M",
+        "Na"
+      ],
+      "broken_bonds": 0,
+      "h_shift": 0,
+      "adduct": "Na",
+      "neutral_losses": [],
+      "fragment_atom_indices": null,
+      "score": 0.43
+    },
+    {
+      "formula": "C6H4ClS",
+      "counts": {
+        "C": 6,
+        "S": 1,
+        "H": 4,
+        "Cl": 1
+      },
+      "exact_mass": 142.97222398532,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "PPS",
+      "source_name": "Polyphenylene Sulfide",
+      "generation_type": "adduct",
+      "path": [
+        "break 1 bond(s)",
+        "H shift -1",
+        "Cl",
+        ";",
+        "break 1 bond(s)",
+        "H shift -1",
+        "Cl"
+      ],
+      "broken_bonds": 1,
+      "h_shift": -1,
+      "adduct": "Cl",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "score": 0.42999999999999994
+    },
+    {
+      "formula": "C6H4KS",
+      "counts": {
+        "C": 6,
+        "S": 1,
+        "H": 4,
+        "K": 1
+      },
+      "exact_mass": 146.96707778972,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "PPS",
+      "source_name": "Polyphenylene Sulfide",
+      "generation_type": "adduct",
+      "path": [
+        "break 1 bond(s)",
+        "H shift -1",
+        "K",
+        ";",
+        "break 1 bond(s)",
+        "H shift -1",
+        "K"
+      ],
+      "broken_bonds": 1,
+      "h_shift": -1,
+      "adduct": "K",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "score": 0.42999999999999994
+    },
+    {
+      "formula": "C6H4NaS",
+      "counts": {
+        "C": 6,
+        "S": 1,
+        "H": 4,
+        "Na": 1
+      },
+      "exact_mass": 130.99314058532,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "PPS",
+      "source_name": "Polyphenylene Sulfide",
+      "generation_type": "adduct",
+      "path": [
+        "break 1 bond(s)",
+        "H shift -1",
+        "Na",
+        ";",
+        "break 1 bond(s)",
+        "H shift -1",
+        "Na"
+      ],
+      "broken_bonds": 1,
+      "h_shift": -1,
+      "adduct": "Na",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "score": 0.42999999999999994
+    },
+    {
+      "formula": "C6H4OS",
+      "counts": {
+        "C": 6,
+        "S": 1,
+        "H": 4,
+        "O": 1
+      },
+      "exact_mass": 123.99828592289,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "PPS",
+      "source_name": "Polyphenylene Sulfide",
+      "generation_type": "adduct",
+      "path": [
+        "break 1 bond(s)",
+        "H shift -1",
+        "O",
+        ";",
+        "break 1 bond(s)",
+        "H shift -2",
+        "OH",
+        ";",
+        "break 1 bond(s)",
+        "H shift -1",
+        "O"
+      ],
+      "broken_bonds": 1,
+      "h_shift": -1,
+      "adduct": "O",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "score": 0.42999999999999994
+    },
+    {
+      "formula": "C6H6ClS",
+      "counts": {
+        "C": 6,
+        "S": 1,
+        "H": 6,
+        "Cl": 1
+      },
+      "exact_mass": 144.98787404978,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "PPS",
+      "source_name": "Polyphenylene Sulfide",
+      "generation_type": "adduct",
+      "path": [
+        "break 1 bond(s)",
+        "H shift +1",
+        "Cl",
+        ";",
+        "break 1 bond(s)",
+        "H shift +1",
+        "Cl"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 1,
+      "adduct": "Cl",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "score": 0.42999999999999994
+    },
+    {
+      "formula": "C6H6KS",
+      "counts": {
+        "C": 6,
+        "S": 1,
+        "H": 6,
+        "K": 1
+      },
+      "exact_mass": 148.98272785418,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "PPS",
+      "source_name": "Polyphenylene Sulfide",
+      "generation_type": "adduct",
+      "path": [
+        "break 1 bond(s)",
+        "H shift +1",
+        "K",
+        ";",
+        "break 1 bond(s)",
+        "H shift +1",
+        "K"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 1,
+      "adduct": "K",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "score": 0.42999999999999994
+    },
+    {
+      "formula": "C6H6NaS",
+      "counts": {
+        "C": 6,
+        "S": 1,
+        "H": 6,
+        "Na": 1
+      },
+      "exact_mass": 133.00879064978,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "PPS",
+      "source_name": "Polyphenylene Sulfide",
+      "generation_type": "adduct",
+      "path": [
+        "break 1 bond(s)",
+        "H shift +1",
+        "Na",
+        ";",
+        "break 1 bond(s)",
+        "H shift +1",
+        "Na"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 1,
+      "adduct": "Na",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "score": 0.42999999999999994
+    },
+    {
+      "formula": "C6H7OS",
+      "counts": {
+        "C": 6,
+        "S": 1,
+        "H": 7,
+        "O": 1
+      },
+      "exact_mass": 127.02176101958,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "PPS",
+      "source_name": "Polyphenylene Sulfide",
+      "generation_type": "adduct",
+      "path": [
+        "break 1 bond(s)",
+        "H shift +1",
+        "OH",
+        ";",
+        "break 1 bond(s)",
+        "H shift +2",
+        "O",
+        ";",
+        "break 1 bond(s)",
+        "H shift +1",
+        "OH"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 1,
+      "adduct": "OH",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "score": 0.42999999999999994
+    },
+    {
+      "formula": "C5H4S",
+      "counts": {
+        "C": 5,
+        "S": 1,
+        "H": 4
+      },
+      "exact_mass": 96.00337130332,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "source_compound_id": "PPS",
+      "source_name": "Polyphenylene Sulfide",
+      "generation_type": "neutral_loss",
+      "path": [
+        "break 1 bond(s)",
+        "H shift +2",
+        "-CH3",
+        ";",
+        "break 1 bond(s)",
+        "H shift +2",
+        "-CH3"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 2,
+      "adduct": null,
+      "neutral_losses": [
+        "CH3"
+      ],
+      "fragment_atom_indices": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "score": 0.4
+    },
+    {
+      "formula": "C5S",
+      "counts": {
+        "C": 5,
+        "S": 1
+      },
+      "exact_mass": 91.9720711744,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "source_compound_id": "PPS",
+      "source_name": "Polyphenylene Sulfide",
+      "generation_type": "neutral_loss",
+      "path": [
+        "break 1 bond(s)",
+        "H shift -2",
+        "-CH3",
+        ";",
+        "break 1 bond(s)",
+        "H shift -2",
+        "-CH3"
+      ],
+      "broken_bonds": 1,
+      "h_shift": -2,
+      "adduct": null,
+      "neutral_losses": [
+        "CH3"
+      ],
+      "fragment_atom_indices": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "score": 0.4
+    },
+    {
+      "formula": "C6H2",
+      "counts": {
+        "C": 6,
+        "H": 2
+      },
+      "exact_mass": 74.01565006446,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "PPS",
+      "source_name": "Polyphenylene Sulfide",
+      "generation_type": "adduct",
+      "path": [
+        "break 2 bond(s)",
+        "H shift -1",
+        "-H"
+      ],
+      "broken_bonds": 2,
+      "h_shift": -1,
+      "adduct": "-H",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        1,
+        2,
+        3,
+        4,
+        6,
+        7,
+        9,
+        10,
+        12,
+        13
+      ],
+      "score": 0.4
+    },
+    {
+      "formula": "C6H3",
+      "counts": {
+        "C": 6,
+        "H": 3
+      },
+      "exact_mass": 75.02347509669,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "source_compound_id": "PPS",
+      "source_name": "Polyphenylene Sulfide",
+      "generation_type": "h_shift",
+      "path": [
+        "break 2 bond(s)",
+        "H shift -1"
+      ],
+      "broken_bonds": 2,
+      "h_shift": -1,
+      "adduct": null,
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        1,
+        2,
+        3,
+        4,
+        6,
+        7,
+        9,
+        10,
+        12,
+        13
+      ],
+      "score": 0.4
+    },
+    {
+      "formula": "C6H4",
+      "counts": {
+        "C": 6,
+        "H": 4
+      },
+      "exact_mass": 76.03130012892,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "PPS",
+      "source_name": "Polyphenylene Sulfide",
+      "generation_type": "adduct",
+      "path": [
+        "break 2 bond(s)",
+        "H shift -1",
+        "H"
+      ],
+      "broken_bonds": 2,
+      "h_shift": -1,
+      "adduct": "H",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        1,
+        2,
+        3,
+        4,
+        6,
+        7,
+        9,
+        10,
+        12,
+        13
+      ],
+      "score": 0.4
+    },
+    {
+      "formula": "C6H4",
+      "counts": {
+        "C": 6,
+        "H": 4
+      },
+      "exact_mass": 76.03130012892,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "PPS",
+      "source_name": "Polyphenylene Sulfide",
+      "generation_type": "adduct",
+      "path": [
+        "break 2 bond(s)",
+        "H shift +1",
+        "-H"
+      ],
+      "broken_bonds": 2,
+      "h_shift": 1,
+      "adduct": "-H",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        1,
+        2,
+        3,
+        4,
+        6,
+        7,
+        9,
+        10,
+        12,
+        13
+      ],
+      "score": 0.4
+    },
+    {
+      "formula": "C6H5",
+      "counts": {
+        "C": 6,
+        "H": 5
+      },
+      "exact_mass": 77.03912516115,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "source_compound_id": "PPS",
+      "source_name": "Polyphenylene Sulfide",
+      "generation_type": "h_shift",
+      "path": [
+        "break 2 bond(s)",
+        "H shift +1"
+      ],
+      "broken_bonds": 2,
+      "h_shift": 1,
+      "adduct": null,
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        1,
+        2,
+        3,
+        4,
+        6,
+        7,
+        9,
+        10,
+        12,
+        13
+      ],
+      "score": 0.4
+    },
+    {
+      "formula": "C6H5S",
+      "counts": {
+        "C": 6,
+        "S": 1,
+        "H": 5
+      },
+      "exact_mass": 109.01119633555,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "source_compound_id": "PPS",
+      "source_name": "Polyphenylene Sulfide",
+      "generation_type": "neutral_loss",
+      "path": [
+        "break 1 bond(s)",
+        "H shift +2",
+        "-H2",
+        ";",
+        "break 1 bond(s)",
+        "H shift +2",
+        "-H2"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 2,
+      "adduct": null,
+      "neutral_losses": [
+        "H2"
+      ],
+      "fragment_atom_indices": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "score": 0.4
+    },
+    {
+      "formula": "C6H6",
+      "counts": {
+        "C": 6,
+        "H": 6
+      },
+      "exact_mass": 78.04695019338,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "PPS",
+      "source_name": "Polyphenylene Sulfide",
+      "generation_type": "adduct",
+      "path": [
+        "break 2 bond(s)",
+        "H shift +1",
+        "H"
+      ],
+      "broken_bonds": 2,
+      "h_shift": 1,
+      "adduct": "H",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        1,
+        2,
+        3,
+        4,
+        6,
+        7,
+        9,
+        10,
+        12,
+        13
+      ],
+      "score": 0.4
+    },
+    {
+      "formula": "C6HS",
+      "counts": {
+        "C": 6,
+        "S": 1,
+        "H": 1
+      },
+      "exact_mass": 104.97989620663,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "source_compound_id": "PPS",
+      "source_name": "Polyphenylene Sulfide",
+      "generation_type": "neutral_loss",
+      "path": [
+        "break 1 bond(s)",
+        "H shift -2",
+        "-H2",
+        ";",
+        "break 1 bond(s)",
+        "H shift -2",
+        "-H2"
+      ],
+      "broken_bonds": 1,
+      "h_shift": -2,
+      "adduct": null,
+      "neutral_losses": [
+        "H2"
+      ],
+      "fragment_atom_indices": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "score": 0.4
+    },
+    {
+      "formula": "C6H3ClS",
+      "counts": {
+        "C": 6,
+        "S": 1,
+        "H": 3,
+        "Cl": 1
+      },
+      "exact_mass": 141.96439895309,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "PPS",
+      "source_name": "Polyphenylene Sulfide",
+      "generation_type": "adduct",
+      "path": [
+        "break 1 bond(s)",
+        "H shift -2",
+        "Cl",
+        ";",
+        "break 1 bond(s)",
+        "H shift -2",
+        "Cl"
+      ],
+      "broken_bonds": 1,
+      "h_shift": -2,
+      "adduct": "Cl",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "score": 0.38
+    },
+    {
+      "formula": "C6H3KS",
+      "counts": {
+        "C": 6,
+        "S": 1,
+        "H": 3,
+        "K": 1
+      },
+      "exact_mass": 145.95925275749,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "PPS",
+      "source_name": "Polyphenylene Sulfide",
+      "generation_type": "adduct",
+      "path": [
+        "break 1 bond(s)",
+        "H shift -2",
+        "K",
+        ";",
+        "break 1 bond(s)",
+        "H shift -2",
+        "K"
+      ],
+      "broken_bonds": 1,
+      "h_shift": -2,
+      "adduct": "K",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "score": 0.38
+    },
+    {
+      "formula": "C6H3NaS",
+      "counts": {
+        "C": 6,
+        "S": 1,
+        "H": 3,
+        "Na": 1
+      },
+      "exact_mass": 129.98531555309,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "PPS",
+      "source_name": "Polyphenylene Sulfide",
+      "generation_type": "adduct",
+      "path": [
+        "break 1 bond(s)",
+        "H shift -2",
+        "Na",
+        ";",
+        "break 1 bond(s)",
+        "H shift -2",
+        "Na"
+      ],
+      "broken_bonds": 1,
+      "h_shift": -2,
+      "adduct": "Na",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "score": 0.38
+    },
+    {
+      "formula": "C6H3OS",
+      "counts": {
+        "C": 6,
+        "S": 1,
+        "H": 3,
+        "O": 1
+      },
+      "exact_mass": 122.99046089066,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "PPS",
+      "source_name": "Polyphenylene Sulfide",
+      "generation_type": "adduct",
+      "path": [
+        "break 1 bond(s)",
+        "H shift -2",
+        "O",
+        ";",
+        "break 1 bond(s)",
+        "H shift -2",
+        "O"
+      ],
+      "broken_bonds": 1,
+      "h_shift": -2,
+      "adduct": "O",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "score": 0.38
+    },
+    {
+      "formula": "C6H7ClS",
+      "counts": {
+        "C": 6,
+        "S": 1,
+        "H": 7,
+        "Cl": 1
+      },
+      "exact_mass": 145.99569908201,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "PPS",
+      "source_name": "Polyphenylene Sulfide",
+      "generation_type": "adduct",
+      "path": [
+        "break 1 bond(s)",
+        "H shift +2",
+        "Cl",
+        ";",
+        "break 1 bond(s)",
+        "H shift +2",
+        "Cl"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 2,
+      "adduct": "Cl",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "score": 0.38
+    },
+    {
+      "formula": "C6H7KS",
+      "counts": {
+        "C": 6,
+        "S": 1,
+        "H": 7,
+        "K": 1
+      },
+      "exact_mass": 149.99055288641,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "PPS",
+      "source_name": "Polyphenylene Sulfide",
+      "generation_type": "adduct",
+      "path": [
+        "break 1 bond(s)",
+        "H shift +2",
+        "K",
+        ";",
+        "break 1 bond(s)",
+        "H shift +2",
+        "K"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 2,
+      "adduct": "K",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "score": 0.38
+    },
+    {
+      "formula": "C6H7NaS",
+      "counts": {
+        "C": 6,
+        "S": 1,
+        "H": 7,
+        "Na": 1
+      },
+      "exact_mass": 134.01661568201,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "PPS",
+      "source_name": "Polyphenylene Sulfide",
+      "generation_type": "adduct",
+      "path": [
+        "break 1 bond(s)",
+        "H shift +2",
+        "Na",
+        ";",
+        "break 1 bond(s)",
+        "H shift +2",
+        "Na"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 2,
+      "adduct": "Na",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "score": 0.38
+    },
+    {
+      "formula": "C6H8OS",
+      "counts": {
+        "C": 6,
+        "S": 1,
+        "H": 8,
+        "O": 1
+      },
+      "exact_mass": 128.02958605180999,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "PPS",
+      "source_name": "Polyphenylene Sulfide",
+      "generation_type": "adduct",
+      "path": [
+        "break 1 bond(s)",
+        "H shift +2",
+        "OH",
+        ";",
+        "break 1 bond(s)",
+        "H shift +2",
+        "OH"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 2,
+      "adduct": "OH",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "score": 0.38
+    },
+    {
+      "formula": "C5H",
+      "counts": {
+        "C": 5,
+        "H": 1
+      },
+      "exact_mass": 61.00782503223,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "source_compound_id": "PPS",
+      "source_name": "Polyphenylene Sulfide",
+      "generation_type": "neutral_loss",
+      "path": [
+        "break 2 bond(s)",
+        "-CH3"
+      ],
+      "broken_bonds": 2,
+      "h_shift": 0,
+      "adduct": null,
+      "neutral_losses": [
+        "CH3"
+      ],
+      "fragment_atom_indices": [
+        1,
+        2,
+        3,
+        4,
+        6,
+        7,
+        9,
+        10,
+        12,
+        13
+      ],
+      "score": 0.35
+    },
+    {
+      "formula": "C6H",
+      "counts": {
+        "C": 6,
+        "H": 1
+      },
+      "exact_mass": 73.00782503223,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "PPS",
+      "source_name": "Polyphenylene Sulfide",
+      "generation_type": "adduct",
+      "path": [
+        "break 2 bond(s)",
+        "H shift -2",
+        "-H"
+      ],
+      "broken_bonds": 2,
+      "h_shift": -2,
+      "adduct": "-H",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        1,
+        2,
+        3,
+        4,
+        6,
+        7,
+        9,
+        10,
+        12,
+        13
+      ],
+      "score": 0.35
+    },
+    {
+      "formula": "C6H2",
+      "counts": {
+        "C": 6,
+        "H": 2
+      },
+      "exact_mass": 74.01565006446,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "source_compound_id": "PPS",
+      "source_name": "Polyphenylene Sulfide",
+      "generation_type": "h_shift",
+      "path": [
+        "break 2 bond(s)",
+        "H shift -2"
+      ],
+      "broken_bonds": 2,
+      "h_shift": -2,
+      "adduct": null,
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        1,
+        2,
+        3,
+        4,
+        6,
+        7,
+        9,
+        10,
+        12,
+        13
+      ],
+      "score": 0.35
+    },
+    {
+      "formula": "C6H2",
+      "counts": {
+        "C": 6,
+        "H": 2
+      },
+      "exact_mass": 74.01565006446,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "source_compound_id": "PPS",
+      "source_name": "Polyphenylene Sulfide",
+      "generation_type": "neutral_loss",
+      "path": [
+        "break 2 bond(s)",
+        "-H2"
+      ],
+      "broken_bonds": 2,
+      "h_shift": 0,
+      "adduct": null,
+      "neutral_losses": [
+        "H2"
+      ],
+      "fragment_atom_indices": [
+        1,
+        2,
+        3,
+        4,
+        6,
+        7,
+        9,
+        10,
+        12,
+        13
+      ],
+      "score": 0.35
+    },
+    {
+      "formula": "C6H3",
+      "counts": {
+        "C": 6,
+        "H": 3
+      },
+      "exact_mass": 75.02347509669,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "PPS",
+      "source_name": "Polyphenylene Sulfide",
+      "generation_type": "adduct",
+      "path": [
+        "break 2 bond(s)",
+        "H shift -2",
+        "H"
+      ],
+      "broken_bonds": 2,
+      "h_shift": -2,
+      "adduct": "H",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        1,
+        2,
+        3,
+        4,
+        6,
+        7,
+        9,
+        10,
+        12,
+        13
+      ],
+      "score": 0.35
+    },
+    {
+      "formula": "C6H5",
+      "counts": {
+        "C": 6,
+        "H": 5
+      },
+      "exact_mass": 77.03912516115,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "PPS",
+      "source_name": "Polyphenylene Sulfide",
+      "generation_type": "adduct",
+      "path": [
+        "break 2 bond(s)",
+        "H shift +2",
+        "-H"
+      ],
+      "broken_bonds": 2,
+      "h_shift": 2,
+      "adduct": "-H",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        1,
+        2,
+        3,
+        4,
+        6,
+        7,
+        9,
+        10,
+        12,
+        13
+      ],
+      "score": 0.35
+    },
+    {
+      "formula": "C6H6",
+      "counts": {
+        "C": 6,
+        "H": 6
+      },
+      "exact_mass": 78.04695019338,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "source_compound_id": "PPS",
+      "source_name": "Polyphenylene Sulfide",
+      "generation_type": "h_shift",
+      "path": [
+        "break 2 bond(s)",
+        "H shift +2"
+      ],
+      "broken_bonds": 2,
+      "h_shift": 2,
+      "adduct": null,
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        1,
+        2,
+        3,
+        4,
+        6,
+        7,
+        9,
+        10,
+        12,
+        13
+      ],
+      "score": 0.35
+    },
+    {
+      "formula": "C6H7",
+      "counts": {
+        "C": 6,
+        "H": 7
+      },
+      "exact_mass": 79.05477522561,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "PPS",
+      "source_name": "Polyphenylene Sulfide",
+      "generation_type": "adduct",
+      "path": [
+        "break 2 bond(s)",
+        "H shift +2",
+        "H"
+      ],
+      "broken_bonds": 2,
+      "h_shift": 2,
+      "adduct": "H",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        1,
+        2,
+        3,
+        4,
+        6,
+        7,
+        9,
+        10,
+        12,
+        13
+      ],
+      "score": 0.35
+    },
+    {
+      "formula": "C6H4Cl",
+      "counts": {
+        "C": 6,
+        "H": 4,
+        "Cl": 1
+      },
+      "exact_mass": 111.00015281092,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "PPS",
+      "source_name": "Polyphenylene Sulfide",
+      "generation_type": "adduct",
+      "path": [
+        "break 2 bond(s)",
+        "Cl"
+      ],
+      "broken_bonds": 2,
+      "h_shift": 0,
+      "adduct": "Cl",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        1,
+        2,
+        3,
+        4,
+        6,
+        7,
+        9,
+        10,
+        12,
+        13
+      ],
+      "score": 0.33
+    },
+    {
+      "formula": "C6H4K",
+      "counts": {
+        "C": 6,
+        "H": 4,
+        "K": 1
+      },
+      "exact_mass": 114.99500661532,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "PPS",
+      "source_name": "Polyphenylene Sulfide",
+      "generation_type": "adduct",
+      "path": [
+        "break 2 bond(s)",
+        "K"
+      ],
+      "broken_bonds": 2,
+      "h_shift": 0,
+      "adduct": "K",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        1,
+        2,
+        3,
+        4,
+        6,
+        7,
+        9,
+        10,
+        12,
+        13
+      ],
+      "score": 0.33
+    },
+    {
+      "formula": "C6H4Na",
+      "counts": {
+        "C": 6,
+        "H": 4,
+        "Na": 1
+      },
+      "exact_mass": 99.02106941092,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "PPS",
+      "source_name": "Polyphenylene Sulfide",
+      "generation_type": "adduct",
+      "path": [
+        "break 2 bond(s)",
+        "Na"
+      ],
+      "broken_bonds": 2,
+      "h_shift": 0,
+      "adduct": "Na",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        1,
+        2,
+        3,
+        4,
+        6,
+        7,
+        9,
+        10,
+        12,
+        13
+      ],
+      "score": 0.33
+    },
+    {
+      "formula": "C6H4O",
+      "counts": {
+        "C": 6,
+        "H": 4,
+        "O": 1
+      },
+      "exact_mass": 92.02621474849,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "PPS",
+      "source_name": "Polyphenylene Sulfide",
+      "generation_type": "adduct",
+      "path": [
+        "break 2 bond(s)",
+        "O"
+      ],
+      "broken_bonds": 2,
+      "h_shift": 0,
+      "adduct": "O",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        1,
+        2,
+        3,
+        4,
+        6,
+        7,
+        9,
+        10,
+        12,
+        13
+      ],
+      "score": 0.33
+    },
+    {
+      "formula": "C6H5O",
+      "counts": {
+        "C": 6,
+        "H": 5,
+        "O": 1
+      },
+      "exact_mass": 93.03403978072001,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "PPS",
+      "source_name": "Polyphenylene Sulfide",
+      "generation_type": "adduct",
+      "path": [
+        "break 2 bond(s)",
+        "OH",
+        ";",
+        "break 2 bond(s)",
+        "H shift +1",
+        "O"
+      ],
+      "broken_bonds": 2,
+      "h_shift": 0,
+      "adduct": "OH",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        1,
+        2,
+        3,
+        4,
+        6,
+        7,
+        9,
+        10,
+        12,
+        13
+      ],
+      "score": 0.33
+    },
+    {
+      "formula": "C5",
+      "counts": {
+        "C": 5
+      },
+      "exact_mass": 60.0,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "source_compound_id": "PPS",
+      "source_name": "Polyphenylene Sulfide",
+      "generation_type": "neutral_loss",
+      "path": [
+        "break 2 bond(s)",
+        "H shift -1",
+        "-CH3"
+      ],
+      "broken_bonds": 2,
+      "h_shift": -1,
+      "adduct": null,
+      "neutral_losses": [
+        "CH3"
+      ],
+      "fragment_atom_indices": [
+        1,
+        2,
+        3,
+        4,
+        6,
+        7,
+        9,
+        10,
+        12,
+        13
+      ],
+      "score": 0.30000000000000004
+    },
+    {
+      "formula": "C5H2",
+      "counts": {
+        "C": 5,
+        "H": 2
+      },
+      "exact_mass": 62.01565006446,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "source_compound_id": "PPS",
+      "source_name": "Polyphenylene Sulfide",
+      "generation_type": "neutral_loss",
+      "path": [
+        "break 2 bond(s)",
+        "H shift +1",
+        "-CH3"
+      ],
+      "broken_bonds": 2,
+      "h_shift": 1,
+      "adduct": null,
+      "neutral_losses": [
+        "CH3"
+      ],
+      "fragment_atom_indices": [
+        1,
+        2,
+        3,
+        4,
+        6,
+        7,
+        9,
+        10,
+        12,
+        13
+      ],
+      "score": 0.30000000000000004
+    },
+    {
+      "formula": "C6H",
+      "counts": {
+        "C": 6,
+        "H": 1
+      },
+      "exact_mass": 73.00782503223,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "source_compound_id": "PPS",
+      "source_name": "Polyphenylene Sulfide",
+      "generation_type": "neutral_loss",
+      "path": [
+        "break 2 bond(s)",
+        "H shift -1",
+        "-H2"
+      ],
+      "broken_bonds": 2,
+      "h_shift": -1,
+      "adduct": null,
+      "neutral_losses": [
+        "H2"
+      ],
+      "fragment_atom_indices": [
+        1,
+        2,
+        3,
+        4,
+        6,
+        7,
+        9,
+        10,
+        12,
+        13
+      ],
+      "score": 0.30000000000000004
+    },
+    {
+      "formula": "C6H3",
+      "counts": {
+        "C": 6,
+        "H": 3
+      },
+      "exact_mass": 75.02347509669,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "source_compound_id": "PPS",
+      "source_name": "Polyphenylene Sulfide",
+      "generation_type": "neutral_loss",
+      "path": [
+        "break 2 bond(s)",
+        "H shift +1",
+        "-H2"
+      ],
+      "broken_bonds": 2,
+      "h_shift": 1,
+      "adduct": null,
+      "neutral_losses": [
+        "H2"
+      ],
+      "fragment_atom_indices": [
+        1,
+        2,
+        3,
+        4,
+        6,
+        7,
+        9,
+        10,
+        12,
+        13
+      ],
+      "score": 0.30000000000000004
+    },
+    {
+      "formula": "C6H3Cl",
+      "counts": {
+        "C": 6,
+        "H": 3,
+        "Cl": 1
+      },
+      "exact_mass": 109.99232777869,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "PPS",
+      "source_name": "Polyphenylene Sulfide",
+      "generation_type": "adduct",
+      "path": [
+        "break 2 bond(s)",
+        "H shift -1",
+        "Cl"
+      ],
+      "broken_bonds": 2,
+      "h_shift": -1,
+      "adduct": "Cl",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        1,
+        2,
+        3,
+        4,
+        6,
+        7,
+        9,
+        10,
+        12,
+        13
+      ],
+      "score": 0.28
+    },
+    {
+      "formula": "C6H3K",
+      "counts": {
+        "C": 6,
+        "H": 3,
+        "K": 1
+      },
+      "exact_mass": 113.98718158309,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "PPS",
+      "source_name": "Polyphenylene Sulfide",
+      "generation_type": "adduct",
+      "path": [
+        "break 2 bond(s)",
+        "H shift -1",
+        "K"
+      ],
+      "broken_bonds": 2,
+      "h_shift": -1,
+      "adduct": "K",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        1,
+        2,
+        3,
+        4,
+        6,
+        7,
+        9,
+        10,
+        12,
+        13
+      ],
+      "score": 0.28
+    },
+    {
+      "formula": "C6H3Na",
+      "counts": {
+        "C": 6,
+        "H": 3,
+        "Na": 1
+      },
+      "exact_mass": 98.01324437869,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "PPS",
+      "source_name": "Polyphenylene Sulfide",
+      "generation_type": "adduct",
+      "path": [
+        "break 2 bond(s)",
+        "H shift -1",
+        "Na"
+      ],
+      "broken_bonds": 2,
+      "h_shift": -1,
+      "adduct": "Na",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        1,
+        2,
+        3,
+        4,
+        6,
+        7,
+        9,
+        10,
+        12,
+        13
+      ],
+      "score": 0.28
+    },
+    {
+      "formula": "C6H3O",
+      "counts": {
+        "C": 6,
+        "H": 3,
+        "O": 1
+      },
+      "exact_mass": 91.01838971626,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "PPS",
+      "source_name": "Polyphenylene Sulfide",
+      "generation_type": "adduct",
+      "path": [
+        "break 2 bond(s)",
+        "H shift -1",
+        "O"
+      ],
+      "broken_bonds": 2,
+      "h_shift": -1,
+      "adduct": "O",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        1,
+        2,
+        3,
+        4,
+        6,
+        7,
+        9,
+        10,
+        12,
+        13
+      ],
+      "score": 0.28
+    },
+    {
+      "formula": "C6H5Cl",
+      "counts": {
+        "C": 6,
+        "H": 5,
+        "Cl": 1
+      },
+      "exact_mass": 112.00797784315,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "PPS",
+      "source_name": "Polyphenylene Sulfide",
+      "generation_type": "adduct",
+      "path": [
+        "break 2 bond(s)",
+        "H shift +1",
+        "Cl"
+      ],
+      "broken_bonds": 2,
+      "h_shift": 1,
+      "adduct": "Cl",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        1,
+        2,
+        3,
+        4,
+        6,
+        7,
+        9,
+        10,
+        12,
+        13
+      ],
+      "score": 0.28
+    },
+    {
+      "formula": "C6H5K",
+      "counts": {
+        "C": 6,
+        "H": 5,
+        "K": 1
+      },
+      "exact_mass": 116.00283164755,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "PPS",
+      "source_name": "Polyphenylene Sulfide",
+      "generation_type": "adduct",
+      "path": [
+        "break 2 bond(s)",
+        "H shift +1",
+        "K"
+      ],
+      "broken_bonds": 2,
+      "h_shift": 1,
+      "adduct": "K",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        1,
+        2,
+        3,
+        4,
+        6,
+        7,
+        9,
+        10,
+        12,
+        13
+      ],
+      "score": 0.28
+    },
+    {
+      "formula": "C6H5Na",
+      "counts": {
+        "C": 6,
+        "H": 5,
+        "Na": 1
+      },
+      "exact_mass": 100.02889444315,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "PPS",
+      "source_name": "Polyphenylene Sulfide",
+      "generation_type": "adduct",
+      "path": [
+        "break 2 bond(s)",
+        "H shift +1",
+        "Na"
+      ],
+      "broken_bonds": 2,
+      "h_shift": 1,
+      "adduct": "Na",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        1,
+        2,
+        3,
+        4,
+        6,
+        7,
+        9,
+        10,
+        12,
+        13
+      ],
+      "score": 0.28
+    },
+    {
+      "formula": "C6H6O",
+      "counts": {
+        "C": 6,
+        "H": 6,
+        "O": 1
+      },
+      "exact_mass": 94.04186481295,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "PPS",
+      "source_name": "Polyphenylene Sulfide",
+      "generation_type": "adduct",
+      "path": [
+        "break 2 bond(s)",
+        "H shift +1",
+        "OH",
+        ";",
+        "break 2 bond(s)",
+        "H shift +2",
+        "O"
+      ],
+      "broken_bonds": 2,
+      "h_shift": 1,
+      "adduct": "OH",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        1,
+        2,
+        3,
+        4,
+        6,
+        7,
+        9,
+        10,
+        12,
+        13
+      ],
+      "score": 0.28
+    },
+    {
+      "formula": "C5H3",
+      "counts": {
+        "C": 5,
+        "H": 3
+      },
+      "exact_mass": 63.02347509669,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "source_compound_id": "PPS",
+      "source_name": "Polyphenylene Sulfide",
+      "generation_type": "neutral_loss",
+      "path": [
+        "break 2 bond(s)",
+        "H shift +2",
+        "-CH3"
+      ],
+      "broken_bonds": 2,
+      "h_shift": 2,
+      "adduct": null,
+      "neutral_losses": [
+        "CH3"
+      ],
+      "fragment_atom_indices": [
+        1,
+        2,
+        3,
+        4,
+        6,
+        7,
+        9,
+        10,
+        12,
+        13
+      ],
+      "score": 0.24999999999999997
+    },
+    {
+      "formula": "C6",
+      "counts": {
+        "C": 6
+      },
+      "exact_mass": 72.0,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "source_compound_id": "PPS",
+      "source_name": "Polyphenylene Sulfide",
+      "generation_type": "neutral_loss",
+      "path": [
+        "break 2 bond(s)",
+        "H shift -2",
+        "-H2"
+      ],
+      "broken_bonds": 2,
+      "h_shift": -2,
+      "adduct": null,
+      "neutral_losses": [
+        "H2"
+      ],
+      "fragment_atom_indices": [
+        1,
+        2,
+        3,
+        4,
+        6,
+        7,
+        9,
+        10,
+        12,
+        13
+      ],
+      "score": 0.24999999999999997
+    },
+    {
+      "formula": "C6H4",
+      "counts": {
+        "C": 6,
+        "H": 4
+      },
+      "exact_mass": 76.03130012892,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "source_compound_id": "PPS",
+      "source_name": "Polyphenylene Sulfide",
+      "generation_type": "neutral_loss",
+      "path": [
+        "break 2 bond(s)",
+        "H shift +2",
+        "-H2"
+      ],
+      "broken_bonds": 2,
+      "h_shift": 2,
+      "adduct": null,
+      "neutral_losses": [
+        "H2"
+      ],
+      "fragment_atom_indices": [
+        1,
+        2,
+        3,
+        4,
+        6,
+        7,
+        9,
+        10,
+        12,
+        13
+      ],
+      "score": 0.24999999999999997
+    },
+    {
+      "formula": "C6H2Cl",
+      "counts": {
+        "C": 6,
+        "H": 2,
+        "Cl": 1
+      },
+      "exact_mass": 108.98450274646,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "PPS",
+      "source_name": "Polyphenylene Sulfide",
+      "generation_type": "adduct",
+      "path": [
+        "break 2 bond(s)",
+        "H shift -2",
+        "Cl"
+      ],
+      "broken_bonds": 2,
+      "h_shift": -2,
+      "adduct": "Cl",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        1,
+        2,
+        3,
+        4,
+        6,
+        7,
+        9,
+        10,
+        12,
+        13
+      ],
+      "score": 0.22999999999999998
+    },
+    {
+      "formula": "C6H2K",
+      "counts": {
+        "C": 6,
+        "H": 2,
+        "K": 1
+      },
+      "exact_mass": 112.97935655086,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "PPS",
+      "source_name": "Polyphenylene Sulfide",
+      "generation_type": "adduct",
+      "path": [
+        "break 2 bond(s)",
+        "H shift -2",
+        "K"
+      ],
+      "broken_bonds": 2,
+      "h_shift": -2,
+      "adduct": "K",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        1,
+        2,
+        3,
+        4,
+        6,
+        7,
+        9,
+        10,
+        12,
+        13
+      ],
+      "score": 0.22999999999999998
+    },
+    {
+      "formula": "C6H2Na",
+      "counts": {
+        "C": 6,
+        "H": 2,
+        "Na": 1
+      },
+      "exact_mass": 97.00541934646,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "PPS",
+      "source_name": "Polyphenylene Sulfide",
+      "generation_type": "adduct",
+      "path": [
+        "break 2 bond(s)",
+        "H shift -2",
+        "Na"
+      ],
+      "broken_bonds": 2,
+      "h_shift": -2,
+      "adduct": "Na",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        1,
+        2,
+        3,
+        4,
+        6,
+        7,
+        9,
+        10,
+        12,
+        13
+      ],
+      "score": 0.22999999999999998
+    },
+    {
+      "formula": "C6H2O",
+      "counts": {
+        "C": 6,
+        "H": 2,
+        "O": 1
+      },
+      "exact_mass": 90.01056468403,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "PPS",
+      "source_name": "Polyphenylene Sulfide",
+      "generation_type": "adduct",
+      "path": [
+        "break 2 bond(s)",
+        "H shift -2",
+        "O"
+      ],
+      "broken_bonds": 2,
+      "h_shift": -2,
+      "adduct": "O",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        1,
+        2,
+        3,
+        4,
+        6,
+        7,
+        9,
+        10,
+        12,
+        13
+      ],
+      "score": 0.22999999999999998
+    },
+    {
+      "formula": "C6H6Cl",
+      "counts": {
+        "C": 6,
+        "H": 6,
+        "Cl": 1
+      },
+      "exact_mass": 113.01580287538,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "PPS",
+      "source_name": "Polyphenylene Sulfide",
+      "generation_type": "adduct",
+      "path": [
+        "break 2 bond(s)",
+        "H shift +2",
+        "Cl"
+      ],
+      "broken_bonds": 2,
+      "h_shift": 2,
+      "adduct": "Cl",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        1,
+        2,
+        3,
+        4,
+        6,
+        7,
+        9,
+        10,
+        12,
+        13
+      ],
+      "score": 0.22999999999999998
+    },
+    {
+      "formula": "C6H6K",
+      "counts": {
+        "C": 6,
+        "H": 6,
+        "K": 1
+      },
+      "exact_mass": 117.01065667978,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "PPS",
+      "source_name": "Polyphenylene Sulfide",
+      "generation_type": "adduct",
+      "path": [
+        "break 2 bond(s)",
+        "H shift +2",
+        "K"
+      ],
+      "broken_bonds": 2,
+      "h_shift": 2,
+      "adduct": "K",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        1,
+        2,
+        3,
+        4,
+        6,
+        7,
+        9,
+        10,
+        12,
+        13
+      ],
+      "score": 0.22999999999999998
+    },
+    {
+      "formula": "C6H6Na",
+      "counts": {
+        "C": 6,
+        "H": 6,
+        "Na": 1
+      },
+      "exact_mass": 101.03671947538,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "PPS",
+      "source_name": "Polyphenylene Sulfide",
+      "generation_type": "adduct",
+      "path": [
+        "break 2 bond(s)",
+        "H shift +2",
+        "Na"
+      ],
+      "broken_bonds": 2,
+      "h_shift": 2,
+      "adduct": "Na",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        1,
+        2,
+        3,
+        4,
+        6,
+        7,
+        9,
+        10,
+        12,
+        13
+      ],
+      "score": 0.22999999999999998
+    },
+    {
+      "formula": "C6H7O",
+      "counts": {
+        "C": 6,
+        "H": 7,
+        "O": 1
+      },
+      "exact_mass": 95.04968984518,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "PPS",
+      "source_name": "Polyphenylene Sulfide",
+      "generation_type": "adduct",
+      "path": [
+        "break 2 bond(s)",
+        "H shift +2",
+        "OH"
+      ],
+      "broken_bonds": 2,
+      "h_shift": 2,
+      "adduct": "OH",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        1,
+        2,
+        3,
+        4,
+        6,
+        7,
+        9,
+        10,
+        12,
+        13
+      ],
+      "score": 0.22999999999999998
+    }
+  ]
+}

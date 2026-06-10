@@ -1,0 +1,94 @@
+formula,counts,exact_mass,ion_mode,charge,source_compound_id,source_name,generation_type,path,broken_bonds,h_shift,adduct,neutral_losses,fragment_atom_indices,score
+C7H8,"{'C': 7, 'H': 8}",92.06260025784,neutral,0,STD001,Toluene,parent,M,0,0,,,,1.0
+C7H7,"{'C': 7, 'H': 7}",91.05477522561,negative,-1,STD001,Toluene,adduct,M | -H,0,0,-H,,,0.75
+C7H9,"{'C': 7, 'H': 9}",93.07042529007,positive,1,STD001,Toluene,adduct,M | H,0,0,H,,,0.75
+C7H10,"{'C': 7, 'H': 10}",94.0782503223,positive,1,STD001,Toluene,adduct,M | H shift +1 | H,0,1,H,,,0.7
+C7H6,"{'C': 7, 'H': 6}",90.04695019338,negative,-1,STD001,Toluene,adduct,M | H shift -1 | -H,0,-1,-H,,,0.7
+C7H7,"{'C': 7, 'H': 7}",91.05477522561,neutral,0,STD001,Toluene,h_shift,M | H shift -1,0,-1,,,,0.7
+C7H8,"{'C': 7, 'H': 8}",92.06260025784,positive,1,STD001,Toluene,adduct,M | H shift -1 | H,0,-1,H,,,0.7
+C7H8,"{'C': 7, 'H': 8}",92.06260025784,negative,-1,STD001,Toluene,adduct,M | H shift +1 | -H,0,1,-H,,,0.7
+C7H9,"{'C': 7, 'H': 9}",93.07042529007,neutral,0,STD001,Toluene,h_shift,M | H shift +1,0,1,,,,0.7
+C6H5,"{'C': 6, 'H': 5}",77.03912516115,neutral,0,STD001,Toluene,neutral_loss,M | -CH3 | ; | break 1 bond(s) | H shift +2 | -H2,0,0,,CH3,,0.65
+C7H10,"{'C': 7, 'H': 10}",94.0782503223,neutral,0,STD001,Toluene,h_shift,M | H shift +2,0,2,,,,0.65
+C7H11,"{'C': 7, 'H': 11}",95.08607535453,positive,1,STD001,Toluene,adduct,M | H shift +2 | H,0,2,H,,,0.65
+C7H5,"{'C': 7, 'H': 5}",89.03912516115,negative,-1,STD001,Toluene,adduct,M | H shift -2 | -H,0,-2,-H,,,0.65
+C7H6,"{'C': 7, 'H': 6}",90.04695019338,neutral,0,STD001,Toluene,h_shift,M | H shift -2,0,-2,,,,0.65
+C7H6,"{'C': 7, 'H': 6}",90.04695019338,neutral,0,STD001,Toluene,neutral_loss,M | -H2,0,0,,H2,,0.65
+C7H7,"{'C': 7, 'H': 7}",91.05477522561,positive,1,STD001,Toluene,adduct,M | H shift -2 | H,0,-2,H,,,0.65
+C7H9,"{'C': 7, 'H': 9}",93.07042529007,negative,-1,STD001,Toluene,adduct,M | H shift +2 | -H,0,2,-H,,,0.65
+C7H8Cl,"{'C': 7, 'H': 8, 'Cl': 1}",127.03145293984,negative,-1,STD001,Toluene,adduct,M | Cl,0,0,Cl,,,0.63
+C7H8K,"{'C': 7, 'H': 8, 'K': 1}",131.02630674424,positive,1,STD001,Toluene,adduct,M | K,0,0,K,,,0.63
+C7H8Na,"{'C': 7, 'H': 8, 'Na': 1}",115.05236953984,positive,1,STD001,Toluene,adduct,M | Na,0,0,Na,,,0.63
+C7H8O,"{'C': 7, 'H': 8, 'O': 1}",108.05751487741,negative,-1,STD001,Toluene,adduct,M | O,0,0,O,,,0.63
+C7H9O,"{'C': 7, 'H': 9, 'O': 1}",109.06533990964,negative,-1,STD001,Toluene,adduct,M | OH | ; | M | H shift +1 | O,0,0,OH,,,0.63
+C6H4,"{'C': 6, 'H': 4}",76.03130012892,neutral,0,STD001,Toluene,neutral_loss,M | H shift -1 | -CH3 | ; | break 1 bond(s) | H shift +1 | -H2,0,-1,,CH3,,0.6
+C6H4,"{'C': 6, 'H': 4}",76.03130012892,negative,-1,STD001,Toluene,adduct,break 1 bond(s) | -H,1,0,-H,,"[1, 2, 3, 4, 5, 6, 10, 11, 12, 13, 14]",0.6
+C6H5,"{'C': 6, 'H': 5}",77.03912516115,neutral,0,STD001,Toluene,fragment,break 1 bond(s),1,0,,,"[1, 2, 3, 4, 5, 6, 10, 11, 12, 13, 14]",0.6
+C6H6,"{'C': 6, 'H': 6}",78.04695019338,neutral,0,STD001,Toluene,neutral_loss,M | H shift +1 | -CH3,0,1,,CH3,,0.6
+C6H6,"{'C': 6, 'H': 6}",78.04695019338,positive,1,STD001,Toluene,adduct,break 1 bond(s) | H,1,0,H,,"[1, 2, 3, 4, 5, 6, 10, 11, 12, 13, 14]",0.6
+C7H5,"{'C': 7, 'H': 5}",89.03912516115,neutral,0,STD001,Toluene,neutral_loss,M | H shift -1 | -H2,0,-1,,H2,,0.6
+C7H7,"{'C': 7, 'H': 7}",91.05477522561,neutral,0,STD001,Toluene,neutral_loss,M | H shift +1 | -H2,0,1,,H2,,0.6
+C7H10O,"{'C': 7, 'H': 10, 'O': 1}",110.07316494187,negative,-1,STD001,Toluene,adduct,M | H shift +1 | OH | ; | M | H shift +2 | O,0,1,OH,,,0.58
+C7H7Cl,"{'C': 7, 'H': 7, 'Cl': 1}",126.02362790760999,negative,-1,STD001,Toluene,adduct,M | H shift -1 | Cl,0,-1,Cl,,,0.58
+C7H7K,"{'C': 7, 'H': 7, 'K': 1}",130.01848171201,positive,1,STD001,Toluene,adduct,M | H shift -1 | K,0,-1,K,,,0.58
+C7H7Na,"{'C': 7, 'H': 7, 'Na': 1}",114.04454450761,positive,1,STD001,Toluene,adduct,M | H shift -1 | Na,0,-1,Na,,,0.58
+C7H7O,"{'C': 7, 'H': 7, 'O': 1}",107.04968984518,negative,-1,STD001,Toluene,adduct,M | H shift -1 | O,0,-1,O,,,0.58
+C7H9Cl,"{'C': 7, 'H': 9, 'Cl': 1}",128.03927797207,negative,-1,STD001,Toluene,adduct,M | H shift +1 | Cl,0,1,Cl,,,0.58
+C7H9K,"{'C': 7, 'H': 9, 'K': 1}",132.03413177647,positive,1,STD001,Toluene,adduct,M | H shift +1 | K,0,1,K,,,0.58
+C7H9Na,"{'C': 7, 'H': 9, 'Na': 1}",116.06019457207,positive,1,STD001,Toluene,adduct,M | H shift +1 | Na,0,1,Na,,,0.58
+C14H15,"{'C': 14, 'H': 15}",183.11737548345,negative,-1,STD001,Toluene,dimer,2M | -H,0,0,-H,,,0.55
+C14H17,"{'C': 14, 'H': 17}",185.13302554791,positive,1,STD001,Toluene,dimer,2M | H,0,0,H,,,0.55
+C6H3,"{'C': 6, 'H': 3}",75.02347509669,neutral,0,STD001,Toluene,neutral_loss,M | H shift -2 | -CH3 | ; | break 1 bond(s) | -H2,0,-2,,CH3,,0.55
+C6H7,"{'C': 6, 'H': 7}",79.05477522561,neutral,0,STD001,Toluene,neutral_loss,M | H shift +2 | -CH3,0,2,,CH3,,0.55
+C7H4,"{'C': 7, 'H': 4}",88.03130012892,neutral,0,STD001,Toluene,neutral_loss,M | H shift -2 | -H2,0,-2,,H2,,0.55
+C7H8,"{'C': 7, 'H': 8}",92.06260025784,neutral,0,STD001,Toluene,neutral_loss,M | H shift +2 | -H2,0,2,,H2,,0.55
+C6H3,"{'C': 6, 'H': 3}",75.02347509669,negative,-1,STD001,Toluene,adduct,break 1 bond(s) | H shift -1 | -H,1,-1,-H,,"[1, 2, 3, 4, 5, 6, 10, 11, 12, 13, 14]",0.5499999999999999
+C6H4,"{'C': 6, 'H': 4}",76.03130012892,neutral,0,STD001,Toluene,h_shift,break 1 bond(s) | H shift -1,1,-1,,,"[1, 2, 3, 4, 5, 6, 10, 11, 12, 13, 14]",0.5499999999999999
+C6H5,"{'C': 6, 'H': 5}",77.03912516115,positive,1,STD001,Toluene,adduct,break 1 bond(s) | H shift -1 | H,1,-1,H,,"[1, 2, 3, 4, 5, 6, 10, 11, 12, 13, 14]",0.5499999999999999
+C6H5,"{'C': 6, 'H': 5}",77.03912516115,negative,-1,STD001,Toluene,adduct,break 1 bond(s) | H shift +1 | -H,1,1,-H,,"[1, 2, 3, 4, 5, 6, 10, 11, 12, 13, 14]",0.5499999999999999
+C6H6,"{'C': 6, 'H': 6}",78.04695019338,neutral,0,STD001,Toluene,h_shift,break 1 bond(s) | H shift +1,1,1,,,"[1, 2, 3, 4, 5, 6, 10, 11, 12, 13, 14]",0.5499999999999999
+C6H7,"{'C': 6, 'H': 7}",79.05477522561,positive,1,STD001,Toluene,adduct,break 1 bond(s) | H shift +1 | H,1,1,H,,"[1, 2, 3, 4, 5, 6, 10, 11, 12, 13, 14]",0.5499999999999999
+C7H10Cl,"{'C': 7, 'H': 10, 'Cl': 1}",129.0471030043,negative,-1,STD001,Toluene,adduct,M | H shift +2 | Cl,0,2,Cl,,,0.53
+C7H10K,"{'C': 7, 'H': 10, 'K': 1}",133.0419568087,positive,1,STD001,Toluene,adduct,M | H shift +2 | K,0,2,K,,,0.53
+C7H10Na,"{'C': 7, 'H': 10, 'Na': 1}",117.0680196043,positive,1,STD001,Toluene,adduct,M | H shift +2 | Na,0,2,Na,,,0.53
+C7H11O,"{'C': 7, 'H': 11, 'O': 1}",111.08098997409999,negative,-1,STD001,Toluene,adduct,M | H shift +2 | OH,0,2,OH,,,0.53
+C7H6Cl,"{'C': 7, 'H': 6, 'Cl': 1}",125.01580287538,negative,-1,STD001,Toluene,adduct,M | H shift -2 | Cl,0,-2,Cl,,,0.53
+C7H6K,"{'C': 7, 'H': 6, 'K': 1}",129.01065667978,positive,1,STD001,Toluene,adduct,M | H shift -2 | K,0,-2,K,,,0.53
+C7H6Na,"{'C': 7, 'H': 6, 'Na': 1}",113.03671947538,positive,1,STD001,Toluene,adduct,M | H shift -2 | Na,0,-2,Na,,,0.53
+C7H6O,"{'C': 7, 'H': 6, 'O': 1}",106.04186481295,negative,-1,STD001,Toluene,adduct,M | H shift -2 | O,0,-2,O,,,0.53
+C5H2,"{'C': 5, 'H': 2}",62.01565006446,neutral,0,STD001,Toluene,neutral_loss,break 1 bond(s) | -CH3,1,0,,CH3,"[1, 2, 3, 4, 5, 6, 10, 11, 12, 13, 14]",0.5
+C6H2,"{'C': 6, 'H': 2}",74.01565006446,negative,-1,STD001,Toluene,adduct,break 1 bond(s) | H shift -2 | -H,1,-2,-H,,"[1, 2, 3, 4, 5, 6, 10, 11, 12, 13, 14]",0.5
+C6H3,"{'C': 6, 'H': 3}",75.02347509669,neutral,0,STD001,Toluene,h_shift,break 1 bond(s) | H shift -2,1,-2,,,"[1, 2, 3, 4, 5, 6, 10, 11, 12, 13, 14]",0.5
+C6H4,"{'C': 6, 'H': 4}",76.03130012892,positive,1,STD001,Toluene,adduct,break 1 bond(s) | H shift -2 | H,1,-2,H,,"[1, 2, 3, 4, 5, 6, 10, 11, 12, 13, 14]",0.5
+C6H6,"{'C': 6, 'H': 6}",78.04695019338,negative,-1,STD001,Toluene,adduct,break 1 bond(s) | H shift +2 | -H,1,2,-H,,"[1, 2, 3, 4, 5, 6, 10, 11, 12, 13, 14]",0.5
+C6H7,"{'C': 6, 'H': 7}",79.05477522561,neutral,0,STD001,Toluene,h_shift,break 1 bond(s) | H shift +2,1,2,,,"[1, 2, 3, 4, 5, 6, 10, 11, 12, 13, 14]",0.5
+C6H8,"{'C': 6, 'H': 8}",80.06260025784,positive,1,STD001,Toluene,adduct,break 1 bond(s) | H shift +2 | H,1,2,H,,"[1, 2, 3, 4, 5, 6, 10, 11, 12, 13, 14]",0.5
+C6H5Cl,"{'C': 6, 'H': 5, 'Cl': 1}",112.00797784315,negative,-1,STD001,Toluene,adduct,break 1 bond(s) | Cl,1,0,Cl,,"[1, 2, 3, 4, 5, 6, 10, 11, 12, 13, 14]",0.48
+C6H5K,"{'C': 6, 'H': 5, 'K': 1}",116.00283164755,positive,1,STD001,Toluene,adduct,break 1 bond(s) | K,1,0,K,,"[1, 2, 3, 4, 5, 6, 10, 11, 12, 13, 14]",0.48
+C6H5Na,"{'C': 6, 'H': 5, 'Na': 1}",100.02889444315,positive,1,STD001,Toluene,adduct,break 1 bond(s) | Na,1,0,Na,,"[1, 2, 3, 4, 5, 6, 10, 11, 12, 13, 14]",0.48
+C6H5O,"{'C': 6, 'H': 5, 'O': 1}",93.03403978072001,negative,-1,STD001,Toluene,adduct,break 1 bond(s) | O,1,0,O,,"[1, 2, 3, 4, 5, 6, 10, 11, 12, 13, 14]",0.48
+C6H6O,"{'C': 6, 'H': 6, 'O': 1}",94.04186481295,negative,-1,STD001,Toluene,adduct,break 1 bond(s) | OH | ; | break 1 bond(s) | H shift +1 | O,1,0,OH,,"[1, 2, 3, 4, 5, 6, 10, 11, 12, 13, 14]",0.48
+C5H,"{'C': 5, 'H': 1}",61.00782503223,neutral,0,STD001,Toluene,neutral_loss,break 1 bond(s) | H shift -1 | -CH3,1,-1,,CH3,"[1, 2, 3, 4, 5, 6, 10, 11, 12, 13, 14]",0.44999999999999996
+C5H3,"{'C': 5, 'H': 3}",63.02347509669,neutral,0,STD001,Toluene,neutral_loss,break 1 bond(s) | H shift +1 | -CH3,1,1,,CH3,"[1, 2, 3, 4, 5, 6, 10, 11, 12, 13, 14]",0.44999999999999996
+C6H2,"{'C': 6, 'H': 2}",74.01565006446,neutral,0,STD001,Toluene,neutral_loss,break 1 bond(s) | H shift -1 | -H2,1,-1,,H2,"[1, 2, 3, 4, 5, 6, 10, 11, 12, 13, 14]",0.44999999999999996
+C14H16Cl,"{'C': 14, 'H': 16, 'Cl': 1}",219.09405319768,negative,-1,STD001,Toluene,dimer,2M | Cl,0,0,Cl,,,0.43
+C14H16Na,"{'C': 14, 'H': 16, 'Na': 1}",207.11496979768,positive,1,STD001,Toluene,dimer,2M | Na,0,0,Na,,,0.43
+C6H4Cl,"{'C': 6, 'H': 4, 'Cl': 1}",111.00015281092,negative,-1,STD001,Toluene,adduct,break 1 bond(s) | H shift -1 | Cl,1,-1,Cl,,"[1, 2, 3, 4, 5, 6, 10, 11, 12, 13, 14]",0.42999999999999994
+C6H4K,"{'C': 6, 'H': 4, 'K': 1}",114.99500661532,positive,1,STD001,Toluene,adduct,break 1 bond(s) | H shift -1 | K,1,-1,K,,"[1, 2, 3, 4, 5, 6, 10, 11, 12, 13, 14]",0.42999999999999994
+C6H4Na,"{'C': 6, 'H': 4, 'Na': 1}",99.02106941092,positive,1,STD001,Toluene,adduct,break 1 bond(s) | H shift -1 | Na,1,-1,Na,,"[1, 2, 3, 4, 5, 6, 10, 11, 12, 13, 14]",0.42999999999999994
+C6H4O,"{'C': 6, 'H': 4, 'O': 1}",92.02621474849,negative,-1,STD001,Toluene,adduct,break 1 bond(s) | H shift -1 | O,1,-1,O,,"[1, 2, 3, 4, 5, 6, 10, 11, 12, 13, 14]",0.42999999999999994
+C6H6Cl,"{'C': 6, 'H': 6, 'Cl': 1}",113.01580287538,negative,-1,STD001,Toluene,adduct,break 1 bond(s) | H shift +1 | Cl,1,1,Cl,,"[1, 2, 3, 4, 5, 6, 10, 11, 12, 13, 14]",0.42999999999999994
+C6H6K,"{'C': 6, 'H': 6, 'K': 1}",117.01065667978,positive,1,STD001,Toluene,adduct,break 1 bond(s) | H shift +1 | K,1,1,K,,"[1, 2, 3, 4, 5, 6, 10, 11, 12, 13, 14]",0.42999999999999994
+C6H6Na,"{'C': 6, 'H': 6, 'Na': 1}",101.03671947538,positive,1,STD001,Toluene,adduct,break 1 bond(s) | H shift +1 | Na,1,1,Na,,"[1, 2, 3, 4, 5, 6, 10, 11, 12, 13, 14]",0.42999999999999994
+C6H7O,"{'C': 6, 'H': 7, 'O': 1}",95.04968984518,negative,-1,STD001,Toluene,adduct,break 1 bond(s) | H shift +1 | OH | ; | break 1 bond(s) | H shift +2 | O,1,1,OH,,"[1, 2, 3, 4, 5, 6, 10, 11, 12, 13, 14]",0.42999999999999994
+C5,{'C': 5},60.0,neutral,0,STD001,Toluene,neutral_loss,break 1 bond(s) | H shift -2 | -CH3,1,-2,,CH3,"[1, 2, 3, 4, 5, 6, 10, 11, 12, 13, 14]",0.4
+C5H4,"{'C': 5, 'H': 4}",64.03130012892,neutral,0,STD001,Toluene,neutral_loss,break 1 bond(s) | H shift +2 | -CH3,1,2,,CH3,"[1, 2, 3, 4, 5, 6, 10, 11, 12, 13, 14]",0.4
+C6H,"{'C': 6, 'H': 1}",73.00782503223,neutral,0,STD001,Toluene,neutral_loss,break 1 bond(s) | H shift -2 | -H2,1,-2,,H2,"[1, 2, 3, 4, 5, 6, 10, 11, 12, 13, 14]",0.4
+C6H3Cl,"{'C': 6, 'H': 3, 'Cl': 1}",109.99232777869,negative,-1,STD001,Toluene,adduct,break 1 bond(s) | H shift -2 | Cl,1,-2,Cl,,"[1, 2, 3, 4, 5, 6, 10, 11, 12, 13, 14]",0.38
+C6H3K,"{'C': 6, 'H': 3, 'K': 1}",113.98718158309,positive,1,STD001,Toluene,adduct,break 1 bond(s) | H shift -2 | K,1,-2,K,,"[1, 2, 3, 4, 5, 6, 10, 11, 12, 13, 14]",0.38
+C6H3Na,"{'C': 6, 'H': 3, 'Na': 1}",98.01324437869,positive,1,STD001,Toluene,adduct,break 1 bond(s) | H shift -2 | Na,1,-2,Na,,"[1, 2, 3, 4, 5, 6, 10, 11, 12, 13, 14]",0.38
+C6H3O,"{'C': 6, 'H': 3, 'O': 1}",91.01838971626,negative,-1,STD001,Toluene,adduct,break 1 bond(s) | H shift -2 | O,1,-2,O,,"[1, 2, 3, 4, 5, 6, 10, 11, 12, 13, 14]",0.38
+C6H7Cl,"{'C': 6, 'H': 7, 'Cl': 1}",114.02362790760999,negative,-1,STD001,Toluene,adduct,break 1 bond(s) | H shift +2 | Cl,1,2,Cl,,"[1, 2, 3, 4, 5, 6, 10, 11, 12, 13, 14]",0.38
+C6H7K,"{'C': 6, 'H': 7, 'K': 1}",118.01848171201,positive,1,STD001,Toluene,adduct,break 1 bond(s) | H shift +2 | K,1,2,K,,"[1, 2, 3, 4, 5, 6, 10, 11, 12, 13, 14]",0.38
+C6H7Na,"{'C': 6, 'H': 7, 'Na': 1}",102.04454450761,positive,1,STD001,Toluene,adduct,break 1 bond(s) | H shift +2 | Na,1,2,Na,,"[1, 2, 3, 4, 5, 6, 10, 11, 12, 13, 14]",0.38
+C6H8O,"{'C': 6, 'H': 8, 'O': 1}",96.05751487741,negative,-1,STD001,Toluene,adduct,break 1 bond(s) | H shift +2 | OH,1,2,OH,,"[1, 2, 3, 4, 5, 6, 10, 11, 12, 13, 14]",0.38

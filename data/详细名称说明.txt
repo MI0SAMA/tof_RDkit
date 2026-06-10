@@ -1,0 +1,22 @@
+| 缩写             | 英文全称                                                | 中文名称             |
+| :------------- | :-------------------------------------------------- | :--------------- |
+| **COC**        | Cyclic Olefin Copolymer                             | 环烯烃共聚物           |
+| **ETFE**       | Ethylene-Tetrafluoroethylene                        | 乙烯-四氟乙烯共聚物       |
+| **EVA**        | Ethylene-Vinyl Acetate                              | 乙烯-醋酸乙烯共聚物       |
+| **FEP**        | Fluorinated Ethylene Propylene                      | 氟化乙烯丙烯共聚物        |
+| **Nomex**      | —                                                   | 诺梅克斯（芳纶纤维，杜邦品牌名） |
+| **PDMS**       | Polydimethylsiloxane                                | 聚二甲基硅氧烷（硅橡胶）     |
+| **PEEK**       | Polyether Ether Ketone                              | 聚醚醚酮             |
+| **PEEK20%GFR** | Polyether Ether Ketone + 20% Glass Fiber Reinforced | 聚醚醚酮（20%玻纤增强）    |
+| **PEI**        | Polyetherimide                                      | 聚醚酰亚胺            |
+| **PEN**        | Polyethylene Naphthalate                            | 聚萘二甲酸乙二醇酯        |
+| **PET**        | Polyethylene Terephthalate                          | 聚对苯二甲酸乙二醇酯       |
+| **PFA**        | Perfluoroalkoxy Alkane                              | 全氟烷氧基树脂          |
+| **PI**         | Polyimide                                           | 聚酰亚胺             |
+| **POM**        | Polyoxymethylene / Polyacetal                       | 聚甲醛（赛钢）          |
+| **POMC**       | Polyoxymethylene Copolymer                          | 聚甲醛共聚物           |
+| **POMH**       | Polyoxymethylene Homopolymer                        | 聚甲醛均聚物           |
+| **PPS**        | Polyphenylene Sulfide                               | 聚苯硫醚             |
+| **PPS40%GFR**  | Polyphenylene Sulfide + 40% Glass Fiber Reinforced  | 聚苯硫醚（40%玻纤增强）    |
+| **PTFE**       | Polytetrafluoroethylene                             | 聚四氟乙烯（特氟龙）       |
+| **PVDF**       | Polyvinylidene Fluoride                             | 聚偏二氟乙烯           |

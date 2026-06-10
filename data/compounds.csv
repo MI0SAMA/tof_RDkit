@@ -1,0 +1,21 @@
+compound_id,name,smiles,formula,group,notes
+STD001,Toluene,Cc1ccccc1,C7H8,demo,auto-created demo row
+PTFE,Polytetrafluoroethylene,C(F)(F)C(F)(F)F,C2F6,fluoropolymer,-(CF2-CF2)- repeat unit H-terminated
+PVDF,Polyvinylidene Fluoride,CC(F)F,C2H4F2,fluoropolymer,-(CH2-CF2)- repeat unit H-terminated
+ETFE,Ethylene-TFE copolymer,CCC(F)(F)C(F)F,C4H6F4,fluoropolymer,-(CH2-CH2-CF2-CF2)- alternating repeat unit
+FEP,Fluorinated Ethylene Propylene,FC(F)(F)C(F)(C(F)(F)F)C(F)(F)F,C5F10,fluoropolymer,-(CF2-CF2-CF(CF3)-CF2)- repeat unit
+PFA,Perfluoroalkoxy Alkane,FC(F)(F)C(F)(C(F)(F)F)C(F)(F)F,C5F10,fluoropolymer,approximated as FEP structure
+PEEK,Polyether Ether Ketone,O=C(c1ccc(Oc2ccc(O)cc2)cc1)c1ccc(O)cc1,C19H12O3,engineering_plastic,aromatic ether-ketone repeat unit
+PEEK20%GFR,PEEK+20%GlassFiber,O=C(c1ccc(Oc2ccc(O)cc2)cc1)c1ccc(O)cc1,C19H12O3,engineering_plastic,same as PEEK; glass fiber inert
+PEI,Polyetherimide (Ultem),CC(C)(c1ccc(Oc2ccc3c(c2)C(=O)OC3=O)cc1)c1ccc(Oc2ccc3c(c2)C(=O)OC3=O)cc1,C31H20O8,engineering_plastic,BPADA monomer (bisphenol A dianhydride); imide form approximated
+PEN,Polyethylene Naphthalate,O=C(OCCO)c1ccc2ccccc2c1C(=O)OCCO,C14H10O4,engineering_plastic,naphthalate-based polyester
+PET,Polyethylene Terephthalate,O=C(OCCO)c1ccc(C(=O)OCCO)cc1,C10H8O4,engineering_plastic,terephthalate-based polyester
+PPS,Polyphenylene Sulfide,Sc1ccc(S)cc1,C6H6S2,engineering_plastic,-(Ph-S)- repeat unit
+PPS40%GFR,PPS+40%GlassFiber,Sc1ccc(S)cc1,C6H6S2,engineering_plastic,same as PPS; glass fiber inert
+PI,Polyimide (Kapton),O=C1N(c2ccc(Oc3ccc(N4C(=O)c5ccc(C(=O)N(C)C5=O)cc4)cc3)cc2)C(=O)c2ccc(C1=O)cc2,,engineering_plastic,PMDA-ODA type polyimide; formula auto-calculated by RDKit
+PDMS,Polydimethylsiloxane,C[Si](C)(O)[Si](C)(C)O,C4H14O2Si2,siloxane,-(Si(CH3)2-O)- repeat unit dimer
+COC,Cyclic Olefin Copolymer,C1CC2C=CC1C2,C7H10,specialty,norbornene unit (Topas type)
+EVA,Ethylene-Vinyl Acetate,CCC(OC(=O)C)C,C6H10O2,specialty,ethylene-VA copolymer ~33% VA
+Nomex,meta-Aramid,O=C(Nc1cccc(NC(=O)c2cccc(C(=O))c2)c1),C14H10N2O2,aramid,poly(m-phenylene isophthalamide)
+POMC,Polyoxymethylene Copolymer,COC,C2H6O,acetal,-(O-CH2)- repeat unit; dimethoxymethane
+POMH,Polyoxymethylene Homopolymer,COC,C2H6O,acetal,-(O-CH2)- repeat unit; dimethoxymethane

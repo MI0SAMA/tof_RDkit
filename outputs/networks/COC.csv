@@ -1,0 +1,51 @@
+formula,counts,exact_mass,ion_mode,charge,source_compound_id,source_name,generation_type,path,broken_bonds,h_shift,adduct,neutral_losses,fragment_atom_indices,score
+C7H10,"{'C': 7, 'H': 10}",94.0782503223,neutral,0,COC,Cyclic Olefin Copolymer,parent,M,0,0,,,,1.0
+C7H11,"{'C': 7, 'H': 11}",95.08607535453,positive,1,COC,Cyclic Olefin Copolymer,adduct,M | H,0,0,H,,,0.75
+C7H9,"{'C': 7, 'H': 9}",93.07042529007,negative,-1,COC,Cyclic Olefin Copolymer,adduct,M | -H,0,0,-H,,,0.75
+C7H10,"{'C': 7, 'H': 10}",94.0782503223,positive,1,COC,Cyclic Olefin Copolymer,adduct,M | H shift -1 | H,0,-1,H,,,0.7
+C7H10,"{'C': 7, 'H': 10}",94.0782503223,negative,-1,COC,Cyclic Olefin Copolymer,adduct,M | H shift +1 | -H,0,1,-H,,,0.7
+C7H11,"{'C': 7, 'H': 11}",95.08607535453,neutral,0,COC,Cyclic Olefin Copolymer,h_shift,M | H shift +1,0,1,,,,0.7
+C7H12,"{'C': 7, 'H': 12}",96.09390038676,positive,1,COC,Cyclic Olefin Copolymer,adduct,M | H shift +1 | H,0,1,H,,,0.7
+C7H8,"{'C': 7, 'H': 8}",92.06260025784,negative,-1,COC,Cyclic Olefin Copolymer,adduct,M | H shift -1 | -H,0,-1,-H,,,0.7
+C7H9,"{'C': 7, 'H': 9}",93.07042529007,neutral,0,COC,Cyclic Olefin Copolymer,h_shift,M | H shift -1,0,-1,,,,0.7
+C6H7,"{'C': 6, 'H': 7}",79.05477522561,neutral,0,COC,Cyclic Olefin Copolymer,neutral_loss,M | -CH3,0,0,,CH3,,0.65
+C7H11,"{'C': 7, 'H': 11}",95.08607535453,negative,-1,COC,Cyclic Olefin Copolymer,adduct,M | H shift +2 | -H,0,2,-H,,,0.65
+C7H12,"{'C': 7, 'H': 12}",96.09390038676,neutral,0,COC,Cyclic Olefin Copolymer,h_shift,M | H shift +2,0,2,,,,0.65
+C7H13,"{'C': 7, 'H': 13}",97.10172541899,positive,1,COC,Cyclic Olefin Copolymer,adduct,M | H shift +2 | H,0,2,H,,,0.65
+C7H7,"{'C': 7, 'H': 7}",91.05477522561,negative,-1,COC,Cyclic Olefin Copolymer,adduct,M | H shift -2 | -H,0,-2,-H,,,0.65
+C7H8,"{'C': 7, 'H': 8}",92.06260025784,neutral,0,COC,Cyclic Olefin Copolymer,h_shift,M | H shift -2,0,-2,,,,0.65
+C7H8,"{'C': 7, 'H': 8}",92.06260025784,neutral,0,COC,Cyclic Olefin Copolymer,neutral_loss,M | -H2,0,0,,H2,,0.65
+C7H9,"{'C': 7, 'H': 9}",93.07042529007,positive,1,COC,Cyclic Olefin Copolymer,adduct,M | H shift -2 | H,0,-2,H,,,0.65
+C7H10Cl,"{'C': 7, 'H': 10, 'Cl': 1}",129.0471030043,negative,-1,COC,Cyclic Olefin Copolymer,adduct,M | Cl,0,0,Cl,,,0.63
+C7H10K,"{'C': 7, 'H': 10, 'K': 1}",133.0419568087,positive,1,COC,Cyclic Olefin Copolymer,adduct,M | K,0,0,K,,,0.63
+C7H10Na,"{'C': 7, 'H': 10, 'Na': 1}",117.0680196043,positive,1,COC,Cyclic Olefin Copolymer,adduct,M | Na,0,0,Na,,,0.63
+C7H10O,"{'C': 7, 'H': 10, 'O': 1}",110.07316494187,negative,-1,COC,Cyclic Olefin Copolymer,adduct,M | O,0,0,O,,,0.63
+C7H11O,"{'C': 7, 'H': 11, 'O': 1}",111.08098997409999,negative,-1,COC,Cyclic Olefin Copolymer,adduct,M | OH | ; | M | H shift +1 | O,0,0,OH,,,0.63
+C6H6,"{'C': 6, 'H': 6}",78.04695019338,neutral,0,COC,Cyclic Olefin Copolymer,neutral_loss,M | H shift -1 | -CH3,0,-1,,CH3,,0.6
+C6H8,"{'C': 6, 'H': 8}",80.06260025784,neutral,0,COC,Cyclic Olefin Copolymer,neutral_loss,M | H shift +1 | -CH3,0,1,,CH3,,0.6
+C7H7,"{'C': 7, 'H': 7}",91.05477522561,neutral,0,COC,Cyclic Olefin Copolymer,neutral_loss,M | H shift -1 | -H2,0,-1,,H2,,0.6
+C7H9,"{'C': 7, 'H': 9}",93.07042529007,neutral,0,COC,Cyclic Olefin Copolymer,neutral_loss,M | H shift +1 | -H2,0,1,,H2,,0.6
+C7H11Cl,"{'C': 7, 'H': 11, 'Cl': 1}",130.05492803653,negative,-1,COC,Cyclic Olefin Copolymer,adduct,M | H shift +1 | Cl,0,1,Cl,,,0.58
+C7H11K,"{'C': 7, 'H': 11, 'K': 1}",134.04978184093,positive,1,COC,Cyclic Olefin Copolymer,adduct,M | H shift +1 | K,0,1,K,,,0.58
+C7H11Na,"{'C': 7, 'H': 11, 'Na': 1}",118.07584463653001,positive,1,COC,Cyclic Olefin Copolymer,adduct,M | H shift +1 | Na,0,1,Na,,,0.58
+C7H12O,"{'C': 7, 'H': 12, 'O': 1}",112.08881500633,negative,-1,COC,Cyclic Olefin Copolymer,adduct,M | H shift +1 | OH | ; | M | H shift +2 | O,0,1,OH,,,0.58
+C7H9Cl,"{'C': 7, 'H': 9, 'Cl': 1}",128.03927797207,negative,-1,COC,Cyclic Olefin Copolymer,adduct,M | H shift -1 | Cl,0,-1,Cl,,,0.58
+C7H9K,"{'C': 7, 'H': 9, 'K': 1}",132.03413177647,positive,1,COC,Cyclic Olefin Copolymer,adduct,M | H shift -1 | K,0,-1,K,,,0.58
+C7H9Na,"{'C': 7, 'H': 9, 'Na': 1}",116.06019457207,positive,1,COC,Cyclic Olefin Copolymer,adduct,M | H shift -1 | Na,0,-1,Na,,,0.58
+C7H9O,"{'C': 7, 'H': 9, 'O': 1}",109.06533990964,negative,-1,COC,Cyclic Olefin Copolymer,adduct,M | H shift -1 | O,0,-1,O,,,0.58
+C14H19,"{'C': 14, 'H': 19}",187.14867561237,negative,-1,COC,Cyclic Olefin Copolymer,dimer,2M | -H,0,0,-H,,,0.55
+C14H21,"{'C': 14, 'H': 21}",189.16432567683,positive,1,COC,Cyclic Olefin Copolymer,dimer,2M | H,0,0,H,,,0.55
+C6H5,"{'C': 6, 'H': 5}",77.03912516115,neutral,0,COC,Cyclic Olefin Copolymer,neutral_loss,M | H shift -2 | -CH3,0,-2,,CH3,,0.55
+C6H9,"{'C': 6, 'H': 9}",81.07042529007,neutral,0,COC,Cyclic Olefin Copolymer,neutral_loss,M | H shift +2 | -CH3,0,2,,CH3,,0.55
+C7H10,"{'C': 7, 'H': 10}",94.0782503223,neutral,0,COC,Cyclic Olefin Copolymer,neutral_loss,M | H shift +2 | -H2,0,2,,H2,,0.55
+C7H6,"{'C': 7, 'H': 6}",90.04695019338,neutral,0,COC,Cyclic Olefin Copolymer,neutral_loss,M | H shift -2 | -H2,0,-2,,H2,,0.55
+C7H12Cl,"{'C': 7, 'H': 12, 'Cl': 1}",131.06275306876,negative,-1,COC,Cyclic Olefin Copolymer,adduct,M | H shift +2 | Cl,0,2,Cl,,,0.53
+C7H12K,"{'C': 7, 'H': 12, 'K': 1}",135.05760687316,positive,1,COC,Cyclic Olefin Copolymer,adduct,M | H shift +2 | K,0,2,K,,,0.53
+C7H12Na,"{'C': 7, 'H': 12, 'Na': 1}",119.08366966876,positive,1,COC,Cyclic Olefin Copolymer,adduct,M | H shift +2 | Na,0,2,Na,,,0.53
+C7H13O,"{'C': 7, 'H': 13, 'O': 1}",113.09664003856,negative,-1,COC,Cyclic Olefin Copolymer,adduct,M | H shift +2 | OH,0,2,OH,,,0.53
+C7H8Cl,"{'C': 7, 'H': 8, 'Cl': 1}",127.03145293984,negative,-1,COC,Cyclic Olefin Copolymer,adduct,M | H shift -2 | Cl,0,-2,Cl,,,0.53
+C7H8K,"{'C': 7, 'H': 8, 'K': 1}",131.02630674424,positive,1,COC,Cyclic Olefin Copolymer,adduct,M | H shift -2 | K,0,-2,K,,,0.53
+C7H8Na,"{'C': 7, 'H': 8, 'Na': 1}",115.05236953984,positive,1,COC,Cyclic Olefin Copolymer,adduct,M | H shift -2 | Na,0,-2,Na,,,0.53
+C7H8O,"{'C': 7, 'H': 8, 'O': 1}",108.05751487741,negative,-1,COC,Cyclic Olefin Copolymer,adduct,M | H shift -2 | O,0,-2,O,,,0.53
+C14H20Cl,"{'C': 14, 'H': 20, 'Cl': 1}",223.1253533266,negative,-1,COC,Cyclic Olefin Copolymer,dimer,2M | Cl,0,0,Cl,,,0.43
+C14H20Na,"{'C': 14, 'H': 20, 'Na': 1}",211.1462699266,positive,1,COC,Cyclic Olefin Copolymer,dimer,2M | Na,0,0,Na,,,0.43

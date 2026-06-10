@@ -1,0 +1,2827 @@
+{
+  "compound_id": "STD001",
+  "name": "Toluene",
+  "smiles": "Cc1ccccc1",
+  "parent_formula": "C7H8",
+  "records": [
+    {
+      "formula": "C7H8",
+      "counts": {
+        "C": 7,
+        "H": 8
+      },
+      "exact_mass": 92.06260025784,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "source_compound_id": "STD001",
+      "source_name": "Toluene",
+      "generation_type": "parent",
+      "path": [
+        "M"
+      ],
+      "broken_bonds": 0,
+      "h_shift": 0,
+      "adduct": null,
+      "neutral_losses": [],
+      "fragment_atom_indices": null,
+      "score": 1.0
+    },
+    {
+      "formula": "C7H7",
+      "counts": {
+        "C": 7,
+        "H": 7
+      },
+      "exact_mass": 91.05477522561,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "STD001",
+      "source_name": "Toluene",
+      "generation_type": "adduct",
+      "path": [
+        "M",
+        "-H"
+      ],
+      "broken_bonds": 0,
+      "h_shift": 0,
+      "adduct": "-H",
+      "neutral_losses": [],
+      "fragment_atom_indices": null,
+      "score": 0.75
+    },
+    {
+      "formula": "C7H9",
+      "counts": {
+        "C": 7,
+        "H": 9
+      },
+      "exact_mass": 93.07042529007,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "STD001",
+      "source_name": "Toluene",
+      "generation_type": "adduct",
+      "path": [
+        "M",
+        "H"
+      ],
+      "broken_bonds": 0,
+      "h_shift": 0,
+      "adduct": "H",
+      "neutral_losses": [],
+      "fragment_atom_indices": null,
+      "score": 0.75
+    },
+    {
+      "formula": "C7H10",
+      "counts": {
+        "C": 7,
+        "H": 10
+      },
+      "exact_mass": 94.0782503223,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "STD001",
+      "source_name": "Toluene",
+      "generation_type": "adduct",
+      "path": [
+        "M",
+        "H shift +1",
+        "H"
+      ],
+      "broken_bonds": 0,
+      "h_shift": 1,
+      "adduct": "H",
+      "neutral_losses": [],
+      "fragment_atom_indices": null,
+      "score": 0.7
+    },
+    {
+      "formula": "C7H6",
+      "counts": {
+        "C": 7,
+        "H": 6
+      },
+      "exact_mass": 90.04695019338,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "STD001",
+      "source_name": "Toluene",
+      "generation_type": "adduct",
+      "path": [
+        "M",
+        "H shift -1",
+        "-H"
+      ],
+      "broken_bonds": 0,
+      "h_shift": -1,
+      "adduct": "-H",
+      "neutral_losses": [],
+      "fragment_atom_indices": null,
+      "score": 0.7
+    },
+    {
+      "formula": "C7H7",
+      "counts": {
+        "C": 7,
+        "H": 7
+      },
+      "exact_mass": 91.05477522561,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "source_compound_id": "STD001",
+      "source_name": "Toluene",
+      "generation_type": "h_shift",
+      "path": [
+        "M",
+        "H shift -1"
+      ],
+      "broken_bonds": 0,
+      "h_shift": -1,
+      "adduct": null,
+      "neutral_losses": [],
+      "fragment_atom_indices": null,
+      "score": 0.7
+    },
+    {
+      "formula": "C7H8",
+      "counts": {
+        "C": 7,
+        "H": 8
+      },
+      "exact_mass": 92.06260025784,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "STD001",
+      "source_name": "Toluene",
+      "generation_type": "adduct",
+      "path": [
+        "M",
+        "H shift -1",
+        "H"
+      ],
+      "broken_bonds": 0,
+      "h_shift": -1,
+      "adduct": "H",
+      "neutral_losses": [],
+      "fragment_atom_indices": null,
+      "score": 0.7
+    },
+    {
+      "formula": "C7H8",
+      "counts": {
+        "C": 7,
+        "H": 8
+      },
+      "exact_mass": 92.06260025784,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "STD001",
+      "source_name": "Toluene",
+      "generation_type": "adduct",
+      "path": [
+        "M",
+        "H shift +1",
+        "-H"
+      ],
+      "broken_bonds": 0,
+      "h_shift": 1,
+      "adduct": "-H",
+      "neutral_losses": [],
+      "fragment_atom_indices": null,
+      "score": 0.7
+    },
+    {
+      "formula": "C7H9",
+      "counts": {
+        "C": 7,
+        "H": 9
+      },
+      "exact_mass": 93.07042529007,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "source_compound_id": "STD001",
+      "source_name": "Toluene",
+      "generation_type": "h_shift",
+      "path": [
+        "M",
+        "H shift +1"
+      ],
+      "broken_bonds": 0,
+      "h_shift": 1,
+      "adduct": null,
+      "neutral_losses": [],
+      "fragment_atom_indices": null,
+      "score": 0.7
+    },
+    {
+      "formula": "C6H5",
+      "counts": {
+        "C": 6,
+        "H": 5
+      },
+      "exact_mass": 77.03912516115,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "source_compound_id": "STD001",
+      "source_name": "Toluene",
+      "generation_type": "neutral_loss",
+      "path": [
+        "M",
+        "-CH3",
+        ";",
+        "break 1 bond(s)",
+        "H shift +2",
+        "-H2"
+      ],
+      "broken_bonds": 0,
+      "h_shift": 0,
+      "adduct": null,
+      "neutral_losses": [
+        "CH3"
+      ],
+      "fragment_atom_indices": null,
+      "score": 0.65
+    },
+    {
+      "formula": "C7H10",
+      "counts": {
+        "C": 7,
+        "H": 10
+      },
+      "exact_mass": 94.0782503223,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "source_compound_id": "STD001",
+      "source_name": "Toluene",
+      "generation_type": "h_shift",
+      "path": [
+        "M",
+        "H shift +2"
+      ],
+      "broken_bonds": 0,
+      "h_shift": 2,
+      "adduct": null,
+      "neutral_losses": [],
+      "fragment_atom_indices": null,
+      "score": 0.65
+    },
+    {
+      "formula": "C7H11",
+      "counts": {
+        "C": 7,
+        "H": 11
+      },
+      "exact_mass": 95.08607535453,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "STD001",
+      "source_name": "Toluene",
+      "generation_type": "adduct",
+      "path": [
+        "M",
+        "H shift +2",
+        "H"
+      ],
+      "broken_bonds": 0,
+      "h_shift": 2,
+      "adduct": "H",
+      "neutral_losses": [],
+      "fragment_atom_indices": null,
+      "score": 0.65
+    },
+    {
+      "formula": "C7H5",
+      "counts": {
+        "C": 7,
+        "H": 5
+      },
+      "exact_mass": 89.03912516115,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "STD001",
+      "source_name": "Toluene",
+      "generation_type": "adduct",
+      "path": [
+        "M",
+        "H shift -2",
+        "-H"
+      ],
+      "broken_bonds": 0,
+      "h_shift": -2,
+      "adduct": "-H",
+      "neutral_losses": [],
+      "fragment_atom_indices": null,
+      "score": 0.65
+    },
+    {
+      "formula": "C7H6",
+      "counts": {
+        "C": 7,
+        "H": 6
+      },
+      "exact_mass": 90.04695019338,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "source_compound_id": "STD001",
+      "source_name": "Toluene",
+      "generation_type": "h_shift",
+      "path": [
+        "M",
+        "H shift -2"
+      ],
+      "broken_bonds": 0,
+      "h_shift": -2,
+      "adduct": null,
+      "neutral_losses": [],
+      "fragment_atom_indices": null,
+      "score": 0.65
+    },
+    {
+      "formula": "C7H6",
+      "counts": {
+        "C": 7,
+        "H": 6
+      },
+      "exact_mass": 90.04695019338,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "source_compound_id": "STD001",
+      "source_name": "Toluene",
+      "generation_type": "neutral_loss",
+      "path": [
+        "M",
+        "-H2"
+      ],
+      "broken_bonds": 0,
+      "h_shift": 0,
+      "adduct": null,
+      "neutral_losses": [
+        "H2"
+      ],
+      "fragment_atom_indices": null,
+      "score": 0.65
+    },
+    {
+      "formula": "C7H7",
+      "counts": {
+        "C": 7,
+        "H": 7
+      },
+      "exact_mass": 91.05477522561,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "STD001",
+      "source_name": "Toluene",
+      "generation_type": "adduct",
+      "path": [
+        "M",
+        "H shift -2",
+        "H"
+      ],
+      "broken_bonds": 0,
+      "h_shift": -2,
+      "adduct": "H",
+      "neutral_losses": [],
+      "fragment_atom_indices": null,
+      "score": 0.65
+    },
+    {
+      "formula": "C7H9",
+      "counts": {
+        "C": 7,
+        "H": 9
+      },
+      "exact_mass": 93.07042529007,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "STD001",
+      "source_name": "Toluene",
+      "generation_type": "adduct",
+      "path": [
+        "M",
+        "H shift +2",
+        "-H"
+      ],
+      "broken_bonds": 0,
+      "h_shift": 2,
+      "adduct": "-H",
+      "neutral_losses": [],
+      "fragment_atom_indices": null,
+      "score": 0.65
+    },
+    {
+      "formula": "C7H8Cl",
+      "counts": {
+        "C": 7,
+        "H": 8,
+        "Cl": 1
+      },
+      "exact_mass": 127.03145293984,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "STD001",
+      "source_name": "Toluene",
+      "generation_type": "adduct",
+      "path": [
+        "M",
+        "Cl"
+      ],
+      "broken_bonds": 0,
+      "h_shift": 0,
+      "adduct": "Cl",
+      "neutral_losses": [],
+      "fragment_atom_indices": null,
+      "score": 0.63
+    },
+    {
+      "formula": "C7H8K",
+      "counts": {
+        "C": 7,
+        "H": 8,
+        "K": 1
+      },
+      "exact_mass": 131.02630674424,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "STD001",
+      "source_name": "Toluene",
+      "generation_type": "adduct",
+      "path": [
+        "M",
+        "K"
+      ],
+      "broken_bonds": 0,
+      "h_shift": 0,
+      "adduct": "K",
+      "neutral_losses": [],
+      "fragment_atom_indices": null,
+      "score": 0.63
+    },
+    {
+      "formula": "C7H8Na",
+      "counts": {
+        "C": 7,
+        "H": 8,
+        "Na": 1
+      },
+      "exact_mass": 115.05236953984,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "STD001",
+      "source_name": "Toluene",
+      "generation_type": "adduct",
+      "path": [
+        "M",
+        "Na"
+      ],
+      "broken_bonds": 0,
+      "h_shift": 0,
+      "adduct": "Na",
+      "neutral_losses": [],
+      "fragment_atom_indices": null,
+      "score": 0.63
+    },
+    {
+      "formula": "C7H8O",
+      "counts": {
+        "C": 7,
+        "H": 8,
+        "O": 1
+      },
+      "exact_mass": 108.05751487741,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "STD001",
+      "source_name": "Toluene",
+      "generation_type": "adduct",
+      "path": [
+        "M",
+        "O"
+      ],
+      "broken_bonds": 0,
+      "h_shift": 0,
+      "adduct": "O",
+      "neutral_losses": [],
+      "fragment_atom_indices": null,
+      "score": 0.63
+    },
+    {
+      "formula": "C7H9O",
+      "counts": {
+        "C": 7,
+        "H": 9,
+        "O": 1
+      },
+      "exact_mass": 109.06533990964,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "STD001",
+      "source_name": "Toluene",
+      "generation_type": "adduct",
+      "path": [
+        "M",
+        "OH",
+        ";",
+        "M",
+        "H shift +1",
+        "O"
+      ],
+      "broken_bonds": 0,
+      "h_shift": 0,
+      "adduct": "OH",
+      "neutral_losses": [],
+      "fragment_atom_indices": null,
+      "score": 0.63
+    },
+    {
+      "formula": "C6H4",
+      "counts": {
+        "C": 6,
+        "H": 4
+      },
+      "exact_mass": 76.03130012892,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "source_compound_id": "STD001",
+      "source_name": "Toluene",
+      "generation_type": "neutral_loss",
+      "path": [
+        "M",
+        "H shift -1",
+        "-CH3",
+        ";",
+        "break 1 bond(s)",
+        "H shift +1",
+        "-H2"
+      ],
+      "broken_bonds": 0,
+      "h_shift": -1,
+      "adduct": null,
+      "neutral_losses": [
+        "CH3"
+      ],
+      "fragment_atom_indices": null,
+      "score": 0.6
+    },
+    {
+      "formula": "C6H4",
+      "counts": {
+        "C": 6,
+        "H": 4
+      },
+      "exact_mass": 76.03130012892,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "STD001",
+      "source_name": "Toluene",
+      "generation_type": "adduct",
+      "path": [
+        "break 1 bond(s)",
+        "-H"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 0,
+      "adduct": "-H",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "score": 0.6
+    },
+    {
+      "formula": "C6H5",
+      "counts": {
+        "C": 6,
+        "H": 5
+      },
+      "exact_mass": 77.03912516115,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "source_compound_id": "STD001",
+      "source_name": "Toluene",
+      "generation_type": "fragment",
+      "path": [
+        "break 1 bond(s)"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 0,
+      "adduct": null,
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "score": 0.6
+    },
+    {
+      "formula": "C6H6",
+      "counts": {
+        "C": 6,
+        "H": 6
+      },
+      "exact_mass": 78.04695019338,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "source_compound_id": "STD001",
+      "source_name": "Toluene",
+      "generation_type": "neutral_loss",
+      "path": [
+        "M",
+        "H shift +1",
+        "-CH3"
+      ],
+      "broken_bonds": 0,
+      "h_shift": 1,
+      "adduct": null,
+      "neutral_losses": [
+        "CH3"
+      ],
+      "fragment_atom_indices": null,
+      "score": 0.6
+    },
+    {
+      "formula": "C6H6",
+      "counts": {
+        "C": 6,
+        "H": 6
+      },
+      "exact_mass": 78.04695019338,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "STD001",
+      "source_name": "Toluene",
+      "generation_type": "adduct",
+      "path": [
+        "break 1 bond(s)",
+        "H"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 0,
+      "adduct": "H",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "score": 0.6
+    },
+    {
+      "formula": "C7H5",
+      "counts": {
+        "C": 7,
+        "H": 5
+      },
+      "exact_mass": 89.03912516115,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "source_compound_id": "STD001",
+      "source_name": "Toluene",
+      "generation_type": "neutral_loss",
+      "path": [
+        "M",
+        "H shift -1",
+        "-H2"
+      ],
+      "broken_bonds": 0,
+      "h_shift": -1,
+      "adduct": null,
+      "neutral_losses": [
+        "H2"
+      ],
+      "fragment_atom_indices": null,
+      "score": 0.6
+    },
+    {
+      "formula": "C7H7",
+      "counts": {
+        "C": 7,
+        "H": 7
+      },
+      "exact_mass": 91.05477522561,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "source_compound_id": "STD001",
+      "source_name": "Toluene",
+      "generation_type": "neutral_loss",
+      "path": [
+        "M",
+        "H shift +1",
+        "-H2"
+      ],
+      "broken_bonds": 0,
+      "h_shift": 1,
+      "adduct": null,
+      "neutral_losses": [
+        "H2"
+      ],
+      "fragment_atom_indices": null,
+      "score": 0.6
+    },
+    {
+      "formula": "C7H10O",
+      "counts": {
+        "C": 7,
+        "H": 10,
+        "O": 1
+      },
+      "exact_mass": 110.07316494187,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "STD001",
+      "source_name": "Toluene",
+      "generation_type": "adduct",
+      "path": [
+        "M",
+        "H shift +1",
+        "OH",
+        ";",
+        "M",
+        "H shift +2",
+        "O"
+      ],
+      "broken_bonds": 0,
+      "h_shift": 1,
+      "adduct": "OH",
+      "neutral_losses": [],
+      "fragment_atom_indices": null,
+      "score": 0.58
+    },
+    {
+      "formula": "C7H7Cl",
+      "counts": {
+        "C": 7,
+        "H": 7,
+        "Cl": 1
+      },
+      "exact_mass": 126.02362790760999,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "STD001",
+      "source_name": "Toluene",
+      "generation_type": "adduct",
+      "path": [
+        "M",
+        "H shift -1",
+        "Cl"
+      ],
+      "broken_bonds": 0,
+      "h_shift": -1,
+      "adduct": "Cl",
+      "neutral_losses": [],
+      "fragment_atom_indices": null,
+      "score": 0.58
+    },
+    {
+      "formula": "C7H7K",
+      "counts": {
+        "C": 7,
+        "H": 7,
+        "K": 1
+      },
+      "exact_mass": 130.01848171201,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "STD001",
+      "source_name": "Toluene",
+      "generation_type": "adduct",
+      "path": [
+        "M",
+        "H shift -1",
+        "K"
+      ],
+      "broken_bonds": 0,
+      "h_shift": -1,
+      "adduct": "K",
+      "neutral_losses": [],
+      "fragment_atom_indices": null,
+      "score": 0.58
+    },
+    {
+      "formula": "C7H7Na",
+      "counts": {
+        "C": 7,
+        "H": 7,
+        "Na": 1
+      },
+      "exact_mass": 114.04454450761,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "STD001",
+      "source_name": "Toluene",
+      "generation_type": "adduct",
+      "path": [
+        "M",
+        "H shift -1",
+        "Na"
+      ],
+      "broken_bonds": 0,
+      "h_shift": -1,
+      "adduct": "Na",
+      "neutral_losses": [],
+      "fragment_atom_indices": null,
+      "score": 0.58
+    },
+    {
+      "formula": "C7H7O",
+      "counts": {
+        "C": 7,
+        "H": 7,
+        "O": 1
+      },
+      "exact_mass": 107.04968984518,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "STD001",
+      "source_name": "Toluene",
+      "generation_type": "adduct",
+      "path": [
+        "M",
+        "H shift -1",
+        "O"
+      ],
+      "broken_bonds": 0,
+      "h_shift": -1,
+      "adduct": "O",
+      "neutral_losses": [],
+      "fragment_atom_indices": null,
+      "score": 0.58
+    },
+    {
+      "formula": "C7H9Cl",
+      "counts": {
+        "C": 7,
+        "H": 9,
+        "Cl": 1
+      },
+      "exact_mass": 128.03927797207,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "STD001",
+      "source_name": "Toluene",
+      "generation_type": "adduct",
+      "path": [
+        "M",
+        "H shift +1",
+        "Cl"
+      ],
+      "broken_bonds": 0,
+      "h_shift": 1,
+      "adduct": "Cl",
+      "neutral_losses": [],
+      "fragment_atom_indices": null,
+      "score": 0.58
+    },
+    {
+      "formula": "C7H9K",
+      "counts": {
+        "C": 7,
+        "H": 9,
+        "K": 1
+      },
+      "exact_mass": 132.03413177647,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "STD001",
+      "source_name": "Toluene",
+      "generation_type": "adduct",
+      "path": [
+        "M",
+        "H shift +1",
+        "K"
+      ],
+      "broken_bonds": 0,
+      "h_shift": 1,
+      "adduct": "K",
+      "neutral_losses": [],
+      "fragment_atom_indices": null,
+      "score": 0.58
+    },
+    {
+      "formula": "C7H9Na",
+      "counts": {
+        "C": 7,
+        "H": 9,
+        "Na": 1
+      },
+      "exact_mass": 116.06019457207,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "STD001",
+      "source_name": "Toluene",
+      "generation_type": "adduct",
+      "path": [
+        "M",
+        "H shift +1",
+        "Na"
+      ],
+      "broken_bonds": 0,
+      "h_shift": 1,
+      "adduct": "Na",
+      "neutral_losses": [],
+      "fragment_atom_indices": null,
+      "score": 0.58
+    },
+    {
+      "formula": "C14H15",
+      "counts": {
+        "C": 14,
+        "H": 15
+      },
+      "exact_mass": 183.11737548345,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "STD001",
+      "source_name": "Toluene",
+      "generation_type": "dimer",
+      "path": [
+        "2M",
+        "-H"
+      ],
+      "broken_bonds": 0,
+      "h_shift": 0,
+      "adduct": "-H",
+      "neutral_losses": [],
+      "fragment_atom_indices": null,
+      "score": 0.55
+    },
+    {
+      "formula": "C14H17",
+      "counts": {
+        "C": 14,
+        "H": 17
+      },
+      "exact_mass": 185.13302554791,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "STD001",
+      "source_name": "Toluene",
+      "generation_type": "dimer",
+      "path": [
+        "2M",
+        "H"
+      ],
+      "broken_bonds": 0,
+      "h_shift": 0,
+      "adduct": "H",
+      "neutral_losses": [],
+      "fragment_atom_indices": null,
+      "score": 0.55
+    },
+    {
+      "formula": "C6H3",
+      "counts": {
+        "C": 6,
+        "H": 3
+      },
+      "exact_mass": 75.02347509669,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "source_compound_id": "STD001",
+      "source_name": "Toluene",
+      "generation_type": "neutral_loss",
+      "path": [
+        "M",
+        "H shift -2",
+        "-CH3",
+        ";",
+        "break 1 bond(s)",
+        "-H2"
+      ],
+      "broken_bonds": 0,
+      "h_shift": -2,
+      "adduct": null,
+      "neutral_losses": [
+        "CH3"
+      ],
+      "fragment_atom_indices": null,
+      "score": 0.55
+    },
+    {
+      "formula": "C6H7",
+      "counts": {
+        "C": 6,
+        "H": 7
+      },
+      "exact_mass": 79.05477522561,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "source_compound_id": "STD001",
+      "source_name": "Toluene",
+      "generation_type": "neutral_loss",
+      "path": [
+        "M",
+        "H shift +2",
+        "-CH3"
+      ],
+      "broken_bonds": 0,
+      "h_shift": 2,
+      "adduct": null,
+      "neutral_losses": [
+        "CH3"
+      ],
+      "fragment_atom_indices": null,
+      "score": 0.55
+    },
+    {
+      "formula": "C7H4",
+      "counts": {
+        "C": 7,
+        "H": 4
+      },
+      "exact_mass": 88.03130012892,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "source_compound_id": "STD001",
+      "source_name": "Toluene",
+      "generation_type": "neutral_loss",
+      "path": [
+        "M",
+        "H shift -2",
+        "-H2"
+      ],
+      "broken_bonds": 0,
+      "h_shift": -2,
+      "adduct": null,
+      "neutral_losses": [
+        "H2"
+      ],
+      "fragment_atom_indices": null,
+      "score": 0.55
+    },
+    {
+      "formula": "C7H8",
+      "counts": {
+        "C": 7,
+        "H": 8
+      },
+      "exact_mass": 92.06260025784,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "source_compound_id": "STD001",
+      "source_name": "Toluene",
+      "generation_type": "neutral_loss",
+      "path": [
+        "M",
+        "H shift +2",
+        "-H2"
+      ],
+      "broken_bonds": 0,
+      "h_shift": 2,
+      "adduct": null,
+      "neutral_losses": [
+        "H2"
+      ],
+      "fragment_atom_indices": null,
+      "score": 0.55
+    },
+    {
+      "formula": "C6H3",
+      "counts": {
+        "C": 6,
+        "H": 3
+      },
+      "exact_mass": 75.02347509669,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "STD001",
+      "source_name": "Toluene",
+      "generation_type": "adduct",
+      "path": [
+        "break 1 bond(s)",
+        "H shift -1",
+        "-H"
+      ],
+      "broken_bonds": 1,
+      "h_shift": -1,
+      "adduct": "-H",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "score": 0.5499999999999999
+    },
+    {
+      "formula": "C6H4",
+      "counts": {
+        "C": 6,
+        "H": 4
+      },
+      "exact_mass": 76.03130012892,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "source_compound_id": "STD001",
+      "source_name": "Toluene",
+      "generation_type": "h_shift",
+      "path": [
+        "break 1 bond(s)",
+        "H shift -1"
+      ],
+      "broken_bonds": 1,
+      "h_shift": -1,
+      "adduct": null,
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "score": 0.5499999999999999
+    },
+    {
+      "formula": "C6H5",
+      "counts": {
+        "C": 6,
+        "H": 5
+      },
+      "exact_mass": 77.03912516115,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "STD001",
+      "source_name": "Toluene",
+      "generation_type": "adduct",
+      "path": [
+        "break 1 bond(s)",
+        "H shift -1",
+        "H"
+      ],
+      "broken_bonds": 1,
+      "h_shift": -1,
+      "adduct": "H",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "score": 0.5499999999999999
+    },
+    {
+      "formula": "C6H5",
+      "counts": {
+        "C": 6,
+        "H": 5
+      },
+      "exact_mass": 77.03912516115,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "STD001",
+      "source_name": "Toluene",
+      "generation_type": "adduct",
+      "path": [
+        "break 1 bond(s)",
+        "H shift +1",
+        "-H"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 1,
+      "adduct": "-H",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "score": 0.5499999999999999
+    },
+    {
+      "formula": "C6H6",
+      "counts": {
+        "C": 6,
+        "H": 6
+      },
+      "exact_mass": 78.04695019338,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "source_compound_id": "STD001",
+      "source_name": "Toluene",
+      "generation_type": "h_shift",
+      "path": [
+        "break 1 bond(s)",
+        "H shift +1"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 1,
+      "adduct": null,
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "score": 0.5499999999999999
+    },
+    {
+      "formula": "C6H7",
+      "counts": {
+        "C": 6,
+        "H": 7
+      },
+      "exact_mass": 79.05477522561,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "STD001",
+      "source_name": "Toluene",
+      "generation_type": "adduct",
+      "path": [
+        "break 1 bond(s)",
+        "H shift +1",
+        "H"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 1,
+      "adduct": "H",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "score": 0.5499999999999999
+    },
+    {
+      "formula": "C7H10Cl",
+      "counts": {
+        "C": 7,
+        "H": 10,
+        "Cl": 1
+      },
+      "exact_mass": 129.0471030043,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "STD001",
+      "source_name": "Toluene",
+      "generation_type": "adduct",
+      "path": [
+        "M",
+        "H shift +2",
+        "Cl"
+      ],
+      "broken_bonds": 0,
+      "h_shift": 2,
+      "adduct": "Cl",
+      "neutral_losses": [],
+      "fragment_atom_indices": null,
+      "score": 0.53
+    },
+    {
+      "formula": "C7H10K",
+      "counts": {
+        "C": 7,
+        "H": 10,
+        "K": 1
+      },
+      "exact_mass": 133.0419568087,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "STD001",
+      "source_name": "Toluene",
+      "generation_type": "adduct",
+      "path": [
+        "M",
+        "H shift +2",
+        "K"
+      ],
+      "broken_bonds": 0,
+      "h_shift": 2,
+      "adduct": "K",
+      "neutral_losses": [],
+      "fragment_atom_indices": null,
+      "score": 0.53
+    },
+    {
+      "formula": "C7H10Na",
+      "counts": {
+        "C": 7,
+        "H": 10,
+        "Na": 1
+      },
+      "exact_mass": 117.0680196043,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "STD001",
+      "source_name": "Toluene",
+      "generation_type": "adduct",
+      "path": [
+        "M",
+        "H shift +2",
+        "Na"
+      ],
+      "broken_bonds": 0,
+      "h_shift": 2,
+      "adduct": "Na",
+      "neutral_losses": [],
+      "fragment_atom_indices": null,
+      "score": 0.53
+    },
+    {
+      "formula": "C7H11O",
+      "counts": {
+        "C": 7,
+        "H": 11,
+        "O": 1
+      },
+      "exact_mass": 111.08098997409999,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "STD001",
+      "source_name": "Toluene",
+      "generation_type": "adduct",
+      "path": [
+        "M",
+        "H shift +2",
+        "OH"
+      ],
+      "broken_bonds": 0,
+      "h_shift": 2,
+      "adduct": "OH",
+      "neutral_losses": [],
+      "fragment_atom_indices": null,
+      "score": 0.53
+    },
+    {
+      "formula": "C7H6Cl",
+      "counts": {
+        "C": 7,
+        "H": 6,
+        "Cl": 1
+      },
+      "exact_mass": 125.01580287538,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "STD001",
+      "source_name": "Toluene",
+      "generation_type": "adduct",
+      "path": [
+        "M",
+        "H shift -2",
+        "Cl"
+      ],
+      "broken_bonds": 0,
+      "h_shift": -2,
+      "adduct": "Cl",
+      "neutral_losses": [],
+      "fragment_atom_indices": null,
+      "score": 0.53
+    },
+    {
+      "formula": "C7H6K",
+      "counts": {
+        "C": 7,
+        "H": 6,
+        "K": 1
+      },
+      "exact_mass": 129.01065667978,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "STD001",
+      "source_name": "Toluene",
+      "generation_type": "adduct",
+      "path": [
+        "M",
+        "H shift -2",
+        "K"
+      ],
+      "broken_bonds": 0,
+      "h_shift": -2,
+      "adduct": "K",
+      "neutral_losses": [],
+      "fragment_atom_indices": null,
+      "score": 0.53
+    },
+    {
+      "formula": "C7H6Na",
+      "counts": {
+        "C": 7,
+        "H": 6,
+        "Na": 1
+      },
+      "exact_mass": 113.03671947538,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "STD001",
+      "source_name": "Toluene",
+      "generation_type": "adduct",
+      "path": [
+        "M",
+        "H shift -2",
+        "Na"
+      ],
+      "broken_bonds": 0,
+      "h_shift": -2,
+      "adduct": "Na",
+      "neutral_losses": [],
+      "fragment_atom_indices": null,
+      "score": 0.53
+    },
+    {
+      "formula": "C7H6O",
+      "counts": {
+        "C": 7,
+        "H": 6,
+        "O": 1
+      },
+      "exact_mass": 106.04186481295,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "STD001",
+      "source_name": "Toluene",
+      "generation_type": "adduct",
+      "path": [
+        "M",
+        "H shift -2",
+        "O"
+      ],
+      "broken_bonds": 0,
+      "h_shift": -2,
+      "adduct": "O",
+      "neutral_losses": [],
+      "fragment_atom_indices": null,
+      "score": 0.53
+    },
+    {
+      "formula": "C5H2",
+      "counts": {
+        "C": 5,
+        "H": 2
+      },
+      "exact_mass": 62.01565006446,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "source_compound_id": "STD001",
+      "source_name": "Toluene",
+      "generation_type": "neutral_loss",
+      "path": [
+        "break 1 bond(s)",
+        "-CH3"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 0,
+      "adduct": null,
+      "neutral_losses": [
+        "CH3"
+      ],
+      "fragment_atom_indices": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "score": 0.5
+    },
+    {
+      "formula": "C6H2",
+      "counts": {
+        "C": 6,
+        "H": 2
+      },
+      "exact_mass": 74.01565006446,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "STD001",
+      "source_name": "Toluene",
+      "generation_type": "adduct",
+      "path": [
+        "break 1 bond(s)",
+        "H shift -2",
+        "-H"
+      ],
+      "broken_bonds": 1,
+      "h_shift": -2,
+      "adduct": "-H",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "score": 0.5
+    },
+    {
+      "formula": "C6H3",
+      "counts": {
+        "C": 6,
+        "H": 3
+      },
+      "exact_mass": 75.02347509669,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "source_compound_id": "STD001",
+      "source_name": "Toluene",
+      "generation_type": "h_shift",
+      "path": [
+        "break 1 bond(s)",
+        "H shift -2"
+      ],
+      "broken_bonds": 1,
+      "h_shift": -2,
+      "adduct": null,
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "score": 0.5
+    },
+    {
+      "formula": "C6H4",
+      "counts": {
+        "C": 6,
+        "H": 4
+      },
+      "exact_mass": 76.03130012892,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "STD001",
+      "source_name": "Toluene",
+      "generation_type": "adduct",
+      "path": [
+        "break 1 bond(s)",
+        "H shift -2",
+        "H"
+      ],
+      "broken_bonds": 1,
+      "h_shift": -2,
+      "adduct": "H",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "score": 0.5
+    },
+    {
+      "formula": "C6H6",
+      "counts": {
+        "C": 6,
+        "H": 6
+      },
+      "exact_mass": 78.04695019338,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "STD001",
+      "source_name": "Toluene",
+      "generation_type": "adduct",
+      "path": [
+        "break 1 bond(s)",
+        "H shift +2",
+        "-H"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 2,
+      "adduct": "-H",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "score": 0.5
+    },
+    {
+      "formula": "C6H7",
+      "counts": {
+        "C": 6,
+        "H": 7
+      },
+      "exact_mass": 79.05477522561,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "source_compound_id": "STD001",
+      "source_name": "Toluene",
+      "generation_type": "h_shift",
+      "path": [
+        "break 1 bond(s)",
+        "H shift +2"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 2,
+      "adduct": null,
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "score": 0.5
+    },
+    {
+      "formula": "C6H8",
+      "counts": {
+        "C": 6,
+        "H": 8
+      },
+      "exact_mass": 80.06260025784,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "STD001",
+      "source_name": "Toluene",
+      "generation_type": "adduct",
+      "path": [
+        "break 1 bond(s)",
+        "H shift +2",
+        "H"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 2,
+      "adduct": "H",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "score": 0.5
+    },
+    {
+      "formula": "C6H5Cl",
+      "counts": {
+        "C": 6,
+        "H": 5,
+        "Cl": 1
+      },
+      "exact_mass": 112.00797784315,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "STD001",
+      "source_name": "Toluene",
+      "generation_type": "adduct",
+      "path": [
+        "break 1 bond(s)",
+        "Cl"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 0,
+      "adduct": "Cl",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "score": 0.48
+    },
+    {
+      "formula": "C6H5K",
+      "counts": {
+        "C": 6,
+        "H": 5,
+        "K": 1
+      },
+      "exact_mass": 116.00283164755,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "STD001",
+      "source_name": "Toluene",
+      "generation_type": "adduct",
+      "path": [
+        "break 1 bond(s)",
+        "K"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 0,
+      "adduct": "K",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "score": 0.48
+    },
+    {
+      "formula": "C6H5Na",
+      "counts": {
+        "C": 6,
+        "H": 5,
+        "Na": 1
+      },
+      "exact_mass": 100.02889444315,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "STD001",
+      "source_name": "Toluene",
+      "generation_type": "adduct",
+      "path": [
+        "break 1 bond(s)",
+        "Na"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 0,
+      "adduct": "Na",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "score": 0.48
+    },
+    {
+      "formula": "C6H5O",
+      "counts": {
+        "C": 6,
+        "H": 5,
+        "O": 1
+      },
+      "exact_mass": 93.03403978072001,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "STD001",
+      "source_name": "Toluene",
+      "generation_type": "adduct",
+      "path": [
+        "break 1 bond(s)",
+        "O"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 0,
+      "adduct": "O",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "score": 0.48
+    },
+    {
+      "formula": "C6H6O",
+      "counts": {
+        "C": 6,
+        "H": 6,
+        "O": 1
+      },
+      "exact_mass": 94.04186481295,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "STD001",
+      "source_name": "Toluene",
+      "generation_type": "adduct",
+      "path": [
+        "break 1 bond(s)",
+        "OH",
+        ";",
+        "break 1 bond(s)",
+        "H shift +1",
+        "O"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 0,
+      "adduct": "OH",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "score": 0.48
+    },
+    {
+      "formula": "C5H",
+      "counts": {
+        "C": 5,
+        "H": 1
+      },
+      "exact_mass": 61.00782503223,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "source_compound_id": "STD001",
+      "source_name": "Toluene",
+      "generation_type": "neutral_loss",
+      "path": [
+        "break 1 bond(s)",
+        "H shift -1",
+        "-CH3"
+      ],
+      "broken_bonds": 1,
+      "h_shift": -1,
+      "adduct": null,
+      "neutral_losses": [
+        "CH3"
+      ],
+      "fragment_atom_indices": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "score": 0.44999999999999996
+    },
+    {
+      "formula": "C5H3",
+      "counts": {
+        "C": 5,
+        "H": 3
+      },
+      "exact_mass": 63.02347509669,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "source_compound_id": "STD001",
+      "source_name": "Toluene",
+      "generation_type": "neutral_loss",
+      "path": [
+        "break 1 bond(s)",
+        "H shift +1",
+        "-CH3"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 1,
+      "adduct": null,
+      "neutral_losses": [
+        "CH3"
+      ],
+      "fragment_atom_indices": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "score": 0.44999999999999996
+    },
+    {
+      "formula": "C6H2",
+      "counts": {
+        "C": 6,
+        "H": 2
+      },
+      "exact_mass": 74.01565006446,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "source_compound_id": "STD001",
+      "source_name": "Toluene",
+      "generation_type": "neutral_loss",
+      "path": [
+        "break 1 bond(s)",
+        "H shift -1",
+        "-H2"
+      ],
+      "broken_bonds": 1,
+      "h_shift": -1,
+      "adduct": null,
+      "neutral_losses": [
+        "H2"
+      ],
+      "fragment_atom_indices": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "score": 0.44999999999999996
+    },
+    {
+      "formula": "C14H16Cl",
+      "counts": {
+        "C": 14,
+        "H": 16,
+        "Cl": 1
+      },
+      "exact_mass": 219.09405319768,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "STD001",
+      "source_name": "Toluene",
+      "generation_type": "dimer",
+      "path": [
+        "2M",
+        "Cl"
+      ],
+      "broken_bonds": 0,
+      "h_shift": 0,
+      "adduct": "Cl",
+      "neutral_losses": [],
+      "fragment_atom_indices": null,
+      "score": 0.43
+    },
+    {
+      "formula": "C14H16Na",
+      "counts": {
+        "C": 14,
+        "H": 16,
+        "Na": 1
+      },
+      "exact_mass": 207.11496979768,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "STD001",
+      "source_name": "Toluene",
+      "generation_type": "dimer",
+      "path": [
+        "2M",
+        "Na"
+      ],
+      "broken_bonds": 0,
+      "h_shift": 0,
+      "adduct": "Na",
+      "neutral_losses": [],
+      "fragment_atom_indices": null,
+      "score": 0.43
+    },
+    {
+      "formula": "C6H4Cl",
+      "counts": {
+        "C": 6,
+        "H": 4,
+        "Cl": 1
+      },
+      "exact_mass": 111.00015281092,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "STD001",
+      "source_name": "Toluene",
+      "generation_type": "adduct",
+      "path": [
+        "break 1 bond(s)",
+        "H shift -1",
+        "Cl"
+      ],
+      "broken_bonds": 1,
+      "h_shift": -1,
+      "adduct": "Cl",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "score": 0.42999999999999994
+    },
+    {
+      "formula": "C6H4K",
+      "counts": {
+        "C": 6,
+        "H": 4,
+        "K": 1
+      },
+      "exact_mass": 114.99500661532,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "STD001",
+      "source_name": "Toluene",
+      "generation_type": "adduct",
+      "path": [
+        "break 1 bond(s)",
+        "H shift -1",
+        "K"
+      ],
+      "broken_bonds": 1,
+      "h_shift": -1,
+      "adduct": "K",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "score": 0.42999999999999994
+    },
+    {
+      "formula": "C6H4Na",
+      "counts": {
+        "C": 6,
+        "H": 4,
+        "Na": 1
+      },
+      "exact_mass": 99.02106941092,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "STD001",
+      "source_name": "Toluene",
+      "generation_type": "adduct",
+      "path": [
+        "break 1 bond(s)",
+        "H shift -1",
+        "Na"
+      ],
+      "broken_bonds": 1,
+      "h_shift": -1,
+      "adduct": "Na",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "score": 0.42999999999999994
+    },
+    {
+      "formula": "C6H4O",
+      "counts": {
+        "C": 6,
+        "H": 4,
+        "O": 1
+      },
+      "exact_mass": 92.02621474849,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "STD001",
+      "source_name": "Toluene",
+      "generation_type": "adduct",
+      "path": [
+        "break 1 bond(s)",
+        "H shift -1",
+        "O"
+      ],
+      "broken_bonds": 1,
+      "h_shift": -1,
+      "adduct": "O",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "score": 0.42999999999999994
+    },
+    {
+      "formula": "C6H6Cl",
+      "counts": {
+        "C": 6,
+        "H": 6,
+        "Cl": 1
+      },
+      "exact_mass": 113.01580287538,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "STD001",
+      "source_name": "Toluene",
+      "generation_type": "adduct",
+      "path": [
+        "break 1 bond(s)",
+        "H shift +1",
+        "Cl"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 1,
+      "adduct": "Cl",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "score": 0.42999999999999994
+    },
+    {
+      "formula": "C6H6K",
+      "counts": {
+        "C": 6,
+        "H": 6,
+        "K": 1
+      },
+      "exact_mass": 117.01065667978,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "STD001",
+      "source_name": "Toluene",
+      "generation_type": "adduct",
+      "path": [
+        "break 1 bond(s)",
+        "H shift +1",
+        "K"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 1,
+      "adduct": "K",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "score": 0.42999999999999994
+    },
+    {
+      "formula": "C6H6Na",
+      "counts": {
+        "C": 6,
+        "H": 6,
+        "Na": 1
+      },
+      "exact_mass": 101.03671947538,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "STD001",
+      "source_name": "Toluene",
+      "generation_type": "adduct",
+      "path": [
+        "break 1 bond(s)",
+        "H shift +1",
+        "Na"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 1,
+      "adduct": "Na",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "score": 0.42999999999999994
+    },
+    {
+      "formula": "C6H7O",
+      "counts": {
+        "C": 6,
+        "H": 7,
+        "O": 1
+      },
+      "exact_mass": 95.04968984518,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "STD001",
+      "source_name": "Toluene",
+      "generation_type": "adduct",
+      "path": [
+        "break 1 bond(s)",
+        "H shift +1",
+        "OH",
+        ";",
+        "break 1 bond(s)",
+        "H shift +2",
+        "O"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 1,
+      "adduct": "OH",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "score": 0.42999999999999994
+    },
+    {
+      "formula": "C5",
+      "counts": {
+        "C": 5
+      },
+      "exact_mass": 60.0,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "source_compound_id": "STD001",
+      "source_name": "Toluene",
+      "generation_type": "neutral_loss",
+      "path": [
+        "break 1 bond(s)",
+        "H shift -2",
+        "-CH3"
+      ],
+      "broken_bonds": 1,
+      "h_shift": -2,
+      "adduct": null,
+      "neutral_losses": [
+        "CH3"
+      ],
+      "fragment_atom_indices": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "score": 0.4
+    },
+    {
+      "formula": "C5H4",
+      "counts": {
+        "C": 5,
+        "H": 4
+      },
+      "exact_mass": 64.03130012892,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "source_compound_id": "STD001",
+      "source_name": "Toluene",
+      "generation_type": "neutral_loss",
+      "path": [
+        "break 1 bond(s)",
+        "H shift +2",
+        "-CH3"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 2,
+      "adduct": null,
+      "neutral_losses": [
+        "CH3"
+      ],
+      "fragment_atom_indices": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "score": 0.4
+    },
+    {
+      "formula": "C6H",
+      "counts": {
+        "C": 6,
+        "H": 1
+      },
+      "exact_mass": 73.00782503223,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "source_compound_id": "STD001",
+      "source_name": "Toluene",
+      "generation_type": "neutral_loss",
+      "path": [
+        "break 1 bond(s)",
+        "H shift -2",
+        "-H2"
+      ],
+      "broken_bonds": 1,
+      "h_shift": -2,
+      "adduct": null,
+      "neutral_losses": [
+        "H2"
+      ],
+      "fragment_atom_indices": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "score": 0.4
+    },
+    {
+      "formula": "C6H3Cl",
+      "counts": {
+        "C": 6,
+        "H": 3,
+        "Cl": 1
+      },
+      "exact_mass": 109.99232777869,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "STD001",
+      "source_name": "Toluene",
+      "generation_type": "adduct",
+      "path": [
+        "break 1 bond(s)",
+        "H shift -2",
+        "Cl"
+      ],
+      "broken_bonds": 1,
+      "h_shift": -2,
+      "adduct": "Cl",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "score": 0.38
+    },
+    {
+      "formula": "C6H3K",
+      "counts": {
+        "C": 6,
+        "H": 3,
+        "K": 1
+      },
+      "exact_mass": 113.98718158309,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "STD001",
+      "source_name": "Toluene",
+      "generation_type": "adduct",
+      "path": [
+        "break 1 bond(s)",
+        "H shift -2",
+        "K"
+      ],
+      "broken_bonds": 1,
+      "h_shift": -2,
+      "adduct": "K",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "score": 0.38
+    },
+    {
+      "formula": "C6H3Na",
+      "counts": {
+        "C": 6,
+        "H": 3,
+        "Na": 1
+      },
+      "exact_mass": 98.01324437869,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "STD001",
+      "source_name": "Toluene",
+      "generation_type": "adduct",
+      "path": [
+        "break 1 bond(s)",
+        "H shift -2",
+        "Na"
+      ],
+      "broken_bonds": 1,
+      "h_shift": -2,
+      "adduct": "Na",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "score": 0.38
+    },
+    {
+      "formula": "C6H3O",
+      "counts": {
+        "C": 6,
+        "H": 3,
+        "O": 1
+      },
+      "exact_mass": 91.01838971626,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "STD001",
+      "source_name": "Toluene",
+      "generation_type": "adduct",
+      "path": [
+        "break 1 bond(s)",
+        "H shift -2",
+        "O"
+      ],
+      "broken_bonds": 1,
+      "h_shift": -2,
+      "adduct": "O",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "score": 0.38
+    },
+    {
+      "formula": "C6H7Cl",
+      "counts": {
+        "C": 6,
+        "H": 7,
+        "Cl": 1
+      },
+      "exact_mass": 114.02362790760999,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "STD001",
+      "source_name": "Toluene",
+      "generation_type": "adduct",
+      "path": [
+        "break 1 bond(s)",
+        "H shift +2",
+        "Cl"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 2,
+      "adduct": "Cl",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "score": 0.38
+    },
+    {
+      "formula": "C6H7K",
+      "counts": {
+        "C": 6,
+        "H": 7,
+        "K": 1
+      },
+      "exact_mass": 118.01848171201,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "STD001",
+      "source_name": "Toluene",
+      "generation_type": "adduct",
+      "path": [
+        "break 1 bond(s)",
+        "H shift +2",
+        "K"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 2,
+      "adduct": "K",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "score": 0.38
+    },
+    {
+      "formula": "C6H7Na",
+      "counts": {
+        "C": 6,
+        "H": 7,
+        "Na": 1
+      },
+      "exact_mass": 102.04454450761,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "STD001",
+      "source_name": "Toluene",
+      "generation_type": "adduct",
+      "path": [
+        "break 1 bond(s)",
+        "H shift +2",
+        "Na"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 2,
+      "adduct": "Na",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "score": 0.38
+    },
+    {
+      "formula": "C6H8O",
+      "counts": {
+        "C": 6,
+        "H": 8,
+        "O": 1
+      },
+      "exact_mass": 96.05751487741,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "STD001",
+      "source_name": "Toluene",
+      "generation_type": "adduct",
+      "path": [
+        "break 1 bond(s)",
+        "H shift +2",
+        "OH"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 2,
+      "adduct": "OH",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "score": 0.38
+    }
+  ]
+}

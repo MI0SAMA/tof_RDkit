@@ -1,0 +1,142 @@
+formula,counts,exact_mass,ion_mode,charge,source_compound_id,source_name,generation_type,path,broken_bonds,h_shift,adduct,neutral_losses,fragment_atom_indices,score
+C6H6S2,"{'C': 6, 'H': 6, 'S': 2}",141.99109254218,neutral,0,PPS,Polyphenylene Sulfide,parent,M,0,0,,,,1.0
+C6H5S2,"{'C': 6, 'H': 5, 'S': 2}",140.98326750995,negative,-1,PPS,Polyphenylene Sulfide,adduct,M | -H,0,0,-H,,,0.75
+C6H7S2,"{'C': 6, 'H': 7, 'S': 2}",142.99891757441,positive,1,PPS,Polyphenylene Sulfide,adduct,M | H,0,0,H,,,0.75
+C6H4S2,"{'C': 6, 'H': 4, 'S': 2}",139.97544247772,negative,-1,PPS,Polyphenylene Sulfide,adduct,M | H shift -1 | -H,0,-1,-H,,,0.7
+C6H5S2,"{'C': 6, 'H': 5, 'S': 2}",140.98326750995,neutral,0,PPS,Polyphenylene Sulfide,h_shift,M | H shift -1,0,-1,,,,0.7
+C6H6S2,"{'C': 6, 'H': 6, 'S': 2}",141.99109254218,positive,1,PPS,Polyphenylene Sulfide,adduct,M | H shift -1 | H,0,-1,H,,,0.7
+C6H6S2,"{'C': 6, 'H': 6, 'S': 2}",141.99109254218,negative,-1,PPS,Polyphenylene Sulfide,adduct,M | H shift +1 | -H,0,1,-H,,,0.7
+C6H7S2,"{'C': 6, 'H': 7, 'S': 2}",142.99891757441,neutral,0,PPS,Polyphenylene Sulfide,h_shift,M | H shift +1,0,1,,,,0.7
+C6H8S2,"{'C': 6, 'H': 8, 'S': 2}",144.00674260664,positive,1,PPS,Polyphenylene Sulfide,adduct,M | H shift +1 | H,0,1,H,,,0.7
+C5H3S2,"{'C': 5, 'H': 3, 'S': 2}",126.96761744549,neutral,0,PPS,Polyphenylene Sulfide,neutral_loss,M | -CH3,0,0,,CH3,,0.65
+C6H3S2,"{'C': 6, 'H': 3, 'S': 2}",138.96761744549,negative,-1,PPS,Polyphenylene Sulfide,adduct,M | H shift -2 | -H,0,-2,-H,,,0.65
+C6H4S2,"{'C': 6, 'H': 4, 'S': 2}",139.97544247772,neutral,0,PPS,Polyphenylene Sulfide,h_shift,M | H shift -2,0,-2,,,,0.65
+C6H4S2,"{'C': 6, 'H': 4, 'S': 2}",139.97544247772,neutral,0,PPS,Polyphenylene Sulfide,neutral_loss,M | -H2,0,0,,H2,,0.65
+C6H5S2,"{'C': 6, 'H': 5, 'S': 2}",140.98326750995,positive,1,PPS,Polyphenylene Sulfide,adduct,M | H shift -2 | H,0,-2,H,,,0.65
+C6H7S2,"{'C': 6, 'H': 7, 'S': 2}",142.99891757441,negative,-1,PPS,Polyphenylene Sulfide,adduct,M | H shift +2 | -H,0,2,-H,,,0.65
+C6H8S2,"{'C': 6, 'H': 8, 'S': 2}",144.00674260664,neutral,0,PPS,Polyphenylene Sulfide,h_shift,M | H shift +2,0,2,,,,0.65
+C6H9S2,"{'C': 6, 'H': 9, 'S': 2}",145.01456763887,positive,1,PPS,Polyphenylene Sulfide,adduct,M | H shift +2 | H,0,2,H,,,0.65
+C6H6ClS2,"{'C': 6, 'H': 6, 'S': 2, 'Cl': 1}",176.95994522418,negative,-1,PPS,Polyphenylene Sulfide,adduct,M | Cl,0,0,Cl,,,0.63
+C6H6KS2,"{'C': 6, 'H': 6, 'S': 2, 'K': 1}",180.95479902858,positive,1,PPS,Polyphenylene Sulfide,adduct,M | K,0,0,K,,,0.63
+C6H6NaS2,"{'C': 6, 'H': 6, 'S': 2, 'Na': 1}",164.98086182418,positive,1,PPS,Polyphenylene Sulfide,adduct,M | Na,0,0,Na,,,0.63
+C6H6OS2,"{'C': 6, 'H': 6, 'S': 2, 'O': 1}",157.98600716175,negative,-1,PPS,Polyphenylene Sulfide,adduct,M | O,0,0,O,,,0.63
+C6H7OS2,"{'C': 6, 'H': 7, 'S': 2, 'O': 1}",158.99383219398,negative,-1,PPS,Polyphenylene Sulfide,adduct,M | OH | ; | M | H shift +1 | O,0,0,OH,,,0.63
+C5H2S2,"{'C': 5, 'H': 2, 'S': 2}",125.95979241326,neutral,0,PPS,Polyphenylene Sulfide,neutral_loss,M | H shift -1 | -CH3,0,-1,,CH3,,0.6
+C5H4S2,"{'C': 5, 'H': 4, 'S': 2}",127.97544247772,neutral,0,PPS,Polyphenylene Sulfide,neutral_loss,M | H shift +1 | -CH3,0,1,,CH3,,0.6
+C6H3S2,"{'C': 6, 'H': 3, 'S': 2}",138.96761744549,neutral,0,PPS,Polyphenylene Sulfide,neutral_loss,M | H shift -1 | -H2,0,-1,,H2,,0.6
+C6H4S,"{'C': 6, 'S': 1, 'H': 4}",108.00337130332,negative,-1,PPS,Polyphenylene Sulfide,adduct,break 1 bond(s) | -H | ; | break 1 bond(s) | -H,1,0,-H,,"[1, 2, 3, 4, 5, 6, 7, 9, 10, 11, 12, 13]",0.6
+C6H5S,"{'C': 6, 'S': 1, 'H': 5}",109.01119633555,neutral,0,PPS,Polyphenylene Sulfide,fragment,break 1 bond(s) | ; | break 1 bond(s),1,0,,,"[1, 2, 3, 4, 5, 6, 7, 9, 10, 11, 12, 13]",0.6
+C6H5S2,"{'C': 6, 'H': 5, 'S': 2}",140.98326750995,neutral,0,PPS,Polyphenylene Sulfide,neutral_loss,M | H shift +1 | -H2,0,1,,H2,,0.6
+C6H6S,"{'C': 6, 'S': 1, 'H': 6}",110.01902136778,positive,1,PPS,Polyphenylene Sulfide,adduct,break 1 bond(s) | H | ; | break 1 bond(s) | H,1,0,H,,"[1, 2, 3, 4, 5, 6, 7, 9, 10, 11, 12, 13]",0.6
+C6H5ClS2,"{'C': 6, 'H': 5, 'S': 2, 'Cl': 1}",175.95212019195,negative,-1,PPS,Polyphenylene Sulfide,adduct,M | H shift -1 | Cl,0,-1,Cl,,,0.58
+C6H5KS2,"{'C': 6, 'H': 5, 'S': 2, 'K': 1}",179.94697399635,positive,1,PPS,Polyphenylene Sulfide,adduct,M | H shift -1 | K,0,-1,K,,,0.58
+C6H5NaS2,"{'C': 6, 'H': 5, 'S': 2, 'Na': 1}",163.97303679195,positive,1,PPS,Polyphenylene Sulfide,adduct,M | H shift -1 | Na,0,-1,Na,,,0.58
+C6H5OS2,"{'C': 6, 'H': 5, 'S': 2, 'O': 1}",156.97818212952,negative,-1,PPS,Polyphenylene Sulfide,adduct,M | H shift -1 | O,0,-1,O,,,0.58
+C6H7ClS2,"{'C': 6, 'H': 7, 'S': 2, 'Cl': 1}",177.96777025641,negative,-1,PPS,Polyphenylene Sulfide,adduct,M | H shift +1 | Cl,0,1,Cl,,,0.58
+C6H7KS2,"{'C': 6, 'H': 7, 'S': 2, 'K': 1}",181.96262406081,positive,1,PPS,Polyphenylene Sulfide,adduct,M | H shift +1 | K,0,1,K,,,0.58
+C6H7NaS2,"{'C': 6, 'H': 7, 'S': 2, 'Na': 1}",165.98868685641,positive,1,PPS,Polyphenylene Sulfide,adduct,M | H shift +1 | Na,0,1,Na,,,0.58
+C6H8OS2,"{'C': 6, 'H': 8, 'S': 2, 'O': 1}",160.00165722621,negative,-1,PPS,Polyphenylene Sulfide,adduct,M | H shift +1 | OH | ; | M | H shift +2 | O,0,1,OH,,,0.58
+C12H11S4,"{'C': 12, 'H': 11, 'S': 4}",282.97436005213,negative,-1,PPS,Polyphenylene Sulfide,dimer,2M | -H,0,0,-H,,,0.55
+C12H13S4,"{'C': 12, 'H': 13, 'S': 4}",284.99001011659,positive,1,PPS,Polyphenylene Sulfide,dimer,2M | H,0,0,H,,,0.55
+C5H5S2,"{'C': 5, 'H': 5, 'S': 2}",128.98326750995,neutral,0,PPS,Polyphenylene Sulfide,neutral_loss,M | H shift +2 | -CH3,0,2,,CH3,,0.55
+C5HS2,"{'C': 5, 'H': 1, 'S': 2}",124.95196738103,neutral,0,PPS,Polyphenylene Sulfide,neutral_loss,M | H shift -2 | -CH3,0,-2,,CH3,,0.55
+C6H2S2,"{'C': 6, 'H': 2, 'S': 2}",137.95979241326,neutral,0,PPS,Polyphenylene Sulfide,neutral_loss,M | H shift -2 | -H2,0,-2,,H2,,0.55
+C6H6S2,"{'C': 6, 'H': 6, 'S': 2}",141.99109254218,neutral,0,PPS,Polyphenylene Sulfide,neutral_loss,M | H shift +2 | -H2,0,2,,H2,,0.55
+C6H3S,"{'C': 6, 'S': 1, 'H': 3}",106.99554627109,negative,-1,PPS,Polyphenylene Sulfide,adduct,break 1 bond(s) | H shift -1 | -H | ; | break 1 bond(s) | H shift -1 | -H,1,-1,-H,,"[1, 2, 3, 4, 5, 6, 7, 9, 10, 11, 12, 13]",0.5499999999999999
+C6H4S,"{'C': 6, 'S': 1, 'H': 4}",108.00337130332,neutral,0,PPS,Polyphenylene Sulfide,h_shift,break 1 bond(s) | H shift -1 | ; | break 1 bond(s) | H shift -1,1,-1,,,"[1, 2, 3, 4, 5, 6, 7, 9, 10, 11, 12, 13]",0.5499999999999999
+C6H5S,"{'C': 6, 'S': 1, 'H': 5}",109.01119633555,positive,1,PPS,Polyphenylene Sulfide,adduct,break 1 bond(s) | H shift -1 | H | ; | break 1 bond(s) | H shift -1 | H,1,-1,H,,"[1, 2, 3, 4, 5, 6, 7, 9, 10, 11, 12, 13]",0.5499999999999999
+C6H5S,"{'C': 6, 'S': 1, 'H': 5}",109.01119633555,negative,-1,PPS,Polyphenylene Sulfide,adduct,break 1 bond(s) | H shift +1 | -H | ; | break 1 bond(s) | H shift +1 | -H,1,1,-H,,"[1, 2, 3, 4, 5, 6, 7, 9, 10, 11, 12, 13]",0.5499999999999999
+C6H6S,"{'C': 6, 'S': 1, 'H': 6}",110.01902136778,neutral,0,PPS,Polyphenylene Sulfide,h_shift,break 1 bond(s) | H shift +1 | ; | break 1 bond(s) | H shift +1,1,1,,,"[1, 2, 3, 4, 5, 6, 7, 9, 10, 11, 12, 13]",0.5499999999999999
+C6H7S,"{'C': 6, 'S': 1, 'H': 7}",111.02684640001,positive,1,PPS,Polyphenylene Sulfide,adduct,break 1 bond(s) | H shift +1 | H | ; | break 1 bond(s) | H shift +1 | H,1,1,H,,"[1, 2, 3, 4, 5, 6, 7, 9, 10, 11, 12, 13]",0.5499999999999999
+C6H4ClS2,"{'C': 6, 'H': 4, 'S': 2, 'Cl': 1}",174.94429515971999,negative,-1,PPS,Polyphenylene Sulfide,adduct,M | H shift -2 | Cl,0,-2,Cl,,,0.53
+C6H4KS2,"{'C': 6, 'H': 4, 'S': 2, 'K': 1}",178.93914896412,positive,1,PPS,Polyphenylene Sulfide,adduct,M | H shift -2 | K,0,-2,K,,,0.53
+C6H4NaS2,"{'C': 6, 'H': 4, 'S': 2, 'Na': 1}",162.96521175972,positive,1,PPS,Polyphenylene Sulfide,adduct,M | H shift -2 | Na,0,-2,Na,,,0.53
+C6H4OS2,"{'C': 6, 'H': 4, 'S': 2, 'O': 1}",155.97035709729,negative,-1,PPS,Polyphenylene Sulfide,adduct,M | H shift -2 | O,0,-2,O,,,0.53
+C6H8ClS2,"{'C': 6, 'H': 8, 'S': 2, 'Cl': 1}",178.97559528864,negative,-1,PPS,Polyphenylene Sulfide,adduct,M | H shift +2 | Cl,0,2,Cl,,,0.53
+C6H8KS2,"{'C': 6, 'H': 8, 'S': 2, 'K': 1}",182.97044909304,positive,1,PPS,Polyphenylene Sulfide,adduct,M | H shift +2 | K,0,2,K,,,0.53
+C6H8NaS2,"{'C': 6, 'H': 8, 'S': 2, 'Na': 1}",166.99651188864,positive,1,PPS,Polyphenylene Sulfide,adduct,M | H shift +2 | Na,0,2,Na,,,0.53
+C6H9OS2,"{'C': 6, 'H': 9, 'S': 2, 'O': 1}",161.00948225844,negative,-1,PPS,Polyphenylene Sulfide,adduct,M | H shift +2 | OH,0,2,OH,,,0.53
+C5H2S,"{'C': 5, 'S': 1, 'H': 2}",93.98772123886,neutral,0,PPS,Polyphenylene Sulfide,neutral_loss,break 1 bond(s) | -CH3 | ; | break 1 bond(s) | -CH3,1,0,,CH3,"[1, 2, 3, 4, 5, 6, 7, 9, 10, 11, 12, 13]",0.5
+C6H2S,"{'C': 6, 'S': 1, 'H': 2}",105.98772123886,negative,-1,PPS,Polyphenylene Sulfide,adduct,break 1 bond(s) | H shift -2 | -H | ; | break 1 bond(s) | H shift -2 | -H,1,-2,-H,,"[1, 2, 3, 4, 5, 6, 7, 9, 10, 11, 12, 13]",0.5
+C6H3S,"{'C': 6, 'S': 1, 'H': 3}",106.99554627109,neutral,0,PPS,Polyphenylene Sulfide,h_shift,break 1 bond(s) | H shift -2 | ; | break 1 bond(s) | H shift -2,1,-2,,,"[1, 2, 3, 4, 5, 6, 7, 9, 10, 11, 12, 13]",0.5
+C6H3S,"{'C': 6, 'S': 1, 'H': 3}",106.99554627109,neutral,0,PPS,Polyphenylene Sulfide,neutral_loss,break 1 bond(s) | -H2 | ; | break 1 bond(s) | -H2,1,0,,H2,"[1, 2, 3, 4, 5, 6, 7, 9, 10, 11, 12, 13]",0.5
+C6H4S,"{'C': 6, 'S': 1, 'H': 4}",108.00337130332,positive,1,PPS,Polyphenylene Sulfide,adduct,break 1 bond(s) | H shift -2 | H | ; | break 1 bond(s) | H shift -2 | H,1,-2,H,,"[1, 2, 3, 4, 5, 6, 7, 9, 10, 11, 12, 13]",0.5
+C6H6S,"{'C': 6, 'S': 1, 'H': 6}",110.01902136778,negative,-1,PPS,Polyphenylene Sulfide,adduct,break 1 bond(s) | H shift +2 | -H | ; | break 1 bond(s) | H shift +2 | -H,1,2,-H,,"[1, 2, 3, 4, 5, 6, 7, 9, 10, 11, 12, 13]",0.5
+C6H7S,"{'C': 6, 'S': 1, 'H': 7}",111.02684640001,neutral,0,PPS,Polyphenylene Sulfide,h_shift,break 1 bond(s) | H shift +2 | ; | break 1 bond(s) | H shift +2,1,2,,,"[1, 2, 3, 4, 5, 6, 7, 9, 10, 11, 12, 13]",0.5
+C6H8S,"{'C': 6, 'S': 1, 'H': 8}",112.03467143224,positive,1,PPS,Polyphenylene Sulfide,adduct,break 1 bond(s) | H shift +2 | H | ; | break 1 bond(s) | H shift +2 | H,1,2,H,,"[1, 2, 3, 4, 5, 6, 7, 9, 10, 11, 12, 13]",0.5
+C6H5ClS,"{'C': 6, 'S': 1, 'H': 5, 'Cl': 1}",143.98004901755,negative,-1,PPS,Polyphenylene Sulfide,adduct,break 1 bond(s) | Cl | ; | break 1 bond(s) | Cl,1,0,Cl,,"[1, 2, 3, 4, 5, 6, 7, 9, 10, 11, 12, 13]",0.48
+C6H5KS,"{'C': 6, 'S': 1, 'H': 5, 'K': 1}",147.97490282195,positive,1,PPS,Polyphenylene Sulfide,adduct,break 1 bond(s) | K | ; | break 1 bond(s) | K,1,0,K,,"[1, 2, 3, 4, 5, 6, 7, 9, 10, 11, 12, 13]",0.48
+C6H5NaS,"{'C': 6, 'S': 1, 'H': 5, 'Na': 1}",132.00096561755,positive,1,PPS,Polyphenylene Sulfide,adduct,break 1 bond(s) | Na | ; | break 1 bond(s) | Na,1,0,Na,,"[1, 2, 3, 4, 5, 6, 7, 9, 10, 11, 12, 13]",0.48
+C6H5OS,"{'C': 6, 'S': 1, 'H': 5, 'O': 1}",125.00611095512,negative,-1,PPS,Polyphenylene Sulfide,adduct,break 1 bond(s) | O | ; | break 1 bond(s) | H shift -1 | OH | ; | break 1 bond(s) | O,1,0,O,,"[1, 2, 3, 4, 5, 6, 7, 9, 10, 11, 12, 13]",0.48
+C6H6OS,"{'C': 6, 'S': 1, 'H': 6, 'O': 1}",126.01393598735,negative,-1,PPS,Polyphenylene Sulfide,adduct,break 1 bond(s) | OH | ; | break 1 bond(s) | H shift +1 | O | ; | break 1 bond(s) | OH,1,0,OH,,"[1, 2, 3, 4, 5, 6, 7, 9, 10, 11, 12, 13]",0.48
+C6H3,"{'C': 6, 'H': 3}",75.02347509669,negative,-1,PPS,Polyphenylene Sulfide,adduct,break 2 bond(s) | -H,2,0,-H,,"[1, 2, 3, 4, 6, 7, 9, 10, 12, 13]",0.45
+C6H4,"{'C': 6, 'H': 4}",76.03130012892,neutral,0,PPS,Polyphenylene Sulfide,fragment,break 2 bond(s),2,0,,,"[1, 2, 3, 4, 6, 7, 9, 10, 12, 13]",0.45
+C6H5,"{'C': 6, 'H': 5}",77.03912516115,positive,1,PPS,Polyphenylene Sulfide,adduct,break 2 bond(s) | H,2,0,H,,"[1, 2, 3, 4, 6, 7, 9, 10, 12, 13]",0.45
+C5H3S,"{'C': 5, 'S': 1, 'H': 3}",94.99554627109,neutral,0,PPS,Polyphenylene Sulfide,neutral_loss,break 1 bond(s) | H shift +1 | -CH3 | ; | break 1 bond(s) | H shift +1 | -CH3,1,1,,CH3,"[1, 2, 3, 4, 5, 6, 7, 9, 10, 11, 12, 13]",0.44999999999999996
+C5HS,"{'C': 5, 'S': 1, 'H': 1}",92.97989620663,neutral,0,PPS,Polyphenylene Sulfide,neutral_loss,break 1 bond(s) | H shift -1 | -CH3 | ; | break 1 bond(s) | H shift -1 | -CH3,1,-1,,CH3,"[1, 2, 3, 4, 5, 6, 7, 9, 10, 11, 12, 13]",0.44999999999999996
+C6H2S,"{'C': 6, 'S': 1, 'H': 2}",105.98772123886,neutral,0,PPS,Polyphenylene Sulfide,neutral_loss,break 1 bond(s) | H shift -1 | -H2 | ; | break 1 bond(s) | H shift -1 | -H2,1,-1,,H2,"[1, 2, 3, 4, 5, 6, 7, 9, 10, 11, 12, 13]",0.44999999999999996
+C6H4S,"{'C': 6, 'S': 1, 'H': 4}",108.00337130332,neutral,0,PPS,Polyphenylene Sulfide,neutral_loss,break 1 bond(s) | H shift +1 | -H2 | ; | break 1 bond(s) | H shift +1 | -H2,1,1,,H2,"[1, 2, 3, 4, 5, 6, 7, 9, 10, 11, 12, 13]",0.44999999999999996
+C12H12ClS4,"{'C': 12, 'H': 12, 'S': 4, 'Cl': 1}",318.95103776636,negative,-1,PPS,Polyphenylene Sulfide,dimer,2M | Cl,0,0,Cl,,,0.43
+C12H12NaS4,"{'C': 12, 'H': 12, 'S': 4, 'Na': 1}",306.97195436636,positive,1,PPS,Polyphenylene Sulfide,dimer,2M | Na,0,0,Na,,,0.43
+C6H4ClS,"{'C': 6, 'S': 1, 'H': 4, 'Cl': 1}",142.97222398532,negative,-1,PPS,Polyphenylene Sulfide,adduct,break 1 bond(s) | H shift -1 | Cl | ; | break 1 bond(s) | H shift -1 | Cl,1,-1,Cl,,"[1, 2, 3, 4, 5, 6, 7, 9, 10, 11, 12, 13]",0.42999999999999994
+C6H4KS,"{'C': 6, 'S': 1, 'H': 4, 'K': 1}",146.96707778972,positive,1,PPS,Polyphenylene Sulfide,adduct,break 1 bond(s) | H shift -1 | K | ; | break 1 bond(s) | H shift -1 | K,1,-1,K,,"[1, 2, 3, 4, 5, 6, 7, 9, 10, 11, 12, 13]",0.42999999999999994
+C6H4NaS,"{'C': 6, 'S': 1, 'H': 4, 'Na': 1}",130.99314058532,positive,1,PPS,Polyphenylene Sulfide,adduct,break 1 bond(s) | H shift -1 | Na | ; | break 1 bond(s) | H shift -1 | Na,1,-1,Na,,"[1, 2, 3, 4, 5, 6, 7, 9, 10, 11, 12, 13]",0.42999999999999994
+C6H4OS,"{'C': 6, 'S': 1, 'H': 4, 'O': 1}",123.99828592289,negative,-1,PPS,Polyphenylene Sulfide,adduct,break 1 bond(s) | H shift -1 | O | ; | break 1 bond(s) | H shift -2 | OH | ; | break 1 bond(s) | H shift -1 | O,1,-1,O,,"[1, 2, 3, 4, 5, 6, 7, 9, 10, 11, 12, 13]",0.42999999999999994
+C6H6ClS,"{'C': 6, 'S': 1, 'H': 6, 'Cl': 1}",144.98787404978,negative,-1,PPS,Polyphenylene Sulfide,adduct,break 1 bond(s) | H shift +1 | Cl | ; | break 1 bond(s) | H shift +1 | Cl,1,1,Cl,,"[1, 2, 3, 4, 5, 6, 7, 9, 10, 11, 12, 13]",0.42999999999999994
+C6H6KS,"{'C': 6, 'S': 1, 'H': 6, 'K': 1}",148.98272785418,positive,1,PPS,Polyphenylene Sulfide,adduct,break 1 bond(s) | H shift +1 | K | ; | break 1 bond(s) | H shift +1 | K,1,1,K,,"[1, 2, 3, 4, 5, 6, 7, 9, 10, 11, 12, 13]",0.42999999999999994
+C6H6NaS,"{'C': 6, 'S': 1, 'H': 6, 'Na': 1}",133.00879064978,positive,1,PPS,Polyphenylene Sulfide,adduct,break 1 bond(s) | H shift +1 | Na | ; | break 1 bond(s) | H shift +1 | Na,1,1,Na,,"[1, 2, 3, 4, 5, 6, 7, 9, 10, 11, 12, 13]",0.42999999999999994
+C6H7OS,"{'C': 6, 'S': 1, 'H': 7, 'O': 1}",127.02176101958,negative,-1,PPS,Polyphenylene Sulfide,adduct,break 1 bond(s) | H shift +1 | OH | ; | break 1 bond(s) | H shift +2 | O | ; | break 1 bond(s) | H shift +1 | OH,1,1,OH,,"[1, 2, 3, 4, 5, 6, 7, 9, 10, 11, 12, 13]",0.42999999999999994
+C5H4S,"{'C': 5, 'S': 1, 'H': 4}",96.00337130332,neutral,0,PPS,Polyphenylene Sulfide,neutral_loss,break 1 bond(s) | H shift +2 | -CH3 | ; | break 1 bond(s) | H shift +2 | -CH3,1,2,,CH3,"[1, 2, 3, 4, 5, 6, 7, 9, 10, 11, 12, 13]",0.4
+C5S,"{'C': 5, 'S': 1}",91.9720711744,neutral,0,PPS,Polyphenylene Sulfide,neutral_loss,break 1 bond(s) | H shift -2 | -CH3 | ; | break 1 bond(s) | H shift -2 | -CH3,1,-2,,CH3,"[1, 2, 3, 4, 5, 6, 7, 9, 10, 11, 12, 13]",0.4
+C6H2,"{'C': 6, 'H': 2}",74.01565006446,negative,-1,PPS,Polyphenylene Sulfide,adduct,break 2 bond(s) | H shift -1 | -H,2,-1,-H,,"[1, 2, 3, 4, 6, 7, 9, 10, 12, 13]",0.4
+C6H3,"{'C': 6, 'H': 3}",75.02347509669,neutral,0,PPS,Polyphenylene Sulfide,h_shift,break 2 bond(s) | H shift -1,2,-1,,,"[1, 2, 3, 4, 6, 7, 9, 10, 12, 13]",0.4
+C6H4,"{'C': 6, 'H': 4}",76.03130012892,positive,1,PPS,Polyphenylene Sulfide,adduct,break 2 bond(s) | H shift -1 | H,2,-1,H,,"[1, 2, 3, 4, 6, 7, 9, 10, 12, 13]",0.4
+C6H4,"{'C': 6, 'H': 4}",76.03130012892,negative,-1,PPS,Polyphenylene Sulfide,adduct,break 2 bond(s) | H shift +1 | -H,2,1,-H,,"[1, 2, 3, 4, 6, 7, 9, 10, 12, 13]",0.4
+C6H5,"{'C': 6, 'H': 5}",77.03912516115,neutral,0,PPS,Polyphenylene Sulfide,h_shift,break 2 bond(s) | H shift +1,2,1,,,"[1, 2, 3, 4, 6, 7, 9, 10, 12, 13]",0.4
+C6H5S,"{'C': 6, 'S': 1, 'H': 5}",109.01119633555,neutral,0,PPS,Polyphenylene Sulfide,neutral_loss,break 1 bond(s) | H shift +2 | -H2 | ; | break 1 bond(s) | H shift +2 | -H2,1,2,,H2,"[1, 2, 3, 4, 5, 6, 7, 9, 10, 11, 12, 13]",0.4
+C6H6,"{'C': 6, 'H': 6}",78.04695019338,positive,1,PPS,Polyphenylene Sulfide,adduct,break 2 bond(s) | H shift +1 | H,2,1,H,,"[1, 2, 3, 4, 6, 7, 9, 10, 12, 13]",0.4
+C6HS,"{'C': 6, 'S': 1, 'H': 1}",104.97989620663,neutral,0,PPS,Polyphenylene Sulfide,neutral_loss,break 1 bond(s) | H shift -2 | -H2 | ; | break 1 bond(s) | H shift -2 | -H2,1,-2,,H2,"[1, 2, 3, 4, 5, 6, 7, 9, 10, 11, 12, 13]",0.4
+C6H3ClS,"{'C': 6, 'S': 1, 'H': 3, 'Cl': 1}",141.96439895309,negative,-1,PPS,Polyphenylene Sulfide,adduct,break 1 bond(s) | H shift -2 | Cl | ; | break 1 bond(s) | H shift -2 | Cl,1,-2,Cl,,"[1, 2, 3, 4, 5, 6, 7, 9, 10, 11, 12, 13]",0.38
+C6H3KS,"{'C': 6, 'S': 1, 'H': 3, 'K': 1}",145.95925275749,positive,1,PPS,Polyphenylene Sulfide,adduct,break 1 bond(s) | H shift -2 | K | ; | break 1 bond(s) | H shift -2 | K,1,-2,K,,"[1, 2, 3, 4, 5, 6, 7, 9, 10, 11, 12, 13]",0.38
+C6H3NaS,"{'C': 6, 'S': 1, 'H': 3, 'Na': 1}",129.98531555309,positive,1,PPS,Polyphenylene Sulfide,adduct,break 1 bond(s) | H shift -2 | Na | ; | break 1 bond(s) | H shift -2 | Na,1,-2,Na,,"[1, 2, 3, 4, 5, 6, 7, 9, 10, 11, 12, 13]",0.38
+C6H3OS,"{'C': 6, 'S': 1, 'H': 3, 'O': 1}",122.99046089066,negative,-1,PPS,Polyphenylene Sulfide,adduct,break 1 bond(s) | H shift -2 | O | ; | break 1 bond(s) | H shift -2 | O,1,-2,O,,"[1, 2, 3, 4, 5, 6, 7, 9, 10, 11, 12, 13]",0.38
+C6H7ClS,"{'C': 6, 'S': 1, 'H': 7, 'Cl': 1}",145.99569908201,negative,-1,PPS,Polyphenylene Sulfide,adduct,break 1 bond(s) | H shift +2 | Cl | ; | break 1 bond(s) | H shift +2 | Cl,1,2,Cl,,"[1, 2, 3, 4, 5, 6, 7, 9, 10, 11, 12, 13]",0.38
+C6H7KS,"{'C': 6, 'S': 1, 'H': 7, 'K': 1}",149.99055288641,positive,1,PPS,Polyphenylene Sulfide,adduct,break 1 bond(s) | H shift +2 | K | ; | break 1 bond(s) | H shift +2 | K,1,2,K,,"[1, 2, 3, 4, 5, 6, 7, 9, 10, 11, 12, 13]",0.38
+C6H7NaS,"{'C': 6, 'S': 1, 'H': 7, 'Na': 1}",134.01661568201,positive,1,PPS,Polyphenylene Sulfide,adduct,break 1 bond(s) | H shift +2 | Na | ; | break 1 bond(s) | H shift +2 | Na,1,2,Na,,"[1, 2, 3, 4, 5, 6, 7, 9, 10, 11, 12, 13]",0.38
+C6H8OS,"{'C': 6, 'S': 1, 'H': 8, 'O': 1}",128.02958605180999,negative,-1,PPS,Polyphenylene Sulfide,adduct,break 1 bond(s) | H shift +2 | OH | ; | break 1 bond(s) | H shift +2 | OH,1,2,OH,,"[1, 2, 3, 4, 5, 6, 7, 9, 10, 11, 12, 13]",0.38
+C5H,"{'C': 5, 'H': 1}",61.00782503223,neutral,0,PPS,Polyphenylene Sulfide,neutral_loss,break 2 bond(s) | -CH3,2,0,,CH3,"[1, 2, 3, 4, 6, 7, 9, 10, 12, 13]",0.35
+C6H,"{'C': 6, 'H': 1}",73.00782503223,negative,-1,PPS,Polyphenylene Sulfide,adduct,break 2 bond(s) | H shift -2 | -H,2,-2,-H,,"[1, 2, 3, 4, 6, 7, 9, 10, 12, 13]",0.35
+C6H2,"{'C': 6, 'H': 2}",74.01565006446,neutral,0,PPS,Polyphenylene Sulfide,h_shift,break 2 bond(s) | H shift -2,2,-2,,,"[1, 2, 3, 4, 6, 7, 9, 10, 12, 13]",0.35
+C6H2,"{'C': 6, 'H': 2}",74.01565006446,neutral,0,PPS,Polyphenylene Sulfide,neutral_loss,break 2 bond(s) | -H2,2,0,,H2,"[1, 2, 3, 4, 6, 7, 9, 10, 12, 13]",0.35
+C6H3,"{'C': 6, 'H': 3}",75.02347509669,positive,1,PPS,Polyphenylene Sulfide,adduct,break 2 bond(s) | H shift -2 | H,2,-2,H,,"[1, 2, 3, 4, 6, 7, 9, 10, 12, 13]",0.35
+C6H5,"{'C': 6, 'H': 5}",77.03912516115,negative,-1,PPS,Polyphenylene Sulfide,adduct,break 2 bond(s) | H shift +2 | -H,2,2,-H,,"[1, 2, 3, 4, 6, 7, 9, 10, 12, 13]",0.35
+C6H6,"{'C': 6, 'H': 6}",78.04695019338,neutral,0,PPS,Polyphenylene Sulfide,h_shift,break 2 bond(s) | H shift +2,2,2,,,"[1, 2, 3, 4, 6, 7, 9, 10, 12, 13]",0.35
+C6H7,"{'C': 6, 'H': 7}",79.05477522561,positive,1,PPS,Polyphenylene Sulfide,adduct,break 2 bond(s) | H shift +2 | H,2,2,H,,"[1, 2, 3, 4, 6, 7, 9, 10, 12, 13]",0.35
+C6H4Cl,"{'C': 6, 'H': 4, 'Cl': 1}",111.00015281092,negative,-1,PPS,Polyphenylene Sulfide,adduct,break 2 bond(s) | Cl,2,0,Cl,,"[1, 2, 3, 4, 6, 7, 9, 10, 12, 13]",0.33
+C6H4K,"{'C': 6, 'H': 4, 'K': 1}",114.99500661532,positive,1,PPS,Polyphenylene Sulfide,adduct,break 2 bond(s) | K,2,0,K,,"[1, 2, 3, 4, 6, 7, 9, 10, 12, 13]",0.33
+C6H4Na,"{'C': 6, 'H': 4, 'Na': 1}",99.02106941092,positive,1,PPS,Polyphenylene Sulfide,adduct,break 2 bond(s) | Na,2,0,Na,,"[1, 2, 3, 4, 6, 7, 9, 10, 12, 13]",0.33
+C6H4O,"{'C': 6, 'H': 4, 'O': 1}",92.02621474849,negative,-1,PPS,Polyphenylene Sulfide,adduct,break 2 bond(s) | O,2,0,O,,"[1, 2, 3, 4, 6, 7, 9, 10, 12, 13]",0.33
+C6H5O,"{'C': 6, 'H': 5, 'O': 1}",93.03403978072001,negative,-1,PPS,Polyphenylene Sulfide,adduct,break 2 bond(s) | OH | ; | break 2 bond(s) | H shift +1 | O,2,0,OH,,"[1, 2, 3, 4, 6, 7, 9, 10, 12, 13]",0.33
+C5,{'C': 5},60.0,neutral,0,PPS,Polyphenylene Sulfide,neutral_loss,break 2 bond(s) | H shift -1 | -CH3,2,-1,,CH3,"[1, 2, 3, 4, 6, 7, 9, 10, 12, 13]",0.30000000000000004
+C5H2,"{'C': 5, 'H': 2}",62.01565006446,neutral,0,PPS,Polyphenylene Sulfide,neutral_loss,break 2 bond(s) | H shift +1 | -CH3,2,1,,CH3,"[1, 2, 3, 4, 6, 7, 9, 10, 12, 13]",0.30000000000000004
+C6H,"{'C': 6, 'H': 1}",73.00782503223,neutral,0,PPS,Polyphenylene Sulfide,neutral_loss,break 2 bond(s) | H shift -1 | -H2,2,-1,,H2,"[1, 2, 3, 4, 6, 7, 9, 10, 12, 13]",0.30000000000000004
+C6H3,"{'C': 6, 'H': 3}",75.02347509669,neutral,0,PPS,Polyphenylene Sulfide,neutral_loss,break 2 bond(s) | H shift +1 | -H2,2,1,,H2,"[1, 2, 3, 4, 6, 7, 9, 10, 12, 13]",0.30000000000000004
+C6H3Cl,"{'C': 6, 'H': 3, 'Cl': 1}",109.99232777869,negative,-1,PPS,Polyphenylene Sulfide,adduct,break 2 bond(s) | H shift -1 | Cl,2,-1,Cl,,"[1, 2, 3, 4, 6, 7, 9, 10, 12, 13]",0.28
+C6H3K,"{'C': 6, 'H': 3, 'K': 1}",113.98718158309,positive,1,PPS,Polyphenylene Sulfide,adduct,break 2 bond(s) | H shift -1 | K,2,-1,K,,"[1, 2, 3, 4, 6, 7, 9, 10, 12, 13]",0.28
+C6H3Na,"{'C': 6, 'H': 3, 'Na': 1}",98.01324437869,positive,1,PPS,Polyphenylene Sulfide,adduct,break 2 bond(s) | H shift -1 | Na,2,-1,Na,,"[1, 2, 3, 4, 6, 7, 9, 10, 12, 13]",0.28
+C6H3O,"{'C': 6, 'H': 3, 'O': 1}",91.01838971626,negative,-1,PPS,Polyphenylene Sulfide,adduct,break 2 bond(s) | H shift -1 | O,2,-1,O,,"[1, 2, 3, 4, 6, 7, 9, 10, 12, 13]",0.28
+C6H5Cl,"{'C': 6, 'H': 5, 'Cl': 1}",112.00797784315,negative,-1,PPS,Polyphenylene Sulfide,adduct,break 2 bond(s) | H shift +1 | Cl,2,1,Cl,,"[1, 2, 3, 4, 6, 7, 9, 10, 12, 13]",0.28
+C6H5K,"{'C': 6, 'H': 5, 'K': 1}",116.00283164755,positive,1,PPS,Polyphenylene Sulfide,adduct,break 2 bond(s) | H shift +1 | K,2,1,K,,"[1, 2, 3, 4, 6, 7, 9, 10, 12, 13]",0.28
+C6H5Na,"{'C': 6, 'H': 5, 'Na': 1}",100.02889444315,positive,1,PPS,Polyphenylene Sulfide,adduct,break 2 bond(s) | H shift +1 | Na,2,1,Na,,"[1, 2, 3, 4, 6, 7, 9, 10, 12, 13]",0.28
+C6H6O,"{'C': 6, 'H': 6, 'O': 1}",94.04186481295,negative,-1,PPS,Polyphenylene Sulfide,adduct,break 2 bond(s) | H shift +1 | OH | ; | break 2 bond(s) | H shift +2 | O,2,1,OH,,"[1, 2, 3, 4, 6, 7, 9, 10, 12, 13]",0.28
+C5H3,"{'C': 5, 'H': 3}",63.02347509669,neutral,0,PPS,Polyphenylene Sulfide,neutral_loss,break 2 bond(s) | H shift +2 | -CH3,2,2,,CH3,"[1, 2, 3, 4, 6, 7, 9, 10, 12, 13]",0.24999999999999997
+C6,{'C': 6},72.0,neutral,0,PPS,Polyphenylene Sulfide,neutral_loss,break 2 bond(s) | H shift -2 | -H2,2,-2,,H2,"[1, 2, 3, 4, 6, 7, 9, 10, 12, 13]",0.24999999999999997
+C6H4,"{'C': 6, 'H': 4}",76.03130012892,neutral,0,PPS,Polyphenylene Sulfide,neutral_loss,break 2 bond(s) | H shift +2 | -H2,2,2,,H2,"[1, 2, 3, 4, 6, 7, 9, 10, 12, 13]",0.24999999999999997
+C6H2Cl,"{'C': 6, 'H': 2, 'Cl': 1}",108.98450274646,negative,-1,PPS,Polyphenylene Sulfide,adduct,break 2 bond(s) | H shift -2 | Cl,2,-2,Cl,,"[1, 2, 3, 4, 6, 7, 9, 10, 12, 13]",0.22999999999999998
+C6H2K,"{'C': 6, 'H': 2, 'K': 1}",112.97935655086,positive,1,PPS,Polyphenylene Sulfide,adduct,break 2 bond(s) | H shift -2 | K,2,-2,K,,"[1, 2, 3, 4, 6, 7, 9, 10, 12, 13]",0.22999999999999998
+C6H2Na,"{'C': 6, 'H': 2, 'Na': 1}",97.00541934646,positive,1,PPS,Polyphenylene Sulfide,adduct,break 2 bond(s) | H shift -2 | Na,2,-2,Na,,"[1, 2, 3, 4, 6, 7, 9, 10, 12, 13]",0.22999999999999998
+C6H2O,"{'C': 6, 'H': 2, 'O': 1}",90.01056468403,negative,-1,PPS,Polyphenylene Sulfide,adduct,break 2 bond(s) | H shift -2 | O,2,-2,O,,"[1, 2, 3, 4, 6, 7, 9, 10, 12, 13]",0.22999999999999998
+C6H6Cl,"{'C': 6, 'H': 6, 'Cl': 1}",113.01580287538,negative,-1,PPS,Polyphenylene Sulfide,adduct,break 2 bond(s) | H shift +2 | Cl,2,2,Cl,,"[1, 2, 3, 4, 6, 7, 9, 10, 12, 13]",0.22999999999999998
+C6H6K,"{'C': 6, 'H': 6, 'K': 1}",117.01065667978,positive,1,PPS,Polyphenylene Sulfide,adduct,break 2 bond(s) | H shift +2 | K,2,2,K,,"[1, 2, 3, 4, 6, 7, 9, 10, 12, 13]",0.22999999999999998
+C6H6Na,"{'C': 6, 'H': 6, 'Na': 1}",101.03671947538,positive,1,PPS,Polyphenylene Sulfide,adduct,break 2 bond(s) | H shift +2 | Na,2,2,Na,,"[1, 2, 3, 4, 6, 7, 9, 10, 12, 13]",0.22999999999999998
+C6H7O,"{'C': 6, 'H': 7, 'O': 1}",95.04968984518,negative,-1,PPS,Polyphenylene Sulfide,adduct,break 2 bond(s) | H shift +2 | OH,2,2,OH,,"[1, 2, 3, 4, 6, 7, 9, 10, 12, 13]",0.22999999999999998

@@ -1,0 +1,6 @@
+rdkit
+pandas
+pyyaml
+networkx
+tqdm
+pytest

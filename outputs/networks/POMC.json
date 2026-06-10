@@ -1,0 +1,3338 @@
+{
+  "compound_id": "POMC",
+  "name": "Polyoxymethylene Copolymer",
+  "smiles": "COC",
+  "parent_formula": "C2H6O",
+  "records": [
+    {
+      "formula": "C2H6O",
+      "counts": {
+        "C": 2,
+        "H": 6,
+        "O": 1
+      },
+      "exact_mass": 46.04186481295,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "source_compound_id": "POMC",
+      "source_name": "Polyoxymethylene Copolymer",
+      "generation_type": "parent",
+      "path": [
+        "M"
+      ],
+      "broken_bonds": 0,
+      "h_shift": 0,
+      "adduct": null,
+      "neutral_losses": [],
+      "fragment_atom_indices": null,
+      "score": 1.0
+    },
+    {
+      "formula": "C2H5O",
+      "counts": {
+        "C": 2,
+        "H": 5,
+        "O": 1
+      },
+      "exact_mass": 45.03403978072,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "POMC",
+      "source_name": "Polyoxymethylene Copolymer",
+      "generation_type": "adduct",
+      "path": [
+        "M",
+        "-H"
+      ],
+      "broken_bonds": 0,
+      "h_shift": 0,
+      "adduct": "-H",
+      "neutral_losses": [],
+      "fragment_atom_indices": null,
+      "score": 0.75
+    },
+    {
+      "formula": "C2H7O",
+      "counts": {
+        "C": 2,
+        "H": 7,
+        "O": 1
+      },
+      "exact_mass": 47.04968984518,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "POMC",
+      "source_name": "Polyoxymethylene Copolymer",
+      "generation_type": "adduct",
+      "path": [
+        "M",
+        "H"
+      ],
+      "broken_bonds": 0,
+      "h_shift": 0,
+      "adduct": "H",
+      "neutral_losses": [],
+      "fragment_atom_indices": null,
+      "score": 0.75
+    },
+    {
+      "formula": "C2H4O",
+      "counts": {
+        "C": 2,
+        "H": 4,
+        "O": 1
+      },
+      "exact_mass": 44.02621474849,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "POMC",
+      "source_name": "Polyoxymethylene Copolymer",
+      "generation_type": "adduct",
+      "path": [
+        "M",
+        "H shift -1",
+        "-H"
+      ],
+      "broken_bonds": 0,
+      "h_shift": -1,
+      "adduct": "-H",
+      "neutral_losses": [],
+      "fragment_atom_indices": null,
+      "score": 0.7
+    },
+    {
+      "formula": "C2H5O",
+      "counts": {
+        "C": 2,
+        "H": 5,
+        "O": 1
+      },
+      "exact_mass": 45.03403978072,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "source_compound_id": "POMC",
+      "source_name": "Polyoxymethylene Copolymer",
+      "generation_type": "h_shift",
+      "path": [
+        "M",
+        "H shift -1"
+      ],
+      "broken_bonds": 0,
+      "h_shift": -1,
+      "adduct": null,
+      "neutral_losses": [],
+      "fragment_atom_indices": null,
+      "score": 0.7
+    },
+    {
+      "formula": "C2H6O",
+      "counts": {
+        "C": 2,
+        "H": 6,
+        "O": 1
+      },
+      "exact_mass": 46.04186481295,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "POMC",
+      "source_name": "Polyoxymethylene Copolymer",
+      "generation_type": "adduct",
+      "path": [
+        "M",
+        "H shift -1",
+        "H"
+      ],
+      "broken_bonds": 0,
+      "h_shift": -1,
+      "adduct": "H",
+      "neutral_losses": [],
+      "fragment_atom_indices": null,
+      "score": 0.7
+    },
+    {
+      "formula": "C2H6O",
+      "counts": {
+        "C": 2,
+        "H": 6,
+        "O": 1
+      },
+      "exact_mass": 46.04186481295,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "POMC",
+      "source_name": "Polyoxymethylene Copolymer",
+      "generation_type": "adduct",
+      "path": [
+        "M",
+        "H shift +1",
+        "-H"
+      ],
+      "broken_bonds": 0,
+      "h_shift": 1,
+      "adduct": "-H",
+      "neutral_losses": [],
+      "fragment_atom_indices": null,
+      "score": 0.7
+    },
+    {
+      "formula": "C2H7O",
+      "counts": {
+        "C": 2,
+        "H": 7,
+        "O": 1
+      },
+      "exact_mass": 47.04968984518,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "source_compound_id": "POMC",
+      "source_name": "Polyoxymethylene Copolymer",
+      "generation_type": "h_shift",
+      "path": [
+        "M",
+        "H shift +1"
+      ],
+      "broken_bonds": 0,
+      "h_shift": 1,
+      "adduct": null,
+      "neutral_losses": [],
+      "fragment_atom_indices": null,
+      "score": 0.7
+    },
+    {
+      "formula": "C2H8O",
+      "counts": {
+        "C": 2,
+        "H": 8,
+        "O": 1
+      },
+      "exact_mass": 48.05751487741,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "POMC",
+      "source_name": "Polyoxymethylene Copolymer",
+      "generation_type": "adduct",
+      "path": [
+        "M",
+        "H shift +1",
+        "H"
+      ],
+      "broken_bonds": 0,
+      "h_shift": 1,
+      "adduct": "H",
+      "neutral_losses": [],
+      "fragment_atom_indices": null,
+      "score": 0.7
+    },
+    {
+      "formula": "C2H3O",
+      "counts": {
+        "C": 2,
+        "H": 3,
+        "O": 1
+      },
+      "exact_mass": 43.01838971626,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "POMC",
+      "source_name": "Polyoxymethylene Copolymer",
+      "generation_type": "adduct",
+      "path": [
+        "M",
+        "H shift -2",
+        "-H"
+      ],
+      "broken_bonds": 0,
+      "h_shift": -2,
+      "adduct": "-H",
+      "neutral_losses": [],
+      "fragment_atom_indices": null,
+      "score": 0.65
+    },
+    {
+      "formula": "C2H4",
+      "counts": {
+        "C": 2,
+        "H": 4
+      },
+      "exact_mass": 28.03130012892,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "source_compound_id": "POMC",
+      "source_name": "Polyoxymethylene Copolymer",
+      "generation_type": "neutral_loss",
+      "path": [
+        "M",
+        "-H2O"
+      ],
+      "broken_bonds": 0,
+      "h_shift": 0,
+      "adduct": null,
+      "neutral_losses": [
+        "H2O"
+      ],
+      "fragment_atom_indices": null,
+      "score": 0.65
+    },
+    {
+      "formula": "C2H4O",
+      "counts": {
+        "C": 2,
+        "H": 4,
+        "O": 1
+      },
+      "exact_mass": 44.02621474849,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "source_compound_id": "POMC",
+      "source_name": "Polyoxymethylene Copolymer",
+      "generation_type": "h_shift",
+      "path": [
+        "M",
+        "H shift -2"
+      ],
+      "broken_bonds": 0,
+      "h_shift": -2,
+      "adduct": null,
+      "neutral_losses": [],
+      "fragment_atom_indices": null,
+      "score": 0.65
+    },
+    {
+      "formula": "C2H4O",
+      "counts": {
+        "C": 2,
+        "H": 4,
+        "O": 1
+      },
+      "exact_mass": 44.02621474849,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "source_compound_id": "POMC",
+      "source_name": "Polyoxymethylene Copolymer",
+      "generation_type": "neutral_loss",
+      "path": [
+        "M",
+        "-H2"
+      ],
+      "broken_bonds": 0,
+      "h_shift": 0,
+      "adduct": null,
+      "neutral_losses": [
+        "H2"
+      ],
+      "fragment_atom_indices": null,
+      "score": 0.65
+    },
+    {
+      "formula": "C2H5",
+      "counts": {
+        "C": 2,
+        "H": 5
+      },
+      "exact_mass": 29.03912516115,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "source_compound_id": "POMC",
+      "source_name": "Polyoxymethylene Copolymer",
+      "generation_type": "neutral_loss",
+      "path": [
+        "M",
+        "-OH",
+        ";",
+        "M",
+        "H shift +1",
+        "-H2O"
+      ],
+      "broken_bonds": 0,
+      "h_shift": 0,
+      "adduct": null,
+      "neutral_losses": [
+        "OH"
+      ],
+      "fragment_atom_indices": null,
+      "score": 0.65
+    },
+    {
+      "formula": "C2H5O",
+      "counts": {
+        "C": 2,
+        "H": 5,
+        "O": 1
+      },
+      "exact_mass": 45.03403978072,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "POMC",
+      "source_name": "Polyoxymethylene Copolymer",
+      "generation_type": "adduct",
+      "path": [
+        "M",
+        "H shift -2",
+        "H"
+      ],
+      "broken_bonds": 0,
+      "h_shift": -2,
+      "adduct": "H",
+      "neutral_losses": [],
+      "fragment_atom_indices": null,
+      "score": 0.65
+    },
+    {
+      "formula": "C2H7O",
+      "counts": {
+        "C": 2,
+        "H": 7,
+        "O": 1
+      },
+      "exact_mass": 47.04968984518,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "POMC",
+      "source_name": "Polyoxymethylene Copolymer",
+      "generation_type": "adduct",
+      "path": [
+        "M",
+        "H shift +2",
+        "-H"
+      ],
+      "broken_bonds": 0,
+      "h_shift": 2,
+      "adduct": "-H",
+      "neutral_losses": [],
+      "fragment_atom_indices": null,
+      "score": 0.65
+    },
+    {
+      "formula": "C2H8O",
+      "counts": {
+        "C": 2,
+        "H": 8,
+        "O": 1
+      },
+      "exact_mass": 48.05751487741,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "source_compound_id": "POMC",
+      "source_name": "Polyoxymethylene Copolymer",
+      "generation_type": "h_shift",
+      "path": [
+        "M",
+        "H shift +2"
+      ],
+      "broken_bonds": 0,
+      "h_shift": 2,
+      "adduct": null,
+      "neutral_losses": [],
+      "fragment_atom_indices": null,
+      "score": 0.65
+    },
+    {
+      "formula": "C2H9O",
+      "counts": {
+        "C": 2,
+        "H": 9,
+        "O": 1
+      },
+      "exact_mass": 49.06533990964,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "POMC",
+      "source_name": "Polyoxymethylene Copolymer",
+      "generation_type": "adduct",
+      "path": [
+        "M",
+        "H shift +2",
+        "H"
+      ],
+      "broken_bonds": 0,
+      "h_shift": 2,
+      "adduct": "H",
+      "neutral_losses": [],
+      "fragment_atom_indices": null,
+      "score": 0.65
+    },
+    {
+      "formula": "CH3O",
+      "counts": {
+        "C": 1,
+        "H": 3,
+        "O": 1
+      },
+      "exact_mass": 31.01838971626,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "source_compound_id": "POMC",
+      "source_name": "Polyoxymethylene Copolymer",
+      "generation_type": "neutral_loss",
+      "path": [
+        "M",
+        "-CH3",
+        ";",
+        "break 1 bond(s)",
+        "H shift +2",
+        "-H2",
+        ";",
+        "break 1 bond(s)",
+        "H shift +2",
+        "-H2"
+      ],
+      "broken_bonds": 0,
+      "h_shift": 0,
+      "adduct": null,
+      "neutral_losses": [
+        "CH3"
+      ],
+      "fragment_atom_indices": null,
+      "score": 0.65
+    },
+    {
+      "formula": "CH6",
+      "counts": {
+        "C": 1,
+        "H": 6
+      },
+      "exact_mass": 18.04695019338,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "source_compound_id": "POMC",
+      "source_name": "Polyoxymethylene Copolymer",
+      "generation_type": "neutral_loss",
+      "path": [
+        "M",
+        "-CO"
+      ],
+      "broken_bonds": 0,
+      "h_shift": 0,
+      "adduct": null,
+      "neutral_losses": [
+        "CO"
+      ],
+      "fragment_atom_indices": null,
+      "score": 0.65
+    },
+    {
+      "formula": "C2H6ClO",
+      "counts": {
+        "C": 2,
+        "H": 6,
+        "O": 1,
+        "Cl": 1
+      },
+      "exact_mass": 81.01071749495,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "POMC",
+      "source_name": "Polyoxymethylene Copolymer",
+      "generation_type": "adduct",
+      "path": [
+        "M",
+        "Cl"
+      ],
+      "broken_bonds": 0,
+      "h_shift": 0,
+      "adduct": "Cl",
+      "neutral_losses": [],
+      "fragment_atom_indices": null,
+      "score": 0.63
+    },
+    {
+      "formula": "C2H6KO",
+      "counts": {
+        "C": 2,
+        "H": 6,
+        "O": 1,
+        "K": 1
+      },
+      "exact_mass": 85.00557129935,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "POMC",
+      "source_name": "Polyoxymethylene Copolymer",
+      "generation_type": "adduct",
+      "path": [
+        "M",
+        "K"
+      ],
+      "broken_bonds": 0,
+      "h_shift": 0,
+      "adduct": "K",
+      "neutral_losses": [],
+      "fragment_atom_indices": null,
+      "score": 0.63
+    },
+    {
+      "formula": "C2H6NaO",
+      "counts": {
+        "C": 2,
+        "H": 6,
+        "O": 1,
+        "Na": 1
+      },
+      "exact_mass": 69.03163409495001,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "POMC",
+      "source_name": "Polyoxymethylene Copolymer",
+      "generation_type": "adduct",
+      "path": [
+        "M",
+        "Na"
+      ],
+      "broken_bonds": 0,
+      "h_shift": 0,
+      "adduct": "Na",
+      "neutral_losses": [],
+      "fragment_atom_indices": null,
+      "score": 0.63
+    },
+    {
+      "formula": "C2H6O2",
+      "counts": {
+        "C": 2,
+        "H": 6,
+        "O": 2
+      },
+      "exact_mass": 62.03677943252,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "POMC",
+      "source_name": "Polyoxymethylene Copolymer",
+      "generation_type": "adduct",
+      "path": [
+        "M",
+        "O"
+      ],
+      "broken_bonds": 0,
+      "h_shift": 0,
+      "adduct": "O",
+      "neutral_losses": [],
+      "fragment_atom_indices": null,
+      "score": 0.63
+    },
+    {
+      "formula": "C2H7O2",
+      "counts": {
+        "C": 2,
+        "H": 7,
+        "O": 2
+      },
+      "exact_mass": 63.04460446475,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "POMC",
+      "source_name": "Polyoxymethylene Copolymer",
+      "generation_type": "adduct",
+      "path": [
+        "M",
+        "OH",
+        ";",
+        "M",
+        "H shift +1",
+        "O"
+      ],
+      "broken_bonds": 0,
+      "h_shift": 0,
+      "adduct": "OH",
+      "neutral_losses": [],
+      "fragment_atom_indices": null,
+      "score": 0.63
+    },
+    {
+      "formula": "C2H3",
+      "counts": {
+        "C": 2,
+        "H": 3
+      },
+      "exact_mass": 27.02347509669,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "source_compound_id": "POMC",
+      "source_name": "Polyoxymethylene Copolymer",
+      "generation_type": "neutral_loss",
+      "path": [
+        "M",
+        "H shift -1",
+        "-H2O"
+      ],
+      "broken_bonds": 0,
+      "h_shift": -1,
+      "adduct": null,
+      "neutral_losses": [
+        "H2O"
+      ],
+      "fragment_atom_indices": null,
+      "score": 0.6
+    },
+    {
+      "formula": "C2H3O",
+      "counts": {
+        "C": 2,
+        "H": 3,
+        "O": 1
+      },
+      "exact_mass": 43.01838971626,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "source_compound_id": "POMC",
+      "source_name": "Polyoxymethylene Copolymer",
+      "generation_type": "neutral_loss",
+      "path": [
+        "M",
+        "H shift -1",
+        "-H2"
+      ],
+      "broken_bonds": 0,
+      "h_shift": -1,
+      "adduct": null,
+      "neutral_losses": [
+        "H2"
+      ],
+      "fragment_atom_indices": null,
+      "score": 0.6
+    },
+    {
+      "formula": "C2H5O",
+      "counts": {
+        "C": 2,
+        "H": 5,
+        "O": 1
+      },
+      "exact_mass": 45.03403978072,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "source_compound_id": "POMC",
+      "source_name": "Polyoxymethylene Copolymer",
+      "generation_type": "neutral_loss",
+      "path": [
+        "M",
+        "H shift +1",
+        "-H2"
+      ],
+      "broken_bonds": 0,
+      "h_shift": 1,
+      "adduct": null,
+      "neutral_losses": [
+        "H2"
+      ],
+      "fragment_atom_indices": null,
+      "score": 0.6
+    },
+    {
+      "formula": "C2H6",
+      "counts": {
+        "C": 2,
+        "H": 6
+      },
+      "exact_mass": 30.04695019338,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "source_compound_id": "POMC",
+      "source_name": "Polyoxymethylene Copolymer",
+      "generation_type": "neutral_loss",
+      "path": [
+        "M",
+        "H shift +1",
+        "-OH",
+        ";",
+        "M",
+        "H shift +2",
+        "-H2O"
+      ],
+      "broken_bonds": 0,
+      "h_shift": 1,
+      "adduct": null,
+      "neutral_losses": [
+        "OH"
+      ],
+      "fragment_atom_indices": null,
+      "score": 0.6
+    },
+    {
+      "formula": "CH2O",
+      "counts": {
+        "C": 1,
+        "H": 2,
+        "O": 1
+      },
+      "exact_mass": 30.01056468403,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "source_compound_id": "POMC",
+      "source_name": "Polyoxymethylene Copolymer",
+      "generation_type": "neutral_loss",
+      "path": [
+        "M",
+        "H shift -1",
+        "-CH3",
+        ";",
+        "break 1 bond(s)",
+        "H shift +1",
+        "-H2",
+        ";",
+        "break 1 bond(s)",
+        "H shift +1",
+        "-H2"
+      ],
+      "broken_bonds": 0,
+      "h_shift": -1,
+      "adduct": null,
+      "neutral_losses": [
+        "CH3"
+      ],
+      "fragment_atom_indices": null,
+      "score": 0.6
+    },
+    {
+      "formula": "CH2O",
+      "counts": {
+        "O": 1,
+        "C": 1,
+        "H": 2
+      },
+      "exact_mass": 30.01056468403,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "POMC",
+      "source_name": "Polyoxymethylene Copolymer",
+      "generation_type": "adduct",
+      "path": [
+        "break 1 bond(s)",
+        "-H",
+        ";",
+        "break 1 bond(s)",
+        "-H"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 0,
+      "adduct": "-H",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        1,
+        2,
+        6,
+        7,
+        8
+      ],
+      "score": 0.6
+    },
+    {
+      "formula": "CH3O",
+      "counts": {
+        "O": 1,
+        "C": 1,
+        "H": 3
+      },
+      "exact_mass": 31.01838971626,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "source_compound_id": "POMC",
+      "source_name": "Polyoxymethylene Copolymer",
+      "generation_type": "fragment",
+      "path": [
+        "break 1 bond(s)",
+        ";",
+        "break 1 bond(s)"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 0,
+      "adduct": null,
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        1,
+        2,
+        6,
+        7,
+        8
+      ],
+      "score": 0.6
+    },
+    {
+      "formula": "CH4O",
+      "counts": {
+        "C": 1,
+        "H": 4,
+        "O": 1
+      },
+      "exact_mass": 32.02621474849,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "source_compound_id": "POMC",
+      "source_name": "Polyoxymethylene Copolymer",
+      "generation_type": "neutral_loss",
+      "path": [
+        "M",
+        "H shift +1",
+        "-CH3"
+      ],
+      "broken_bonds": 0,
+      "h_shift": 1,
+      "adduct": null,
+      "neutral_losses": [
+        "CH3"
+      ],
+      "fragment_atom_indices": null,
+      "score": 0.6
+    },
+    {
+      "formula": "CH4O",
+      "counts": {
+        "O": 1,
+        "C": 1,
+        "H": 4
+      },
+      "exact_mass": 32.02621474849,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "POMC",
+      "source_name": "Polyoxymethylene Copolymer",
+      "generation_type": "adduct",
+      "path": [
+        "break 1 bond(s)",
+        "H",
+        ";",
+        "break 1 bond(s)",
+        "H"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 0,
+      "adduct": "H",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        1,
+        2,
+        6,
+        7,
+        8
+      ],
+      "score": 0.6
+    },
+    {
+      "formula": "CH5",
+      "counts": {
+        "C": 1,
+        "H": 5
+      },
+      "exact_mass": 17.03912516115,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "source_compound_id": "POMC",
+      "source_name": "Polyoxymethylene Copolymer",
+      "generation_type": "neutral_loss",
+      "path": [
+        "M",
+        "H shift -1",
+        "-CO"
+      ],
+      "broken_bonds": 0,
+      "h_shift": -1,
+      "adduct": null,
+      "neutral_losses": [
+        "CO"
+      ],
+      "fragment_atom_indices": null,
+      "score": 0.6
+    },
+    {
+      "formula": "CH7",
+      "counts": {
+        "C": 1,
+        "H": 7
+      },
+      "exact_mass": 19.05477522561,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "source_compound_id": "POMC",
+      "source_name": "Polyoxymethylene Copolymer",
+      "generation_type": "neutral_loss",
+      "path": [
+        "M",
+        "H shift +1",
+        "-CO"
+      ],
+      "broken_bonds": 0,
+      "h_shift": 1,
+      "adduct": null,
+      "neutral_losses": [
+        "CO"
+      ],
+      "fragment_atom_indices": null,
+      "score": 0.6
+    },
+    {
+      "formula": "C2H5ClO",
+      "counts": {
+        "C": 2,
+        "H": 5,
+        "O": 1,
+        "Cl": 1
+      },
+      "exact_mass": 80.00289246272,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "POMC",
+      "source_name": "Polyoxymethylene Copolymer",
+      "generation_type": "adduct",
+      "path": [
+        "M",
+        "H shift -1",
+        "Cl"
+      ],
+      "broken_bonds": 0,
+      "h_shift": -1,
+      "adduct": "Cl",
+      "neutral_losses": [],
+      "fragment_atom_indices": null,
+      "score": 0.58
+    },
+    {
+      "formula": "C2H5KO",
+      "counts": {
+        "C": 2,
+        "H": 5,
+        "O": 1,
+        "K": 1
+      },
+      "exact_mass": 83.99774626712,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "POMC",
+      "source_name": "Polyoxymethylene Copolymer",
+      "generation_type": "adduct",
+      "path": [
+        "M",
+        "H shift -1",
+        "K"
+      ],
+      "broken_bonds": 0,
+      "h_shift": -1,
+      "adduct": "K",
+      "neutral_losses": [],
+      "fragment_atom_indices": null,
+      "score": 0.58
+    },
+    {
+      "formula": "C2H5NaO",
+      "counts": {
+        "C": 2,
+        "H": 5,
+        "O": 1,
+        "Na": 1
+      },
+      "exact_mass": 68.02380906272,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "POMC",
+      "source_name": "Polyoxymethylene Copolymer",
+      "generation_type": "adduct",
+      "path": [
+        "M",
+        "H shift -1",
+        "Na"
+      ],
+      "broken_bonds": 0,
+      "h_shift": -1,
+      "adduct": "Na",
+      "neutral_losses": [],
+      "fragment_atom_indices": null,
+      "score": 0.58
+    },
+    {
+      "formula": "C2H5O2",
+      "counts": {
+        "C": 2,
+        "H": 5,
+        "O": 2
+      },
+      "exact_mass": 61.028954400290004,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "POMC",
+      "source_name": "Polyoxymethylene Copolymer",
+      "generation_type": "adduct",
+      "path": [
+        "M",
+        "H shift -1",
+        "O"
+      ],
+      "broken_bonds": 0,
+      "h_shift": -1,
+      "adduct": "O",
+      "neutral_losses": [],
+      "fragment_atom_indices": null,
+      "score": 0.58
+    },
+    {
+      "formula": "C2H7ClO",
+      "counts": {
+        "C": 2,
+        "H": 7,
+        "O": 1,
+        "Cl": 1
+      },
+      "exact_mass": 82.01854252718,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "POMC",
+      "source_name": "Polyoxymethylene Copolymer",
+      "generation_type": "adduct",
+      "path": [
+        "M",
+        "H shift +1",
+        "Cl"
+      ],
+      "broken_bonds": 0,
+      "h_shift": 1,
+      "adduct": "Cl",
+      "neutral_losses": [],
+      "fragment_atom_indices": null,
+      "score": 0.58
+    },
+    {
+      "formula": "C2H7KO",
+      "counts": {
+        "C": 2,
+        "H": 7,
+        "O": 1,
+        "K": 1
+      },
+      "exact_mass": 86.01339633158,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "POMC",
+      "source_name": "Polyoxymethylene Copolymer",
+      "generation_type": "adduct",
+      "path": [
+        "M",
+        "H shift +1",
+        "K"
+      ],
+      "broken_bonds": 0,
+      "h_shift": 1,
+      "adduct": "K",
+      "neutral_losses": [],
+      "fragment_atom_indices": null,
+      "score": 0.58
+    },
+    {
+      "formula": "C2H7NaO",
+      "counts": {
+        "C": 2,
+        "H": 7,
+        "O": 1,
+        "Na": 1
+      },
+      "exact_mass": 70.03945912718,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "POMC",
+      "source_name": "Polyoxymethylene Copolymer",
+      "generation_type": "adduct",
+      "path": [
+        "M",
+        "H shift +1",
+        "Na"
+      ],
+      "broken_bonds": 0,
+      "h_shift": 1,
+      "adduct": "Na",
+      "neutral_losses": [],
+      "fragment_atom_indices": null,
+      "score": 0.58
+    },
+    {
+      "formula": "C2H8O2",
+      "counts": {
+        "C": 2,
+        "H": 8,
+        "O": 2
+      },
+      "exact_mass": 64.05242949698,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "POMC",
+      "source_name": "Polyoxymethylene Copolymer",
+      "generation_type": "adduct",
+      "path": [
+        "M",
+        "H shift +1",
+        "OH",
+        ";",
+        "M",
+        "H shift +2",
+        "O"
+      ],
+      "broken_bonds": 0,
+      "h_shift": 1,
+      "adduct": "OH",
+      "neutral_losses": [],
+      "fragment_atom_indices": null,
+      "score": 0.58
+    },
+    {
+      "formula": "C2H2",
+      "counts": {
+        "C": 2,
+        "H": 2
+      },
+      "exact_mass": 26.01565006446,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "source_compound_id": "POMC",
+      "source_name": "Polyoxymethylene Copolymer",
+      "generation_type": "neutral_loss",
+      "path": [
+        "M",
+        "H shift -2",
+        "-H2O"
+      ],
+      "broken_bonds": 0,
+      "h_shift": -2,
+      "adduct": null,
+      "neutral_losses": [
+        "H2O"
+      ],
+      "fragment_atom_indices": null,
+      "score": 0.55
+    },
+    {
+      "formula": "C2H2O",
+      "counts": {
+        "C": 2,
+        "H": 2,
+        "O": 1
+      },
+      "exact_mass": 42.01056468403,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "source_compound_id": "POMC",
+      "source_name": "Polyoxymethylene Copolymer",
+      "generation_type": "neutral_loss",
+      "path": [
+        "M",
+        "H shift -2",
+        "-H2"
+      ],
+      "broken_bonds": 0,
+      "h_shift": -2,
+      "adduct": null,
+      "neutral_losses": [
+        "H2"
+      ],
+      "fragment_atom_indices": null,
+      "score": 0.55
+    },
+    {
+      "formula": "C2H6O",
+      "counts": {
+        "C": 2,
+        "H": 6,
+        "O": 1
+      },
+      "exact_mass": 46.04186481295,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "source_compound_id": "POMC",
+      "source_name": "Polyoxymethylene Copolymer",
+      "generation_type": "neutral_loss",
+      "path": [
+        "M",
+        "H shift +2",
+        "-H2"
+      ],
+      "broken_bonds": 0,
+      "h_shift": 2,
+      "adduct": null,
+      "neutral_losses": [
+        "H2"
+      ],
+      "fragment_atom_indices": null,
+      "score": 0.55
+    },
+    {
+      "formula": "C2H7",
+      "counts": {
+        "C": 2,
+        "H": 7
+      },
+      "exact_mass": 31.05477522561,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "source_compound_id": "POMC",
+      "source_name": "Polyoxymethylene Copolymer",
+      "generation_type": "neutral_loss",
+      "path": [
+        "M",
+        "H shift +2",
+        "-OH"
+      ],
+      "broken_bonds": 0,
+      "h_shift": 2,
+      "adduct": null,
+      "neutral_losses": [
+        "OH"
+      ],
+      "fragment_atom_indices": null,
+      "score": 0.55
+    },
+    {
+      "formula": "C4H11O2",
+      "counts": {
+        "C": 4,
+        "H": 11,
+        "O": 2
+      },
+      "exact_mass": 91.07590459367,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "POMC",
+      "source_name": "Polyoxymethylene Copolymer",
+      "generation_type": "dimer",
+      "path": [
+        "2M",
+        "-H"
+      ],
+      "broken_bonds": 0,
+      "h_shift": 0,
+      "adduct": "-H",
+      "neutral_losses": [],
+      "fragment_atom_indices": null,
+      "score": 0.55
+    },
+    {
+      "formula": "C4H13O2",
+      "counts": {
+        "C": 4,
+        "H": 13,
+        "O": 2
+      },
+      "exact_mass": 93.09155465813001,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "POMC",
+      "source_name": "Polyoxymethylene Copolymer",
+      "generation_type": "dimer",
+      "path": [
+        "2M",
+        "H"
+      ],
+      "broken_bonds": 0,
+      "h_shift": 0,
+      "adduct": "H",
+      "neutral_losses": [],
+      "fragment_atom_indices": null,
+      "score": 0.55
+    },
+    {
+      "formula": "CH4",
+      "counts": {
+        "C": 1,
+        "H": 4
+      },
+      "exact_mass": 16.03130012892,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "source_compound_id": "POMC",
+      "source_name": "Polyoxymethylene Copolymer",
+      "generation_type": "neutral_loss",
+      "path": [
+        "M",
+        "H shift -2",
+        "-CO",
+        ";",
+        "break 1 bond(s)",
+        "H shift +2",
+        "-OH",
+        ";",
+        "break 1 bond(s)",
+        "H shift +2",
+        "-OH"
+      ],
+      "broken_bonds": 0,
+      "h_shift": -2,
+      "adduct": null,
+      "neutral_losses": [
+        "CO"
+      ],
+      "fragment_atom_indices": null,
+      "score": 0.55
+    },
+    {
+      "formula": "CH5O",
+      "counts": {
+        "C": 1,
+        "H": 5,
+        "O": 1
+      },
+      "exact_mass": 33.03403978072,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "source_compound_id": "POMC",
+      "source_name": "Polyoxymethylene Copolymer",
+      "generation_type": "neutral_loss",
+      "path": [
+        "M",
+        "H shift +2",
+        "-CH3"
+      ],
+      "broken_bonds": 0,
+      "h_shift": 2,
+      "adduct": null,
+      "neutral_losses": [
+        "CH3"
+      ],
+      "fragment_atom_indices": null,
+      "score": 0.55
+    },
+    {
+      "formula": "CH8",
+      "counts": {
+        "C": 1,
+        "H": 8
+      },
+      "exact_mass": 20.06260025784,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "source_compound_id": "POMC",
+      "source_name": "Polyoxymethylene Copolymer",
+      "generation_type": "neutral_loss",
+      "path": [
+        "M",
+        "H shift +2",
+        "-CO"
+      ],
+      "broken_bonds": 0,
+      "h_shift": 2,
+      "adduct": null,
+      "neutral_losses": [
+        "CO"
+      ],
+      "fragment_atom_indices": null,
+      "score": 0.55
+    },
+    {
+      "formula": "CHO",
+      "counts": {
+        "C": 1,
+        "H": 1,
+        "O": 1
+      },
+      "exact_mass": 29.0027396518,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "source_compound_id": "POMC",
+      "source_name": "Polyoxymethylene Copolymer",
+      "generation_type": "neutral_loss",
+      "path": [
+        "M",
+        "H shift -2",
+        "-CH3",
+        ";",
+        "break 1 bond(s)",
+        "-H2",
+        ";",
+        "break 1 bond(s)",
+        "-H2"
+      ],
+      "broken_bonds": 0,
+      "h_shift": -2,
+      "adduct": null,
+      "neutral_losses": [
+        "CH3"
+      ],
+      "fragment_atom_indices": null,
+      "score": 0.55
+    },
+    {
+      "formula": "CH2O",
+      "counts": {
+        "O": 1,
+        "C": 1,
+        "H": 2
+      },
+      "exact_mass": 30.01056468403,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "source_compound_id": "POMC",
+      "source_name": "Polyoxymethylene Copolymer",
+      "generation_type": "h_shift",
+      "path": [
+        "break 1 bond(s)",
+        "H shift -1",
+        ";",
+        "break 1 bond(s)",
+        "H shift -1"
+      ],
+      "broken_bonds": 1,
+      "h_shift": -1,
+      "adduct": null,
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        1,
+        2,
+        6,
+        7,
+        8
+      ],
+      "score": 0.5499999999999999
+    },
+    {
+      "formula": "CH3O",
+      "counts": {
+        "O": 1,
+        "C": 1,
+        "H": 3
+      },
+      "exact_mass": 31.01838971626,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "POMC",
+      "source_name": "Polyoxymethylene Copolymer",
+      "generation_type": "adduct",
+      "path": [
+        "break 1 bond(s)",
+        "H shift -1",
+        "H",
+        ";",
+        "break 1 bond(s)",
+        "H shift -1",
+        "H"
+      ],
+      "broken_bonds": 1,
+      "h_shift": -1,
+      "adduct": "H",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        1,
+        2,
+        6,
+        7,
+        8
+      ],
+      "score": 0.5499999999999999
+    },
+    {
+      "formula": "CH3O",
+      "counts": {
+        "O": 1,
+        "C": 1,
+        "H": 3
+      },
+      "exact_mass": 31.01838971626,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "POMC",
+      "source_name": "Polyoxymethylene Copolymer",
+      "generation_type": "adduct",
+      "path": [
+        "break 1 bond(s)",
+        "H shift +1",
+        "-H",
+        ";",
+        "break 1 bond(s)",
+        "H shift +1",
+        "-H"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 1,
+      "adduct": "-H",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        1,
+        2,
+        6,
+        7,
+        8
+      ],
+      "score": 0.5499999999999999
+    },
+    {
+      "formula": "CH4O",
+      "counts": {
+        "O": 1,
+        "C": 1,
+        "H": 4
+      },
+      "exact_mass": 32.02621474849,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "source_compound_id": "POMC",
+      "source_name": "Polyoxymethylene Copolymer",
+      "generation_type": "h_shift",
+      "path": [
+        "break 1 bond(s)",
+        "H shift +1",
+        ";",
+        "break 1 bond(s)",
+        "H shift +1"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 1,
+      "adduct": null,
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        1,
+        2,
+        6,
+        7,
+        8
+      ],
+      "score": 0.5499999999999999
+    },
+    {
+      "formula": "CH5O",
+      "counts": {
+        "O": 1,
+        "C": 1,
+        "H": 5
+      },
+      "exact_mass": 33.03403978072,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "POMC",
+      "source_name": "Polyoxymethylene Copolymer",
+      "generation_type": "adduct",
+      "path": [
+        "break 1 bond(s)",
+        "H shift +1",
+        "H",
+        ";",
+        "break 1 bond(s)",
+        "H shift +1",
+        "H"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 1,
+      "adduct": "H",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        1,
+        2,
+        6,
+        7,
+        8
+      ],
+      "score": 0.5499999999999999
+    },
+    {
+      "formula": "CHO",
+      "counts": {
+        "O": 1,
+        "C": 1,
+        "H": 1
+      },
+      "exact_mass": 29.0027396518,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "POMC",
+      "source_name": "Polyoxymethylene Copolymer",
+      "generation_type": "adduct",
+      "path": [
+        "break 1 bond(s)",
+        "H shift -1",
+        "-H",
+        ";",
+        "break 1 bond(s)",
+        "H shift -1",
+        "-H"
+      ],
+      "broken_bonds": 1,
+      "h_shift": -1,
+      "adduct": "-H",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        1,
+        2,
+        6,
+        7,
+        8
+      ],
+      "score": 0.5499999999999999
+    },
+    {
+      "formula": "C2H4ClO",
+      "counts": {
+        "C": 2,
+        "H": 4,
+        "O": 1,
+        "Cl": 1
+      },
+      "exact_mass": 78.99506743049,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "POMC",
+      "source_name": "Polyoxymethylene Copolymer",
+      "generation_type": "adduct",
+      "path": [
+        "M",
+        "H shift -2",
+        "Cl"
+      ],
+      "broken_bonds": 0,
+      "h_shift": -2,
+      "adduct": "Cl",
+      "neutral_losses": [],
+      "fragment_atom_indices": null,
+      "score": 0.53
+    },
+    {
+      "formula": "C2H4KO",
+      "counts": {
+        "C": 2,
+        "H": 4,
+        "O": 1,
+        "K": 1
+      },
+      "exact_mass": 82.98992123489,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "POMC",
+      "source_name": "Polyoxymethylene Copolymer",
+      "generation_type": "adduct",
+      "path": [
+        "M",
+        "H shift -2",
+        "K"
+      ],
+      "broken_bonds": 0,
+      "h_shift": -2,
+      "adduct": "K",
+      "neutral_losses": [],
+      "fragment_atom_indices": null,
+      "score": 0.53
+    },
+    {
+      "formula": "C2H4NaO",
+      "counts": {
+        "C": 2,
+        "H": 4,
+        "O": 1,
+        "Na": 1
+      },
+      "exact_mass": 67.01598403049,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "POMC",
+      "source_name": "Polyoxymethylene Copolymer",
+      "generation_type": "adduct",
+      "path": [
+        "M",
+        "H shift -2",
+        "Na"
+      ],
+      "broken_bonds": 0,
+      "h_shift": -2,
+      "adduct": "Na",
+      "neutral_losses": [],
+      "fragment_atom_indices": null,
+      "score": 0.53
+    },
+    {
+      "formula": "C2H4O2",
+      "counts": {
+        "C": 2,
+        "H": 4,
+        "O": 2
+      },
+      "exact_mass": 60.02112936806,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "POMC",
+      "source_name": "Polyoxymethylene Copolymer",
+      "generation_type": "adduct",
+      "path": [
+        "M",
+        "H shift -2",
+        "O"
+      ],
+      "broken_bonds": 0,
+      "h_shift": -2,
+      "adduct": "O",
+      "neutral_losses": [],
+      "fragment_atom_indices": null,
+      "score": 0.53
+    },
+    {
+      "formula": "C2H8ClO",
+      "counts": {
+        "C": 2,
+        "H": 8,
+        "O": 1,
+        "Cl": 1
+      },
+      "exact_mass": 83.02636755941,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "POMC",
+      "source_name": "Polyoxymethylene Copolymer",
+      "generation_type": "adduct",
+      "path": [
+        "M",
+        "H shift +2",
+        "Cl"
+      ],
+      "broken_bonds": 0,
+      "h_shift": 2,
+      "adduct": "Cl",
+      "neutral_losses": [],
+      "fragment_atom_indices": null,
+      "score": 0.53
+    },
+    {
+      "formula": "C2H8KO",
+      "counts": {
+        "C": 2,
+        "H": 8,
+        "O": 1,
+        "K": 1
+      },
+      "exact_mass": 87.02122136381,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "POMC",
+      "source_name": "Polyoxymethylene Copolymer",
+      "generation_type": "adduct",
+      "path": [
+        "M",
+        "H shift +2",
+        "K"
+      ],
+      "broken_bonds": 0,
+      "h_shift": 2,
+      "adduct": "K",
+      "neutral_losses": [],
+      "fragment_atom_indices": null,
+      "score": 0.53
+    },
+    {
+      "formula": "C2H8NaO",
+      "counts": {
+        "C": 2,
+        "H": 8,
+        "O": 1,
+        "Na": 1
+      },
+      "exact_mass": 71.04728415941,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "POMC",
+      "source_name": "Polyoxymethylene Copolymer",
+      "generation_type": "adduct",
+      "path": [
+        "M",
+        "H shift +2",
+        "Na"
+      ],
+      "broken_bonds": 0,
+      "h_shift": 2,
+      "adduct": "Na",
+      "neutral_losses": [],
+      "fragment_atom_indices": null,
+      "score": 0.53
+    },
+    {
+      "formula": "C2H9O2",
+      "counts": {
+        "C": 2,
+        "H": 9,
+        "O": 2
+      },
+      "exact_mass": 65.06025452921,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "POMC",
+      "source_name": "Polyoxymethylene Copolymer",
+      "generation_type": "adduct",
+      "path": [
+        "M",
+        "H shift +2",
+        "OH"
+      ],
+      "broken_bonds": 0,
+      "h_shift": 2,
+      "adduct": "OH",
+      "neutral_losses": [],
+      "fragment_atom_indices": null,
+      "score": 0.53
+    },
+    {
+      "formula": "CH",
+      "counts": {
+        "C": 1,
+        "H": 1
+      },
+      "exact_mass": 13.00782503223,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "source_compound_id": "POMC",
+      "source_name": "Polyoxymethylene Copolymer",
+      "generation_type": "neutral_loss",
+      "path": [
+        "break 1 bond(s)",
+        "-H2O",
+        ";",
+        "break 1 bond(s)",
+        "H shift -1",
+        "-OH",
+        ";",
+        "break 1 bond(s)",
+        "-H2O"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 0,
+      "adduct": null,
+      "neutral_losses": [
+        "H2O"
+      ],
+      "fragment_atom_indices": [
+        1,
+        2,
+        6,
+        7,
+        8
+      ],
+      "score": 0.5
+    },
+    {
+      "formula": "CH2",
+      "counts": {
+        "C": 1,
+        "H": 2
+      },
+      "exact_mass": 14.01565006446,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "source_compound_id": "POMC",
+      "source_name": "Polyoxymethylene Copolymer",
+      "generation_type": "neutral_loss",
+      "path": [
+        "break 1 bond(s)",
+        "-OH",
+        ";",
+        "break 1 bond(s)",
+        "H shift +1",
+        "-H2O",
+        ";",
+        "break 1 bond(s)",
+        "-OH"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 0,
+      "adduct": null,
+      "neutral_losses": [
+        "OH"
+      ],
+      "fragment_atom_indices": [
+        1,
+        2,
+        6,
+        7,
+        8
+      ],
+      "score": 0.5
+    },
+    {
+      "formula": "CH2O",
+      "counts": {
+        "O": 1,
+        "C": 1,
+        "H": 2
+      },
+      "exact_mass": 30.01056468403,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "POMC",
+      "source_name": "Polyoxymethylene Copolymer",
+      "generation_type": "adduct",
+      "path": [
+        "break 1 bond(s)",
+        "H shift -2",
+        "H",
+        ";",
+        "break 1 bond(s)",
+        "H shift -2",
+        "H"
+      ],
+      "broken_bonds": 1,
+      "h_shift": -2,
+      "adduct": "H",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        1,
+        2,
+        6,
+        7,
+        8
+      ],
+      "score": 0.5
+    },
+    {
+      "formula": "CH4O",
+      "counts": {
+        "O": 1,
+        "C": 1,
+        "H": 4
+      },
+      "exact_mass": 32.02621474849,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "POMC",
+      "source_name": "Polyoxymethylene Copolymer",
+      "generation_type": "adduct",
+      "path": [
+        "break 1 bond(s)",
+        "H shift +2",
+        "-H",
+        ";",
+        "break 1 bond(s)",
+        "H shift +2",
+        "-H"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 2,
+      "adduct": "-H",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        1,
+        2,
+        6,
+        7,
+        8
+      ],
+      "score": 0.5
+    },
+    {
+      "formula": "CH5O",
+      "counts": {
+        "O": 1,
+        "C": 1,
+        "H": 5
+      },
+      "exact_mass": 33.03403978072,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "source_compound_id": "POMC",
+      "source_name": "Polyoxymethylene Copolymer",
+      "generation_type": "h_shift",
+      "path": [
+        "break 1 bond(s)",
+        "H shift +2",
+        ";",
+        "break 1 bond(s)",
+        "H shift +2"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 2,
+      "adduct": null,
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        1,
+        2,
+        6,
+        7,
+        8
+      ],
+      "score": 0.5
+    },
+    {
+      "formula": "CH6O",
+      "counts": {
+        "O": 1,
+        "C": 1,
+        "H": 6
+      },
+      "exact_mass": 34.04186481295,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "POMC",
+      "source_name": "Polyoxymethylene Copolymer",
+      "generation_type": "adduct",
+      "path": [
+        "break 1 bond(s)",
+        "H shift +2",
+        "H",
+        ";",
+        "break 1 bond(s)",
+        "H shift +2",
+        "H"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 2,
+      "adduct": "H",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        1,
+        2,
+        6,
+        7,
+        8
+      ],
+      "score": 0.5
+    },
+    {
+      "formula": "CHO",
+      "counts": {
+        "O": 1,
+        "C": 1,
+        "H": 1
+      },
+      "exact_mass": 29.0027396518,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "source_compound_id": "POMC",
+      "source_name": "Polyoxymethylene Copolymer",
+      "generation_type": "h_shift",
+      "path": [
+        "break 1 bond(s)",
+        "H shift -2",
+        ";",
+        "break 1 bond(s)",
+        "H shift -2"
+      ],
+      "broken_bonds": 1,
+      "h_shift": -2,
+      "adduct": null,
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        1,
+        2,
+        6,
+        7,
+        8
+      ],
+      "score": 0.5
+    },
+    {
+      "formula": "CO",
+      "counts": {
+        "O": 1,
+        "C": 1
+      },
+      "exact_mass": 27.99491461957,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "POMC",
+      "source_name": "Polyoxymethylene Copolymer",
+      "generation_type": "adduct",
+      "path": [
+        "break 1 bond(s)",
+        "H shift -2",
+        "-H",
+        ";",
+        "break 1 bond(s)",
+        "H shift -2",
+        "-H"
+      ],
+      "broken_bonds": 1,
+      "h_shift": -2,
+      "adduct": "-H",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        1,
+        2,
+        6,
+        7,
+        8
+      ],
+      "score": 0.5
+    },
+    {
+      "formula": "H3",
+      "counts": {
+        "H": 3
+      },
+      "exact_mass": 3.02347509669,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "source_compound_id": "POMC",
+      "source_name": "Polyoxymethylene Copolymer",
+      "generation_type": "neutral_loss",
+      "path": [
+        "break 1 bond(s)",
+        "-CO",
+        ";",
+        "break 1 bond(s)",
+        "-CO"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 0,
+      "adduct": null,
+      "neutral_losses": [
+        "CO"
+      ],
+      "fragment_atom_indices": [
+        1,
+        2,
+        6,
+        7,
+        8
+      ],
+      "score": 0.5
+    },
+    {
+      "formula": "O",
+      "counts": {
+        "O": 1
+      },
+      "exact_mass": 15.99491461957,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "source_compound_id": "POMC",
+      "source_name": "Polyoxymethylene Copolymer",
+      "generation_type": "neutral_loss",
+      "path": [
+        "break 1 bond(s)",
+        "-CH3",
+        ";",
+        "break 1 bond(s)",
+        "-CH3"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 0,
+      "adduct": null,
+      "neutral_losses": [
+        "CH3"
+      ],
+      "fragment_atom_indices": [
+        1,
+        2,
+        6,
+        7,
+        8
+      ],
+      "score": 0.5
+    },
+    {
+      "formula": "CH3ClO",
+      "counts": {
+        "O": 1,
+        "C": 1,
+        "H": 3,
+        "Cl": 1
+      },
+      "exact_mass": 65.98724239826,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "POMC",
+      "source_name": "Polyoxymethylene Copolymer",
+      "generation_type": "adduct",
+      "path": [
+        "break 1 bond(s)",
+        "Cl",
+        ";",
+        "break 1 bond(s)",
+        "Cl"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 0,
+      "adduct": "Cl",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        1,
+        2,
+        6,
+        7,
+        8
+      ],
+      "score": 0.48
+    },
+    {
+      "formula": "CH3KO",
+      "counts": {
+        "O": 1,
+        "C": 1,
+        "H": 3,
+        "K": 1
+      },
+      "exact_mass": 69.98209620266,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "POMC",
+      "source_name": "Polyoxymethylene Copolymer",
+      "generation_type": "adduct",
+      "path": [
+        "break 1 bond(s)",
+        "K",
+        ";",
+        "break 1 bond(s)",
+        "K"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 0,
+      "adduct": "K",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        1,
+        2,
+        6,
+        7,
+        8
+      ],
+      "score": 0.48
+    },
+    {
+      "formula": "CH3NaO",
+      "counts": {
+        "O": 1,
+        "C": 1,
+        "H": 3,
+        "Na": 1
+      },
+      "exact_mass": 54.00815899826,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "POMC",
+      "source_name": "Polyoxymethylene Copolymer",
+      "generation_type": "adduct",
+      "path": [
+        "break 1 bond(s)",
+        "Na",
+        ";",
+        "break 1 bond(s)",
+        "Na"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 0,
+      "adduct": "Na",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        1,
+        2,
+        6,
+        7,
+        8
+      ],
+      "score": 0.48
+    },
+    {
+      "formula": "CH3O2",
+      "counts": {
+        "O": 2,
+        "C": 1,
+        "H": 3
+      },
+      "exact_mass": 47.01330433583,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "POMC",
+      "source_name": "Polyoxymethylene Copolymer",
+      "generation_type": "adduct",
+      "path": [
+        "break 1 bond(s)",
+        "O",
+        ";",
+        "break 1 bond(s)",
+        "H shift -1",
+        "OH",
+        ";",
+        "break 1 bond(s)",
+        "O"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 0,
+      "adduct": "O",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        1,
+        2,
+        6,
+        7,
+        8
+      ],
+      "score": 0.48
+    },
+    {
+      "formula": "CH4O2",
+      "counts": {
+        "O": 2,
+        "C": 1,
+        "H": 4
+      },
+      "exact_mass": 48.02112936806,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "POMC",
+      "source_name": "Polyoxymethylene Copolymer",
+      "generation_type": "adduct",
+      "path": [
+        "break 1 bond(s)",
+        "OH",
+        ";",
+        "break 1 bond(s)",
+        "H shift +1",
+        "O",
+        ";",
+        "break 1 bond(s)",
+        "OH"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 0,
+      "adduct": "OH",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        1,
+        2,
+        6,
+        7,
+        8
+      ],
+      "score": 0.48
+    },
+    {
+      "formula": "C",
+      "counts": {
+        "C": 1
+      },
+      "exact_mass": 12.0,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "source_compound_id": "POMC",
+      "source_name": "Polyoxymethylene Copolymer",
+      "generation_type": "neutral_loss",
+      "path": [
+        "break 1 bond(s)",
+        "H shift -1",
+        "-H2O",
+        ";",
+        "break 1 bond(s)",
+        "H shift -2",
+        "-OH",
+        ";",
+        "break 1 bond(s)",
+        "H shift -1",
+        "-H2O"
+      ],
+      "broken_bonds": 1,
+      "h_shift": -1,
+      "adduct": null,
+      "neutral_losses": [
+        "H2O"
+      ],
+      "fragment_atom_indices": [
+        1,
+        2,
+        6,
+        7,
+        8
+      ],
+      "score": 0.44999999999999996
+    },
+    {
+      "formula": "CH3",
+      "counts": {
+        "C": 1,
+        "H": 3
+      },
+      "exact_mass": 15.02347509669,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "source_compound_id": "POMC",
+      "source_name": "Polyoxymethylene Copolymer",
+      "generation_type": "neutral_loss",
+      "path": [
+        "break 1 bond(s)",
+        "H shift +1",
+        "-OH",
+        ";",
+        "break 1 bond(s)",
+        "H shift +2",
+        "-H2O",
+        ";",
+        "break 1 bond(s)",
+        "H shift +1",
+        "-OH"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 1,
+      "adduct": null,
+      "neutral_losses": [
+        "OH"
+      ],
+      "fragment_atom_indices": [
+        1,
+        2,
+        6,
+        7,
+        8
+      ],
+      "score": 0.44999999999999996
+    },
+    {
+      "formula": "CO",
+      "counts": {
+        "O": 1,
+        "C": 1
+      },
+      "exact_mass": 27.99491461957,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "source_compound_id": "POMC",
+      "source_name": "Polyoxymethylene Copolymer",
+      "generation_type": "neutral_loss",
+      "path": [
+        "break 1 bond(s)",
+        "H shift -1",
+        "-H2",
+        ";",
+        "break 1 bond(s)",
+        "H shift -1",
+        "-H2"
+      ],
+      "broken_bonds": 1,
+      "h_shift": -1,
+      "adduct": null,
+      "neutral_losses": [
+        "H2"
+      ],
+      "fragment_atom_indices": [
+        1,
+        2,
+        6,
+        7,
+        8
+      ],
+      "score": 0.44999999999999996
+    },
+    {
+      "formula": "H2",
+      "counts": {
+        "H": 2
+      },
+      "exact_mass": 2.01565006446,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "source_compound_id": "POMC",
+      "source_name": "Polyoxymethylene Copolymer",
+      "generation_type": "neutral_loss",
+      "path": [
+        "break 1 bond(s)",
+        "H shift -1",
+        "-CO",
+        ";",
+        "break 1 bond(s)",
+        "H shift -1",
+        "-CO"
+      ],
+      "broken_bonds": 1,
+      "h_shift": -1,
+      "adduct": null,
+      "neutral_losses": [
+        "CO"
+      ],
+      "fragment_atom_indices": [
+        1,
+        2,
+        6,
+        7,
+        8
+      ],
+      "score": 0.44999999999999996
+    },
+    {
+      "formula": "H4",
+      "counts": {
+        "H": 4
+      },
+      "exact_mass": 4.03130012892,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "source_compound_id": "POMC",
+      "source_name": "Polyoxymethylene Copolymer",
+      "generation_type": "neutral_loss",
+      "path": [
+        "break 1 bond(s)",
+        "H shift +1",
+        "-CO",
+        ";",
+        "break 1 bond(s)",
+        "H shift +1",
+        "-CO"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 1,
+      "adduct": null,
+      "neutral_losses": [
+        "CO"
+      ],
+      "fragment_atom_indices": [
+        1,
+        2,
+        6,
+        7,
+        8
+      ],
+      "score": 0.44999999999999996
+    },
+    {
+      "formula": "HO",
+      "counts": {
+        "O": 1,
+        "H": 1
+      },
+      "exact_mass": 17.0027396518,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "source_compound_id": "POMC",
+      "source_name": "Polyoxymethylene Copolymer",
+      "generation_type": "neutral_loss",
+      "path": [
+        "break 1 bond(s)",
+        "H shift +1",
+        "-CH3",
+        ";",
+        "break 1 bond(s)",
+        "H shift +1",
+        "-CH3"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 1,
+      "adduct": null,
+      "neutral_losses": [
+        "CH3"
+      ],
+      "fragment_atom_indices": [
+        1,
+        2,
+        6,
+        7,
+        8
+      ],
+      "score": 0.44999999999999996
+    },
+    {
+      "formula": "C4H12ClO2",
+      "counts": {
+        "C": 4,
+        "H": 12,
+        "O": 2,
+        "Cl": 1
+      },
+      "exact_mass": 127.0525823079,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "POMC",
+      "source_name": "Polyoxymethylene Copolymer",
+      "generation_type": "dimer",
+      "path": [
+        "2M",
+        "Cl"
+      ],
+      "broken_bonds": 0,
+      "h_shift": 0,
+      "adduct": "Cl",
+      "neutral_losses": [],
+      "fragment_atom_indices": null,
+      "score": 0.43
+    },
+    {
+      "formula": "C4H12NaO2",
+      "counts": {
+        "C": 4,
+        "H": 12,
+        "O": 2,
+        "Na": 1
+      },
+      "exact_mass": 115.0734989079,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "POMC",
+      "source_name": "Polyoxymethylene Copolymer",
+      "generation_type": "dimer",
+      "path": [
+        "2M",
+        "Na"
+      ],
+      "broken_bonds": 0,
+      "h_shift": 0,
+      "adduct": "Na",
+      "neutral_losses": [],
+      "fragment_atom_indices": null,
+      "score": 0.43
+    },
+    {
+      "formula": "CH2ClO",
+      "counts": {
+        "O": 1,
+        "C": 1,
+        "H": 2,
+        "Cl": 1
+      },
+      "exact_mass": 64.97941736602999,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "POMC",
+      "source_name": "Polyoxymethylene Copolymer",
+      "generation_type": "adduct",
+      "path": [
+        "break 1 bond(s)",
+        "H shift -1",
+        "Cl",
+        ";",
+        "break 1 bond(s)",
+        "H shift -1",
+        "Cl"
+      ],
+      "broken_bonds": 1,
+      "h_shift": -1,
+      "adduct": "Cl",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        1,
+        2,
+        6,
+        7,
+        8
+      ],
+      "score": 0.42999999999999994
+    },
+    {
+      "formula": "CH2KO",
+      "counts": {
+        "O": 1,
+        "C": 1,
+        "H": 2,
+        "K": 1
+      },
+      "exact_mass": 68.97427117043,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "POMC",
+      "source_name": "Polyoxymethylene Copolymer",
+      "generation_type": "adduct",
+      "path": [
+        "break 1 bond(s)",
+        "H shift -1",
+        "K",
+        ";",
+        "break 1 bond(s)",
+        "H shift -1",
+        "K"
+      ],
+      "broken_bonds": 1,
+      "h_shift": -1,
+      "adduct": "K",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        1,
+        2,
+        6,
+        7,
+        8
+      ],
+      "score": 0.42999999999999994
+    },
+    {
+      "formula": "CH2NaO",
+      "counts": {
+        "O": 1,
+        "C": 1,
+        "H": 2,
+        "Na": 1
+      },
+      "exact_mass": 53.00033396603,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "POMC",
+      "source_name": "Polyoxymethylene Copolymer",
+      "generation_type": "adduct",
+      "path": [
+        "break 1 bond(s)",
+        "H shift -1",
+        "Na",
+        ";",
+        "break 1 bond(s)",
+        "H shift -1",
+        "Na"
+      ],
+      "broken_bonds": 1,
+      "h_shift": -1,
+      "adduct": "Na",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        1,
+        2,
+        6,
+        7,
+        8
+      ],
+      "score": 0.42999999999999994
+    },
+    {
+      "formula": "CH2O2",
+      "counts": {
+        "O": 2,
+        "C": 1,
+        "H": 2
+      },
+      "exact_mass": 46.0054793036,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "POMC",
+      "source_name": "Polyoxymethylene Copolymer",
+      "generation_type": "adduct",
+      "path": [
+        "break 1 bond(s)",
+        "H shift -1",
+        "O",
+        ";",
+        "break 1 bond(s)",
+        "H shift -2",
+        "OH",
+        ";",
+        "break 1 bond(s)",
+        "H shift -1",
+        "O"
+      ],
+      "broken_bonds": 1,
+      "h_shift": -1,
+      "adduct": "O",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        1,
+        2,
+        6,
+        7,
+        8
+      ],
+      "score": 0.42999999999999994
+    },
+    {
+      "formula": "CH4ClO",
+      "counts": {
+        "O": 1,
+        "C": 1,
+        "H": 4,
+        "Cl": 1
+      },
+      "exact_mass": 66.99506743049,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "POMC",
+      "source_name": "Polyoxymethylene Copolymer",
+      "generation_type": "adduct",
+      "path": [
+        "break 1 bond(s)",
+        "H shift +1",
+        "Cl",
+        ";",
+        "break 1 bond(s)",
+        "H shift +1",
+        "Cl"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 1,
+      "adduct": "Cl",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        1,
+        2,
+        6,
+        7,
+        8
+      ],
+      "score": 0.42999999999999994
+    },
+    {
+      "formula": "CH4KO",
+      "counts": {
+        "O": 1,
+        "C": 1,
+        "H": 4,
+        "K": 1
+      },
+      "exact_mass": 70.98992123489,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "POMC",
+      "source_name": "Polyoxymethylene Copolymer",
+      "generation_type": "adduct",
+      "path": [
+        "break 1 bond(s)",
+        "H shift +1",
+        "K",
+        ";",
+        "break 1 bond(s)",
+        "H shift +1",
+        "K"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 1,
+      "adduct": "K",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        1,
+        2,
+        6,
+        7,
+        8
+      ],
+      "score": 0.42999999999999994
+    },
+    {
+      "formula": "CH4NaO",
+      "counts": {
+        "O": 1,
+        "C": 1,
+        "H": 4,
+        "Na": 1
+      },
+      "exact_mass": 55.01598403049,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "POMC",
+      "source_name": "Polyoxymethylene Copolymer",
+      "generation_type": "adduct",
+      "path": [
+        "break 1 bond(s)",
+        "H shift +1",
+        "Na",
+        ";",
+        "break 1 bond(s)",
+        "H shift +1",
+        "Na"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 1,
+      "adduct": "Na",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        1,
+        2,
+        6,
+        7,
+        8
+      ],
+      "score": 0.42999999999999994
+    },
+    {
+      "formula": "CH5O2",
+      "counts": {
+        "O": 2,
+        "C": 1,
+        "H": 5
+      },
+      "exact_mass": 49.028954400290004,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "POMC",
+      "source_name": "Polyoxymethylene Copolymer",
+      "generation_type": "adduct",
+      "path": [
+        "break 1 bond(s)",
+        "H shift +1",
+        "OH",
+        ";",
+        "break 1 bond(s)",
+        "H shift +2",
+        "O",
+        ";",
+        "break 1 bond(s)",
+        "H shift +1",
+        "OH"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 1,
+      "adduct": "OH",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        1,
+        2,
+        6,
+        7,
+        8
+      ],
+      "score": 0.42999999999999994
+    },
+    {
+      "formula": "H",
+      "counts": {
+        "H": 1
+      },
+      "exact_mass": 1.00782503223,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "source_compound_id": "POMC",
+      "source_name": "Polyoxymethylene Copolymer",
+      "generation_type": "neutral_loss",
+      "path": [
+        "break 1 bond(s)",
+        "H shift -2",
+        "-CO",
+        ";",
+        "break 1 bond(s)",
+        "H shift -2",
+        "-CO"
+      ],
+      "broken_bonds": 1,
+      "h_shift": -2,
+      "adduct": null,
+      "neutral_losses": [
+        "CO"
+      ],
+      "fragment_atom_indices": [
+        1,
+        2,
+        6,
+        7,
+        8
+      ],
+      "score": 0.4
+    },
+    {
+      "formula": "H2O",
+      "counts": {
+        "O": 1,
+        "H": 2
+      },
+      "exact_mass": 18.01056468403,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "source_compound_id": "POMC",
+      "source_name": "Polyoxymethylene Copolymer",
+      "generation_type": "neutral_loss",
+      "path": [
+        "break 1 bond(s)",
+        "H shift +2",
+        "-CH3",
+        ";",
+        "break 1 bond(s)",
+        "H shift +2",
+        "-CH3"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 2,
+      "adduct": null,
+      "neutral_losses": [
+        "CH3"
+      ],
+      "fragment_atom_indices": [
+        1,
+        2,
+        6,
+        7,
+        8
+      ],
+      "score": 0.4
+    },
+    {
+      "formula": "H5",
+      "counts": {
+        "H": 5
+      },
+      "exact_mass": 5.03912516115,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "source_compound_id": "POMC",
+      "source_name": "Polyoxymethylene Copolymer",
+      "generation_type": "neutral_loss",
+      "path": [
+        "break 1 bond(s)",
+        "H shift +2",
+        "-CO",
+        ";",
+        "break 1 bond(s)",
+        "H shift +2",
+        "-CO"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 2,
+      "adduct": null,
+      "neutral_losses": [
+        "CO"
+      ],
+      "fragment_atom_indices": [
+        1,
+        2,
+        6,
+        7,
+        8
+      ],
+      "score": 0.4
+    },
+    {
+      "formula": "CH5ClO",
+      "counts": {
+        "O": 1,
+        "C": 1,
+        "H": 5,
+        "Cl": 1
+      },
+      "exact_mass": 68.00289246272,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "POMC",
+      "source_name": "Polyoxymethylene Copolymer",
+      "generation_type": "adduct",
+      "path": [
+        "break 1 bond(s)",
+        "H shift +2",
+        "Cl",
+        ";",
+        "break 1 bond(s)",
+        "H shift +2",
+        "Cl"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 2,
+      "adduct": "Cl",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        1,
+        2,
+        6,
+        7,
+        8
+      ],
+      "score": 0.38
+    },
+    {
+      "formula": "CH5KO",
+      "counts": {
+        "O": 1,
+        "C": 1,
+        "H": 5,
+        "K": 1
+      },
+      "exact_mass": 71.99774626712,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "POMC",
+      "source_name": "Polyoxymethylene Copolymer",
+      "generation_type": "adduct",
+      "path": [
+        "break 1 bond(s)",
+        "H shift +2",
+        "K",
+        ";",
+        "break 1 bond(s)",
+        "H shift +2",
+        "K"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 2,
+      "adduct": "K",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        1,
+        2,
+        6,
+        7,
+        8
+      ],
+      "score": 0.38
+    },
+    {
+      "formula": "CH5NaO",
+      "counts": {
+        "O": 1,
+        "C": 1,
+        "H": 5,
+        "Na": 1
+      },
+      "exact_mass": 56.023809062720005,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "POMC",
+      "source_name": "Polyoxymethylene Copolymer",
+      "generation_type": "adduct",
+      "path": [
+        "break 1 bond(s)",
+        "H shift +2",
+        "Na",
+        ";",
+        "break 1 bond(s)",
+        "H shift +2",
+        "Na"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 2,
+      "adduct": "Na",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        1,
+        2,
+        6,
+        7,
+        8
+      ],
+      "score": 0.38
+    },
+    {
+      "formula": "CH6O2",
+      "counts": {
+        "O": 2,
+        "C": 1,
+        "H": 6
+      },
+      "exact_mass": 50.03677943252,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "POMC",
+      "source_name": "Polyoxymethylene Copolymer",
+      "generation_type": "adduct",
+      "path": [
+        "break 1 bond(s)",
+        "H shift +2",
+        "OH",
+        ";",
+        "break 1 bond(s)",
+        "H shift +2",
+        "OH"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 2,
+      "adduct": "OH",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        1,
+        2,
+        6,
+        7,
+        8
+      ],
+      "score": 0.38
+    },
+    {
+      "formula": "CHClO",
+      "counts": {
+        "O": 1,
+        "C": 1,
+        "H": 1,
+        "Cl": 1
+      },
+      "exact_mass": 63.9715923338,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "POMC",
+      "source_name": "Polyoxymethylene Copolymer",
+      "generation_type": "adduct",
+      "path": [
+        "break 1 bond(s)",
+        "H shift -2",
+        "Cl",
+        ";",
+        "break 1 bond(s)",
+        "H shift -2",
+        "Cl"
+      ],
+      "broken_bonds": 1,
+      "h_shift": -2,
+      "adduct": "Cl",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        1,
+        2,
+        6,
+        7,
+        8
+      ],
+      "score": 0.38
+    },
+    {
+      "formula": "CHKO",
+      "counts": {
+        "O": 1,
+        "C": 1,
+        "H": 1,
+        "K": 1
+      },
+      "exact_mass": 67.9664461382,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "POMC",
+      "source_name": "Polyoxymethylene Copolymer",
+      "generation_type": "adduct",
+      "path": [
+        "break 1 bond(s)",
+        "H shift -2",
+        "K",
+        ";",
+        "break 1 bond(s)",
+        "H shift -2",
+        "K"
+      ],
+      "broken_bonds": 1,
+      "h_shift": -2,
+      "adduct": "K",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        1,
+        2,
+        6,
+        7,
+        8
+      ],
+      "score": 0.38
+    },
+    {
+      "formula": "CHNaO",
+      "counts": {
+        "O": 1,
+        "C": 1,
+        "H": 1,
+        "Na": 1
+      },
+      "exact_mass": 51.9925089338,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "POMC",
+      "source_name": "Polyoxymethylene Copolymer",
+      "generation_type": "adduct",
+      "path": [
+        "break 1 bond(s)",
+        "H shift -2",
+        "Na",
+        ";",
+        "break 1 bond(s)",
+        "H shift -2",
+        "Na"
+      ],
+      "broken_bonds": 1,
+      "h_shift": -2,
+      "adduct": "Na",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        1,
+        2,
+        6,
+        7,
+        8
+      ],
+      "score": 0.38
+    },
+    {
+      "formula": "CHO2",
+      "counts": {
+        "O": 2,
+        "C": 1,
+        "H": 1
+      },
+      "exact_mass": 44.99765427137,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "POMC",
+      "source_name": "Polyoxymethylene Copolymer",
+      "generation_type": "adduct",
+      "path": [
+        "break 1 bond(s)",
+        "H shift -2",
+        "O",
+        ";",
+        "break 1 bond(s)",
+        "H shift -2",
+        "O"
+      ],
+      "broken_bonds": 1,
+      "h_shift": -2,
+      "adduct": "O",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        1,
+        2,
+        6,
+        7,
+        8
+      ],
+      "score": 0.38
+    }
+  ]
+}

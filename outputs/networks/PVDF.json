@@ -1,0 +1,6304 @@
+{
+  "compound_id": "PVDF",
+  "name": "Polyvinylidene Fluoride",
+  "smiles": "CC(F)F",
+  "parent_formula": "C2H4F2",
+  "records": [
+    {
+      "formula": "C2H4F2",
+      "counts": {
+        "C": 2,
+        "H": 4,
+        "F": 2
+      },
+      "exact_mass": 66.02810645438,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "source_compound_id": "PVDF",
+      "source_name": "Polyvinylidene Fluoride",
+      "generation_type": "parent",
+      "path": [
+        "M"
+      ],
+      "broken_bonds": 0,
+      "h_shift": 0,
+      "adduct": null,
+      "neutral_losses": [],
+      "fragment_atom_indices": null,
+      "score": 1.0
+    },
+    {
+      "formula": "C2H3F2",
+      "counts": {
+        "C": 2,
+        "H": 3,
+        "F": 2
+      },
+      "exact_mass": 65.02028142215,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "PVDF",
+      "source_name": "Polyvinylidene Fluoride",
+      "generation_type": "adduct",
+      "path": [
+        "M",
+        "-H"
+      ],
+      "broken_bonds": 0,
+      "h_shift": 0,
+      "adduct": "-H",
+      "neutral_losses": [],
+      "fragment_atom_indices": null,
+      "score": 0.75
+    },
+    {
+      "formula": "C2H5F2",
+      "counts": {
+        "C": 2,
+        "H": 5,
+        "F": 2
+      },
+      "exact_mass": 67.03593148661,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "PVDF",
+      "source_name": "Polyvinylidene Fluoride",
+      "generation_type": "adduct",
+      "path": [
+        "M",
+        "H"
+      ],
+      "broken_bonds": 0,
+      "h_shift": 0,
+      "adduct": "H",
+      "neutral_losses": [],
+      "fragment_atom_indices": null,
+      "score": 0.75
+    },
+    {
+      "formula": "C2H2F2",
+      "counts": {
+        "C": 2,
+        "H": 2,
+        "F": 2
+      },
+      "exact_mass": 64.01245638992,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "PVDF",
+      "source_name": "Polyvinylidene Fluoride",
+      "generation_type": "adduct",
+      "path": [
+        "M",
+        "H shift -1",
+        "-H"
+      ],
+      "broken_bonds": 0,
+      "h_shift": -1,
+      "adduct": "-H",
+      "neutral_losses": [],
+      "fragment_atom_indices": null,
+      "score": 0.7
+    },
+    {
+      "formula": "C2H3F2",
+      "counts": {
+        "C": 2,
+        "H": 3,
+        "F": 2
+      },
+      "exact_mass": 65.02028142215,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "source_compound_id": "PVDF",
+      "source_name": "Polyvinylidene Fluoride",
+      "generation_type": "h_shift",
+      "path": [
+        "M",
+        "H shift -1"
+      ],
+      "broken_bonds": 0,
+      "h_shift": -1,
+      "adduct": null,
+      "neutral_losses": [],
+      "fragment_atom_indices": null,
+      "score": 0.7
+    },
+    {
+      "formula": "C2H4F2",
+      "counts": {
+        "C": 2,
+        "H": 4,
+        "F": 2
+      },
+      "exact_mass": 66.02810645438,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "PVDF",
+      "source_name": "Polyvinylidene Fluoride",
+      "generation_type": "adduct",
+      "path": [
+        "M",
+        "H shift -1",
+        "H"
+      ],
+      "broken_bonds": 0,
+      "h_shift": -1,
+      "adduct": "H",
+      "neutral_losses": [],
+      "fragment_atom_indices": null,
+      "score": 0.7
+    },
+    {
+      "formula": "C2H4F2",
+      "counts": {
+        "C": 2,
+        "H": 4,
+        "F": 2
+      },
+      "exact_mass": 66.02810645438,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "PVDF",
+      "source_name": "Polyvinylidene Fluoride",
+      "generation_type": "adduct",
+      "path": [
+        "M",
+        "H shift +1",
+        "-H"
+      ],
+      "broken_bonds": 0,
+      "h_shift": 1,
+      "adduct": "-H",
+      "neutral_losses": [],
+      "fragment_atom_indices": null,
+      "score": 0.7
+    },
+    {
+      "formula": "C2H5F2",
+      "counts": {
+        "C": 2,
+        "H": 5,
+        "F": 2
+      },
+      "exact_mass": 67.03593148661,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "source_compound_id": "PVDF",
+      "source_name": "Polyvinylidene Fluoride",
+      "generation_type": "h_shift",
+      "path": [
+        "M",
+        "H shift +1"
+      ],
+      "broken_bonds": 0,
+      "h_shift": 1,
+      "adduct": null,
+      "neutral_losses": [],
+      "fragment_atom_indices": null,
+      "score": 0.7
+    },
+    {
+      "formula": "C2H6F2",
+      "counts": {
+        "C": 2,
+        "H": 6,
+        "F": 2
+      },
+      "exact_mass": 68.04375651884,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "PVDF",
+      "source_name": "Polyvinylidene Fluoride",
+      "generation_type": "adduct",
+      "path": [
+        "M",
+        "H shift +1",
+        "H"
+      ],
+      "broken_bonds": 0,
+      "h_shift": 1,
+      "adduct": "H",
+      "neutral_losses": [],
+      "fragment_atom_indices": null,
+      "score": 0.7
+    },
+    {
+      "formula": "C2H2F2",
+      "counts": {
+        "C": 2,
+        "H": 2,
+        "F": 2
+      },
+      "exact_mass": 64.01245638992,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "source_compound_id": "PVDF",
+      "source_name": "Polyvinylidene Fluoride",
+      "generation_type": "h_shift",
+      "path": [
+        "M",
+        "H shift -2"
+      ],
+      "broken_bonds": 0,
+      "h_shift": -2,
+      "adduct": null,
+      "neutral_losses": [],
+      "fragment_atom_indices": null,
+      "score": 0.65
+    },
+    {
+      "formula": "C2H2F2",
+      "counts": {
+        "C": 2,
+        "H": 2,
+        "F": 2
+      },
+      "exact_mass": 64.01245638992,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "source_compound_id": "PVDF",
+      "source_name": "Polyvinylidene Fluoride",
+      "generation_type": "neutral_loss",
+      "path": [
+        "M",
+        "-H2"
+      ],
+      "broken_bonds": 0,
+      "h_shift": 0,
+      "adduct": null,
+      "neutral_losses": [
+        "H2"
+      ],
+      "fragment_atom_indices": null,
+      "score": 0.65
+    },
+    {
+      "formula": "C2H3F",
+      "counts": {
+        "C": 2,
+        "H": 3,
+        "F": 1
+      },
+      "exact_mass": 46.02187825942,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "source_compound_id": "PVDF",
+      "source_name": "Polyvinylidene Fluoride",
+      "generation_type": "neutral_loss",
+      "path": [
+        "M",
+        "-HF",
+        ";",
+        "break 1 bond(s)",
+        "H shift +1",
+        "-H2",
+        ";",
+        "break 1 bond(s)",
+        "H shift +1",
+        "-H2"
+      ],
+      "broken_bonds": 0,
+      "h_shift": 0,
+      "adduct": null,
+      "neutral_losses": [
+        "HF"
+      ],
+      "fragment_atom_indices": null,
+      "score": 0.65
+    },
+    {
+      "formula": "C2H3F2",
+      "counts": {
+        "C": 2,
+        "H": 3,
+        "F": 2
+      },
+      "exact_mass": 65.02028142215,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "PVDF",
+      "source_name": "Polyvinylidene Fluoride",
+      "generation_type": "adduct",
+      "path": [
+        "M",
+        "H shift -2",
+        "H"
+      ],
+      "broken_bonds": 0,
+      "h_shift": -2,
+      "adduct": "H",
+      "neutral_losses": [],
+      "fragment_atom_indices": null,
+      "score": 0.65
+    },
+    {
+      "formula": "C2H5F2",
+      "counts": {
+        "C": 2,
+        "H": 5,
+        "F": 2
+      },
+      "exact_mass": 67.03593148661,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "PVDF",
+      "source_name": "Polyvinylidene Fluoride",
+      "generation_type": "adduct",
+      "path": [
+        "M",
+        "H shift +2",
+        "-H"
+      ],
+      "broken_bonds": 0,
+      "h_shift": 2,
+      "adduct": "-H",
+      "neutral_losses": [],
+      "fragment_atom_indices": null,
+      "score": 0.65
+    },
+    {
+      "formula": "C2H6F2",
+      "counts": {
+        "C": 2,
+        "H": 6,
+        "F": 2
+      },
+      "exact_mass": 68.04375651884,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "source_compound_id": "PVDF",
+      "source_name": "Polyvinylidene Fluoride",
+      "generation_type": "h_shift",
+      "path": [
+        "M",
+        "H shift +2"
+      ],
+      "broken_bonds": 0,
+      "h_shift": 2,
+      "adduct": null,
+      "neutral_losses": [],
+      "fragment_atom_indices": null,
+      "score": 0.65
+    },
+    {
+      "formula": "C2H7F2",
+      "counts": {
+        "C": 2,
+        "H": 7,
+        "F": 2
+      },
+      "exact_mass": 69.05158155107,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "PVDF",
+      "source_name": "Polyvinylidene Fluoride",
+      "generation_type": "adduct",
+      "path": [
+        "M",
+        "H shift +2",
+        "H"
+      ],
+      "broken_bonds": 0,
+      "h_shift": 2,
+      "adduct": "H",
+      "neutral_losses": [],
+      "fragment_atom_indices": null,
+      "score": 0.65
+    },
+    {
+      "formula": "C2HF2",
+      "counts": {
+        "C": 2,
+        "H": 1,
+        "F": 2
+      },
+      "exact_mass": 63.00463135769,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "PVDF",
+      "source_name": "Polyvinylidene Fluoride",
+      "generation_type": "adduct",
+      "path": [
+        "M",
+        "H shift -2",
+        "-H"
+      ],
+      "broken_bonds": 0,
+      "h_shift": -2,
+      "adduct": "-H",
+      "neutral_losses": [],
+      "fragment_atom_indices": null,
+      "score": 0.65
+    },
+    {
+      "formula": "CHF2",
+      "counts": {
+        "C": 1,
+        "H": 1,
+        "F": 2
+      },
+      "exact_mass": 51.00463135769,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "source_compound_id": "PVDF",
+      "source_name": "Polyvinylidene Fluoride",
+      "generation_type": "neutral_loss",
+      "path": [
+        "M",
+        "-CH3",
+        ";",
+        "break 1 bond(s)",
+        "H shift +2",
+        "-H2"
+      ],
+      "broken_bonds": 0,
+      "h_shift": 0,
+      "adduct": null,
+      "neutral_losses": [
+        "CH3"
+      ],
+      "fragment_atom_indices": null,
+      "score": 0.65
+    },
+    {
+      "formula": "C2H4ClF2",
+      "counts": {
+        "C": 2,
+        "H": 4,
+        "F": 2,
+        "Cl": 1
+      },
+      "exact_mass": 100.99695913638,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "PVDF",
+      "source_name": "Polyvinylidene Fluoride",
+      "generation_type": "adduct",
+      "path": [
+        "M",
+        "Cl"
+      ],
+      "broken_bonds": 0,
+      "h_shift": 0,
+      "adduct": "Cl",
+      "neutral_losses": [],
+      "fragment_atom_indices": null,
+      "score": 0.63
+    },
+    {
+      "formula": "C2H4F2K",
+      "counts": {
+        "C": 2,
+        "H": 4,
+        "F": 2,
+        "K": 1
+      },
+      "exact_mass": 104.99181294078,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "PVDF",
+      "source_name": "Polyvinylidene Fluoride",
+      "generation_type": "adduct",
+      "path": [
+        "M",
+        "K"
+      ],
+      "broken_bonds": 0,
+      "h_shift": 0,
+      "adduct": "K",
+      "neutral_losses": [],
+      "fragment_atom_indices": null,
+      "score": 0.63
+    },
+    {
+      "formula": "C2H4F2Na",
+      "counts": {
+        "C": 2,
+        "H": 4,
+        "F": 2,
+        "Na": 1
+      },
+      "exact_mass": 89.01787573638,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "PVDF",
+      "source_name": "Polyvinylidene Fluoride",
+      "generation_type": "adduct",
+      "path": [
+        "M",
+        "Na"
+      ],
+      "broken_bonds": 0,
+      "h_shift": 0,
+      "adduct": "Na",
+      "neutral_losses": [],
+      "fragment_atom_indices": null,
+      "score": 0.63
+    },
+    {
+      "formula": "C2H4F2O",
+      "counts": {
+        "C": 2,
+        "H": 4,
+        "F": 2,
+        "O": 1
+      },
+      "exact_mass": 82.02302107395,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "PVDF",
+      "source_name": "Polyvinylidene Fluoride",
+      "generation_type": "adduct",
+      "path": [
+        "M",
+        "O"
+      ],
+      "broken_bonds": 0,
+      "h_shift": 0,
+      "adduct": "O",
+      "neutral_losses": [],
+      "fragment_atom_indices": null,
+      "score": 0.63
+    },
+    {
+      "formula": "C2H5F2O",
+      "counts": {
+        "C": 2,
+        "H": 5,
+        "F": 2,
+        "O": 1
+      },
+      "exact_mass": 83.03084610618001,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "PVDF",
+      "source_name": "Polyvinylidene Fluoride",
+      "generation_type": "adduct",
+      "path": [
+        "M",
+        "OH",
+        ";",
+        "M",
+        "H shift +1",
+        "O"
+      ],
+      "broken_bonds": 0,
+      "h_shift": 0,
+      "adduct": "OH",
+      "neutral_losses": [],
+      "fragment_atom_indices": null,
+      "score": 0.63
+    },
+    {
+      "formula": "C2H2F",
+      "counts": {
+        "C": 2,
+        "H": 2,
+        "F": 1
+      },
+      "exact_mass": 45.01405322719,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "source_compound_id": "PVDF",
+      "source_name": "Polyvinylidene Fluoride",
+      "generation_type": "neutral_loss",
+      "path": [
+        "M",
+        "H shift -1",
+        "-HF",
+        ";",
+        "break 1 bond(s)",
+        "-H2",
+        ";",
+        "break 1 bond(s)",
+        "-H2"
+      ],
+      "broken_bonds": 0,
+      "h_shift": -1,
+      "adduct": null,
+      "neutral_losses": [
+        "HF"
+      ],
+      "fragment_atom_indices": null,
+      "score": 0.6
+    },
+    {
+      "formula": "C2H3F",
+      "counts": {
+        "C": 2,
+        "F": 1,
+        "H": 3
+      },
+      "exact_mass": 46.02187825942,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "PVDF",
+      "source_name": "Polyvinylidene Fluoride",
+      "generation_type": "adduct",
+      "path": [
+        "break 1 bond(s)",
+        "-H",
+        ";",
+        "break 1 bond(s)",
+        "-H"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 0,
+      "adduct": "-H",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        0,
+        1,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "score": 0.6
+    },
+    {
+      "formula": "C2H3F2",
+      "counts": {
+        "C": 2,
+        "H": 3,
+        "F": 2
+      },
+      "exact_mass": 65.02028142215,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "source_compound_id": "PVDF",
+      "source_name": "Polyvinylidene Fluoride",
+      "generation_type": "neutral_loss",
+      "path": [
+        "M",
+        "H shift +1",
+        "-H2"
+      ],
+      "broken_bonds": 0,
+      "h_shift": 1,
+      "adduct": null,
+      "neutral_losses": [
+        "H2"
+      ],
+      "fragment_atom_indices": null,
+      "score": 0.6
+    },
+    {
+      "formula": "C2H4F",
+      "counts": {
+        "C": 2,
+        "H": 4,
+        "F": 1
+      },
+      "exact_mass": 47.02970329165,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "source_compound_id": "PVDF",
+      "source_name": "Polyvinylidene Fluoride",
+      "generation_type": "neutral_loss",
+      "path": [
+        "M",
+        "H shift +1",
+        "-HF",
+        ";",
+        "break 1 bond(s)",
+        "H shift +2",
+        "-H2",
+        ";",
+        "break 1 bond(s)",
+        "H shift +2",
+        "-H2"
+      ],
+      "broken_bonds": 0,
+      "h_shift": 1,
+      "adduct": null,
+      "neutral_losses": [
+        "HF"
+      ],
+      "fragment_atom_indices": null,
+      "score": 0.6
+    },
+    {
+      "formula": "C2H4F",
+      "counts": {
+        "C": 2,
+        "F": 1,
+        "H": 4
+      },
+      "exact_mass": 47.02970329165,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "source_compound_id": "PVDF",
+      "source_name": "Polyvinylidene Fluoride",
+      "generation_type": "fragment",
+      "path": [
+        "break 1 bond(s)",
+        ";",
+        "break 1 bond(s)"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 0,
+      "adduct": null,
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        0,
+        1,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "score": 0.6
+    },
+    {
+      "formula": "C2H5F",
+      "counts": {
+        "C": 2,
+        "F": 1,
+        "H": 5
+      },
+      "exact_mass": 48.03752832388,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "PVDF",
+      "source_name": "Polyvinylidene Fluoride",
+      "generation_type": "adduct",
+      "path": [
+        "break 1 bond(s)",
+        "H",
+        ";",
+        "break 1 bond(s)",
+        "H"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 0,
+      "adduct": "H",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        0,
+        1,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "score": 0.6
+    },
+    {
+      "formula": "C2HF2",
+      "counts": {
+        "C": 2,
+        "H": 1,
+        "F": 2
+      },
+      "exact_mass": 63.00463135769,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "source_compound_id": "PVDF",
+      "source_name": "Polyvinylidene Fluoride",
+      "generation_type": "neutral_loss",
+      "path": [
+        "M",
+        "H shift -1",
+        "-H2"
+      ],
+      "broken_bonds": 0,
+      "h_shift": -1,
+      "adduct": null,
+      "neutral_losses": [
+        "H2"
+      ],
+      "fragment_atom_indices": null,
+      "score": 0.6
+    },
+    {
+      "formula": "CF2",
+      "counts": {
+        "C": 1,
+        "F": 2
+      },
+      "exact_mass": 49.99680632546,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "source_compound_id": "PVDF",
+      "source_name": "Polyvinylidene Fluoride",
+      "generation_type": "neutral_loss",
+      "path": [
+        "M",
+        "H shift -1",
+        "-CH3",
+        ";",
+        "break 1 bond(s)",
+        "H shift +1",
+        "-H2"
+      ],
+      "broken_bonds": 0,
+      "h_shift": -1,
+      "adduct": null,
+      "neutral_losses": [
+        "CH3"
+      ],
+      "fragment_atom_indices": null,
+      "score": 0.6
+    },
+    {
+      "formula": "CF2",
+      "counts": {
+        "C": 1,
+        "F": 2
+      },
+      "exact_mass": 49.99680632546,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "PVDF",
+      "source_name": "Polyvinylidene Fluoride",
+      "generation_type": "adduct",
+      "path": [
+        "break 1 bond(s)",
+        "-H"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 0,
+      "adduct": "-H",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        1,
+        2,
+        3,
+        7
+      ],
+      "score": 0.6
+    },
+    {
+      "formula": "CH2F2",
+      "counts": {
+        "C": 1,
+        "H": 2,
+        "F": 2
+      },
+      "exact_mass": 52.01245638992,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "source_compound_id": "PVDF",
+      "source_name": "Polyvinylidene Fluoride",
+      "generation_type": "neutral_loss",
+      "path": [
+        "M",
+        "H shift +1",
+        "-CH3"
+      ],
+      "broken_bonds": 0,
+      "h_shift": 1,
+      "adduct": null,
+      "neutral_losses": [
+        "CH3"
+      ],
+      "fragment_atom_indices": null,
+      "score": 0.6
+    },
+    {
+      "formula": "CH2F2",
+      "counts": {
+        "C": 1,
+        "F": 2,
+        "H": 2
+      },
+      "exact_mass": 52.01245638992,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "PVDF",
+      "source_name": "Polyvinylidene Fluoride",
+      "generation_type": "adduct",
+      "path": [
+        "break 1 bond(s)",
+        "H"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 0,
+      "adduct": "H",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        1,
+        2,
+        3,
+        7
+      ],
+      "score": 0.6
+    },
+    {
+      "formula": "CHF2",
+      "counts": {
+        "C": 1,
+        "F": 2,
+        "H": 1
+      },
+      "exact_mass": 51.00463135769,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "source_compound_id": "PVDF",
+      "source_name": "Polyvinylidene Fluoride",
+      "generation_type": "fragment",
+      "path": [
+        "break 1 bond(s)"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 0,
+      "adduct": null,
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        1,
+        2,
+        3,
+        7
+      ],
+      "score": 0.6
+    },
+    {
+      "formula": "C2H3ClF2",
+      "counts": {
+        "C": 2,
+        "H": 3,
+        "F": 2,
+        "Cl": 1
+      },
+      "exact_mass": 99.98913410415,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "PVDF",
+      "source_name": "Polyvinylidene Fluoride",
+      "generation_type": "adduct",
+      "path": [
+        "M",
+        "H shift -1",
+        "Cl"
+      ],
+      "broken_bonds": 0,
+      "h_shift": -1,
+      "adduct": "Cl",
+      "neutral_losses": [],
+      "fragment_atom_indices": null,
+      "score": 0.58
+    },
+    {
+      "formula": "C2H3F2K",
+      "counts": {
+        "C": 2,
+        "H": 3,
+        "F": 2,
+        "K": 1
+      },
+      "exact_mass": 103.98398790855,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "PVDF",
+      "source_name": "Polyvinylidene Fluoride",
+      "generation_type": "adduct",
+      "path": [
+        "M",
+        "H shift -1",
+        "K"
+      ],
+      "broken_bonds": 0,
+      "h_shift": -1,
+      "adduct": "K",
+      "neutral_losses": [],
+      "fragment_atom_indices": null,
+      "score": 0.58
+    },
+    {
+      "formula": "C2H3F2Na",
+      "counts": {
+        "C": 2,
+        "H": 3,
+        "F": 2,
+        "Na": 1
+      },
+      "exact_mass": 88.01005070415,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "PVDF",
+      "source_name": "Polyvinylidene Fluoride",
+      "generation_type": "adduct",
+      "path": [
+        "M",
+        "H shift -1",
+        "Na"
+      ],
+      "broken_bonds": 0,
+      "h_shift": -1,
+      "adduct": "Na",
+      "neutral_losses": [],
+      "fragment_atom_indices": null,
+      "score": 0.58
+    },
+    {
+      "formula": "C2H3F2O",
+      "counts": {
+        "C": 2,
+        "H": 3,
+        "F": 2,
+        "O": 1
+      },
+      "exact_mass": 81.01519604172,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "PVDF",
+      "source_name": "Polyvinylidene Fluoride",
+      "generation_type": "adduct",
+      "path": [
+        "M",
+        "H shift -1",
+        "O"
+      ],
+      "broken_bonds": 0,
+      "h_shift": -1,
+      "adduct": "O",
+      "neutral_losses": [],
+      "fragment_atom_indices": null,
+      "score": 0.58
+    },
+    {
+      "formula": "C2H5ClF2",
+      "counts": {
+        "C": 2,
+        "H": 5,
+        "F": 2,
+        "Cl": 1
+      },
+      "exact_mass": 102.00478416861,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "PVDF",
+      "source_name": "Polyvinylidene Fluoride",
+      "generation_type": "adduct",
+      "path": [
+        "M",
+        "H shift +1",
+        "Cl"
+      ],
+      "broken_bonds": 0,
+      "h_shift": 1,
+      "adduct": "Cl",
+      "neutral_losses": [],
+      "fragment_atom_indices": null,
+      "score": 0.58
+    },
+    {
+      "formula": "C2H5F2K",
+      "counts": {
+        "C": 2,
+        "H": 5,
+        "F": 2,
+        "K": 1
+      },
+      "exact_mass": 105.99963797301,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "PVDF",
+      "source_name": "Polyvinylidene Fluoride",
+      "generation_type": "adduct",
+      "path": [
+        "M",
+        "H shift +1",
+        "K"
+      ],
+      "broken_bonds": 0,
+      "h_shift": 1,
+      "adduct": "K",
+      "neutral_losses": [],
+      "fragment_atom_indices": null,
+      "score": 0.58
+    },
+    {
+      "formula": "C2H5F2Na",
+      "counts": {
+        "C": 2,
+        "H": 5,
+        "F": 2,
+        "Na": 1
+      },
+      "exact_mass": 90.02570076861,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "PVDF",
+      "source_name": "Polyvinylidene Fluoride",
+      "generation_type": "adduct",
+      "path": [
+        "M",
+        "H shift +1",
+        "Na"
+      ],
+      "broken_bonds": 0,
+      "h_shift": 1,
+      "adduct": "Na",
+      "neutral_losses": [],
+      "fragment_atom_indices": null,
+      "score": 0.58
+    },
+    {
+      "formula": "C2H6F2O",
+      "counts": {
+        "C": 2,
+        "H": 6,
+        "F": 2,
+        "O": 1
+      },
+      "exact_mass": 84.03867113841,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "PVDF",
+      "source_name": "Polyvinylidene Fluoride",
+      "generation_type": "adduct",
+      "path": [
+        "M",
+        "H shift +1",
+        "OH",
+        ";",
+        "M",
+        "H shift +2",
+        "O"
+      ],
+      "broken_bonds": 0,
+      "h_shift": 1,
+      "adduct": "OH",
+      "neutral_losses": [],
+      "fragment_atom_indices": null,
+      "score": 0.58
+    },
+    {
+      "formula": "C2F2",
+      "counts": {
+        "C": 2,
+        "F": 2
+      },
+      "exact_mass": 61.99680632546,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "source_compound_id": "PVDF",
+      "source_name": "Polyvinylidene Fluoride",
+      "generation_type": "neutral_loss",
+      "path": [
+        "M",
+        "H shift -2",
+        "-H2"
+      ],
+      "broken_bonds": 0,
+      "h_shift": -2,
+      "adduct": null,
+      "neutral_losses": [
+        "H2"
+      ],
+      "fragment_atom_indices": null,
+      "score": 0.55
+    },
+    {
+      "formula": "C2H4F2",
+      "counts": {
+        "C": 2,
+        "H": 4,
+        "F": 2
+      },
+      "exact_mass": 66.02810645438,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "source_compound_id": "PVDF",
+      "source_name": "Polyvinylidene Fluoride",
+      "generation_type": "neutral_loss",
+      "path": [
+        "M",
+        "H shift +2",
+        "-H2"
+      ],
+      "broken_bonds": 0,
+      "h_shift": 2,
+      "adduct": null,
+      "neutral_losses": [
+        "H2"
+      ],
+      "fragment_atom_indices": null,
+      "score": 0.55
+    },
+    {
+      "formula": "C2H5F",
+      "counts": {
+        "C": 2,
+        "H": 5,
+        "F": 1
+      },
+      "exact_mass": 48.03752832388,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "source_compound_id": "PVDF",
+      "source_name": "Polyvinylidene Fluoride",
+      "generation_type": "neutral_loss",
+      "path": [
+        "M",
+        "H shift +2",
+        "-HF"
+      ],
+      "broken_bonds": 0,
+      "h_shift": 2,
+      "adduct": null,
+      "neutral_losses": [
+        "HF"
+      ],
+      "fragment_atom_indices": null,
+      "score": 0.55
+    },
+    {
+      "formula": "C2HF",
+      "counts": {
+        "C": 2,
+        "H": 1,
+        "F": 1
+      },
+      "exact_mass": 44.00622819496,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "source_compound_id": "PVDF",
+      "source_name": "Polyvinylidene Fluoride",
+      "generation_type": "neutral_loss",
+      "path": [
+        "M",
+        "H shift -2",
+        "-HF",
+        ";",
+        "break 1 bond(s)",
+        "H shift -1",
+        "-H2",
+        ";",
+        "break 1 bond(s)",
+        "H shift -1",
+        "-H2"
+      ],
+      "broken_bonds": 0,
+      "h_shift": -2,
+      "adduct": null,
+      "neutral_losses": [
+        "HF"
+      ],
+      "fragment_atom_indices": null,
+      "score": 0.55
+    },
+    {
+      "formula": "C4H7F4",
+      "counts": {
+        "C": 4,
+        "H": 7,
+        "F": 4
+      },
+      "exact_mass": 131.04838787653,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "PVDF",
+      "source_name": "Polyvinylidene Fluoride",
+      "generation_type": "dimer",
+      "path": [
+        "2M",
+        "-H"
+      ],
+      "broken_bonds": 0,
+      "h_shift": 0,
+      "adduct": "-H",
+      "neutral_losses": [],
+      "fragment_atom_indices": null,
+      "score": 0.55
+    },
+    {
+      "formula": "C4H9F4",
+      "counts": {
+        "C": 4,
+        "H": 9,
+        "F": 4
+      },
+      "exact_mass": 133.06403794099,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "PVDF",
+      "source_name": "Polyvinylidene Fluoride",
+      "generation_type": "dimer",
+      "path": [
+        "2M",
+        "H"
+      ],
+      "broken_bonds": 0,
+      "h_shift": 0,
+      "adduct": "H",
+      "neutral_losses": [],
+      "fragment_atom_indices": null,
+      "score": 0.55
+    },
+    {
+      "formula": "CH3F2",
+      "counts": {
+        "C": 1,
+        "H": 3,
+        "F": 2
+      },
+      "exact_mass": 53.02028142215,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "source_compound_id": "PVDF",
+      "source_name": "Polyvinylidene Fluoride",
+      "generation_type": "neutral_loss",
+      "path": [
+        "M",
+        "H shift +2",
+        "-CH3"
+      ],
+      "broken_bonds": 0,
+      "h_shift": 2,
+      "adduct": null,
+      "neutral_losses": [
+        "CH3"
+      ],
+      "fragment_atom_indices": null,
+      "score": 0.55
+    },
+    {
+      "formula": "C2H2F",
+      "counts": {
+        "C": 2,
+        "F": 1,
+        "H": 2
+      },
+      "exact_mass": 45.01405322719,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "PVDF",
+      "source_name": "Polyvinylidene Fluoride",
+      "generation_type": "adduct",
+      "path": [
+        "break 1 bond(s)",
+        "H shift -1",
+        "-H",
+        ";",
+        "break 1 bond(s)",
+        "H shift -1",
+        "-H"
+      ],
+      "broken_bonds": 1,
+      "h_shift": -1,
+      "adduct": "-H",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        0,
+        1,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "score": 0.5499999999999999
+    },
+    {
+      "formula": "C2H3F",
+      "counts": {
+        "C": 2,
+        "F": 1,
+        "H": 3
+      },
+      "exact_mass": 46.02187825942,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "source_compound_id": "PVDF",
+      "source_name": "Polyvinylidene Fluoride",
+      "generation_type": "h_shift",
+      "path": [
+        "break 1 bond(s)",
+        "H shift -1",
+        ";",
+        "break 1 bond(s)",
+        "H shift -1"
+      ],
+      "broken_bonds": 1,
+      "h_shift": -1,
+      "adduct": null,
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        0,
+        1,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "score": 0.5499999999999999
+    },
+    {
+      "formula": "C2H4F",
+      "counts": {
+        "C": 2,
+        "F": 1,
+        "H": 4
+      },
+      "exact_mass": 47.02970329165,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "PVDF",
+      "source_name": "Polyvinylidene Fluoride",
+      "generation_type": "adduct",
+      "path": [
+        "break 1 bond(s)",
+        "H shift -1",
+        "H",
+        ";",
+        "break 1 bond(s)",
+        "H shift -1",
+        "H"
+      ],
+      "broken_bonds": 1,
+      "h_shift": -1,
+      "adduct": "H",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        0,
+        1,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "score": 0.5499999999999999
+    },
+    {
+      "formula": "C2H4F",
+      "counts": {
+        "C": 2,
+        "F": 1,
+        "H": 4
+      },
+      "exact_mass": 47.02970329165,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "PVDF",
+      "source_name": "Polyvinylidene Fluoride",
+      "generation_type": "adduct",
+      "path": [
+        "break 1 bond(s)",
+        "H shift +1",
+        "-H",
+        ";",
+        "break 1 bond(s)",
+        "H shift +1",
+        "-H"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 1,
+      "adduct": "-H",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        0,
+        1,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "score": 0.5499999999999999
+    },
+    {
+      "formula": "C2H5F",
+      "counts": {
+        "C": 2,
+        "F": 1,
+        "H": 5
+      },
+      "exact_mass": 48.03752832388,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "source_compound_id": "PVDF",
+      "source_name": "Polyvinylidene Fluoride",
+      "generation_type": "h_shift",
+      "path": [
+        "break 1 bond(s)",
+        "H shift +1",
+        ";",
+        "break 1 bond(s)",
+        "H shift +1"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 1,
+      "adduct": null,
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        0,
+        1,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "score": 0.5499999999999999
+    },
+    {
+      "formula": "C2H6F",
+      "counts": {
+        "C": 2,
+        "F": 1,
+        "H": 6
+      },
+      "exact_mass": 49.04535335611,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "PVDF",
+      "source_name": "Polyvinylidene Fluoride",
+      "generation_type": "adduct",
+      "path": [
+        "break 1 bond(s)",
+        "H shift +1",
+        "H",
+        ";",
+        "break 1 bond(s)",
+        "H shift +1",
+        "H"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 1,
+      "adduct": "H",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        0,
+        1,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "score": 0.5499999999999999
+    },
+    {
+      "formula": "CF2",
+      "counts": {
+        "C": 1,
+        "F": 2
+      },
+      "exact_mass": 49.99680632546,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "source_compound_id": "PVDF",
+      "source_name": "Polyvinylidene Fluoride",
+      "generation_type": "h_shift",
+      "path": [
+        "break 1 bond(s)",
+        "H shift -1"
+      ],
+      "broken_bonds": 1,
+      "h_shift": -1,
+      "adduct": null,
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        1,
+        2,
+        3,
+        7
+      ],
+      "score": 0.5499999999999999
+    },
+    {
+      "formula": "CH2F2",
+      "counts": {
+        "C": 1,
+        "F": 2,
+        "H": 2
+      },
+      "exact_mass": 52.01245638992,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "source_compound_id": "PVDF",
+      "source_name": "Polyvinylidene Fluoride",
+      "generation_type": "h_shift",
+      "path": [
+        "break 1 bond(s)",
+        "H shift +1"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 1,
+      "adduct": null,
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        1,
+        2,
+        3,
+        7
+      ],
+      "score": 0.5499999999999999
+    },
+    {
+      "formula": "CH3F2",
+      "counts": {
+        "C": 1,
+        "F": 2,
+        "H": 3
+      },
+      "exact_mass": 53.02028142215,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "PVDF",
+      "source_name": "Polyvinylidene Fluoride",
+      "generation_type": "adduct",
+      "path": [
+        "break 1 bond(s)",
+        "H shift +1",
+        "H"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 1,
+      "adduct": "H",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        1,
+        2,
+        3,
+        7
+      ],
+      "score": 0.5499999999999999
+    },
+    {
+      "formula": "CHF2",
+      "counts": {
+        "C": 1,
+        "F": 2,
+        "H": 1
+      },
+      "exact_mass": 51.00463135769,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "PVDF",
+      "source_name": "Polyvinylidene Fluoride",
+      "generation_type": "adduct",
+      "path": [
+        "break 1 bond(s)",
+        "H shift -1",
+        "H"
+      ],
+      "broken_bonds": 1,
+      "h_shift": -1,
+      "adduct": "H",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        1,
+        2,
+        3,
+        7
+      ],
+      "score": 0.5499999999999999
+    },
+    {
+      "formula": "CHF2",
+      "counts": {
+        "C": 1,
+        "F": 2,
+        "H": 1
+      },
+      "exact_mass": 51.00463135769,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "PVDF",
+      "source_name": "Polyvinylidene Fluoride",
+      "generation_type": "adduct",
+      "path": [
+        "break 1 bond(s)",
+        "H shift +1",
+        "-H"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 1,
+      "adduct": "-H",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        1,
+        2,
+        3,
+        7
+      ],
+      "score": 0.5499999999999999
+    },
+    {
+      "formula": "C2H2ClF2",
+      "counts": {
+        "C": 2,
+        "H": 2,
+        "F": 2,
+        "Cl": 1
+      },
+      "exact_mass": 98.98130907192,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "PVDF",
+      "source_name": "Polyvinylidene Fluoride",
+      "generation_type": "adduct",
+      "path": [
+        "M",
+        "H shift -2",
+        "Cl"
+      ],
+      "broken_bonds": 0,
+      "h_shift": -2,
+      "adduct": "Cl",
+      "neutral_losses": [],
+      "fragment_atom_indices": null,
+      "score": 0.53
+    },
+    {
+      "formula": "C2H2F2K",
+      "counts": {
+        "C": 2,
+        "H": 2,
+        "F": 2,
+        "K": 1
+      },
+      "exact_mass": 102.97616287632,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "PVDF",
+      "source_name": "Polyvinylidene Fluoride",
+      "generation_type": "adduct",
+      "path": [
+        "M",
+        "H shift -2",
+        "K"
+      ],
+      "broken_bonds": 0,
+      "h_shift": -2,
+      "adduct": "K",
+      "neutral_losses": [],
+      "fragment_atom_indices": null,
+      "score": 0.53
+    },
+    {
+      "formula": "C2H2F2Na",
+      "counts": {
+        "C": 2,
+        "H": 2,
+        "F": 2,
+        "Na": 1
+      },
+      "exact_mass": 87.00222567192,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "PVDF",
+      "source_name": "Polyvinylidene Fluoride",
+      "generation_type": "adduct",
+      "path": [
+        "M",
+        "H shift -2",
+        "Na"
+      ],
+      "broken_bonds": 0,
+      "h_shift": -2,
+      "adduct": "Na",
+      "neutral_losses": [],
+      "fragment_atom_indices": null,
+      "score": 0.53
+    },
+    {
+      "formula": "C2H2F2O",
+      "counts": {
+        "C": 2,
+        "H": 2,
+        "F": 2,
+        "O": 1
+      },
+      "exact_mass": 80.00737100949,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "PVDF",
+      "source_name": "Polyvinylidene Fluoride",
+      "generation_type": "adduct",
+      "path": [
+        "M",
+        "H shift -2",
+        "O"
+      ],
+      "broken_bonds": 0,
+      "h_shift": -2,
+      "adduct": "O",
+      "neutral_losses": [],
+      "fragment_atom_indices": null,
+      "score": 0.53
+    },
+    {
+      "formula": "C2H6ClF2",
+      "counts": {
+        "C": 2,
+        "H": 6,
+        "F": 2,
+        "Cl": 1
+      },
+      "exact_mass": 103.01260920084,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "PVDF",
+      "source_name": "Polyvinylidene Fluoride",
+      "generation_type": "adduct",
+      "path": [
+        "M",
+        "H shift +2",
+        "Cl"
+      ],
+      "broken_bonds": 0,
+      "h_shift": 2,
+      "adduct": "Cl",
+      "neutral_losses": [],
+      "fragment_atom_indices": null,
+      "score": 0.53
+    },
+    {
+      "formula": "C2H6F2K",
+      "counts": {
+        "C": 2,
+        "H": 6,
+        "F": 2,
+        "K": 1
+      },
+      "exact_mass": 107.00746300524,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "PVDF",
+      "source_name": "Polyvinylidene Fluoride",
+      "generation_type": "adduct",
+      "path": [
+        "M",
+        "H shift +2",
+        "K"
+      ],
+      "broken_bonds": 0,
+      "h_shift": 2,
+      "adduct": "K",
+      "neutral_losses": [],
+      "fragment_atom_indices": null,
+      "score": 0.53
+    },
+    {
+      "formula": "C2H6F2Na",
+      "counts": {
+        "C": 2,
+        "H": 6,
+        "F": 2,
+        "Na": 1
+      },
+      "exact_mass": 91.03352580084,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "PVDF",
+      "source_name": "Polyvinylidene Fluoride",
+      "generation_type": "adduct",
+      "path": [
+        "M",
+        "H shift +2",
+        "Na"
+      ],
+      "broken_bonds": 0,
+      "h_shift": 2,
+      "adduct": "Na",
+      "neutral_losses": [],
+      "fragment_atom_indices": null,
+      "score": 0.53
+    },
+    {
+      "formula": "C2H7F2O",
+      "counts": {
+        "C": 2,
+        "H": 7,
+        "F": 2,
+        "O": 1
+      },
+      "exact_mass": 85.04649617064,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "PVDF",
+      "source_name": "Polyvinylidene Fluoride",
+      "generation_type": "adduct",
+      "path": [
+        "M",
+        "H shift +2",
+        "OH"
+      ],
+      "broken_bonds": 0,
+      "h_shift": 2,
+      "adduct": "OH",
+      "neutral_losses": [],
+      "fragment_atom_indices": null,
+      "score": 0.53
+    },
+    {
+      "formula": "C2H2F",
+      "counts": {
+        "C": 2,
+        "F": 1,
+        "H": 2
+      },
+      "exact_mass": 45.01405322719,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "source_compound_id": "PVDF",
+      "source_name": "Polyvinylidene Fluoride",
+      "generation_type": "h_shift",
+      "path": [
+        "break 1 bond(s)",
+        "H shift -2",
+        ";",
+        "break 1 bond(s)",
+        "H shift -2"
+      ],
+      "broken_bonds": 1,
+      "h_shift": -2,
+      "adduct": null,
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        0,
+        1,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "score": 0.5
+    },
+    {
+      "formula": "C2H3",
+      "counts": {
+        "C": 2,
+        "H": 3
+      },
+      "exact_mass": 27.02347509669,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "source_compound_id": "PVDF",
+      "source_name": "Polyvinylidene Fluoride",
+      "generation_type": "neutral_loss",
+      "path": [
+        "break 1 bond(s)",
+        "-HF",
+        ";",
+        "break 1 bond(s)",
+        "-HF",
+        ";",
+        "break 2 bond(s)",
+        "H shift +1",
+        "-H2"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 0,
+      "adduct": null,
+      "neutral_losses": [
+        "HF"
+      ],
+      "fragment_atom_indices": [
+        0,
+        1,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "score": 0.5
+    },
+    {
+      "formula": "C2H3F",
+      "counts": {
+        "C": 2,
+        "F": 1,
+        "H": 3
+      },
+      "exact_mass": 46.02187825942,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "PVDF",
+      "source_name": "Polyvinylidene Fluoride",
+      "generation_type": "adduct",
+      "path": [
+        "break 1 bond(s)",
+        "H shift -2",
+        "H",
+        ";",
+        "break 1 bond(s)",
+        "H shift -2",
+        "H"
+      ],
+      "broken_bonds": 1,
+      "h_shift": -2,
+      "adduct": "H",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        0,
+        1,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "score": 0.5
+    },
+    {
+      "formula": "C2H5F",
+      "counts": {
+        "C": 2,
+        "F": 1,
+        "H": 5
+      },
+      "exact_mass": 48.03752832388,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "PVDF",
+      "source_name": "Polyvinylidene Fluoride",
+      "generation_type": "adduct",
+      "path": [
+        "break 1 bond(s)",
+        "H shift +2",
+        "-H",
+        ";",
+        "break 1 bond(s)",
+        "H shift +2",
+        "-H"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 2,
+      "adduct": "-H",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        0,
+        1,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "score": 0.5
+    },
+    {
+      "formula": "C2H6F",
+      "counts": {
+        "C": 2,
+        "F": 1,
+        "H": 6
+      },
+      "exact_mass": 49.04535335611,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "source_compound_id": "PVDF",
+      "source_name": "Polyvinylidene Fluoride",
+      "generation_type": "h_shift",
+      "path": [
+        "break 1 bond(s)",
+        "H shift +2",
+        ";",
+        "break 1 bond(s)",
+        "H shift +2"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 2,
+      "adduct": null,
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        0,
+        1,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "score": 0.5
+    },
+    {
+      "formula": "C2H7F",
+      "counts": {
+        "C": 2,
+        "F": 1,
+        "H": 7
+      },
+      "exact_mass": 50.05317838834,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "PVDF",
+      "source_name": "Polyvinylidene Fluoride",
+      "generation_type": "adduct",
+      "path": [
+        "break 1 bond(s)",
+        "H shift +2",
+        "H",
+        ";",
+        "break 1 bond(s)",
+        "H shift +2",
+        "H"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 2,
+      "adduct": "H",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        0,
+        1,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "score": 0.5
+    },
+    {
+      "formula": "C2HF",
+      "counts": {
+        "C": 2,
+        "F": 1,
+        "H": 1
+      },
+      "exact_mass": 44.00622819496,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "PVDF",
+      "source_name": "Polyvinylidene Fluoride",
+      "generation_type": "adduct",
+      "path": [
+        "break 1 bond(s)",
+        "H shift -2",
+        "-H",
+        ";",
+        "break 1 bond(s)",
+        "H shift -2",
+        "-H"
+      ],
+      "broken_bonds": 1,
+      "h_shift": -2,
+      "adduct": "-H",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        0,
+        1,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "score": 0.5
+    },
+    {
+      "formula": "CF",
+      "counts": {
+        "C": 1,
+        "F": 1
+      },
+      "exact_mass": 30.99840316273,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "source_compound_id": "PVDF",
+      "source_name": "Polyvinylidene Fluoride",
+      "generation_type": "neutral_loss",
+      "path": [
+        "break 1 bond(s)",
+        "-HF",
+        ";",
+        "break 1 bond(s)",
+        "H shift -1",
+        "-CH3",
+        ";",
+        "break 1 bond(s)",
+        "H shift -1",
+        "-CH3"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 0,
+      "adduct": null,
+      "neutral_losses": [
+        "HF"
+      ],
+      "fragment_atom_indices": [
+        1,
+        2,
+        3,
+        7
+      ],
+      "score": 0.5
+    },
+    {
+      "formula": "CH2F2",
+      "counts": {
+        "C": 1,
+        "F": 2,
+        "H": 2
+      },
+      "exact_mass": 52.01245638992,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "PVDF",
+      "source_name": "Polyvinylidene Fluoride",
+      "generation_type": "adduct",
+      "path": [
+        "break 1 bond(s)",
+        "H shift +2",
+        "-H"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 2,
+      "adduct": "-H",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        1,
+        2,
+        3,
+        7
+      ],
+      "score": 0.5
+    },
+    {
+      "formula": "CH3F2",
+      "counts": {
+        "C": 1,
+        "F": 2,
+        "H": 3
+      },
+      "exact_mass": 53.02028142215,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "source_compound_id": "PVDF",
+      "source_name": "Polyvinylidene Fluoride",
+      "generation_type": "h_shift",
+      "path": [
+        "break 1 bond(s)",
+        "H shift +2"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 2,
+      "adduct": null,
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        1,
+        2,
+        3,
+        7
+      ],
+      "score": 0.5
+    },
+    {
+      "formula": "CH4F2",
+      "counts": {
+        "C": 1,
+        "F": 2,
+        "H": 4
+      },
+      "exact_mass": 54.02810645438,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "PVDF",
+      "source_name": "Polyvinylidene Fluoride",
+      "generation_type": "adduct",
+      "path": [
+        "break 1 bond(s)",
+        "H shift +2",
+        "H"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 2,
+      "adduct": "H",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        1,
+        2,
+        3,
+        7
+      ],
+      "score": 0.5
+    },
+    {
+      "formula": "CHF",
+      "counts": {
+        "C": 1,
+        "F": 1,
+        "H": 1
+      },
+      "exact_mass": 32.00622819496,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "source_compound_id": "PVDF",
+      "source_name": "Polyvinylidene Fluoride",
+      "generation_type": "neutral_loss",
+      "path": [
+        "break 1 bond(s)",
+        "-CH3",
+        ";",
+        "break 1 bond(s)",
+        "-CH3",
+        ";",
+        "break 2 bond(s)",
+        "H shift +2",
+        "-H2"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 0,
+      "adduct": null,
+      "neutral_losses": [
+        "CH3"
+      ],
+      "fragment_atom_indices": [
+        0,
+        1,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "score": 0.5
+    },
+    {
+      "formula": "C2H4ClF",
+      "counts": {
+        "C": 2,
+        "F": 1,
+        "H": 4,
+        "Cl": 1
+      },
+      "exact_mass": 81.99855597365,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "PVDF",
+      "source_name": "Polyvinylidene Fluoride",
+      "generation_type": "adduct",
+      "path": [
+        "break 1 bond(s)",
+        "Cl",
+        ";",
+        "break 1 bond(s)",
+        "Cl"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 0,
+      "adduct": "Cl",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        0,
+        1,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "score": 0.48
+    },
+    {
+      "formula": "C2H4FK",
+      "counts": {
+        "C": 2,
+        "F": 1,
+        "H": 4,
+        "K": 1
+      },
+      "exact_mass": 85.99340977805,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "PVDF",
+      "source_name": "Polyvinylidene Fluoride",
+      "generation_type": "adduct",
+      "path": [
+        "break 1 bond(s)",
+        "K",
+        ";",
+        "break 1 bond(s)",
+        "K"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 0,
+      "adduct": "K",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        0,
+        1,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "score": 0.48
+    },
+    {
+      "formula": "C2H4FNa",
+      "counts": {
+        "C": 2,
+        "F": 1,
+        "H": 4,
+        "Na": 1
+      },
+      "exact_mass": 70.01947257365,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "PVDF",
+      "source_name": "Polyvinylidene Fluoride",
+      "generation_type": "adduct",
+      "path": [
+        "break 1 bond(s)",
+        "Na",
+        ";",
+        "break 1 bond(s)",
+        "Na"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 0,
+      "adduct": "Na",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        0,
+        1,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "score": 0.48
+    },
+    {
+      "formula": "C2H4FO",
+      "counts": {
+        "C": 2,
+        "F": 1,
+        "H": 4,
+        "O": 1
+      },
+      "exact_mass": 63.02461791122,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "PVDF",
+      "source_name": "Polyvinylidene Fluoride",
+      "generation_type": "adduct",
+      "path": [
+        "break 1 bond(s)",
+        "O",
+        ";",
+        "break 1 bond(s)",
+        "H shift -1",
+        "OH",
+        ";",
+        "break 1 bond(s)",
+        "O"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 0,
+      "adduct": "O",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        0,
+        1,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "score": 0.48
+    },
+    {
+      "formula": "C2H5FO",
+      "counts": {
+        "C": 2,
+        "F": 1,
+        "H": 5,
+        "O": 1
+      },
+      "exact_mass": 64.03244294345001,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "PVDF",
+      "source_name": "Polyvinylidene Fluoride",
+      "generation_type": "adduct",
+      "path": [
+        "break 1 bond(s)",
+        "OH",
+        ";",
+        "break 1 bond(s)",
+        "H shift +1",
+        "O",
+        ";",
+        "break 1 bond(s)",
+        "OH"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 0,
+      "adduct": "OH",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        0,
+        1,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "score": 0.48
+    },
+    {
+      "formula": "CH2F2O",
+      "counts": {
+        "C": 1,
+        "F": 2,
+        "H": 2,
+        "O": 1
+      },
+      "exact_mass": 68.00737100949,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "PVDF",
+      "source_name": "Polyvinylidene Fluoride",
+      "generation_type": "adduct",
+      "path": [
+        "break 1 bond(s)",
+        "OH",
+        ";",
+        "break 1 bond(s)",
+        "H shift +1",
+        "O"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 0,
+      "adduct": "OH",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        1,
+        2,
+        3,
+        7
+      ],
+      "score": 0.48
+    },
+    {
+      "formula": "CHClF2",
+      "counts": {
+        "C": 1,
+        "F": 2,
+        "H": 1,
+        "Cl": 1
+      },
+      "exact_mass": 85.97348403968999,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "PVDF",
+      "source_name": "Polyvinylidene Fluoride",
+      "generation_type": "adduct",
+      "path": [
+        "break 1 bond(s)",
+        "Cl"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 0,
+      "adduct": "Cl",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        1,
+        2,
+        3,
+        7
+      ],
+      "score": 0.48
+    },
+    {
+      "formula": "CHF2K",
+      "counts": {
+        "C": 1,
+        "F": 2,
+        "H": 1,
+        "K": 1
+      },
+      "exact_mass": 89.96833784409,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "PVDF",
+      "source_name": "Polyvinylidene Fluoride",
+      "generation_type": "adduct",
+      "path": [
+        "break 1 bond(s)",
+        "K"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 0,
+      "adduct": "K",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        1,
+        2,
+        3,
+        7
+      ],
+      "score": 0.48
+    },
+    {
+      "formula": "CHF2Na",
+      "counts": {
+        "C": 1,
+        "F": 2,
+        "H": 1,
+        "Na": 1
+      },
+      "exact_mass": 73.99440063969,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "PVDF",
+      "source_name": "Polyvinylidene Fluoride",
+      "generation_type": "adduct",
+      "path": [
+        "break 1 bond(s)",
+        "Na"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 0,
+      "adduct": "Na",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        1,
+        2,
+        3,
+        7
+      ],
+      "score": 0.48
+    },
+    {
+      "formula": "CHF2O",
+      "counts": {
+        "C": 1,
+        "F": 2,
+        "H": 1,
+        "O": 1
+      },
+      "exact_mass": 66.99954597726,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "PVDF",
+      "source_name": "Polyvinylidene Fluoride",
+      "generation_type": "adduct",
+      "path": [
+        "break 1 bond(s)",
+        "O"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 0,
+      "adduct": "O",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        1,
+        2,
+        3,
+        7
+      ],
+      "score": 0.48
+    },
+    {
+      "formula": "C2H3",
+      "counts": {
+        "C": 2,
+        "H": 3
+      },
+      "exact_mass": 27.02347509669,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "PVDF",
+      "source_name": "Polyvinylidene Fluoride",
+      "generation_type": "adduct",
+      "path": [
+        "break 2 bond(s)",
+        "-H"
+      ],
+      "broken_bonds": 2,
+      "h_shift": 0,
+      "adduct": "-H",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        0,
+        1,
+        4,
+        5,
+        6,
+        7
+      ],
+      "score": 0.45
+    },
+    {
+      "formula": "C2H4",
+      "counts": {
+        "C": 2,
+        "H": 4
+      },
+      "exact_mass": 28.03130012892,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "source_compound_id": "PVDF",
+      "source_name": "Polyvinylidene Fluoride",
+      "generation_type": "fragment",
+      "path": [
+        "break 2 bond(s)"
+      ],
+      "broken_bonds": 2,
+      "h_shift": 0,
+      "adduct": null,
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        0,
+        1,
+        4,
+        5,
+        6,
+        7
+      ],
+      "score": 0.45
+    },
+    {
+      "formula": "C2H5",
+      "counts": {
+        "C": 2,
+        "H": 5
+      },
+      "exact_mass": 29.03912516115,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "PVDF",
+      "source_name": "Polyvinylidene Fluoride",
+      "generation_type": "adduct",
+      "path": [
+        "break 2 bond(s)",
+        "H"
+      ],
+      "broken_bonds": 2,
+      "h_shift": 0,
+      "adduct": "H",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        0,
+        1,
+        4,
+        5,
+        6,
+        7
+      ],
+      "score": 0.45
+    },
+    {
+      "formula": "CF",
+      "counts": {
+        "C": 1,
+        "F": 1
+      },
+      "exact_mass": 30.99840316273,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "PVDF",
+      "source_name": "Polyvinylidene Fluoride",
+      "generation_type": "adduct",
+      "path": [
+        "break 2 bond(s)",
+        "-H",
+        ";",
+        "break 2 bond(s)",
+        "-H"
+      ],
+      "broken_bonds": 2,
+      "h_shift": 0,
+      "adduct": "-H",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        1,
+        3,
+        7
+      ],
+      "score": 0.45
+    },
+    {
+      "formula": "CH2F",
+      "counts": {
+        "C": 1,
+        "F": 1,
+        "H": 2
+      },
+      "exact_mass": 33.01405322719,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "PVDF",
+      "source_name": "Polyvinylidene Fluoride",
+      "generation_type": "adduct",
+      "path": [
+        "break 2 bond(s)",
+        "H",
+        ";",
+        "break 2 bond(s)",
+        "H"
+      ],
+      "broken_bonds": 2,
+      "h_shift": 0,
+      "adduct": "H",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        1,
+        3,
+        7
+      ],
+      "score": 0.45
+    },
+    {
+      "formula": "CHF",
+      "counts": {
+        "C": 1,
+        "F": 1,
+        "H": 1
+      },
+      "exact_mass": 32.00622819496,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "source_compound_id": "PVDF",
+      "source_name": "Polyvinylidene Fluoride",
+      "generation_type": "fragment",
+      "path": [
+        "break 2 bond(s)",
+        ";",
+        "break 2 bond(s)"
+      ],
+      "broken_bonds": 2,
+      "h_shift": 0,
+      "adduct": null,
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        1,
+        3,
+        7
+      ],
+      "score": 0.45
+    },
+    {
+      "formula": "C2H2",
+      "counts": {
+        "C": 2,
+        "H": 2
+      },
+      "exact_mass": 26.01565006446,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "source_compound_id": "PVDF",
+      "source_name": "Polyvinylidene Fluoride",
+      "generation_type": "neutral_loss",
+      "path": [
+        "break 1 bond(s)",
+        "H shift -1",
+        "-HF",
+        ";",
+        "break 1 bond(s)",
+        "H shift -1",
+        "-HF",
+        ";",
+        "break 2 bond(s)",
+        "-H2"
+      ],
+      "broken_bonds": 1,
+      "h_shift": -1,
+      "adduct": null,
+      "neutral_losses": [
+        "HF"
+      ],
+      "fragment_atom_indices": [
+        0,
+        1,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "score": 0.44999999999999996
+    },
+    {
+      "formula": "C2H4",
+      "counts": {
+        "C": 2,
+        "H": 4
+      },
+      "exact_mass": 28.03130012892,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "source_compound_id": "PVDF",
+      "source_name": "Polyvinylidene Fluoride",
+      "generation_type": "neutral_loss",
+      "path": [
+        "break 1 bond(s)",
+        "H shift +1",
+        "-HF",
+        ";",
+        "break 1 bond(s)",
+        "H shift +1",
+        "-HF",
+        ";",
+        "break 2 bond(s)",
+        "H shift +2",
+        "-H2"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 1,
+      "adduct": null,
+      "neutral_losses": [
+        "HF"
+      ],
+      "fragment_atom_indices": [
+        0,
+        1,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "score": 0.44999999999999996
+    },
+    {
+      "formula": "CH2F",
+      "counts": {
+        "C": 1,
+        "F": 1,
+        "H": 2
+      },
+      "exact_mass": 33.01405322719,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "source_compound_id": "PVDF",
+      "source_name": "Polyvinylidene Fluoride",
+      "generation_type": "neutral_loss",
+      "path": [
+        "break 1 bond(s)",
+        "H shift +1",
+        "-CH3",
+        ";",
+        "break 1 bond(s)",
+        "H shift +1",
+        "-CH3"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 1,
+      "adduct": null,
+      "neutral_losses": [
+        "CH3"
+      ],
+      "fragment_atom_indices": [
+        0,
+        1,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "score": 0.44999999999999996
+    },
+    {
+      "formula": "C4H8ClF4",
+      "counts": {
+        "C": 4,
+        "H": 8,
+        "F": 4,
+        "Cl": 1
+      },
+      "exact_mass": 167.02506559076,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "PVDF",
+      "source_name": "Polyvinylidene Fluoride",
+      "generation_type": "dimer",
+      "path": [
+        "2M",
+        "Cl"
+      ],
+      "broken_bonds": 0,
+      "h_shift": 0,
+      "adduct": "Cl",
+      "neutral_losses": [],
+      "fragment_atom_indices": null,
+      "score": 0.43
+    },
+    {
+      "formula": "C4H8F4Na",
+      "counts": {
+        "C": 4,
+        "H": 8,
+        "F": 4,
+        "Na": 1
+      },
+      "exact_mass": 155.04598219076001,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "PVDF",
+      "source_name": "Polyvinylidene Fluoride",
+      "generation_type": "dimer",
+      "path": [
+        "2M",
+        "Na"
+      ],
+      "broken_bonds": 0,
+      "h_shift": 0,
+      "adduct": "Na",
+      "neutral_losses": [],
+      "fragment_atom_indices": null,
+      "score": 0.43
+    },
+    {
+      "formula": "C2H3ClF",
+      "counts": {
+        "C": 2,
+        "F": 1,
+        "H": 3,
+        "Cl": 1
+      },
+      "exact_mass": 80.99073094142,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "PVDF",
+      "source_name": "Polyvinylidene Fluoride",
+      "generation_type": "adduct",
+      "path": [
+        "break 1 bond(s)",
+        "H shift -1",
+        "Cl",
+        ";",
+        "break 1 bond(s)",
+        "H shift -1",
+        "Cl"
+      ],
+      "broken_bonds": 1,
+      "h_shift": -1,
+      "adduct": "Cl",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        0,
+        1,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "score": 0.42999999999999994
+    },
+    {
+      "formula": "C2H3FK",
+      "counts": {
+        "C": 2,
+        "F": 1,
+        "H": 3,
+        "K": 1
+      },
+      "exact_mass": 84.98558474582,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "PVDF",
+      "source_name": "Polyvinylidene Fluoride",
+      "generation_type": "adduct",
+      "path": [
+        "break 1 bond(s)",
+        "H shift -1",
+        "K",
+        ";",
+        "break 1 bond(s)",
+        "H shift -1",
+        "K"
+      ],
+      "broken_bonds": 1,
+      "h_shift": -1,
+      "adduct": "K",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        0,
+        1,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "score": 0.42999999999999994
+    },
+    {
+      "formula": "C2H3FNa",
+      "counts": {
+        "C": 2,
+        "F": 1,
+        "H": 3,
+        "Na": 1
+      },
+      "exact_mass": 69.01164754142,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "PVDF",
+      "source_name": "Polyvinylidene Fluoride",
+      "generation_type": "adduct",
+      "path": [
+        "break 1 bond(s)",
+        "H shift -1",
+        "Na",
+        ";",
+        "break 1 bond(s)",
+        "H shift -1",
+        "Na"
+      ],
+      "broken_bonds": 1,
+      "h_shift": -1,
+      "adduct": "Na",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        0,
+        1,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "score": 0.42999999999999994
+    },
+    {
+      "formula": "C2H3FO",
+      "counts": {
+        "C": 2,
+        "F": 1,
+        "H": 3,
+        "O": 1
+      },
+      "exact_mass": 62.01679287899,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "PVDF",
+      "source_name": "Polyvinylidene Fluoride",
+      "generation_type": "adduct",
+      "path": [
+        "break 1 bond(s)",
+        "H shift -1",
+        "O",
+        ";",
+        "break 1 bond(s)",
+        "H shift -2",
+        "OH",
+        ";",
+        "break 1 bond(s)",
+        "H shift -1",
+        "O"
+      ],
+      "broken_bonds": 1,
+      "h_shift": -1,
+      "adduct": "O",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        0,
+        1,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "score": 0.42999999999999994
+    },
+    {
+      "formula": "C2H5ClF",
+      "counts": {
+        "C": 2,
+        "F": 1,
+        "H": 5,
+        "Cl": 1
+      },
+      "exact_mass": 83.00638100588,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "PVDF",
+      "source_name": "Polyvinylidene Fluoride",
+      "generation_type": "adduct",
+      "path": [
+        "break 1 bond(s)",
+        "H shift +1",
+        "Cl",
+        ";",
+        "break 1 bond(s)",
+        "H shift +1",
+        "Cl"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 1,
+      "adduct": "Cl",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        0,
+        1,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "score": 0.42999999999999994
+    },
+    {
+      "formula": "C2H5FK",
+      "counts": {
+        "C": 2,
+        "F": 1,
+        "H": 5,
+        "K": 1
+      },
+      "exact_mass": 87.00123481028,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "PVDF",
+      "source_name": "Polyvinylidene Fluoride",
+      "generation_type": "adduct",
+      "path": [
+        "break 1 bond(s)",
+        "H shift +1",
+        "K",
+        ";",
+        "break 1 bond(s)",
+        "H shift +1",
+        "K"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 1,
+      "adduct": "K",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        0,
+        1,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "score": 0.42999999999999994
+    },
+    {
+      "formula": "C2H5FNa",
+      "counts": {
+        "C": 2,
+        "F": 1,
+        "H": 5,
+        "Na": 1
+      },
+      "exact_mass": 71.02729760588,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "PVDF",
+      "source_name": "Polyvinylidene Fluoride",
+      "generation_type": "adduct",
+      "path": [
+        "break 1 bond(s)",
+        "H shift +1",
+        "Na",
+        ";",
+        "break 1 bond(s)",
+        "H shift +1",
+        "Na"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 1,
+      "adduct": "Na",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        0,
+        1,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "score": 0.42999999999999994
+    },
+    {
+      "formula": "C2H6FO",
+      "counts": {
+        "C": 2,
+        "F": 1,
+        "H": 6,
+        "O": 1
+      },
+      "exact_mass": 65.04026797568,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "PVDF",
+      "source_name": "Polyvinylidene Fluoride",
+      "generation_type": "adduct",
+      "path": [
+        "break 1 bond(s)",
+        "H shift +1",
+        "OH",
+        ";",
+        "break 1 bond(s)",
+        "H shift +2",
+        "O",
+        ";",
+        "break 1 bond(s)",
+        "H shift +1",
+        "OH"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 1,
+      "adduct": "OH",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        0,
+        1,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "score": 0.42999999999999994
+    },
+    {
+      "formula": "CClF2",
+      "counts": {
+        "C": 1,
+        "F": 2,
+        "Cl": 1
+      },
+      "exact_mass": 84.96565900746,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "PVDF",
+      "source_name": "Polyvinylidene Fluoride",
+      "generation_type": "adduct",
+      "path": [
+        "break 1 bond(s)",
+        "H shift -1",
+        "Cl"
+      ],
+      "broken_bonds": 1,
+      "h_shift": -1,
+      "adduct": "Cl",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        1,
+        2,
+        3,
+        7
+      ],
+      "score": 0.42999999999999994
+    },
+    {
+      "formula": "CF2K",
+      "counts": {
+        "C": 1,
+        "F": 2,
+        "K": 1
+      },
+      "exact_mass": 88.96051281186,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "PVDF",
+      "source_name": "Polyvinylidene Fluoride",
+      "generation_type": "adduct",
+      "path": [
+        "break 1 bond(s)",
+        "H shift -1",
+        "K"
+      ],
+      "broken_bonds": 1,
+      "h_shift": -1,
+      "adduct": "K",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        1,
+        2,
+        3,
+        7
+      ],
+      "score": 0.42999999999999994
+    },
+    {
+      "formula": "CF2Na",
+      "counts": {
+        "C": 1,
+        "F": 2,
+        "Na": 1
+      },
+      "exact_mass": 72.98657560746,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "PVDF",
+      "source_name": "Polyvinylidene Fluoride",
+      "generation_type": "adduct",
+      "path": [
+        "break 1 bond(s)",
+        "H shift -1",
+        "Na"
+      ],
+      "broken_bonds": 1,
+      "h_shift": -1,
+      "adduct": "Na",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        1,
+        2,
+        3,
+        7
+      ],
+      "score": 0.42999999999999994
+    },
+    {
+      "formula": "CF2O",
+      "counts": {
+        "C": 1,
+        "F": 2,
+        "O": 1
+      },
+      "exact_mass": 65.99172094503,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "PVDF",
+      "source_name": "Polyvinylidene Fluoride",
+      "generation_type": "adduct",
+      "path": [
+        "break 1 bond(s)",
+        "H shift -1",
+        "O"
+      ],
+      "broken_bonds": 1,
+      "h_shift": -1,
+      "adduct": "O",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        1,
+        2,
+        3,
+        7
+      ],
+      "score": 0.42999999999999994
+    },
+    {
+      "formula": "CH2ClF2",
+      "counts": {
+        "C": 1,
+        "F": 2,
+        "H": 2,
+        "Cl": 1
+      },
+      "exact_mass": 86.98130907192,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "PVDF",
+      "source_name": "Polyvinylidene Fluoride",
+      "generation_type": "adduct",
+      "path": [
+        "break 1 bond(s)",
+        "H shift +1",
+        "Cl"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 1,
+      "adduct": "Cl",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        1,
+        2,
+        3,
+        7
+      ],
+      "score": 0.42999999999999994
+    },
+    {
+      "formula": "CH2F2K",
+      "counts": {
+        "C": 1,
+        "F": 2,
+        "H": 2,
+        "K": 1
+      },
+      "exact_mass": 90.97616287632,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "PVDF",
+      "source_name": "Polyvinylidene Fluoride",
+      "generation_type": "adduct",
+      "path": [
+        "break 1 bond(s)",
+        "H shift +1",
+        "K"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 1,
+      "adduct": "K",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        1,
+        2,
+        3,
+        7
+      ],
+      "score": 0.42999999999999994
+    },
+    {
+      "formula": "CH2F2Na",
+      "counts": {
+        "C": 1,
+        "F": 2,
+        "H": 2,
+        "Na": 1
+      },
+      "exact_mass": 75.00222567192,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "PVDF",
+      "source_name": "Polyvinylidene Fluoride",
+      "generation_type": "adduct",
+      "path": [
+        "break 1 bond(s)",
+        "H shift +1",
+        "Na"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 1,
+      "adduct": "Na",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        1,
+        2,
+        3,
+        7
+      ],
+      "score": 0.42999999999999994
+    },
+    {
+      "formula": "CH3F2O",
+      "counts": {
+        "C": 1,
+        "F": 2,
+        "H": 3,
+        "O": 1
+      },
+      "exact_mass": 69.01519604172,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "PVDF",
+      "source_name": "Polyvinylidene Fluoride",
+      "generation_type": "adduct",
+      "path": [
+        "break 1 bond(s)",
+        "H shift +1",
+        "OH",
+        ";",
+        "break 1 bond(s)",
+        "H shift +2",
+        "O"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 1,
+      "adduct": "OH",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        1,
+        2,
+        3,
+        7
+      ],
+      "score": 0.42999999999999994
+    },
+    {
+      "formula": "C2F",
+      "counts": {
+        "C": 2,
+        "F": 1
+      },
+      "exact_mass": 42.99840316273,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "source_compound_id": "PVDF",
+      "source_name": "Polyvinylidene Fluoride",
+      "generation_type": "neutral_loss",
+      "path": [
+        "break 1 bond(s)",
+        "H shift -2",
+        "-H2",
+        ";",
+        "break 1 bond(s)",
+        "H shift -2",
+        "-H2"
+      ],
+      "broken_bonds": 1,
+      "h_shift": -2,
+      "adduct": null,
+      "neutral_losses": [
+        "H2"
+      ],
+      "fragment_atom_indices": [
+        0,
+        1,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "score": 0.4
+    },
+    {
+      "formula": "C2H",
+      "counts": {
+        "C": 2,
+        "H": 1
+      },
+      "exact_mass": 25.00782503223,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "source_compound_id": "PVDF",
+      "source_name": "Polyvinylidene Fluoride",
+      "generation_type": "neutral_loss",
+      "path": [
+        "break 1 bond(s)",
+        "H shift -2",
+        "-HF",
+        ";",
+        "break 1 bond(s)",
+        "H shift -2",
+        "-HF",
+        ";",
+        "break 2 bond(s)",
+        "H shift -1",
+        "-H2"
+      ],
+      "broken_bonds": 1,
+      "h_shift": -2,
+      "adduct": null,
+      "neutral_losses": [
+        "HF"
+      ],
+      "fragment_atom_indices": [
+        0,
+        1,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "score": 0.4
+    },
+    {
+      "formula": "C2H2",
+      "counts": {
+        "C": 2,
+        "H": 2
+      },
+      "exact_mass": 26.01565006446,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "PVDF",
+      "source_name": "Polyvinylidene Fluoride",
+      "generation_type": "adduct",
+      "path": [
+        "break 2 bond(s)",
+        "H shift -1",
+        "-H"
+      ],
+      "broken_bonds": 2,
+      "h_shift": -1,
+      "adduct": "-H",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        0,
+        1,
+        4,
+        5,
+        6,
+        7
+      ],
+      "score": 0.4
+    },
+    {
+      "formula": "C2H3",
+      "counts": {
+        "C": 2,
+        "H": 3
+      },
+      "exact_mass": 27.02347509669,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "source_compound_id": "PVDF",
+      "source_name": "Polyvinylidene Fluoride",
+      "generation_type": "h_shift",
+      "path": [
+        "break 2 bond(s)",
+        "H shift -1"
+      ],
+      "broken_bonds": 2,
+      "h_shift": -1,
+      "adduct": null,
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        0,
+        1,
+        4,
+        5,
+        6,
+        7
+      ],
+      "score": 0.4
+    },
+    {
+      "formula": "C2H4",
+      "counts": {
+        "C": 2,
+        "H": 4
+      },
+      "exact_mass": 28.03130012892,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "PVDF",
+      "source_name": "Polyvinylidene Fluoride",
+      "generation_type": "adduct",
+      "path": [
+        "break 2 bond(s)",
+        "H shift -1",
+        "H"
+      ],
+      "broken_bonds": 2,
+      "h_shift": -1,
+      "adduct": "H",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        0,
+        1,
+        4,
+        5,
+        6,
+        7
+      ],
+      "score": 0.4
+    },
+    {
+      "formula": "C2H4",
+      "counts": {
+        "C": 2,
+        "H": 4
+      },
+      "exact_mass": 28.03130012892,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "PVDF",
+      "source_name": "Polyvinylidene Fluoride",
+      "generation_type": "adduct",
+      "path": [
+        "break 2 bond(s)",
+        "H shift +1",
+        "-H"
+      ],
+      "broken_bonds": 2,
+      "h_shift": 1,
+      "adduct": "-H",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        0,
+        1,
+        4,
+        5,
+        6,
+        7
+      ],
+      "score": 0.4
+    },
+    {
+      "formula": "C2H5",
+      "counts": {
+        "C": 2,
+        "H": 5
+      },
+      "exact_mass": 29.03912516115,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "source_compound_id": "PVDF",
+      "source_name": "Polyvinylidene Fluoride",
+      "generation_type": "neutral_loss",
+      "path": [
+        "break 1 bond(s)",
+        "H shift +2",
+        "-HF",
+        ";",
+        "break 1 bond(s)",
+        "H shift +2",
+        "-HF"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 2,
+      "adduct": null,
+      "neutral_losses": [
+        "HF"
+      ],
+      "fragment_atom_indices": [
+        0,
+        1,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "score": 0.4
+    },
+    {
+      "formula": "C2H5",
+      "counts": {
+        "C": 2,
+        "H": 5
+      },
+      "exact_mass": 29.03912516115,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "source_compound_id": "PVDF",
+      "source_name": "Polyvinylidene Fluoride",
+      "generation_type": "h_shift",
+      "path": [
+        "break 2 bond(s)",
+        "H shift +1"
+      ],
+      "broken_bonds": 2,
+      "h_shift": 1,
+      "adduct": null,
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        0,
+        1,
+        4,
+        5,
+        6,
+        7
+      ],
+      "score": 0.4
+    },
+    {
+      "formula": "C2H6",
+      "counts": {
+        "C": 2,
+        "H": 6
+      },
+      "exact_mass": 30.04695019338,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "PVDF",
+      "source_name": "Polyvinylidene Fluoride",
+      "generation_type": "adduct",
+      "path": [
+        "break 2 bond(s)",
+        "H shift +1",
+        "H"
+      ],
+      "broken_bonds": 2,
+      "h_shift": 1,
+      "adduct": "H",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        0,
+        1,
+        4,
+        5,
+        6,
+        7
+      ],
+      "score": 0.4
+    },
+    {
+      "formula": "CF",
+      "counts": {
+        "C": 1,
+        "F": 1
+      },
+      "exact_mass": 30.99840316273,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "source_compound_id": "PVDF",
+      "source_name": "Polyvinylidene Fluoride",
+      "generation_type": "h_shift",
+      "path": [
+        "break 2 bond(s)",
+        "H shift -1",
+        ";",
+        "break 2 bond(s)",
+        "H shift -1"
+      ],
+      "broken_bonds": 2,
+      "h_shift": -1,
+      "adduct": null,
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        1,
+        3,
+        7
+      ],
+      "score": 0.4
+    },
+    {
+      "formula": "CH2F",
+      "counts": {
+        "C": 1,
+        "F": 1,
+        "H": 2
+      },
+      "exact_mass": 33.01405322719,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "source_compound_id": "PVDF",
+      "source_name": "Polyvinylidene Fluoride",
+      "generation_type": "h_shift",
+      "path": [
+        "break 2 bond(s)",
+        "H shift +1",
+        ";",
+        "break 2 bond(s)",
+        "H shift +1"
+      ],
+      "broken_bonds": 2,
+      "h_shift": 1,
+      "adduct": null,
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        1,
+        3,
+        7
+      ],
+      "score": 0.4
+    },
+    {
+      "formula": "CH3F",
+      "counts": {
+        "C": 1,
+        "F": 1,
+        "H": 3
+      },
+      "exact_mass": 34.02187825942,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "source_compound_id": "PVDF",
+      "source_name": "Polyvinylidene Fluoride",
+      "generation_type": "neutral_loss",
+      "path": [
+        "break 1 bond(s)",
+        "H shift +2",
+        "-CH3",
+        ";",
+        "break 1 bond(s)",
+        "H shift +2",
+        "-CH3"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 2,
+      "adduct": null,
+      "neutral_losses": [
+        "CH3"
+      ],
+      "fragment_atom_indices": [
+        0,
+        1,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "score": 0.4
+    },
+    {
+      "formula": "CH3F",
+      "counts": {
+        "C": 1,
+        "F": 1,
+        "H": 3
+      },
+      "exact_mass": 34.02187825942,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "PVDF",
+      "source_name": "Polyvinylidene Fluoride",
+      "generation_type": "adduct",
+      "path": [
+        "break 2 bond(s)",
+        "H shift +1",
+        "H",
+        ";",
+        "break 2 bond(s)",
+        "H shift +1",
+        "H"
+      ],
+      "broken_bonds": 2,
+      "h_shift": 1,
+      "adduct": "H",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        1,
+        3,
+        7
+      ],
+      "score": 0.4
+    },
+    {
+      "formula": "CHF",
+      "counts": {
+        "C": 1,
+        "F": 1,
+        "H": 1
+      },
+      "exact_mass": 32.00622819496,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "PVDF",
+      "source_name": "Polyvinylidene Fluoride",
+      "generation_type": "adduct",
+      "path": [
+        "break 2 bond(s)",
+        "H shift -1",
+        "H",
+        ";",
+        "break 2 bond(s)",
+        "H shift -1",
+        "H"
+      ],
+      "broken_bonds": 2,
+      "h_shift": -1,
+      "adduct": "H",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        1,
+        3,
+        7
+      ],
+      "score": 0.4
+    },
+    {
+      "formula": "CHF",
+      "counts": {
+        "C": 1,
+        "F": 1,
+        "H": 1
+      },
+      "exact_mass": 32.00622819496,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "PVDF",
+      "source_name": "Polyvinylidene Fluoride",
+      "generation_type": "adduct",
+      "path": [
+        "break 2 bond(s)",
+        "H shift +1",
+        "-H",
+        ";",
+        "break 2 bond(s)",
+        "H shift +1",
+        "-H"
+      ],
+      "broken_bonds": 2,
+      "h_shift": 1,
+      "adduct": "-H",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        1,
+        3,
+        7
+      ],
+      "score": 0.4
+    },
+    {
+      "formula": "F2",
+      "counts": {
+        "F": 2
+      },
+      "exact_mass": 37.99680632546,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "source_compound_id": "PVDF",
+      "source_name": "Polyvinylidene Fluoride",
+      "generation_type": "neutral_loss",
+      "path": [
+        "break 1 bond(s)",
+        "H shift +2",
+        "-CH3"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 2,
+      "adduct": null,
+      "neutral_losses": [
+        "CH3"
+      ],
+      "fragment_atom_indices": [
+        1,
+        2,
+        3,
+        7
+      ],
+      "score": 0.4
+    },
+    {
+      "formula": "C2H2ClF",
+      "counts": {
+        "C": 2,
+        "F": 1,
+        "H": 2,
+        "Cl": 1
+      },
+      "exact_mass": 79.98290590919,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "PVDF",
+      "source_name": "Polyvinylidene Fluoride",
+      "generation_type": "adduct",
+      "path": [
+        "break 1 bond(s)",
+        "H shift -2",
+        "Cl",
+        ";",
+        "break 1 bond(s)",
+        "H shift -2",
+        "Cl"
+      ],
+      "broken_bonds": 1,
+      "h_shift": -2,
+      "adduct": "Cl",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        0,
+        1,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "score": 0.38
+    },
+    {
+      "formula": "C2H2FK",
+      "counts": {
+        "C": 2,
+        "F": 1,
+        "H": 2,
+        "K": 1
+      },
+      "exact_mass": 83.97775971359,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "PVDF",
+      "source_name": "Polyvinylidene Fluoride",
+      "generation_type": "adduct",
+      "path": [
+        "break 1 bond(s)",
+        "H shift -2",
+        "K",
+        ";",
+        "break 1 bond(s)",
+        "H shift -2",
+        "K"
+      ],
+      "broken_bonds": 1,
+      "h_shift": -2,
+      "adduct": "K",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        0,
+        1,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "score": 0.38
+    },
+    {
+      "formula": "C2H2FNa",
+      "counts": {
+        "C": 2,
+        "F": 1,
+        "H": 2,
+        "Na": 1
+      },
+      "exact_mass": 68.00382250919,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "PVDF",
+      "source_name": "Polyvinylidene Fluoride",
+      "generation_type": "adduct",
+      "path": [
+        "break 1 bond(s)",
+        "H shift -2",
+        "Na",
+        ";",
+        "break 1 bond(s)",
+        "H shift -2",
+        "Na"
+      ],
+      "broken_bonds": 1,
+      "h_shift": -2,
+      "adduct": "Na",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        0,
+        1,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "score": 0.38
+    },
+    {
+      "formula": "C2H2FO",
+      "counts": {
+        "C": 2,
+        "F": 1,
+        "H": 2,
+        "O": 1
+      },
+      "exact_mass": 61.00896784676,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "PVDF",
+      "source_name": "Polyvinylidene Fluoride",
+      "generation_type": "adduct",
+      "path": [
+        "break 1 bond(s)",
+        "H shift -2",
+        "O",
+        ";",
+        "break 1 bond(s)",
+        "H shift -2",
+        "O"
+      ],
+      "broken_bonds": 1,
+      "h_shift": -2,
+      "adduct": "O",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        0,
+        1,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "score": 0.38
+    },
+    {
+      "formula": "C2H6ClF",
+      "counts": {
+        "C": 2,
+        "F": 1,
+        "H": 6,
+        "Cl": 1
+      },
+      "exact_mass": 84.01420603811,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "PVDF",
+      "source_name": "Polyvinylidene Fluoride",
+      "generation_type": "adduct",
+      "path": [
+        "break 1 bond(s)",
+        "H shift +2",
+        "Cl",
+        ";",
+        "break 1 bond(s)",
+        "H shift +2",
+        "Cl"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 2,
+      "adduct": "Cl",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        0,
+        1,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "score": 0.38
+    },
+    {
+      "formula": "C2H6FK",
+      "counts": {
+        "C": 2,
+        "F": 1,
+        "H": 6,
+        "K": 1
+      },
+      "exact_mass": 88.00905984251,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "PVDF",
+      "source_name": "Polyvinylidene Fluoride",
+      "generation_type": "adduct",
+      "path": [
+        "break 1 bond(s)",
+        "H shift +2",
+        "K",
+        ";",
+        "break 1 bond(s)",
+        "H shift +2",
+        "K"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 2,
+      "adduct": "K",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        0,
+        1,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "score": 0.38
+    },
+    {
+      "formula": "C2H6FNa",
+      "counts": {
+        "C": 2,
+        "F": 1,
+        "H": 6,
+        "Na": 1
+      },
+      "exact_mass": 72.03512263811,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "PVDF",
+      "source_name": "Polyvinylidene Fluoride",
+      "generation_type": "adduct",
+      "path": [
+        "break 1 bond(s)",
+        "H shift +2",
+        "Na",
+        ";",
+        "break 1 bond(s)",
+        "H shift +2",
+        "Na"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 2,
+      "adduct": "Na",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        0,
+        1,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "score": 0.38
+    },
+    {
+      "formula": "C2H7FO",
+      "counts": {
+        "C": 2,
+        "F": 1,
+        "H": 7,
+        "O": 1
+      },
+      "exact_mass": 66.04809300791,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "PVDF",
+      "source_name": "Polyvinylidene Fluoride",
+      "generation_type": "adduct",
+      "path": [
+        "break 1 bond(s)",
+        "H shift +2",
+        "OH",
+        ";",
+        "break 1 bond(s)",
+        "H shift +2",
+        "OH"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 2,
+      "adduct": "OH",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        0,
+        1,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "score": 0.38
+    },
+    {
+      "formula": "CH3ClF2",
+      "counts": {
+        "C": 1,
+        "F": 2,
+        "H": 3,
+        "Cl": 1
+      },
+      "exact_mass": 87.98913410415,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "PVDF",
+      "source_name": "Polyvinylidene Fluoride",
+      "generation_type": "adduct",
+      "path": [
+        "break 1 bond(s)",
+        "H shift +2",
+        "Cl"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 2,
+      "adduct": "Cl",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        1,
+        2,
+        3,
+        7
+      ],
+      "score": 0.38
+    },
+    {
+      "formula": "CH3F2K",
+      "counts": {
+        "C": 1,
+        "F": 2,
+        "H": 3,
+        "K": 1
+      },
+      "exact_mass": 91.98398790855,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "PVDF",
+      "source_name": "Polyvinylidene Fluoride",
+      "generation_type": "adduct",
+      "path": [
+        "break 1 bond(s)",
+        "H shift +2",
+        "K"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 2,
+      "adduct": "K",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        1,
+        2,
+        3,
+        7
+      ],
+      "score": 0.38
+    },
+    {
+      "formula": "CH3F2Na",
+      "counts": {
+        "C": 1,
+        "F": 2,
+        "H": 3,
+        "Na": 1
+      },
+      "exact_mass": 76.01005070415,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "PVDF",
+      "source_name": "Polyvinylidene Fluoride",
+      "generation_type": "adduct",
+      "path": [
+        "break 1 bond(s)",
+        "H shift +2",
+        "Na"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 2,
+      "adduct": "Na",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        1,
+        2,
+        3,
+        7
+      ],
+      "score": 0.38
+    },
+    {
+      "formula": "CH4F2O",
+      "counts": {
+        "C": 1,
+        "F": 2,
+        "H": 4,
+        "O": 1
+      },
+      "exact_mass": 70.02302107395,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "PVDF",
+      "source_name": "Polyvinylidene Fluoride",
+      "generation_type": "adduct",
+      "path": [
+        "break 1 bond(s)",
+        "H shift +2",
+        "OH"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 2,
+      "adduct": "OH",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        1,
+        2,
+        3,
+        7
+      ],
+      "score": 0.38
+    },
+    {
+      "formula": "C",
+      "counts": {
+        "C": 1
+      },
+      "exact_mass": 12.0,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "source_compound_id": "PVDF",
+      "source_name": "Polyvinylidene Fluoride",
+      "generation_type": "neutral_loss",
+      "path": [
+        "break 2 bond(s)",
+        "-HF",
+        ";",
+        "break 2 bond(s)",
+        "-HF",
+        ";",
+        "break 2 bond(s)",
+        "H shift -1",
+        "-CH3"
+      ],
+      "broken_bonds": 2,
+      "h_shift": 0,
+      "adduct": null,
+      "neutral_losses": [
+        "HF"
+      ],
+      "fragment_atom_indices": [
+        1,
+        3,
+        7
+      ],
+      "score": 0.35
+    },
+    {
+      "formula": "C2H",
+      "counts": {
+        "C": 2,
+        "H": 1
+      },
+      "exact_mass": 25.00782503223,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "PVDF",
+      "source_name": "Polyvinylidene Fluoride",
+      "generation_type": "adduct",
+      "path": [
+        "break 2 bond(s)",
+        "H shift -2",
+        "-H"
+      ],
+      "broken_bonds": 2,
+      "h_shift": -2,
+      "adduct": "-H",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        0,
+        1,
+        4,
+        5,
+        6,
+        7
+      ],
+      "score": 0.35
+    },
+    {
+      "formula": "C2H2",
+      "counts": {
+        "C": 2,
+        "H": 2
+      },
+      "exact_mass": 26.01565006446,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "source_compound_id": "PVDF",
+      "source_name": "Polyvinylidene Fluoride",
+      "generation_type": "h_shift",
+      "path": [
+        "break 2 bond(s)",
+        "H shift -2"
+      ],
+      "broken_bonds": 2,
+      "h_shift": -2,
+      "adduct": null,
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        0,
+        1,
+        4,
+        5,
+        6,
+        7
+      ],
+      "score": 0.35
+    },
+    {
+      "formula": "C2H3",
+      "counts": {
+        "C": 2,
+        "H": 3
+      },
+      "exact_mass": 27.02347509669,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "PVDF",
+      "source_name": "Polyvinylidene Fluoride",
+      "generation_type": "adduct",
+      "path": [
+        "break 2 bond(s)",
+        "H shift -2",
+        "H"
+      ],
+      "broken_bonds": 2,
+      "h_shift": -2,
+      "adduct": "H",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        0,
+        1,
+        4,
+        5,
+        6,
+        7
+      ],
+      "score": 0.35
+    },
+    {
+      "formula": "C2H5",
+      "counts": {
+        "C": 2,
+        "H": 5
+      },
+      "exact_mass": 29.03912516115,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "PVDF",
+      "source_name": "Polyvinylidene Fluoride",
+      "generation_type": "adduct",
+      "path": [
+        "break 2 bond(s)",
+        "H shift +2",
+        "-H"
+      ],
+      "broken_bonds": 2,
+      "h_shift": 2,
+      "adduct": "-H",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        0,
+        1,
+        4,
+        5,
+        6,
+        7
+      ],
+      "score": 0.35
+    },
+    {
+      "formula": "C2H6",
+      "counts": {
+        "C": 2,
+        "H": 6
+      },
+      "exact_mass": 30.04695019338,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "source_compound_id": "PVDF",
+      "source_name": "Polyvinylidene Fluoride",
+      "generation_type": "h_shift",
+      "path": [
+        "break 2 bond(s)",
+        "H shift +2"
+      ],
+      "broken_bonds": 2,
+      "h_shift": 2,
+      "adduct": null,
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        0,
+        1,
+        4,
+        5,
+        6,
+        7
+      ],
+      "score": 0.35
+    },
+    {
+      "formula": "C2H7",
+      "counts": {
+        "C": 2,
+        "H": 7
+      },
+      "exact_mass": 31.05477522561,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "PVDF",
+      "source_name": "Polyvinylidene Fluoride",
+      "generation_type": "adduct",
+      "path": [
+        "break 2 bond(s)",
+        "H shift +2",
+        "H"
+      ],
+      "broken_bonds": 2,
+      "h_shift": 2,
+      "adduct": "H",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        0,
+        1,
+        4,
+        5,
+        6,
+        7
+      ],
+      "score": 0.35
+    },
+    {
+      "formula": "CH",
+      "counts": {
+        "C": 1,
+        "H": 1
+      },
+      "exact_mass": 13.00782503223,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "source_compound_id": "PVDF",
+      "source_name": "Polyvinylidene Fluoride",
+      "generation_type": "neutral_loss",
+      "path": [
+        "break 2 bond(s)",
+        "-CH3"
+      ],
+      "broken_bonds": 2,
+      "h_shift": 0,
+      "adduct": null,
+      "neutral_losses": [
+        "CH3"
+      ],
+      "fragment_atom_indices": [
+        0,
+        1,
+        4,
+        5,
+        6,
+        7
+      ],
+      "score": 0.35
+    },
+    {
+      "formula": "CH2F",
+      "counts": {
+        "C": 1,
+        "F": 1,
+        "H": 2
+      },
+      "exact_mass": 33.01405322719,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "PVDF",
+      "source_name": "Polyvinylidene Fluoride",
+      "generation_type": "adduct",
+      "path": [
+        "break 2 bond(s)",
+        "H shift +2",
+        "-H",
+        ";",
+        "break 2 bond(s)",
+        "H shift +2",
+        "-H"
+      ],
+      "broken_bonds": 2,
+      "h_shift": 2,
+      "adduct": "-H",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        1,
+        3,
+        7
+      ],
+      "score": 0.35
+    },
+    {
+      "formula": "CH3F",
+      "counts": {
+        "C": 1,
+        "F": 1,
+        "H": 3
+      },
+      "exact_mass": 34.02187825942,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "source_compound_id": "PVDF",
+      "source_name": "Polyvinylidene Fluoride",
+      "generation_type": "h_shift",
+      "path": [
+        "break 2 bond(s)",
+        "H shift +2",
+        ";",
+        "break 2 bond(s)",
+        "H shift +2"
+      ],
+      "broken_bonds": 2,
+      "h_shift": 2,
+      "adduct": null,
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        1,
+        3,
+        7
+      ],
+      "score": 0.35
+    },
+    {
+      "formula": "CH4F",
+      "counts": {
+        "C": 1,
+        "F": 1,
+        "H": 4
+      },
+      "exact_mass": 35.02970329165,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "PVDF",
+      "source_name": "Polyvinylidene Fluoride",
+      "generation_type": "adduct",
+      "path": [
+        "break 2 bond(s)",
+        "H shift +2",
+        "H",
+        ";",
+        "break 2 bond(s)",
+        "H shift +2",
+        "H"
+      ],
+      "broken_bonds": 2,
+      "h_shift": 2,
+      "adduct": "H",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        1,
+        3,
+        7
+      ],
+      "score": 0.35
+    },
+    {
+      "formula": "C2H4Cl",
+      "counts": {
+        "C": 2,
+        "H": 4,
+        "Cl": 1
+      },
+      "exact_mass": 63.00015281092,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "PVDF",
+      "source_name": "Polyvinylidene Fluoride",
+      "generation_type": "adduct",
+      "path": [
+        "break 2 bond(s)",
+        "Cl"
+      ],
+      "broken_bonds": 2,
+      "h_shift": 0,
+      "adduct": "Cl",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        0,
+        1,
+        4,
+        5,
+        6,
+        7
+      ],
+      "score": 0.33
+    },
+    {
+      "formula": "C2H4K",
+      "counts": {
+        "C": 2,
+        "H": 4,
+        "K": 1
+      },
+      "exact_mass": 66.99500661532,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "PVDF",
+      "source_name": "Polyvinylidene Fluoride",
+      "generation_type": "adduct",
+      "path": [
+        "break 2 bond(s)",
+        "K"
+      ],
+      "broken_bonds": 2,
+      "h_shift": 0,
+      "adduct": "K",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        0,
+        1,
+        4,
+        5,
+        6,
+        7
+      ],
+      "score": 0.33
+    },
+    {
+      "formula": "C2H4Na",
+      "counts": {
+        "C": 2,
+        "H": 4,
+        "Na": 1
+      },
+      "exact_mass": 51.02106941092,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "PVDF",
+      "source_name": "Polyvinylidene Fluoride",
+      "generation_type": "adduct",
+      "path": [
+        "break 2 bond(s)",
+        "Na"
+      ],
+      "broken_bonds": 2,
+      "h_shift": 0,
+      "adduct": "Na",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        0,
+        1,
+        4,
+        5,
+        6,
+        7
+      ],
+      "score": 0.33
+    },
+    {
+      "formula": "C2H4O",
+      "counts": {
+        "C": 2,
+        "H": 4,
+        "O": 1
+      },
+      "exact_mass": 44.02621474849,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "PVDF",
+      "source_name": "Polyvinylidene Fluoride",
+      "generation_type": "adduct",
+      "path": [
+        "break 2 bond(s)",
+        "O"
+      ],
+      "broken_bonds": 2,
+      "h_shift": 0,
+      "adduct": "O",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        0,
+        1,
+        4,
+        5,
+        6,
+        7
+      ],
+      "score": 0.33
+    },
+    {
+      "formula": "C2H5O",
+      "counts": {
+        "C": 2,
+        "H": 5,
+        "O": 1
+      },
+      "exact_mass": 45.03403978072,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "PVDF",
+      "source_name": "Polyvinylidene Fluoride",
+      "generation_type": "adduct",
+      "path": [
+        "break 2 bond(s)",
+        "OH",
+        ";",
+        "break 2 bond(s)",
+        "H shift +1",
+        "O"
+      ],
+      "broken_bonds": 2,
+      "h_shift": 0,
+      "adduct": "OH",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        0,
+        1,
+        4,
+        5,
+        6,
+        7
+      ],
+      "score": 0.33
+    },
+    {
+      "formula": "CH2FO",
+      "counts": {
+        "C": 1,
+        "F": 1,
+        "H": 2,
+        "O": 1
+      },
+      "exact_mass": 49.00896784676,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "PVDF",
+      "source_name": "Polyvinylidene Fluoride",
+      "generation_type": "adduct",
+      "path": [
+        "break 2 bond(s)",
+        "OH",
+        ";",
+        "break 2 bond(s)",
+        "H shift +1",
+        "O",
+        ";",
+        "break 2 bond(s)",
+        "OH"
+      ],
+      "broken_bonds": 2,
+      "h_shift": 0,
+      "adduct": "OH",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        1,
+        3,
+        7
+      ],
+      "score": 0.33
+    },
+    {
+      "formula": "CHClF",
+      "counts": {
+        "C": 1,
+        "F": 1,
+        "H": 1,
+        "Cl": 1
+      },
+      "exact_mass": 66.97508087695999,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "PVDF",
+      "source_name": "Polyvinylidene Fluoride",
+      "generation_type": "adduct",
+      "path": [
+        "break 2 bond(s)",
+        "Cl",
+        ";",
+        "break 2 bond(s)",
+        "Cl"
+      ],
+      "broken_bonds": 2,
+      "h_shift": 0,
+      "adduct": "Cl",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        1,
+        3,
+        7
+      ],
+      "score": 0.33
+    },
+    {
+      "formula": "CHFK",
+      "counts": {
+        "C": 1,
+        "F": 1,
+        "H": 1,
+        "K": 1
+      },
+      "exact_mass": 70.96993468136,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "PVDF",
+      "source_name": "Polyvinylidene Fluoride",
+      "generation_type": "adduct",
+      "path": [
+        "break 2 bond(s)",
+        "K",
+        ";",
+        "break 2 bond(s)",
+        "K"
+      ],
+      "broken_bonds": 2,
+      "h_shift": 0,
+      "adduct": "K",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        1,
+        3,
+        7
+      ],
+      "score": 0.33
+    },
+    {
+      "formula": "CHFNa",
+      "counts": {
+        "C": 1,
+        "F": 1,
+        "H": 1,
+        "Na": 1
+      },
+      "exact_mass": 54.99599747696,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "PVDF",
+      "source_name": "Polyvinylidene Fluoride",
+      "generation_type": "adduct",
+      "path": [
+        "break 2 bond(s)",
+        "Na",
+        ";",
+        "break 2 bond(s)",
+        "Na"
+      ],
+      "broken_bonds": 2,
+      "h_shift": 0,
+      "adduct": "Na",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        1,
+        3,
+        7
+      ],
+      "score": 0.33
+    },
+    {
+      "formula": "CHFO",
+      "counts": {
+        "C": 1,
+        "F": 1,
+        "H": 1,
+        "O": 1
+      },
+      "exact_mass": 48.00114281453,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "PVDF",
+      "source_name": "Polyvinylidene Fluoride",
+      "generation_type": "adduct",
+      "path": [
+        "break 2 bond(s)",
+        "O",
+        ";",
+        "break 2 bond(s)",
+        "H shift -1",
+        "OH",
+        ";",
+        "break 2 bond(s)",
+        "O"
+      ],
+      "broken_bonds": 2,
+      "h_shift": 0,
+      "adduct": "O",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        1,
+        3,
+        7
+      ],
+      "score": 0.33
+    },
+    {
+      "formula": "CH2",
+      "counts": {
+        "C": 1,
+        "H": 2
+      },
+      "exact_mass": 14.01565006446,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "source_compound_id": "PVDF",
+      "source_name": "Polyvinylidene Fluoride",
+      "generation_type": "neutral_loss",
+      "path": [
+        "break 2 bond(s)",
+        "H shift +1",
+        "-CH3"
+      ],
+      "broken_bonds": 2,
+      "h_shift": 1,
+      "adduct": null,
+      "neutral_losses": [
+        "CH3"
+      ],
+      "fragment_atom_indices": [
+        0,
+        1,
+        4,
+        5,
+        6,
+        7
+      ],
+      "score": 0.30000000000000004
+    },
+    {
+      "formula": "C2H3Cl",
+      "counts": {
+        "C": 2,
+        "H": 3,
+        "Cl": 1
+      },
+      "exact_mass": 61.99232777869,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "PVDF",
+      "source_name": "Polyvinylidene Fluoride",
+      "generation_type": "adduct",
+      "path": [
+        "break 2 bond(s)",
+        "H shift -1",
+        "Cl"
+      ],
+      "broken_bonds": 2,
+      "h_shift": -1,
+      "adduct": "Cl",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        0,
+        1,
+        4,
+        5,
+        6,
+        7
+      ],
+      "score": 0.28
+    },
+    {
+      "formula": "C2H3K",
+      "counts": {
+        "C": 2,
+        "H": 3,
+        "K": 1
+      },
+      "exact_mass": 65.98718158309,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "PVDF",
+      "source_name": "Polyvinylidene Fluoride",
+      "generation_type": "adduct",
+      "path": [
+        "break 2 bond(s)",
+        "H shift -1",
+        "K"
+      ],
+      "broken_bonds": 2,
+      "h_shift": -1,
+      "adduct": "K",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        0,
+        1,
+        4,
+        5,
+        6,
+        7
+      ],
+      "score": 0.28
+    },
+    {
+      "formula": "C2H3Na",
+      "counts": {
+        "C": 2,
+        "H": 3,
+        "Na": 1
+      },
+      "exact_mass": 50.013244378690004,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "PVDF",
+      "source_name": "Polyvinylidene Fluoride",
+      "generation_type": "adduct",
+      "path": [
+        "break 2 bond(s)",
+        "H shift -1",
+        "Na"
+      ],
+      "broken_bonds": 2,
+      "h_shift": -1,
+      "adduct": "Na",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        0,
+        1,
+        4,
+        5,
+        6,
+        7
+      ],
+      "score": 0.28
+    },
+    {
+      "formula": "C2H3O",
+      "counts": {
+        "C": 2,
+        "H": 3,
+        "O": 1
+      },
+      "exact_mass": 43.01838971626,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "PVDF",
+      "source_name": "Polyvinylidene Fluoride",
+      "generation_type": "adduct",
+      "path": [
+        "break 2 bond(s)",
+        "H shift -1",
+        "O"
+      ],
+      "broken_bonds": 2,
+      "h_shift": -1,
+      "adduct": "O",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        0,
+        1,
+        4,
+        5,
+        6,
+        7
+      ],
+      "score": 0.28
+    },
+    {
+      "formula": "C2H5Cl",
+      "counts": {
+        "C": 2,
+        "H": 5,
+        "Cl": 1
+      },
+      "exact_mass": 64.00797784315,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "PVDF",
+      "source_name": "Polyvinylidene Fluoride",
+      "generation_type": "adduct",
+      "path": [
+        "break 2 bond(s)",
+        "H shift +1",
+        "Cl"
+      ],
+      "broken_bonds": 2,
+      "h_shift": 1,
+      "adduct": "Cl",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        0,
+        1,
+        4,
+        5,
+        6,
+        7
+      ],
+      "score": 0.28
+    },
+    {
+      "formula": "C2H5K",
+      "counts": {
+        "C": 2,
+        "H": 5,
+        "K": 1
+      },
+      "exact_mass": 68.00283164755,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "PVDF",
+      "source_name": "Polyvinylidene Fluoride",
+      "generation_type": "adduct",
+      "path": [
+        "break 2 bond(s)",
+        "H shift +1",
+        "K"
+      ],
+      "broken_bonds": 2,
+      "h_shift": 1,
+      "adduct": "K",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        0,
+        1,
+        4,
+        5,
+        6,
+        7
+      ],
+      "score": 0.28
+    },
+    {
+      "formula": "C2H5Na",
+      "counts": {
+        "C": 2,
+        "H": 5,
+        "Na": 1
+      },
+      "exact_mass": 52.02889444315,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "PVDF",
+      "source_name": "Polyvinylidene Fluoride",
+      "generation_type": "adduct",
+      "path": [
+        "break 2 bond(s)",
+        "H shift +1",
+        "Na"
+      ],
+      "broken_bonds": 2,
+      "h_shift": 1,
+      "adduct": "Na",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        0,
+        1,
+        4,
+        5,
+        6,
+        7
+      ],
+      "score": 0.28
+    },
+    {
+      "formula": "C2H6O",
+      "counts": {
+        "C": 2,
+        "H": 6,
+        "O": 1
+      },
+      "exact_mass": 46.04186481295,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "PVDF",
+      "source_name": "Polyvinylidene Fluoride",
+      "generation_type": "adduct",
+      "path": [
+        "break 2 bond(s)",
+        "H shift +1",
+        "OH",
+        ";",
+        "break 2 bond(s)",
+        "H shift +2",
+        "O"
+      ],
+      "broken_bonds": 2,
+      "h_shift": 1,
+      "adduct": "OH",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        0,
+        1,
+        4,
+        5,
+        6,
+        7
+      ],
+      "score": 0.28
+    },
+    {
+      "formula": "CClF",
+      "counts": {
+        "C": 1,
+        "F": 1,
+        "Cl": 1
+      },
+      "exact_mass": 65.96725584473,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "PVDF",
+      "source_name": "Polyvinylidene Fluoride",
+      "generation_type": "adduct",
+      "path": [
+        "break 2 bond(s)",
+        "H shift -1",
+        "Cl",
+        ";",
+        "break 2 bond(s)",
+        "H shift -1",
+        "Cl"
+      ],
+      "broken_bonds": 2,
+      "h_shift": -1,
+      "adduct": "Cl",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        1,
+        3,
+        7
+      ],
+      "score": 0.28
+    },
+    {
+      "formula": "CFK",
+      "counts": {
+        "C": 1,
+        "F": 1,
+        "K": 1
+      },
+      "exact_mass": 69.96210964913,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "PVDF",
+      "source_name": "Polyvinylidene Fluoride",
+      "generation_type": "adduct",
+      "path": [
+        "break 2 bond(s)",
+        "H shift -1",
+        "K",
+        ";",
+        "break 2 bond(s)",
+        "H shift -1",
+        "K"
+      ],
+      "broken_bonds": 2,
+      "h_shift": -1,
+      "adduct": "K",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        1,
+        3,
+        7
+      ],
+      "score": 0.28
+    },
+    {
+      "formula": "CFNa",
+      "counts": {
+        "C": 1,
+        "F": 1,
+        "Na": 1
+      },
+      "exact_mass": 53.98817244473,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "PVDF",
+      "source_name": "Polyvinylidene Fluoride",
+      "generation_type": "adduct",
+      "path": [
+        "break 2 bond(s)",
+        "H shift -1",
+        "Na",
+        ";",
+        "break 2 bond(s)",
+        "H shift -1",
+        "Na"
+      ],
+      "broken_bonds": 2,
+      "h_shift": -1,
+      "adduct": "Na",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        1,
+        3,
+        7
+      ],
+      "score": 0.28
+    },
+    {
+      "formula": "CFO",
+      "counts": {
+        "C": 1,
+        "F": 1,
+        "O": 1
+      },
+      "exact_mass": 46.9933177823,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "PVDF",
+      "source_name": "Polyvinylidene Fluoride",
+      "generation_type": "adduct",
+      "path": [
+        "break 2 bond(s)",
+        "H shift -1",
+        "O",
+        ";",
+        "break 2 bond(s)",
+        "H shift -1",
+        "O"
+      ],
+      "broken_bonds": 2,
+      "h_shift": -1,
+      "adduct": "O",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        1,
+        3,
+        7
+      ],
+      "score": 0.28
+    },
+    {
+      "formula": "CH2ClF",
+      "counts": {
+        "C": 1,
+        "F": 1,
+        "H": 2,
+        "Cl": 1
+      },
+      "exact_mass": 67.98290590919,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "PVDF",
+      "source_name": "Polyvinylidene Fluoride",
+      "generation_type": "adduct",
+      "path": [
+        "break 2 bond(s)",
+        "H shift +1",
+        "Cl",
+        ";",
+        "break 2 bond(s)",
+        "H shift +1",
+        "Cl"
+      ],
+      "broken_bonds": 2,
+      "h_shift": 1,
+      "adduct": "Cl",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        1,
+        3,
+        7
+      ],
+      "score": 0.28
+    },
+    {
+      "formula": "CH2FK",
+      "counts": {
+        "C": 1,
+        "F": 1,
+        "H": 2,
+        "K": 1
+      },
+      "exact_mass": 71.97775971359,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "PVDF",
+      "source_name": "Polyvinylidene Fluoride",
+      "generation_type": "adduct",
+      "path": [
+        "break 2 bond(s)",
+        "H shift +1",
+        "K",
+        ";",
+        "break 2 bond(s)",
+        "H shift +1",
+        "K"
+      ],
+      "broken_bonds": 2,
+      "h_shift": 1,
+      "adduct": "K",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        1,
+        3,
+        7
+      ],
+      "score": 0.28
+    },
+    {
+      "formula": "CH2FNa",
+      "counts": {
+        "C": 1,
+        "F": 1,
+        "H": 2,
+        "Na": 1
+      },
+      "exact_mass": 56.00382250919,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "PVDF",
+      "source_name": "Polyvinylidene Fluoride",
+      "generation_type": "adduct",
+      "path": [
+        "break 2 bond(s)",
+        "H shift +1",
+        "Na",
+        ";",
+        "break 2 bond(s)",
+        "H shift +1",
+        "Na"
+      ],
+      "broken_bonds": 2,
+      "h_shift": 1,
+      "adduct": "Na",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        1,
+        3,
+        7
+      ],
+      "score": 0.28
+    },
+    {
+      "formula": "CH3FO",
+      "counts": {
+        "C": 1,
+        "F": 1,
+        "H": 3,
+        "O": 1
+      },
+      "exact_mass": 50.01679287899,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "PVDF",
+      "source_name": "Polyvinylidene Fluoride",
+      "generation_type": "adduct",
+      "path": [
+        "break 2 bond(s)",
+        "H shift +1",
+        "OH",
+        ";",
+        "break 2 bond(s)",
+        "H shift +2",
+        "O",
+        ";",
+        "break 2 bond(s)",
+        "H shift +1",
+        "OH"
+      ],
+      "broken_bonds": 2,
+      "h_shift": 1,
+      "adduct": "OH",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        1,
+        3,
+        7
+      ],
+      "score": 0.28
+    },
+    {
+      "formula": "C2",
+      "counts": {
+        "C": 2
+      },
+      "exact_mass": 24.0,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "source_compound_id": "PVDF",
+      "source_name": "Polyvinylidene Fluoride",
+      "generation_type": "neutral_loss",
+      "path": [
+        "break 2 bond(s)",
+        "H shift -2",
+        "-H2"
+      ],
+      "broken_bonds": 2,
+      "h_shift": -2,
+      "adduct": null,
+      "neutral_losses": [
+        "H2"
+      ],
+      "fragment_atom_indices": [
+        0,
+        1,
+        4,
+        5,
+        6,
+        7
+      ],
+      "score": 0.24999999999999997
+    },
+    {
+      "formula": "CH3",
+      "counts": {
+        "C": 1,
+        "H": 3
+      },
+      "exact_mass": 15.02347509669,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "source_compound_id": "PVDF",
+      "source_name": "Polyvinylidene Fluoride",
+      "generation_type": "neutral_loss",
+      "path": [
+        "break 2 bond(s)",
+        "H shift +2",
+        "-CH3"
+      ],
+      "broken_bonds": 2,
+      "h_shift": 2,
+      "adduct": null,
+      "neutral_losses": [
+        "CH3"
+      ],
+      "fragment_atom_indices": [
+        0,
+        1,
+        4,
+        5,
+        6,
+        7
+      ],
+      "score": 0.24999999999999997
+    },
+    {
+      "formula": "F",
+      "counts": {
+        "F": 1
+      },
+      "exact_mass": 18.99840316273,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "source_compound_id": "PVDF",
+      "source_name": "Polyvinylidene Fluoride",
+      "generation_type": "neutral_loss",
+      "path": [
+        "break 2 bond(s)",
+        "H shift +2",
+        "-CH3",
+        ";",
+        "break 2 bond(s)",
+        "H shift +2",
+        "-CH3"
+      ],
+      "broken_bonds": 2,
+      "h_shift": 2,
+      "adduct": null,
+      "neutral_losses": [
+        "CH3"
+      ],
+      "fragment_atom_indices": [
+        1,
+        3,
+        7
+      ],
+      "score": 0.24999999999999997
+    },
+    {
+      "formula": "C2H2Cl",
+      "counts": {
+        "C": 2,
+        "H": 2,
+        "Cl": 1
+      },
+      "exact_mass": 60.984502746459995,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "PVDF",
+      "source_name": "Polyvinylidene Fluoride",
+      "generation_type": "adduct",
+      "path": [
+        "break 2 bond(s)",
+        "H shift -2",
+        "Cl"
+      ],
+      "broken_bonds": 2,
+      "h_shift": -2,
+      "adduct": "Cl",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        0,
+        1,
+        4,
+        5,
+        6,
+        7
+      ],
+      "score": 0.22999999999999998
+    },
+    {
+      "formula": "C2H2K",
+      "counts": {
+        "C": 2,
+        "H": 2,
+        "K": 1
+      },
+      "exact_mass": 64.97935655086,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "PVDF",
+      "source_name": "Polyvinylidene Fluoride",
+      "generation_type": "adduct",
+      "path": [
+        "break 2 bond(s)",
+        "H shift -2",
+        "K"
+      ],
+      "broken_bonds": 2,
+      "h_shift": -2,
+      "adduct": "K",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        0,
+        1,
+        4,
+        5,
+        6,
+        7
+      ],
+      "score": 0.22999999999999998
+    },
+    {
+      "formula": "C2H2Na",
+      "counts": {
+        "C": 2,
+        "H": 2,
+        "Na": 1
+      },
+      "exact_mass": 49.00541934646,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "PVDF",
+      "source_name": "Polyvinylidene Fluoride",
+      "generation_type": "adduct",
+      "path": [
+        "break 2 bond(s)",
+        "H shift -2",
+        "Na"
+      ],
+      "broken_bonds": 2,
+      "h_shift": -2,
+      "adduct": "Na",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        0,
+        1,
+        4,
+        5,
+        6,
+        7
+      ],
+      "score": 0.22999999999999998
+    },
+    {
+      "formula": "C2H2O",
+      "counts": {
+        "C": 2,
+        "H": 2,
+        "O": 1
+      },
+      "exact_mass": 42.01056468403,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "PVDF",
+      "source_name": "Polyvinylidene Fluoride",
+      "generation_type": "adduct",
+      "path": [
+        "break 2 bond(s)",
+        "H shift -2",
+        "O"
+      ],
+      "broken_bonds": 2,
+      "h_shift": -2,
+      "adduct": "O",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        0,
+        1,
+        4,
+        5,
+        6,
+        7
+      ],
+      "score": 0.22999999999999998
+    },
+    {
+      "formula": "C2H6Cl",
+      "counts": {
+        "C": 2,
+        "H": 6,
+        "Cl": 1
+      },
+      "exact_mass": 65.01580287538,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "PVDF",
+      "source_name": "Polyvinylidene Fluoride",
+      "generation_type": "adduct",
+      "path": [
+        "break 2 bond(s)",
+        "H shift +2",
+        "Cl"
+      ],
+      "broken_bonds": 2,
+      "h_shift": 2,
+      "adduct": "Cl",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        0,
+        1,
+        4,
+        5,
+        6,
+        7
+      ],
+      "score": 0.22999999999999998
+    },
+    {
+      "formula": "C2H6K",
+      "counts": {
+        "C": 2,
+        "H": 6,
+        "K": 1
+      },
+      "exact_mass": 69.01065667978,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "PVDF",
+      "source_name": "Polyvinylidene Fluoride",
+      "generation_type": "adduct",
+      "path": [
+        "break 2 bond(s)",
+        "H shift +2",
+        "K"
+      ],
+      "broken_bonds": 2,
+      "h_shift": 2,
+      "adduct": "K",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        0,
+        1,
+        4,
+        5,
+        6,
+        7
+      ],
+      "score": 0.22999999999999998
+    },
+    {
+      "formula": "C2H6Na",
+      "counts": {
+        "C": 2,
+        "H": 6,
+        "Na": 1
+      },
+      "exact_mass": 53.03671947538,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "PVDF",
+      "source_name": "Polyvinylidene Fluoride",
+      "generation_type": "adduct",
+      "path": [
+        "break 2 bond(s)",
+        "H shift +2",
+        "Na"
+      ],
+      "broken_bonds": 2,
+      "h_shift": 2,
+      "adduct": "Na",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        0,
+        1,
+        4,
+        5,
+        6,
+        7
+      ],
+      "score": 0.22999999999999998
+    },
+    {
+      "formula": "C2H7O",
+      "counts": {
+        "C": 2,
+        "H": 7,
+        "O": 1
+      },
+      "exact_mass": 47.04968984518,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "PVDF",
+      "source_name": "Polyvinylidene Fluoride",
+      "generation_type": "adduct",
+      "path": [
+        "break 2 bond(s)",
+        "H shift +2",
+        "OH"
+      ],
+      "broken_bonds": 2,
+      "h_shift": 2,
+      "adduct": "OH",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        0,
+        1,
+        4,
+        5,
+        6,
+        7
+      ],
+      "score": 0.22999999999999998
+    },
+    {
+      "formula": "CH3ClF",
+      "counts": {
+        "C": 1,
+        "F": 1,
+        "H": 3,
+        "Cl": 1
+      },
+      "exact_mass": 68.99073094142,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "PVDF",
+      "source_name": "Polyvinylidene Fluoride",
+      "generation_type": "adduct",
+      "path": [
+        "break 2 bond(s)",
+        "H shift +2",
+        "Cl",
+        ";",
+        "break 2 bond(s)",
+        "H shift +2",
+        "Cl"
+      ],
+      "broken_bonds": 2,
+      "h_shift": 2,
+      "adduct": "Cl",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        1,
+        3,
+        7
+      ],
+      "score": 0.22999999999999998
+    },
+    {
+      "formula": "CH3FK",
+      "counts": {
+        "C": 1,
+        "F": 1,
+        "H": 3,
+        "K": 1
+      },
+      "exact_mass": 72.98558474582,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "PVDF",
+      "source_name": "Polyvinylidene Fluoride",
+      "generation_type": "adduct",
+      "path": [
+        "break 2 bond(s)",
+        "H shift +2",
+        "K",
+        ";",
+        "break 2 bond(s)",
+        "H shift +2",
+        "K"
+      ],
+      "broken_bonds": 2,
+      "h_shift": 2,
+      "adduct": "K",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        1,
+        3,
+        7
+      ],
+      "score": 0.22999999999999998
+    },
+    {
+      "formula": "CH3FNa",
+      "counts": {
+        "C": 1,
+        "F": 1,
+        "H": 3,
+        "Na": 1
+      },
+      "exact_mass": 57.011647541420004,
+      "ion_mode": "positive",
+      "charge": 1,
+      "source_compound_id": "PVDF",
+      "source_name": "Polyvinylidene Fluoride",
+      "generation_type": "adduct",
+      "path": [
+        "break 2 bond(s)",
+        "H shift +2",
+        "Na",
+        ";",
+        "break 2 bond(s)",
+        "H shift +2",
+        "Na"
+      ],
+      "broken_bonds": 2,
+      "h_shift": 2,
+      "adduct": "Na",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        1,
+        3,
+        7
+      ],
+      "score": 0.22999999999999998
+    },
+    {
+      "formula": "CH4FO",
+      "counts": {
+        "C": 1,
+        "F": 1,
+        "H": 4,
+        "O": 1
+      },
+      "exact_mass": 51.02461791122,
+      "ion_mode": "negative",
+      "charge": -1,
+      "source_compound_id": "PVDF",
+      "source_name": "Polyvinylidene Fluoride",
+      "generation_type": "adduct",
+      "path": [
+        "break 2 bond(s)",
+        "H shift +2",
+        "OH",
+        ";",
+        "break 2 bond(s)",
+        "H shift +2",
+        "OH"
+      ],
+      "broken_bonds": 2,
+      "h_shift": 2,
+      "adduct": "OH",
+      "neutral_losses": [],
+      "fragment_atom_indices": [
+        1,
+        3,
+        7
+      ],
+      "score": 0.22999999999999998
+    }
+  ]
+}

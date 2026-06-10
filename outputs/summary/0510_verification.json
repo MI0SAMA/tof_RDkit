@@ -1,0 +1,5978 @@
+{
+  "COC_pos": {
+    "material": "COC",
+    "polarity": "pos",
+    "compound_id": "COC",
+    "total_annotations": 81,
+    "matched": 9,
+    "unmatched": 72,
+    "hit_rate_pct": 11.1,
+    "intensity_coverage_pct": 15.3,
+    "network_size": 50,
+    "network_unique_formulas": 38,
+    "unmatched_formulas": [
+      {
+        "formula": "H",
+        "raw": "H+",
+        "mz": 1.0074,
+        "intensity": 32382.18
+      },
+      {
+        "formula": "C",
+        "raw": "C+",
+        "mz": 11.9992,
+        "intensity": 24972.31
+      },
+      {
+        "formula": "CH",
+        "raw": "CH+",
+        "mz": 13.0066,
+        "intensity": 29006.01
+      },
+      {
+        "formula": "CH2",
+        "raw": "CH_2+",
+        "mz": 14.0149,
+        "intensity": 32118.45
+      },
+      {
+        "formula": "CH3",
+        "raw": "CH_3+",
+        "mz": 15.0229,
+        "intensity": 32139.61
+      },
+      {
+        "formula": "Na",
+        "raw": "Na+",
+        "mz": 22.9896,
+        "intensity": 362830.63
+      },
+      {
+        "formula": "C2H2",
+        "raw": "C_2H_2+",
+        "mz": 26.0143,
+        "intensity": 58438.68
+      },
+      {
+        "formula": "C2H3",
+        "raw": "C_2H_3+",
+        "mz": 27.0234,
+        "intensity": 349429.51
+      },
+      {
+        "formula": "C2H4",
+        "raw": "C_2H_4+",
+        "mz": 28.0297,
+        "intensity": 30753.31
+      },
+      {
+        "formula": "C2H5",
+        "raw": "C_2H_5+",
+        "mz": 29.0402,
+        "intensity": 217041.99
+      },
+      {
+        "formula": "C3H2",
+        "raw": "C_3H_2+",
+        "mz": 38.0143,
+        "intensity": 52431.5
+      },
+      {
+        "formula": "K",
+        "raw": "K+",
+        "mz": 38.9635,
+        "intensity": 75783.35
+      },
+      {
+        "formula": "C3H3",
+        "raw": "C_3H_3+",
+        "mz": 39.0231,
+        "intensity": 535167.53
+      },
+      {
+        "formula": "C3H4",
+        "raw": "C_3H_4+",
+        "mz": 40.0298,
+        "intensity": 59030.27
+      },
+      {
+        "formula": "C3H5",
+        "raw": "C_3H_5+",
+        "mz": 41.04,
+        "intensity": 1006435.87
+      },
+      {
+        "formula": "C3H6",
+        "raw": "C_3H_6+",
+        "mz": 42.0438,
+        "intensity": 44012.8
+      },
+      {
+        "formula": "C3H7",
+        "raw": "C_3H_7+",
+        "mz": 43.0572,
+        "intensity": 100919.8
+      },
+      {
+        "formula": "C4H2",
+        "raw": "C_4H_2+",
+        "mz": 50.014,
+        "intensity": 78584.8
+      },
+      {
+        "formula": "C4H3",
+        "raw": "C_4H_3+",
+        "mz": 51.0227,
+        "intensity": 240804.92
+      },
+      {
+        "formula": "C4H4",
+        "raw": "C_4H_4+",
+        "mz": 52.03,
+        "intensity": 80456.08
+      },
+      {
+        "formula": "C4H5",
+        "raw": "C_4H_5+",
+        "mz": 53.0392,
+        "intensity": 365674.95
+      },
+      {
+        "formula": "C4H6",
+        "raw": "C_4H_6+",
+        "mz": 54.0453,
+        "intensity": 43764.53
+      },
+      {
+        "formula": "C4H7",
+        "raw": "C_4H_7+",
+        "mz": 55.0567,
+        "intensity": 473036.22
+      },
+      {
+        "formula": "C4H9",
+        "raw": "C_4H_9+",
+        "mz": 57.0737,
+        "intensity": 26307.65
+      },
+      {
+        "formula": "C5H2",
+        "raw": "C_5H_2+",
+        "mz": 62.0135,
+        "intensity": 48848.9
+      },
+      {
+        "formula": "C5H3",
+        "raw": "C_5H_3+",
+        "mz": 63.0221,
+        "intensity": 171861.97
+      },
+      {
+        "formula": "C5H4",
+        "raw": "C_5H_4+",
+        "mz": 64.0289,
+        "intensity": 32429.97
+      },
+      {
+        "formula": "C4HO",
+        "raw": "C_4HO+",
+        "mz": 65.0009,
+        "intensity": 59611.54
+      },
+      {
+        "formula": "C5H5",
+        "raw": "C_5H_5+",
+        "mz": 65.0384,
+        "intensity": 271793.82
+      },
+      {
+        "formula": "C5H6",
+        "raw": "C_5H_6+",
+        "mz": 66.0458,
+        "intensity": 109027.29
+      },
+      {
+        "formula": "C5H7",
+        "raw": "C_5H_7+",
+        "mz": 67.0569,
+        "intensity": 1029446.55
+      },
+      {
+        "formula": "C5H8",
+        "raw": "C_5H_8+",
+        "mz": 68.0605,
+        "intensity": 64899.86
+      },
+      {
+        "formula": "C5H9",
+        "raw": "C_5H_9+",
+        "mz": 69.0744,
+        "intensity": 82328.76
+      },
+      {
+        "formula": "C6H2",
+        "raw": "C_6H_2+",
+        "mz": 74.0128,
+        "intensity": 48838.55
+      },
+      {
+        "formula": "C6H3",
+        "raw": "C_6H_3+",
+        "mz": 75.0215,
+        "intensity": 65278.17
+      },
+      {
+        "formula": "C6H4",
+        "raw": "C_6H_4+",
+        "mz": 76.029,
+        "intensity": 28697.05
+      },
+      {
+        "formula": "C5HO",
+        "raw": "C_5HO+",
+        "mz": 76.9983,
+        "intensity": 152306.38
+      },
+      {
+        "formula": "C7H2",
+        "raw": "C_7H_2+",
+        "mz": 86.012,
+        "intensity": 29088.98
+      },
+      {
+        "formula": "C7H3",
+        "raw": "C_7H_3+",
+        "mz": 87.0207,
+        "intensity": 44868.99
+      },
+      {
+        "formula": "C7H5",
+        "raw": "C_7H_5+",
+        "mz": 89.0347,
+        "intensity": 48570.25
+      },
+      {
+        "formula": "C8H6",
+        "raw": "C_8H_6+",
+        "mz": 102.0431,
+        "intensity": 43968.45
+      },
+      {
+        "formula": "C8H7",
+        "raw": "C_8H_7+",
+        "mz": 103.0508,
+        "intensity": 82580.07
+      },
+      {
+        "formula": "C8H8",
+        "raw": "C_8H_8+",
+        "mz": 104.0602,
+        "intensity": 41928.81
+      },
+      {
+        "formula": "C8H9",
+        "raw": "C_8H_9+",
+        "mz": 105.0713,
+        "intensity": 173541.38
+      },
+      {
+        "formula": "C8H10",
+        "raw": "C_8H_10+",
+        "mz": 106.078,
+        "intensity": 30169.79
+      },
+      {
+        "formula": "C8H11",
+        "raw": "C_8H_11+",
+        "mz": 107.0924,
+        "intensity": 45996.71
+      },
+      {
+        "formula": "C8H13",
+        "raw": "C_8H_13+",
+        "mz": 109.1117,
+        "intensity": 30497.78
+      },
+      {
+        "formula": "C9H7",
+        "raw": "C_9H_7+",
+        "mz": 115.0494,
+        "intensity": 244811.27
+      },
+      {
+        "formula": "C9H8",
+        "raw": "C_9H_8+",
+        "mz": 116.0565,
+        "intensity": 64812.46
+      },
+      {
+        "formula": "C9H9",
+        "raw": "C_9H_9+",
+        "mz": 117.0651,
+        "intensity": 127030.88
+      },
+      {
+        "formula": "C9H11",
+        "raw": "C_9H_11+",
+        "mz": 119.0903,
+        "intensity": 41130.32
+      },
+      {
+        "formula": "C10H7",
+        "raw": "C_10H_7+",
+        "mz": 127.048,
+        "intensity": 54044.55
+      },
+      {
+        "formula": "C10H8",
+        "raw": "C_10H_8+",
+        "mz": 128.055,
+        "intensity": 180336.7
+      },
+      {
+        "formula": "C10H9",
+        "raw": "C_10H_9+",
+        "mz": 129.0638,
+        "intensity": 94340.16
+      },
+      {
+        "formula": "C10H11",
+        "raw": "C_10H_11+",
+        "mz": 131.0874,
+        "intensity": 38344.72
+      },
+      {
+        "formula": "Cs",
+        "raw": "Cs+",
+        "mz": 132.9041,
+        "intensity": 5397122.14
+      },
+      {
+        "formula": "C11H7",
+        "raw": "C_11H_7+",
+        "mz": 139.0464,
+        "intensity": 50494.51
+      },
+      {
+        "formula": "C11H9",
+        "raw": "C_11H_9+",
+        "mz": 141.0596,
+        "intensity": 92424.17
+      },
+      {
+        "formula": "C11H10",
+        "raw": "C_11H_10+",
+        "mz": 142.0681,
+        "intensity": 26562.67
+      },
+      {
+        "formula": "C9H8Cl",
+        "raw": "C_9H_8Cl+",
+        "mz": 151.0339,
+        "intensity": 30641.24
+      },
+      {
+        "formula": "C12H8",
+        "raw": "C_12H_8+",
+        "mz": 152.0492,
+        "intensity": 90072.16
+      },
+      {
+        "formula": "C12H9",
+        "raw": "C_12H_9+",
+        "mz": 153.0537,
+        "intensity": 59787.35
+      },
+      {
+        "formula": "C12H11",
+        "raw": "C_12H_11+",
+        "mz": 155.0804,
+        "intensity": 24366.48
+      },
+      {
+        "formula": "C10H8Cl",
+        "raw": "C_10H_8Cl+",
+        "mz": 163.039,
+        "intensity": 25805.34
+      },
+      {
+        "formula": "C13H9",
+        "raw": "C_13H_9+",
+        "mz": 165.0597,
+        "intensity": 93201.18
+      },
+      {
+        "formula": "C14H8",
+        "raw": "C_14H_8+",
+        "mz": 176.0448,
+        "intensity": 27381.64
+      },
+      {
+        "formula": "C14H10",
+        "raw": "C_14H_10+",
+        "mz": 178.0618,
+        "intensity": 44227.07
+      },
+      {
+        "formula": "C15H9",
+        "raw": "C_15H_9+",
+        "mz": 189.0513,
+        "intensity": 49516.34
+      },
+      {
+        "formula": "C16H10",
+        "raw": "C_16H_10+",
+        "mz": 202.0598,
+        "intensity": 40092.55
+      },
+      {
+        "formula": "C17H11",
+        "raw": "C_17H_11+",
+        "mz": 215.0674,
+        "intensity": 27127.73
+      },
+      {
+        "formula": "Cs2Cl",
+        "raw": "Cs_2Cl+",
+        "mz": 300.7684,
+        "intensity": 131005.01
+      },
+      {
+        "formula": "Cs2^37Cl",
+        "raw": "Cs_2^37Cl+",
+        "mz": 302.7653,
+        "intensity": 42952.91
+      }
+    ]
+  },
+  "COC_neg": {
+    "material": "COC",
+    "polarity": "neg",
+    "compound_id": "COC",
+    "total_annotations": 74,
+    "matched": 2,
+    "unmatched": 72,
+    "hit_rate_pct": 2.7,
+    "intensity_coverage_pct": 0.0,
+    "network_size": 50,
+    "network_unique_formulas": 38,
+    "unmatched_formulas": [
+      {
+        "formula": "H",
+        "raw": "H-",
+        "mz": 1.0087,
+        "intensity": 13927567.24
+      },
+      {
+        "formula": "C2H",
+        "raw": "C_2H-",
+        "mz": 25.0084,
+        "intensity": 3267255.43
+      },
+      {
+        "formula": "CH",
+        "raw": "CH-",
+        "mz": 13.0082,
+        "intensity": 1414723.85
+      },
+      {
+        "formula": "C2",
+        "raw": "C_2-",
+        "mz": 24.0002,
+        "intensity": 1029735.8
+      },
+      {
+        "formula": "C4H",
+        "raw": "C_4H-",
+        "mz": 49.0086,
+        "intensity": 527570.15
+      },
+      {
+        "formula": "C",
+        "raw": "C-",
+        "mz": 12.0006,
+        "intensity": 494963.34
+      },
+      {
+        "formula": "C6H",
+        "raw": "C_6H-",
+        "mz": 73.0084,
+        "intensity": 218623.26
+      },
+      {
+        "formula": "C4",
+        "raw": "C_4-",
+        "mz": 48.0003,
+        "intensity": 197248.35
+      },
+      {
+        "formula": "C3",
+        "raw": "C_3-",
+        "mz": 36.0004,
+        "intensity": 188927.89
+      },
+      {
+        "formula": "CH2",
+        "raw": "CH_2-",
+        "mz": 14.0162,
+        "intensity": 159483.28
+      },
+      {
+        "formula": "C3H",
+        "raw": "C_3H-",
+        "mz": 37.0082,
+        "intensity": 111667.77
+      },
+      {
+        "formula": "C8H",
+        "raw": "C_8H-",
+        "mz": 97.0085,
+        "intensity": 91448.12
+      },
+      {
+        "formula": "C^13CH",
+        "raw": "C^13CH-",
+        "mz": 26.0116,
+        "intensity": 80625.23
+      },
+      {
+        "formula": "C6",
+        "raw": "C_6-",
+        "mz": 72.0002,
+        "intensity": 78881.65
+      },
+      {
+        "formula": "C3H2",
+        "raw": "C_3H_2-",
+        "mz": 38.0162,
+        "intensity": 77555.84
+      },
+      {
+        "formula": "C5",
+        "raw": "C_5-",
+        "mz": 60.0005,
+        "intensity": 71296.29
+      },
+      {
+        "formula": "C5H2",
+        "raw": "C_5H_2-",
+        "mz": 62.0162,
+        "intensity": 59444.44
+      },
+      {
+        "formula": "C5H",
+        "raw": "C_5H-",
+        "mz": 61.0081,
+        "intensity": 56480.89
+      },
+      {
+        "formula": "O",
+        "raw": "O-",
+        "mz": 15.9953,
+        "intensity": 52881.03
+      },
+      {
+        "formula": "HO",
+        "raw": "OH-",
+        "mz": 17.0032,
+        "intensity": 52417.06
+      },
+      {
+        "formula": "C4H2",
+        "raw": "C_4H_2-",
+        "mz": 50.0132,
+        "intensity": 38199.3
+      },
+      {
+        "formula": "C4H3",
+        "raw": "C_4H_3-",
+        "mz": 51.0244,
+        "intensity": 35898.46
+      },
+      {
+        "formula": "C10H",
+        "raw": "C_10H-",
+        "mz": 121.0076,
+        "intensity": 35421.39
+      },
+      {
+        "formula": "C7H2",
+        "raw": "C_7H_2-",
+        "mz": 86.0159,
+        "intensity": 34530.85
+      },
+      {
+        "formula": "C7",
+        "raw": "C_7-",
+        "mz": 84.0002,
+        "intensity": 33835.36
+      },
+      {
+        "formula": "C8",
+        "raw": "C_8-",
+        "mz": 96.0,
+        "intensity": 31752.9
+      },
+      {
+        "formula": "C7H",
+        "raw": "C_7H-",
+        "mz": 85.0078,
+        "intensity": 31620.44
+      },
+      {
+        "formula": "CN",
+        "raw": "CN-",
+        "mz": 26.0026,
+        "intensity": 27142.35
+      },
+      {
+        "formula": "C5H3",
+        "raw": "C_5H_3-",
+        "mz": 63.0239,
+        "intensity": 25216.38
+      },
+      {
+        "formula": "C6H2",
+        "raw": "C_6H_2-",
+        "mz": 74.0133,
+        "intensity": 23502.1
+      },
+      {
+        "formula": "C6H3",
+        "raw": "C_6H_3-",
+        "mz": 75.0243,
+        "intensity": 23456.11
+      },
+      {
+        "formula": "Cl",
+        "raw": "Cl-",
+        "mz": 34.9693,
+        "intensity": 19344.73
+      },
+      {
+        "formula": "C9H",
+        "raw": "C_9H-",
+        "mz": 109.0071,
+        "intensity": 18522.91
+      },
+      {
+        "formula": "C3H3",
+        "raw": "C_3H_3-",
+        "mz": 39.0242,
+        "intensity": 18309.53
+      },
+      {
+        "formula": "C9H2",
+        "raw": "C_9H_2-",
+        "mz": 110.0151,
+        "intensity": 15666.1
+      },
+      {
+        "formula": "C2HO",
+        "raw": "C_2HO-",
+        "mz": 41.0038,
+        "intensity": 14972.35
+      },
+      {
+        "formula": "C5H5",
+        "raw": "C_5H_5-",
+        "mz": 65.0406,
+        "intensity": 13741.21
+      },
+      {
+        "formula": "C9",
+        "raw": "C_9-",
+        "mz": 107.9993,
+        "intensity": 13661.98
+      },
+      {
+        "formula": "C12H",
+        "raw": "C_12H-",
+        "mz": 145.0061,
+        "intensity": 13416.04
+      },
+      {
+        "formula": "C7H3",
+        "raw": "C_7H_3-",
+        "mz": 87.0234,
+        "intensity": 12659.83
+      },
+      {
+        "formula": "C8H2",
+        "raw": "C_8H_2-",
+        "mz": 98.0129,
+        "intensity": 11642.06
+      },
+      {
+        "formula": "C8H3",
+        "raw": "C_8H_3-",
+        "mz": 99.0242,
+        "intensity": 11067.89
+      },
+      {
+        "formula": "C11H",
+        "raw": "C_11H-",
+        "mz": 133.0055,
+        "intensity": 8390.78
+      },
+      {
+        "formula": "C10",
+        "raw": "C_10-",
+        "mz": 119.9982,
+        "intensity": 7853.01
+      },
+      {
+        "formula": "C11H2",
+        "raw": "C_11H_2-",
+        "mz": 134.0144,
+        "intensity": 7093.2
+      },
+      {
+        "formula": "C9H3",
+        "raw": "C_9H_3-",
+        "mz": 111.0226,
+        "intensity": 7026.24
+      },
+      {
+        "formula": "C7H5",
+        "raw": "C_7H_5-",
+        "mz": 89.0401,
+        "intensity": 6913.7
+      },
+      {
+        "formula": "C5H4",
+        "raw": "C_5H_4-",
+        "mz": 64.0314,
+        "intensity": 6292.33
+      },
+      {
+        "formula": "^37Cl",
+        "raw": "^37Cl-",
+        "mz": 36.9663,
+        "intensity": 6024.89
+      },
+      {
+        "formula": "C7H4",
+        "raw": "C_7H_4-",
+        "mz": 88.0315,
+        "intensity": 5407.88
+      },
+      {
+        "formula": "C10H2",
+        "raw": "C_10H_2-",
+        "mz": 122.0116,
+        "intensity": 5206.7
+      },
+      {
+        "formula": "C2O",
+        "raw": "C_2O-",
+        "mz": 39.9952,
+        "intensity": 4641.52
+      },
+      {
+        "formula": "C14H",
+        "raw": "C_14H-",
+        "mz": 169.0056,
+        "intensity": 4181.53
+      },
+      {
+        "formula": "C10H3",
+        "raw": "C_10H_3-",
+        "mz": 123.023,
+        "intensity": 3961.45
+      },
+      {
+        "formula": "C11H3",
+        "raw": "C_11H_3-",
+        "mz": 135.0211,
+        "intensity": 3946.43
+      },
+      {
+        "formula": "CNO",
+        "raw": "CNO-",
+        "mz": 41.9998,
+        "intensity": 3790.44
+      },
+      {
+        "formula": "C4HO",
+        "raw": "C_4HO-",
+        "mz": 65.0037,
+        "intensity": 3745.44
+      },
+      {
+        "formula": "C9H5",
+        "raw": "C_9H_5-",
+        "mz": 113.0397,
+        "intensity": 3737.51
+      },
+      {
+        "formula": "C11",
+        "raw": "C_11-",
+        "mz": 131.9983,
+        "intensity": 3610.47
+      },
+      {
+        "formula": "C9H4",
+        "raw": "C_9H_4-",
+        "mz": 112.031,
+        "intensity": 3408.35
+      },
+      {
+        "formula": "C13H",
+        "raw": "C_13H-",
+        "mz": 157.0038,
+        "intensity": 3379.34
+      },
+      {
+        "formula": "C12",
+        "raw": "C_12-",
+        "mz": 143.9962,
+        "intensity": 3376.52
+      },
+      {
+        "formula": "C8H5",
+        "raw": "C_8H_5-",
+        "mz": 101.0396,
+        "intensity": 3204.39
+      },
+      {
+        "formula": "C2H3O",
+        "raw": "C_2H_3O-",
+        "mz": 43.0198,
+        "intensity": 2969.36
+      },
+      {
+        "formula": "C13H2",
+        "raw": "C_13H_2-",
+        "mz": 158.0118,
+        "intensity": 2964.26
+      },
+      {
+        "formula": "C6H4",
+        "raw": "C_6H_4-",
+        "mz": 76.0298,
+        "intensity": 2779.3
+      },
+      {
+        "formula": "C2H3",
+        "raw": "C_2H_3-",
+        "mz": 27.0247,
+        "intensity": 2726.34
+      },
+      {
+        "formula": "C11H5",
+        "raw": "C_11H_5-",
+        "mz": 137.038,
+        "intensity": 2520.25
+      },
+      {
+        "formula": "CHO2",
+        "raw": "CHO_2-",
+        "mz": 44.9987,
+        "intensity": 2441.26
+      },
+      {
+        "formula": "F",
+        "raw": "F-",
+        "mz": 18.9985,
+        "intensity": 2234.16
+      },
+      {
+        "formula": "C12H2",
+        "raw": "C_12H_2-",
+        "mz": 146.0102,
+        "intensity": 2214.18
+      },
+      {
+        "formula": "C10H5",
+        "raw": "C_10H_5-",
+        "mz": 125.0383,
+        "intensity": 2022.17
+      }
+    ]
+  },
+  "EVA_pos": {
+    "material": "EVA",
+    "polarity": "pos",
+    "compound_id": "EVA",
+    "total_annotations": 74,
+    "matched": 21,
+    "unmatched": 53,
+    "hit_rate_pct": 28.4,
+    "intensity_coverage_pct": 48.1,
+    "network_size": 568,
+    "network_unique_formulas": 374,
+    "unmatched_formulas": [
+      {
+        "formula": "Na",
+        "raw": "Na+",
+        "mz": 22.9898,
+        "intensity": 187913.0
+      },
+      {
+        "formula": "K",
+        "raw": "K+",
+        "mz": 38.9636,
+        "intensity": 131248.0
+      },
+      {
+        "formula": "C4H3",
+        "raw": "C_4H_3+",
+        "mz": 51.0214,
+        "intensity": 138220.0
+      },
+      {
+        "formula": "C4H4",
+        "raw": "C_4H_4+",
+        "mz": 52.0285,
+        "intensity": 62473.0
+      },
+      {
+        "formula": "C5H3",
+        "raw": "C_5H_3+",
+        "mz": 63.0205,
+        "intensity": 89888.0
+      },
+      {
+        "formula": "C5H5",
+        "raw": "C_5H_5+",
+        "mz": 65.0367,
+        "intensity": 184089.0
+      },
+      {
+        "formula": "C5H6",
+        "raw": "C_5H_6+",
+        "mz": 66.0438,
+        "intensity": 64622.0
+      },
+      {
+        "formula": "C5H7",
+        "raw": "C_5H_7+",
+        "mz": 67.0551,
+        "intensity": 482917.0
+      },
+      {
+        "formula": "C5HO",
+        "raw": "C_5HO+",
+        "mz": 76.9963,
+        "intensity": 98894.0
+      },
+      {
+        "formula": "C6H5",
+        "raw": "C_6H_5+",
+        "mz": 77.0354,
+        "intensity": 282485.0
+      },
+      {
+        "formula": "C6H6",
+        "raw": "C_6H_6+",
+        "mz": 78.0428,
+        "intensity": 105484.0
+      },
+      {
+        "formula": "C6H7",
+        "raw": "C_6H_7+",
+        "mz": 79.0521,
+        "intensity": 292590.0
+      },
+      {
+        "formula": "C6H8",
+        "raw": "C_6H_8+",
+        "mz": 80.0596,
+        "intensity": 74165.0
+      },
+      {
+        "formula": "C6H9",
+        "raw": "C_6H_9+",
+        "mz": 81.0721,
+        "intensity": 395112.0
+      },
+      {
+        "formula": "C6H10",
+        "raw": "C_6H_10+",
+        "mz": 82.0769,
+        "intensity": 57238.0
+      },
+      {
+        "formula": "C6H11",
+        "raw": "C_6H_11+",
+        "mz": 83.0908,
+        "intensity": 221312.0
+      },
+      {
+        "formula": "C6H13",
+        "raw": "C_6H_13+",
+        "mz": 85.1076,
+        "intensity": 77745.0
+      },
+      {
+        "formula": "C7H7",
+        "raw": "C_7H_7+",
+        "mz": 91.0528,
+        "intensity": 521260.0
+      },
+      {
+        "formula": "C7H8",
+        "raw": "C_7H_8+",
+        "mz": 92.0571,
+        "intensity": 83549.0
+      },
+      {
+        "formula": "C7H9",
+        "raw": "C_7H_9+",
+        "mz": 93.0694,
+        "intensity": 174775.0
+      },
+      {
+        "formula": "C7H11",
+        "raw": "C_7H_11+",
+        "mz": 95.0896,
+        "intensity": 261251.0
+      },
+      {
+        "formula": "C7H13",
+        "raw": "C_7H_13+",
+        "mz": 97.1083,
+        "intensity": 136084.0
+      },
+      {
+        "formula": "C8H7",
+        "raw": "C_8H_7+",
+        "mz": 103.0483,
+        "intensity": 99909.0
+      },
+      {
+        "formula": "C8H9",
+        "raw": "C_8H_9+",
+        "mz": 105.0684,
+        "intensity": 223361.0
+      },
+      {
+        "formula": "C8H11",
+        "raw": "C_8H_11+",
+        "mz": 107.0857,
+        "intensity": 95481.0
+      },
+      {
+        "formula": "C8H13",
+        "raw": "C_8H_13+",
+        "mz": 109.1042,
+        "intensity": 117583.0
+      },
+      {
+        "formula": "C9H7",
+        "raw": "C_9H_7+",
+        "mz": 115.0472,
+        "intensity": 258712.0
+      },
+      {
+        "formula": "C9H8",
+        "raw": "C_9H_8+",
+        "mz": 116.0528,
+        "intensity": 78738.0
+      },
+      {
+        "formula": "C9H9",
+        "raw": "C_9H_9+",
+        "mz": 117.0658,
+        "intensity": 162369.0
+      },
+      {
+        "formula": "C9H11",
+        "raw": "C_9H_11+",
+        "mz": 119.0844,
+        "intensity": 76239.0
+      },
+      {
+        "formula": "C9H13",
+        "raw": "C_9H_13+",
+        "mz": 121.1026,
+        "intensity": 45377.0
+      },
+      {
+        "formula": "C9H15",
+        "raw": "C_9H_15+",
+        "mz": 123.1213,
+        "intensity": 46669.0
+      },
+      {
+        "formula": "C6H7O3",
+        "raw": "C_6H_7O_3+",
+        "mz": 127.0415,
+        "intensity": 76631.0
+      },
+      {
+        "formula": "C10H11",
+        "raw": "C_10H_11+",
+        "mz": 131.0831,
+        "intensity": 110319.0
+      },
+      {
+        "formula": "Cs",
+        "raw": "Cs+",
+        "mz": 132.9037,
+        "intensity": 175647.0
+      },
+      {
+        "formula": "C10H13",
+        "raw": "C_10H_13+",
+        "mz": 133.1004,
+        "intensity": 93948.0
+      },
+      {
+        "formula": "C7H7O3",
+        "raw": "C_7H_7O_3+",
+        "mz": 139.0427,
+        "intensity": 53500.0
+      },
+      {
+        "formula": "C7H9O3",
+        "raw": "C_7H_9O_3+",
+        "mz": 141.058,
+        "intensity": 157946.0
+      },
+      {
+        "formula": "C7H10O3",
+        "raw": "C_7H_10O_3+",
+        "mz": 142.0644,
+        "intensity": 63636.0
+      },
+      {
+        "formula": "C11H11",
+        "raw": "C_11H_11+",
+        "mz": 143.0797,
+        "intensity": 80623.0
+      },
+      {
+        "formula": "C11H13",
+        "raw": "C_11H_13+",
+        "mz": 145.098,
+        "intensity": 48808.0
+      },
+      {
+        "formula": "C8H8O3",
+        "raw": "C_8H_8O_3+",
+        "mz": 152.046,
+        "intensity": 109740.0
+      },
+      {
+        "formula": "C8H9O3",
+        "raw": "C_8H_9O_3+",
+        "mz": 153.0491,
+        "intensity": 99205.0
+      },
+      {
+        "formula": "C8H11O3",
+        "raw": "C_8H_11O_3+",
+        "mz": 155.0764,
+        "intensity": 88737.0
+      },
+      {
+        "formula": "C9H9O3",
+        "raw": "C_9H_9O_3+",
+        "mz": 165.0553,
+        "intensity": 154461.0
+      },
+      {
+        "formula": "C9H11O3",
+        "raw": "C_9H_11O_3+",
+        "mz": 167.0698,
+        "intensity": 63348.0
+      },
+      {
+        "formula": "C13H17",
+        "raw": "C_13H_17+",
+        "mz": 173.1329,
+        "intensity": 99772.0
+      },
+      {
+        "formula": "C10H10O3",
+        "raw": "C_10H_10O_3+",
+        "mz": 178.055,
+        "intensity": 101429.0
+      },
+      {
+        "formula": "C10H11O3",
+        "raw": "C_10H_11O_3+",
+        "mz": 179.0681,
+        "intensity": 64775.0
+      },
+      {
+        "formula": "C14H17",
+        "raw": "C_14H_17+",
+        "mz": 185.1244,
+        "intensity": 52803.0
+      },
+      {
+        "formula": "C11H9O3",
+        "raw": "C_11H_9O_3+",
+        "mz": 189.0447,
+        "intensity": 68891.0
+      },
+      {
+        "formula": "C11H11O3",
+        "raw": "C_11H_11O_3+",
+        "mz": 191.0609,
+        "intensity": 55237.0
+      },
+      {
+        "formula": "C12H10O3",
+        "raw": "C_12H_10O_3+",
+        "mz": 202.0519,
+        "intensity": 63417.0
+      }
+    ]
+  },
+  "EVA_neg": {
+    "material": "EVA",
+    "polarity": "neg",
+    "compound_id": "EVA",
+    "total_annotations": 60,
+    "matched": 20,
+    "unmatched": 40,
+    "hit_rate_pct": 33.3,
+    "intensity_coverage_pct": 75.2,
+    "network_size": 568,
+    "network_unique_formulas": 374,
+    "unmatched_formulas": [
+      {
+        "formula": "CN",
+        "raw": "CN-",
+        "mz": 26.0079,
+        "intensity": 821916.57
+      },
+      {
+        "formula": "Cl",
+        "raw": "Cl-",
+        "mz": 34.9735,
+        "intensity": 3083877.08
+      },
+      {
+        "formula": "C3",
+        "raw": "C_3-",
+        "mz": 36.0007,
+        "intensity": 225914.31
+      },
+      {
+        "formula": "^37Cl",
+        "raw": "^37Cl-",
+        "mz": 36.9697,
+        "intensity": 1014623.26
+      },
+      {
+        "formula": "C3H",
+        "raw": "C_3H-",
+        "mz": 37.009,
+        "intensity": 358830.43
+      },
+      {
+        "formula": "CNO",
+        "raw": "CNO-",
+        "mz": 42.0028,
+        "intensity": 158399.65
+      },
+      {
+        "formula": "C4",
+        "raw": "C_4-",
+        "mz": 48.0004,
+        "intensity": 205918.36
+      },
+      {
+        "formula": "C4H",
+        "raw": "C_4H-",
+        "mz": 49.0097,
+        "intensity": 1271828.64
+      },
+      {
+        "formula": "C4H2",
+        "raw": "C_4H_2-",
+        "mz": 50.0105,
+        "intensity": 246181.38
+      },
+      {
+        "formula": "C4H3",
+        "raw": "C_4H_3-",
+        "mz": 51.0247,
+        "intensity": 188239.71
+      },
+      {
+        "formula": "C5",
+        "raw": "C_5-",
+        "mz": 60.0026,
+        "intensity": 156006.35
+      },
+      {
+        "formula": "C5H",
+        "raw": "C_5H-",
+        "mz": 61.0079,
+        "intensity": 151713.59
+      },
+      {
+        "formula": "C5H2",
+        "raw": "C_5H_2-",
+        "mz": 62.0159,
+        "intensity": 207390.12
+      },
+      {
+        "formula": "C5H3",
+        "raw": "C_5H_3-",
+        "mz": 63.0225,
+        "intensity": 120606.72
+      },
+      {
+        "formula": "C5H4",
+        "raw": "C_5H_4-",
+        "mz": 64.0268,
+        "intensity": 51232.07
+      },
+      {
+        "formula": "C4HO",
+        "raw": "C_4HO-",
+        "mz": 65.0009,
+        "intensity": 50273.43
+      },
+      {
+        "formula": "C5H5",
+        "raw": "C_5H_5-",
+        "mz": 65.0378,
+        "intensity": 55993.86
+      },
+      {
+        "formula": "C3NO",
+        "raw": "C_3NO-",
+        "mz": 66.0043,
+        "intensity": 87713.88
+      },
+      {
+        "formula": "C6",
+        "raw": "C_6-",
+        "mz": 71.9997,
+        "intensity": 125870.37
+      },
+      {
+        "formula": "C6H",
+        "raw": "C_6H-",
+        "mz": 73.0081,
+        "intensity": 565340.58
+      },
+      {
+        "formula": "C6H2",
+        "raw": "C_6H_2-",
+        "mz": 74.009,
+        "intensity": 149525.31
+      },
+      {
+        "formula": "C6H3",
+        "raw": "C_6H_3-",
+        "mz": 75.0232,
+        "intensity": 102865.36
+      },
+      {
+        "formula": "C2KO",
+        "raw": "C_2OK-",
+        "mz": 78.9564,
+        "intensity": 535510.34
+      },
+      {
+        "formula": "O3S",
+        "raw": "SO_3-",
+        "mz": 79.9625,
+        "intensity": 121522.88
+      },
+      {
+        "formula": "C7",
+        "raw": "C_7-",
+        "mz": 83.999,
+        "intensity": 78422.83
+      },
+      {
+        "formula": "C7H2",
+        "raw": "C_7H_2-",
+        "mz": 86.0159,
+        "intensity": 120798.48
+      },
+      {
+        "formula": "C7H3",
+        "raw": "C_7H_3-",
+        "mz": 87.0207,
+        "intensity": 72278.55
+      },
+      {
+        "formula": "C8",
+        "raw": "C_8-",
+        "mz": 95.9974,
+        "intensity": 58527.81
+      },
+      {
+        "formula": "C8H",
+        "raw": "C_8H-",
+        "mz": 97.0092,
+        "intensity": 219375.45
+      },
+      {
+        "formula": "C8H2",
+        "raw": "C_8H_2-",
+        "mz": 98.0088,
+        "intensity": 84481.76
+      },
+      {
+        "formula": "C8H3",
+        "raw": "C_8H_3-",
+        "mz": 99.023,
+        "intensity": 57477.12
+      },
+      {
+        "formula": "C9",
+        "raw": "C_9-",
+        "mz": 107.9976,
+        "intensity": 36092.84
+      },
+      {
+        "formula": "C9H",
+        "raw": "C_9H-",
+        "mz": 109.0007,
+        "intensity": 55361.42
+      },
+      {
+        "formula": "C9H2",
+        "raw": "C_9H_2-",
+        "mz": 110.0116,
+        "intensity": 59965.36
+      },
+      {
+        "formula": "C9H3",
+        "raw": "C_9H_3-",
+        "mz": 111.0208,
+        "intensity": 42807.05
+      },
+      {
+        "formula": "C10H",
+        "raw": "C_10H-",
+        "mz": 121.0071,
+        "intensity": 92437.03
+      },
+      {
+        "formula": "C6H2O3",
+        "raw": "C_6H_2O_3-",
+        "mz": 122.006,
+        "intensity": 46736.95
+      },
+      {
+        "formula": "C12H",
+        "raw": "C_12H-",
+        "mz": 145.0028,
+        "intensity": 42040.35
+      },
+      {
+        "formula": "C15H23O6",
+        "raw": "C_15H_23O_6-",
+        "mz": 299.211,
+        "intensity": 193376.21
+      },
+      {
+        "formula": "C15H25O6",
+        "raw": "C_15H_25O_6-",
+        "mz": 301.2266,
+        "intensity": 147524.34
+      }
+    ]
+  },
+  "PDMS_pos": {
+    "material": "PDMS",
+    "polarity": "pos",
+    "compound_id": "PDMS",
+    "total_annotations": 128,
+    "matched": 27,
+    "unmatched": 101,
+    "hit_rate_pct": 21.1,
+    "intensity_coverage_pct": 22.1,
+    "network_size": 432,
+    "network_unique_formulas": 305,
+    "unmatched_formulas": [
+      {
+        "formula": "H",
+        "raw": "H+",
+        "mz": 1.0089,
+        "intensity": 21840.67
+      },
+      {
+        "formula": "C",
+        "raw": "C+",
+        "mz": 12.0021,
+        "intensity": 4801.34
+      },
+      {
+        "formula": "CH",
+        "raw": "CH+",
+        "mz": 13.0097,
+        "intensity": 9561.44
+      },
+      {
+        "formula": "CH2",
+        "raw": "CH_2+",
+        "mz": 14.0174,
+        "intensity": 28807.38
+      },
+      {
+        "formula": "CH3",
+        "raw": "CH_3+",
+        "mz": 15.0253,
+        "intensity": 57203.36
+      },
+      {
+        "formula": "Na",
+        "raw": "Na+",
+        "mz": 22.9923,
+        "intensity": 9552.95
+      },
+      {
+        "formula": "C2H",
+        "raw": "C_2H+",
+        "mz": 25.0079,
+        "intensity": 901.47
+      },
+      {
+        "formula": "C2H2",
+        "raw": "C_2H_2+",
+        "mz": 26.0159,
+        "intensity": 11073.6
+      },
+      {
+        "formula": "C2H3",
+        "raw": "C_2H_3+",
+        "mz": 27.0241,
+        "intensity": 25315.65
+      },
+      {
+        "formula": "Si",
+        "raw": "Si+",
+        "mz": 27.9781,
+        "intensity": 921112.61
+      },
+      {
+        "formula": "^29Si",
+        "raw": "^29Si+",
+        "mz": 28.9766,
+        "intensity": 41529.18
+      },
+      {
+        "formula": "HSi",
+        "raw": "SiH+",
+        "mz": 28.9852,
+        "intensity": 278696.61
+      },
+      {
+        "formula": "^30Si",
+        "raw": "^30Si+",
+        "mz": 29.9736,
+        "intensity": 27687.45
+      },
+      {
+        "formula": "^29SiH",
+        "raw": "^29SiH+",
+        "mz": 29.9839,
+        "intensity": 14984.03
+      },
+      {
+        "formula": "^30SiH",
+        "raw": "^30SiH+",
+        "mz": 30.9817,
+        "intensity": 10253.23
+      },
+      {
+        "formula": "^29SiH3",
+        "raw": "^29SiH_3+",
+        "mz": 32.0025,
+        "intensity": 1397.59
+      },
+      {
+        "formula": "C3H5",
+        "raw": "C_3H_5+",
+        "mz": 41.0406,
+        "intensity": 6279.86
+      },
+      {
+        "formula": "^29SiCH3",
+        "raw": "^29SiCH_3+",
+        "mz": 43.998,
+        "intensity": 32948.52
+      },
+      {
+        "formula": "CHO2",
+        "raw": "CHO_2+",
+        "mz": 44.9949,
+        "intensity": 41721.67
+      },
+      {
+        "formula": "^29SiHO",
+        "raw": "^29SiHO+",
+        "mz": 45.9761,
+        "intensity": 11076.54
+      },
+      {
+        "formula": "^29SiCH5",
+        "raw": "^29SiCH_5+",
+        "mz": 46.0179,
+        "intensity": 18052.71
+      },
+      {
+        "formula": "^30SiHO",
+        "raw": "^30SiHO+",
+        "mz": 46.9765,
+        "intensity": 5561.64
+      },
+      {
+        "formula": "^30SiCH5",
+        "raw": "^30SiCH_5+",
+        "mz": 47.0141,
+        "intensity": 9842.34
+      },
+      {
+        "formula": "^29SiH3O",
+        "raw": "^29SiH_3O+",
+        "mz": 47.9937,
+        "intensity": 1303.3
+      },
+      {
+        "formula": "C2HSi",
+        "raw": "SiC_2H+",
+        "mz": 52.9818,
+        "intensity": 12456.42
+      },
+      {
+        "formula": "C4H5",
+        "raw": "C_4H_5+",
+        "mz": 53.0393,
+        "intensity": 1050.21
+      },
+      {
+        "formula": "^29SiC2H7",
+        "raw": "^29SiC_2H_7+",
+        "mz": 60.033,
+        "intensity": 46347.13
+      },
+      {
+        "formula": "^30SiC2H7",
+        "raw": "^30SiC_2H_7+",
+        "mz": 61.0288,
+        "intensity": 22018.18
+      },
+      {
+        "formula": "C3H3Si",
+        "raw": "SiC_3H_3+",
+        "mz": 66.9968,
+        "intensity": 7876.27
+      },
+      {
+        "formula": "CHSi2",
+        "raw": "Si_2CH+",
+        "mz": 68.9559,
+        "intensity": 10682.76
+      },
+      {
+        "formula": "C3H5Si",
+        "raw": "SiC_3H_5+",
+        "mz": 69.0144,
+        "intensity": 15648.04
+      },
+      {
+        "formula": "C3H6Si",
+        "raw": "SiC_3H_6+",
+        "mz": 70.0171,
+        "intensity": 3973.21
+      },
+      {
+        "formula": "C3H7Si",
+        "raw": "SiC_3H_7+",
+        "mz": 71.0313,
+        "intensity": 30247.7
+      },
+      {
+        "formula": "OSi2",
+        "raw": "Si_2O+",
+        "mz": 71.9422,
+        "intensity": 14124.6
+      },
+      {
+        "formula": "C3H8Si",
+        "raw": "SiC_3H_8+",
+        "mz": 72.0358,
+        "intensity": 40195.95
+      },
+      {
+        "formula": "C3H9Si",
+        "raw": "SiC_3H_9+",
+        "mz": 73.059,
+        "intensity": 3416958.36
+      },
+      {
+        "formula": "C3H10Si",
+        "raw": "SiC_3H_10+",
+        "mz": 74.0523,
+        "intensity": 434463.48
+      },
+      {
+        "formula": "^30SiC3H9",
+        "raw": "^30SiC_3H_9+",
+        "mz": 75.0453,
+        "intensity": 258267.97
+      },
+      {
+        "formula": "^29SiC2H7O",
+        "raw": "^29SiC_2H_7O+",
+        "mz": 76.022,
+        "intensity": 21628.5
+      },
+      {
+        "formula": "^30SiC3H10",
+        "raw": "^30SiC_3H_10+",
+        "mz": 76.0456,
+        "intensity": 5473.26
+      },
+      {
+        "formula": "^30SiC2H7O",
+        "raw": "^30SiC_2H_7O+",
+        "mz": 77.0191,
+        "intensity": 11665.13
+      },
+      {
+        "formula": "C4H7Si",
+        "raw": "SiC_4H_7+",
+        "mz": 83.0283,
+        "intensity": 47143.04
+      },
+      {
+        "formula": "^29SiC4H7",
+        "raw": "^29SiC_4H_7+",
+        "mz": 84.0325,
+        "intensity": 6223.7
+      },
+      {
+        "formula": "C4H9Si",
+        "raw": "SiC_4H_9+",
+        "mz": 85.047,
+        "intensity": 48054.91
+      },
+      {
+        "formula": "C4H10Si",
+        "raw": "SiC_4H_10+",
+        "mz": 86.0507,
+        "intensity": 5477.84
+      },
+      {
+        "formula": "^29SiC4H9",
+        "raw": "^29SiC_4H_9+",
+        "mz": 86.0508,
+        "intensity": 5661.28
+      },
+      {
+        "formula": "CH3OSi2",
+        "raw": "Si_2CH_3O+",
+        "mz": 86.9632,
+        "intensity": 55326.84
+      },
+      {
+        "formula": "C4H11Si",
+        "raw": "SiC_4H_11+",
+        "mz": 87.0642,
+        "intensity": 6765.91
+      },
+      {
+        "formula": "CO3Si",
+        "raw": "SiCO_3+",
+        "mz": 87.9666,
+        "intensity": 11983.07
+      },
+      {
+        "formula": "HO2Si2",
+        "raw": "Si_2HO_2+",
+        "mz": 88.9417,
+        "intensity": 22240.41
+      },
+      {
+        "formula": "C5HSi",
+        "raw": "SiC_5H+",
+        "mz": 88.9807,
+        "intensity": 13660.55
+      },
+      {
+        "formula": "C3H9OSi",
+        "raw": "SiC_3H_9O+",
+        "mz": 89.0415,
+        "intensity": 9595.98
+      },
+      {
+        "formula": "C5H7Si",
+        "raw": "SiC_5H_7+",
+        "mz": 95.0283,
+        "intensity": 2539.32
+      },
+      {
+        "formula": "C5H8Si",
+        "raw": "SiC_5H_8+",
+        "mz": 96.0327,
+        "intensity": 1320.71
+      },
+      {
+        "formula": "C5H9Si",
+        "raw": "SiC_5H_9+",
+        "mz": 97.0433,
+        "intensity": 7897.16
+      },
+      {
+        "formula": "C5H10Si",
+        "raw": "SiC_5H_10+",
+        "mz": 98.0508,
+        "intensity": 1531.77
+      },
+      {
+        "formula": "^29SiSiC3H7",
+        "raw": "^29SiSiC_3H_7+",
+        "mz": 100.0029,
+        "intensity": 2676.84
+      },
+      {
+        "formula": "H3OSi3",
+        "raw": "Si_3H_3O+",
+        "mz": 102.9543,
+        "intensity": 30927.41
+      },
+      {
+        "formula": "H5OSi3",
+        "raw": "Si_3H_5O+",
+        "mz": 104.9705,
+        "intensity": 11610.98
+      },
+      {
+        "formula": "C6H5Si",
+        "raw": "SiC_6H_5+",
+        "mz": 105.0096,
+        "intensity": 9975.52
+      },
+      {
+        "formula": "C6H9Si",
+        "raw": "SiC_6H_9+",
+        "mz": 109.0443,
+        "intensity": 2144.49
+      },
+      {
+        "formula": "C4H7Si2",
+        "raw": "Si_2C_4H_7+",
+        "mz": 110.9987,
+        "intensity": 1982.62
+      },
+      {
+        "formula": "C3HO3Si",
+        "raw": "SiC_3HO_3+",
+        "mz": 112.9752,
+        "intensity": 4893.18
+      },
+      {
+        "formula": "C2H6Si3",
+        "raw": "Si_3C_2H_6+",
+        "mz": 113.98,
+        "intensity": 1605.74
+      },
+      {
+        "formula": "C4H6O2Si",
+        "raw": "SiC_4H_6O_2+",
+        "mz": 114.0171,
+        "intensity": 2318.0
+      },
+      {
+        "formula": "C2H7Si3",
+        "raw": "Si_3C_2H_7+",
+        "mz": 114.9888,
+        "intensity": 31718.06
+      },
+      {
+        "formula": "C4H7O2Si",
+        "raw": "SiC_4H_7O_2+",
+        "mz": 115.0305,
+        "intensity": 9316.93
+      },
+      {
+        "formula": "C2H8Si3",
+        "raw": "Si_3C_2H_8+",
+        "mz": 115.9931,
+        "intensity": 8837.66
+      },
+      {
+        "formula": "C6H3OSi",
+        "raw": "SiC_6H_3O+",
+        "mz": 118.9842,
+        "intensity": 42990.0
+      },
+      {
+        "formula": "C2H11Si3",
+        "raw": "Si_3C_2H_11+",
+        "mz": 119.0244,
+        "intensity": 38125.64
+      },
+      {
+        "formula": "C5H4Si2",
+        "raw": "Si_2C_5H_4+",
+        "mz": 119.9846,
+        "intensity": 5778.02
+      },
+      {
+        "formula": "C2H12Si3",
+        "raw": "Si_3C_2H_12+",
+        "mz": 120.0236,
+        "intensity": 5331.3
+      },
+      {
+        "formula": "C3H7Si3",
+        "raw": "Si_3C_3H_7+",
+        "mz": 126.9887,
+        "intensity": 4536.45
+      },
+      {
+        "formula": "C5H13Si2",
+        "raw": "Si_2C_5H_13+",
+        "mz": 129.0463,
+        "intensity": 13195.38
+      },
+      {
+        "formula": "C5H10O2Si",
+        "raw": "SiC_5H_10O_2+",
+        "mz": 130.0585,
+        "intensity": 4071.43
+      },
+      {
+        "formula": "C4H8O3Si",
+        "raw": "SiC_4H_8O_3+",
+        "mz": 132.0213,
+        "intensity": 17250.93
+      },
+      {
+        "formula": "C4H9O3Si",
+        "raw": "SiC_4H_9O_3+",
+        "mz": 133.0379,
+        "intensity": 186135.91
+      },
+      {
+        "formula": "C4H10O3Si",
+        "raw": "SiC_4H_10O_3+",
+        "mz": 134.0386,
+        "intensity": 28298.0
+      },
+      {
+        "formula": "C7H17OSi",
+        "raw": "SiC_7H_17O+",
+        "mz": 145.1039,
+        "intensity": 23772.92
+      },
+      {
+        "formula": "C5H15OSi2",
+        "raw": "Si_2C_5H_15O+",
+        "mz": 147.0633,
+        "intensity": 935941.47
+      },
+      {
+        "formula": "Si^29SiC5H15O",
+        "raw": "Si^29SiC_5H_15O+",
+        "mz": 148.0642,
+        "intensity": 198831.37
+      },
+      {
+        "formula": "Si^30SiC5H15O",
+        "raw": "Si^30SiC_5H_15O+",
+        "mz": 149.0566,
+        "intensity": 106845.32
+      },
+      {
+        "formula": "C6H13OSi2",
+        "raw": "Si_2C_6H_13O+",
+        "mz": 157.0343,
+        "intensity": 10628.15
+      },
+      {
+        "formula": "C2H5O3Si3",
+        "raw": "Si_3C_2H_5O_3+",
+        "mz": 160.9667,
+        "intensity": 14642.43
+      },
+      {
+        "formula": "C4H11O2Si3",
+        "raw": "Si_3C_4H_11O_2+",
+        "mz": 174.9802,
+        "intensity": 31643.32
+      },
+      {
+        "formula": "C3H9O3Si3",
+        "raw": "Si_3C_3H_9O_3+",
+        "mz": 176.9585,
+        "intensity": 72460.63
+      },
+      {
+        "formula": "C7H9Si3",
+        "raw": "Si_3C_7H_9+",
+        "mz": 177.0021,
+        "intensity": 11073.62
+      },
+      {
+        "formula": "C5H13O2Si3",
+        "raw": "Si_3C_5H_13O_2+",
+        "mz": 188.9929,
+        "intensity": 67296.96
+      },
+      {
+        "formula": "C4H11O3Si3",
+        "raw": "Si_3C_4H_11O_3+",
+        "mz": 191.0148,
+        "intensity": 50898.01
+      },
+      {
+        "formula": "C8H5O4Si",
+        "raw": "SiC_8H_5O_4+",
+        "mz": 192.9906,
+        "intensity": 78318.79
+      },
+      {
+        "formula": "C6H17O2Si3",
+        "raw": "Si_3C_6H_17O_2+",
+        "mz": 205.0312,
+        "intensity": 65869.26
+      },
+      {
+        "formula": "C5H15O3Si3",
+        "raw": "Si_3C_5H_15O_3+",
+        "mz": 207.0119,
+        "intensity": 350846.39
+      },
+      {
+        "formula": "C7H21O2Si3",
+        "raw": "Si_3C_7H_21O_2+",
+        "mz": 221.1089,
+        "intensity": 141683.85
+      },
+      {
+        "formula": "C5H15O5Si4",
+        "raw": "Si_4C_5H_15O_5+",
+        "mz": 266.9738,
+        "intensity": 53725.26
+      },
+      {
+        "formula": "C8H23O3Si4",
+        "raw": "Si_4C_8H_23O_3+",
+        "mz": 279.0557,
+        "intensity": 37171.02
+      },
+      {
+        "formula": "C7H21O4Si4",
+        "raw": "Si_4C_7H_21O_4+",
+        "mz": 281.028,
+        "intensity": 121520.84
+      },
+      {
+        "formula": "C5H15O6Si5",
+        "raw": "Si_5C_5H_15O_6+",
+        "mz": 310.9169,
+        "intensity": 15803.42
+      },
+      {
+        "formula": "C3H13O6Si6",
+        "raw": "Si_6C_3H_13O_6+",
+        "mz": 312.8959,
+        "intensity": 8198.17
+      },
+      {
+        "formula": "C7H19O5Si5",
+        "raw": "Si_5C_7H_19O_5+",
+        "mz": 322.9467,
+        "intensity": 41372.41
+      },
+      {
+        "formula": "C6H17O6Si5",
+        "raw": "Si_5C_6H_17O_6+",
+        "mz": 324.9255,
+        "intensity": 70112.92
+      },
+      {
+        "formula": "C4H15O6Si6",
+        "raw": "Si_6C_4H_15O_6+",
+        "mz": 326.9075,
+        "intensity": 48788.57
+      }
+    ]
+  },
+  "PDMS_neg": {
+    "material": "PDMS",
+    "polarity": "neg",
+    "compound_id": "PDMS",
+    "total_annotations": 123,
+    "matched": 27,
+    "unmatched": 96,
+    "hit_rate_pct": 22.0,
+    "intensity_coverage_pct": 12.8,
+    "network_size": 432,
+    "network_unique_formulas": 305,
+    "unmatched_formulas": [
+      {
+        "formula": "H",
+        "raw": "H-",
+        "mz": 1.0087,
+        "intensity": 8853899.36
+      },
+      {
+        "formula": "C",
+        "raw": "C-",
+        "mz": 12.0005,
+        "intensity": 420907.11
+      },
+      {
+        "formula": "CH",
+        "raw": "CH-",
+        "mz": 13.0087,
+        "intensity": 1369437.34
+      },
+      {
+        "formula": "CH2",
+        "raw": "CH_2-",
+        "mz": 14.0162,
+        "intensity": 419462.24
+      },
+      {
+        "formula": "CH3",
+        "raw": "CH_3-",
+        "mz": 15.0252,
+        "intensity": 46192.93
+      },
+      {
+        "formula": "O",
+        "raw": "O-",
+        "mz": 15.9965,
+        "intensity": 3350312.85
+      },
+      {
+        "formula": "HO",
+        "raw": "OH-",
+        "mz": 17.0038,
+        "intensity": 1679151.07
+      },
+      {
+        "formula": "H2O",
+        "raw": "H_2O-",
+        "mz": 17.9996,
+        "intensity": 6417.5
+      },
+      {
+        "formula": "C2",
+        "raw": "C_2-",
+        "mz": 24.0005,
+        "intensity": 237003.2
+      },
+      {
+        "formula": "C2H",
+        "raw": "C_2H-",
+        "mz": 25.0098,
+        "intensity": 1191408.57
+      },
+      {
+        "formula": "C^13CH",
+        "raw": "C^13CH-",
+        "mz": 26.0127,
+        "intensity": 38544.42
+      },
+      {
+        "formula": "C2H3",
+        "raw": "C_2H_3-",
+        "mz": 27.0255,
+        "intensity": 6314.35
+      },
+      {
+        "formula": "Si",
+        "raw": "Si-",
+        "mz": 27.9774,
+        "intensity": 296893.09
+      },
+      {
+        "formula": "HSi",
+        "raw": "SiH-",
+        "mz": 28.9853,
+        "intensity": 255300.26
+      },
+      {
+        "formula": "^30SiH",
+        "raw": "^30SiH-",
+        "mz": 30.982,
+        "intensity": 7116.83
+      },
+      {
+        "formula": "CH3O",
+        "raw": "CH_3O-",
+        "mz": 31.019,
+        "intensity": 12160.89
+      },
+      {
+        "formula": "O2",
+        "raw": "O_2-",
+        "mz": 31.9904,
+        "intensity": 14104.45
+      },
+      {
+        "formula": "Cl",
+        "raw": "Cl-",
+        "mz": 34.9712,
+        "intensity": 2553.06
+      },
+      {
+        "formula": "C3",
+        "raw": "C_3-",
+        "mz": 36.0007,
+        "intensity": 7674.58
+      },
+      {
+        "formula": "C3H",
+        "raw": "C_3H-",
+        "mz": 37.009,
+        "intensity": 8146.4
+      },
+      {
+        "formula": "C3H2",
+        "raw": "C_3H_2-",
+        "mz": 38.0182,
+        "intensity": 16385.71
+      },
+      {
+        "formula": "C3H3",
+        "raw": "C_3H_3-",
+        "mz": 39.0301,
+        "intensity": 32231.09
+      },
+      {
+        "formula": "C2HO",
+        "raw": "C_2HO-",
+        "mz": 41.0052,
+        "intensity": 44767.32
+      },
+      {
+        "formula": "^30SiCH",
+        "raw": "^30SiCH-",
+        "mz": 42.9814,
+        "intensity": 4870.7
+      },
+      {
+        "formula": "C2H3O",
+        "raw": "C_2H_3O-",
+        "mz": 43.0217,
+        "intensity": 17170.64
+      },
+      {
+        "formula": "N2O",
+        "raw": "N_2O-",
+        "mz": 44.0035,
+        "intensity": 8621.56
+      },
+      {
+        "formula": "^29SiHO",
+        "raw": "^29SiHO-",
+        "mz": 45.9802,
+        "intensity": 10943.55
+      },
+      {
+        "formula": "^30SiHO",
+        "raw": "^30SiHO-",
+        "mz": 46.9784,
+        "intensity": 3807.19
+      },
+      {
+        "formula": "C4",
+        "raw": "C_4-",
+        "mz": 48.0009,
+        "intensity": 1535.94
+      },
+      {
+        "formula": "C4H",
+        "raw": "C_4H-",
+        "mz": 49.0114,
+        "intensity": 17693.7
+      },
+      {
+        "formula": "C4H2",
+        "raw": "C_4H_2-",
+        "mz": 50.0163,
+        "intensity": 1610.97
+      },
+      {
+        "formula": "C4H3",
+        "raw": "C_4H_3-",
+        "mz": 51.0294,
+        "intensity": 7816.73
+      },
+      {
+        "formula": "C2Si",
+        "raw": "SiC_2-",
+        "mz": 51.9789,
+        "intensity": 11112.19
+      },
+      {
+        "formula": "C4H4",
+        "raw": "C_4H_4-",
+        "mz": 52.0314,
+        "intensity": 398.85
+      },
+      {
+        "formula": "C2HSi",
+        "raw": "SiC_2H-",
+        "mz": 52.9876,
+        "intensity": 16741.07
+      },
+      {
+        "formula": "Si2",
+        "raw": "Si_2-",
+        "mz": 55.9545,
+        "intensity": 4543.13
+      },
+      {
+        "formula": "^29SiC2H5",
+        "raw": "^29SiC_2H_5-",
+        "mz": 58.0191,
+        "intensity": 3994.15
+      },
+      {
+        "formula": "O2Si",
+        "raw": "SiO_2-",
+        "mz": 59.9685,
+        "intensity": 379935.42
+      },
+      {
+        "formula": "^29SiCH3O",
+        "raw": "^29SiCH_3O-",
+        "mz": 59.9965,
+        "intensity": 40218.89
+      },
+      {
+        "formula": "HO2Si",
+        "raw": "SiHO_2-",
+        "mz": 60.9775,
+        "intensity": 272335.33
+      },
+      {
+        "formula": "^30SiHO2",
+        "raw": "^30SiHO_2-",
+        "mz": 62.9761,
+        "intensity": 11066.79
+      },
+      {
+        "formula": "C5H3",
+        "raw": "C_5H_3-",
+        "mz": 63.0258,
+        "intensity": 3791.09
+      },
+      {
+        "formula": "C3Si",
+        "raw": "SiC_3-",
+        "mz": 63.9769,
+        "intensity": 2019.45
+      },
+      {
+        "formula": "C3HSi",
+        "raw": "SiC_3H-",
+        "mz": 64.9887,
+        "intensity": 15168.37
+      },
+      {
+        "formula": "C5H5",
+        "raw": "C_5H_5-",
+        "mz": 65.0454,
+        "intensity": 1194.55
+      },
+      {
+        "formula": "C3H2Si",
+        "raw": "SiC_3H_2-",
+        "mz": 65.9948,
+        "intensity": 4690.2
+      },
+      {
+        "formula": "C3H3Si",
+        "raw": "SiC_3H_3-",
+        "mz": 67.0046,
+        "intensity": 14812.44
+      },
+      {
+        "formula": "C3H5Si",
+        "raw": "SiC_3H_5-",
+        "mz": 69.0216,
+        "intensity": 8788.33
+      },
+      {
+        "formula": "C3H7Si",
+        "raw": "SiC_3H_7-",
+        "mz": 71.0369,
+        "intensity": 9211.68
+      },
+      {
+        "formula": "OSi2",
+        "raw": "Si_2O-",
+        "mz": 71.9505,
+        "intensity": 3127.45
+      },
+      {
+        "formula": "C6",
+        "raw": "C_6-",
+        "mz": 72.0042,
+        "intensity": 6750.43
+      },
+      {
+        "formula": "^29SiC3H7",
+        "raw": "^29SiC_3H_7-",
+        "mz": 72.0377,
+        "intensity": 779.26
+      },
+      {
+        "formula": "C6H2",
+        "raw": "C_6H_2-",
+        "mz": 74.016,
+        "intensity": 26363.15
+      },
+      {
+        "formula": "^29SiCH3O2",
+        "raw": "^29SiCH_3O_2-",
+        "mz": 75.9935,
+        "intensity": 56268.42
+      },
+      {
+        "formula": "C4HSi",
+        "raw": "SiC_4H-",
+        "mz": 76.9877,
+        "intensity": 89689.24
+      },
+      {
+        "formula": "C4H5Si",
+        "raw": "SiC_4H_5-",
+        "mz": 81.0212,
+        "intensity": 4069.02
+      },
+      {
+        "formula": "C3H3OSi",
+        "raw": "SiC_3H_3O-",
+        "mz": 82.997,
+        "intensity": 17046.3
+      },
+      {
+        "formula": "C4H7Si",
+        "raw": "SiC_4H_7-",
+        "mz": 83.0399,
+        "intensity": 3816.65
+      },
+      {
+        "formula": "C3H5OSi",
+        "raw": "SiC_3H_5O-",
+        "mz": 85.0145,
+        "intensity": 13103.06
+      },
+      {
+        "formula": "C3H7OSi",
+        "raw": "SiC_3H_7O-",
+        "mz": 87.032,
+        "intensity": 15025.91
+      },
+      {
+        "formula": "C3H8OSi",
+        "raw": "SiC_3H_8O-",
+        "mz": 88.0393,
+        "intensity": 4687.68
+      },
+      {
+        "formula": "C3H9OSi",
+        "raw": "SiC_3H_9O-",
+        "mz": 89.052,
+        "intensity": 168049.92
+      },
+      {
+        "formula": "C2H3OSi2",
+        "raw": "Si_2C_2H_3O-",
+        "mz": 98.9782,
+        "intensity": 21052.64
+      },
+      {
+        "formula": "C4H7OSi",
+        "raw": "SiC_4H_7O-",
+        "mz": 99.0314,
+        "intensity": 8951.05
+      },
+      {
+        "formula": "CHO2Si2",
+        "raw": "Si_2CHO_2-",
+        "mz": 100.9548,
+        "intensity": 63189.41
+      },
+      {
+        "formula": "C4H9OSi",
+        "raw": "SiC_4H_9O-",
+        "mz": 101.0501,
+        "intensity": 7823.49
+      },
+      {
+        "formula": "C3H9O2Si",
+        "raw": "SiC_3H_9O_2-",
+        "mz": 105.044,
+        "intensity": 6074.19
+      },
+      {
+        "formula": "^29SiC3H9O2",
+        "raw": "^29SiC_3H_9O_2-",
+        "mz": 106.0438,
+        "intensity": 575.24
+      },
+      {
+        "formula": "C6HOSi",
+        "raw": "SiC_6HO-",
+        "mz": 116.9856,
+        "intensity": 25667.14
+      },
+      {
+        "formula": "CO5Si",
+        "raw": "SiCO_5-",
+        "mz": 119.9604,
+        "intensity": 24297.6
+      },
+      {
+        "formula": "CH6O2Si3",
+        "raw": "Si_3CH_6O_2-",
+        "mz": 133.9783,
+        "intensity": 10005.02
+      },
+      {
+        "formula": "C6H3O2Si",
+        "raw": "SiC_6H_3O_2-",
+        "mz": 134.9967,
+        "intensity": 74121.02
+      },
+      {
+        "formula": "^29SiC6H3O2",
+        "raw": "^29SiC_6H_3O_2-",
+        "mz": 135.9978,
+        "intensity": 9094.22
+      },
+      {
+        "formula": "C8H3OSi",
+        "raw": "SiC_8H_3O-",
+        "mz": 143.0018,
+        "intensity": 2199.09
+      },
+      {
+        "formula": "C8H5OSi",
+        "raw": "SiC_8H_5O-",
+        "mz": 145.0176,
+        "intensity": 4537.6
+      },
+      {
+        "formula": "C8H7OSi",
+        "raw": "SiC_8H_7O-",
+        "mz": 147.0359,
+        "intensity": 44694.72
+      },
+      {
+        "formula": "C3H10O2Si3",
+        "raw": "Si_3C_3H_10O_2-",
+        "mz": 162.0068,
+        "intensity": 1631.29
+      },
+      {
+        "formula": "C5H14O2Si2",
+        "raw": "Si_2C_5H_14O_2-",
+        "mz": 162.0563,
+        "intensity": 2272.12
+      },
+      {
+        "formula": "C2H5O4Si3",
+        "raw": "Si_3C_2H_5O_4-",
+        "mz": 176.9549,
+        "intensity": 18601.16
+      },
+      {
+        "formula": "C5H3O2Si3",
+        "raw": "Si_3C_5H_3O_2-",
+        "mz": 178.9424,
+        "intensity": 20119.04
+      },
+      {
+        "formula": "C3H7O4Si3",
+        "raw": "Si_3C_3H_7O_4-",
+        "mz": 190.9715,
+        "intensity": 13071.99
+      },
+      {
+        "formula": "C4H11O4Si3",
+        "raw": "Si_3C_4H_11O_4-",
+        "mz": 207.0028,
+        "intensity": 31308.03
+      },
+      {
+        "formula": "C4H13O4Si3",
+        "raw": "Si_3C_4H_13O_4-",
+        "mz": 209.0093,
+        "intensity": 50735.4
+      },
+      {
+        "formula": "C6H17O3Si3",
+        "raw": "Si_3C_6H_17O_3-",
+        "mz": 221.0553,
+        "intensity": 33371.88
+      },
+      {
+        "formula": "C5H15O4Si3",
+        "raw": "Si_3C_5H_15O_4-",
+        "mz": 223.039,
+        "intensity": 189203.31
+      },
+      {
+        "formula": "C4H15O5Si3",
+        "raw": "Si_3C_4H_15O_5-",
+        "mz": 227.0309,
+        "intensity": 1427.23
+      },
+      {
+        "formula": "C6H15O4Si3",
+        "raw": "Si_3C_6H_15O_4-",
+        "mz": 235.0362,
+        "intensity": 5015.4
+      },
+      {
+        "formula": "C6H17O4Si3",
+        "raw": "Si_3C_6H_17O_4-",
+        "mz": 237.0844,
+        "intensity": 14817.12
+      },
+      {
+        "formula": "C9H3O2Si4",
+        "raw": "Si_4C_9H_3O_2-",
+        "mz": 254.9388,
+        "intensity": 2870.34
+      },
+      {
+        "formula": "C6H17O5Si4",
+        "raw": "Si_4C_6H_17O_5-",
+        "mz": 281.0167,
+        "intensity": 7436.16
+      },
+      {
+        "formula": "C5H19O4Si5",
+        "raw": "Si_5C_5H_19O_4-",
+        "mz": 283.0135,
+        "intensity": 6770.79
+      },
+      {
+        "formula": "C8H23O4Si4",
+        "raw": "Si_4C_8H_23O_4-",
+        "mz": 295.0778,
+        "intensity": 6704.93
+      },
+      {
+        "formula": "C7H21O5Si4",
+        "raw": "Si_4C_7H_21O_5-",
+        "mz": 297.0592,
+        "intensity": 17128.49
+      },
+      {
+        "formula": "C9H27O4Si4",
+        "raw": "Si_4C_9H_27O_4-",
+        "mz": 311.0831,
+        "intensity": 1083.71
+      },
+      {
+        "formula": "C7H19O6Si5",
+        "raw": "Si_5C_7H_19O_6-",
+        "mz": 338.984,
+        "intensity": 5135.15
+      },
+      {
+        "formula": "C9H27O6Si5",
+        "raw": "Si_5C_9H_27O_6-",
+        "mz": 371.0811,
+        "intensity": 2834.22
+      }
+    ]
+  },
+  "PET_pos": {
+    "material": "PET",
+    "polarity": "pos",
+    "compound_id": "PET",
+    "total_annotations": 336,
+    "matched": 154,
+    "unmatched": 182,
+    "hit_rate_pct": 45.8,
+    "intensity_coverage_pct": 51.9,
+    "network_size": 1147,
+    "network_unique_formulas": 744,
+    "unmatched_formulas": [
+      {
+        "formula": "^13CH3",
+        "raw": "^13CH_3+",
+        "mz": 16.0276,
+        "intensity": 1540.4
+      },
+      {
+        "formula": "H4N",
+        "raw": "NH_4+",
+        "mz": 18.0351,
+        "intensity": 1929.21
+      },
+      {
+        "formula": "H3O",
+        "raw": "H_3O+",
+        "mz": 19.018,
+        "intensity": 12442.27
+      },
+      {
+        "formula": "Na",
+        "raw": "Na+",
+        "mz": 22.9898,
+        "intensity": 1332787.24
+      },
+      {
+        "formula": "Mg",
+        "raw": "Mg+",
+        "mz": 23.9837,
+        "intensity": 699.3
+      },
+      {
+        "formula": "HNa",
+        "raw": "NaH+",
+        "mz": 23.9972,
+        "intensity": 953.32
+      },
+      {
+        "formula": "Si",
+        "raw": "Si+",
+        "mz": 27.9744,
+        "intensity": 8116.76
+      },
+      {
+        "formula": "CH4N",
+        "raw": "CH_4N+",
+        "mz": 30.0336,
+        "intensity": 5221.37
+      },
+      {
+        "formula": "C^13CH5",
+        "raw": "C^13CH_5+",
+        "mz": 30.042,
+        "intensity": 7434.77
+      },
+      {
+        "formula": "^13CH3O",
+        "raw": "^13CH_3O+",
+        "mz": 32.0212,
+        "intensity": 920.61
+      },
+      {
+        "formula": "C3",
+        "raw": "C_3+",
+        "mz": 35.9967,
+        "intensity": 924.54
+      },
+      {
+        "formula": "C3H",
+        "raw": "C_3H+",
+        "mz": 37.0054,
+        "intensity": 23831.02
+      },
+      {
+        "formula": "C3H2",
+        "raw": "C_3H_2+",
+        "mz": 38.0133,
+        "intensity": 79951.31
+      },
+      {
+        "formula": "K",
+        "raw": "K+",
+        "mz": 38.9634,
+        "intensity": 1129058.16
+      },
+      {
+        "formula": "C3H3",
+        "raw": "C_3H_3+",
+        "mz": 39.0218,
+        "intensity": 411672.0
+      },
+      {
+        "formula": "Ca",
+        "raw": "Ca+",
+        "mz": 39.9608,
+        "intensity": 23204.4
+      },
+      {
+        "formula": "C3H4",
+        "raw": "C_3H_4+",
+        "mz": 40.0284,
+        "intensity": 73212.53
+      },
+      {
+        "formula": "^41K",
+        "raw": "^41K+",
+        "mz": 40.9606,
+        "intensity": 78787.04
+      },
+      {
+        "formula": "C3H5",
+        "raw": "C_3H_5+",
+        "mz": 41.0384,
+        "intensity": 617423.46
+      },
+      {
+        "formula": "C3H6",
+        "raw": "C_3H_6+",
+        "mz": 42.0435,
+        "intensity": 49331.49
+      },
+      {
+        "formula": "C3H7",
+        "raw": "C_3H_7+",
+        "mz": 43.0542,
+        "intensity": 185804.64
+      },
+      {
+        "formula": "^44Ca",
+        "raw": "^44Ca+",
+        "mz": 43.9532,
+        "intensity": 528.2
+      },
+      {
+        "formula": "C2^13CH7",
+        "raw": "C_2^13CH_7+",
+        "mz": 44.0545,
+        "intensity": 12789.01
+      },
+      {
+        "formula": "CHS",
+        "raw": "CHS+",
+        "mz": 44.9775,
+        "intensity": 20809.45
+      },
+      {
+        "formula": "Na2",
+        "raw": "Na_2+",
+        "mz": 45.978,
+        "intensity": 5844.47
+      },
+      {
+        "formula": "C4H",
+        "raw": "C_4H+",
+        "mz": 49.004,
+        "intensity": 6151.54
+      },
+      {
+        "formula": "C4H2",
+        "raw": "C_4H_2+",
+        "mz": 50.0133,
+        "intensity": 194702.41
+      },
+      {
+        "formula": "C4H3",
+        "raw": "C_4H_3+",
+        "mz": 51.0218,
+        "intensity": 509538.12
+      },
+      {
+        "formula": "C4H4",
+        "raw": "C_4H_4+",
+        "mz": 52.0285,
+        "intensity": 129186.45
+      },
+      {
+        "formula": "C4H5",
+        "raw": "C_4H_5+",
+        "mz": 53.0374,
+        "intensity": 253182.44
+      },
+      {
+        "formula": "C4H6",
+        "raw": "C_4H_6+",
+        "mz": 54.0436,
+        "intensity": 43827.71
+      },
+      {
+        "formula": "C4H7",
+        "raw": "C_4H_7+",
+        "mz": 55.054,
+        "intensity": 285139.42
+      },
+      {
+        "formula": "C4H8",
+        "raw": "C_4H_8+",
+        "mz": 56.0577,
+        "intensity": 27551.94
+      },
+      {
+        "formula": "CaHO",
+        "raw": "CaOH+",
+        "mz": 56.9632,
+        "intensity": 29481.86
+      },
+      {
+        "formula": "C4H9",
+        "raw": "C_4H_9+",
+        "mz": 57.0702,
+        "intensity": 63499.91
+      },
+      {
+        "formula": "C3H6O",
+        "raw": "C_3H_6O+",
+        "mz": 58.0391,
+        "intensity": 4399.44
+      },
+      {
+        "formula": "C4H10",
+        "raw": "C_4H_10+",
+        "mz": 58.067,
+        "intensity": 18337.85
+      },
+      {
+        "formula": "CH3OSi",
+        "raw": "SiCH_3O+",
+        "mz": 58.9924,
+        "intensity": 2469.43
+      },
+      {
+        "formula": "C2H7Si",
+        "raw": "SiC_2H_7+",
+        "mz": 59.0313,
+        "intensity": 11189.7
+      },
+      {
+        "formula": "C3H7O",
+        "raw": "C_3H_7O+",
+        "mz": 59.0486,
+        "intensity": 11983.97
+      },
+      {
+        "formula": "C3H8O",
+        "raw": "C_3H_8O+",
+        "mz": 60.0543,
+        "intensity": 7772.22
+      },
+      {
+        "formula": "C5H4",
+        "raw": "C_5H_4+",
+        "mz": 64.0277,
+        "intensity": 86764.32
+      },
+      {
+        "formula": "CKN",
+        "raw": "CNK+",
+        "mz": 64.9676,
+        "intensity": 19974.67
+      },
+      {
+        "formula": "C5H5",
+        "raw": "C_5H_5+",
+        "mz": 65.0379,
+        "intensity": 376053.28
+      },
+      {
+        "formula": "C4H2O",
+        "raw": "C_4H_2O+",
+        "mz": 66.0077,
+        "intensity": 20303.45
+      },
+      {
+        "formula": "C5H6",
+        "raw": "C_5H_6+",
+        "mz": 66.0431,
+        "intensity": 53190.84
+      },
+      {
+        "formula": "C4H3O",
+        "raw": "C_4H_3O+",
+        "mz": 67.0174,
+        "intensity": 31515.98
+      },
+      {
+        "formula": "C5H7",
+        "raw": "C_5H_7+",
+        "mz": 67.0534,
+        "intensity": 122791.91
+      },
+      {
+        "formula": "C4H4O",
+        "raw": "C_4H_4O+",
+        "mz": 68.0235,
+        "intensity": 15739.66
+      },
+      {
+        "formula": "C5H8",
+        "raw": "C_5H_8+",
+        "mz": 68.0583,
+        "intensity": 16213.45
+      },
+      {
+        "formula": "C4H5O",
+        "raw": "C_4H_5O+",
+        "mz": 69.0327,
+        "intensity": 24845.89
+      },
+      {
+        "formula": "C5H9",
+        "raw": "C_5H_9+",
+        "mz": 69.0701,
+        "intensity": 55744.97
+      },
+      {
+        "formula": "C4H6O",
+        "raw": "C_4H_6O+",
+        "mz": 70.0369,
+        "intensity": 4735.53
+      },
+      {
+        "formula": "C5H10",
+        "raw": "C_5H_10+",
+        "mz": 70.0725,
+        "intensity": 7428.91
+      },
+      {
+        "formula": "C4H7O",
+        "raw": "C_4H_7O+",
+        "mz": 71.0489,
+        "intensity": 9902.19
+      },
+      {
+        "formula": "C5H11",
+        "raw": "C_5H_11+",
+        "mz": 71.0873,
+        "intensity": 10568.37
+      },
+      {
+        "formula": "CH4Si2",
+        "raw": "Si_2CH_4+",
+        "mz": 71.9798,
+        "intensity": 3975.55
+      },
+      {
+        "formula": "C3H6NO",
+        "raw": "C_3H_6NO+",
+        "mz": 72.0443,
+        "intensity": 3799.35
+      },
+      {
+        "formula": "C4H10N",
+        "raw": "C_4H_10N+",
+        "mz": 72.0842,
+        "intensity": 1729.39
+      },
+      {
+        "formula": "H9O4",
+        "raw": "H_9O_4+",
+        "mz": 73.0478,
+        "intensity": 30793.25
+      },
+      {
+        "formula": "C5HO",
+        "raw": "C_5HO+",
+        "mz": 76.9988,
+        "intensity": 113918.51
+      },
+      {
+        "formula": "C5H2O",
+        "raw": "C_5H_2O+",
+        "mz": 78.004,
+        "intensity": 15237.47
+      },
+      {
+        "formula": "C5H3O",
+        "raw": "C_5H_3O+",
+        "mz": 79.0159,
+        "intensity": 56959.75
+      },
+      {
+        "formula": "C5H4O",
+        "raw": "C_5H_4O+",
+        "mz": 80.0216,
+        "intensity": 6403.19
+      },
+      {
+        "formula": "C6H8",
+        "raw": "C_6H_8+",
+        "mz": 80.0577,
+        "intensity": 16720.35
+      },
+      {
+        "formula": "C5H5O",
+        "raw": "C_5H_5O+",
+        "mz": 81.0323,
+        "intensity": 26645.38
+      },
+      {
+        "formula": "C6H9",
+        "raw": "C_6H_9+",
+        "mz": 81.0695,
+        "intensity": 45594.8
+      },
+      {
+        "formula": "C5H6O",
+        "raw": "C_5H_6O+",
+        "mz": 82.0375,
+        "intensity": 5314.95
+      },
+      {
+        "formula": "C6H10",
+        "raw": "C_6H_10+",
+        "mz": 82.0727,
+        "intensity": 5921.25
+      },
+      {
+        "formula": "C4H3O2",
+        "raw": "C_4H_3O_2+",
+        "mz": 83.0112,
+        "intensity": 4243.56
+      },
+      {
+        "formula": "C5H7O",
+        "raw": "C_5H_7O+",
+        "mz": 83.0482,
+        "intensity": 10320.89
+      },
+      {
+        "formula": "C6H11",
+        "raw": "C_6H_11+",
+        "mz": 83.0865,
+        "intensity": 10825.86
+      },
+      {
+        "formula": "C4H4O2",
+        "raw": "C_4H_4O_2+",
+        "mz": 84.0179,
+        "intensity": 1540.96
+      },
+      {
+        "formula": "C5H8O",
+        "raw": "C_5H_8O+",
+        "mz": 84.0521,
+        "intensity": 2649.16
+      },
+      {
+        "formula": "C6H12",
+        "raw": "C_6H_12+",
+        "mz": 84.0846,
+        "intensity": 2382.53
+      },
+      {
+        "formula": "C4H5O2",
+        "raw": "C_4H_5O_2+",
+        "mz": 85.0273,
+        "intensity": 3938.67
+      },
+      {
+        "formula": "C5H9O",
+        "raw": "C_5H_9O+",
+        "mz": 85.0649,
+        "intensity": 3053.55
+      },
+      {
+        "formula": "C6H13",
+        "raw": "C_6H_13+",
+        "mz": 85.103,
+        "intensity": 2790.07
+      },
+      {
+        "formula": "C5HO2",
+        "raw": "C_5HO_2+",
+        "mz": 92.9939,
+        "intensity": 5501.07
+      },
+      {
+        "formula": "C7H9",
+        "raw": "C_7H_9+",
+        "mz": 93.0688,
+        "intensity": 21562.48
+      },
+      {
+        "formula": "C7H10",
+        "raw": "C_7H_10+",
+        "mz": 94.072,
+        "intensity": 3886.86
+      },
+      {
+        "formula": "C5H3O2",
+        "raw": "C_5H_3O_2+",
+        "mz": 95.0111,
+        "intensity": 7540.69
+      },
+      {
+        "formula": "C7H11",
+        "raw": "C_7H_11+",
+        "mz": 95.0861,
+        "intensity": 16266.62
+      },
+      {
+        "formula": "S3",
+        "raw": "S_3+",
+        "mz": 95.9157,
+        "intensity": 1875.45
+      },
+      {
+        "formula": "C5H4O2",
+        "raw": "C_5H_4O_2+",
+        "mz": 96.0157,
+        "intensity": 1238.11
+      },
+      {
+        "formula": "C6H8O",
+        "raw": "C_6H_8O+",
+        "mz": 96.0506,
+        "intensity": 2094.27
+      },
+      {
+        "formula": "C7H12",
+        "raw": "C_7H_12+",
+        "mz": 96.0881,
+        "intensity": 2201.93
+      },
+      {
+        "formula": "C8H",
+        "raw": "C_8H+",
+        "mz": 97.0003,
+        "intensity": 5673.8
+      },
+      {
+        "formula": "C5H5O2",
+        "raw": "C_5H_5O_2+",
+        "mz": 97.0293,
+        "intensity": 10432.21
+      },
+      {
+        "formula": "C6H9O",
+        "raw": "C_6H_9O+",
+        "mz": 97.0647,
+        "intensity": 3275.72
+      },
+      {
+        "formula": "C7H13",
+        "raw": "C_7H_13+",
+        "mz": 97.1011,
+        "intensity": 3634.55
+      },
+      {
+        "formula": "C8H2",
+        "raw": "C_8H_2+",
+        "mz": 98.0099,
+        "intensity": 85316.13
+      },
+      {
+        "formula": "C8H3",
+        "raw": "C_8H_3+",
+        "mz": 99.0182,
+        "intensity": 72388.49
+      },
+      {
+        "formula": "C8H4",
+        "raw": "C_8H_4+",
+        "mz": 100.0255,
+        "intensity": 21778.51
+      },
+      {
+        "formula": "C8H5",
+        "raw": "C_8H_5+",
+        "mz": 101.0347,
+        "intensity": 59376.55
+      },
+      {
+        "formula": "C8H11",
+        "raw": "C_8H_11+",
+        "mz": 107.0852,
+        "intensity": 5929.53
+      },
+      {
+        "formula": "C6H4O2",
+        "raw": "C_6H_4O_2+",
+        "mz": 108.0173,
+        "intensity": 1789.61
+      },
+      {
+        "formula": "C8H12",
+        "raw": "C_8H_12+",
+        "mz": 108.0865,
+        "intensity": 1213.42
+      },
+      {
+        "formula": "C9H",
+        "raw": "C_9H+",
+        "mz": 109.0,
+        "intensity": 10767.51
+      },
+      {
+        "formula": "C6H5O2",
+        "raw": "C_6H_5O_2+",
+        "mz": 109.0276,
+        "intensity": 2693.37
+      },
+      {
+        "formula": "C7H9O",
+        "raw": "C_7H_9O+",
+        "mz": 109.0629,
+        "intensity": 2905.54
+      },
+      {
+        "formula": "C8H13",
+        "raw": "C_8H_13+",
+        "mz": 109.1017,
+        "intensity": 3530.58
+      },
+      {
+        "formula": "C5H2O3",
+        "raw": "C_5H_2O_3+",
+        "mz": 109.9789,
+        "intensity": 12164.45
+      },
+      {
+        "formula": "C9H2",
+        "raw": "C_9H_2+",
+        "mz": 110.0089,
+        "intensity": 51083.58
+      },
+      {
+        "formula": "C9H3",
+        "raw": "C_9H_3+",
+        "mz": 111.0174,
+        "intensity": 51919.73
+      },
+      {
+        "formula": "C9H4",
+        "raw": "C_9H_4+",
+        "mz": 112.0234,
+        "intensity": 11255.05
+      },
+      {
+        "formula": "HSi4",
+        "raw": "Si_4H+",
+        "mz": 112.9179,
+        "intensity": 7825.1
+      },
+      {
+        "formula": "C9H5",
+        "raw": "C_9H_5+",
+        "mz": 113.0329,
+        "intensity": 44269.01
+      },
+      {
+        "formula": "C9H6",
+        "raw": "C_9H_6+",
+        "mz": 114.0415,
+        "intensity": 40742.13
+      },
+      {
+        "formula": "C9H7",
+        "raw": "C_9H_7+",
+        "mz": 115.0495,
+        "intensity": 218183.94
+      },
+      {
+        "formula": "C9H8",
+        "raw": "C_9H_8+",
+        "mz": 116.0545,
+        "intensity": 39881.07
+      },
+      {
+        "formula": "C9H9",
+        "raw": "C_9H_9+",
+        "mz": 117.0656,
+        "intensity": 27890.7
+      },
+      {
+        "formula": "C9H11",
+        "raw": "C_9H_11+",
+        "mz": 119.0837,
+        "intensity": 6956.18
+      },
+      {
+        "formula": "C10H2",
+        "raw": "C_10H_2+",
+        "mz": 122.0077,
+        "intensity": 41462.32
+      },
+      {
+        "formula": "C10H3",
+        "raw": "C_10H_3+",
+        "mz": 123.0159,
+        "intensity": 24956.52
+      },
+      {
+        "formula": "C10H4",
+        "raw": "C_10H_4+",
+        "mz": 124.0236,
+        "intensity": 6420.68
+      },
+      {
+        "formula": "C9HO",
+        "raw": "C_9HO+",
+        "mz": 124.9901,
+        "intensity": 5122.06
+      },
+      {
+        "formula": "C10H5",
+        "raw": "C_10H_5+",
+        "mz": 125.0327,
+        "intensity": 14932.77
+      },
+      {
+        "formula": "C10H6",
+        "raw": "C_10H_6+",
+        "mz": 126.0402,
+        "intensity": 61439.02
+      },
+      {
+        "formula": "C10H7",
+        "raw": "C_10H_7+",
+        "mz": 127.0473,
+        "intensity": 70388.55
+      },
+      {
+        "formula": "C10H8",
+        "raw": "C_10H_8+",
+        "mz": 128.0557,
+        "intensity": 112257.35
+      },
+      {
+        "formula": "C10H9",
+        "raw": "C_10H_9+",
+        "mz": 129.0634,
+        "intensity": 36400.7
+      },
+      {
+        "formula": "C10H10",
+        "raw": "C_10H_10+",
+        "mz": 130.0702,
+        "intensity": 6201.1
+      },
+      {
+        "formula": "C10H11",
+        "raw": "C_10H_11+",
+        "mz": 131.0843,
+        "intensity": 7824.83
+      },
+      {
+        "formula": "Cs",
+        "raw": "Cs+",
+        "mz": 132.8999,
+        "intensity": 194144.93
+      },
+      {
+        "formula": "C11H2",
+        "raw": "C_11H_2+",
+        "mz": 134.0065,
+        "intensity": 23464.57
+      },
+      {
+        "formula": "C7H8O3",
+        "raw": "C_7H_8O_3+",
+        "mz": 140.0516,
+        "intensity": 20225.4
+      },
+      {
+        "formula": "C7H9O3",
+        "raw": "C_7H_9O_3+",
+        "mz": 141.058,
+        "intensity": 57084.2
+      },
+      {
+        "formula": "C6H6O4",
+        "raw": "C_6H_6O_4+",
+        "mz": 142.0375,
+        "intensity": 7524.5
+      },
+      {
+        "formula": "C7H10O3",
+        "raw": "C_7H_10O_3+",
+        "mz": 142.07,
+        "intensity": 9864.88
+      },
+      {
+        "formula": "C10H7O",
+        "raw": "C_10H_7O+",
+        "mz": 143.0464,
+        "intensity": 8472.24
+      },
+      {
+        "formula": "C7H11O3",
+        "raw": "C_7H_11O_3+",
+        "mz": 143.082,
+        "intensity": 5694.06
+      },
+      {
+        "formula": "C10H8O",
+        "raw": "C_10H_8O+",
+        "mz": 144.0527,
+        "intensity": 5426.86
+      },
+      {
+        "formula": "C10H9O",
+        "raw": "C_10H_9O+",
+        "mz": 145.0614,
+        "intensity": 6515.62
+      },
+      {
+        "formula": "C11H13",
+        "raw": "C_11H_13+",
+        "mz": 145.1013,
+        "intensity": 2604.67
+      },
+      {
+        "formula": "C8H10O3",
+        "raw": "C_8H_10O_3+",
+        "mz": 154.0551,
+        "intensity": 14532.82
+      },
+      {
+        "formula": "C7H7O4",
+        "raw": "C_7H_7O_4+",
+        "mz": 155.0422,
+        "intensity": 11364.93
+      },
+      {
+        "formula": "C8H11O3",
+        "raw": "C_8H_11O_3+",
+        "mz": 155.0801,
+        "intensity": 8424.88
+      },
+      {
+        "formula": "C7H8O4",
+        "raw": "C_7H_8O_4+",
+        "mz": 156.0518,
+        "intensity": 3199.23
+      },
+      {
+        "formula": "C11H9O",
+        "raw": "C_11H_9O+",
+        "mz": 157.0606,
+        "intensity": 5411.51
+      },
+      {
+        "formula": "C8H8O4",
+        "raw": "C_8H_8O_4+",
+        "mz": 168.0511,
+        "intensity": 5201.99
+      },
+      {
+        "formula": "C8H9O4",
+        "raw": "C_8H_9O_4+",
+        "mz": 169.0595,
+        "intensity": 4024.96
+      },
+      {
+        "formula": "C10H2O3",
+        "raw": "C_10H_2O_3+",
+        "mz": 170.0027,
+        "intensity": 9694.93
+      },
+      {
+        "formula": "C10H3O3",
+        "raw": "C_10H_3O_3+",
+        "mz": 171.0051,
+        "intensity": 6140.19
+      },
+      {
+        "formula": "C14H3",
+        "raw": "C_14H_3+",
+        "mz": 171.0397,
+        "intensity": 3255.14
+      },
+      {
+        "formula": "C8H11O4",
+        "raw": "C_8H_11O_4+",
+        "mz": 171.0764,
+        "intensity": 2067.03
+      },
+      {
+        "formula": "C11H2O3",
+        "raw": "C_11H_2O_3+",
+        "mz": 181.999,
+        "intensity": 5084.52
+      },
+      {
+        "formula": "C13H10O",
+        "raw": "C_13H_10O+",
+        "mz": 182.0666,
+        "intensity": 2770.67
+      },
+      {
+        "formula": "C10H2O4",
+        "raw": "C_10H_2O_4+",
+        "mz": 186.0108,
+        "intensity": 17080.74
+      },
+      {
+        "formula": "C10H3O4",
+        "raw": "C_10H_3O_4+",
+        "mz": 187.0304,
+        "intensity": 59879.23
+      },
+      {
+        "formula": "C8H8O6",
+        "raw": "C_8H_8O_6+",
+        "mz": 200.0359,
+        "intensity": 50490.11
+      },
+      {
+        "formula": "C8H9O6",
+        "raw": "C_8H_9O_6+",
+        "mz": 201.0335,
+        "intensity": 30674.09
+      },
+      {
+        "formula": "C8H10O6",
+        "raw": "C_8H_10O_6+",
+        "mz": 202.0555,
+        "intensity": 63081.94
+      },
+      {
+        "formula": "C8H11O6",
+        "raw": "C_8H_11O_6+",
+        "mz": 203.0582,
+        "intensity": 25633.51
+      },
+      {
+        "formula": "C9H7O6",
+        "raw": "C_9H_7O_6+",
+        "mz": 211.0258,
+        "intensity": 30676.99
+      },
+      {
+        "formula": "C9H9O6",
+        "raw": "C_9H_9O_6+",
+        "mz": 213.0474,
+        "intensity": 46106.63
+      },
+      {
+        "formula": "C9H11O6",
+        "raw": "C_9H_11O_6+",
+        "mz": 215.0647,
+        "intensity": 35033.79
+      },
+      {
+        "formula": "C11H7O6",
+        "raw": "C_11H_7O_6+",
+        "mz": 235.0327,
+        "intensity": 25799.87
+      },
+      {
+        "formula": "C12H8O6",
+        "raw": "C_12H_8O_6+",
+        "mz": 248.0211,
+        "intensity": 19358.54
+      },
+      {
+        "formula": "C12H10O6",
+        "raw": "C_12H_10O_6+",
+        "mz": 250.0409,
+        "intensity": 28796.35
+      },
+      {
+        "formula": "C13H7O6",
+        "raw": "C_13H_7O_6+",
+        "mz": 259.0129,
+        "intensity": 10027.92
+      },
+      {
+        "formula": "C13H9O6",
+        "raw": "C_13H_9O_6+",
+        "mz": 261.0262,
+        "intensity": 20566.37
+      },
+      {
+        "formula": "C13H11O6",
+        "raw": "C_13H_11O_6+",
+        "mz": 263.0524,
+        "intensity": 25384.49
+      },
+      {
+        "formula": "C14H8O6",
+        "raw": "C_14H_8O_6+",
+        "mz": 272.0171,
+        "intensity": 10155.66
+      },
+      {
+        "formula": "C14H10O6",
+        "raw": "C_14H_10O_6+",
+        "mz": 274.0324,
+        "intensity": 18479.73
+      },
+      {
+        "formula": "C14H12O6",
+        "raw": "C_14H_12O_6+",
+        "mz": 276.0569,
+        "intensity": 18244.43
+      },
+      {
+        "formula": "C15H11O6",
+        "raw": "C_15H_11O_6+",
+        "mz": 287.0422,
+        "intensity": 15999.61
+      },
+      {
+        "formula": "C15H13O6",
+        "raw": "C_15H_13O_6+",
+        "mz": 289.068,
+        "intensity": 11240.74
+      },
+      {
+        "formula": "C15H6O7",
+        "raw": "C_15H_6O_7+",
+        "mz": 298.0288,
+        "intensity": 11990.99
+      },
+      {
+        "formula": "C19H8O4",
+        "raw": "C_19H_8O_4+",
+        "mz": 300.0507,
+        "intensity": 12901.22
+      },
+      {
+        "formula": "C17H9O6",
+        "raw": "C_17H_9O_6+",
+        "mz": 309.0166,
+        "intensity": 6544.86
+      },
+      {
+        "formula": "C17H11O6",
+        "raw": "C_17H_11O_6+",
+        "mz": 311.0334,
+        "intensity": 11053.11
+      },
+      {
+        "formula": "C17H13O6",
+        "raw": "C_17H_13O_6+",
+        "mz": 313.0637,
+        "intensity": 10121.58
+      },
+      {
+        "formula": "C17H6O7",
+        "raw": "C_17H_6O_7+",
+        "mz": 322.0156,
+        "intensity": 4779.89
+      },
+      {
+        "formula": "C17H8O7",
+        "raw": "C_17H_8O_7+",
+        "mz": 324.042,
+        "intensity": 8547.34
+      },
+      {
+        "formula": "C17H10O7",
+        "raw": "C_17H_10O_7+",
+        "mz": 326.0664,
+        "intensity": 5382.95
+      },
+      {
+        "formula": "C19H11O6",
+        "raw": "C_19H_11O_6+",
+        "mz": 335.0262,
+        "intensity": 6070.55
+      },
+      {
+        "formula": "C18H9O7",
+        "raw": "C_18H_9O_7+",
+        "mz": 337.0542,
+        "intensity": 6820.42
+      },
+      {
+        "formula": "C18H13O7",
+        "raw": "C_18H_13O_7+",
+        "mz": 341.0723,
+        "intensity": 5356.82
+      },
+      {
+        "formula": "C23H10O4",
+        "raw": "C_23H_10O_4+",
+        "mz": 350.06,
+        "intensity": 4581.99
+      },
+      {
+        "formula": "C23H21O4",
+        "raw": "C_23H_21O_4+",
+        "mz": 361.0444,
+        "intensity": 4862.61
+      },
+      {
+        "formula": "C23H13O6",
+        "raw": "C_23H_13O_6+",
+        "mz": 385.072,
+        "intensity": 4577.16
+      }
+    ]
+  },
+  "PET_neg": {
+    "material": "PET",
+    "polarity": "neg",
+    "compound_id": "PET",
+    "total_annotations": 275,
+    "matched": 129,
+    "unmatched": 146,
+    "hit_rate_pct": 46.9,
+    "intensity_coverage_pct": 76.4,
+    "network_size": 1147,
+    "network_unique_formulas": 744,
+    "unmatched_formulas": [
+      {
+        "formula": "F",
+        "raw": "F-",
+        "mz": 18.9988,
+        "intensity": 5177.83
+      },
+      {
+        "formula": "CN",
+        "raw": "CN-",
+        "mz": 26.0038,
+        "intensity": 83684.51
+      },
+      {
+        "formula": "C^13CH",
+        "raw": "C^13CH-",
+        "mz": 26.0122,
+        "intensity": 67585.68
+      },
+      {
+        "formula": "S",
+        "raw": "S-",
+        "mz": 31.9728,
+        "intensity": 2566.05
+      },
+      {
+        "formula": "O2",
+        "raw": "O_2-",
+        "mz": 31.99,
+        "intensity": 15732.26
+      },
+      {
+        "formula": "HS",
+        "raw": "HS-",
+        "mz": 32.9812,
+        "intensity": 3753.42
+      },
+      {
+        "formula": "HO2",
+        "raw": "O_2H-",
+        "mz": 32.9978,
+        "intensity": 1390.73
+      },
+      {
+        "formula": "Cl",
+        "raw": "Cl-",
+        "mz": 34.9698,
+        "intensity": 81552.02
+      },
+      {
+        "formula": "C3",
+        "raw": "C_3-",
+        "mz": 36.0007,
+        "intensity": 228961.11
+      },
+      {
+        "formula": "^37Cl",
+        "raw": "^37Cl-",
+        "mz": 36.9668,
+        "intensity": 27777.02
+      },
+      {
+        "formula": "C3H",
+        "raw": "C_3H-",
+        "mz": 37.0086,
+        "intensity": 189878.09
+      },
+      {
+        "formula": "C3H2",
+        "raw": "C_3H_2-",
+        "mz": 38.0162,
+        "intensity": 100439.08
+      },
+      {
+        "formula": "C3H3",
+        "raw": "C_3H_3-",
+        "mz": 39.0251,
+        "intensity": 55928.07
+      },
+      {
+        "formula": "CNO",
+        "raw": "CNO-",
+        "mz": 41.9995,
+        "intensity": 43333.16
+      },
+      {
+        "formula": "CS",
+        "raw": "CS-",
+        "mz": 43.9725,
+        "intensity": 2259.72
+      },
+      {
+        "formula": "C4",
+        "raw": "C_4-",
+        "mz": 48.0005,
+        "intensity": 340211.47
+      },
+      {
+        "formula": "C4H",
+        "raw": "C_4H-",
+        "mz": 49.0094,
+        "intensity": 1384351.58
+      },
+      {
+        "formula": "C4H2",
+        "raw": "C_4H_2-",
+        "mz": 50.0131,
+        "intensity": 104558.49
+      },
+      {
+        "formula": "C4H3",
+        "raw": "C_4H_3-",
+        "mz": 51.0247,
+        "intensity": 92531.2
+      },
+      {
+        "formula": "C4H4",
+        "raw": "C_4H_4-",
+        "mz": 52.0281,
+        "intensity": 5749.93
+      },
+      {
+        "formula": "C4H5",
+        "raw": "C_4H_5-",
+        "mz": 53.0413,
+        "intensity": 5708.84
+      },
+      {
+        "formula": "C2HS",
+        "raw": "C_2HS-",
+        "mz": 56.9805,
+        "intensity": 2394.13
+      },
+      {
+        "formula": "COS",
+        "raw": "CSO-",
+        "mz": 59.9672,
+        "intensity": 28817.74
+      },
+      {
+        "formula": "CHOS",
+        "raw": "CHSO-",
+        "mz": 60.9752,
+        "intensity": 29117.43
+      },
+      {
+        "formula": "O2S",
+        "raw": "SO_2-",
+        "mz": 63.9632,
+        "intensity": 10681.54
+      },
+      {
+        "formula": "C4O",
+        "raw": "C_4O-",
+        "mz": 63.9955,
+        "intensity": 33845.37
+      },
+      {
+        "formula": "C5H4",
+        "raw": "C_5H_4-",
+        "mz": 64.0317,
+        "intensity": 29270.32
+      },
+      {
+        "formula": "C4HO",
+        "raw": "C_4HO-",
+        "mz": 65.0039,
+        "intensity": 281714.23
+      },
+      {
+        "formula": "C5H5",
+        "raw": "C_5H_5-",
+        "mz": 65.0409,
+        "intensity": 31220.01
+      },
+      {
+        "formula": "C4H2O",
+        "raw": "C_4H_2O-",
+        "mz": 66.0082,
+        "intensity": 29386.04
+      },
+      {
+        "formula": "C5H6",
+        "raw": "C_5H_6-",
+        "mz": 66.043,
+        "intensity": 2601.95
+      },
+      {
+        "formula": "C4H3O",
+        "raw": "C_4H_3O-",
+        "mz": 67.0198,
+        "intensity": 55255.25
+      },
+      {
+        "formula": "C4H5O",
+        "raw": "C_4H_5O-",
+        "mz": 69.0362,
+        "intensity": 9313.3
+      },
+      {
+        "formula": "C2H2ClN",
+        "raw": "C_2H_2NCl-",
+        "mz": 74.9908,
+        "intensity": 30685.78
+      },
+      {
+        "formula": "CHO2S",
+        "raw": "CHSO_2-",
+        "mz": 76.9701,
+        "intensity": 43956.83
+      },
+      {
+        "formula": "CClNO",
+        "raw": "CNOCl-",
+        "mz": 76.9701,
+        "intensity": 43956.83
+      },
+      {
+        "formula": "C5HO",
+        "raw": "C_5HO-",
+        "mz": 77.0035,
+        "intensity": 63377.17
+      },
+      {
+        "formula": "C5H2O",
+        "raw": "C_5H_2O-",
+        "mz": 78.0105,
+        "intensity": 13242.88
+      },
+      {
+        "formula": "C5H3O",
+        "raw": "C_5H_3O-",
+        "mz": 79.0196,
+        "intensity": 22953.51
+      },
+      {
+        "formula": "O3S",
+        "raw": "SO_3-",
+        "mz": 79.9582,
+        "intensity": 38588.58
+      },
+      {
+        "formula": "C4O2",
+        "raw": "C_4O_2-",
+        "mz": 79.9903,
+        "intensity": 3182.48
+      },
+      {
+        "formula": "C5H4O",
+        "raw": "C_5H_4O-",
+        "mz": 80.0255,
+        "intensity": 3095.7
+      },
+      {
+        "formula": "HO3S",
+        "raw": "SO_3H-",
+        "mz": 80.9666,
+        "intensity": 9815.59
+      },
+      {
+        "formula": "C4HO2",
+        "raw": "C_4HO_2-",
+        "mz": 80.9987,
+        "intensity": 3033.54
+      },
+      {
+        "formula": "C5H5O",
+        "raw": "C_5H_5O-",
+        "mz": 81.036,
+        "intensity": 5356.69
+      },
+      {
+        "formula": "H2OS2",
+        "raw": "S_2OH_2-",
+        "mz": 81.9564,
+        "intensity": 2649.62
+      },
+      {
+        "formula": "C4H2O2",
+        "raw": "C_4H_2O_2-",
+        "mz": 82.0063,
+        "intensity": 5513.89
+      },
+      {
+        "formula": "C4H3O2",
+        "raw": "C_4H_3O_2-",
+        "mz": 83.0153,
+        "intensity": 6580.14
+      },
+      {
+        "formula": "C5H7O",
+        "raw": "C_5H_7O-",
+        "mz": 83.0529,
+        "intensity": 1751.25
+      },
+      {
+        "formula": "C3ClN",
+        "raw": "C_3NCl-",
+        "mz": 84.9755,
+        "intensity": 7939.13
+      },
+      {
+        "formula": "C5HO2",
+        "raw": "C_5HO_2-",
+        "mz": 92.9981,
+        "intensity": 20073.37
+      },
+      {
+        "formula": "C5H2O2",
+        "raw": "C_5H_2O_2-",
+        "mz": 94.004,
+        "intensity": 2292.28
+      },
+      {
+        "formula": "C5H3O2",
+        "raw": "C_5H_3O_2-",
+        "mz": 95.0151,
+        "intensity": 10920.81
+      },
+      {
+        "formula": "O4S",
+        "raw": "SO_4-",
+        "mz": 95.9514,
+        "intensity": 11805.64
+      },
+      {
+        "formula": "C8",
+        "raw": "C_8-",
+        "mz": 95.9994,
+        "intensity": 118505.34
+      },
+      {
+        "formula": "HO4S",
+        "raw": "SO_4H-",
+        "mz": 96.9607,
+        "intensity": 31144.04
+      },
+      {
+        "formula": "C8H",
+        "raw": "C_8H-",
+        "mz": 97.008,
+        "intensity": 382118.85
+      },
+      {
+        "formula": "C8H2",
+        "raw": "C_8H_2-",
+        "mz": 98.0123,
+        "intensity": 49725.91
+      },
+      {
+        "formula": "ClO4",
+        "raw": "ClO_4-",
+        "mz": 98.952,
+        "intensity": 4665.85
+      },
+      {
+        "formula": "C8H3",
+        "raw": "C_8H_3-",
+        "mz": 99.0233,
+        "intensity": 52032.57
+      },
+      {
+        "formula": "C8H4",
+        "raw": "C_8H_4-",
+        "mz": 100.0318,
+        "intensity": 27016.99
+      },
+      {
+        "formula": "C8H5",
+        "raw": "C_8H_5-",
+        "mz": 101.0406,
+        "intensity": 40579.22
+      },
+      {
+        "formula": "C9",
+        "raw": "C_9-",
+        "mz": 107.9992,
+        "intensity": 60524.28
+      },
+      {
+        "formula": "C9H",
+        "raw": "C_9H-",
+        "mz": 109.007,
+        "intensity": 83246.71
+      },
+      {
+        "formula": "C9H2",
+        "raw": "C_9H_2-",
+        "mz": 110.015,
+        "intensity": 67018.86
+      },
+      {
+        "formula": "C9H3",
+        "raw": "C_9H_3-",
+        "mz": 111.0218,
+        "intensity": 33970.1
+      },
+      {
+        "formula": "C9H4",
+        "raw": "C_9H_4-",
+        "mz": 112.0308,
+        "intensity": 20464.62
+      },
+      {
+        "formula": "C9H5",
+        "raw": "C_9H_5-",
+        "mz": 113.0397,
+        "intensity": 25104.12
+      },
+      {
+        "formula": "C9H6",
+        "raw": "C_9H_6-",
+        "mz": 114.0478,
+        "intensity": 13634.94
+      },
+      {
+        "formula": "C9H7",
+        "raw": "C_9H_7-",
+        "mz": 115.0563,
+        "intensity": 10438.15
+      },
+      {
+        "formula": "C10",
+        "raw": "C_10-",
+        "mz": 119.9984,
+        "intensity": 41239.35
+      },
+      {
+        "formula": "C10H",
+        "raw": "C_10H-",
+        "mz": 121.005,
+        "intensity": 146711.47
+      },
+      {
+        "formula": "C10H2",
+        "raw": "C_10H_2-",
+        "mz": 122.0097,
+        "intensity": 24336.04
+      },
+      {
+        "formula": "C10H3",
+        "raw": "C_10H_3-",
+        "mz": 123.0243,
+        "intensity": 25584.49
+      },
+      {
+        "formula": "C10H4",
+        "raw": "C_10H_4-",
+        "mz": 124.0308,
+        "intensity": 11168.76
+      },
+      {
+        "formula": "C10H5",
+        "raw": "C_10H_5-",
+        "mz": 125.0393,
+        "intensity": 14515.29
+      },
+      {
+        "formula": "C9H2O",
+        "raw": "C_9H_2O-",
+        "mz": 126.0068,
+        "intensity": 2519.23
+      },
+      {
+        "formula": "C10H6",
+        "raw": "C_10H_6-",
+        "mz": 126.046,
+        "intensity": 3882.01
+      },
+      {
+        "formula": "C9H3O",
+        "raw": "C_9H_3O-",
+        "mz": 127.0183,
+        "intensity": 2840.11
+      },
+      {
+        "formula": "C10H7",
+        "raw": "C_10H_7-",
+        "mz": 127.0576,
+        "intensity": 4840.83
+      },
+      {
+        "formula": "C11",
+        "raw": "C_11-",
+        "mz": 131.9983,
+        "intensity": 16826.4
+      },
+      {
+        "formula": "C11H",
+        "raw": "C_11H-",
+        "mz": 133.0063,
+        "intensity": 38585.53
+      },
+      {
+        "formula": "C11H2",
+        "raw": "C_11H_2-",
+        "mz": 134.0147,
+        "intensity": 37839.7
+      },
+      {
+        "formula": "C3H3O2S2",
+        "raw": "C_3H_3S_2O_2-",
+        "mz": 134.9558,
+        "intensity": 6912.49
+      },
+      {
+        "formula": "C11H3",
+        "raw": "C_11H_3-",
+        "mz": 135.0194,
+        "intensity": 24653.5
+      },
+      {
+        "formula": "C11H4",
+        "raw": "C_11H_4-",
+        "mz": 136.0243,
+        "intensity": 27375.99
+      },
+      {
+        "formula": "C2HO3S2",
+        "raw": "C_2HS_2O_3-",
+        "mz": 136.9311,
+        "intensity": 8947.14
+      },
+      {
+        "formula": "C11H5",
+        "raw": "C_11H_5-",
+        "mz": 137.0344,
+        "intensity": 29275.9
+      },
+      {
+        "formula": "C11H6",
+        "raw": "C_11H_6-",
+        "mz": 138.0457,
+        "intensity": 10341.91
+      },
+      {
+        "formula": "C10H3O",
+        "raw": "C_10H_3O-",
+        "mz": 139.0179,
+        "intensity": 4928.93
+      },
+      {
+        "formula": "C11H7",
+        "raw": "C_11H_7-",
+        "mz": 139.0553,
+        "intensity": 6747.94
+      },
+      {
+        "formula": "C10H4O",
+        "raw": "C_10H_4O-",
+        "mz": 140.0268,
+        "intensity": 5077.93
+      },
+      {
+        "formula": "C11H8",
+        "raw": "C_11H_8-",
+        "mz": 140.0637,
+        "intensity": 2714.67
+      },
+      {
+        "formula": "C10H5O",
+        "raw": "C_10H_5O-",
+        "mz": 141.0341,
+        "intensity": 8754.13
+      },
+      {
+        "formula": "C10H6O",
+        "raw": "C_10H_6O-",
+        "mz": 142.0425,
+        "intensity": 6331.05
+      },
+      {
+        "formula": "C10H7O",
+        "raw": "C_10H_7O-",
+        "mz": 143.0509,
+        "intensity": 7646.76
+      },
+      {
+        "formula": "C12",
+        "raw": "C_12-",
+        "mz": 143.9972,
+        "intensity": 14027.35
+      },
+      {
+        "formula": "C12H",
+        "raw": "C_12H-",
+        "mz": 145.0065,
+        "intensity": 68569.83
+      },
+      {
+        "formula": "C12H2",
+        "raw": "C_12H_2-",
+        "mz": 146.0101,
+        "intensity": 11504.92
+      },
+      {
+        "formula": "C12H3",
+        "raw": "C_12H_3-",
+        "mz": 147.0134,
+        "intensity": 19635.25
+      },
+      {
+        "formula": "C12H4",
+        "raw": "C_12H_4-",
+        "mz": 148.0197,
+        "intensity": 11314.11
+      },
+      {
+        "formula": "C12H5",
+        "raw": "C_12H_5-",
+        "mz": 149.0276,
+        "intensity": 40783.2
+      },
+      {
+        "formula": "C12H6",
+        "raw": "C_12H_6-",
+        "mz": 150.0384,
+        "intensity": 11009.22
+      },
+      {
+        "formula": "C12H7",
+        "raw": "C_12H_7-",
+        "mz": 151.0532,
+        "intensity": 7268.51
+      },
+      {
+        "formula": "C12H8",
+        "raw": "C_12H_8-",
+        "mz": 152.0637,
+        "intensity": 29879.62
+      },
+      {
+        "formula": "C11H5O",
+        "raw": "C_11H_5O-",
+        "mz": 153.0331,
+        "intensity": 7891.16
+      },
+      {
+        "formula": "C12H9",
+        "raw": "C_12H_9-",
+        "mz": 153.0704,
+        "intensity": 6096.87
+      },
+      {
+        "formula": "C11H6O",
+        "raw": "C_11H_6O-",
+        "mz": 154.0412,
+        "intensity": 2860.99
+      },
+      {
+        "formula": "C11H7O",
+        "raw": "C_11H_7O-",
+        "mz": 155.0509,
+        "intensity": 3148.37
+      },
+      {
+        "formula": "C11H8O",
+        "raw": "C_11H_8O-",
+        "mz": 156.0593,
+        "intensity": 1364.49
+      },
+      {
+        "formula": "C8H8O4",
+        "raw": "C_8H_8O_4-",
+        "mz": 168.0589,
+        "intensity": 3909.02
+      },
+      {
+        "formula": "C10HO3",
+        "raw": "C_10HO_3-",
+        "mz": 169.0068,
+        "intensity": 25347.36
+      },
+      {
+        "formula": "C8H9O4",
+        "raw": "C_8H_9O_4-",
+        "mz": 169.0669,
+        "intensity": 2653.21
+      },
+      {
+        "formula": "C10H2O3",
+        "raw": "C_10H_2O_3-",
+        "mz": 170.0091,
+        "intensity": 4490.79
+      },
+      {
+        "formula": "C10H3O3",
+        "raw": "C_10H_3O_3-",
+        "mz": 171.0169,
+        "intensity": 3299.57
+      },
+      {
+        "formula": "C8H11O4",
+        "raw": "C_8H_11O_4-",
+        "mz": 171.0463,
+        "intensity": 3629.78
+      },
+      {
+        "formula": "C11HO3",
+        "raw": "C_11HO_3-",
+        "mz": 181.0074,
+        "intensity": 9707.34
+      },
+      {
+        "formula": "C11H2O3",
+        "raw": "C_11H_2O_3-",
+        "mz": 182.0139,
+        "intensity": 9249.75
+      },
+      {
+        "formula": "C11H3O3",
+        "raw": "C_11H_3O_3-",
+        "mz": 183.0182,
+        "intensity": 10407.19
+      },
+      {
+        "formula": "C11H4O3",
+        "raw": "C_11H_4O_3-",
+        "mz": 184.0264,
+        "intensity": 4461.75
+      },
+      {
+        "formula": "C10HO4",
+        "raw": "C_10HO_4-",
+        "mz": 185.0362,
+        "intensity": 8280.26
+      },
+      {
+        "formula": "C10H2O4",
+        "raw": "C_10H_2O_4-",
+        "mz": 186.0418,
+        "intensity": 4141.83
+      },
+      {
+        "formula": "C12HO3",
+        "raw": "C_12HO_3-",
+        "mz": 193.0045,
+        "intensity": 10435.4
+      },
+      {
+        "formula": "C13H7O2",
+        "raw": "C_13H_7O_2-",
+        "mz": 195.0439,
+        "intensity": 7689.52
+      },
+      {
+        "formula": "C11H16O3",
+        "raw": "C_11H_16O_3-",
+        "mz": 196.0506,
+        "intensity": 9929.38
+      },
+      {
+        "formula": "C12H6O3",
+        "raw": "C_12H_6O_3-",
+        "mz": 198.041,
+        "intensity": 2109.92
+      },
+      {
+        "formula": "C12H7O3",
+        "raw": "C_12H_7O_3-",
+        "mz": 199.0417,
+        "intensity": 3015.55
+      },
+      {
+        "formula": "C13H2O3",
+        "raw": "C_13H_2O_3-",
+        "mz": 206.0137,
+        "intensity": 4631.85
+      },
+      {
+        "formula": "C14H7O2",
+        "raw": "C_14H_7O_2-",
+        "mz": 207.0314,
+        "intensity": 15531.95
+      },
+      {
+        "formula": "C14H9O2",
+        "raw": "C_14H_9O_2-",
+        "mz": 209.0448,
+        "intensity": 13094.41
+      },
+      {
+        "formula": "C14H10O2",
+        "raw": "C_14H_10O_2-",
+        "mz": 210.0439,
+        "intensity": 4501.18
+      },
+      {
+        "formula": "C14H11O2",
+        "raw": "C_14H_11O_2-",
+        "mz": 211.0422,
+        "intensity": 4709.3
+      },
+      {
+        "formula": "C14H12O2",
+        "raw": "C_14H_12O_2-",
+        "mz": 212.047,
+        "intensity": 2260.04
+      },
+      {
+        "formula": "C11H5O5",
+        "raw": "C_11H_5O_5-",
+        "mz": 217.0043,
+        "intensity": 3097.27
+      },
+      {
+        "formula": "C15H5O2",
+        "raw": "C_15H_5O_2-",
+        "mz": 217.0627,
+        "intensity": 2396.05
+      },
+      {
+        "formula": "C14H5O3",
+        "raw": "C_14H_5O_3-",
+        "mz": 221.0451,
+        "intensity": 3879.5
+      },
+      {
+        "formula": "C14H8O3",
+        "raw": "C_14H_8O_3-",
+        "mz": 224.0415,
+        "intensity": 2691.85
+      },
+      {
+        "formula": "C14H9O3",
+        "raw": "C_14H_9O_3-",
+        "mz": 225.0498,
+        "intensity": 3982.87
+      },
+      {
+        "formula": "C15H5O3",
+        "raw": "C_15H_5O_3-",
+        "mz": 233.0328,
+        "intensity": 4207.84
+      },
+      {
+        "formula": "C15H7O3",
+        "raw": "C_15H_7O_3-",
+        "mz": 235.0443,
+        "intensity": 3416.47
+      },
+      {
+        "formula": "C15H8O3",
+        "raw": "C_15H_8O_3-",
+        "mz": 236.0445,
+        "intensity": 2051.41
+      },
+      {
+        "formula": "C15H9O3",
+        "raw": "C_15H_9O_3-",
+        "mz": 237.0482,
+        "intensity": 4127.96
+      },
+      {
+        "formula": "C20H9O4",
+        "raw": "C_20H_9O_4-",
+        "mz": 313.0716,
+        "intensity": 3039.06
+      },
+      {
+        "formula": "C21H9O6",
+        "raw": "C_21H_9O_6-",
+        "mz": 357.0635,
+        "intensity": 1833.83
+      },
+      {
+        "formula": "C24H41O9",
+        "raw": "C_24H_41O_9-",
+        "mz": 473.2728,
+        "intensity": 1020.13
+      },
+      {
+        "formula": "C26H19O9",
+        "raw": "C_26H_19O_9-",
+        "mz": 475.0961,
+        "intensity": 851.46
+      }
+    ]
+  },
+  "POMC_pos": {
+    "material": "POMC",
+    "polarity": "pos",
+    "compound_id": "POMC",
+    "total_annotations": 65,
+    "matched": 12,
+    "unmatched": 53,
+    "hit_rate_pct": 18.5,
+    "intensity_coverage_pct": 46.1,
+    "network_size": 110,
+    "network_unique_formulas": 84,
+    "unmatched_formulas": [
+      {
+        "formula": "H3O",
+        "raw": "H_3O+",
+        "mz": 19.0188,
+        "intensity": 68139.64
+      },
+      {
+        "formula": "Na",
+        "raw": "Na+",
+        "mz": 22.991,
+        "intensity": 694127.91
+      },
+      {
+        "formula": "K",
+        "raw": "K+",
+        "mz": 38.9626,
+        "intensity": 60954.82
+      },
+      {
+        "formula": "C3H3",
+        "raw": "C_3H_3+",
+        "mz": 39.0207,
+        "intensity": 223259.66
+      },
+      {
+        "formula": "C3H5",
+        "raw": "C_3H_5+",
+        "mz": 41.0372,
+        "intensity": 474074.59
+      },
+      {
+        "formula": "C3H6",
+        "raw": "C_3H_6+",
+        "mz": 42.043,
+        "intensity": 87883.77
+      },
+      {
+        "formula": "C3H7",
+        "raw": "C_3H_7+",
+        "mz": 43.0526,
+        "intensity": 282499.48
+      },
+      {
+        "formula": "C^13CH5O",
+        "raw": "C^13CH_5O+",
+        "mz": 46.0334,
+        "intensity": 67170.33
+      },
+      {
+        "formula": "C4H5",
+        "raw": "C_4H_5+",
+        "mz": 53.0342,
+        "intensity": 110417.62
+      },
+      {
+        "formula": "C3H3O",
+        "raw": "C_3H_3O+",
+        "mz": 55.0142,
+        "intensity": 131441.83
+      },
+      {
+        "formula": "C4H7",
+        "raw": "C_4H_7+",
+        "mz": 55.0511,
+        "intensity": 479920.68
+      },
+      {
+        "formula": "C4H8",
+        "raw": "C_4H_8+",
+        "mz": 56.0562,
+        "intensity": 87527.95
+      },
+      {
+        "formula": "C3H5O",
+        "raw": "C_3H_5O+",
+        "mz": 57.0293,
+        "intensity": 176968.1
+      },
+      {
+        "formula": "C4H9",
+        "raw": "C_4H_9+",
+        "mz": 57.0663,
+        "intensity": 168405.32
+      },
+      {
+        "formula": "C3H6O",
+        "raw": "C_3H_6O+",
+        "mz": 58.037,
+        "intensity": 108439.06
+      },
+      {
+        "formula": "C3H7O",
+        "raw": "C_3H_7O+",
+        "mz": 59.0445,
+        "intensity": 143823.93
+      },
+      {
+        "formula": "C^13CH3O2",
+        "raw": "C^13CH_3O_2+",
+        "mz": 60.0152,
+        "intensity": 85045.22
+      },
+      {
+        "formula": "HNa2O",
+        "raw": "Na_2OH+",
+        "mz": 62.9766,
+        "intensity": 102148.88
+      },
+      {
+        "formula": "C5H7",
+        "raw": "C_5H_7+",
+        "mz": 67.0487,
+        "intensity": 96998.45
+      },
+      {
+        "formula": "C5H9",
+        "raw": "C_5H_9+",
+        "mz": 69.0652,
+        "intensity": 100130.86
+      },
+      {
+        "formula": "C4H7O",
+        "raw": "C_4H_7O+",
+        "mz": 71.0433,
+        "intensity": 203677.17
+      },
+      {
+        "formula": "C3H5O2",
+        "raw": "C_3H_5O_2+",
+        "mz": 73.0214,
+        "intensity": 1052445.68
+      },
+      {
+        "formula": "C4H9O",
+        "raw": "C_4H_9O+",
+        "mz": 73.0552,
+        "intensity": 130492.24
+      },
+      {
+        "formula": "C3H6O2",
+        "raw": "C_3H_6O_2+",
+        "mz": 74.0251,
+        "intensity": 114140.47
+      },
+      {
+        "formula": "C3H7O2",
+        "raw": "C_3H_7O_2+",
+        "mz": 75.0348,
+        "intensity": 616682.68
+      },
+      {
+        "formula": "C5H9O",
+        "raw": "C_5H_9O+",
+        "mz": 85.053,
+        "intensity": 75044.39
+      },
+      {
+        "formula": "C4H7O2",
+        "raw": "C_4H_7O_2+",
+        "mz": 87.0316,
+        "intensity": 122114.3
+      },
+      {
+        "formula": "C4H8O2",
+        "raw": "C_4H_8O_2+",
+        "mz": 88.0388,
+        "intensity": 73696.3
+      },
+      {
+        "formula": "C3H5O3",
+        "raw": "C_3H_5O_3+",
+        "mz": 89.013,
+        "intensity": 1197406.81
+      },
+      {
+        "formula": "C3H6O3",
+        "raw": "C_3H_6O_3+",
+        "mz": 90.014,
+        "intensity": 68783.61
+      },
+      {
+        "formula": "C3H7O3",
+        "raw": "C_3H_7O_3+",
+        "mz": 91.0265,
+        "intensity": 383746.11
+      },
+      {
+        "formula": "C5H9O2",
+        "raw": "C_5H_9O_2+",
+        "mz": 101.0435,
+        "intensity": 80834.54
+      },
+      {
+        "formula": "C4H7O3",
+        "raw": "C_4H_7O_3+",
+        "mz": 103.024,
+        "intensity": 225004.06
+      },
+      {
+        "formula": "C4H8O3",
+        "raw": "C_4H_8O_3+",
+        "mz": 104.0301,
+        "intensity": 159977.41
+      },
+      {
+        "formula": "C4H9O3",
+        "raw": "C_4H_9O_3+",
+        "mz": 105.0391,
+        "intensity": 434828.55
+      },
+      {
+        "formula": "C4H7O4",
+        "raw": "C_4H_7O_4+",
+        "mz": 119.0135,
+        "intensity": 377098.54
+      },
+      {
+        "formula": "C4H9O4",
+        "raw": "C_4H_9O_4+",
+        "mz": 121.0281,
+        "intensity": 245999.04
+      },
+      {
+        "formula": "C6H11O3",
+        "raw": "C_6H_11O_3+",
+        "mz": 131.0476,
+        "intensity": 94419.71
+      },
+      {
+        "formula": "Cs",
+        "raw": "Cs+",
+        "mz": 132.8806,
+        "intensity": 193809.21
+      },
+      {
+        "formula": "C5H9O4",
+        "raw": "C_5H_9O_4+",
+        "mz": 133.0255,
+        "intensity": 88638.67
+      },
+      {
+        "formula": "C5H11O4",
+        "raw": "C_5H_11O_4+",
+        "mz": 135.0404,
+        "intensity": 209840.04
+      },
+      {
+        "formula": "C5H9O5",
+        "raw": "C_5H_9O_5+",
+        "mz": 149.0164,
+        "intensity": 303097.67
+      },
+      {
+        "formula": "C6H9O5",
+        "raw": "C_6H_9O_5+",
+        "mz": 161.0517,
+        "intensity": 78505.59
+      },
+      {
+        "formula": "C6H11O5",
+        "raw": "C_6H_11O_5+",
+        "mz": 163.0296,
+        "intensity": 90648.52
+      },
+      {
+        "formula": "C6H13O5",
+        "raw": "C_6H_13O_5+",
+        "mz": 165.0443,
+        "intensity": 145542.26
+      },
+      {
+        "formula": "C5H11O5",
+        "raw": "C_5H_11O_5+",
+        "mz": 151.0302,
+        "intensity": 151681.25
+      },
+      {
+        "formula": "C6H11O6",
+        "raw": "C_6H_11O_6+",
+        "mz": 179.0192,
+        "intensity": 285714.9
+      },
+      {
+        "formula": "C9H9O4",
+        "raw": "C_9H_9O_4+",
+        "mz": 181.0382,
+        "intensity": 75569.57
+      },
+      {
+        "formula": "C7H15O6",
+        "raw": "C_7H_15O_6+",
+        "mz": 195.0481,
+        "intensity": 82534.61
+      },
+      {
+        "formula": "C7H13O7",
+        "raw": "C_7H_13O_7+",
+        "mz": 209.0211,
+        "intensity": 158477.6
+      },
+      {
+        "formula": "C8H15O8",
+        "raw": "C_8H_15O_8+",
+        "mz": 239.0234,
+        "intensity": 111348.97
+      },
+      {
+        "formula": "C8H17O8",
+        "raw": "C_8H_17O_8+",
+        "mz": 241.0466,
+        "intensity": 76833.68
+      },
+      {
+        "formula": "C11H9O8",
+        "raw": "C_11H_9O_8+",
+        "mz": 269.0348,
+        "intensity": 72786.61
+      }
+    ]
+  },
+  "POMC_neg": {
+    "material": "POMC",
+    "polarity": "neg",
+    "compound_id": "POMC",
+    "total_annotations": 65,
+    "matched": 12,
+    "unmatched": 53,
+    "hit_rate_pct": 18.5,
+    "intensity_coverage_pct": 47.1,
+    "network_size": 110,
+    "network_unique_formulas": 84,
+    "unmatched_formulas": [
+      {
+        "formula": "C3H5O3",
+        "raw": "C_3H_5O_3+",
+        "mz": 89.02,
+        "intensity": 1742888.19
+      },
+      {
+        "formula": "C3H5O2",
+        "raw": "C_3H_5O_2+",
+        "mz": 73.0264,
+        "intensity": 1523651.75
+      },
+      {
+        "formula": "Na",
+        "raw": "Na+",
+        "mz": 22.9911,
+        "intensity": 1088304.08
+      },
+      {
+        "formula": "C3H7O2",
+        "raw": "C_3H_7O_2+",
+        "mz": 75.0401,
+        "intensity": 895490.07
+      },
+      {
+        "formula": "C3H5",
+        "raw": "C_3H_5+",
+        "mz": 41.038,
+        "intensity": 733211.35
+      },
+      {
+        "formula": "C4H7",
+        "raw": "C_4H_7+",
+        "mz": 55.0526,
+        "intensity": 724649.26
+      },
+      {
+        "formula": "C4H9O3",
+        "raw": "C_4H_9O_3+",
+        "mz": 105.048,
+        "intensity": 608418.19
+      },
+      {
+        "formula": "C3H7O3",
+        "raw": "C_3H_7O_3+",
+        "mz": 91.0338,
+        "intensity": 548017.18
+      },
+      {
+        "formula": "C4H7O4",
+        "raw": "C_4H_7O_4+",
+        "mz": 119.0236,
+        "intensity": 522665.67
+      },
+      {
+        "formula": "C3H7",
+        "raw": "C_3H_7+",
+        "mz": 43.0534,
+        "intensity": 413726.72
+      },
+      {
+        "formula": "C5H9O5",
+        "raw": "C_5H_9O_5+",
+        "mz": 149.03,
+        "intensity": 410693.84
+      },
+      {
+        "formula": "C6H11O6",
+        "raw": "C_6H_11O_6+",
+        "mz": 179.0363,
+        "intensity": 376741.76
+      },
+      {
+        "formula": "C3H3",
+        "raw": "C_3H_3+",
+        "mz": 39.0213,
+        "intensity": 340400.31
+      },
+      {
+        "formula": "C4H9O4",
+        "raw": "C_4H_9O_4+",
+        "mz": 121.0389,
+        "intensity": 333200.77
+      },
+      {
+        "formula": "C4H7O3",
+        "raw": "C_4H_7O_3+",
+        "mz": 103.0318,
+        "intensity": 319153.99
+      },
+      {
+        "formula": "C4H7O",
+        "raw": "C_4H_7O+",
+        "mz": 71.0453,
+        "intensity": 295923.35
+      },
+      {
+        "formula": "C5H11O4",
+        "raw": "C_5H_11O_4+",
+        "mz": 135.0525,
+        "intensity": 287506.44
+      },
+      {
+        "formula": "C3H5O",
+        "raw": "C_3H_5O+",
+        "mz": 57.0306,
+        "intensity": 272196.58
+      },
+      {
+        "formula": "C4H9",
+        "raw": "C_4H_9+",
+        "mz": 57.0676,
+        "intensity": 241179.82
+      },
+      {
+        "formula": "Cs",
+        "raw": "Cs+",
+        "mz": 132.8917,
+        "intensity": 240949.46
+      },
+      {
+        "formula": "C3H7O",
+        "raw": "C_3H_7O+",
+        "mz": 59.0459,
+        "intensity": 224722.07
+      },
+      {
+        "formula": "C4H8O3",
+        "raw": "C_4H_8O_3+",
+        "mz": 104.0386,
+        "intensity": 219411.97
+      },
+      {
+        "formula": "C7H13O7",
+        "raw": "C_7H_13O_7+",
+        "mz": 209.0415,
+        "intensity": 208838.87
+      },
+      {
+        "formula": "C5H11O5",
+        "raw": "C_5H_11O_5+",
+        "mz": 151.0445,
+        "intensity": 205604.94
+      },
+      {
+        "formula": "C3H3O",
+        "raw": "C_3H_3O+",
+        "mz": 55.0154,
+        "intensity": 204047.2
+      },
+      {
+        "formula": "C6H13O5",
+        "raw": "C_6H_13O_5+",
+        "mz": 165.0578,
+        "intensity": 201074.31
+      },
+      {
+        "formula": "C4H7O2",
+        "raw": "C_4H_7O_2+",
+        "mz": 87.0377,
+        "intensity": 182528.43
+      },
+      {
+        "formula": "C4H9O",
+        "raw": "C_4H_9O+",
+        "mz": 73.059,
+        "intensity": 181469.52
+      },
+      {
+        "formula": "C4H5",
+        "raw": "C_4H_5+",
+        "mz": 53.0354,
+        "intensity": 176173.96
+      },
+      {
+        "formula": "C3H6O2",
+        "raw": "C_3H_6O_2+",
+        "mz": 74.0298,
+        "intensity": 163316.43
+      },
+      {
+        "formula": "C3H6O",
+        "raw": "C_3H_6O+",
+        "mz": 58.0383,
+        "intensity": 161607.4
+      },
+      {
+        "formula": "C5H7",
+        "raw": "C_5H_7+",
+        "mz": 67.0505,
+        "intensity": 152258.01
+      },
+      {
+        "formula": "C8H15O8",
+        "raw": "C_8H_15O_8+",
+        "mz": 239.0474,
+        "intensity": 145977.12
+      },
+      {
+        "formula": "C5H9",
+        "raw": "C_5H_9+",
+        "mz": 69.0669,
+        "intensity": 144441.37
+      },
+      {
+        "formula": "HNa2O",
+        "raw": "Na_2OH+",
+        "mz": 62.9781,
+        "intensity": 133729.71
+      },
+      {
+        "formula": "C6H11O3",
+        "raw": "C_6H_11O_3+",
+        "mz": 131.0579,
+        "intensity": 133350.67
+      },
+      {
+        "formula": "C3H6",
+        "raw": "C_3H_6+",
+        "mz": 42.0436,
+        "intensity": 130861.6
+      },
+      {
+        "formula": "C^13CH3O2",
+        "raw": "C^13CH_3O_2+",
+        "mz": 60.0165,
+        "intensity": 124852.25
+      },
+      {
+        "formula": "C4H8",
+        "raw": "C_4H_8+",
+        "mz": 56.0575,
+        "intensity": 123860.7
+      },
+      {
+        "formula": "C6H11O5",
+        "raw": "C_6H_11O_5+",
+        "mz": 163.0425,
+        "intensity": 121584.52
+      },
+      {
+        "formula": "C5H9O4",
+        "raw": "C_5H_9O_4+",
+        "mz": 133.0355,
+        "intensity": 121465.44
+      },
+      {
+        "formula": "C5H9O2",
+        "raw": "C_5H_9O_2+",
+        "mz": 101.0511,
+        "intensity": 117207.72
+      },
+      {
+        "formula": "C7H15O6",
+        "raw": "C_7H_15O_6+",
+        "mz": 195.0636,
+        "intensity": 114960.64
+      },
+      {
+        "formula": "C5H9O",
+        "raw": "C_5H_9O+",
+        "mz": 85.0588,
+        "intensity": 109354.5
+      },
+      {
+        "formula": "C8H17O8",
+        "raw": "C_8H_17O_8+",
+        "mz": 241.0645,
+        "intensity": 108755.06
+      },
+      {
+        "formula": "C6H9O5",
+        "raw": "C_6H_9O_5+",
+        "mz": 161.0642,
+        "intensity": 106115.96
+      },
+      {
+        "formula": "H3O",
+        "raw": "H_3O+",
+        "mz": 19.0186,
+        "intensity": 105196.65
+      },
+      {
+        "formula": "C9H9O4",
+        "raw": "C_9H_9O_4+",
+        "mz": 181.0502,
+        "intensity": 105186.86
+      },
+      {
+        "formula": "C4H8O2",
+        "raw": "C_4H_8O_2+",
+        "mz": 88.0452,
+        "intensity": 105140.53
+      },
+      {
+        "formula": "C11H9O8",
+        "raw": "C_11H_9O_8+",
+        "mz": 269.0545,
+        "intensity": 104696.99
+      },
+      {
+        "formula": "K",
+        "raw": "K+",
+        "mz": 38.9627,
+        "intensity": 103412.02
+      },
+      {
+        "formula": "C^13CH5O",
+        "raw": "C^13CH_5O+",
+        "mz": 46.0342,
+        "intensity": 100692.56
+      },
+      {
+        "formula": "C3H6O3",
+        "raw": "C_3H_6O_3+",
+        "mz": 90.0206,
+        "intensity": 99020.58
+      }
+    ]
+  },
+  "POMH_pos": {
+    "material": "POMH",
+    "polarity": "pos",
+    "compound_id": "POMH",
+    "total_annotations": 63,
+    "matched": 14,
+    "unmatched": 49,
+    "hit_rate_pct": 22.2,
+    "intensity_coverage_pct": 49.3,
+    "network_size": 110,
+    "network_unique_formulas": 84,
+    "unmatched_formulas": [
+      {
+        "formula": "C3H5O3",
+        "raw": "C_3H_5O_3+",
+        "mz": 89.0197,
+        "intensity": 1854282.79
+      },
+      {
+        "formula": "C3H5O2",
+        "raw": "C_3H_5O_2+",
+        "mz": 73.0269,
+        "intensity": 1851281.0
+      },
+      {
+        "formula": "C3H7O2",
+        "raw": "C_3H_7O_2+",
+        "mz": 75.0398,
+        "intensity": 961400.25
+      },
+      {
+        "formula": "C4H9O3",
+        "raw": "C_4H_9O_3+",
+        "mz": 105.0468,
+        "intensity": 659599.95
+      },
+      {
+        "formula": "C4H7O4",
+        "raw": "C_4H_7O_4+",
+        "mz": 119.0233,
+        "intensity": 600645.42
+      },
+      {
+        "formula": "C3H7O3",
+        "raw": "C_3H_7O_3+",
+        "mz": 91.0323,
+        "intensity": 591621.0
+      },
+      {
+        "formula": "C5H9O5",
+        "raw": "C_5H_9O_5+",
+        "mz": 149.0294,
+        "intensity": 461331.07
+      },
+      {
+        "formula": "C6H11O6",
+        "raw": "C_6H_11O_6+",
+        "mz": 179.0353,
+        "intensity": 421160.44
+      },
+      {
+        "formula": "C4H7O3",
+        "raw": "C_4H_7O_3+",
+        "mz": 103.03,
+        "intensity": 422296.33
+      },
+      {
+        "formula": "C4H9O4",
+        "raw": "C_4H_9O_4+",
+        "mz": 121.0382,
+        "intensity": 406077.21
+      },
+      {
+        "formula": "C3H5",
+        "raw": "C_3H_5+",
+        "mz": 41.0373,
+        "intensity": 375292.73
+      },
+      {
+        "formula": "C5H11O4",
+        "raw": "C_5H_11O_4+",
+        "mz": 135.0515,
+        "intensity": 332843.74
+      },
+      {
+        "formula": "C4H8O3",
+        "raw": "C_4H_8O_3+",
+        "mz": 104.0372,
+        "intensity": 316291.57
+      },
+      {
+        "formula": "C6H9O8",
+        "raw": "C_6H_9O_8+",
+        "mz": 209.0409,
+        "intensity": 246106.92
+      },
+      {
+        "formula": "C5H11O5",
+        "raw": "C_5H_11O_5+",
+        "mz": 151.0438,
+        "intensity": 260993.32
+      },
+      {
+        "formula": "C4H7",
+        "raw": "C_4H_7+",
+        "mz": 55.0518,
+        "intensity": 258098.25
+      },
+      {
+        "formula": "C3H7",
+        "raw": "C_3H_7+",
+        "mz": 43.0532,
+        "intensity": 257623.01
+      },
+      {
+        "formula": "C6H13O5",
+        "raw": "C_6H_13O_5+",
+        "mz": 165.0572,
+        "intensity": 230180.44
+      },
+      {
+        "formula": "C3H5O",
+        "raw": "C_3H_5O+",
+        "mz": 57.03,
+        "intensity": 216962.22
+      },
+      {
+        "formula": "Cs",
+        "raw": "Cs+",
+        "mz": 132.8904,
+        "intensity": 199018.32
+      },
+      {
+        "formula": "C3H6O2",
+        "raw": "C_3H_6O_2+",
+        "mz": 74.0294,
+        "intensity": 206320.51
+      },
+      {
+        "formula": "C3H7O",
+        "raw": "C_3H_7O+",
+        "mz": 59.0453,
+        "intensity": 186318.5
+      },
+      {
+        "formula": "C3H3",
+        "raw": "C_3H_3+",
+        "mz": 39.0209,
+        "intensity": 193894.53
+      },
+      {
+        "formula": "C7H11O9",
+        "raw": "C_7H_11O_9+",
+        "mz": 239.0468,
+        "intensity": 177686.61
+      },
+      {
+        "formula": "C3H6O",
+        "raw": "C_3H_6O+",
+        "mz": 58.0383,
+        "intensity": 175726.41
+      },
+      {
+        "formula": "C4H7O2",
+        "raw": "C_4H_7O_2+",
+        "mz": 87.0368,
+        "intensity": 155947.22
+      },
+      {
+        "formula": "C7H13O9",
+        "raw": "C_7H_13O_9+",
+        "mz": 241.0636,
+        "intensity": 152662.16
+      },
+      {
+        "formula": "C9H9O4",
+        "raw": "C_9H_9O_4+",
+        "mz": 181.0496,
+        "intensity": 145779.86
+      },
+      {
+        "formula": "C3H3O",
+        "raw": "C_3H_3O+",
+        "mz": 55.0143,
+        "intensity": 144034.79
+      },
+      {
+        "formula": "C6H11O7",
+        "raw": "C_6H_11O_7+",
+        "mz": 195.0629,
+        "intensity": 144226.15
+      },
+      {
+        "formula": "C6H11O5",
+        "raw": "C_6H_11O_5+",
+        "mz": 163.0418,
+        "intensity": 144053.03
+      },
+      {
+        "formula": "C11H9O8",
+        "raw": "C_11H_9O_8+",
+        "mz": 269.0532,
+        "intensity": 142343.33
+      },
+      {
+        "formula": "C4H9",
+        "raw": "C_4H_9+",
+        "mz": 57.0677,
+        "intensity": 117191.74
+      },
+      {
+        "formula": "H3O",
+        "raw": "H_3O+",
+        "mz": 19.0185,
+        "intensity": 135118.47
+      },
+      {
+        "formula": "C5H9O4",
+        "raw": "C_5H_9O_4+",
+        "mz": 133.0347,
+        "intensity": 132328.95
+      },
+      {
+        "formula": "C4H8O2",
+        "raw": "C_4H_8O_2+",
+        "mz": 88.0446,
+        "intensity": 122425.88
+      },
+      {
+        "formula": "C5H10O4",
+        "raw": "C_5H_10O_4+",
+        "mz": 134.0436,
+        "intensity": 116264.08
+      },
+      {
+        "formula": "C3H6O3",
+        "raw": "C_3H_6O_3+",
+        "mz": 90.0197,
+        "intensity": 115994.46
+      },
+      {
+        "formula": "C7H15O7",
+        "raw": "C_7H_15O_7+",
+        "mz": 211.0559,
+        "intensity": 104850.99
+      },
+      {
+        "formula": "C^13CH5O",
+        "raw": "C^13CH_5O+",
+        "mz": 46.0335,
+        "intensity": 104816.38
+      },
+      {
+        "formula": "C13H15O8",
+        "raw": "C_13H_15O_8+",
+        "mz": 299.0598,
+        "intensity": 102429.25
+      },
+      {
+        "formula": "C2H5O3",
+        "raw": "C_2H_5O_3+",
+        "mz": 77.0162,
+        "intensity": 100817.65
+      },
+      {
+        "formula": "C6H9O7",
+        "raw": "C_6H_9O_7+",
+        "mz": 193.0477,
+        "intensity": 97153.52
+      },
+      {
+        "formula": "C5H9",
+        "raw": "C_5H_9+",
+        "mz": 69.0663,
+        "intensity": 89660.54
+      },
+      {
+        "formula": "C7H13O8",
+        "raw": "C_7H_13O_8+",
+        "mz": 225.0688,
+        "intensity": 92623.98
+      },
+      {
+        "formula": "C8H15O9",
+        "raw": "C_8H_15O_9+",
+        "mz": 255.076,
+        "intensity": 78459.33
+      },
+      {
+        "formula": "C6H12O5",
+        "raw": "C_6H_12O_5+",
+        "mz": 164.05,
+        "intensity": 92964.27
+      },
+      {
+        "formula": "C5H7",
+        "raw": "C_5H_7+",
+        "mz": 67.0493,
+        "intensity": 73884.58
+      },
+      {
+        "formula": "C^13CH5O2",
+        "raw": "C^13CH_5O_2+",
+        "mz": 62.0264,
+        "intensity": 79682.61
+      }
+    ]
+  },
+  "POMH_neg": {
+    "material": "POMH",
+    "polarity": "neg",
+    "compound_id": "POMH",
+    "total_annotations": 65,
+    "matched": 14,
+    "unmatched": 51,
+    "hit_rate_pct": 21.5,
+    "intensity_coverage_pct": 60.4,
+    "network_size": 110,
+    "network_unique_formulas": 84,
+    "unmatched_formulas": [
+      {
+        "formula": "C2HO",
+        "raw": "C_2HO-",
+        "mz": 41.0046,
+        "intensity": 1561653.99
+      },
+      {
+        "formula": "C2H",
+        "raw": "C_2H-",
+        "mz": 25.0089,
+        "intensity": 1239175.34
+      },
+      {
+        "formula": "C2H3O3",
+        "raw": "C_2H_3O_3-",
+        "mz": 75.0098,
+        "intensity": 1095531.01
+      },
+      {
+        "formula": "C2H3O2",
+        "raw": "C_2H_3O_2-",
+        "mz": 59.0146,
+        "intensity": 930799.5
+      },
+      {
+        "formula": "C2H2O2",
+        "raw": "C_2H_2O_2-",
+        "mz": 58.0066,
+        "intensity": 509187.39
+      },
+      {
+        "formula": "C2H3O4",
+        "raw": "C_2H_3O_4-",
+        "mz": 91.004,
+        "intensity": 458577.47
+      },
+      {
+        "formula": "C3H7O3",
+        "raw": "C_3H_7O_3-",
+        "mz": 91.0395,
+        "intensity": 442273.7
+      },
+      {
+        "formula": "C2HO3",
+        "raw": "C_2HO_3-",
+        "mz": 72.9937,
+        "intensity": 359988.0
+      },
+      {
+        "formula": "C3H5O4",
+        "raw": "C_3H_5O_4-",
+        "mz": 105.0191,
+        "intensity": 338279.16
+      },
+      {
+        "formula": "C3H3O2",
+        "raw": "C_3H_3O_2-",
+        "mz": 71.0139,
+        "intensity": 322230.56
+      },
+      {
+        "formula": "C2H5O3",
+        "raw": "C_2H_5O_3-",
+        "mz": 77.0236,
+        "intensity": 289630.37
+      },
+      {
+        "formula": "C4H9O4",
+        "raw": "C_4H_9O_4-",
+        "mz": 121.0492,
+        "intensity": 203879.68
+      },
+      {
+        "formula": "C3HO2",
+        "raw": "C_3HO_2-",
+        "mz": 68.9978,
+        "intensity": 201255.38
+      },
+      {
+        "formula": "CN",
+        "raw": "CN-",
+        "mz": 26.0039,
+        "intensity": 181790.64
+      },
+      {
+        "formula": "C3H7O4",
+        "raw": "C_3H_7O_4-",
+        "mz": 107.0346,
+        "intensity": 171833.73
+      },
+      {
+        "formula": "C2O",
+        "raw": "C_2O-",
+        "mz": 39.9951,
+        "intensity": 163545.98
+      },
+      {
+        "formula": "C4H7O5",
+        "raw": "C_4H_7O_5-",
+        "mz": 135.0285,
+        "intensity": 158772.76
+      },
+      {
+        "formula": "C4H",
+        "raw": "C_4H-",
+        "mz": 49.0072,
+        "intensity": 157196.81
+      },
+      {
+        "formula": "C3H5O3",
+        "raw": "C_3H_5O_3-",
+        "mz": 89.0247,
+        "intensity": 155732.94
+      },
+      {
+        "formula": "C2",
+        "raw": "C_2-",
+        "mz": 24.0001,
+        "intensity": 153142.84
+      },
+      {
+        "formula": "CHO3",
+        "raw": "CHO_3-",
+        "mz": 60.9929,
+        "intensity": 123618.18
+      },
+      {
+        "formula": "C5H11O5",
+        "raw": "C_5H_11O_5-",
+        "mz": 151.0589,
+        "intensity": 120909.41
+      },
+      {
+        "formula": "C3H6O3",
+        "raw": "C_3H_6O_3-",
+        "mz": 90.0313,
+        "intensity": 112396.48
+      },
+      {
+        "formula": "C3HO",
+        "raw": "C_3HO-",
+        "mz": 53.0024,
+        "intensity": 108810.61
+      },
+      {
+        "formula": "C3H5O2",
+        "raw": "C_3H_5O_2-",
+        "mz": 73.0292,
+        "intensity": 102024.82
+      },
+      {
+        "formula": "C3H3O3",
+        "raw": "C_3H_3O_3-",
+        "mz": 87.0097,
+        "intensity": 98520.96
+      },
+      {
+        "formula": "C5H9O6",
+        "raw": "C_5H_9O_6-",
+        "mz": 165.0381,
+        "intensity": 90680.27
+      },
+      {
+        "formula": "C4H9O5",
+        "raw": "C_4H_9O_5-",
+        "mz": 137.0436,
+        "intensity": 79149.44
+      },
+      {
+        "formula": "C6H11O7",
+        "raw": "C_6H_11O_7-",
+        "mz": 195.0481,
+        "intensity": 80985.76
+      },
+      {
+        "formula": "C3H",
+        "raw": "C_3H-",
+        "mz": 37.0081,
+        "intensity": 80533.78
+      },
+      {
+        "formula": "C6H13O6",
+        "raw": "C_6H_13O_6-",
+        "mz": 181.0686,
+        "intensity": 73752.57
+      },
+      {
+        "formula": "C4H7O4",
+        "raw": "C_4H_7O_4-",
+        "mz": 119.0343,
+        "intensity": 73266.59
+      },
+      {
+        "formula": "C4HO",
+        "raw": "C_4HO-",
+        "mz": 65.0024,
+        "intensity": 70642.37
+      },
+      {
+        "formula": "CH3S",
+        "raw": "CH_3S-",
+        "mz": 47.0002,
+        "intensity": 64868.12
+      },
+      {
+        "formula": "C3H7O2",
+        "raw": "C_3H_7O_2-",
+        "mz": 75.0435,
+        "intensity": 57820.54
+      },
+      {
+        "formula": "C3",
+        "raw": "C_3-",
+        "mz": 36.0002,
+        "intensity": 63423.65
+      },
+      {
+        "formula": "C3H2",
+        "raw": "C_3H_2-",
+        "mz": 38.0159,
+        "intensity": 63163.46
+      },
+      {
+        "formula": "H3O",
+        "raw": "H_3O-",
+        "mz": 19.019,
+        "intensity": 59872.67
+      },
+      {
+        "formula": "C7H15O7",
+        "raw": "C_7H_15O_7-",
+        "mz": 211.0779,
+        "intensity": 50181.62
+      },
+      {
+        "formula": "C2HO2",
+        "raw": "C_2HO_2-",
+        "mz": 56.9975,
+        "intensity": 51053.25
+      },
+      {
+        "formula": "C7H13O8",
+        "raw": "C_7H_13O_8-",
+        "mz": 225.0587,
+        "intensity": 49940.04
+      },
+      {
+        "formula": "C4H8O4",
+        "raw": "C_4H_8O_4-",
+        "mz": 120.0409,
+        "intensity": 52849.97
+      },
+      {
+        "formula": "C2H4O3",
+        "raw": "C_2H_4O_3-",
+        "mz": 76.0137,
+        "intensity": 53012.62
+      },
+      {
+        "formula": "C3H3O",
+        "raw": "C_3H_3O-",
+        "mz": 55.0184,
+        "intensity": 49121.79
+      },
+      {
+        "formula": "C4H9O3",
+        "raw": "C_4H_9O_3-",
+        "mz": 105.0535,
+        "intensity": 41664.19
+      },
+      {
+        "formula": "C4H3O",
+        "raw": "C_4H_3O-",
+        "mz": 67.0183,
+        "intensity": 45008.46
+      },
+      {
+        "formula": "C8H15O9",
+        "raw": "C_8H_15O_9-",
+        "mz": 255.0699,
+        "intensity": 41110.19
+      },
+      {
+        "formula": "C5H11O6",
+        "raw": "C_5H_11O_6-",
+        "mz": 167.0534,
+        "intensity": 38732.6
+      },
+      {
+        "formula": "C5H9O5",
+        "raw": "C_5H_9O_5-",
+        "mz": 149.0442,
+        "intensity": 40619.55
+      },
+      {
+        "formula": "C8H17O8",
+        "raw": "C_8H_17O_8-",
+        "mz": 241.088,
+        "intensity": 36965.28
+      },
+      {
+        "formula": "CO3",
+        "raw": "CO_3-",
+        "mz": 59.9842,
+        "intensity": 40170.91
+      }
+    ]
+  }
+}
