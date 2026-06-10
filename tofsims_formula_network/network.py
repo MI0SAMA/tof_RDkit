@@ -111,6 +111,50 @@ def _generate_fragments(mol: Chem.Mol, cfg: dict) -> list[tuple[dict[str, int], 
     return fragments
 
 
+def _process_base_records(row: dict, bases: list[tuple], config: dict, extend_penalty: float = 0.0) -> list[FormulaRecord]:
+    """Generate FormulaRecords from base (counts, type, path, breaks, atoms) tuples.
+
+    If extend_penalty > 0, score is reduced (for oligomer-extended bases).
+    """
+    records: list[FormulaRecord] = []
+    for counts, base_type, base_path, breaks, atom_indices in bases:
+        for shift in config["ion_rules"]["h_shift_range"]:
+            shifted = _apply_h_shift(counts, int(shift))
+            if shifted is None:
+                continue
+            path = base_path + ([f"H shift {shift:+d}"] if shift else [])
+            gen_type = base_type if shift == 0 else "h_shift"
+            rec = _record(row, shifted, "neutral", 0, gen_type, path, config,
+                          broken_bonds=breaks, h_shift=shift, fragment_atom_indices=atom_indices)
+            if extend_penalty:
+                rec.score = max(0.0, rec.score - extend_penalty)
+            records.append(rec)
+
+            for mode, charge, adducts in [
+                ("positive", 1, config["ion_rules"]["common_adducts_positive"]),
+                ("negative", -1, config["ion_rules"]["common_adducts_negative"]),
+            ]:
+                for adduct in adducts:
+                    adducted = _apply_adduct(shifted, adduct)
+                    if adducted is None:
+                        continue
+                    rec2 = _record(row, adducted, mode, charge, "adduct", path + [adduct], config,
+                                   broken_bonds=breaks, h_shift=shift, adduct=adduct, fragment_atom_indices=atom_indices)
+                    if extend_penalty:
+                        rec2.score = max(0.0, rec2.score - extend_penalty)
+                    records.append(rec2)
+
+            for loss in config["ion_rules"]["neutral_losses"]:
+                lost = subtract_formula(shifted, parse_formula(loss))
+                if lost is not None:
+                    rec3 = _record(row, lost, "neutral", 0, "neutral_loss", path + [f"-{loss}"], config,
+                                   broken_bonds=breaks, h_shift=shift, neutral_losses=[loss], fragment_atom_indices=atom_indices)
+                    if extend_penalty:
+                        rec3.score = max(0.0, rec3.score - extend_penalty)
+                    records.append(rec3)
+    return records
+
+
 def generate_formula_network(compound_row, config: dict) -> list[FormulaRecord]:
     row = dict(compound_row)
     mol = mol_from_smiles(row["smiles"])
@@ -120,35 +164,52 @@ def generate_formula_network(compound_row, config: dict) -> list[FormulaRecord]:
     for counts, atom_indices, breaks in _generate_fragments(mol, config):
         bases.append((counts, "fragment", [f"break {breaks} bond(s)"], breaks, atom_indices))
 
-    records: list[FormulaRecord] = []
-    for counts, base_type, base_path, breaks, atom_indices in bases:
-        for shift in config["ion_rules"]["h_shift_range"]:
-            shifted = _apply_h_shift(counts, int(shift))
-            if shifted is None:
-                continue
-            path = base_path + ([f"H shift {shift:+d}"] if shift else [])
-            gen_type = base_type if shift == 0 else "h_shift"
-            records.append(_record(row, shifted, "neutral", 0, gen_type, path, config, broken_bonds=breaks, h_shift=shift, fragment_atom_indices=atom_indices))
-            for mode, charge, adducts in [
-                ("positive", 1, config["ion_rules"]["common_adducts_positive"]),
-                ("negative", -1, config["ion_rules"]["common_adducts_negative"]),
-            ]:
-                for adduct in adducts:
-                    adducted = _apply_adduct(shifted, adduct)
-                    if adducted is None:
-                        continue
-                    records.append(_record(row, adducted, mode, charge, "adduct", path + [adduct], config, broken_bonds=breaks, h_shift=shift, adduct=adduct, fragment_atom_indices=atom_indices))
-            for loss in config["ion_rules"]["neutral_losses"]:
-                lost = subtract_formula(shifted, parse_formula(loss))
-                if lost is not None:
-                    records.append(_record(row, lost, "neutral", 0, "neutral_loss", path + [f"-{loss}"], config, broken_bonds=breaks, h_shift=shift, neutral_losses=[loss], fragment_atom_indices=atom_indices))
+    records = _process_base_records(row, bases, config)
 
+    # ── Oligomer extension ──────────────────────────────────────────────
+    extend_formula_str = str(row.get("extend_formula", "")).strip()
+    oligo_cfg = config.get("oligomer", {})
+    max_extend = int(oligo_cfg.get("max_extend", 0))
+    max_mass = float(oligo_cfg.get("max_mass", 2000))
+    penalty_per_extend = float(oligo_cfg.get("penalty_per_extend", 0.08))
+
+    if extend_formula_str and max_extend > 0:
+        extend_counts = parse_formula(extend_formula_str)
+        # Extend each base (parent + fragments), not the already-processed records
+        for n in range(1, max_extend + 1):
+            extended_bases = []
+            for counts, base_type, base_path, breaks, atom_indices in bases:
+                new_counts = dict(counts)
+                for _ in range(n):
+                    new_counts = add_formula(new_counts, extend_counts)
+                mass = exact_mass(new_counts)
+                if mass > max_mass:
+                    continue
+                ext_path = [f"{base_path[0]} + {n}×repeat"]
+                gen_type = "oligomer" if base_type == "parent" else base_type
+                extended_bases.append((new_counts, gen_type, ext_path, breaks, atom_indices))
+
+            if not extended_bases:
+                break  # all bases exceeded max_mass, stop extending
+
+            ext_records = _process_base_records(
+                row, extended_bases, config,
+                extend_penalty=penalty_per_extend * n,
+            )
+            # Mark generation type for parent-extended records
+            for rec in ext_records:
+                if rec.generation_type == "parent":
+                    rec.generation_type = "oligomer"
+            records.extend(ext_records)
+
+    # ── Dimers ──────────────────────────────────────────────────────────
     if config["ion_rules"].get("dimers", True):
         doubled = add_formula(parent_counts, parent_counts)
         for adduct, mode, charge in [("H", "positive", 1), ("Na", "positive", 1), ("-H", "negative", -1), ("Cl", "negative", -1)]:
             counts = _apply_adduct(doubled, adduct)
             if counts is not None:
                 records.append(_record(row, counts, mode, charge, "dimer", ["2M", adduct], config, adduct=adduct))
+
     return merge_duplicate_formula_records(records)
 
 

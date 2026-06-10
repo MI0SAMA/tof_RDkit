@@ -10,34 +10,34 @@
 | Metric | Value |
 |---|---:|
 | Total peaks | 300 |
-| Network matched rows | 3814 |
+| Network matched rows | 4320 |
 
 ## 3. Top matched peaks
 
 | peak_mz | intensity | matched_formula | compound_name | generation_type | path | final_score |
 | --- | --- | --- | --- | --- | --- | --- |
-| 100.000318 | 42.20574712643678 | C2F4 | Ethylene-TFE copolymer | adduct | break 1 bond(s) | -H | ; | break 2 bond(s) | -H | 0.6 |
-| 118.995462 | 32.4816091954023 | C2F5 | Polytetrafluoroethylene | neutral_loss | M | H shift +1 | -HF | 0.6 |
-| 99.990968 | 38.15402298850575 | C2F4 | Polytetrafluoroethylene | adduct | break 1 bond(s) | -H | ; | break 1 bond(s) | -H | ; | break 1 bond(s) | -H | ; | break 1 bond(s) | -H | 0.6 |
-| 68.997364 | 54.34597701149425 | CF3 | Perfluoroalkoxy Alkane | fragment | break 1 bond(s) | ; | break 1 bond(s) | ; | break 1 bond(s) | ; | break 2 bond(s) | ; | break 2 bond(s) | 0.6 |
-| 118.994952 | 32.416666666666664 | C2F5 | Polytetrafluoroethylene | neutral_loss | M | H shift +1 | -HF | 0.6 |
-| 68.997364 | 54.34597701149425 | CF3 | Polytetrafluoroethylene | fragment | break 1 bond(s) | ; | break 2 bond(s) | ; | break 2 bond(s) | 0.6 |
-| 68.991151 | 53.68620689655173 | CF3 | Fluorinated Ethylene Propylene | fragment | break 1 bond(s) | ; | break 1 bond(s) | ; | break 1 bond(s) | ; | break 2 bond(s) | ; | break 2 bond(s) | 0.6 |
-| 68.990763 | 48.14770114942529 | CF3 | Polytetrafluoroethylene | fragment | break 1 bond(s) | ; | break 2 bond(s) | ; | break 2 bond(s) | 0.6 |
-| 68.990763 | 48.14770114942529 | CF3 | Perfluoroalkoxy Alkane | fragment | break 1 bond(s) | ; | break 1 bond(s) | ; | break 1 bond(s) | ; | break 2 bond(s) | ; | break 2 bond(s) | 0.6 |
-| 68.990374 | 42.11149425287356 | CF3 | Perfluoroalkoxy Alkane | fragment | break 1 bond(s) | ; | break 1 bond(s) | ; | break 1 bond(s) | ; | break 2 bond(s) | ; | break 2 bond(s) | 0.6 |
-| 68.990374 | 42.11149425287356 | CF3 | Fluorinated Ethylene Propylene | fragment | break 1 bond(s) | ; | break 1 bond(s) | ; | break 1 bond(s) | ; | break 2 bond(s) | ; | break 2 bond(s) | 0.6 |
-| 99.997045 | 44.574137931034485 | C2F4 | Polytetrafluoroethylene | adduct | break 1 bond(s) | -H | ; | break 1 bond(s) | -H | ; | break 1 bond(s) | -H | ; | break 1 bond(s) | -H | 0.6 |
-| 68.997364 | 54.34597701149425 | CF3 | Fluorinated Ethylene Propylene | fragment | break 1 bond(s) | ; | break 1 bond(s) | ; | break 1 bond(s) | ; | break 2 bond(s) | ; | break 2 bond(s) | 0.6 |
-| 68.996976 | 83.84080459770115 | CF3 | Polytetrafluoroethylene | fragment | break 1 bond(s) | ; | break 2 bond(s) | ; | break 2 bond(s) | 0.6 |
-| 99.990968 | 38.15402298850575 | C2F4 | Ethylene-TFE copolymer | adduct | break 1 bond(s) | -H | ; | break 2 bond(s) | -H | 0.6 |
-| 99.9905 | 36.5316091954023 | C2F4 | Polytetrafluoroethylene | adduct | break 1 bond(s) | -H | ; | break 1 bond(s) | -H | ; | break 1 bond(s) | -H | ; | break 1 bond(s) | -H | 0.6 |
-| 100.001253 | 40.60402298850575 | C2F4 | Ethylene-TFE copolymer | adduct | break 1 bond(s) | -H | ; | break 2 bond(s) | -H | 0.6 |
-| 68.990763 | 48.14770114942529 | CF3 | Fluorinated Ethylene Propylene | fragment | break 1 bond(s) | ; | break 1 bond(s) | ; | break 1 bond(s) | ; | break 2 bond(s) | ; | break 2 bond(s) | 0.6 |
-| 68.991539 | 59.007471264367815 | CF3 | Fluorinated Ethylene Propylene | fragment | break 1 bond(s) | ; | break 1 bond(s) | ; | break 1 bond(s) | ; | break 2 bond(s) | ; | break 2 bond(s) | 0.6 |
-| 68.991151 | 53.68620689655173 | CF3 | Polytetrafluoroethylene | fragment | break 1 bond(s) | ; | break 2 bond(s) | ; | break 2 bond(s) | 0.6 |
-| 68.991151 | 53.68620689655173 | CF3 | Perfluoroalkoxy Alkane | fragment | break 1 bond(s) | ; | break 1 bond(s) | ; | break 1 bond(s) | ; | break 2 bond(s) | ; | break 2 bond(s) | 0.6 |
-| 68.990374 | 42.11149425287356 | CF3 | Polytetrafluoroethylene | fragment | break 1 bond(s) | ; | break 2 bond(s) | ; | break 2 bond(s) | 0.6 |
-| 99.986293 | 18.854597701149427 | C2F4 | Ethylene-TFE copolymer | adduct | break 1 bond(s) | -H | ; | break 2 bond(s) | -H | 0.6 |
-| 99.994708 | 45.97931034482758 | C2F4 | Ethylene-TFE copolymer | adduct | break 1 bond(s) | -H | ; | break 2 bond(s) | -H | 0.6 |
-| 100.00172 | 37.39137931034483 | C2F4 | Ethylene-TFE copolymer | adduct | break 1 bond(s) | -H | ; | break 2 bond(s) | -H | 0.6 |
+| 118.996482 | 32.34885057471264 | C2F5 | Polytetrafluoroethylene | adduct | M | -H | 0.75 |
+| 118.996992 | 31.17183908045977 | C2F5 | Polytetrafluoroethylene | adduct | M | -H | 0.75 |
+| 118.993932 | 31.47068965517241 | C2F5 | Polytetrafluoroethylene | adduct | M | -H | 0.75 |
+| 118.999542 | 29.70747126436782 | C2F5 | Polytetrafluoroethylene | adduct | M | -H | 0.75 |
+| 118.997502 | 31.107471264367813 | C2F5 | Polytetrafluoroethylene | adduct | M | -H | 0.75 |
+| 118.995462 | 32.4816091954023 | C2F5 | Polytetrafluoroethylene | adduct | M | -H | 0.75 |
+| 119.000052 | 29.081609195402297 | C2F5 | Polytetrafluoroethylene | adduct | M | -H | 0.75 |
+| 118.985262 | 16.167241379310347 | C2F5 | Polytetrafluoroethylene | adduct | M | -H | 0.75 |
+| 119.001582 | 27.39425287356321 | C2F5 | Polytetrafluoroethylene | adduct | M | -H | 0.75 |
+| 119.001072 | 28.540804597701147 | C2F5 | Polytetrafluoroethylene | adduct | M | -H | 0.75 |
+| 118.986792 | 20.161494252873563 | C2F5 | Polytetrafluoroethylene | adduct | M | -H | 0.75 |
+| 118.992402 | 30.5051724137931 | C2F5 | Polytetrafluoroethylene | adduct | M | -H | 0.75 |
+| 118.999032 | 29.85287356321839 | C2F5 | Polytetrafluoroethylene | adduct | M | -H | 0.75 |
+| 118.986282 | 18.767816091954025 | C2F5 | Polytetrafluoroethylene | adduct | M | -H | 0.75 |
+| 118.990872 | 28.479885057471265 | C2F5 | Polytetrafluoroethylene | adduct | M | -H | 0.75 |
+| 118.985772 | 17.251149425287355 | C2F5 | Polytetrafluoroethylene | adduct | M | -H | 0.75 |
+| 118.990362 | 27.95287356321839 | C2F5 | Polytetrafluoroethylene | adduct | M | -H | 0.75 |
+| 118.987812 | 22.57413793103448 | C2F5 | Polytetrafluoroethylene | adduct | M | -H | 0.75 |
+| 118.993422 | 32.03448275862069 | C2F5 | Polytetrafluoroethylene | adduct | M | -H | 0.75 |
+| 118.998522 | 31.25977011494253 | C2F5 | Polytetrafluoroethylene | adduct | M | -H | 0.75 |
+| 118.989852 | 26.905172413793103 | C2F5 | Polytetrafluoroethylene | adduct | M | -H | 0.75 |
+| 118.995972 | 31.474137931034484 | C2F5 | Polytetrafluoroethylene | adduct | M | -H | 0.75 |
+| 118.998012 | 31.1132183908046 | C2F5 | Polytetrafluoroethylene | adduct | M | -H | 0.75 |
+| 119.000562 | 28.11379310344828 | C2F5 | Polytetrafluoroethylene | adduct | M | -H | 0.75 |
+| 118.991382 | 29.59022988505747 | C2F5 | Polytetrafluoroethylene | adduct | M | -H | 0.75 |

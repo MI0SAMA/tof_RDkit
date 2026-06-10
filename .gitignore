@@ -8,3 +8,7 @@ htmlcov/
 .DS_Store
 Thumbs.db
 .claude/
+data/tof_db.sqlite
+data/*.jpg
+data/*.png
+projects/

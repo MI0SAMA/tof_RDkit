@@ -10,34 +10,34 @@
 | Metric | Value |
 |---|---:|
 | Total peaks | 300 |
-| Network matched rows | 2313 |
+| Network matched rows | 2525 |
 
 ## 3. Top matched peaks
 
 | peak_mz | intensity | matched_formula | compound_name | generation_type | path | final_score |
 | --- | --- | --- | --- | --- | --- | --- |
-| 185.022045 | 1.7304732589457483 | C4H14ClO2Si2 | Polydimethylsiloxane | adduct | M | Cl | 0.63 |
-| 185.020145 | 2.122643324355521 | C4H14ClO2Si2 | Polydimethylsiloxane | adduct | M | Cl | 0.63 |
-| 185.022678 | 1.5176991150442478 | C4H14ClO2Si2 | Polydimethylsiloxane | adduct | M | Cl | 0.63 |
-| 185.024577 | 1.6150442477876108 | C4H14ClO2Si2 | Polydimethylsiloxane | adduct | M | Cl | 0.63 |
-| 185.012548 | 5.062235475182763 | C4H14ClO2Si2 | Polydimethylsiloxane | adduct | M | Cl | 0.63 |
-| 185.023944 | 1.5357829934590226 | C4H14ClO2Si2 | Polydimethylsiloxane | adduct | M | Cl | 0.63 |
-| 185.013181 | 4.434974990380916 | C4H14ClO2Si2 | Polydimethylsiloxane | adduct | M | Cl | 0.63 |
-| 185.018879 | 2.23162754905733 | C4H14ClO2Si2 | Polydimethylsiloxane | adduct | M | Cl | 0.63 |
-| 185.017613 | 2.4941323585994613 | C4H14ClO2Si2 | Polydimethylsiloxane | adduct | M | Cl | 0.63 |
-| 185.019512 | 1.9821085032704888 | C4H14ClO2Si2 | Polydimethylsiloxane | adduct | M | Cl | 0.63 |
-| 185.01508 | 3.30126971912274 | C4H14ClO2Si2 | Polydimethylsiloxane | adduct | M | Cl | 0.63 |
-| 185.020779 | 1.8691804540207773 | C4H14ClO2Si2 | Polydimethylsiloxane | adduct | M | Cl | 0.63 |
-| 185.021412 | 1.995190457868411 | C4H14ClO2Si2 | Polydimethylsiloxane | adduct | M | Cl | 0.63 |
-| 185.015713 | 3.61610234705656 | C4H14ClO2Si2 | Polydimethylsiloxane | adduct | M | Cl | 0.63 |
-| 185.018246 | 2.518083878414775 | C4H14ClO2Si2 | Polydimethylsiloxane | adduct | M | Cl | 0.63 |
-| 185.013814 | 4.203058868795691 | C4H14ClO2Si2 | Polydimethylsiloxane | adduct | M | Cl | 0.63 |
-| 185.016347 | 3.304924971142748 | C4H14ClO2Si2 | Polydimethylsiloxane | adduct | M | Cl | 0.63 |
-| 185.01698 | 2.8483070411696807 | C4H14ClO2Si2 | Polydimethylsiloxane | adduct | M | Cl | 0.63 |
-| 185.023311 | 1.5569449788380147 | C4H14ClO2Si2 | Polydimethylsiloxane | adduct | M | Cl | 0.63 |
-| 185.014447 | 3.830511735282801 | C4H14ClO2Si2 | Polydimethylsiloxane | adduct | M | Cl | 0.63 |
-| 118.984486 | 3.836764140053867 | C2F5 | Polytetrafluoroethylene | neutral_loss | M | H shift +1 | -HF | 0.6 |
-| 118.984994 | 4.323393612928049 | C2F5 | Polytetrafluoroethylene | neutral_loss | M | H shift +1 | -HF | 0.6 |
-| 118.998703 | 5.226048480184686 | C2F5 | Polytetrafluoroethylene | neutral_loss | M | H shift +1 | -HF | 0.6 |
-| 68.988859 | 1.6208156983455175 | CF3 | Polytetrafluoroethylene | fragment | break 1 bond(s) | ; | break 2 bond(s) | ; | break 2 bond(s) | 0.6 |
-| 69.000458 | 3.984994228549442 | CF3 | Polytetrafluoroethylene | fragment | break 1 bond(s) | ; | break 2 bond(s) | ; | break 2 bond(s) | 0.6 |
+| 118.983471 | 2.9513274336283186 | C2F5 | Polytetrafluoroethylene | adduct | M | -H | 0.75 |
+| 118.982455 | 2.224220854174683 | C2F5 | Polytetrafluoroethylene | adduct | M | -H | 0.75 |
+| 118.986009 | 5.393420546363986 | C2F5 | Polytetrafluoroethylene | adduct | M | -H | 0.75 |
+| 118.986517 | 5.9774913428241625 | C2F5 | Polytetrafluoroethylene | adduct | M | -H | 0.75 |
+| 118.982963 | 2.540688726433244 | C2F5 | Polytetrafluoroethylene | adduct | M | -H | 0.75 |
+| 118.987025 | 6.504809542131588 | C2F5 | Polytetrafluoroethylene | adduct | M | -H | 0.75 |
+| 118.984994 | 4.323393612928049 | C2F5 | Polytetrafluoroethylene | adduct | M | -H | 0.75 |
+| 118.985502 | 4.858214697960754 | C2F5 | Polytetrafluoroethylene | adduct | M | -H | 0.75 |
+| 118.984486 | 3.836764140053867 | C2F5 | Polytetrafluoroethylene | adduct | M | -H | 0.75 |
+| 118.983978 | 3.371104270873413 | C2F5 | Polytetrafluoroethylene | adduct | M | -H | 0.75 |
+| 118.987532 | 7.11446710273182 | C2F5 | Polytetrafluoroethylene | adduct | M | -H | 0.75 |
+| 119.00175 | 3.103308964986533 | C2F5 | Polytetrafluoroethylene | adduct | M | -H | 0.75 |
+| 119.000734 | 3.677375913813005 | C2F5 | Polytetrafluoroethylene | adduct | M | -H | 0.75 |
+| 119.000226 | 4.08205078876491 | C2F5 | Polytetrafluoroethylene | adduct | M | -H | 0.75 |
+| 118.999211 | 4.846767987687572 | C2F5 | Polytetrafluoroethylene | adduct | M | -H | 0.75 |
+| 118.999718 | 4.47297037322047 | C2F5 | Polytetrafluoroethylene | adduct | M | -H | 0.75 |
+| 118.998703 | 5.226048480184686 | C2F5 | Polytetrafluoroethylene | adduct | M | -H | 0.75 |
+| 118.998195 | 5.81262023855329 | C2F5 | Polytetrafluoroethylene | adduct | M | -H | 0.75 |
+| 118.992102 | 9.83099268949596 | C2F5 | Polytetrafluoroethylene | adduct | M | -H | 0.75 |
+| 118.99261 | 9.79809542131589 | C2F5 | Polytetrafluoroethylene | adduct | M | -H | 0.75 |
+| 118.993625 | 9.494132358599462 | C2F5 | Polytetrafluoroethylene | adduct | M | -H | 0.75 |
+| 118.993118 | 9.583782223932282 | C2F5 | Polytetrafluoroethylene | adduct | M | -H | 0.75 |
+| 118.995149 | 8.333108888033859 | C2F5 | Polytetrafluoroethylene | adduct | M | -H | 0.75 |
+| 118.995656 | 8.043478260869565 | C2F5 | Polytetrafluoroethylene | adduct | M | -H | 0.75 |
+| 118.994641 | 8.810792612543286 | C2F5 | Polytetrafluoroethylene | adduct | M | -H | 0.75 |

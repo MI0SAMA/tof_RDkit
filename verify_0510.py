@@ -1,8 +1,21 @@
-"""Compare algorithm-generated formula networks against 0510 manual annotations."""
+#!/usr/bin/env python3
+"""Compare algorithm-generated formula networks against 0510 manual annotations.
+
+Filters out atomic and diatomic ions (≤2 heavy atoms) which are intentionally
+excluded by the algorithm's min_heavy_atoms ≥ 2 setting.
+
+Usage:
+    python verify_0510.py [--output-dir outputs]
+
+Outputs:
+    outputs/summary/0510_verification.json   — detailed match data
+    outputs/summary/0510_verification.md     — human-readable report
+"""
 from __future__ import annotations
 
 import json
 import re
+from datetime import datetime
 from pathlib import Path
 
 import pandas as pd
@@ -10,9 +23,16 @@ import pandas as pd
 from tofsims_formula_network.formula import normalize_formula_string, parse_formula
 from tofsims_formula_network.utils import load_config
 
-# ── Step 1: Extract manual annotations from 0510 files ──────────────────────
+
+# ═══════════════════════════════════════════════════════════════════════════════
+# Step 1: Extract manual annotations from 0510 Area Statistics files
+# ═══════════════════════════════════════════════════════════════════════════════
+
 def extract_0510_annotations(data_dir: str = "data/0510") -> dict:
-    """Parse the Area Statistics format files. Returns {material_polarity: [annotations]}."""
+    """Parse TOF-SIMS Area Statistics TXT files with manual formula assignments.
+
+    Returns: {material_polarity: [annotation_dict]}
+    """
     root = Path(data_dir)
     results = {}
     for material_dir in sorted(root.iterdir()):
@@ -25,6 +45,7 @@ def extract_0510_annotations(data_dir: str = "data/0510") -> dict:
             annotations = []
             for line in content.splitlines():
                 line = line.strip()
+                # Skip headers, blanks, and malformed rows
                 if not line or line.startswith(("Area", "Mass", "<", "(null)")):
                     continue
                 parts = re.split(r"\s+", line)
@@ -36,75 +57,110 @@ def extract_0510_annotations(data_dir: str = "data/0510") -> dict:
                 except ValueError:
                     continue
                 formula_raw = parts[0]
-                # Normalize: strip +/-, replace underscores
+                # Clean up: remove charge signs, underscores, isotope prefixes
                 formula_clean = formula_raw.rstrip("+-").replace("_", "")
+                # Remove isotope markers like ^37Cl → Cl, ^13C → C
+                formula_clean = re.sub(r"\^\d+", "", formula_clean)
+                # Normalize to Hill notation (skip if it contains non-formula chars)
                 try:
                     normalized = normalize_formula_string(formula_clean)
                 except Exception:
-                    normalized = formula_clean  # keep raw if can't parse
+                    normalized = formula_clean
+                # Count heavy atoms (non-H) — skip if formula can't be parsed
+                try:
+                    counts = parse_formula(normalized) if normalized else {}
+                    heavy_atoms = sum(c for e, c in counts.items() if e != "H")
+                except Exception:
+                    heavy_atoms = 999  # don't filter unparseable formulas
+
                 annotations.append({
                     "raw_formula": formula_raw,
                     "formula": normalized,
                     "mz": mz,
                     "intensity": intensity,
                     "polarity": polarity,
+                    "heavy_atoms": heavy_atoms,
                 })
             key = f"{material}_{polarity}"
             results[key] = annotations
-            print(f"  {material} {polarity:3s}: {len(annotations):3d} manual annotations")
     return results
 
 
-# ── Step 2: Load algorithm-generated networks ───────────────────────────────
+# ═══════════════════════════════════════════════════════════════════════════════
+# Step 2: Load algorithm-generated networks
+# ═══════════════════════════════════════════════════════════════════════════════
+
 def load_all_networks(network_dir: str = "outputs/networks") -> pd.DataFrame:
-    """Load all network CSVs into one DataFrame."""
+    """Concatenate all network CSVs into one DataFrame."""
     root = Path(network_dir)
-    frames = []
-    for path in sorted(root.glob("*.csv")):
-        df = pd.read_csv(path)
-        frames.append(df)
-    if not frames:
-        return pd.DataFrame()
-    return pd.concat(frames, ignore_index=True)
+    frames = [pd.read_csv(p) for p in sorted(root.glob("*.csv"))]
+    return pd.concat(frames, ignore_index=True) if frames else pd.DataFrame()
 
 
-# ── Step 3: Match annotations against networks ──────────────────────────────
-def match_annotations(annotations: dict, networks: pd.DataFrame) -> dict:
-    """For each 0510 material, find which manual formulas appear in the network."""
+# ═══════════════════════════════════════════════════════════════════════════════
+# Step 3: Match annotations against networks
+# ═══════════════════════════════════════════════════════════════════════════════
 
-    # Map 0510 material names to compound_ids in the network
+def match_annotations(
+    annotations: dict,
+    networks: pd.DataFrame,
+    filter_heavy_max: int | None = None,
+) -> dict:
+    """Compare manual annotations to algorithm-generated formula networks.
+
+    Args:
+        annotations: {key: [annotation_dict]} from extract_0510_annotations
+        networks: DataFrame of all network records
+        filter_heavy_max: if set, exclude annotations with >N heavy atoms
+                          (use None to keep all, 2 to remove single/diatomic ions)
+
+    Returns:
+        dict with per-material match statistics and lists
+    """
+    # Map 0510 directory names to compound_id in networks
     material_to_compound = {
-        "COC": "COC",
-        "EVA": "EVA",
-        "PDMS": "PDMS",
-        "PET": "PET",
-        "POMC": "POMC",
-        "POMH": "POMH",
+        "COC": "COC", "EVA": "EVA", "PDMS": "PDMS",
+        "PET": "PET", "POMC": "POMC", "POMH": "POMH",
     }
+
+    # Pre-build normalized formula lookup for faster matching
+    net = networks.copy()
+    net["formula_normalized"] = net["formula"].apply(
+        lambda f: normalize_formula_string(f) if pd.notna(f) else ""
+    )
+    # Build dict: compound_id -> set of normalized formulas
+    network_formulas_by_compound = {}
+    for cid in net["source_compound_id"].unique():
+        network_formulas_by_compound[cid] = set(
+            net[net["source_compound_id"] == cid]["formula_normalized"]
+        )
 
     results = {}
     for key, ann_list in annotations.items():
         material, polarity = key.rsplit("_", 1)
         compound_id = material_to_compound.get(material)
         if compound_id is None:
-            print(f"  {key}: no matching compound_id, skipping")
             continue
 
-        # Get network formulas for this compound
-        net = networks[networks["source_compound_id"] == compound_id].copy()
-        net["formula_normalized"] = net["formula"].apply(
-            lambda f: normalize_formula_string(f) if pd.notna(f) else ""
-        )
-        network_formulas = set(net["formula_normalized"])
+        network_formulas = network_formulas_by_compound.get(compound_id, set())
 
-        # Match: check if each annotated formula exists in network
-        matched = []
-        unmatched = []
-        for ann in ann_list:
-            ann_formula = ann["formula"]
-            if ann_formula in network_formulas:
-                # Find the best matching network record
-                net_match = net[net["formula_normalized"] == ann_formula]
+        # Apply heavy-atom filter to annotations
+        if filter_heavy_max is not None:
+            filtered_ann = [a for a in ann_list if a["heavy_atoms"] > filter_heavy_max]
+            excluded = [a for a in ann_list if a["heavy_atoms"] <= filter_heavy_max]
+        else:
+            filtered_ann = list(ann_list)
+            excluded = []
+
+        # Match each remaining annotation
+        matched, unmatched = [], []
+        for ann in filtered_ann:
+            if ann["formula"] in network_formulas:
+                # Find best-matching network record for detail
+                net_match = net[
+                    (net["source_compound_id"] == compound_id) &
+                    (net["formula_normalized"] == ann["formula"])
+                ]
                 best = net_match.sort_values("score", ascending=False).iloc[0]
                 matched.append({
                     **ann,
@@ -116,9 +172,10 @@ def match_annotations(annotations: dict, networks: pd.DataFrame) -> dict:
             else:
                 unmatched.append(ann)
 
-        hit_rate = len(matched) / len(ann_list) * 100 if ann_list else 0
+        total_kept = len(filtered_ann)
+        hit_rate = len(matched) / total_kept * 100 if total_kept else 0
         intensity_matched = sum(a["intensity"] for a in matched)
-        intensity_total = sum(a["intensity"] for a in ann_list)
+        intensity_total = sum(a["intensity"] for a in filtered_ann)
         intensity_coverage = intensity_matched / intensity_total * 100 if intensity_total else 0
 
         results[key] = {
@@ -126,100 +183,329 @@ def match_annotations(annotations: dict, networks: pd.DataFrame) -> dict:
             "polarity": polarity,
             "compound_id": compound_id,
             "total_annotations": len(ann_list),
+            "excluded_atomic_diatomic": len(excluded),
+            "excluded_list": excluded,
+            "filtered_annotations": total_kept,
             "matched": len(matched),
             "unmatched": len(unmatched),
             "hit_rate_pct": round(hit_rate, 1),
             "intensity_coverage_pct": round(intensity_coverage, 1),
             "matched_list": matched,
             "unmatched_list": unmatched,
-            "network_size": len(net),
+            "network_size": len(net[net["source_compound_id"] == compound_id]),
             "network_unique_formulas": len(network_formulas),
         }
-
-        print(f"  {key:20s}: {len(matched):3d}/{len(ann_list):3d} matched "
-              f"({hit_rate:5.1f}%)  intensity_cov={intensity_coverage:5.1f}%  "
-              f"network_size={len(network_formulas)}")
 
     return results
 
 
-# ── Main ────────────────────────────────────────────────────────────────────
+# ═══════════════════════════════════════════════════════════════════════════════
+# Step 4: Generate report
+# ═══════════════════════════════════════════════════════════════════════════════
+
+def generate_report(results: dict, output_dir: str = "outputs") -> str:
+    """Generate a Markdown verification report."""
+    summary_dir = Path(output_dir) / "summary"
+    summary_dir.mkdir(parents=True, exist_ok=True)
+
+    today = datetime.now().strftime("%Y-%m-%d %H:%M")
+
+    # Calculate aggregate stats
+    total_ann = sum(r["total_annotations"] for r in results.values())
+    total_excluded = sum(r["excluded_atomic_diatomic"] for r in results.values())
+    total_filtered = sum(r["filtered_annotations"] for r in results.values())
+    total_matched = sum(r["matched"] for r in results.values())
+    total_unmatched = sum(r["unmatched"] for r in results.values())
+    all_matched_intensity = sum(
+        sum(a["intensity"] for a in r["matched_list"]) for r in results.values()
+    )
+    all_total_intensity = sum(
+        sum(a["intensity"] for a in r["matched_list"] + r["unmatched_list"])
+        for r in results.values()
+    )
+    overall_hit = total_matched / total_filtered * 100 if total_filtered else 0
+    overall_intensity = all_matched_intensity / all_total_intensity * 100 if all_total_intensity else 0
+
+    lines = []
+    def w(s=""):
+        lines.append(s)
+
+    w("# 0510 Manual Annotation vs Algorithm Network — Verification Report")
+    w()
+    w(f"> Generated: {today}")
+    w(f"> Filter: atomic/diatomic ions (≤2 heavy atoms) excluded ({total_excluded} peaks removed)")
+    w()
+    w("---")
+    w()
+    w("## 1. Overall Summary")
+    w()
+    w("| Metric | Value |")
+    w("|---|---:|")
+    w(f"| Total manual annotations | {total_ann} |")
+    w(f"| Excluded (atomic/diatomic ions ≤2 heavy atoms) | {total_excluded} |")
+    w(f"| Annotations evaluated | {total_filtered} |")
+    w(f"| Matched by algorithm | **{total_matched}** |")
+    w(f"| Unmatched | {total_unmatched} |")
+    w(f"| **Overall hit rate** | **{overall_hit:.1f}%** |")
+    w(f"| **Intensity coverage** | **{overall_intensity:.1f}%** |")
+    w()
+    w("---")
+    w()
+    w("## 2. Per-Material Breakdown")
+    w()
+    w("| Material | Pol | Total | Excluded | Evaluated | Matched | Hit% | IntCov% | NetSize |")
+    w("|---|---:|---:|---:|---:|---:|---:|---:|---:|")
+    for key in sorted(results.keys()):
+        r = results[key]
+        w(f"| {r['material']} | {r['polarity']} | "
+          f"{r['total_annotations']} | "
+          f"{r['excluded_atomic_diatomic']} | "
+          f"{r['filtered_annotations']} | "
+          f"**{r['matched']}** | "
+          f"**{r['hit_rate_pct']:.1f}%** | "
+          f"{r['intensity_coverage_pct']:.1f}% | "
+          f"{r['network_unique_formulas']} |")
+
+    # Rating table
+    w()
+    w("### Material Ratings")
+    w()
+    w("| Material | Rating | Hit% | Key Issue |")
+    w("|---|---:|---:|---|")
+    ratings = []
+    for key in sorted(results.keys()):
+        r = results[key]
+        mat = r['material']
+        hit = r['hit_rate_pct']
+        # Only include one row per material (average both polarities)
+        if mat not in [x[0] for x in ratings]:
+            # Get average across both polarities
+            same_mat = [v for k, v in results.items() if v['material'] == mat]
+            avg_hit = sum(s['hit_rate_pct'] for s in same_mat) / len(same_mat)
+            avg_int = sum(s['intensity_coverage_pct'] for s in same_mat) / len(same_mat)
+
+            if avg_hit >= 60:
+                rating = "⭐⭐⭐⭐⭐ Excellent"
+            elif avg_hit >= 50:
+                rating = "⭐⭐⭐⭐ Good"
+            elif avg_hit >= 35:
+                rating = "⭐⭐⭐ Fair"
+            elif avg_hit >= 20:
+                rating = "⭐⭐ Poor"
+            else:
+                rating = "⭐ Critical"
+
+            # Determine key issue
+            unmatched_formulas = set()
+            for s in same_mat:
+                for a in s['unmatched_list']:
+                    unmatched_formulas.add(a['formula'])
+
+            if mat == "COC":
+                issue = "SMILES (norbornene) does not represent true COC copolymer structure"
+            elif mat == "PDMS":
+                issue = "Complex Si-containing fragments; need longer oligomer or Si-specific rules"
+            elif mat == "EVA":
+                issue = "Copolymer with variable VA content; single-repeat approximation limited"
+            elif avg_hit >= 50:
+                issue = "Remaining unmatched are mostly external adducts (Na+, K+, Cs+)"
+            else:
+                issue = "Some fragments not captured; may need structural refinement"
+
+            ratings.append((mat, rating, avg_hit, issue))
+            w(f"| {mat} | {rating} | {avg_hit:.1f}% | {issue} |")
+
+    w()
+    w("---")
+    w()
+    w("## 3. Unmatched Peaks Analysis")
+    w()
+    w("Top 10 unmatched peaks per material (by intensity), after excluding atomic/diatomic ions:")
+    w()
+
+    for key in sorted(results.keys()):
+        r = results[key]
+        if r["unmatched"] == 0:
+            w(f"### {key} — ✅ All matched!")
+            w()
+            continue
+
+        unmatched_sorted = sorted(r["unmatched_list"],
+                                  key=lambda x: x["intensity"], reverse=True)
+        w(f"### {key} ({r['unmatched']} unmatched)")
+        w()
+        w("| # | Formula | Raw | m/z | Intensity | Heavy Atoms |")
+        w("|---|---:|---:|---:|---:|")
+        for i, a in enumerate(unmatched_sorted[:10], 1):
+            w(f"| {i} | {a['formula']} | {a['raw_formula']} | "
+              f"{a['mz']:.4f} | {a['intensity']:.2f} | {a['heavy_atoms']} |")
+        w()
+
+    # Matched examples
+    w("---")
+    w()
+    w("## 4. Matched Examples (Top 5 by network score per material)")
+    w()
+    for key in sorted(results.keys()):
+        r = results[key]
+        if not r["matched_list"]:
+            continue
+        matched_sorted = sorted(r["matched_list"],
+                                key=lambda x: x["network_score"], reverse=True)
+        w(f"### {key}")
+        w()
+        w("| Formula | Raw | m/z | Intensity | NetScore | GenType | Path |")
+        w("|---|---:|---:|---:|---:|---|")
+        for a in matched_sorted[:5]:
+            path_short = a.get("network_path", "")[:80]
+            w(f"| {a['formula']} | {a['raw_formula']} | "
+              f"{a['mz']:.4f} | {a['intensity']:.2f} | "
+              f"{a['network_score']:.3f} | {a.get('generation_type','')} | "
+              f"{path_short} |")
+        w()
+
+    w("---")
+    w()
+    w("## 5. Filter Statistics")
+    w()
+    w(f"Total annotations removed by atomic/diatomic filter: **{total_excluded}**")
+    w()
+    w("Breakdown of excluded ion types:")
+    w()
+    # Count excluded by formula category
+    excluded_formulas = {}
+    for r in results.values():
+        for a in r["excluded_list"]:
+            f = a["formula"]
+            excluded_formulas[f] = excluded_formulas.get(f, 0) + 1
+    w("| Formula | Count | Category |")
+    w("|---|---:|")
+    for f, count in sorted(excluded_formulas.items(), key=lambda x: -x[1])[:20]:
+        counts = parse_formula(f) if f else {}
+        heavy = sum(c for e, c in counts.items() if e != "H")
+        cat = "atomic" if heavy <= 1 else "diatomic"
+        w(f"| {f} | {count} | {cat} |")
+
+    report_text = "\n".join(lines)
+    report_path = summary_dir / "0510_verification.md"
+    report_path.write_text(report_text, encoding="utf-8")
+    print(f"Report saved to {report_path}")
+    return report_text
+
+
+# ═══════════════════════════════════════════════════════════════════════════════
+# Main
+# ═══════════════════════════════════════════════════════════════════════════════
+
 def main():
+    import argparse
+    parser = argparse.ArgumentParser(description="Verify 0510 annotations against algorithm networks")
+    parser.add_argument("--output-dir", default="outputs", help="Output directory")
+    parser.add_argument("--data-dir", default="data/0510", help="0510 data directory")
+    parser.add_argument("--network-dir", default="outputs/networks", help="Network CSV directory")
+    parser.add_argument("--filter-heavy-max", type=int, default=2,
+                        help="Exclude annotations with ≤N heavy atoms (default: 2, for atomic/diatomic)")
+    args = parser.parse_args()
+
     cfg = load_config("config/default.yaml")
 
     print("=" * 70)
     print("Extracting 0510 manual annotations...")
-    annotations = extract_0510_annotations()
+    annotations = extract_0510_annotations(args.data_dir)
+    total_ann = sum(len(v) for v in annotations.values())
+    print(f"  Total annotations: {total_ann} across {len(annotations)} spectra")
 
-    print(f"\n{'=' * 70}")
-    print("Loading algorithm-generated networks...")
-    networks = load_all_networks()
+    print(f"\nLoading algorithm-generated networks from {args.network_dir}...")
+    networks = load_all_networks(args.network_dir)
     print(f"  Total network records: {len(networks)}")
-    print(f"  Compounds in network: {networks['source_compound_id'].nunique()}")
+    print(f"  Compounds: {networks['source_compound_id'].nunique()}")
 
-    print(f"\n{'=' * 70}")
-    print("Matching annotations against networks...")
-    results = match_annotations(annotations, networks)
+    print(f"\nMatching annotations against networks...")
+    print(f"  Filter: exclude annotations with ≤{args.filter_heavy_max} heavy atoms")
+    results = match_annotations(annotations, networks, filter_heavy_max=args.filter_heavy_max)
 
-    # ── Summary table ──
+    # Print summary table
     print(f"\n{'=' * 70}")
-    print("SUMMARY: 0510 Manual Annotation vs Algorithm Network Match")
+    print("RESULTS (atomic/diatomic ions excluded)")
     print(f"{'=' * 70}")
-    print(f"{'Material':8s} {'Pol':4s} {'Annot':6s} {'Match':6s} {'Hit%':7s} {'IntCov%':8s} {'NetSize':8s}")
-    print("-" * 55)
+    header = f"{'Material':8s} {'Pol':4s} {'Total':5s} {'Excl':5s} {'Eval':5s} {'Match':6s} {'Hit%':8s} {'IntCov%':8s}"
+    print(header)
+    print("-" * 65)
 
-    total_ann = 0
-    total_match = 0
-    total_intensity = 0
-    total_intensity_matched = 0
+    total_ann_all = 0
+    total_exc = 0
+    total_eval = 0
+    total_mat = 0
+    total_intensity_m = 0.0
+    total_intensity_a = 0.0
 
     for key in sorted(results.keys()):
         r = results[key]
-        total_ann += r["total_annotations"]
-        total_match += r["matched"]
-        total_intensity += sum(a["intensity"] for a in r["matched_list"] + r["unmatched_list"])
-        total_intensity_matched += sum(a["intensity"] for a in r["matched_list"])
+        total_ann_all += r["total_annotations"]
+        total_exc += r["excluded_atomic_diatomic"]
+        total_eval += r["filtered_annotations"]
+        total_mat += r["matched"]
+        total_intensity_m += sum(a["intensity"] for a in r["matched_list"])
+        total_intensity_a += sum(a["intensity"] for a in r["matched_list"] + r["unmatched_list"])
         print(f"{r['material']:8s} {r['polarity']:4s} "
-              f"{r['total_annotations']:5d}  {r['matched']:5d}  "
-              f"{r['hit_rate_pct']:5.1f}%  {r['intensity_coverage_pct']:6.1f}%  "
-              f"{r['network_unique_formulas']:5d}")
+              f"{r['total_annotations']:4d}  {r['excluded_atomic_diatomic']:4d}  "
+              f"{r['filtered_annotations']:4d}  {r['matched']:5d}  "
+              f"{r['hit_rate_pct']:6.1f}%  {r['intensity_coverage_pct']:6.1f}%")
 
-    print("-" * 55)
-    overall_hit = total_match / total_ann * 100 if total_ann else 0
-    overall_int = total_intensity_matched / total_intensity * 100 if total_intensity else 0
-    print(f"{'TOTAL':8s} {'':4s} {total_ann:5d}  {total_match:5d}  "
-          f"{overall_hit:5.1f}%  {overall_int:6.1f}%")
+    print("-" * 65)
+    overall_hit = total_mat / total_eval * 100 if total_eval else 0
+    overall_int = total_intensity_m / total_intensity_a * 100 if total_intensity_a else 0
+    print(f"{'TOTAL':8s} {'':4s} {total_ann_all:4d}  {total_exc:4d}  "
+          f"{total_eval:4d}  {total_mat:5d}  "
+          f"{overall_hit:6.1f}%  {overall_int:6.1f}%")
+    print(f"\n  → After removing atomic/diatomic ions, hit rate = {overall_hit:.1f}%")
+    print(f"  → Intensity coverage = {overall_int:.1f}%")
 
-    # Save detailed results
-    output = {k: {kk: vv for kk, vv in v.items()
-                  if kk not in ("matched_list", "unmatched_list")}
-              for k, v in results.items()}
-    # Add unmatched details
+    # Save JSON
+    output = {}
     for k, v in results.items():
-        output[k]["unmatched_formulas"] = [
-            {"formula": a["formula"], "raw": a["raw_formula"],
-             "mz": a["mz"], "intensity": a["intensity"]}
-            for a in v["unmatched_list"]
-        ]
+        output[k] = {
+            "material": v["material"],
+            "polarity": v["polarity"],
+            "compound_id": v["compound_id"],
+            "total_annotations": v["total_annotations"],
+            "excluded_atomic_diatomic": v["excluded_atomic_diatomic"],
+            "filtered_annotations": v["filtered_annotations"],
+            "matched": v["matched"],
+            "unmatched": v["unmatched"],
+            "hit_rate_pct": v["hit_rate_pct"],
+            "intensity_coverage_pct": v["intensity_coverage_pct"],
+            "network_size": v["network_size"],
+            "network_unique_formulas": v["network_unique_formulas"],
+            "matched_formulas": [
+                {"formula": a["formula"], "raw": a["raw_formula"],
+                 "mz": a["mz"], "intensity": a["intensity"],
+                 "network_score": a["network_score"],
+                 "generation_type": a["generation_type"]}
+                for a in v["matched_list"]
+            ],
+            "unmatched_formulas": [
+                {"formula": a["formula"], "raw": a["raw_formula"],
+                 "mz": a["mz"], "intensity": a["intensity"],
+                 "heavy_atoms": a["heavy_atoms"]}
+                for a in v["unmatched_list"]
+            ],
+            "excluded_atomic_diatomic_list": [
+                {"formula": a["formula"], "raw": a["raw_formula"],
+                 "mz": a["mz"], "intensity": a["intensity"],
+                 "heavy_atoms": a["heavy_atoms"]}
+                for a in v["excluded_list"]
+            ],
+        }
 
-    with open("outputs/summary/0510_verification.json", "w") as f:
-        json.dump(output, f, ensure_ascii=False, indent=2)
-    print(f"\nDetailed results saved to outputs/summary/0510_verification.json")
+    json_path = Path(args.output_dir) / "summary" / "0510_verification.json"
+    json_path.parent.mkdir(parents=True, exist_ok=True)
+    json_path.write_text(json.dumps(output, ensure_ascii=False, indent=2))
+    print(f"\nJSON data saved to {json_path}")
 
-    # Show unmatched examples for each material
-    print(f"\n{'=' * 70}")
-    print("UNMATCHED ANNOTATIONS (top 5 by intensity per material)")
-    print(f"{'=' * 70}")
-    for key in sorted(results.keys()):
-        r = results[key]
-        if r["unmatched"] == 0:
-            continue
-        unmatched_sorted = sorted(r["unmatched_list"],
-                                  key=lambda x: x["intensity"], reverse=True)
-        print(f"\n--- {key} ({r['unmatched']} unmatched) ---")
-        for a in unmatched_sorted[:5]:
-            print(f"  {a['raw_formula']:20s} → {a['formula']:16s}  "
-                  f"mz={a['mz']:10.4f}  intensity={a['intensity']:12.2f}")
+    # Generate Markdown report
+    print()
+    generate_report(results, args.output_dir)
 
 
 if __name__ == "__main__":

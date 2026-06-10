@@ -53,6 +53,11 @@ def default_config() -> dict[str, Any]:
             "min_score": 0.0,
             "max_score": 1.0,
         },
+        "oligomer": {
+            "max_extend": 12,
+            "max_mass": 2000,
+            "penalty_per_extend": 0.08,
+        },
     }
 
 

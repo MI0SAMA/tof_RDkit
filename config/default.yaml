@@ -24,3 +24,8 @@ ion_rules:
   common_adducts_negative: ["-H", "Cl", "O", "OH"]
   neutral_losses: ["H2", "H2O", "CO", "CO2", "NH3", "CH3", "OH", "HCl", "HF"]
   dimers: true
+
+oligomer:
+  max_extend: 12
+  max_mass: 2000
+  penalty_per_extend: 0.08
