@@ -1,0 +1,276 @@
+{
+  "nodes": [
+    {
+      "id": "center",
+      "type": "text",
+      "text": "# TOF-SIMS formula network 实验对接\n\n目标：请实验人员帮助校准碎片生成、离子化规则和打分策略。\n\n说明：`RF_output` 是历史文件夹名，现在统一理解为“AI生成标注输出”，不是 Random Forest。",
+      "x": 0,
+      "y": 0,
+      "width": 520,
+      "height": 260,
+      "color": "2"
+    },
+    {
+      "id": "inputs",
+      "type": "text",
+      "text": "# 当前输入\n\n- TOF-SIMS 峰表：m/z、intensity、polarity\n- 材料结构：SMILES、repeat unit、compounds.csv\n- AI生成标注输出：盲分析.json、LLM工作清单.json、substance_candidates.json\n- formula network：parent、fragment、adduct、neutral_loss、dimer、rule_packs",
+      "x": -760,
+      "y": -420,
+      "width": 430,
+      "height": 250,
+      "color": "3"
+    },
+    {
+      "id": "network_boundary",
+      "type": "text",
+      "text": "# 当前 network 能做什么\n\n- 只做候选分子式召回和可解释筛选\n- 能回答：某个公式能否由材料结构规则解释\n- 能比较：同材料同极性、同材料仅公式、跨材料通用程度\n\n不能直接证明：\n- 最终化学归属一定正确\n- 峰强来自真实反应概率\n- 复合材料无机相已完整建模",
+      "x": -760,
+      "y": -120,
+      "width": 430,
+      "height": 260,
+      "color": "3"
+    },
+    {
+      "id": "known_limits",
+      "type": "text",
+      "text": "# 已知边界与注意事项\n\n- PEEK20%GFR / PPS40%GFR 是复合材料，当前 SMILES 主要代表树脂基体，玻纤相未完整进入 network\n- PAI / PBI / PCTFE 当前没有对应 network\n- `rf_score` / `rf_rank` 是历史字段名，含义是 AI生成输出的分数和原始排序\n- A/B 级是工程筛选标签，不等于最终化学确认",
+      "x": -760,
+      "y": 200,
+      "width": 430,
+      "height": 260,
+      "color": "4"
+    },
+    {
+      "id": "rules",
+      "type": "text",
+      "text": "# 需要实验帮助：碎片生成规则\n\n请重点判断：\n- 哪些键更容易断裂\n- 哪些碎片能代表材料特征\n- 哪些只是通用碳氢/含氟/含氧碎片\n- 哪些高强峰更像背景、污染或基底\n- 是否需要按材料类别单独配置规则",
+      "x": -90,
+      "y": -560,
+      "width": 500,
+      "height": 270,
+      "color": "5"
+    },
+    {
+      "id": "ion_rules",
+      "type": "text",
+      "text": "# 需要实验帮助：离子化与加合\n\n请判断：\n- 正/负离子常见形式是否合理\n- H 加合、脱 H 是否需要按材料限制\n- Na/K/Cs 等金属加合是否应作为材料证据或背景\n- 含氟材料特殊阴离子是否要扩展\n- 含 N/S 材料哪些离子应提升权重",
+      "x": 500,
+      "y": -560,
+      "width": 500,
+      "height": 270,
+      "color": "5"
+    },
+    {
+      "id": "loss_rules",
+      "type": "text",
+      "text": "# 需要实验帮助：中性丢失\n\n待确认 loss：\n- H2、H2O、CO、CO2\n- HF\n- SO、SO2\n\n关键问题：\n- 是否必须依赖官能团上下文\n- 是否只适用于特定材料类型\n- 哪些 loss 过宽，容易造成假阳性",
+      "x": 1090,
+      "y": -560,
+      "width": 500,
+      "height": 270,
+      "color": "5"
+    },
+    {
+      "id": "scoring",
+      "type": "text",
+      "text": "# 打分策略待校准\n\n当前筛选前十峰使用：\n\n`结构支持 + 材料特异性 + AI生成分数 + 原始rank + 峰强`\n\n实验人员要判断：\n- 结构支持是否应权重最高\n- 通用峰降权是否足够\n- AI生成高分但 network 不支持时应如何处理\n- 峰强很高但像背景时是否应排除\n- 哪些特征峰目前排得过低",
+      "x": 500,
+      "y": -150,
+      "width": 500,
+      "height": 300,
+      "color": "6"
+    },
+    {
+      "id": "evidence_tables",
+      "type": "text",
+      "text": "# 建议开会时看的表\n\n1. `rf_top10_plain_network_presence_excel.tsv`\n   - 不评分，只看 AI生成前十峰是否出现在 network 中\n\n2. `rf_network_screened_top10_peaks_excel.tsv`\n   - network 筛选后的每材料前十峰\n\n3. `rf_network_screened_formulas.csv`\n   - A/B 级候选公式，用于规则回灌\n\n4. `rf_network_summary_by_material.csv`\n   - 各材料覆盖和缺口",
+      "x": 1090,
+      "y": -150,
+      "width": 500,
+      "height": 300,
+      "color": "6"
+    },
+    {
+      "id": "review_questions",
+      "type": "text",
+      "text": "# 给实验人员的复核问题\n\n峰级判断：\n- 保留 / 降权 / 删除 / 背景 / 不确定\n\n规则级建议：\n- 新增碎片规则\n- 新增加合规则\n- 新增或限制中性丢失\n- 修改某类规则权重\n\n材料级建议：\n- 特征峰清单\n- 通用峰清单\n- 背景峰清单\n- 复合材料备注\n- 新增材料 network 需求",
+      "x": -90,
+      "y": 240,
+      "width": 500,
+      "height": 340,
+      "color": "6"
+    },
+    {
+      "id": "priority",
+      "type": "text",
+      "text": "# 优先讨论材料/峰类\n\n- 含氟材料：CFx、CxFy、CxHyFzO 哪些是特征，哪些通用\n- 芳香聚合物：C10H6、C11H6O、C19H13O3/O4 是否合理\n- 含 N/S 材料：CNO、CN、C6H4N、C6H5S2 是否提升权重\n- 金属/盐/背景：Na、K、Cs、Ca、Cl 是否排除或降权\n- PAI/PBI/PCTFE：需要结构来源或 repeat unit",
+      "x": 500,
+      "y": 240,
+      "width": 500,
+      "height": 340,
+      "color": "6"
+    },
+    {
+      "id": "workflow",
+      "type": "text",
+      "text": "# 建议会议流程\n\n1. 先看 AI生成原始前十峰，标出明显背景和通用峰\n2. 再看 network 筛选后前十峰，判断是否更像材料特征峰\n3. 每个材料标 3 类：特征峰 / 辅助通用峰 / 排除峰\n4. 单独讨论 `formula_only_mode_gap`，判断是否补极性规则\n5. 会后整理为规则更新清单和权重调整建议",
+      "x": 1090,
+      "y": 240,
+      "width": 500,
+      "height": 340,
+      "color": "6"
+    },
+    {
+      "id": "audit",
+      "type": "text",
+      "text": "# 内容审核结论\n\n总体准确，但需保留这些表述边界：\n\n- `AI生成标注输出` 是算法输出，不是最终化学事实\n- `network 命中` 表示结构规则可解释，不表示唯一归属\n- `A/B 级` 是筛选优先级，不是定性标签\n- `特征峰` 在文档里应理解为“候选特征峰，待实验确认”\n- 复合材料和无 network 材料不能与纯物质同口径解释",
+      "x": -760,
+      "y": 560,
+      "width": 610,
+      "height": 290,
+      "color": "4"
+    },
+    {
+      "id": "deliverables",
+      "type": "text",
+      "text": "# 会议后希望得到的交付物\n\n- 人工复核后的峰级表\n- 规则更新清单\n- 背景/污染峰清单\n- 材料特征峰候选清单\n- 打分权重调整建议\n- PAI/PBI/PCTFE 的结构输入建议",
+      "x": -90,
+      "y": 660,
+      "width": 500,
+      "height": 240,
+      "color": "2"
+    },
+    {
+      "id": "next",
+      "type": "text",
+      "text": "# 下一版实现方向\n\n- 将实验确认峰写入规则包或背景表\n- 对通用峰建立降权名单\n- 对极性缺口补 ion_rules\n- 对中性丢失加入结构上下文限制\n- 对复合材料加入 matrix/filler 标记\n- 重跑 AI生成输出 vs network 对比报告",
+      "x": 500,
+      "y": 660,
+      "width": 500,
+      "height": 240,
+      "color": "2"
+    }
+  ],
+  "edges": [
+    {
+      "id": "e_center_inputs",
+      "fromNode": "inputs",
+      "fromSide": "right",
+      "toNode": "center",
+      "toSide": "left",
+      "color": "1"
+    },
+    {
+      "id": "e_center_boundary",
+      "fromNode": "network_boundary",
+      "fromSide": "right",
+      "toNode": "center",
+      "toSide": "left",
+      "color": "1"
+    },
+    {
+      "id": "e_center_limits",
+      "fromNode": "known_limits",
+      "fromSide": "right",
+      "toNode": "center",
+      "toSide": "left",
+      "color": "1"
+    },
+    {
+      "id": "e_center_rules",
+      "fromNode": "center",
+      "fromSide": "top",
+      "toNode": "rules",
+      "toSide": "bottom",
+      "color": "1"
+    },
+    {
+      "id": "e_rules_ion",
+      "fromNode": "rules",
+      "fromSide": "right",
+      "toNode": "ion_rules",
+      "toSide": "left",
+      "color": "1"
+    },
+    {
+      "id": "e_ion_loss",
+      "fromNode": "ion_rules",
+      "fromSide": "right",
+      "toNode": "loss_rules",
+      "toSide": "left",
+      "color": "1"
+    },
+    {
+      "id": "e_center_scoring",
+      "fromNode": "center",
+      "fromSide": "right",
+      "toNode": "scoring",
+      "toSide": "left",
+      "color": "1"
+    },
+    {
+      "id": "e_scoring_tables",
+      "fromNode": "scoring",
+      "fromSide": "right",
+      "toNode": "evidence_tables",
+      "toSide": "left",
+      "color": "1"
+    },
+    {
+      "id": "e_center_questions",
+      "fromNode": "center",
+      "fromSide": "bottom",
+      "toNode": "review_questions",
+      "toSide": "top",
+      "color": "1"
+    },
+    {
+      "id": "e_questions_priority",
+      "fromNode": "review_questions",
+      "fromSide": "right",
+      "toNode": "priority",
+      "toSide": "left",
+      "color": "1"
+    },
+    {
+      "id": "e_priority_workflow",
+      "fromNode": "priority",
+      "fromSide": "right",
+      "toNode": "workflow",
+      "toSide": "left",
+      "color": "1"
+    },
+    {
+      "id": "e_audit_center",
+      "fromNode": "audit",
+      "fromSide": "right",
+      "toNode": "center",
+      "toSide": "bottom",
+      "color": "4"
+    },
+    {
+      "id": "e_questions_deliverables",
+      "fromNode": "review_questions",
+      "fromSide": "bottom",
+      "toNode": "deliverables",
+      "toSide": "top",
+      "color": "1"
+    },
+    {
+      "id": "e_deliverables_next",
+      "fromNode": "deliverables",
+      "fromSide": "right",
+      "toNode": "next",
+      "toSide": "left",
+      "color": "1"
+    },
+    {
+      "id": "e_workflow_next",
+      "fromNode": "workflow",
+      "fromSide": "bottom",
+      "toNode": "next",
+      "toSide": "right",
+      "color": "1"
+    }
+  ]
+}

@@ -1,0 +1,326 @@
+{
+  "nodes": [
+    {
+      "id": "title",
+      "type": "text",
+      "text": "# Formula network 算法路线图\n\n讲解主线：\n结构模型 -> 候选公式生成 -> 规则分数 -> network 输出 -> AI生成输出对比 -> 实验反馈回灌\n\n边界：network 命中表示“当前规则可解释”，不是最终化学定性。",
+      "x": 0,
+      "y": -80,
+      "width": 520,
+      "height": 250,
+      "color": "2"
+    },
+    {
+      "id": "input",
+      "type": "text",
+      "text": "# 1 输入层\n\n`compounds.csv`\n- compound_id / name\n- smiles\n- formula\n- extend_formula\n- notes\n\n实验确认点：\n- SMILES 是否代表重复单元\n- formula 是否可信\n- 复合材料是否要拆 matrix/filler",
+      "x": -850,
+      "y": -500,
+      "width": 430,
+      "height": 270,
+      "color": "3"
+    },
+    {
+      "id": "rdkit",
+      "type": "text",
+      "text": "# 2 RDKit 结构准备\n\n- 读取 SMILES\n- 显式加氢\n- 若 formula 为空，计算母体公式\n\n边界：\n聚合物结构通常是重复单元/短链近似，不是完整链。",
+      "x": -850,
+      "y": -160,
+      "width": 430,
+      "height": 240,
+      "color": "3"
+    },
+    {
+      "id": "parent",
+      "type": "text",
+      "text": "# 3 Parent M\n\n生成母体公式记录：\n- generation_type = parent\n- ion_mode = neutral\n- path = M\n- base score = 1.0\n\n实验问题：母体应代表 repeat unit 还是更长片段？",
+      "x": -850,
+      "y": 140,
+      "width": 430,
+      "height": 220,
+      "color": "3"
+    },
+    {
+      "id": "fragment",
+      "type": "text",
+      "text": "# 4 Fragmentation\n\n当前规则：\n- 最多断 2 根键\n- 只切重原子-重原子单键\n- 默认不切环键\n- 默认不切芳香键\n- fragment 至少 2 个重原子\n\n边界：只生成原子集合公式，不模拟重排/自由基稳定。",
+      "x": -250,
+      "y": -520,
+      "width": 470,
+      "height": 300,
+      "color": "5"
+    },
+    {
+      "id": "hshift",
+      "type": "text",
+      "text": "# 5 H-shift\n\n范围：-2, -1, 0, +1, +2\n\n作用：近似补氢/脱氢。\n\n实验问题：\n- 是否所有材料都允许 ±2H\n- 是否应和极性/官能团绑定",
+      "x": -250,
+      "y": -150,
+      "width": 470,
+      "height": 230,
+      "color": "5"
+    },
+    {
+      "id": "adduct",
+      "type": "text",
+      "text": "# 6 Adduct\n\n正离子：H, Na, K\n负离子：-H, Cl, O, OH\n\n输出：positive/negative ion_mode\n\n边界：只改分子式，不验证配位、电荷稳定或反应路径。",
+      "x": -250,
+      "y": 140,
+      "width": 470,
+      "height": 270,
+      "color": "5"
+    },
+    {
+      "id": "loss",
+      "type": "text",
+      "text": "# 7 Neutral loss\n\n当前：H2, H2O, CO, CO2, NH3, CH3, OH, HCl, HF\n\n实现：从公式中扣除元素计数。\n\n实验问题：\n- 哪些 loss 需要官能团条件\n- 哪些材料不该启用某些 loss",
+      "x": -250,
+      "y": 480,
+      "width": 470,
+      "height": 280,
+      "color": "5"
+    },
+    {
+      "id": "oligomer",
+      "type": "text",
+      "text": "# 8 Oligomer\n\n触发：extend_formula\n\n规则：base + n × repeat\n- max_extend = 12\n- max_mass = 2000\n- penalty_per_extend = 0.08\n\n实验问题：寡聚峰是否常见，质量/聚合度上限是否合理。",
+      "x": 350,
+      "y": -520,
+      "width": 470,
+      "height": 250,
+      "color": "6"
+    },
+    {
+      "id": "dimer",
+      "type": "text",
+      "text": "# 9 Dimer\n\n生成：\n- 2M + H\n- 2M + Na\n- 2M - H\n- 2M + Cl\n\n边界：启发式候选，不代表二聚机理已确认。",
+      "x": 350,
+      "y": -210,
+      "width": 470,
+      "height": 220,
+      "color": "6"
+    },
+    {
+      "id": "rulepacks",
+      "type": "text",
+      "text": "# 10 Rule packs\n\n低分召回规则：\n- carbon_cluster：COC/EVA/PET/POMC/POMH\n- siloxane_fragment：PDMS\n- external_adduct：POMC/POMH/EVA\n\n作用：补人工标注缺口。\n\n风险：公式空间宽，容易产生通用峰或背景峰。",
+      "x": 350,
+      "y": 70,
+      "width": 470,
+      "height": 330,
+      "color": "6"
+    },
+    {
+      "id": "score",
+      "type": "text",
+      "text": "# 11 Scoring\n\n不是概率，是规则可信度启发式。\n\n基础分：\n- parent 1.0\n- fragment 0.75\n- carbon_cluster 0.22\n- siloxane_fragment 0.28\n- external_adduct 0.25\n\n扣分：断键、H-shift、neutral loss、非H加合、dimer、oligomer extension",
+      "x": 960,
+      "y": -500,
+      "width": 500,
+      "height": 330,
+      "color": "4"
+    },
+    {
+      "id": "merge",
+      "type": "text",
+      "text": "# 12 去重与输出\n\n去重键：\nformula + ion_mode + generation_type\n\n保留分数更高的记录，合并部分 path。\n\n输出：\n- outputs/networks/*.csv\n- outputs/networks/*.json",
+      "x": 960,
+      "y": -100,
+      "width": 500,
+      "height": 250,
+      "color": "4"
+    },
+    {
+      "id": "compare",
+      "type": "text",
+      "text": "# 13 与 AI生成输出对比\n\n三类表：\n1. AI生成原始前十峰朴素归属\n2. network 筛选后前十峰\n3. A/B 级候选公式\n\n用途：\n- 找可信候选\n- 找极性缺口\n- 找背景/污染\n- 找规则未覆盖区域",
+      "x": 960,
+      "y": 220,
+      "width": 500,
+      "height": 320,
+      "color": "4"
+    },
+    {
+      "id": "feedback",
+      "type": "text",
+      "text": "# 14 实验反馈回灌\n\n请实验人员标注：\n- 保留\n- 降权\n- 删除\n- 背景\n- 不确定\n\n回灌方式：\n- 修改可断键规则\n- 调整 ion/adduct/loss\n- 新增 rule pack\n- 建背景峰表\n- 调整评分权重",
+      "x": 1550,
+      "y": -260,
+      "width": 500,
+      "height": 330,
+      "color": "2"
+    },
+    {
+      "id": "limits",
+      "type": "text",
+      "text": "# 讲解时必须强调\n\n- network 命中不是最终归属\n- A/B 级不是定性标签\n- AI生成输出不是真值\n- 特征峰是候选特征峰，待实验确认\n- GFR 复合材料当前主要是树脂基体\n- PAI/PBI/PCTFE 缺 network，需补结构输入",
+      "x": 1550,
+      "y": 140,
+      "width": 500,
+      "height": 310,
+      "color": "1"
+    }
+  ],
+  "edges": [
+    {
+      "id": "e_input_rdkit",
+      "fromNode": "input",
+      "fromSide": "bottom",
+      "toNode": "rdkit",
+      "toSide": "top",
+      "color": "1"
+    },
+    {
+      "id": "e_rdkit_parent",
+      "fromNode": "rdkit",
+      "fromSide": "bottom",
+      "toNode": "parent",
+      "toSide": "top",
+      "color": "1"
+    },
+    {
+      "id": "e_parent_fragment",
+      "fromNode": "parent",
+      "fromSide": "right",
+      "toNode": "fragment",
+      "toSide": "left",
+      "color": "1"
+    },
+    {
+      "id": "e_fragment_hshift",
+      "fromNode": "fragment",
+      "fromSide": "bottom",
+      "toNode": "hshift",
+      "toSide": "top",
+      "color": "1"
+    },
+    {
+      "id": "e_hshift_adduct",
+      "fromNode": "hshift",
+      "fromSide": "bottom",
+      "toNode": "adduct",
+      "toSide": "top",
+      "color": "1"
+    },
+    {
+      "id": "e_adduct_loss",
+      "fromNode": "adduct",
+      "fromSide": "bottom",
+      "toNode": "loss",
+      "toSide": "top",
+      "color": "1"
+    },
+    {
+      "id": "e_parent_oligo",
+      "fromNode": "parent",
+      "fromSide": "right",
+      "toNode": "oligomer",
+      "toSide": "left",
+      "color": "1"
+    },
+    {
+      "id": "e_parent_dimer",
+      "fromNode": "parent",
+      "fromSide": "right",
+      "toNode": "dimer",
+      "toSide": "left",
+      "color": "1"
+    },
+    {
+      "id": "e_parent_rulepacks",
+      "fromNode": "parent",
+      "fromSide": "right",
+      "toNode": "rulepacks",
+      "toSide": "left",
+      "color": "1"
+    },
+    {
+      "id": "e_adduct_score",
+      "fromNode": "adduct",
+      "fromSide": "right",
+      "toNode": "score",
+      "toSide": "left",
+      "color": "1"
+    },
+    {
+      "id": "e_loss_score",
+      "fromNode": "loss",
+      "fromSide": "right",
+      "toNode": "score",
+      "toSide": "left",
+      "color": "1"
+    },
+    {
+      "id": "e_oligo_score",
+      "fromNode": "oligomer",
+      "fromSide": "right",
+      "toNode": "score",
+      "toSide": "left",
+      "color": "1"
+    },
+    {
+      "id": "e_dimer_score",
+      "fromNode": "dimer",
+      "fromSide": "right",
+      "toNode": "score",
+      "toSide": "left",
+      "color": "1"
+    },
+    {
+      "id": "e_rulepacks_score",
+      "fromNode": "rulepacks",
+      "fromSide": "right",
+      "toNode": "score",
+      "toSide": "left",
+      "color": "1"
+    },
+    {
+      "id": "e_score_merge",
+      "fromNode": "score",
+      "fromSide": "bottom",
+      "toNode": "merge",
+      "toSide": "top",
+      "color": "1"
+    },
+    {
+      "id": "e_merge_compare",
+      "fromNode": "merge",
+      "fromSide": "bottom",
+      "toNode": "compare",
+      "toSide": "top",
+      "color": "1"
+    },
+    {
+      "id": "e_compare_feedback",
+      "fromNode": "compare",
+      "fromSide": "right",
+      "toNode": "feedback",
+      "toSide": "left",
+      "color": "1"
+    },
+    {
+      "id": "e_limits_feedback",
+      "fromNode": "limits",
+      "fromSide": "top",
+      "toNode": "feedback",
+      "toSide": "bottom",
+      "color": "1"
+    },
+    {
+      "id": "e_title_fragment",
+      "fromNode": "title",
+      "fromSide": "top",
+      "toNode": "fragment",
+      "toSide": "bottom",
+      "color": "2"
+    },
+    {
+      "id": "e_title_compare",
+      "fromNode": "title",
+      "fromSide": "right",
+      "toNode": "compare",
+      "toSide": "left",
+      "color": "2"
+    }
+  ]
+}

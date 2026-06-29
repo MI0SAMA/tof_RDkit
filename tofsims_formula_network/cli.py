@@ -9,9 +9,11 @@ from pandas.errors import EmptyDataError
 from .matching import calculate_final_score, load_networks, load_rf_candidates, match_rf_with_network, match_spectrum_by_mass
 from .molecule_io import get_formula_from_mol, mol_from_smiles, read_compounds, validate_compound_row
 from .network import generate_formula_network, write_network_csv, write_network_json
+from .network_v2 import generate_formula_network_v2, write_network_v2
 from .reporting import write_markdown_report, write_matches_csv
 from .spectrum_io import find_spectrum_files, preprocess_spectrum, read_spectrum_txt, standardize_spectrum, write_parsed_spectrum
 from .utils import ensure_dirs, load_config
+from .evaluation_v2 import evaluate_network_v2
 
 
 def _spectrum_id(path: Path) -> str:
@@ -50,6 +52,9 @@ def build_network(args) -> None:
         old.unlink()
     compounds_path = Path(args.compounds or cfg["io"]["compounds_file"])
     compounds = read_compounds(compounds_path)
+    excluded = {str(item) for item in cfg.get("io", {}).get("excluded_compound_ids", [])}
+    if excluded and "compound_id" in compounds:
+        compounds = compounds[~compounds["compound_id"].astype(str).isin(excluded)]
     summary = []
     for _, row in compounds.iterrows():
         try:
@@ -68,6 +73,71 @@ def build_network(args) -> None:
             summary.append({"compound_id": row.get("compound_id", ""), "name": row.get("name", ""), "status": "skipped", "records": 0, "message": str(exc)})
             print(f"skipped compound {row.get('compound_id', '')}: {exc}")
     pd.DataFrame(summary).to_csv(paths["summary"] / "network_build_summary.csv", index=False)
+
+
+def build_network_v2(args) -> None:
+    cfg = load_config(args.config)
+    paths = ensure_dirs(cfg["io"]["output_dir"])
+    network_dir = paths["base"] / "networks_v2"
+    network_dir.mkdir(parents=True, exist_ok=True)
+    for old in list(network_dir.glob("*.csv")) + list(network_dir.glob("*.json")):
+        old.unlink()
+    compounds_path = Path(args.compounds or cfg["io"]["compounds_file"])
+    compounds = read_compounds(compounds_path)
+    excluded = {str(item) for item in cfg.get("io", {}).get("excluded_compound_ids", [])}
+    if excluded and "compound_id" in compounds:
+        compounds = compounds[~compounds["compound_id"].astype(str).isin(excluded)]
+    summary = []
+    for _, row in compounds.iterrows():
+        try:
+            validate_compound_row(row)
+            row = row.to_dict()
+            mol = mol_from_smiles(row["smiles"])
+            if not row.get("formula"):
+                row["formula"] = get_formula_from_mol(mol)
+            nodes, edges, formulas = generate_formula_network_v2(row, cfg)
+            write_network_v2(nodes, edges, formulas, network_dir, row)
+            summary.append(
+                {
+                    "compound_id": row["compound_id"],
+                    "name": row["name"],
+                    "status": "built",
+                    "nodes": len(nodes),
+                    "edges": len(edges),
+                    "unique_ion_formulas": len(formulas),
+                    "message": "",
+                }
+            )
+            print(f"built v2 network {row['compound_id']}: {len(nodes)} nodes, {len(edges)} edges, {len(formulas)} formulas")
+        except Exception as exc:
+            summary.append(
+                {
+                    "compound_id": row.get("compound_id", ""),
+                    "name": row.get("name", ""),
+                    "status": "skipped",
+                    "nodes": 0,
+                    "edges": 0,
+                    "unique_ion_formulas": 0,
+                    "message": str(exc),
+                }
+            )
+            print(f"skipped compound {row.get('compound_id', '')}: {exc}")
+    pd.DataFrame(summary).to_csv(paths["summary"] / "network_v2_build_summary.csv", index=False, encoding="utf-8-sig")
+
+
+def evaluate_v2(args) -> pd.DataFrame:
+    cfg = load_config(args.config)
+    paths = ensure_dirs(cfg["io"]["output_dir"])
+    network_dir = Path(args.networks or paths["base"] / "networks_v2")
+    data_dir = Path(args.spectra or cfg["io"]["data_dir"])
+    summary, peaks = evaluate_network_v2(data_dir, network_dir, cfg)
+    summary_path = paths["summary"] / "network_v2_evaluation_summary.csv"
+    peaks_path = paths["summary"] / "network_v2_evaluation_peaks.csv"
+    summary.to_csv(summary_path, index=False, encoding="utf-8-sig")
+    peaks.to_csv(peaks_path, index=False, encoding="utf-8-sig")
+    print(f"v2 evaluation: {len(summary)} spectra -> {summary_path}")
+    print(f"v2 evaluation peaks: {len(peaks)} peaks -> {peaks_path}")
+    return summary
 
 
 def match_rf(args) -> pd.DataFrame:
@@ -141,6 +211,8 @@ def build_parser() -> argparse.ArgumentParser:
     for name, func in [
         ("parse-spectra", parse_spectra),
         ("build-network", build_network),
+        ("build-network-v2", build_network_v2),
+        ("evaluate-network-v2", evaluate_v2),
         ("match-rf", match_rf),
         ("match-spectrum", match_spectrum),
         ("report", report),
