@@ -12,3 +12,12 @@ data/tof_db.sqlite
 data/*.jpg
 data/*.png
 projects/
+data/*.xlsx
+data/*.zip
+docs/*.pdf
+docs/*.pdf:Zone.Identifier
+*.canvas
+RF_output/
+web/frontend/dist/
+web/frontend/node_modules/
+web_data/

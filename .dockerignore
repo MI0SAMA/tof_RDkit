@@ -1,0 +1,17 @@
+.git
+.gitattributes
+.gitignore
+__pycache__
+*.pyc
+.agents
+.claude
+projects
+RF_output
+*.xlsx
+*.zip
+*.canvas
+*.png
+*.jpg
+node_modules
+web/frontend/node_modules
+web/frontend/dist
