@@ -48,6 +48,8 @@ export interface MaterialCard {
   gen_hc: number
   struct_only: number
   val_diag_pct: number
+  match_rate: number
+  match_rate_raw: number
   formula_evidence: string
   pattern_evidence: string
   final_evidence: string

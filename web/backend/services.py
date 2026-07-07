@@ -267,6 +267,9 @@ def get_dashboard_data(db: Session) -> dict:
     evidence_reports = db.query(EvidenceReport).all()
     materials = db.query(Material).all()
 
+    # Load evaluation match rates from CSV
+    match_rates = _load_match_rates()
+
     total_formulas = sum(r.total_formulas for r in evidence_reports)
     total_val_diag = sum(r.val_diag for r in evidence_reports)
     total_val_gen = sum(r.val_gen for r in evidence_reports)
@@ -281,6 +284,7 @@ def get_dashboard_data(db: Session) -> dict:
     material_cards = []
     for r in evidence_reports:
         mat = next((m for m in materials if m.compound_id == r.compound_id), None)
+        mr = match_rates.get(r.compound_id, 0)
         material_cards.append({
             "compound_id": r.compound_id,
             "name": mat.name if mat else r.compound_id,
@@ -292,6 +296,8 @@ def get_dashboard_data(db: Session) -> dict:
             "gen_hc": r.gen_hc,
             "struct_only": r.struct_only,
             "val_diag_pct": round(r.val_diag / max(r.total_formulas, 1) * 100, 1),
+            "match_rate": round(mr * 100, 1),
+            "match_rate_raw": round(mr, 3),
             "formula_evidence": r.formula_evidence,
             "pattern_evidence": r.pattern_evidence,
             "final_evidence": r.final_evidence,
@@ -310,8 +316,22 @@ def get_dashboard_data(db: Session) -> dict:
             "hidden_ratio": round(hidden_ratio * 100, 1),
             "strategy_distribution": strategies,
         },
-        "materials": sorted(material_cards, key=lambda x: -x["val_diag"]),
+        "materials": sorted(material_cards, key=lambda x: -x["match_rate"]),
     }
+
+
+def _load_match_rates() -> dict[str, float]:
+    """Load per-material match rates from evaluation summary CSV."""
+    csv_path = SUMMARY_DIR / "network_v2_evaluation_summary.csv"
+    if not csv_path.exists():
+        return {}
+    try:
+        df = pd.read_csv(csv_path)
+        # Average recall across ion modes per material
+        rates = df.groupby("material")["network_recall"].mean().to_dict()
+        return rates
+    except Exception:
+        return {}
 
 
 def get_material_network(compound_id: str, db: Session, hide_struct_only: bool = True) -> dict:

@@ -147,9 +147,15 @@ export default function Dashboard() {
               </div>
               <div className="mt-2 flex items-center gap-1">
                 <div className="flex-1 h-1 bg-gray-100 rounded-full overflow-hidden">
-                  <div className="h-full bg-green-500 rounded-full" style={{ width: `${m.val_diag_pct}%` }} />
+                  <div
+                    className="h-full rounded-full"
+                    style={{
+                      width: `${Math.min(m.match_rate || 0, 100)}%`,
+                      backgroundColor: (m.match_rate || 0) >= 80 ? '#22c55e' : (m.match_rate || 0) >= 50 ? '#f59e0b' : '#ef4444',
+                    }}
+                  />
                 </div>
-                <span className="text-xs text-gray-500 w-10 text-right">{m.val_diag_pct}%</span>
+                <span className="text-xs text-gray-500 w-10 text-right">{m.match_rate || 0}%</span>
               </div>
             </div>
           ))}
