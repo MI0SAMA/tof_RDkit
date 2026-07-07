@@ -1,5 +1,5 @@
 import { Outlet, NavLink } from 'react-router-dom'
-import { FlaskConical, LayoutDashboard, Beaker, Activity } from 'lucide-react'
+import { FlaskConical, LayoutDashboard, Beaker, Activity, ListTodo } from 'lucide-react'
 
 export default function Layout() {
   return (
@@ -36,6 +36,17 @@ export default function Layout() {
           >
             <Beaker size={16} />
             Materials
+          </NavLink>
+          <NavLink
+            to="/tasks"
+            className={({ isActive }) =>
+              `flex items-center gap-2 px-3 py-2 rounded-lg text-sm transition-colors ${
+                isActive ? 'bg-blue-50 text-blue-700 font-medium' : 'text-gray-600 hover:bg-gray-100'
+              }`
+            }
+          >
+            <ListTodo size={16} />
+            Tasks
           </NavLink>
         </nav>
         <div className="p-3 border-t border-gray-200 text-xs text-gray-400">

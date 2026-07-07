@@ -6,7 +6,7 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
 
-from .api import dashboard, evidence, export, formulas, import_data, materials, network
+from .api import dashboard, evidence, export, formulas, import_data, materials, network, tasks
 from .database import init_db
 
 STATIC_DIR = Path(__file__).resolve().parent.parent / "frontend" / "dist"
@@ -32,6 +32,7 @@ app.include_router(formulas.router)
 app.include_router(evidence.router)
 app.include_router(network.router)
 app.include_router(import_data.router)
+app.include_router(tasks.router)
 app.include_router(export.router)
 
 

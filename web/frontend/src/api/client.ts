@@ -189,4 +189,29 @@ export const api = {
 
   exportNetworkJson: (materialId: string) =>
     window.open(`${API_BASE}/export/network?material_id=${materialId}&format=json`, '_blank'),
+
+  generateNetwork: (params: { compound_id: string; smiles: string; formula?: string; version?: string }) =>
+    request<{ task_id: string; status: string; message: string }>('/materials/' + encodeURIComponent(params.compound_id) + '/generate', {
+      method: 'POST',
+      body: JSON.stringify(params),
+    }),
+
+  getTasks: (status?: string) =>
+    request<TaskInfo[]>(`/tasks${status ? `?status=${status}` : ''}`),
+
+  getTask: (taskId: string) => request<TaskInfo>(`/tasks/${taskId}`),
+}
+
+export interface TaskInfo {
+  task_id: string
+  task_type: string
+  material_id: string
+  version: string
+  status: 'pending' | 'running' | 'completed' | 'failed'
+  progress: number
+  current_step: string
+  log_path: string
+  error_message: string
+  created_at: string | null
+  finished_at: string | null
 }
