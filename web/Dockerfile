@@ -16,7 +16,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 # Pin numpy<2 because rdkit-pypi is compiled against NumPy 1.x
 RUN pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple \
     && pip install --no-cache-dir "numpy<2" pandas pyyaml networkx tqdm rdkit-pypi \
-    && pip install --no-cache-dir fastapi uvicorn sqlalchemy
+    && pip install --no-cache-dir fastapi uvicorn sqlalchemy python-multipart
 
 # Copy backend code
 COPY web/backend/ /app/backend/

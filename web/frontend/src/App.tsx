@@ -6,6 +6,7 @@ import MaterialLayout from './pages/MaterialLayout'
 import NetworkPage from './pages/NetworkPage'
 import FormulasPage from './pages/FormulasPage'
 import EvidencePage from './pages/EvidencePage'
+import MatchPeaksPage from './pages/MatchPeaksPage'
 import TasksPage from './pages/TasksPage'
 
 export default function App() {
@@ -21,6 +22,7 @@ export default function App() {
             <Route path="network" element={<NetworkPage />} />
             <Route path="formulas" element={<FormulasPage />} />
             <Route path="evidence" element={<EvidencePage />} />
+            <Route path="match-peaks" element={<MatchPeaksPage />} />
           </Route>
         </Route>
       </Routes>

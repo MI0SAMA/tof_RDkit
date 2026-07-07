@@ -1,7 +1,7 @@
 import { Outlet, NavLink, useParams } from 'react-router-dom'
 import { useQuery } from '@tanstack/react-query'
 import { api } from '../api/client'
-import { ArrowLeft, Share2, GitGraph, Table2, FileText } from 'lucide-react'
+import { ArrowLeft, Share2, GitGraph, Table2, FileText, Crosshair } from 'lucide-react'
 
 export default function MaterialLayout() {
   const { id } = useParams<{ id: string }>()
@@ -38,6 +38,7 @@ export default function MaterialLayout() {
         <TabLink to={`/materials/${id}/network`} icon={<Share2 size={14} />} label="Network" />
         <TabLink to={`/materials/${id}/formulas`} icon={<Table2 size={14} />} label="Formulas" />
         <TabLink to={`/materials/${id}/evidence`} icon={<FileText size={14} />} label="Evidence" />
+        <TabLink to={`/materials/${id}/match-peaks`} icon={<Crosshair size={14} />} label="Match Peaks" />
       </div>
 
       {/* Tab content */}
