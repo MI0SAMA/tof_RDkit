@@ -96,7 +96,8 @@ export default function MatchPeaksPage() {
     setResult(null)
     try {
       const res = await fetch(
-        `${API_BASE}/materials/${id}/match-existing?filename=${encodeURIComponent(filename)}&polarity=${polarityOverride}`
+        `${API_BASE}/materials/${id}/match-existing?filename=${encodeURIComponent(filename)}&polarity=${polarityOverride}`,
+        { method: 'POST' }
       )
       const data = await res.json()
       if (!res.ok) throw new Error(data.detail || 'Match failed')
