@@ -10,12 +10,14 @@ interface SpectrumInfo {
   path: string
   polarity: string
   size_kb: number
+  annotated?: boolean
 }
 
 interface MatchResult {
   compound_id: string
   detected_polarity: string
-  total_peaks: number
+  total_centroid_peaks: number
+  included_peaks: number
   matched_peaks: number
   unmatched_peaks: number
   match_rate: number
@@ -23,6 +25,7 @@ interface MatchResult {
   tolerance_da: number
   matched: MatchedPeak[]
   unmatched: UnmatchedPeak[]
+  preprocess_stats?: Record<string, unknown>
   error?: string
 }
 
@@ -89,14 +92,19 @@ export default function MatchPeaksPage() {
     setUploading(false)
   }
 
-  const handleMatchExisting = async (filename: string) => {
+  const handleMatchExisting = async (spectrum: SpectrumInfo) => {
     if (!id) return
     setMatchingExisting(true)
     setError('')
     setResult(null)
     try {
+      const params = new URLSearchParams({
+        filename: spectrum.filename,
+        polarity: polarityOverride,
+      })
+      if (spectrum.path) params.set('path', spectrum.path)
       const res = await fetch(
-        `${API_BASE}/materials/${id}/match-existing?filename=${encodeURIComponent(filename)}&polarity=${polarityOverride}`,
+        `${API_BASE}/materials/${id}/match-existing?${params}`,
         { method: 'POST' }
       )
       const data = await res.json()
@@ -167,7 +175,7 @@ export default function MatchPeaksPage() {
               {spectraData!.spectra.map((s) => (
                 <button
                   key={s.filename}
-                  onClick={() => handleMatchExisting(s.filename)}
+                  onClick={() => handleMatchExisting(s)}
                   disabled={matchingExisting}
                   className="w-full flex items-center justify-between px-2 py-1.5 rounded hover:bg-gray-50 text-sm transition-colors"
                 >
@@ -179,6 +187,9 @@ export default function MatchPeaksPage() {
                       s.polarity === 'negative' ? 'bg-red-50 text-red-600' :
                       'bg-gray-100 text-gray-500'
                     }`}>{s.polarity}</span>
+                    {s.annotated && (
+                      <span className="text-xs bg-green-100 text-green-700 px-1 py-0 rounded">labeled</span>
+                    )}
                   </div>
                   <span className="text-xs text-gray-400">{s.size_kb} KB</span>
                 </button>
@@ -200,7 +211,8 @@ export default function MatchPeaksPage() {
         <div className="space-y-3">
           {/* Summary */}
           <div className="grid grid-cols-2 md:grid-cols-5 gap-2">
-            <StatCard label="Total Peaks" value={result.total_peaks} />
+            <StatCard label="Centroid Peaks" value={result.total_centroid_peaks} />
+            <StatCard label="Included" value={result.included_peaks} />
             <StatCard label="Matched" value={result.matched_peaks} color="text-green-600" />
             <StatCard label="Unmatched" value={result.unmatched_peaks} color="text-red-500" />
             <StatCard label="Match Rate" value={`${result.match_rate}%`} color={result.match_rate > 50 ? 'text-green-600' : 'text-amber-600'} />
