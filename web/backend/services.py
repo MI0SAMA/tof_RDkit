@@ -1,6 +1,7 @@
 """Business logic for importing existing v3.0 results and serving data."""
 
 import json
+import math
 import os
 from datetime import datetime
 from pathlib import Path
@@ -22,6 +23,44 @@ DATA_DIR = Path(os.environ.get("DATA_DIR", Path(__file__).resolve().parent.paren
 OUTPUTS_DIR = Path(os.environ.get("OUTPUTS_DIR", Path(__file__).resolve().parent.parent.parent / "outputs"))
 NETWORKS_V2_DIR = OUTPUTS_DIR / "networks_v2"
 SUMMARY_DIR = OUTPUTS_DIR / "summary"
+
+
+def _safe_str(val, default="") -> str:
+    """Convert value to string, handling NaN/None."""
+    if val is None:
+        return default
+    try:
+        if isinstance(val, float) and math.isnan(val):
+            return default
+    except TypeError:
+        pass
+    return str(val)
+
+
+def _safe_float(val, default=0.0) -> float:
+    """Convert value to float, handling NaN/None."""
+    if val is None:
+        return default
+    try:
+        f = float(val)
+        if math.isnan(f):
+            return default
+        return f
+    except (ValueError, TypeError):
+        return default
+
+
+def _safe_int(val, default=0) -> int:
+    """Convert value to int, handling NaN/None."""
+    if val is None:
+        return default
+    try:
+        f = float(val)
+        if math.isnan(f):
+            return default
+        return int(f)
+    except (ValueError, TypeError):
+        return default
 
 
 def import_all(db: Session) -> dict:
@@ -50,20 +89,22 @@ def _import_materials(db: Session) -> dict:
             continue
         existing = db.query(Material).filter(Material.compound_id == compound_id).first()
         if existing:
-            existing.name = str(row.get("name", existing.name))
-            existing.smiles = str(row.get("smiles", existing.smiles or ""))
-            existing.formula = str(row.get("formula", existing.formula or ""))
-            existing.group = str(row.get("group", existing.group or ""))
-            existing.notes = str(row.get("notes", existing.notes or ""))
+            existing.name = _safe_str(row.get("name"), existing.name)
+            existing.smiles = _safe_str(row.get("smiles"), existing.smiles or "")
+            # Clean formula: ignore 'nan' string from previous buggy import
+            old_formula = existing.formula if (existing.formula and existing.formula != "nan") else ""
+            existing.formula = _safe_str(row.get("formula"), old_formula)
+            existing.group = _safe_str(row.get("group"), existing.group or "")
+            existing.notes = _safe_str(row.get("notes"), existing.notes or "")
         else:
             material = Material(
                 compound_id=compound_id,
-                name=str(row.get("name", "")),
-                smiles=str(row.get("smiles", "")),
-                formula=str(row.get("formula", "")),
-                group=str(row.get("group", "")),
+                name=_safe_str(row.get("name"), ""),
+                smiles=_safe_str(row.get("smiles"), ""),
+                formula=_safe_str(row.get("formula"), ""),
+                group=_safe_str(row.get("group"), ""),
                 material_type="pure_polymer",
-                notes=str(row.get("notes", "")),
+                notes=_safe_str(row.get("notes"), ""),
                 has_manual_labels=compound_id in {"COC", "EVA", "PDMS", "PET", "POMC", "POMH"},
             )
             db.add(material)
@@ -96,28 +137,28 @@ def _import_formulas(db: Session) -> dict:
 
     count = 0
     for _, row in df.iterrows():
-        diagnostic_tag = str(row.get("diagnostic_tag", ""))
+        diagnostic_tag = _safe_str(row.get("diagnostic_tag"), "")
         is_hidden = diagnostic_tag == "structural_candidate_only"
         is_generic_hc = diagnostic_tag == "generic_hydrocarbon_background"
 
         formula = FormulaSummary(
-            compound_id=str(row.get("compound_id", "")),
-            source_name=str(row.get("source_name", "")),
-            formula=str(row.get("formula", "")),
-            ion_mode=str(row.get("ion_mode", "neutral")),
-            charge=int(row.get("charge", 0)),
-            exact_mass=float(row.get("exact_mass", 0.0)),
-            formula_score=float(row.get("formula_score", 0.0)),
-            best_path_score=float(row.get("best_path_score", 0.0)),
-            path_count=int(row.get("path_count", 1)),
-            mechanism_count=int(row.get("mechanism_count", 1)),
-            source_fragment_count=int(row.get("source_fragment_count", 0)),
-            generation_types=str(row.get("generation_types", "")),
-            best_node_id=str(row.get("best_node_id", "")),
-            representative_path=str(row.get("representative_path", "")),
-            all_node_ids=str(row.get("all_node_ids", "")),
+            compound_id=_safe_str(row.get("compound_id"), ""),
+            source_name=_safe_str(row.get("source_name"), ""),
+            formula=_safe_str(row.get("formula"), ""),
+            ion_mode=_safe_str(row.get("ion_mode"), "neutral"),
+            charge=_safe_int(row.get("charge"), 0),
+            exact_mass=_safe_float(row.get("exact_mass"), 0.0),
+            formula_score=_safe_float(row.get("formula_score"), 0.0),
+            best_path_score=_safe_float(row.get("best_path_score"), 0.0),
+            path_count=_safe_int(row.get("path_count"), 1),
+            mechanism_count=_safe_int(row.get("mechanism_count"), 1),
+            source_fragment_count=_safe_int(row.get("source_fragment_count"), 0),
+            generation_types=_safe_str(row.get("generation_types"), ""),
+            best_node_id=_safe_str(row.get("best_node_id"), ""),
+            representative_path=_safe_str(row.get("representative_path"), ""),
+            all_node_ids=_safe_str(row.get("all_node_ids"), ""),
             diagnostic_tag=diagnostic_tag,
-            material_diagnostic_score=float(row.get("material_diagnostic_score", 0.0)),
+            material_diagnostic_score=_safe_float(row.get("material_diagnostic_score"), 0.0),
             is_hidden=is_hidden,
             is_generic_hc=is_generic_hc,
         )
@@ -235,18 +276,18 @@ def _import_evidence(db: Session) -> dict:
     count = 0
     for _, row in df.iterrows():
         report = EvidenceReport(
-            compound_id=str(row.get("material", "")),
-            total_formulas=int(row.get("total_formulas", 0)),
-            val_diag=int(row.get("val_diag", 0)),
-            val_gen=int(row.get("val_gen", 0)),
-            feat_supp=int(row.get("feat_supp", 0)),
-            gen_hc=int(row.get("gen_hc", 0)),
-            struct_only=int(row.get("struct_only", 0)),
-            formula_evidence=str(row.get("formula_evidence", "")),
-            pattern_evidence=str(row.get("pattern_evidence", "")),
-            pom_pattern_score=float(row.get("pom_pattern_score", 0.0)),
-            background_level=str(row.get("background_level", "")),
-            final_evidence=str(row.get("final_evidence", "")),
+            compound_id=_safe_str(row.get("material"), ""),
+            total_formulas=_safe_int(row.get("total_formulas"), 0),
+            val_diag=_safe_int(row.get("val_diag"), 0),
+            val_gen=_safe_int(row.get("val_gen"), 0),
+            feat_supp=_safe_int(row.get("feat_supp"), 0),
+            gen_hc=_safe_int(row.get("gen_hc"), 0),
+            struct_only=_safe_int(row.get("struct_only"), 0),
+            formula_evidence=_safe_str(row.get("formula_evidence"), ""),
+            pattern_evidence=_safe_str(row.get("pattern_evidence"), ""),
+            pom_pattern_score=_safe_float(row.get("pom_pattern_score"), 0.0),
+            background_level=_safe_str(row.get("background_level"), ""),
+            final_evidence=_safe_str(row.get("final_evidence"), ""),
         )
         db.add(report)
         count += 1
