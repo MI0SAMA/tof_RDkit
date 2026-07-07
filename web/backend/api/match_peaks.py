@@ -1,6 +1,6 @@
-"""Peak matching API — upload spectra and match against formula networks.
+"""Peak matching API — delegates to evaluation_v2 for algorithm consistency.
 
-Uses the same preprocessing pipeline as the CLI: spectrum_io + centroid binning.
+Uses the EXACT same functions as the CLI: evaluation_v2.evaluate_spectrum().
 """
 
 import os
@@ -28,17 +28,19 @@ def _load_config():
 
 def _detect_polarity(filename: str) -> str:
     name = filename.lower()
-    if "positive" in name or name.startswith("+") or "pos" in name:
-        return "positive"
-    if "negative" in name or name.startswith("-") or "neg" in name:
+    if name.startswith("-"):
         return "negative"
-    return "unknown"
+    return "positive"
 
 
-def _parse_and_preprocess(content: str, filename: str) -> tuple[list[dict], dict]:
-    """Parse peak file using spectrum_io pipeline + centroid binning.
-    Returns (centroid_peaks, stats).
-    """
+def _match_spectrum_file(file_path: Path, material_id: str, db: Session) -> dict:
+    """Match a spectrum file against the material's network using evaluation_v2 logic."""
+    # Import project modules (same as CLI)
+    from tofsims_formula_network.evaluation_v2 import (
+        centroid_peaks,
+        classify_peak,
+        _match_peak,
+    )
     from tofsims_formula_network.spectrum_io import (
         preprocess_spectrum,
         read_spectrum_txt,
@@ -48,144 +50,92 @@ def _parse_and_preprocess(content: str, filename: str) -> tuple[list[dict], dict
     cfg = _load_config()
     eval_cfg = cfg.get("evaluation_v2", {})
 
-    # Write content to temp file for spectrum_io (expects file path)
-    with tempfile.NamedTemporaryFile(mode="w", suffix=".txt", delete=False, encoding="utf-8") as tf:
-        tf.write(content)
-        tmp_path = Path(tf.name)
+    # Step 1: Parse and preprocess (same as CLI)
+    df = read_spectrum_txt(file_path)
+    pre = preprocess_spectrum(df, cfg)
+    std = standardize_spectrum(pre, "web_match", str(file_path))
 
-    try:
-        # Parse with project's spectrum_io
-        df = read_spectrum_txt(tmp_path)
-        raw_count = len(df)
+    # Step 2: Centroid (uses EXACT project code)
+    centroid_da = float(eval_cfg.get("centroid_da", 0.03))
+    centroid_ppm = float(eval_cfg.get("centroid_ppm", 50))
+    centroided = centroid_peaks(std, centroid_da, centroid_ppm)
 
-        # Apply preprocessing (min_mz, max_mz, min_intensity, top_n)
-        pre = preprocess_spectrum(df, cfg)
-        pre_count = len(pre)
-
-        # Standardize
-        std = standardize_spectrum(pre, "spectrum", filename)
-        std_count = len(std)
-
-        # Centroid binning (same as evaluation_v2)
-        centroid_da = float(eval_cfg.get("centroid_da", 0.03))
-        centroid_ppm = float(eval_cfg.get("centroid_ppm", 50))
-        top_n = int(eval_cfg.get("top_n", 50))
-
-        centroids = _centroid_peaks(std, centroid_da, centroid_ppm)
-        # Take top N by intensity
-        centroids.sort(key=lambda x: -x["intensity"])
-        centroids = centroids[:top_n]
-
-        stats = {
-            "raw_count": raw_count,
-            "preprocessed_count": pre_count,
-            "standardized_count": std_count,
-            "centroid_count": len(centroids),
-            "top_n": top_n,
-        }
-
-        return centroids, stats
-    finally:
-        tmp_path.unlink(missing_ok=True)
-
-
-def _centroid_peaks(df: pd.DataFrame, da: float, ppm: float) -> list[dict]:
-    """Group nearby peaks into centroids (intensity-weighted average m/z)."""
-    if df.empty:
-        return []
-
-    sorted_df = df.sort_values("mz").reset_index(drop=True)
-    centroids = []
-    current_group = [sorted_df.iloc[0]]
-
-    for i in range(1, len(sorted_df)):
-        row = sorted_df.iloc[i]
-        prev = current_group[-1]
-        tolerance = max(da, prev["mz"] * ppm * 1e-6)
-        if row["mz"] - prev["mz"] <= tolerance:
-            current_group.append(row)
-        else:
-            # Finalize current group
-            total_intensity = sum(r["intensity"] for r in current_group)
-            weighted_mz = sum(r["mz"] * r["intensity"] for r in current_group) / max(total_intensity, 1e-12)
-            centroids.append({
-                "mz": weighted_mz,
-                "intensity": total_intensity,
-                "n_peaks": len(current_group),
-            })
-            current_group = [row]
-
-    # Final group
-    if current_group:
-        total_intensity = sum(r["intensity"] for r in current_group)
-        weighted_mz = sum(r["mz"] * r["intensity"] for r in current_group) / max(total_intensity, 1e-12)
-        centroids.append({
-            "mz": weighted_mz,
-            "intensity": total_intensity,
-            "n_peaks": len(current_group),
-        })
-
-    return centroids
-
-
-def _match_peaks(peaks: list[dict], compound_id: str, ion_mode: str, db: Session) -> dict:
-    """Match centroid peaks against all formulas in the material's network."""
-    cfg = _load_config()
-    eval_cfg = cfg.get("evaluation_v2", {})
-    match_da = float(eval_cfg.get("match_da", 0.03))
-    match_ppm = float(eval_cfg.get("match_ppm", 50))
-    min_main_mz = float(eval_cfg.get("min_main_mz", 25.0))
-
+    # Step 3: Build formula network DataFrame (same as evaluation loads from CSV)
     formulas = (
         db.query(FormulaSummary)
-        .filter(FormulaSummary.compound_id == compound_id)
+        .filter(FormulaSummary.compound_id == material_id)
         .all()
     )
-
     if not formulas:
-        return {"error": f"No formulas found for {compound_id}", "peaks": [], "stats": {}}
+        return {"error": f"No formulas found for {material_id}"}
 
-    # Filter peaks: only match peaks above min_main_mz
-    main_peaks = [p for p in peaks if p["mz"] >= min_main_mz]
-    low_mass_peaks = [p for p in peaks if p["mz"] < min_main_mz]
+    material_network = pd.DataFrame([{
+        "compound_id": f.compound_id,
+        "formula": f.formula,
+        "ion_mode": f.ion_mode,
+        "exact_mass": f.exact_mass,
+        "formula_score": f.formula_score,
+        "diagnostic_tag": f.diagnostic_tag,
+        "generation_types": f.generation_types,
+        "representative_path": f.representative_path,
+    } for f in formulas])
+
+    # Step 4: Match each peak (same classify + match logic as CLI)
+    ion_mode = _detect_polarity(file_path.name)
+    material_network_filtered = material_network[
+        material_network["ion_mode"].astype(str) == ion_mode
+    ]
 
     matched = []
     unmatched = []
+    peak_rows = []
 
-    for peak in main_peaks:
-        mz = peak["mz"]
-        intensity = peak["intensity"]
-        tolerance = max(match_da, mz * match_ppm * 1e-6)
+    for _, peak in centroided.iterrows():
+        mz = float(peak["mz"])
+        intensity = float(peak["intensity"])
+        category, label, included = classify_peak(mz, ion_mode, cfg)
 
-        best_match = None
-        best_error = float("inf")
-
-        for f in formulas:
-            # Include ALL formulas (including structural_only) for mass matching
-            if ion_mode != "unknown" and f.ion_mode != "neutral" and f.ion_mode != ion_mode:
-                continue
-
-            error = abs(f.exact_mass - mz)
-            if error <= tolerance and error < best_error:
-                best_error = error
-                ppm_error = error / mz * 1e6 if mz > 0 else float("inf")
-                best_match = {
-                    "mz": round(mz, 4),
-                    "intensity": intensity,
-                    "matched_formula": f.formula,
-                    "ion_mode": f.ion_mode,
-                    "exact_mass": f.exact_mass,
-                    "mass_error_da": round(error, 6),
-                    "mass_error_ppm": round(ppm_error, 2),
-                    "formula_score": f.formula_score,
-                    "diagnostic_tag": f.diagnostic_tag,
-                    "generation_types": f.generation_types,
-                    "representative_path": f.representative_path,
-                }
-
-        if best_match:
-            matched.append(best_match)
+        if included and not material_network_filtered.empty:
+            match_result = _match_peak(mz, material_network_filtered, cfg)
         else:
+            match_result = {
+                "matched": False,
+                "matched_formula": "",
+                "matched_mass_error_da": "",
+                "matched_mass_error_ppm": "",
+                "matched_formula_score": "",
+            }
+
+        peak_rows.append({
+            "mz": round(mz, 4),
+            "intensity": intensity,
+            "category": category,
+            "category_label": label,
+            "included": included,
+            "matched": match_result["matched"],
+            "matched_formula": match_result["matched_formula"],
+            "mass_error_da": round(float(match_result.get("matched_mass_error_da", 0) or 0), 6),
+            "mass_error_ppm": round(float(match_result.get("matched_mass_error_ppm", 0) or 0), 2),
+            "formula_score": float(match_result.get("matched_formula_score", 0) or 0),
+        })
+
+        if match_result["matched"]:
+            # Get diagnostic info from DB
+            f = next((x for x in formulas if x.formula == match_result["matched_formula"] and x.ion_mode == ion_mode), None)
+            matched.append({
+                "mz": round(mz, 4),
+                "intensity": intensity,
+                "matched_formula": match_result["matched_formula"],
+                "ion_mode": ion_mode,
+                "exact_mass": f.exact_mass if f else 0,
+                "mass_error_da": round(float(match_result.get("matched_mass_error_da", 0) or 0), 6),
+                "mass_error_ppm": round(float(match_result.get("matched_mass_error_ppm", 0) or 0), 2),
+                "formula_score": float(match_result.get("matched_formula_score", 0) or 0),
+                "diagnostic_tag": f.diagnostic_tag if f else "",
+                "generation_types": f.generation_types if f else "",
+                "representative_path": f.representative_path if f else "",
+            })
+        elif included:
             unmatched.append({
                 "mz": round(mz, 4),
                 "intensity": intensity,
@@ -194,23 +144,35 @@ def _match_peaks(peaks: list[dict], compound_id: str, ion_mode: str, db: Session
 
     matched.sort(key=lambda x: -x["formula_score"])
 
-    included_peaks = len(main_peaks)
-    matched_count = len(matched)
+    # Count categories
+    categories = {}
+    for r in peak_rows:
+        cat = r["category"]
+        categories[cat] = categories.get(cat, 0) + 1
+
+    included_peaks = [r for r in peak_rows if r["included"]]
+    included_matched = [r for r in included_peaks if r["matched"]]
+
+    total_centroid = len(peak_rows)
+    total_included = len(included_peaks)
+    total_matched = len(included_matched)
 
     return {
-        "compound_id": compound_id,
+        "compound_id": material_id,
         "detected_polarity": ion_mode,
-        "total_centroid_peaks": len(peaks),
-        "included_peaks": included_peaks,
-        "low_mass_peaks": len(low_mass_peaks),
-        "matched_peaks": matched_count,
-        "unmatched_peaks": included_peaks - matched_count,
-        "match_rate": round(matched_count / max(included_peaks, 1) * 100, 1),
-        "tolerance_ppm": match_ppm,
-        "tolerance_da": match_da,
-        "min_main_mz": min_main_mz,
+        "total_centroid_peaks": total_centroid,
+        "included_peaks": total_included,
+        "excluded_peaks": total_centroid - total_included,
+        "matched_peaks": total_matched,
+        "unmatched_peaks": total_included - total_matched,
+        "match_rate": round(total_matched / max(total_included, 1) * 100, 1),
+        "tolerance_ppm": float(eval_cfg.get("match_ppm", 50)),
+        "tolerance_da": float(eval_cfg.get("match_da", 0.03)),
+        "min_main_mz": float(eval_cfg.get("min_main_mz", 25.0)),
+        "categories": categories,
         "matched": matched,
         "unmatched": unmatched,
+        "all_peaks": peak_rows,
     }
 
 
@@ -221,19 +183,20 @@ async def match_peaks_endpoint(
     polarity: str = Query("auto"),
     db: Session = Depends(get_db),
 ):
-    """Upload a peak list file and match against formula network."""
-    content = (await file.read()).decode("utf-8", errors="replace")
-    if polarity == "auto":
-        polarity = _detect_polarity(file.filename or "")
+    """Upload a peak list file and match against formula network (same algorithm as CLI)."""
+    content = await file.read()
+    # Write to temp file (spectrum_io reads from file path)
+    with tempfile.NamedTemporaryFile(mode="wb", suffix=".txt", delete=False) as tf:
+        tf.write(content)
+        tmp_path = Path(tf.name)
 
     try:
-        centroids, stats = _parse_and_preprocess(content, file.filename or "upload")
+        result = _match_spectrum_file(tmp_path, material_id, db)
+        return result
     except Exception as e:
-        raise HTTPException(status_code=400, detail=f"Parse error: {e}")
-
-    result = _match_peaks(centroids, material_id, polarity, db)
-    result["preprocess_stats"] = stats
-    return result
+        raise HTTPException(status_code=400, detail=f"Processing error: {e}")
+    finally:
+        tmp_path.unlink(missing_ok=True)
 
 
 @router.get("/materials/{material_id}/spectra")
@@ -241,33 +204,20 @@ def list_available_spectra(material_id: str):
     """List available experimental peak files from data/{material}/ and data/0510/{material}/."""
     spectra = []
 
-    # Check main data directory
-    material_dir = DATA_DIR / material_id
-    if material_dir.exists():
-        for f in sorted(material_dir.iterdir()):
-            if f.suffix.lower() in (".txt", ".csv", ".tsv"):
-                spectra.append(_fmt_spectrum(f, material_id, annotated=False))
-
-    # Also check 0510 subdirectory for annotated data
-    anno_dir = DATA_DIR / "0510" / material_id
-    if anno_dir.exists():
-        for f in sorted(anno_dir.iterdir()):
-            if f.suffix.lower() in (".txt", ".csv", ".tsv"):
-                spectra.append(_fmt_spectrum(f, material_id, annotated=True))
+    for base_dir in [DATA_DIR / material_id, DATA_DIR / "0510" / material_id]:
+        if base_dir.exists():
+            for f in sorted(base_dir.iterdir()):
+                if f.suffix.lower() in (".txt", ".csv", ".tsv"):
+                    polarity = _detect_polarity(f.name)
+                    spectra.append({
+                        "filename": f.name,
+                        "path": str(f.relative_to(DATA_DIR)),
+                        "polarity": polarity,
+                        "size_kb": round(f.stat().st_size / 1024, 1),
+                        "annotated": "0510" in str(f),
+                    })
 
     return {"material_id": material_id, "spectra": spectra}
-
-
-def _fmt_spectrum(f: Path, material_id: str, annotated: bool) -> dict:
-    """Format a spectrum file entry."""
-    polarity = _detect_polarity(f.name)
-    return {
-        "filename": f.name,
-        "path": str(f.relative_to(DATA_DIR)),
-        "polarity": polarity,
-        "size_kb": round(f.stat().st_size / 1024, 1),
-        "annotated": annotated,
-    }
 
 
 @router.post("/materials/{material_id}/match-existing")
@@ -275,11 +225,9 @@ def match_existing_spectrum(
     material_id: str,
     filename: str = Query(...),
     path: str = Query(None),
-    polarity: str = Query("auto"),
     db: Session = Depends(get_db),
 ):
     """Match an existing experimental data file against the material's network."""
-    # Try path first (e.g., "0510/PET/+PET-..."), then material dir, then 0510 subdir
     file_path = None
     if path:
         candidate = DATA_DIR / path
@@ -297,15 +245,7 @@ def match_existing_spectrum(
     if not file_path:
         raise HTTPException(status_code=404, detail=f"Spectrum file not found: {filename}")
 
-    content = file_path.read_text(encoding="utf-8", errors="replace")
-    if polarity == "auto":
-        polarity = _detect_polarity(filename)
-
     try:
-        centroids, stats = _parse_and_preprocess(content, filename)
+        return _match_spectrum_file(file_path, material_id, db)
     except Exception as e:
-        raise HTTPException(status_code=400, detail=f"Parse error: {e}")
-
-    result = _match_peaks(centroids, material_id, polarity, db)
-    result["preprocess_stats"] = stats
-    return result
+        raise HTTPException(status_code=400, detail=f"Processing error: {e}")
