@@ -140,7 +140,8 @@ def _import_formulas(db: Session) -> dict:
             continue
 
         for _, row in df.iterrows():
-            diagnostic_tag = _safe_str(row.get("diagnostic_tag"), "structural_candidate_only")
+            diagnostic_tag = _safe_str(row.get("diagnostic_tag"), "")
+            # Default: not hidden unless explicitly structural_candidate_only
             is_hidden = diagnostic_tag == "structural_candidate_only"
             is_generic_hc = diagnostic_tag == "generic_hydrocarbon_background"
 
