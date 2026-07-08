@@ -122,62 +122,69 @@ def _import_materials(db: Session) -> dict:
 
 
 def _import_formulas(db: Session) -> dict:
-    """Import formula summaries from per-material CSV files in networks_v2/.
-
-    Reads each {material}_formula_summary.csv, which is always up-to-date
-    with the latest network generation (v4.3+).
-    """
+    """Import formula summaries. Prefers specificity CSV, falls back to per-material CSVs."""
+    specificity_path = SUMMARY_DIR / "formula_summary_with_specificity.csv"
+    if specificity_path.exists():
+        return _import_from_csv(db, specificity_path)
+    # Fallback to per-material CSVs
     if not NETWORKS_V2_DIR.exists():
         return {"status": "skipped", "message": "networks_v2 dir not found", "count": 0}
-
-    db.query(FormulaSummary).delete()
-
     count = 0
+    db.query(FormulaSummary).delete()
     for csv_path in sorted(NETWORKS_V2_DIR.glob("*_formula_summary.csv")):
         try:
             df = pd.read_csv(csv_path)
         except Exception:
             continue
-
         for _, row in df.iterrows():
-            diagnostic_tag = _safe_str(row.get("diagnostic_tag"), "")
-            # Default: not hidden unless explicitly structural_candidate_only
-            is_hidden = diagnostic_tag == "structural_candidate_only"
-            is_generic_hc = diagnostic_tag == "generic_hydrocarbon_background"
-
-            formula = FormulaSummary(
-                compound_id=_safe_str(row.get("compound_id"), ""),
-                source_name=_safe_str(row.get("source_name"), ""),
-                formula=_safe_str(row.get("formula"), ""),
-                ion_mode=_safe_str(row.get("ion_mode"), "neutral"),
-                charge=_safe_int(row.get("charge"), 0),
-                exact_mass=_safe_float(row.get("exact_mass"), 0.0),
-                formula_score=_safe_float(row.get("formula_score"), 0.0),
-                best_path_score=_safe_float(row.get("best_path_score"), 0.0),
-                path_count=_safe_int(row.get("path_count"), 1),
-                mechanism_count=_safe_int(row.get("mechanism_count"), 1),
-                source_fragment_count=_safe_int(row.get("source_fragment_count"), 0),
-                generation_types=_safe_str(row.get("generation_types"), ""),
-                best_node_id=_safe_str(row.get("best_node_id"), ""),
-                representative_path=_safe_str(row.get("representative_path"), ""),
-                all_node_ids=_safe_str(row.get("all_node_ids"), ""),
-                diagnostic_tag=diagnostic_tag,
-                material_diagnostic_score=_safe_float(row.get("material_diagnostic_score"), 0.0),
-                is_hidden=is_hidden,
-                is_generic_hc=is_generic_hc,
-            )
+            formula = _build_formula(row, default_tag="")
             db.add(formula)
             count += 1
-
-    log = ImportLog(
-        import_type="formulas",
-        file_path=str(NETWORKS_V2_DIR),
-        status="completed",
-        records_imported=count,
-        message=f"Imported {count} formula summaries from per-material CSVs",
-    )
-    db.add(log)
+    db.add(ImportLog(import_type="formulas", file_path=str(NETWORKS_V2_DIR), status="completed", records_imported=count,
+                     message=f"Imported {count} formula summaries from per-material CSVs"))
     return {"status": "completed", "count": count}
+
+
+def _import_from_csv(db: Session, csv_path: Path) -> dict:
+    """Import from a single combined CSV."""
+    df = pd.read_csv(csv_path)
+    db.query(FormulaSummary).delete()
+    count = 0
+    for _, row in df.iterrows():
+        formula = _build_formula(row, default_tag="structural_candidate_only")
+        db.add(formula)
+        count += 1
+    db.add(ImportLog(import_type="formulas", file_path=str(csv_path), status="completed", records_imported=count,
+                     message=f"Imported {count} formula summaries"))
+    return {"status": "completed", "count": count}
+
+
+def _build_formula(row, default_tag: str = "") -> FormulaSummary:
+    """Build a FormulaSummary from a CSV row."""
+    diagnostic_tag = _safe_str(row.get("diagnostic_tag"), default_tag)
+    is_hidden = diagnostic_tag == "structural_candidate_only"
+    is_generic_hc = diagnostic_tag == "generic_hydrocarbon_background"
+    return FormulaSummary(
+        compound_id=_safe_str(row.get("compound_id"), ""),
+        source_name=_safe_str(row.get("source_name"), ""),
+        formula=_safe_str(row.get("formula"), ""),
+        ion_mode=_safe_str(row.get("ion_mode"), "neutral"),
+        charge=_safe_int(row.get("charge"), 0),
+        exact_mass=_safe_float(row.get("exact_mass"), 0.0),
+        formula_score=_safe_float(row.get("formula_score"), 0.0),
+        best_path_score=_safe_float(row.get("best_path_score"), 0.0),
+        path_count=_safe_int(row.get("path_count"), 1),
+        mechanism_count=_safe_int(row.get("mechanism_count"), 1),
+        source_fragment_count=_safe_int(row.get("source_fragment_count"), 0),
+        generation_types=_safe_str(row.get("generation_types"), ""),
+        best_node_id=_safe_str(row.get("best_node_id"), ""),
+        representative_path=_safe_str(row.get("representative_path"), ""),
+        all_node_ids=_safe_str(row.get("all_node_ids"), ""),
+        diagnostic_tag=diagnostic_tag,
+        material_diagnostic_score=_safe_float(row.get("material_diagnostic_score"), 0.0),
+        is_hidden=is_hidden,
+        is_generic_hc=is_generic_hc,
+    )
 
 
 def _import_networks(db: Session) -> dict:
