@@ -26,104 +26,92 @@ def get_network(
 def _parse_path_signature(path_str: str, all_node_ids: str = "", node_paths: dict[str, str] | None = None) -> str:
     """Extract a human-readable path signature from a representative_path string.
 
-    For recombination formulas, looks up source fragment node paths to extract
-    the original bond break information.
+    Examples:
+      "M | fragment C,H,O from C-O bond break(s)" -> "C-O break"
+      "M | fragment C,H,O from C-O+C-C bond break(s) | h_shift_-1" -> "C-O + C-C break → H-shift"
+      "node_0002 + node_0061 | recombination" -> "C-O · C-C → recomb" (from source lookup)
+      "M | carbonyl | carbonyl_fragmentation | carbonyl_CO" -> "Carbonyl → CO"
     """
     if not path_str:
         return "Unknown"
 
     parts = [p.strip() for p in path_str.split("|")]
 
-    # Feature rule signatures
+    # ── Feature rule signatures ──
     triggers = {
-        "carbonyl": "Carbonyl",
-        "aromatic_ring": "Aromatic",
-        "sulfur_aromatic": "S-Aromatic",
-        "acetal_or_ether": "Acetal/Ether",
-        "universal_hydrocarbon": "Small HC",
-        "fluorocarbon_motif": "Fluorocarbon",
-        "siloxane": "Siloxane",
-        "imide": "Imide",
-        "amide": "Amide",
+        "carbonyl": "Carbonyl", "aromatic_ring": "Aromatic",
+        "sulfur_aromatic": "S-Aromatic", "acetal_or_ether": "Acetal",
+        "universal_hydrocarbon": "Small HC", "fluorocarbon_motif": "Fluorocarbon",
+        "siloxane": "Siloxane", "imide": "Imide", "amide": "Amide",
         "cyclic_aliphatic": "Cyclic Aliphatic",
     }
-
     for trigger, label in triggers.items():
         if trigger in path_str:
             last = parts[-1] if len(parts) > 1 else ""
             if "_" in last:
-                formula_hint = last.split("_")[-1] if "_" in last else ""
-                if formula_hint:
-                    return f"{label} → {formula_hint}"
+                hint = last.split("_")[-1]
+                return f"{label} → {hint}" if hint else label
             return label
 
-    # Bond break signatures
+    # ── Direct bond break (non-recombination) ──
     if "bond break" in path_str.lower():
         has_h_shift = "h_shift" in path_str.lower()
-        bond_info = _extract_bond_info(parts)
-        label = bond_info if bond_info else "RDKit Bond Break"
+        bonds = _extract_bonds(parts)
+        label = " + ".join(bonds) + " break" if bonds else "RDKit break"
         if has_h_shift:
-            label += " → H-Shift"
+            label += " → H-shift"
         return label
 
-    # Recombination — look up source fragment nodes for bond break info
+    # ── Recombination: look up source fragment bond types ──
     if "recombination" in path_str.lower() or ("node_" in parts[0] and "+" in parts[0]):
-        bond_info = _lookup_recomb_source(parts[0], all_node_ids, node_paths or {})
-        if bond_info:
-            return f"{bond_info} → Recombination"
-        return "Fragment Recombination"
+        left_bonds, right_bonds = _recomb_source_bonds(parts[0], all_node_ids, node_paths or {})
+        if left_bonds and right_bonds:
+            left_str = "+".join(left_bonds)
+            right_str = "+".join(right_bonds)
+            return f"{left_str} · {right_str} → recomb"
+        if left_bonds:
+            return "+".join(left_bonds) + " break · ? → recomb"
+        return "Fragment recomb"
 
-    # Parent
     if path_str.strip() == "M":
-        return "Parent Molecule"
+        return "Parent"
 
     return "Other"
 
 
-def _extract_bond_info(parts: list[str]) -> str:
-    """Extract bond type from path parts, e.g. 'C-O + C-C'"""
+def _extract_bonds(parts: list[str]) -> list[str]:
+    """Extract sorted bond types from path parts. e.g. ['C-O', 'C-C']"""
     for part in parts:
         if "from" in part.lower():
-            bond_type = part.split("from")[-1].strip().rstrip(")")
-            bond_type = bond_type.split(" bond break")[0].strip().rstrip("(").strip()
-            return " + ".join(bond_type.split("+"))
-    return ""
+            raw = part.split("from")[-1].rstrip(")")
+            raw = raw.split(" bond break")[0].strip().rstrip("(").strip()
+            return sorted(raw.split("+"))
+    return []
 
 
-def _lookup_recomb_source(first_part: str, all_node_ids: str, node_paths: dict[str, str]) -> str:
-    """Look up source fragment nodes for a recombination formula and extract bond info."""
-    # first_part looks like "node_0002 + node_0061"
-    # Try to extract node IDs
+def _recomb_source_bonds(first_part: str, all_node_ids: str, node_paths: dict[str, str]) -> tuple[list[str], list[str]]:
+    """Look up source fragment nodes and return (left_bonds, right_bonds)."""
     node_ids = []
     if "+" in first_part:
         for token in first_part.split("+"):
             token = token.strip()
             if token.startswith("node_"):
                 node_ids.append(token)
-
-    # Also try all_node_ids (semicolon-separated)
     if not node_ids and all_node_ids:
         ids = [nid.strip() for nid in all_node_ids.split(";") if nid.strip().startswith("node_")]
-        # Take the first 2 fragment-level nodes
         node_ids = ids[:2]
 
-    # Look up each source node's path for bond break info
-    all_bonds = []
-    for nid in node_ids:
-        node_path = node_paths.get(nid, "")
-        if node_path and "bond break" in node_path.lower():
-            parts = [p.strip() for p in node_path.split("|")]
-            bi = _extract_bond_info(parts)
-            if bi:
-                # Split compound bonds like "C-O + C-C" into individual bonds
-                for b in bi.split(" + "):
-                    all_bonds.append(b.strip())
+    left_bonds = _bonds_for_node(node_ids[0] if len(node_ids) > 0 else "", node_paths)
+    right_bonds = _bonds_for_node(node_ids[1] if len(node_ids) > 1 else "", node_paths)
+    return left_bonds, right_bonds
 
-    if all_bonds:
-        # Deduplicate and sort for consistent labels
-        unique = sorted(set(all_bonds))
-        return " + ".join(unique)
-    return ""
+
+def _bonds_for_node(node_id: str, node_paths: dict[str, str]) -> list[str]:
+    """Get sorted bond types for a single node."""
+    path = node_paths.get(node_id, "")
+    if path and "bond break" in path.lower():
+        return _extract_bonds([p.strip() for p in path.split("|")])
+    return []
 
 
 @router.get("/materials/{material_id}/network-sankey")
