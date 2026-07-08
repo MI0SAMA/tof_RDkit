@@ -21,7 +21,7 @@ export default function NetworkPage() {
   const { data: treeData, isLoading: treeLoading } = useQuery({
     queryKey: ['network-tree', id],
     queryFn: async () => {
-      const res = await fetch(`/api/materials/${id}/network-tree?max_depth=4&max_children=10`)
+      const res = await fetch(`/api/materials/${id}/network-tree?max_depth=5&max_children=15`)
       if (!res.ok) throw new Error('Failed')
       return res.json()
     },

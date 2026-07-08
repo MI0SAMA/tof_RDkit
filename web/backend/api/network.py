@@ -151,12 +151,19 @@ def get_network_tree(material_id: str, max_depth: int = Query(4), max_children: 
 
         # Group children by edge label, summarizing formulas
         children = children_map.get(node_id, [])
-        # Deduplicate edges by target formula
         edge_groups: dict[str, list[tuple[str, str, NetworkNode]]] = {}
         for target_id, edge_label in children:
             target = node_map.get(target_id)
             if not target:
                 continue
+            # For bond_break/fragmentation edges, extract bond type from target path
+            if edge_label == "RDKit break" and target.path:
+                bond_info = _extract_bond_label(target.path)
+                if bond_info:
+                    edge_label = bond_info
+            elif edge_label == "RDKit break" and target.operation == "bond_break":
+                # fallback: show generation_type directly
+                edge_label = "bond break"
             key = edge_label
             if key not in edge_groups:
                 edge_groups[key] = []
@@ -236,6 +243,15 @@ def _edge_label(operation: str, operation_type: str) -> str:
     if operation_type == "feature_rule":
         return operation.replace("_", " ")
     return operation.replace("_", " ")
+
+
+def _extract_bond_label(path_str: str) -> str:
+    """Extract bond type label from a node path, e.g. 'C-O break'."""
+    if not path_str or "bond break" not in path_str.lower():
+        return ""
+    parts = [p.strip() for p in path_str.split("|")]
+    bonds = _extract_bonds(parts)
+    return " + ".join(bonds) + " break" if bonds else ""
 
 
 def _collapse_leaves(children: list[dict]) -> list[dict]:
