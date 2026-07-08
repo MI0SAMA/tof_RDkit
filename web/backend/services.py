@@ -122,55 +122,58 @@ def _import_materials(db: Session) -> dict:
 
 
 def _import_formulas(db: Session) -> dict:
-    """Import formula summaries with specificity data."""
-    specificity_path = SUMMARY_DIR / "formula_summary_with_specificity.csv"
-    if specificity_path.exists():
-        formula_path = specificity_path
-    else:
-        formula_path = SUMMARY_DIR / "formula_summary_v292.csv"
+    """Import formula summaries from per-material CSV files in networks_v2/.
 
-    if not formula_path.exists():
-        return {"status": "skipped", "message": "No formula summary CSV found", "count": 0}
+    Reads each {material}_formula_summary.csv, which is always up-to-date
+    with the latest network generation (v4.3+).
+    """
+    if not NETWORKS_V2_DIR.exists():
+        return {"status": "skipped", "message": "networks_v2 dir not found", "count": 0}
 
-    df = pd.read_csv(formula_path)
     db.query(FormulaSummary).delete()
 
     count = 0
-    for _, row in df.iterrows():
-        diagnostic_tag = _safe_str(row.get("diagnostic_tag"), "")
-        is_hidden = diagnostic_tag == "structural_candidate_only"
-        is_generic_hc = diagnostic_tag == "generic_hydrocarbon_background"
+    for csv_path in sorted(NETWORKS_V2_DIR.glob("*_formula_summary.csv")):
+        try:
+            df = pd.read_csv(csv_path)
+        except Exception:
+            continue
 
-        formula = FormulaSummary(
-            compound_id=_safe_str(row.get("compound_id"), ""),
-            source_name=_safe_str(row.get("source_name"), ""),
-            formula=_safe_str(row.get("formula"), ""),
-            ion_mode=_safe_str(row.get("ion_mode"), "neutral"),
-            charge=_safe_int(row.get("charge"), 0),
-            exact_mass=_safe_float(row.get("exact_mass"), 0.0),
-            formula_score=_safe_float(row.get("formula_score"), 0.0),
-            best_path_score=_safe_float(row.get("best_path_score"), 0.0),
-            path_count=_safe_int(row.get("path_count"), 1),
-            mechanism_count=_safe_int(row.get("mechanism_count"), 1),
-            source_fragment_count=_safe_int(row.get("source_fragment_count"), 0),
-            generation_types=_safe_str(row.get("generation_types"), ""),
-            best_node_id=_safe_str(row.get("best_node_id"), ""),
-            representative_path=_safe_str(row.get("representative_path"), ""),
-            all_node_ids=_safe_str(row.get("all_node_ids"), ""),
-            diagnostic_tag=diagnostic_tag,
-            material_diagnostic_score=_safe_float(row.get("material_diagnostic_score"), 0.0),
-            is_hidden=is_hidden,
-            is_generic_hc=is_generic_hc,
-        )
-        db.add(formula)
-        count += 1
+        for _, row in df.iterrows():
+            diagnostic_tag = _safe_str(row.get("diagnostic_tag"), "structural_candidate_only")
+            is_hidden = diagnostic_tag == "structural_candidate_only"
+            is_generic_hc = diagnostic_tag == "generic_hydrocarbon_background"
+
+            formula = FormulaSummary(
+                compound_id=_safe_str(row.get("compound_id"), ""),
+                source_name=_safe_str(row.get("source_name"), ""),
+                formula=_safe_str(row.get("formula"), ""),
+                ion_mode=_safe_str(row.get("ion_mode"), "neutral"),
+                charge=_safe_int(row.get("charge"), 0),
+                exact_mass=_safe_float(row.get("exact_mass"), 0.0),
+                formula_score=_safe_float(row.get("formula_score"), 0.0),
+                best_path_score=_safe_float(row.get("best_path_score"), 0.0),
+                path_count=_safe_int(row.get("path_count"), 1),
+                mechanism_count=_safe_int(row.get("mechanism_count"), 1),
+                source_fragment_count=_safe_int(row.get("source_fragment_count"), 0),
+                generation_types=_safe_str(row.get("generation_types"), ""),
+                best_node_id=_safe_str(row.get("best_node_id"), ""),
+                representative_path=_safe_str(row.get("representative_path"), ""),
+                all_node_ids=_safe_str(row.get("all_node_ids"), ""),
+                diagnostic_tag=diagnostic_tag,
+                material_diagnostic_score=_safe_float(row.get("material_diagnostic_score"), 0.0),
+                is_hidden=is_hidden,
+                is_generic_hc=is_generic_hc,
+            )
+            db.add(formula)
+            count += 1
 
     log = ImportLog(
         import_type="formulas",
-        file_path=str(formula_path),
+        file_path=str(NETWORKS_V2_DIR),
         status="completed",
         records_imported=count,
-        message=f"Imported {count} formula summaries",
+        message=f"Imported {count} formula summaries from per-material CSVs",
     )
     db.add(log)
     return {"status": "completed", "count": count}
