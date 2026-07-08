@@ -114,6 +114,157 @@ def _bonds_for_node(node_id: str, node_paths: dict[str, str]) -> list[str]:
     return []
 
 
+@router.get("/materials/{material_id}/network-tree")
+def get_network_tree(material_id: str, max_depth: int = Query(4), max_children: int = Query(8), db: Session = Depends(get_db)):
+    """Get tree structure: parent → edge(label) → fragment → edge(label) → ..."""
+
+    nodes = db.query(NetworkNode).filter(NetworkNode.compound_id == material_id).all()
+    edges = db.query(NetworkEdge).filter(NetworkEdge.compound_id == material_id).all()
+
+    if not nodes:
+        return {"name": material_id, "children": []}
+
+    # Build adjacency: node_id → [(target_node_id, edge_label)]
+    children_map: dict[str, list[tuple[str, str]]] = {}
+    node_map: dict[str, NetworkNode] = {n.node_id: n for n in nodes}
+
+    for e in edges:
+        if e.source_node not in children_map:
+            children_map[e.source_node] = []
+        label = _edge_label(e.operation, e.operation_type)
+        children_map[e.source_node].append((e.target_node, label))
+
+    # Find parent
+    parent = next((n for n in nodes if n.generation_type == "parent"), None)
+    if not parent:
+        return {"name": material_id, "children": []}
+
+    root_id = parent.node_id
+
+    def build_subtree(node_id: str, depth: int, seen: set) -> dict:
+        if depth >= max_depth or node_id in seen:
+            return None
+        seen.add(node_id)
+        node = node_map.get(node_id)
+        if not node:
+            return None
+
+        # Group children by edge label, summarizing formulas
+        children = children_map.get(node_id, [])
+        # Deduplicate edges by target formula
+        edge_groups: dict[str, list[tuple[str, str, NetworkNode]]] = {}
+        for target_id, edge_label in children:
+            target = node_map.get(target_id)
+            if not target:
+                continue
+            key = edge_label
+            if key not in edge_groups:
+                edge_groups[key] = []
+            edge_groups[key].append((target_id, edge_label, target))
+
+        kids = []
+        for edge_label, items in sorted(edge_groups.items()):
+            # If only one child, show its formula; if many, group them
+            sub_children = []
+            for target_id, _, target in items[:max_children]:
+                subtree = build_subtree(target_id, depth + 1, seen.copy())
+                if subtree:
+                    sub_children.append(subtree)
+                else:
+                    # Leaf node: show formula + ion_mode
+                    leaf = {
+                        "name": target.formula,
+                        "ion_mode": target.ion_mode,
+                        "score": round(target.path_score, 3) if target.path_score else 0,
+                    }
+                    sub_children.append(leaf)
+
+            # Collapse identical leaf children
+            collapsed = _collapse_leaves(sub_children)
+
+            kids.append({
+                "name": edge_label,
+                "edge": True,
+                "children": collapsed[:max_children],
+            })
+
+        formula_str = node.formula
+        if node.ion_mode != "neutral":
+            formula_str += f" [{node.ion_mode}]"
+
+        return {
+            "name": formula_str,
+            "formula": node.formula,
+            "ion_mode": node.ion_mode,
+            "generation_type": node.generation_type,
+            "children": kids[:max_children],
+        }
+
+    tree = build_subtree(root_id, 0, set())
+    tree["total_nodes"] = len(nodes)
+    tree["total_edges"] = len(edges)
+    return tree
+
+
+def _edge_label(operation: str, operation_type: str) -> str:
+    """Make a short human-readable edge label."""
+    LABELS = {
+        "bond_break": "RDKit break",
+        "h_shift_-1": "H-shift −1",
+        "h_shift_+1": "H-shift +1",
+        "h_shift_0": "H-shift",
+        "protonation": "+H⁺",
+        "deprotonation": "−H⁺",
+        "electron_loss": "−e⁻",
+        "electron_gain": "+e⁻",
+        "source_molecule": "parent",
+        "single_dehydrogenative_recombination": "recomb (−H₂)",
+        "dehydrogenative_coupling": "recomb (−2H)",
+        "h_transfer_recombination": "recomb (H transf)",
+        "neutral_fragment_association": "recomb (neut)",
+    }
+    if operation in LABELS:
+        return LABELS[operation]
+    if operation_type == "fragmentation":
+        return "RDKit break"
+    if operation_type == "h_shift":
+        return f"H-shift {operation}"
+    if operation_type == "ionization":
+        return operation.replace("_", " ")
+    if operation_type == "recombination":
+        return "recomb"
+    if operation_type == "feature_rule":
+        return operation.replace("_", " ")
+    return operation.replace("_", " ")
+
+
+def _collapse_leaves(children: list[dict]) -> list[dict]:
+    """Merge identical formula leaves into one node with count."""
+    groups: dict[str, list[dict]] = {}
+    others = []
+    for c in children:
+        if "children" not in c or not c["children"]:
+            key = c.get("name", "")
+            if key not in groups:
+                groups[key] = []
+            groups[key].append(c)
+        else:
+            others.append(c)
+
+    result = []
+    for key, items in groups.items():
+        if len(items) == 1:
+            result.append(items[0])
+        else:
+            result.append({
+                "name": f"{key} (×{len(items)})",
+                "ion_mode": items[0].get("ion_mode", ""),
+                "score": max(i.get("score", 0) for i in items),
+            })
+    result.extend(others)
+    return result
+
+
 @router.get("/materials/{material_id}/network-sankey")
 def get_network_sankey(material_id: str, db: Session = Depends(get_db)):
     """Get Sankey diagram: parent → actual path → ion_mode → evidence_tag."""

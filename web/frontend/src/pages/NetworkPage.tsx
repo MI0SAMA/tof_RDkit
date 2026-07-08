@@ -1,29 +1,44 @@
 import { useParams } from 'react-router-dom'
 import { useQuery } from '@tanstack/react-query'
 import { api } from '../api/client'
+import { useState } from 'react'
 import SankeyChart from '../components/SankeyChart'
-import { AlertCircle, GitBranch, Hexagon } from 'lucide-react'
+import PathTree from '../components/PathTree'
+import { AlertCircle, GitBranch, Network, Hexagon } from 'lucide-react'
+
+type ViewMode = 'tree' | 'sankey'
 
 export default function NetworkPage() {
   const { id } = useParams<{ id: string }>()
+  const [viewMode, setViewMode] = useState<ViewMode>('tree')
 
-  // Material info for parent display
   const { data: material } = useQuery({
     queryKey: ['material', id],
     queryFn: () => api.getMaterial(id!),
     enabled: !!id,
   })
 
-  // Sankey data
-  const { data: sankeyData, isLoading } = useQuery({
+  const { data: treeData, isLoading: treeLoading } = useQuery({
+    queryKey: ['network-tree', id],
+    queryFn: async () => {
+      const res = await fetch(`/api/materials/${id}/network-tree?max_depth=4&max_children=10`)
+      if (!res.ok) throw new Error('Failed')
+      return res.json()
+    },
+    enabled: !!id,
+  })
+
+  const { data: sankeyData, isLoading: sankeyLoading } = useQuery({
     queryKey: ['network-sankey', id],
     queryFn: async () => {
       const res = await fetch(`/api/materials/${id}/network-sankey`)
       if (!res.ok) throw new Error('Failed')
       return res.json()
     },
-    enabled: !!id,
+    enabled: !!id && viewMode === 'sankey',
   })
+
+  const isLoading = treeLoading || (viewMode === 'sankey' && sankeyLoading)
 
   if (isLoading) {
     return (
@@ -33,18 +48,30 @@ export default function NetworkPage() {
     )
   }
 
-  if (!sankeyData?.nodes?.length) {
-    return (
-      <div className="bg-white rounded-xl border border-gray-200 p-8 text-center text-gray-400">
-        <AlertCircle size={24} className="mx-auto mb-2" />
-        No network data available for this material
-      </div>
-    )
-  }
-
   return (
     <div className="space-y-3">
-      {/* Parent molecule card + Sankey */}
+      {/* View mode toggle */}
+      <div className="flex items-center gap-2">
+        <div className="flex bg-gray-100 rounded-lg p-0.5">
+          <button
+            onClick={() => setViewMode('tree')}
+            className={`flex items-center gap-1 px-3 py-1.5 rounded-md text-sm transition-colors ${
+              viewMode === 'tree' ? 'bg-white text-blue-700 shadow-sm font-medium' : 'text-gray-500'
+            }`}
+          >
+            <Network size={14} /> Path Tree
+          </button>
+          <button
+            onClick={() => setViewMode('sankey')}
+            className={`flex items-center gap-1 px-3 py-1.5 rounded-md text-sm transition-colors ${
+              viewMode === 'sankey' ? 'bg-white text-blue-700 shadow-sm font-medium' : 'text-gray-500'
+            }`}
+          >
+            <GitBranch size={14} /> Flow Sankey
+          </button>
+        </div>
+      </div>
+
       <div className="flex gap-4">
         {/* Parent molecule sidebar */}
         {material && (
@@ -86,22 +113,23 @@ export default function NetworkPage() {
           </div>
         )}
 
-        {/* Sankey diagram */}
+        {/* Visualization */}
         <div className="flex-1 bg-white rounded-xl border border-gray-200 p-4 min-w-0">
-          <div className="flex items-center gap-2 mb-1">
-            <GitBranch size={14} className="text-gray-400" />
-            <span className="text-xs text-gray-500">
-              Flow: generation type → ion mode → evidence tag
-            </span>
-            <span className="text-xs text-gray-400 ml-auto">
-              {sankeyData.total_formulas} ionized formulas
-            </span>
-          </div>
-          <SankeyChart
-            nodes={sankeyData.nodes}
-            links={sankeyData.links}
-            totalFormulas={sankeyData.total_formulas}
-          />
+          {viewMode === 'tree' && treeData && (
+            <PathTree data={treeData} />
+          )}
+          {viewMode === 'tree' && !treeData?.children?.length && (
+            <div className="flex items-center justify-center h-64 text-gray-400">
+              <AlertCircle size={24} className="mr-2" /> No tree data available
+            </div>
+          )}
+          {viewMode === 'sankey' && sankeyData && (
+            <SankeyChart
+              nodes={sankeyData.nodes}
+              links={sankeyData.links}
+              totalFormulas={sankeyData.total_formulas}
+            />
+          )}
         </div>
       </div>
     </div>
