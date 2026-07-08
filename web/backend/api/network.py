@@ -23,14 +23,11 @@ def get_network(
         raise HTTPException(status_code=500, detail=str(e))
 
 
-def _parse_path_signature(path_str: str) -> str:
+def _parse_path_signature(path_str: str, all_node_ids: str = "", node_paths: dict[str, str] | None = None) -> str:
     """Extract a human-readable path signature from a representative_path string.
 
-    Examples:
-      "M | fragment C,H,O from C-O bond break(s)" -> "C-O Bond Break"
-      "M | carbonyl | carbonyl_fragmentation | carbonyl_CO" -> "Carbonyl → CO"
-      "M | aromatic_ring | aromatic_stable_fragments | aromatic_C6H5" -> "Aromatic → C6H5"
-      "M | fragment ... | h_shift_-1" -> "Bond Break + H-Shift"
+    For recombination formulas, looks up source fragment node paths to extract
+    the original bond break information.
     """
     if not path_str:
         return "Unknown"
@@ -53,7 +50,6 @@ def _parse_path_signature(path_str: str) -> str:
 
     for trigger, label in triggers.items():
         if trigger in path_str:
-            # Find the last part which is usually the formula fragment name
             last = parts[-1] if len(parts) > 1 else ""
             if "_" in last:
                 formula_hint = last.split("_")[-1] if "_" in last else ""
@@ -64,21 +60,17 @@ def _parse_path_signature(path_str: str) -> str:
     # Bond break signatures
     if "bond break" in path_str.lower():
         has_h_shift = "h_shift" in path_str.lower()
-        bond_info = ""
-        for part in parts:
-            if "from" in part.lower():
-                bond_type = part.split("from")[-1].strip().rstrip(")")
-                # Remove all text after the bond type names
-                bond_type = bond_type.split(" bond break")[0].strip().rstrip("(").strip()
-                # Clean up: "C-O+C-O" -> "C-O + C-O"
-                bond_info = " + ".join(bond_type.split("+"))
+        bond_info = _extract_bond_info(parts)
         label = bond_info if bond_info else "RDKit Bond Break"
         if has_h_shift:
             label += " → H-Shift"
         return label
 
-    # Recombination
+    # Recombination — look up source fragment nodes for bond break info
     if "recombination" in path_str.lower() or ("node_" in parts[0] and "+" in parts[0]):
+        bond_info = _lookup_recomb_source(parts[0], all_node_ids, node_paths or {})
+        if bond_info:
+            return f"{bond_info} → Recombination"
         return "Fragment Recombination"
 
     # Parent
@@ -86,6 +78,52 @@ def _parse_path_signature(path_str: str) -> str:
         return "Parent Molecule"
 
     return "Other"
+
+
+def _extract_bond_info(parts: list[str]) -> str:
+    """Extract bond type from path parts, e.g. 'C-O + C-C'"""
+    for part in parts:
+        if "from" in part.lower():
+            bond_type = part.split("from")[-1].strip().rstrip(")")
+            bond_type = bond_type.split(" bond break")[0].strip().rstrip("(").strip()
+            return " + ".join(bond_type.split("+"))
+    return ""
+
+
+def _lookup_recomb_source(first_part: str, all_node_ids: str, node_paths: dict[str, str]) -> str:
+    """Look up source fragment nodes for a recombination formula and extract bond info."""
+    # first_part looks like "node_0002 + node_0061"
+    # Try to extract node IDs
+    node_ids = []
+    if "+" in first_part:
+        for token in first_part.split("+"):
+            token = token.strip()
+            if token.startswith("node_"):
+                node_ids.append(token)
+
+    # Also try all_node_ids (semicolon-separated)
+    if not node_ids and all_node_ids:
+        ids = [nid.strip() for nid in all_node_ids.split(";") if nid.strip().startswith("node_")]
+        # Take the first 2 fragment-level nodes
+        node_ids = ids[:2]
+
+    # Look up each source node's path for bond break info
+    all_bonds = []
+    for nid in node_ids:
+        node_path = node_paths.get(nid, "")
+        if node_path and "bond break" in node_path.lower():
+            parts = [p.strip() for p in node_path.split("|")]
+            bi = _extract_bond_info(parts)
+            if bi:
+                # Split compound bonds like "C-O + C-C" into individual bonds
+                for b in bi.split(" + "):
+                    all_bonds.append(b.strip())
+
+    if all_bonds:
+        # Deduplicate and sort for consistent labels
+        unique = sorted(set(all_bonds))
+        return " + ".join(unique)
+    return ""
 
 
 @router.get("/materials/{material_id}/network-sankey")
@@ -104,6 +142,12 @@ def get_network_sankey(material_id: str, db: Session = Depends(get_db)):
     if not formulas:
         return {"nodes": [], "links": []}
 
+    # Pre-load node paths for recombination lookup
+    node_paths = {}
+    nodes = db.query(NetworkNode).filter(NetworkNode.compound_id == material_id).all()
+    for n in nodes:
+        node_paths[n.node_id] = n.path or ""
+
     # Layer structure: path_signature → ion_mode → evidence_tag
     path_counts = {}       # "Carbonyl → CO" → count
     path_to_ion = {}       # ("Carbonyl → CO", "positive") → count
@@ -114,7 +158,7 @@ def get_network_sankey(material_id: str, db: Session = Depends(get_db)):
         ion = f.ion_mode
         tag = f.diagnostic_tag or "unlabeled"
 
-        path_sig = _parse_path_signature(f.representative_path)
+        path_sig = _parse_path_signature(f.representative_path, f.all_node_ids, node_paths)
 
         path_counts[path_sig] = path_counts.get(path_sig, 0) + 1
         key_p2i = (path_sig, ion)
