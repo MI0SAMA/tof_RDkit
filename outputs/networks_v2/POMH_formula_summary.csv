@@ -1,0 +1,39 @@
+﻿compound_id,source_name,formula,ion_mode,charge,exact_mass,formula_score,best_path_score,path_count,mechanism_count,source_fragment_count,generation_types,best_node_id,representative_path,all_node_ids
+POMH,Polyoxymethylene Homopolymer,CH3O,positive,1,31.01838971626,1.0,0.79,4,2,4,feature_rule;fragment,node_0008,M | acetal_or_ether | acetal_oxonium_series | oxonium_CH3O,node_0008;node_0034;node_0044;node_0048
+POMH,Polyoxymethylene Homopolymer,CH2O,negative,-1,30.01056468403,0.882,0.692,4,2,2,fragment;fragment_h_shift,node_0047,"M | fragment C,H,O from C-O bond break(s) | deprotonation",node_0047;node_0051;node_0053;node_0057
+POMH,Polyoxymethylene Homopolymer,CH4O,positive,1,32.02621474849,0.882,0.692,4,2,2,fragment;fragment_h_shift,node_0046,"M | fragment C,H,O from C-O bond break(s) | protonation",node_0046;node_0050;node_0054;node_0058
+POMH,Polyoxymethylene Homopolymer,C2H3O,positive,1,43.01838971626,0.8800000000000001,0.79,2,1,2,feature_rule,node_0009,M | acetal_or_ether | acetal_oxonium_series | oxonium_C2H3O,node_0009;node_0035
+POMH,Polyoxymethylene Homopolymer,C2H5O,positive,1,45.03403978072,0.8800000000000001,0.79,2,1,2,feature_rule,node_0011,M | acetal_or_ether | acetal_oxonium_series | oxonium_C2H5O,node_0011;node_0036
+POMH,Polyoxymethylene Homopolymer,C2H3O2,positive,1,59.01330433583,0.79,0.79,1,1,1,feature_rule,node_0012,M | acetal_or_ether | acetal_oxonium_series | oxonium_C2H3O2,node_0012
+POMH,Polyoxymethylene Homopolymer,C2H3O2,negative,-1,59.01330433583,0.79,0.79,1,1,1,feature_rule,node_0025,M | acetal_or_ether | acetal_oxonium_series | oxonium_neg_C2H3O2,node_0025
+POMH,Polyoxymethylene Homopolymer,C2H4O,positive,1,44.02621474849,0.79,0.79,1,1,1,feature_rule,node_0010,M | acetal_or_ether | acetal_oxonium_series | oxonium_C2H4O,node_0010
+POMH,Polyoxymethylene Homopolymer,C2H5O2,positive,1,61.028954400290004,0.79,0.79,1,1,1,feature_rule,node_0013,M | acetal_or_ether | acetal_oxonium_series | oxonium_C2H5O2,node_0013
+POMH,Polyoxymethylene Homopolymer,C2H5O2,negative,-1,61.028954400290004,0.79,0.79,1,1,1,feature_rule,node_0026,M | acetal_or_ether | acetal_oxonium_series | oxonium_neg_C2H5O2,node_0026
+POMH,Polyoxymethylene Homopolymer,C3H3O,positive,1,55.01838971626,0.79,0.79,1,1,1,feature_rule,node_0014,M | acetal_or_ether | acetal_oxonium_series | oxonium_C3H3O,node_0014
+POMH,Polyoxymethylene Homopolymer,C3H5O,positive,1,57.03403978072,0.79,0.79,1,1,1,feature_rule,node_0015,M | acetal_or_ether | acetal_oxonium_series | oxonium_C3H5O,node_0015
+POMH,Polyoxymethylene Homopolymer,C3H5O2,positive,1,73.02895440029,0.79,0.79,1,1,1,feature_rule,node_0016,M | acetal_or_ether | acetal_oxonium_series | oxonium_C3H5O2,node_0016
+POMH,Polyoxymethylene Homopolymer,C3H5O2,negative,-1,73.02895440029,0.79,0.79,1,1,1,feature_rule,node_0027,M | acetal_or_ether | acetal_oxonium_series | oxonium_neg_C3H5O2,node_0027
+POMH,Polyoxymethylene Homopolymer,C3H5O3,positive,1,89.02386901986,0.79,0.79,1,1,1,feature_rule,node_0017,M | acetal_or_ether | acetal_oxonium_series | oxonium_C3H5O3,node_0017
+POMH,Polyoxymethylene Homopolymer,C3H5O3,negative,-1,89.02386901986,0.79,0.79,1,1,1,feature_rule,node_0028,M | acetal_or_ether | acetal_oxonium_series | oxonium_neg_C3H5O3,node_0028
+POMH,Polyoxymethylene Homopolymer,C3H6O,positive,1,58.04186481295,0.79,0.79,1,1,1,feature_rule,node_0018,M | acetal_or_ether | acetal_oxonium_series | oxonium_C3H6O,node_0018
+POMH,Polyoxymethylene Homopolymer,C3H6O2,positive,1,74.03677943252,0.79,0.79,1,1,1,feature_rule,node_0019,M | acetal_or_ether | acetal_oxonium_series | oxonium_C3H6O2,node_0019
+POMH,Polyoxymethylene Homopolymer,C3H6O3,positive,1,90.03169405209,0.79,0.79,1,1,1,feature_rule,node_0020,M | acetal_or_ether | acetal_oxonium_series | oxonium_C3H6O3,node_0020
+POMH,Polyoxymethylene Homopolymer,C3H7O,positive,1,59.04968984518,0.79,0.79,1,1,1,feature_rule,node_0021,M | acetal_or_ether | acetal_oxonium_series | oxonium_C3H7O,node_0021
+POMH,Polyoxymethylene Homopolymer,C3H7O2,positive,1,75.04460446475,0.79,0.79,1,1,1,feature_rule,node_0022,M | acetal_or_ether | acetal_oxonium_series | oxonium_C3H7O2,node_0022
+POMH,Polyoxymethylene Homopolymer,C3H7O3,positive,1,91.03951908432,0.79,0.79,1,1,1,feature_rule,node_0023,M | acetal_or_ether | acetal_oxonium_series | oxonium_C3H7O3,node_0023
+POMH,Polyoxymethylene Homopolymer,CHO2,negative,-1,44.99765427137,0.79,0.79,1,1,1,feature_rule,node_0024,M | acetal_or_ether | acetal_oxonium_series | oxonium_neg_CHO2,node_0024
+POMH,Polyoxymethylene Homopolymer,CH3O,negative,-1,31.01838971626,0.7440000000000002,0.6540000000000001,2,1,2,fragment,node_0045,"M | fragment C,H,O from C-O bond break(s) | electron_gain",node_0045;node_0049
+POMH,Polyoxymethylene Homopolymer,CH2O,positive,1,30.01056468403,0.6900000000000002,0.6000000000000001,2,1,2,fragment_h_shift,node_0052,"M | fragment C,H,O from C-O bond break(s) | h_shift_-1 | electron_loss",node_0052;node_0056
+POMH,Polyoxymethylene Homopolymer,CH4O,negative,-1,32.02621474849,0.6900000000000002,0.6000000000000001,2,1,2,fragment_h_shift,node_0055,"M | fragment C,H,O from C-O bond break(s) | h_shift_+1 | electron_gain",node_0055;node_0059
+POMH,Polyoxymethylene Homopolymer,C2H,negative,-1,25.00782503223,0.6580000000000001,0.6580000000000001,1,1,1,feature_rule,node_0032,M | universal_hydrocarbon | hydrocarbon_small_fragments | small_hc_C2H,node_0032
+POMH,Polyoxymethylene Homopolymer,C2H3,positive,1,27.02347509669,0.6580000000000001,0.6580000000000001,1,1,1,feature_rule,node_0029,M | universal_hydrocarbon | hydrocarbon_small_fragments | small_hc_C2H3,node_0029
+POMH,Polyoxymethylene Homopolymer,C2H5,positive,1,29.03912516115,0.6580000000000001,0.6580000000000001,1,1,1,feature_rule,node_0030,M | universal_hydrocarbon | hydrocarbon_small_fragments | small_hc_C2H5,node_0030
+POMH,Polyoxymethylene Homopolymer,C2H3O,negative,-1,43.01838971626,0.6220000000000001,0.6220000000000001,1,1,1,feature_rule,node_0039,M | oxygenated | oxygenated_small_fragments | o_small_C2H3O,node_0039
+POMH,Polyoxymethylene Homopolymer,C2HO,negative,-1,41.0027396518,0.6220000000000001,0.6220000000000001,1,1,1,feature_rule,node_0038,M | oxygenated | oxygenated_small_fragments | o_small_C2HO,node_0038
+POMH,Polyoxymethylene Homopolymer,CHO,positive,1,29.0027396518,0.6220000000000001,0.6220000000000001,1,1,1,feature_rule,node_0033,M | oxygenated | oxygenated_small_fragments | o_small_CHO,node_0033
+POMH,Polyoxymethylene Homopolymer,CHO,negative,-1,29.0027396518,0.6220000000000001,0.6220000000000001,1,1,1,feature_rule,node_0037,M | oxygenated | oxygenated_small_fragments | o_small_CHO,node_0037
+POMH,Polyoxymethylene Homopolymer,C2,negative,-1,24.0,0.6080000000000001,0.6080000000000001,1,1,1,feature_rule,node_0031,M | universal_hydrocarbon | hydrocarbon_small_fragments | small_hc_C2,node_0031
+POMH,Polyoxymethylene Homopolymer,C2H5O,negative,-1,45.03403978072,0.5060000000000001,0.5060000000000001,1,1,1,parent,node_0043,M | deprotonation,node_0043
+POMH,Polyoxymethylene Homopolymer,C2H7O,positive,1,47.04968984518,0.5060000000000001,0.5060000000000001,1,1,1,parent,node_0042,M | protonation,node_0042
+POMH,Polyoxymethylene Homopolymer,C2H6O,positive,1,46.04186481295,0.468,0.468,1,1,1,parent,node_0040,M | electron_loss,node_0040
+POMH,Polyoxymethylene Homopolymer,C2H6O,negative,-1,46.04186481295,0.468,0.468,1,1,1,parent,node_0041,M | electron_gain,node_0041

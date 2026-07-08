@@ -29,6 +29,29 @@ def default_config() -> dict[str, Any]:
             "allow_ring_bond_break": False,
             "allow_aromatic_bond_break": False,
             "max_generated_formulas_per_compound": 20000,
+            "bond_type_rules": {
+                "C-S": {
+                    "allow_ring_bond_break": True,
+                    "allow_aromatic_bond_break": True,
+                    "allow_single_atom_fragment": True,
+                },
+                "Si-O": {
+                    "allow_ring_bond_break": True,
+                    "allow_single_atom_fragment": True,
+                },
+                "C-N": {
+                    "allow_ring_bond_break": True,
+                },
+                "C-O": {
+                    "allow_ring_bond_break": True,
+                    "structural_conditions": {
+                        "require_carbonyl": True,
+                    },
+                },
+                "C-F": {
+                    "allow_single_atom_fragment": True,
+                },
+            },
         },
         "ion_rules": {
             "h_shift_range": [-2, -1, 0, 1, 2],
@@ -97,6 +120,16 @@ def default_config() -> dict[str, Any]:
                 "acetal_oxonium_series": {"enabled": True},
                 "aromatic_stable_fragments": {"enabled": True},
                 "sulfur_aromatic_fragments": {"enabled": True},
+                "carbonyl_fragmentation": {"enabled": True},
+                "imide_fragmentation": {"enabled": True},
+                "amide_fragmentation": {"enabled": True},
+                "cyclic_aliphatic_fragments": {"enabled": True},
+                "hydrocarbon_small_fragments": {"enabled": True},
+                "oxygenated_small_fragments": {"enabled": True},
+                "nitrogenated_small_fragments": {"enabled": True},
+                "sulfurated_small_fragments": {"enabled": True},
+                "siloxane_small_fragments": {"enabled": True},
+                "acetate_ethylene_fragments": {"enabled": True},
             },
             "fragment_h_shift": {
                 "enabled": True,
@@ -149,6 +182,13 @@ def default_config() -> dict[str, Any]:
                     "max_high_mass_penalty": 0.15,
                 },
                 "max_score": 1.0,
+                "rule_pack_structure_scores": {
+                    "hydrocarbon_small_fragments": 0.48,
+                    "oxygenated_small_fragments": 0.42,
+                    "nitrogenated_small_fragments": 0.42,
+                    "sulfurated_small_fragments": 0.42,
+                    "siloxane_small_fragments": 0.42,
+                },
             },
         },
         "evaluation_v2": {

@@ -1,0 +1,38 @@
+﻿compound_id,source_name,formula,ion_mode,charge,exact_mass,formula_score,best_path_score,path_count,mechanism_count,source_fragment_count,generation_types,best_node_id,representative_path,all_node_ids
+STD001,Toluene,C6H5,positive,1,77.03912516115,0.99,0.79,3,2,3,feature_rule;fragment,node_0005,M | aromatic_ring | aromatic_stable_fragments | aromatic_C6H5,node_0005;node_0021;node_0039
+STD001,Toluene,C6H5,negative,-1,77.03912516115,0.9300000000000002,0.79,2,2,2,feature_rule;fragment,node_0006,M | aromatic_ring | aromatic_stable_fragments | aromatic_C6H5,node_0006;node_0040
+STD001,Toluene,C6H4,negative,-1,76.03130012892,0.792,0.692,2,2,1,fragment;fragment_h_shift,node_0042,"M | fragment C,H from C-C bond break(s) | deprotonation",node_0042;node_0044
+STD001,Toluene,C6H6,positive,1,78.04695019338,0.792,0.692,2,2,1,fragment;fragment_h_shift,node_0041,"M | fragment C,H from C-C bond break(s) | protonation",node_0041;node_0045
+STD001,Toluene,C7H7,positive,1,91.05477522561,0.79,0.79,1,1,1,feature_rule,node_0007,M | aromatic_ring | aromatic_stable_fragments | aromatic_C7H7,node_0007
+STD001,Toluene,C2H,negative,-1,25.00782503223,0.6580000000000001,0.6580000000000001,1,1,1,feature_rule,node_0026,M | universal_hydrocarbon | hydrocarbon_small_fragments | small_hc_C2H,node_0026
+STD001,Toluene,C2H3,positive,1,27.02347509669,0.6580000000000001,0.6580000000000001,1,1,1,feature_rule,node_0008,M | universal_hydrocarbon | hydrocarbon_small_fragments | small_hc_C2H3,node_0008
+STD001,Toluene,C2H5,positive,1,29.03912516115,0.6580000000000001,0.6580000000000001,1,1,1,feature_rule,node_0009,M | universal_hydrocarbon | hydrocarbon_small_fragments | small_hc_C2H5,node_0009
+STD001,Toluene,C3,negative,-1,36.0,0.6580000000000001,0.6580000000000001,1,1,1,feature_rule,node_0027,M | universal_hydrocarbon | hydrocarbon_small_fragments | small_hc_C3,node_0027
+STD001,Toluene,C3H,negative,-1,37.00782503223,0.6580000000000001,0.6580000000000001,1,1,1,feature_rule,node_0028,M | universal_hydrocarbon | hydrocarbon_small_fragments | small_hc_C3H,node_0028
+STD001,Toluene,C3H3,positive,1,39.02347509669,0.6580000000000001,0.6580000000000001,1,1,1,feature_rule,node_0010,M | universal_hydrocarbon | hydrocarbon_small_fragments | small_hc_C3H3,node_0010
+STD001,Toluene,C3H5,positive,1,41.03912516115,0.6580000000000001,0.6580000000000001,1,1,1,feature_rule,node_0011,M | universal_hydrocarbon | hydrocarbon_small_fragments | small_hc_C3H5,node_0011
+STD001,Toluene,C3H7,positive,1,43.05477522561,0.6580000000000001,0.6580000000000001,1,1,1,feature_rule,node_0012,M | universal_hydrocarbon | hydrocarbon_small_fragments | small_hc_C3H7,node_0012
+STD001,Toluene,C4,negative,-1,48.0,0.6580000000000001,0.6580000000000001,1,1,1,feature_rule,node_0029,M | universal_hydrocarbon | hydrocarbon_small_fragments | small_hc_C4,node_0029
+STD001,Toluene,C4H,negative,-1,49.00782503223,0.6580000000000001,0.6580000000000001,1,1,1,feature_rule,node_0030,M | universal_hydrocarbon | hydrocarbon_small_fragments | small_hc_C4H,node_0030
+STD001,Toluene,C4H3,positive,1,51.02347509669,0.6580000000000001,0.6580000000000001,1,1,1,feature_rule,node_0013,M | universal_hydrocarbon | hydrocarbon_small_fragments | small_hc_C4H3,node_0013
+STD001,Toluene,C4H5,positive,1,53.03912516115,0.6580000000000001,0.6580000000000001,1,1,1,feature_rule,node_0014,M | universal_hydrocarbon | hydrocarbon_small_fragments | small_hc_C4H5,node_0014
+STD001,Toluene,C4H7,positive,1,55.05477522561,0.6580000000000001,0.6580000000000001,1,1,1,feature_rule,node_0015,M | universal_hydrocarbon | hydrocarbon_small_fragments | small_hc_C4H7,node_0015
+STD001,Toluene,C4H9,positive,1,57.07042529007,0.6580000000000001,0.6580000000000001,1,1,1,feature_rule,node_0016,M | universal_hydrocarbon | hydrocarbon_small_fragments | small_hc_C4H9,node_0016
+STD001,Toluene,C5,negative,-1,60.0,0.6580000000000001,0.6580000000000001,1,1,1,feature_rule,node_0031,M | universal_hydrocarbon | hydrocarbon_small_fragments | small_hc_C5,node_0031
+STD001,Toluene,C5H,negative,-1,61.00782503223,0.6580000000000001,0.6580000000000001,1,1,1,feature_rule,node_0032,M | universal_hydrocarbon | hydrocarbon_small_fragments | small_hc_C5H,node_0032
+STD001,Toluene,C5H11,positive,1,71.08607535453,0.6580000000000001,0.6580000000000001,1,1,1,feature_rule,node_0020,M | universal_hydrocarbon | hydrocarbon_small_fragments | small_hc_C5H11,node_0020
+STD001,Toluene,C5H5,positive,1,65.03912516115,0.6580000000000001,0.6580000000000001,1,1,1,feature_rule,node_0017,M | universal_hydrocarbon | hydrocarbon_small_fragments | small_hc_C5H5,node_0017
+STD001,Toluene,C5H7,positive,1,67.05477522561,0.6580000000000001,0.6580000000000001,1,1,1,feature_rule,node_0018,M | universal_hydrocarbon | hydrocarbon_small_fragments | small_hc_C5H7,node_0018
+STD001,Toluene,C5H9,positive,1,69.07042529007,0.6580000000000001,0.6580000000000001,1,1,1,feature_rule,node_0019,M | universal_hydrocarbon | hydrocarbon_small_fragments | small_hc_C5H9,node_0019
+STD001,Toluene,C6,negative,-1,72.0,0.6580000000000001,0.6580000000000001,1,1,1,feature_rule,node_0033,M | universal_hydrocarbon | hydrocarbon_small_fragments | small_hc_C6,node_0033
+STD001,Toluene,C6H,negative,-1,73.00782503223,0.6580000000000001,0.6580000000000001,1,1,1,feature_rule,node_0034,M | universal_hydrocarbon | hydrocarbon_small_fragments | small_hc_C6H,node_0034
+STD001,Toluene,C6H11,positive,1,83.08607535453,0.6580000000000001,0.6580000000000001,1,1,1,feature_rule,node_0024,M | universal_hydrocarbon | hydrocarbon_small_fragments | small_hc_C6H11,node_0024
+STD001,Toluene,C6H7,positive,1,79.05477522561,0.6580000000000001,0.6580000000000001,1,1,1,feature_rule,node_0022,M | universal_hydrocarbon | hydrocarbon_small_fragments | small_hc_C6H7,node_0022
+STD001,Toluene,C6H9,positive,1,81.07042529007,0.6580000000000001,0.6580000000000001,1,1,1,feature_rule,node_0023,M | universal_hydrocarbon | hydrocarbon_small_fragments | small_hc_C6H9,node_0023
+STD001,Toluene,C2,negative,-1,24.0,0.6080000000000001,0.6080000000000001,1,1,1,feature_rule,node_0025,M | universal_hydrocarbon | hydrocarbon_small_fragments | small_hc_C2,node_0025
+STD001,Toluene,C6H4,positive,1,76.03130012892,0.6000000000000001,0.6000000000000001,1,1,1,fragment_h_shift,node_0043,"M | fragment C,H from C-C bond break(s) | h_shift_-1 | electron_loss",node_0043
+STD001,Toluene,C6H6,negative,-1,78.04695019338,0.6000000000000001,0.6000000000000001,1,1,1,fragment_h_shift,node_0046,"M | fragment C,H from C-C bond break(s) | h_shift_+1 | electron_gain",node_0046
+STD001,Toluene,C7H7,negative,-1,91.05477522561,0.5060000000000001,0.5060000000000001,1,1,1,parent,node_0038,M | deprotonation,node_0038
+STD001,Toluene,C7H9,positive,1,93.07042529007,0.5060000000000001,0.5060000000000001,1,1,1,parent,node_0037,M | protonation,node_0037
+STD001,Toluene,C7H8,positive,1,92.06260025784,0.468,0.468,1,1,1,parent,node_0035,M | electron_loss,node_0035
+STD001,Toluene,C7H8,negative,-1,92.06260025784,0.468,0.468,1,1,1,parent,node_0036,M | electron_gain,node_0036

@@ -124,9 +124,14 @@ def _ionization_variants(counts: dict[str, int], config: dict, allow_proton_tran
     return variants
 
 
-def _structure_score(generation_type: str, broken_bonds: int, config: dict) -> float:
+def _structure_score(generation_type: str, broken_bonds: int, config: dict, rule_pack: str = "") -> float:
     scoring = _score_cfg(config)
-    base = scoring.get("structure_scores", {}).get(generation_type, 0.5)
+    # Per-rule-pack overrides take precedence
+    pack_overrides = scoring.get("rule_pack_structure_scores", {})
+    if rule_pack and rule_pack in pack_overrides:
+        base = float(pack_overrides[rule_pack])
+    else:
+        base = scoring.get("structure_scores", {}).get(generation_type, 0.5)
     penalty = float(scoring.get("penalty_per_broken_bond", 0.08)) * broken_bonds
     return clip(base - penalty, 0.0, 1.0)
 
@@ -190,7 +195,7 @@ def _add_node(
     evidence: str = "",
 ) -> NetworkNode:
     node_id = _next_id("node", counters)
-    structure = _structure_score(generation_type, broken_bonds, config)
+    structure = _structure_score(generation_type, broken_bonds, config, rule_pack)
     ionization = _ionization_score(operation, generation_type, config)
     node = NetworkNode(
         node_id=node_id,
@@ -264,6 +269,11 @@ def _generate_fragment_nodes(
 ) -> list[NetworkNode]:
     out: list[NetworkNode] = []
     for fragment in fragments:
+        # v4.0: structural derivation path
+        if fragment.derivation:
+            path_desc = fragment.derivation
+        else:
+            path_desc = f"break {fragment.broken_bonds} bond(s)"
         node = _add_node(
             nodes,
             counters,
@@ -273,7 +283,7 @@ def _generate_fragment_nodes(
             0,
             "fragment",
             "bond_break",
-            parent_node.path + [f"break {fragment.broken_bonds} bond(s)"],
+            parent_node.path + [path_desc],
             config,
             source_nodes=[parent_node.node_id],
             fragment_atom_indices=fragment.atom_indices,

@@ -1,0 +1,15 @@
+﻿material,has_network,rf_unique_formula_mode,same_material_mode_matches,same_material_formula_matches,match_rate,formula_match_rate,tier_A_high_confidence,tier_B_support,tier_D_generic_or_weak,tier_C_network_uncovered,top_generation_types
+PEN,True,848,68,130,0.08018867924528301,0.15330188679245282,6,54,8,780,adduct; adduct; adduct; adduct; adduct
+PVDF,True,897,51,95,0.056856187290969896,0.10590858416945373,11,35,5,846,adduct; adduct; adduct; adduct; adduct
+PEEK,True,1088,56,132,0.051470588235294115,0.1213235294117647,0,26,30,1032,adduct; adduct; adduct; adduct; adduct
+ETFE,True,880,39,97,0.04431818181818182,0.11022727272727273,15,22,2,841,adduct; adduct; adduct; adduct; adduct
+Nomex,True,1006,37,88,0.036779324055666,0.0874751491053678,2,18,17,969,adduct; adduct; adduct; adduct; adduct
+PEI,True,1075,31,88,0.02883720930232558,0.08186046511627906,1,13,17,1044,adduct; adduct; adduct; adduct; adduct
+PFA,True,797,22,40,0.027603513174404015,0.050188205771643665,7,15,0,775,adduct; adduct; adduct; adduct; adduct
+PTFE,True,958,22,51,0.022964509394572025,0.05323590814196242,4,15,3,936,adduct; adduct; adduct; adduct; adduct
+PPS,True,954,15,32,0.015723270440251572,0.033542976939203356,2,2,11,939,adduct; adduct; adduct; adduct; adduct
+PI,True,1114,15,35,0.013464991023339317,0.03141831238779174,0,0,15,1099,adduct; adduct; adduct; adduct; adduct
+FEP,True,849,10,21,0.011778563015312132,0.024734982332155476,5,5,0,839,adduct; adduct; adduct; adduct; adduct
+PAI,False,1061,0,0,0.0,0.0,0,0,0,1061,
+PBI,False,958,0,0,0.0,0.0,0,0,0,958,
+PCTFE,False,791,0,0,0.0,0.0,0,0,0,791,

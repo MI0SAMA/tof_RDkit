@@ -1,0 +1,3682 @@
+{
+  "compound_id": "POMH",
+  "name": "Polyoxymethylene Homopolymer",
+  "smiles": "COC",
+  "parent_formula": "C2H6O",
+  "nodes": [
+    {
+      "node_id": "node_0001",
+      "compound_id": "POMH",
+      "source_name": "Polyoxymethylene Homopolymer",
+      "formula": "C2H6O",
+      "counts": {
+        "C": 2,
+        "H": 6,
+        "O": 1
+      },
+      "exact_mass": 46.04186481295,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "generation_type": "parent",
+      "operation": "source_molecule",
+      "path": [
+        "M"
+      ],
+      "source_nodes": [],
+      "fragment_atom_indices": null,
+      "reaction_site_elements": [],
+      "broken_bonds": 0,
+      "h_shift": 0,
+      "recombination_loss": "",
+      "rule_pack": "",
+      "trigger_feature": "",
+      "evidence": "",
+      "structure_score": 0.45,
+      "ionization_score": 0.0,
+      "path_score": 0.32,
+      "formula_score": 0.0,
+      "path_count": 1,
+      "mechanism_count": 1,
+      "source_fragment_count": 0
+    },
+    {
+      "node_id": "node_0002",
+      "compound_id": "POMH",
+      "source_name": "Polyoxymethylene Homopolymer",
+      "formula": "CH3O",
+      "counts": {
+        "O": 1,
+        "C": 1,
+        "H": 3
+      },
+      "exact_mass": 31.01838971626,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "generation_type": "fragment",
+      "operation": "bond_break",
+      "path": [
+        "M",
+        "fragment C,H,O from C-O bond break(s)"
+      ],
+      "source_nodes": [
+        "node_0001"
+      ],
+      "fragment_atom_indices": [
+        1,
+        2,
+        6,
+        7,
+        8
+      ],
+      "reaction_site_elements": [
+        "O"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 0,
+      "recombination_loss": "",
+      "rule_pack": "",
+      "trigger_feature": "",
+      "evidence": "",
+      "structure_score": 0.64,
+      "ionization_score": 0.0,
+      "path_score": 0.434,
+      "formula_score": 0.0,
+      "path_count": 1,
+      "mechanism_count": 1,
+      "source_fragment_count": 0
+    },
+    {
+      "node_id": "node_0003",
+      "compound_id": "POMH",
+      "source_name": "Polyoxymethylene Homopolymer",
+      "formula": "CH3O",
+      "counts": {
+        "C": 1,
+        "O": 1,
+        "H": 3
+      },
+      "exact_mass": 31.01838971626,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "generation_type": "fragment",
+      "operation": "bond_break",
+      "path": [
+        "M",
+        "fragment C,H,O from C-O bond break(s)"
+      ],
+      "source_nodes": [
+        "node_0001"
+      ],
+      "fragment_atom_indices": [
+        0,
+        1,
+        3,
+        4,
+        5
+      ],
+      "reaction_site_elements": [
+        "O"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 0,
+      "recombination_loss": "",
+      "rule_pack": "",
+      "trigger_feature": "",
+      "evidence": "",
+      "structure_score": 0.64,
+      "ionization_score": 0.0,
+      "path_score": 0.434,
+      "formula_score": 0.0,
+      "path_count": 1,
+      "mechanism_count": 1,
+      "source_fragment_count": 0
+    },
+    {
+      "node_id": "node_0004",
+      "compound_id": "POMH",
+      "source_name": "Polyoxymethylene Homopolymer",
+      "formula": "CH2O",
+      "counts": {
+        "O": 1,
+        "C": 1,
+        "H": 2
+      },
+      "exact_mass": 30.01056468403,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "generation_type": "fragment_h_shift",
+      "operation": "h_shift_-1",
+      "path": [
+        "M",
+        "fragment C,H,O from C-O bond break(s)",
+        "h_shift_-1"
+      ],
+      "source_nodes": [
+        "node_0002"
+      ],
+      "fragment_atom_indices": [
+        1,
+        2,
+        6,
+        7,
+        8
+      ],
+      "reaction_site_elements": [
+        "O"
+      ],
+      "broken_bonds": 1,
+      "h_shift": -1,
+      "recombination_loss": "",
+      "rule_pack": "",
+      "trigger_feature": "",
+      "evidence": "",
+      "structure_score": 0.6000000000000001,
+      "ionization_score": 0.0,
+      "path_score": 0.38000000000000006,
+      "formula_score": 0.0,
+      "path_count": 1,
+      "mechanism_count": 1,
+      "source_fragment_count": 0
+    },
+    {
+      "node_id": "node_0005",
+      "compound_id": "POMH",
+      "source_name": "Polyoxymethylene Homopolymer",
+      "formula": "CH4O",
+      "counts": {
+        "O": 1,
+        "C": 1,
+        "H": 4
+      },
+      "exact_mass": 32.02621474849,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "generation_type": "fragment_h_shift",
+      "operation": "h_shift_+1",
+      "path": [
+        "M",
+        "fragment C,H,O from C-O bond break(s)",
+        "h_shift_+1"
+      ],
+      "source_nodes": [
+        "node_0002"
+      ],
+      "fragment_atom_indices": [
+        1,
+        2,
+        6,
+        7,
+        8
+      ],
+      "reaction_site_elements": [
+        "O"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 1,
+      "recombination_loss": "",
+      "rule_pack": "",
+      "trigger_feature": "",
+      "evidence": "",
+      "structure_score": 0.6000000000000001,
+      "ionization_score": 0.0,
+      "path_score": 0.38000000000000006,
+      "formula_score": 0.0,
+      "path_count": 1,
+      "mechanism_count": 1,
+      "source_fragment_count": 0
+    },
+    {
+      "node_id": "node_0006",
+      "compound_id": "POMH",
+      "source_name": "Polyoxymethylene Homopolymer",
+      "formula": "CH2O",
+      "counts": {
+        "C": 1,
+        "O": 1,
+        "H": 2
+      },
+      "exact_mass": 30.01056468403,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "generation_type": "fragment_h_shift",
+      "operation": "h_shift_-1",
+      "path": [
+        "M",
+        "fragment C,H,O from C-O bond break(s)",
+        "h_shift_-1"
+      ],
+      "source_nodes": [
+        "node_0003"
+      ],
+      "fragment_atom_indices": [
+        0,
+        1,
+        3,
+        4,
+        5
+      ],
+      "reaction_site_elements": [
+        "O"
+      ],
+      "broken_bonds": 1,
+      "h_shift": -1,
+      "recombination_loss": "",
+      "rule_pack": "",
+      "trigger_feature": "",
+      "evidence": "",
+      "structure_score": 0.6000000000000001,
+      "ionization_score": 0.0,
+      "path_score": 0.38000000000000006,
+      "formula_score": 0.0,
+      "path_count": 1,
+      "mechanism_count": 1,
+      "source_fragment_count": 0
+    },
+    {
+      "node_id": "node_0007",
+      "compound_id": "POMH",
+      "source_name": "Polyoxymethylene Homopolymer",
+      "formula": "CH4O",
+      "counts": {
+        "C": 1,
+        "O": 1,
+        "H": 4
+      },
+      "exact_mass": 32.02621474849,
+      "ion_mode": "neutral",
+      "charge": 0,
+      "generation_type": "fragment_h_shift",
+      "operation": "h_shift_+1",
+      "path": [
+        "M",
+        "fragment C,H,O from C-O bond break(s)",
+        "h_shift_+1"
+      ],
+      "source_nodes": [
+        "node_0003"
+      ],
+      "fragment_atom_indices": [
+        0,
+        1,
+        3,
+        4,
+        5
+      ],
+      "reaction_site_elements": [
+        "O"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 1,
+      "recombination_loss": "",
+      "rule_pack": "",
+      "trigger_feature": "",
+      "evidence": "",
+      "structure_score": 0.6000000000000001,
+      "ionization_score": 0.0,
+      "path_score": 0.38000000000000006,
+      "formula_score": 0.0,
+      "path_count": 1,
+      "mechanism_count": 1,
+      "source_fragment_count": 0
+    },
+    {
+      "node_id": "node_0008",
+      "compound_id": "POMH",
+      "source_name": "Polyoxymethylene Homopolymer",
+      "formula": "CH3O",
+      "counts": {
+        "C": 1,
+        "H": 3,
+        "O": 1
+      },
+      "exact_mass": 31.01838971626,
+      "ion_mode": "positive",
+      "charge": 1,
+      "generation_type": "feature_rule",
+      "operation": "oxonium_CH3O",
+      "path": [
+        "M",
+        "acetal_or_ether",
+        "acetal_oxonium_series",
+        "oxonium_CH3O"
+      ],
+      "source_nodes": [
+        "node_0001"
+      ],
+      "fragment_atom_indices": null,
+      "reaction_site_elements": [],
+      "broken_bonds": 0,
+      "h_shift": 0,
+      "recombination_loss": "",
+      "rule_pack": "acetal_oxonium_series",
+      "trigger_feature": "acetal_or_ether",
+      "evidence": "acetal/ether C-O-C motif present; heavy element counts={'C': 2, 'O': 1, 'H': 6}",
+      "structure_score": 0.7,
+      "ionization_score": 0.8,
+      "path_score": 0.79,
+      "formula_score": 1.0,
+      "path_count": 4,
+      "mechanism_count": 2,
+      "source_fragment_count": 4
+    },
+    {
+      "node_id": "node_0009",
+      "compound_id": "POMH",
+      "source_name": "Polyoxymethylene Homopolymer",
+      "formula": "C2H3O",
+      "counts": {
+        "C": 2,
+        "H": 3,
+        "O": 1
+      },
+      "exact_mass": 43.01838971626,
+      "ion_mode": "positive",
+      "charge": 1,
+      "generation_type": "feature_rule",
+      "operation": "oxonium_C2H3O",
+      "path": [
+        "M",
+        "acetal_or_ether",
+        "acetal_oxonium_series",
+        "oxonium_C2H3O"
+      ],
+      "source_nodes": [
+        "node_0001"
+      ],
+      "fragment_atom_indices": null,
+      "reaction_site_elements": [],
+      "broken_bonds": 0,
+      "h_shift": 0,
+      "recombination_loss": "",
+      "rule_pack": "acetal_oxonium_series",
+      "trigger_feature": "acetal_or_ether",
+      "evidence": "acetal/ether C-O-C motif present; heavy element counts={'C': 2, 'O': 1, 'H': 6}",
+      "structure_score": 0.7,
+      "ionization_score": 0.8,
+      "path_score": 0.79,
+      "formula_score": 0.8800000000000001,
+      "path_count": 2,
+      "mechanism_count": 1,
+      "source_fragment_count": 2
+    },
+    {
+      "node_id": "node_0010",
+      "compound_id": "POMH",
+      "source_name": "Polyoxymethylene Homopolymer",
+      "formula": "C2H4O",
+      "counts": {
+        "C": 2,
+        "H": 4,
+        "O": 1
+      },
+      "exact_mass": 44.02621474849,
+      "ion_mode": "positive",
+      "charge": 1,
+      "generation_type": "feature_rule",
+      "operation": "oxonium_C2H4O",
+      "path": [
+        "M",
+        "acetal_or_ether",
+        "acetal_oxonium_series",
+        "oxonium_C2H4O"
+      ],
+      "source_nodes": [
+        "node_0001"
+      ],
+      "fragment_atom_indices": null,
+      "reaction_site_elements": [],
+      "broken_bonds": 0,
+      "h_shift": 0,
+      "recombination_loss": "",
+      "rule_pack": "acetal_oxonium_series",
+      "trigger_feature": "acetal_or_ether",
+      "evidence": "acetal/ether C-O-C motif present; heavy element counts={'C': 2, 'O': 1, 'H': 6}",
+      "structure_score": 0.7,
+      "ionization_score": 0.8,
+      "path_score": 0.79,
+      "formula_score": 0.79,
+      "path_count": 1,
+      "mechanism_count": 1,
+      "source_fragment_count": 1
+    },
+    {
+      "node_id": "node_0011",
+      "compound_id": "POMH",
+      "source_name": "Polyoxymethylene Homopolymer",
+      "formula": "C2H5O",
+      "counts": {
+        "C": 2,
+        "H": 5,
+        "O": 1
+      },
+      "exact_mass": 45.03403978072,
+      "ion_mode": "positive",
+      "charge": 1,
+      "generation_type": "feature_rule",
+      "operation": "oxonium_C2H5O",
+      "path": [
+        "M",
+        "acetal_or_ether",
+        "acetal_oxonium_series",
+        "oxonium_C2H5O"
+      ],
+      "source_nodes": [
+        "node_0001"
+      ],
+      "fragment_atom_indices": null,
+      "reaction_site_elements": [],
+      "broken_bonds": 0,
+      "h_shift": 0,
+      "recombination_loss": "",
+      "rule_pack": "acetal_oxonium_series",
+      "trigger_feature": "acetal_or_ether",
+      "evidence": "acetal/ether C-O-C motif present; heavy element counts={'C': 2, 'O': 1, 'H': 6}",
+      "structure_score": 0.7,
+      "ionization_score": 0.8,
+      "path_score": 0.79,
+      "formula_score": 0.8800000000000001,
+      "path_count": 2,
+      "mechanism_count": 1,
+      "source_fragment_count": 2
+    },
+    {
+      "node_id": "node_0012",
+      "compound_id": "POMH",
+      "source_name": "Polyoxymethylene Homopolymer",
+      "formula": "C2H3O2",
+      "counts": {
+        "C": 2,
+        "H": 3,
+        "O": 2
+      },
+      "exact_mass": 59.01330433583,
+      "ion_mode": "positive",
+      "charge": 1,
+      "generation_type": "feature_rule",
+      "operation": "oxonium_C2H3O2",
+      "path": [
+        "M",
+        "acetal_or_ether",
+        "acetal_oxonium_series",
+        "oxonium_C2H3O2"
+      ],
+      "source_nodes": [
+        "node_0001"
+      ],
+      "fragment_atom_indices": null,
+      "reaction_site_elements": [],
+      "broken_bonds": 0,
+      "h_shift": 0,
+      "recombination_loss": "",
+      "rule_pack": "acetal_oxonium_series",
+      "trigger_feature": "acetal_or_ether",
+      "evidence": "acetal/ether C-O-C motif present; heavy element counts={'C': 2, 'O': 1, 'H': 6}",
+      "structure_score": 0.7,
+      "ionization_score": 0.8,
+      "path_score": 0.79,
+      "formula_score": 0.79,
+      "path_count": 1,
+      "mechanism_count": 1,
+      "source_fragment_count": 1
+    },
+    {
+      "node_id": "node_0013",
+      "compound_id": "POMH",
+      "source_name": "Polyoxymethylene Homopolymer",
+      "formula": "C2H5O2",
+      "counts": {
+        "C": 2,
+        "H": 5,
+        "O": 2
+      },
+      "exact_mass": 61.028954400290004,
+      "ion_mode": "positive",
+      "charge": 1,
+      "generation_type": "feature_rule",
+      "operation": "oxonium_C2H5O2",
+      "path": [
+        "M",
+        "acetal_or_ether",
+        "acetal_oxonium_series",
+        "oxonium_C2H5O2"
+      ],
+      "source_nodes": [
+        "node_0001"
+      ],
+      "fragment_atom_indices": null,
+      "reaction_site_elements": [],
+      "broken_bonds": 0,
+      "h_shift": 0,
+      "recombination_loss": "",
+      "rule_pack": "acetal_oxonium_series",
+      "trigger_feature": "acetal_or_ether",
+      "evidence": "acetal/ether C-O-C motif present; heavy element counts={'C': 2, 'O': 1, 'H': 6}",
+      "structure_score": 0.7,
+      "ionization_score": 0.8,
+      "path_score": 0.79,
+      "formula_score": 0.79,
+      "path_count": 1,
+      "mechanism_count": 1,
+      "source_fragment_count": 1
+    },
+    {
+      "node_id": "node_0014",
+      "compound_id": "POMH",
+      "source_name": "Polyoxymethylene Homopolymer",
+      "formula": "C3H3O",
+      "counts": {
+        "C": 3,
+        "H": 3,
+        "O": 1
+      },
+      "exact_mass": 55.01838971626,
+      "ion_mode": "positive",
+      "charge": 1,
+      "generation_type": "feature_rule",
+      "operation": "oxonium_C3H3O",
+      "path": [
+        "M",
+        "acetal_or_ether",
+        "acetal_oxonium_series",
+        "oxonium_C3H3O"
+      ],
+      "source_nodes": [
+        "node_0001"
+      ],
+      "fragment_atom_indices": null,
+      "reaction_site_elements": [],
+      "broken_bonds": 0,
+      "h_shift": 0,
+      "recombination_loss": "",
+      "rule_pack": "acetal_oxonium_series",
+      "trigger_feature": "acetal_or_ether",
+      "evidence": "acetal/ether C-O-C motif present; heavy element counts={'C': 2, 'O': 1, 'H': 6}",
+      "structure_score": 0.7,
+      "ionization_score": 0.8,
+      "path_score": 0.79,
+      "formula_score": 0.79,
+      "path_count": 1,
+      "mechanism_count": 1,
+      "source_fragment_count": 1
+    },
+    {
+      "node_id": "node_0015",
+      "compound_id": "POMH",
+      "source_name": "Polyoxymethylene Homopolymer",
+      "formula": "C3H5O",
+      "counts": {
+        "C": 3,
+        "H": 5,
+        "O": 1
+      },
+      "exact_mass": 57.03403978072,
+      "ion_mode": "positive",
+      "charge": 1,
+      "generation_type": "feature_rule",
+      "operation": "oxonium_C3H5O",
+      "path": [
+        "M",
+        "acetal_or_ether",
+        "acetal_oxonium_series",
+        "oxonium_C3H5O"
+      ],
+      "source_nodes": [
+        "node_0001"
+      ],
+      "fragment_atom_indices": null,
+      "reaction_site_elements": [],
+      "broken_bonds": 0,
+      "h_shift": 0,
+      "recombination_loss": "",
+      "rule_pack": "acetal_oxonium_series",
+      "trigger_feature": "acetal_or_ether",
+      "evidence": "acetal/ether C-O-C motif present; heavy element counts={'C': 2, 'O': 1, 'H': 6}",
+      "structure_score": 0.7,
+      "ionization_score": 0.8,
+      "path_score": 0.79,
+      "formula_score": 0.79,
+      "path_count": 1,
+      "mechanism_count": 1,
+      "source_fragment_count": 1
+    },
+    {
+      "node_id": "node_0016",
+      "compound_id": "POMH",
+      "source_name": "Polyoxymethylene Homopolymer",
+      "formula": "C3H5O2",
+      "counts": {
+        "C": 3,
+        "H": 5,
+        "O": 2
+      },
+      "exact_mass": 73.02895440029,
+      "ion_mode": "positive",
+      "charge": 1,
+      "generation_type": "feature_rule",
+      "operation": "oxonium_C3H5O2",
+      "path": [
+        "M",
+        "acetal_or_ether",
+        "acetal_oxonium_series",
+        "oxonium_C3H5O2"
+      ],
+      "source_nodes": [
+        "node_0001"
+      ],
+      "fragment_atom_indices": null,
+      "reaction_site_elements": [],
+      "broken_bonds": 0,
+      "h_shift": 0,
+      "recombination_loss": "",
+      "rule_pack": "acetal_oxonium_series",
+      "trigger_feature": "acetal_or_ether",
+      "evidence": "acetal/ether C-O-C motif present; heavy element counts={'C': 2, 'O': 1, 'H': 6}",
+      "structure_score": 0.7,
+      "ionization_score": 0.8,
+      "path_score": 0.79,
+      "formula_score": 0.79,
+      "path_count": 1,
+      "mechanism_count": 1,
+      "source_fragment_count": 1
+    },
+    {
+      "node_id": "node_0017",
+      "compound_id": "POMH",
+      "source_name": "Polyoxymethylene Homopolymer",
+      "formula": "C3H5O3",
+      "counts": {
+        "C": 3,
+        "H": 5,
+        "O": 3
+      },
+      "exact_mass": 89.02386901986,
+      "ion_mode": "positive",
+      "charge": 1,
+      "generation_type": "feature_rule",
+      "operation": "oxonium_C3H5O3",
+      "path": [
+        "M",
+        "acetal_or_ether",
+        "acetal_oxonium_series",
+        "oxonium_C3H5O3"
+      ],
+      "source_nodes": [
+        "node_0001"
+      ],
+      "fragment_atom_indices": null,
+      "reaction_site_elements": [],
+      "broken_bonds": 0,
+      "h_shift": 0,
+      "recombination_loss": "",
+      "rule_pack": "acetal_oxonium_series",
+      "trigger_feature": "acetal_or_ether",
+      "evidence": "acetal/ether C-O-C motif present; heavy element counts={'C': 2, 'O': 1, 'H': 6}",
+      "structure_score": 0.7,
+      "ionization_score": 0.8,
+      "path_score": 0.79,
+      "formula_score": 0.79,
+      "path_count": 1,
+      "mechanism_count": 1,
+      "source_fragment_count": 1
+    },
+    {
+      "node_id": "node_0018",
+      "compound_id": "POMH",
+      "source_name": "Polyoxymethylene Homopolymer",
+      "formula": "C3H6O",
+      "counts": {
+        "C": 3,
+        "H": 6,
+        "O": 1
+      },
+      "exact_mass": 58.04186481295,
+      "ion_mode": "positive",
+      "charge": 1,
+      "generation_type": "feature_rule",
+      "operation": "oxonium_C3H6O",
+      "path": [
+        "M",
+        "acetal_or_ether",
+        "acetal_oxonium_series",
+        "oxonium_C3H6O"
+      ],
+      "source_nodes": [
+        "node_0001"
+      ],
+      "fragment_atom_indices": null,
+      "reaction_site_elements": [],
+      "broken_bonds": 0,
+      "h_shift": 0,
+      "recombination_loss": "",
+      "rule_pack": "acetal_oxonium_series",
+      "trigger_feature": "acetal_or_ether",
+      "evidence": "acetal/ether C-O-C motif present; heavy element counts={'C': 2, 'O': 1, 'H': 6}",
+      "structure_score": 0.7,
+      "ionization_score": 0.8,
+      "path_score": 0.79,
+      "formula_score": 0.79,
+      "path_count": 1,
+      "mechanism_count": 1,
+      "source_fragment_count": 1
+    },
+    {
+      "node_id": "node_0019",
+      "compound_id": "POMH",
+      "source_name": "Polyoxymethylene Homopolymer",
+      "formula": "C3H6O2",
+      "counts": {
+        "C": 3,
+        "H": 6,
+        "O": 2
+      },
+      "exact_mass": 74.03677943252,
+      "ion_mode": "positive",
+      "charge": 1,
+      "generation_type": "feature_rule",
+      "operation": "oxonium_C3H6O2",
+      "path": [
+        "M",
+        "acetal_or_ether",
+        "acetal_oxonium_series",
+        "oxonium_C3H6O2"
+      ],
+      "source_nodes": [
+        "node_0001"
+      ],
+      "fragment_atom_indices": null,
+      "reaction_site_elements": [],
+      "broken_bonds": 0,
+      "h_shift": 0,
+      "recombination_loss": "",
+      "rule_pack": "acetal_oxonium_series",
+      "trigger_feature": "acetal_or_ether",
+      "evidence": "acetal/ether C-O-C motif present; heavy element counts={'C': 2, 'O': 1, 'H': 6}",
+      "structure_score": 0.7,
+      "ionization_score": 0.8,
+      "path_score": 0.79,
+      "formula_score": 0.79,
+      "path_count": 1,
+      "mechanism_count": 1,
+      "source_fragment_count": 1
+    },
+    {
+      "node_id": "node_0020",
+      "compound_id": "POMH",
+      "source_name": "Polyoxymethylene Homopolymer",
+      "formula": "C3H6O3",
+      "counts": {
+        "C": 3,
+        "H": 6,
+        "O": 3
+      },
+      "exact_mass": 90.03169405209,
+      "ion_mode": "positive",
+      "charge": 1,
+      "generation_type": "feature_rule",
+      "operation": "oxonium_C3H6O3",
+      "path": [
+        "M",
+        "acetal_or_ether",
+        "acetal_oxonium_series",
+        "oxonium_C3H6O3"
+      ],
+      "source_nodes": [
+        "node_0001"
+      ],
+      "fragment_atom_indices": null,
+      "reaction_site_elements": [],
+      "broken_bonds": 0,
+      "h_shift": 0,
+      "recombination_loss": "",
+      "rule_pack": "acetal_oxonium_series",
+      "trigger_feature": "acetal_or_ether",
+      "evidence": "acetal/ether C-O-C motif present; heavy element counts={'C': 2, 'O': 1, 'H': 6}",
+      "structure_score": 0.7,
+      "ionization_score": 0.8,
+      "path_score": 0.79,
+      "formula_score": 0.79,
+      "path_count": 1,
+      "mechanism_count": 1,
+      "source_fragment_count": 1
+    },
+    {
+      "node_id": "node_0021",
+      "compound_id": "POMH",
+      "source_name": "Polyoxymethylene Homopolymer",
+      "formula": "C3H7O",
+      "counts": {
+        "C": 3,
+        "H": 7,
+        "O": 1
+      },
+      "exact_mass": 59.04968984518,
+      "ion_mode": "positive",
+      "charge": 1,
+      "generation_type": "feature_rule",
+      "operation": "oxonium_C3H7O",
+      "path": [
+        "M",
+        "acetal_or_ether",
+        "acetal_oxonium_series",
+        "oxonium_C3H7O"
+      ],
+      "source_nodes": [
+        "node_0001"
+      ],
+      "fragment_atom_indices": null,
+      "reaction_site_elements": [],
+      "broken_bonds": 0,
+      "h_shift": 0,
+      "recombination_loss": "",
+      "rule_pack": "acetal_oxonium_series",
+      "trigger_feature": "acetal_or_ether",
+      "evidence": "acetal/ether C-O-C motif present; heavy element counts={'C': 2, 'O': 1, 'H': 6}",
+      "structure_score": 0.7,
+      "ionization_score": 0.8,
+      "path_score": 0.79,
+      "formula_score": 0.79,
+      "path_count": 1,
+      "mechanism_count": 1,
+      "source_fragment_count": 1
+    },
+    {
+      "node_id": "node_0022",
+      "compound_id": "POMH",
+      "source_name": "Polyoxymethylene Homopolymer",
+      "formula": "C3H7O2",
+      "counts": {
+        "C": 3,
+        "H": 7,
+        "O": 2
+      },
+      "exact_mass": 75.04460446475,
+      "ion_mode": "positive",
+      "charge": 1,
+      "generation_type": "feature_rule",
+      "operation": "oxonium_C3H7O2",
+      "path": [
+        "M",
+        "acetal_or_ether",
+        "acetal_oxonium_series",
+        "oxonium_C3H7O2"
+      ],
+      "source_nodes": [
+        "node_0001"
+      ],
+      "fragment_atom_indices": null,
+      "reaction_site_elements": [],
+      "broken_bonds": 0,
+      "h_shift": 0,
+      "recombination_loss": "",
+      "rule_pack": "acetal_oxonium_series",
+      "trigger_feature": "acetal_or_ether",
+      "evidence": "acetal/ether C-O-C motif present; heavy element counts={'C': 2, 'O': 1, 'H': 6}",
+      "structure_score": 0.7,
+      "ionization_score": 0.8,
+      "path_score": 0.79,
+      "formula_score": 0.79,
+      "path_count": 1,
+      "mechanism_count": 1,
+      "source_fragment_count": 1
+    },
+    {
+      "node_id": "node_0023",
+      "compound_id": "POMH",
+      "source_name": "Polyoxymethylene Homopolymer",
+      "formula": "C3H7O3",
+      "counts": {
+        "C": 3,
+        "H": 7,
+        "O": 3
+      },
+      "exact_mass": 91.03951908432,
+      "ion_mode": "positive",
+      "charge": 1,
+      "generation_type": "feature_rule",
+      "operation": "oxonium_C3H7O3",
+      "path": [
+        "M",
+        "acetal_or_ether",
+        "acetal_oxonium_series",
+        "oxonium_C3H7O3"
+      ],
+      "source_nodes": [
+        "node_0001"
+      ],
+      "fragment_atom_indices": null,
+      "reaction_site_elements": [],
+      "broken_bonds": 0,
+      "h_shift": 0,
+      "recombination_loss": "",
+      "rule_pack": "acetal_oxonium_series",
+      "trigger_feature": "acetal_or_ether",
+      "evidence": "acetal/ether C-O-C motif present; heavy element counts={'C': 2, 'O': 1, 'H': 6}",
+      "structure_score": 0.7,
+      "ionization_score": 0.8,
+      "path_score": 0.79,
+      "formula_score": 0.79,
+      "path_count": 1,
+      "mechanism_count": 1,
+      "source_fragment_count": 1
+    },
+    {
+      "node_id": "node_0024",
+      "compound_id": "POMH",
+      "source_name": "Polyoxymethylene Homopolymer",
+      "formula": "CHO2",
+      "counts": {
+        "C": 1,
+        "H": 1,
+        "O": 2
+      },
+      "exact_mass": 44.99765427137,
+      "ion_mode": "negative",
+      "charge": -1,
+      "generation_type": "feature_rule",
+      "operation": "oxonium_neg_CHO2",
+      "path": [
+        "M",
+        "acetal_or_ether",
+        "acetal_oxonium_series",
+        "oxonium_neg_CHO2"
+      ],
+      "source_nodes": [
+        "node_0001"
+      ],
+      "fragment_atom_indices": null,
+      "reaction_site_elements": [],
+      "broken_bonds": 0,
+      "h_shift": 0,
+      "recombination_loss": "",
+      "rule_pack": "acetal_oxonium_series",
+      "trigger_feature": "acetal_or_ether",
+      "evidence": "acetal/ether C-O-C motif present; heavy element counts={'C': 2, 'O': 1, 'H': 6}",
+      "structure_score": 0.7,
+      "ionization_score": 0.8,
+      "path_score": 0.79,
+      "formula_score": 0.79,
+      "path_count": 1,
+      "mechanism_count": 1,
+      "source_fragment_count": 1
+    },
+    {
+      "node_id": "node_0025",
+      "compound_id": "POMH",
+      "source_name": "Polyoxymethylene Homopolymer",
+      "formula": "C2H3O2",
+      "counts": {
+        "C": 2,
+        "H": 3,
+        "O": 2
+      },
+      "exact_mass": 59.01330433583,
+      "ion_mode": "negative",
+      "charge": -1,
+      "generation_type": "feature_rule",
+      "operation": "oxonium_neg_C2H3O2",
+      "path": [
+        "M",
+        "acetal_or_ether",
+        "acetal_oxonium_series",
+        "oxonium_neg_C2H3O2"
+      ],
+      "source_nodes": [
+        "node_0001"
+      ],
+      "fragment_atom_indices": null,
+      "reaction_site_elements": [],
+      "broken_bonds": 0,
+      "h_shift": 0,
+      "recombination_loss": "",
+      "rule_pack": "acetal_oxonium_series",
+      "trigger_feature": "acetal_or_ether",
+      "evidence": "acetal/ether C-O-C motif present; heavy element counts={'C': 2, 'O': 1, 'H': 6}",
+      "structure_score": 0.7,
+      "ionization_score": 0.8,
+      "path_score": 0.79,
+      "formula_score": 0.79,
+      "path_count": 1,
+      "mechanism_count": 1,
+      "source_fragment_count": 1
+    },
+    {
+      "node_id": "node_0026",
+      "compound_id": "POMH",
+      "source_name": "Polyoxymethylene Homopolymer",
+      "formula": "C2H5O2",
+      "counts": {
+        "C": 2,
+        "H": 5,
+        "O": 2
+      },
+      "exact_mass": 61.028954400290004,
+      "ion_mode": "negative",
+      "charge": -1,
+      "generation_type": "feature_rule",
+      "operation": "oxonium_neg_C2H5O2",
+      "path": [
+        "M",
+        "acetal_or_ether",
+        "acetal_oxonium_series",
+        "oxonium_neg_C2H5O2"
+      ],
+      "source_nodes": [
+        "node_0001"
+      ],
+      "fragment_atom_indices": null,
+      "reaction_site_elements": [],
+      "broken_bonds": 0,
+      "h_shift": 0,
+      "recombination_loss": "",
+      "rule_pack": "acetal_oxonium_series",
+      "trigger_feature": "acetal_or_ether",
+      "evidence": "acetal/ether C-O-C motif present; heavy element counts={'C': 2, 'O': 1, 'H': 6}",
+      "structure_score": 0.7,
+      "ionization_score": 0.8,
+      "path_score": 0.79,
+      "formula_score": 0.79,
+      "path_count": 1,
+      "mechanism_count": 1,
+      "source_fragment_count": 1
+    },
+    {
+      "node_id": "node_0027",
+      "compound_id": "POMH",
+      "source_name": "Polyoxymethylene Homopolymer",
+      "formula": "C3H5O2",
+      "counts": {
+        "C": 3,
+        "H": 5,
+        "O": 2
+      },
+      "exact_mass": 73.02895440029,
+      "ion_mode": "negative",
+      "charge": -1,
+      "generation_type": "feature_rule",
+      "operation": "oxonium_neg_C3H5O2",
+      "path": [
+        "M",
+        "acetal_or_ether",
+        "acetal_oxonium_series",
+        "oxonium_neg_C3H5O2"
+      ],
+      "source_nodes": [
+        "node_0001"
+      ],
+      "fragment_atom_indices": null,
+      "reaction_site_elements": [],
+      "broken_bonds": 0,
+      "h_shift": 0,
+      "recombination_loss": "",
+      "rule_pack": "acetal_oxonium_series",
+      "trigger_feature": "acetal_or_ether",
+      "evidence": "acetal/ether C-O-C motif present; heavy element counts={'C': 2, 'O': 1, 'H': 6}",
+      "structure_score": 0.7,
+      "ionization_score": 0.8,
+      "path_score": 0.79,
+      "formula_score": 0.79,
+      "path_count": 1,
+      "mechanism_count": 1,
+      "source_fragment_count": 1
+    },
+    {
+      "node_id": "node_0028",
+      "compound_id": "POMH",
+      "source_name": "Polyoxymethylene Homopolymer",
+      "formula": "C3H5O3",
+      "counts": {
+        "C": 3,
+        "H": 5,
+        "O": 3
+      },
+      "exact_mass": 89.02386901986,
+      "ion_mode": "negative",
+      "charge": -1,
+      "generation_type": "feature_rule",
+      "operation": "oxonium_neg_C3H5O3",
+      "path": [
+        "M",
+        "acetal_or_ether",
+        "acetal_oxonium_series",
+        "oxonium_neg_C3H5O3"
+      ],
+      "source_nodes": [
+        "node_0001"
+      ],
+      "fragment_atom_indices": null,
+      "reaction_site_elements": [],
+      "broken_bonds": 0,
+      "h_shift": 0,
+      "recombination_loss": "",
+      "rule_pack": "acetal_oxonium_series",
+      "trigger_feature": "acetal_or_ether",
+      "evidence": "acetal/ether C-O-C motif present; heavy element counts={'C': 2, 'O': 1, 'H': 6}",
+      "structure_score": 0.7,
+      "ionization_score": 0.8,
+      "path_score": 0.79,
+      "formula_score": 0.79,
+      "path_count": 1,
+      "mechanism_count": 1,
+      "source_fragment_count": 1
+    },
+    {
+      "node_id": "node_0029",
+      "compound_id": "POMH",
+      "source_name": "Polyoxymethylene Homopolymer",
+      "formula": "C2H3",
+      "counts": {
+        "C": 2,
+        "H": 3
+      },
+      "exact_mass": 27.02347509669,
+      "ion_mode": "positive",
+      "charge": 1,
+      "generation_type": "feature_rule",
+      "operation": "small_hc_C2H3",
+      "path": [
+        "M",
+        "universal_hydrocarbon",
+        "hydrocarbon_small_fragments",
+        "small_hc_C2H3"
+      ],
+      "source_nodes": [
+        "node_0001"
+      ],
+      "fragment_atom_indices": null,
+      "reaction_site_elements": [],
+      "broken_bonds": 0,
+      "h_shift": 0,
+      "recombination_loss": "",
+      "rule_pack": "hydrocarbon_small_fragments",
+      "trigger_feature": "universal_hydrocarbon",
+      "evidence": "universal TOF-SIMS small HC fragments; parent C=2",
+      "structure_score": 0.48,
+      "ionization_score": 0.8,
+      "path_score": 0.6580000000000001,
+      "formula_score": 0.6580000000000001,
+      "path_count": 1,
+      "mechanism_count": 1,
+      "source_fragment_count": 1
+    },
+    {
+      "node_id": "node_0030",
+      "compound_id": "POMH",
+      "source_name": "Polyoxymethylene Homopolymer",
+      "formula": "C2H5",
+      "counts": {
+        "C": 2,
+        "H": 5
+      },
+      "exact_mass": 29.03912516115,
+      "ion_mode": "positive",
+      "charge": 1,
+      "generation_type": "feature_rule",
+      "operation": "small_hc_C2H5",
+      "path": [
+        "M",
+        "universal_hydrocarbon",
+        "hydrocarbon_small_fragments",
+        "small_hc_C2H5"
+      ],
+      "source_nodes": [
+        "node_0001"
+      ],
+      "fragment_atom_indices": null,
+      "reaction_site_elements": [],
+      "broken_bonds": 0,
+      "h_shift": 0,
+      "recombination_loss": "",
+      "rule_pack": "hydrocarbon_small_fragments",
+      "trigger_feature": "universal_hydrocarbon",
+      "evidence": "universal TOF-SIMS small HC fragments; parent C=2",
+      "structure_score": 0.48,
+      "ionization_score": 0.8,
+      "path_score": 0.6580000000000001,
+      "formula_score": 0.6580000000000001,
+      "path_count": 1,
+      "mechanism_count": 1,
+      "source_fragment_count": 1
+    },
+    {
+      "node_id": "node_0031",
+      "compound_id": "POMH",
+      "source_name": "Polyoxymethylene Homopolymer",
+      "formula": "C2",
+      "counts": {
+        "C": 2
+      },
+      "exact_mass": 24.0,
+      "ion_mode": "negative",
+      "charge": -1,
+      "generation_type": "feature_rule",
+      "operation": "small_hc_C2",
+      "path": [
+        "M",
+        "universal_hydrocarbon",
+        "hydrocarbon_small_fragments",
+        "small_hc_C2"
+      ],
+      "source_nodes": [
+        "node_0001"
+      ],
+      "fragment_atom_indices": null,
+      "reaction_site_elements": [],
+      "broken_bonds": 0,
+      "h_shift": 0,
+      "recombination_loss": "",
+      "rule_pack": "hydrocarbon_small_fragments",
+      "trigger_feature": "universal_hydrocarbon",
+      "evidence": "universal TOF-SIMS small HC fragments; parent C=2",
+      "structure_score": 0.48,
+      "ionization_score": 0.8,
+      "path_score": 0.6080000000000001,
+      "formula_score": 0.6080000000000001,
+      "path_count": 1,
+      "mechanism_count": 1,
+      "source_fragment_count": 1
+    },
+    {
+      "node_id": "node_0032",
+      "compound_id": "POMH",
+      "source_name": "Polyoxymethylene Homopolymer",
+      "formula": "C2H",
+      "counts": {
+        "C": 2,
+        "H": 1
+      },
+      "exact_mass": 25.00782503223,
+      "ion_mode": "negative",
+      "charge": -1,
+      "generation_type": "feature_rule",
+      "operation": "small_hc_C2H",
+      "path": [
+        "M",
+        "universal_hydrocarbon",
+        "hydrocarbon_small_fragments",
+        "small_hc_C2H"
+      ],
+      "source_nodes": [
+        "node_0001"
+      ],
+      "fragment_atom_indices": null,
+      "reaction_site_elements": [],
+      "broken_bonds": 0,
+      "h_shift": 0,
+      "recombination_loss": "",
+      "rule_pack": "hydrocarbon_small_fragments",
+      "trigger_feature": "universal_hydrocarbon",
+      "evidence": "universal TOF-SIMS small HC fragments; parent C=2",
+      "structure_score": 0.48,
+      "ionization_score": 0.8,
+      "path_score": 0.6580000000000001,
+      "formula_score": 0.6580000000000001,
+      "path_count": 1,
+      "mechanism_count": 1,
+      "source_fragment_count": 1
+    },
+    {
+      "node_id": "node_0033",
+      "compound_id": "POMH",
+      "source_name": "Polyoxymethylene Homopolymer",
+      "formula": "CHO",
+      "counts": {
+        "C": 1,
+        "H": 1,
+        "O": 1
+      },
+      "exact_mass": 29.0027396518,
+      "ion_mode": "positive",
+      "charge": 1,
+      "generation_type": "feature_rule",
+      "operation": "o_small_CHO",
+      "path": [
+        "M",
+        "oxygenated",
+        "oxygenated_small_fragments",
+        "o_small_CHO"
+      ],
+      "source_nodes": [
+        "node_0001"
+      ],
+      "fragment_atom_indices": null,
+      "reaction_site_elements": [],
+      "broken_bonds": 0,
+      "h_shift": 0,
+      "recombination_loss": "",
+      "rule_pack": "oxygenated_small_fragments",
+      "trigger_feature": "oxygenated",
+      "evidence": "O-gated small fragments; parent O=1",
+      "structure_score": 0.42,
+      "ionization_score": 0.8,
+      "path_score": 0.6220000000000001,
+      "formula_score": 0.6220000000000001,
+      "path_count": 1,
+      "mechanism_count": 1,
+      "source_fragment_count": 1
+    },
+    {
+      "node_id": "node_0034",
+      "compound_id": "POMH",
+      "source_name": "Polyoxymethylene Homopolymer",
+      "formula": "CH3O",
+      "counts": {
+        "C": 1,
+        "H": 3,
+        "O": 1
+      },
+      "exact_mass": 31.01838971626,
+      "ion_mode": "positive",
+      "charge": 1,
+      "generation_type": "feature_rule",
+      "operation": "o_small_CH3O",
+      "path": [
+        "M",
+        "oxygenated",
+        "oxygenated_small_fragments",
+        "o_small_CH3O"
+      ],
+      "source_nodes": [
+        "node_0001"
+      ],
+      "fragment_atom_indices": null,
+      "reaction_site_elements": [],
+      "broken_bonds": 0,
+      "h_shift": 0,
+      "recombination_loss": "",
+      "rule_pack": "oxygenated_small_fragments",
+      "trigger_feature": "oxygenated",
+      "evidence": "O-gated small fragments; parent O=1",
+      "structure_score": 0.42,
+      "ionization_score": 0.8,
+      "path_score": 0.6220000000000001,
+      "formula_score": 1.0,
+      "path_count": 4,
+      "mechanism_count": 2,
+      "source_fragment_count": 4
+    },
+    {
+      "node_id": "node_0035",
+      "compound_id": "POMH",
+      "source_name": "Polyoxymethylene Homopolymer",
+      "formula": "C2H3O",
+      "counts": {
+        "C": 2,
+        "H": 3,
+        "O": 1
+      },
+      "exact_mass": 43.01838971626,
+      "ion_mode": "positive",
+      "charge": 1,
+      "generation_type": "feature_rule",
+      "operation": "o_small_C2H3O",
+      "path": [
+        "M",
+        "oxygenated",
+        "oxygenated_small_fragments",
+        "o_small_C2H3O"
+      ],
+      "source_nodes": [
+        "node_0001"
+      ],
+      "fragment_atom_indices": null,
+      "reaction_site_elements": [],
+      "broken_bonds": 0,
+      "h_shift": 0,
+      "recombination_loss": "",
+      "rule_pack": "oxygenated_small_fragments",
+      "trigger_feature": "oxygenated",
+      "evidence": "O-gated small fragments; parent O=1",
+      "structure_score": 0.42,
+      "ionization_score": 0.8,
+      "path_score": 0.6220000000000001,
+      "formula_score": 0.8800000000000001,
+      "path_count": 2,
+      "mechanism_count": 1,
+      "source_fragment_count": 2
+    },
+    {
+      "node_id": "node_0036",
+      "compound_id": "POMH",
+      "source_name": "Polyoxymethylene Homopolymer",
+      "formula": "C2H5O",
+      "counts": {
+        "C": 2,
+        "H": 5,
+        "O": 1
+      },
+      "exact_mass": 45.03403978072,
+      "ion_mode": "positive",
+      "charge": 1,
+      "generation_type": "feature_rule",
+      "operation": "o_small_C2H5O",
+      "path": [
+        "M",
+        "oxygenated",
+        "oxygenated_small_fragments",
+        "o_small_C2H5O"
+      ],
+      "source_nodes": [
+        "node_0001"
+      ],
+      "fragment_atom_indices": null,
+      "reaction_site_elements": [],
+      "broken_bonds": 0,
+      "h_shift": 0,
+      "recombination_loss": "",
+      "rule_pack": "oxygenated_small_fragments",
+      "trigger_feature": "oxygenated",
+      "evidence": "O-gated small fragments; parent O=1",
+      "structure_score": 0.42,
+      "ionization_score": 0.8,
+      "path_score": 0.6220000000000001,
+      "formula_score": 0.8800000000000001,
+      "path_count": 2,
+      "mechanism_count": 1,
+      "source_fragment_count": 2
+    },
+    {
+      "node_id": "node_0037",
+      "compound_id": "POMH",
+      "source_name": "Polyoxymethylene Homopolymer",
+      "formula": "CHO",
+      "counts": {
+        "C": 1,
+        "H": 1,
+        "O": 1
+      },
+      "exact_mass": 29.0027396518,
+      "ion_mode": "negative",
+      "charge": -1,
+      "generation_type": "feature_rule",
+      "operation": "o_small_CHO",
+      "path": [
+        "M",
+        "oxygenated",
+        "oxygenated_small_fragments",
+        "o_small_CHO"
+      ],
+      "source_nodes": [
+        "node_0001"
+      ],
+      "fragment_atom_indices": null,
+      "reaction_site_elements": [],
+      "broken_bonds": 0,
+      "h_shift": 0,
+      "recombination_loss": "",
+      "rule_pack": "oxygenated_small_fragments",
+      "trigger_feature": "oxygenated",
+      "evidence": "O-gated small fragments; parent O=1",
+      "structure_score": 0.42,
+      "ionization_score": 0.8,
+      "path_score": 0.6220000000000001,
+      "formula_score": 0.6220000000000001,
+      "path_count": 1,
+      "mechanism_count": 1,
+      "source_fragment_count": 1
+    },
+    {
+      "node_id": "node_0038",
+      "compound_id": "POMH",
+      "source_name": "Polyoxymethylene Homopolymer",
+      "formula": "C2HO",
+      "counts": {
+        "C": 2,
+        "H": 1,
+        "O": 1
+      },
+      "exact_mass": 41.0027396518,
+      "ion_mode": "negative",
+      "charge": -1,
+      "generation_type": "feature_rule",
+      "operation": "o_small_C2HO",
+      "path": [
+        "M",
+        "oxygenated",
+        "oxygenated_small_fragments",
+        "o_small_C2HO"
+      ],
+      "source_nodes": [
+        "node_0001"
+      ],
+      "fragment_atom_indices": null,
+      "reaction_site_elements": [],
+      "broken_bonds": 0,
+      "h_shift": 0,
+      "recombination_loss": "",
+      "rule_pack": "oxygenated_small_fragments",
+      "trigger_feature": "oxygenated",
+      "evidence": "O-gated small fragments; parent O=1",
+      "structure_score": 0.42,
+      "ionization_score": 0.8,
+      "path_score": 0.6220000000000001,
+      "formula_score": 0.6220000000000001,
+      "path_count": 1,
+      "mechanism_count": 1,
+      "source_fragment_count": 1
+    },
+    {
+      "node_id": "node_0039",
+      "compound_id": "POMH",
+      "source_name": "Polyoxymethylene Homopolymer",
+      "formula": "C2H3O",
+      "counts": {
+        "C": 2,
+        "H": 3,
+        "O": 1
+      },
+      "exact_mass": 43.01838971626,
+      "ion_mode": "negative",
+      "charge": -1,
+      "generation_type": "feature_rule",
+      "operation": "o_small_C2H3O",
+      "path": [
+        "M",
+        "oxygenated",
+        "oxygenated_small_fragments",
+        "o_small_C2H3O"
+      ],
+      "source_nodes": [
+        "node_0001"
+      ],
+      "fragment_atom_indices": null,
+      "reaction_site_elements": [],
+      "broken_bonds": 0,
+      "h_shift": 0,
+      "recombination_loss": "",
+      "rule_pack": "oxygenated_small_fragments",
+      "trigger_feature": "oxygenated",
+      "evidence": "O-gated small fragments; parent O=1",
+      "structure_score": 0.42,
+      "ionization_score": 0.8,
+      "path_score": 0.6220000000000001,
+      "formula_score": 0.6220000000000001,
+      "path_count": 1,
+      "mechanism_count": 1,
+      "source_fragment_count": 1
+    },
+    {
+      "node_id": "node_0040",
+      "compound_id": "POMH",
+      "source_name": "Polyoxymethylene Homopolymer",
+      "formula": "C2H6O",
+      "counts": {
+        "C": 2,
+        "H": 6,
+        "O": 1
+      },
+      "exact_mass": 46.04186481295,
+      "ion_mode": "positive",
+      "charge": 1,
+      "generation_type": "parent",
+      "operation": "electron_loss",
+      "path": [
+        "M",
+        "electron_loss"
+      ],
+      "source_nodes": [
+        "node_0001"
+      ],
+      "fragment_atom_indices": null,
+      "reaction_site_elements": [],
+      "broken_bonds": 0,
+      "h_shift": 0,
+      "recombination_loss": "",
+      "rule_pack": "",
+      "trigger_feature": "",
+      "evidence": "",
+      "structure_score": 0.45,
+      "ionization_score": 0.37000000000000005,
+      "path_score": 0.468,
+      "formula_score": 0.468,
+      "path_count": 1,
+      "mechanism_count": 1,
+      "source_fragment_count": 1
+    },
+    {
+      "node_id": "node_0041",
+      "compound_id": "POMH",
+      "source_name": "Polyoxymethylene Homopolymer",
+      "formula": "C2H6O",
+      "counts": {
+        "C": 2,
+        "H": 6,
+        "O": 1
+      },
+      "exact_mass": 46.04186481295,
+      "ion_mode": "negative",
+      "charge": -1,
+      "generation_type": "parent",
+      "operation": "electron_gain",
+      "path": [
+        "M",
+        "electron_gain"
+      ],
+      "source_nodes": [
+        "node_0001"
+      ],
+      "fragment_atom_indices": null,
+      "reaction_site_elements": [],
+      "broken_bonds": 0,
+      "h_shift": 0,
+      "recombination_loss": "",
+      "rule_pack": "",
+      "trigger_feature": "",
+      "evidence": "",
+      "structure_score": 0.45,
+      "ionization_score": 0.37000000000000005,
+      "path_score": 0.468,
+      "formula_score": 0.468,
+      "path_count": 1,
+      "mechanism_count": 1,
+      "source_fragment_count": 1
+    },
+    {
+      "node_id": "node_0042",
+      "compound_id": "POMH",
+      "source_name": "Polyoxymethylene Homopolymer",
+      "formula": "C2H7O",
+      "counts": {
+        "C": 2,
+        "H": 7,
+        "O": 1
+      },
+      "exact_mass": 47.04968984518,
+      "ion_mode": "positive",
+      "charge": 1,
+      "generation_type": "parent",
+      "operation": "protonation",
+      "path": [
+        "M",
+        "protonation"
+      ],
+      "source_nodes": [
+        "node_0001"
+      ],
+      "fragment_atom_indices": null,
+      "reaction_site_elements": [],
+      "broken_bonds": 0,
+      "h_shift": 1,
+      "recombination_loss": "",
+      "rule_pack": "",
+      "trigger_feature": "",
+      "evidence": "",
+      "structure_score": 0.45,
+      "ionization_score": 0.54,
+      "path_score": 0.5060000000000001,
+      "formula_score": 0.5060000000000001,
+      "path_count": 1,
+      "mechanism_count": 1,
+      "source_fragment_count": 1
+    },
+    {
+      "node_id": "node_0043",
+      "compound_id": "POMH",
+      "source_name": "Polyoxymethylene Homopolymer",
+      "formula": "C2H5O",
+      "counts": {
+        "C": 2,
+        "H": 5,
+        "O": 1
+      },
+      "exact_mass": 45.03403978072,
+      "ion_mode": "negative",
+      "charge": -1,
+      "generation_type": "parent",
+      "operation": "deprotonation",
+      "path": [
+        "M",
+        "deprotonation"
+      ],
+      "source_nodes": [
+        "node_0001"
+      ],
+      "fragment_atom_indices": null,
+      "reaction_site_elements": [],
+      "broken_bonds": 0,
+      "h_shift": -1,
+      "recombination_loss": "",
+      "rule_pack": "",
+      "trigger_feature": "",
+      "evidence": "",
+      "structure_score": 0.45,
+      "ionization_score": 0.54,
+      "path_score": 0.5060000000000001,
+      "formula_score": 0.5060000000000001,
+      "path_count": 1,
+      "mechanism_count": 1,
+      "source_fragment_count": 1
+    },
+    {
+      "node_id": "node_0044",
+      "compound_id": "POMH",
+      "source_name": "Polyoxymethylene Homopolymer",
+      "formula": "CH3O",
+      "counts": {
+        "O": 1,
+        "C": 1,
+        "H": 3
+      },
+      "exact_mass": 31.01838971626,
+      "ion_mode": "positive",
+      "charge": 1,
+      "generation_type": "fragment",
+      "operation": "electron_loss",
+      "path": [
+        "M",
+        "fragment C,H,O from C-O bond break(s)",
+        "electron_loss"
+      ],
+      "source_nodes": [
+        "node_0002"
+      ],
+      "fragment_atom_indices": [
+        1,
+        2,
+        6,
+        7,
+        8
+      ],
+      "reaction_site_elements": [
+        "O"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 0,
+      "recombination_loss": "",
+      "rule_pack": "",
+      "trigger_feature": "",
+      "evidence": "",
+      "structure_score": 0.64,
+      "ionization_score": 0.55,
+      "path_score": 0.6540000000000001,
+      "formula_score": 1.0,
+      "path_count": 4,
+      "mechanism_count": 2,
+      "source_fragment_count": 4
+    },
+    {
+      "node_id": "node_0045",
+      "compound_id": "POMH",
+      "source_name": "Polyoxymethylene Homopolymer",
+      "formula": "CH3O",
+      "counts": {
+        "O": 1,
+        "C": 1,
+        "H": 3
+      },
+      "exact_mass": 31.01838971626,
+      "ion_mode": "negative",
+      "charge": -1,
+      "generation_type": "fragment",
+      "operation": "electron_gain",
+      "path": [
+        "M",
+        "fragment C,H,O from C-O bond break(s)",
+        "electron_gain"
+      ],
+      "source_nodes": [
+        "node_0002"
+      ],
+      "fragment_atom_indices": [
+        1,
+        2,
+        6,
+        7,
+        8
+      ],
+      "reaction_site_elements": [
+        "O"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 0,
+      "recombination_loss": "",
+      "rule_pack": "",
+      "trigger_feature": "",
+      "evidence": "",
+      "structure_score": 0.64,
+      "ionization_score": 0.55,
+      "path_score": 0.6540000000000001,
+      "formula_score": 0.7440000000000002,
+      "path_count": 2,
+      "mechanism_count": 1,
+      "source_fragment_count": 2
+    },
+    {
+      "node_id": "node_0046",
+      "compound_id": "POMH",
+      "source_name": "Polyoxymethylene Homopolymer",
+      "formula": "CH4O",
+      "counts": {
+        "O": 1,
+        "C": 1,
+        "H": 4
+      },
+      "exact_mass": 32.02621474849,
+      "ion_mode": "positive",
+      "charge": 1,
+      "generation_type": "fragment",
+      "operation": "protonation",
+      "path": [
+        "M",
+        "fragment C,H,O from C-O bond break(s)",
+        "protonation"
+      ],
+      "source_nodes": [
+        "node_0002"
+      ],
+      "fragment_atom_indices": [
+        1,
+        2,
+        6,
+        7,
+        8
+      ],
+      "reaction_site_elements": [
+        "O"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 1,
+      "recombination_loss": "",
+      "rule_pack": "",
+      "trigger_feature": "",
+      "evidence": "",
+      "structure_score": 0.64,
+      "ionization_score": 0.72,
+      "path_score": 0.692,
+      "formula_score": 0.882,
+      "path_count": 4,
+      "mechanism_count": 2,
+      "source_fragment_count": 2
+    },
+    {
+      "node_id": "node_0047",
+      "compound_id": "POMH",
+      "source_name": "Polyoxymethylene Homopolymer",
+      "formula": "CH2O",
+      "counts": {
+        "O": 1,
+        "C": 1,
+        "H": 2
+      },
+      "exact_mass": 30.01056468403,
+      "ion_mode": "negative",
+      "charge": -1,
+      "generation_type": "fragment",
+      "operation": "deprotonation",
+      "path": [
+        "M",
+        "fragment C,H,O from C-O bond break(s)",
+        "deprotonation"
+      ],
+      "source_nodes": [
+        "node_0002"
+      ],
+      "fragment_atom_indices": [
+        1,
+        2,
+        6,
+        7,
+        8
+      ],
+      "reaction_site_elements": [
+        "O"
+      ],
+      "broken_bonds": 1,
+      "h_shift": -1,
+      "recombination_loss": "",
+      "rule_pack": "",
+      "trigger_feature": "",
+      "evidence": "",
+      "structure_score": 0.64,
+      "ionization_score": 0.72,
+      "path_score": 0.692,
+      "formula_score": 0.882,
+      "path_count": 4,
+      "mechanism_count": 2,
+      "source_fragment_count": 2
+    },
+    {
+      "node_id": "node_0048",
+      "compound_id": "POMH",
+      "source_name": "Polyoxymethylene Homopolymer",
+      "formula": "CH3O",
+      "counts": {
+        "C": 1,
+        "O": 1,
+        "H": 3
+      },
+      "exact_mass": 31.01838971626,
+      "ion_mode": "positive",
+      "charge": 1,
+      "generation_type": "fragment",
+      "operation": "electron_loss",
+      "path": [
+        "M",
+        "fragment C,H,O from C-O bond break(s)",
+        "electron_loss"
+      ],
+      "source_nodes": [
+        "node_0003"
+      ],
+      "fragment_atom_indices": [
+        0,
+        1,
+        3,
+        4,
+        5
+      ],
+      "reaction_site_elements": [
+        "O"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 0,
+      "recombination_loss": "",
+      "rule_pack": "",
+      "trigger_feature": "",
+      "evidence": "",
+      "structure_score": 0.64,
+      "ionization_score": 0.55,
+      "path_score": 0.6540000000000001,
+      "formula_score": 1.0,
+      "path_count": 4,
+      "mechanism_count": 2,
+      "source_fragment_count": 4
+    },
+    {
+      "node_id": "node_0049",
+      "compound_id": "POMH",
+      "source_name": "Polyoxymethylene Homopolymer",
+      "formula": "CH3O",
+      "counts": {
+        "C": 1,
+        "O": 1,
+        "H": 3
+      },
+      "exact_mass": 31.01838971626,
+      "ion_mode": "negative",
+      "charge": -1,
+      "generation_type": "fragment",
+      "operation": "electron_gain",
+      "path": [
+        "M",
+        "fragment C,H,O from C-O bond break(s)",
+        "electron_gain"
+      ],
+      "source_nodes": [
+        "node_0003"
+      ],
+      "fragment_atom_indices": [
+        0,
+        1,
+        3,
+        4,
+        5
+      ],
+      "reaction_site_elements": [
+        "O"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 0,
+      "recombination_loss": "",
+      "rule_pack": "",
+      "trigger_feature": "",
+      "evidence": "",
+      "structure_score": 0.64,
+      "ionization_score": 0.55,
+      "path_score": 0.6540000000000001,
+      "formula_score": 0.7440000000000002,
+      "path_count": 2,
+      "mechanism_count": 1,
+      "source_fragment_count": 2
+    },
+    {
+      "node_id": "node_0050",
+      "compound_id": "POMH",
+      "source_name": "Polyoxymethylene Homopolymer",
+      "formula": "CH4O",
+      "counts": {
+        "C": 1,
+        "O": 1,
+        "H": 4
+      },
+      "exact_mass": 32.02621474849,
+      "ion_mode": "positive",
+      "charge": 1,
+      "generation_type": "fragment",
+      "operation": "protonation",
+      "path": [
+        "M",
+        "fragment C,H,O from C-O bond break(s)",
+        "protonation"
+      ],
+      "source_nodes": [
+        "node_0003"
+      ],
+      "fragment_atom_indices": [
+        0,
+        1,
+        3,
+        4,
+        5
+      ],
+      "reaction_site_elements": [
+        "O"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 1,
+      "recombination_loss": "",
+      "rule_pack": "",
+      "trigger_feature": "",
+      "evidence": "",
+      "structure_score": 0.64,
+      "ionization_score": 0.72,
+      "path_score": 0.692,
+      "formula_score": 0.882,
+      "path_count": 4,
+      "mechanism_count": 2,
+      "source_fragment_count": 2
+    },
+    {
+      "node_id": "node_0051",
+      "compound_id": "POMH",
+      "source_name": "Polyoxymethylene Homopolymer",
+      "formula": "CH2O",
+      "counts": {
+        "C": 1,
+        "O": 1,
+        "H": 2
+      },
+      "exact_mass": 30.01056468403,
+      "ion_mode": "negative",
+      "charge": -1,
+      "generation_type": "fragment",
+      "operation": "deprotonation",
+      "path": [
+        "M",
+        "fragment C,H,O from C-O bond break(s)",
+        "deprotonation"
+      ],
+      "source_nodes": [
+        "node_0003"
+      ],
+      "fragment_atom_indices": [
+        0,
+        1,
+        3,
+        4,
+        5
+      ],
+      "reaction_site_elements": [
+        "O"
+      ],
+      "broken_bonds": 1,
+      "h_shift": -1,
+      "recombination_loss": "",
+      "rule_pack": "",
+      "trigger_feature": "",
+      "evidence": "",
+      "structure_score": 0.64,
+      "ionization_score": 0.72,
+      "path_score": 0.692,
+      "formula_score": 0.882,
+      "path_count": 4,
+      "mechanism_count": 2,
+      "source_fragment_count": 2
+    },
+    {
+      "node_id": "node_0052",
+      "compound_id": "POMH",
+      "source_name": "Polyoxymethylene Homopolymer",
+      "formula": "CH2O",
+      "counts": {
+        "O": 1,
+        "C": 1,
+        "H": 2
+      },
+      "exact_mass": 30.01056468403,
+      "ion_mode": "positive",
+      "charge": 1,
+      "generation_type": "fragment_h_shift",
+      "operation": "electron_loss",
+      "path": [
+        "M",
+        "fragment C,H,O from C-O bond break(s)",
+        "h_shift_-1",
+        "electron_loss"
+      ],
+      "source_nodes": [
+        "node_0004"
+      ],
+      "fragment_atom_indices": [
+        1,
+        2,
+        6,
+        7,
+        8
+      ],
+      "reaction_site_elements": [
+        "O"
+      ],
+      "broken_bonds": 1,
+      "h_shift": -1,
+      "recombination_loss": "",
+      "rule_pack": "",
+      "trigger_feature": "",
+      "evidence": "",
+      "structure_score": 0.6000000000000001,
+      "ionization_score": 0.55,
+      "path_score": 0.6000000000000001,
+      "formula_score": 0.6900000000000002,
+      "path_count": 2,
+      "mechanism_count": 1,
+      "source_fragment_count": 2
+    },
+    {
+      "node_id": "node_0053",
+      "compound_id": "POMH",
+      "source_name": "Polyoxymethylene Homopolymer",
+      "formula": "CH2O",
+      "counts": {
+        "O": 1,
+        "C": 1,
+        "H": 2
+      },
+      "exact_mass": 30.01056468403,
+      "ion_mode": "negative",
+      "charge": -1,
+      "generation_type": "fragment_h_shift",
+      "operation": "electron_gain",
+      "path": [
+        "M",
+        "fragment C,H,O from C-O bond break(s)",
+        "h_shift_-1",
+        "electron_gain"
+      ],
+      "source_nodes": [
+        "node_0004"
+      ],
+      "fragment_atom_indices": [
+        1,
+        2,
+        6,
+        7,
+        8
+      ],
+      "reaction_site_elements": [
+        "O"
+      ],
+      "broken_bonds": 1,
+      "h_shift": -1,
+      "recombination_loss": "",
+      "rule_pack": "",
+      "trigger_feature": "",
+      "evidence": "",
+      "structure_score": 0.6000000000000001,
+      "ionization_score": 0.55,
+      "path_score": 0.6000000000000001,
+      "formula_score": 0.882,
+      "path_count": 4,
+      "mechanism_count": 2,
+      "source_fragment_count": 2
+    },
+    {
+      "node_id": "node_0054",
+      "compound_id": "POMH",
+      "source_name": "Polyoxymethylene Homopolymer",
+      "formula": "CH4O",
+      "counts": {
+        "O": 1,
+        "C": 1,
+        "H": 4
+      },
+      "exact_mass": 32.02621474849,
+      "ion_mode": "positive",
+      "charge": 1,
+      "generation_type": "fragment_h_shift",
+      "operation": "electron_loss",
+      "path": [
+        "M",
+        "fragment C,H,O from C-O bond break(s)",
+        "h_shift_+1",
+        "electron_loss"
+      ],
+      "source_nodes": [
+        "node_0005"
+      ],
+      "fragment_atom_indices": [
+        1,
+        2,
+        6,
+        7,
+        8
+      ],
+      "reaction_site_elements": [
+        "O"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 1,
+      "recombination_loss": "",
+      "rule_pack": "",
+      "trigger_feature": "",
+      "evidence": "",
+      "structure_score": 0.6000000000000001,
+      "ionization_score": 0.55,
+      "path_score": 0.6000000000000001,
+      "formula_score": 0.882,
+      "path_count": 4,
+      "mechanism_count": 2,
+      "source_fragment_count": 2
+    },
+    {
+      "node_id": "node_0055",
+      "compound_id": "POMH",
+      "source_name": "Polyoxymethylene Homopolymer",
+      "formula": "CH4O",
+      "counts": {
+        "O": 1,
+        "C": 1,
+        "H": 4
+      },
+      "exact_mass": 32.02621474849,
+      "ion_mode": "negative",
+      "charge": -1,
+      "generation_type": "fragment_h_shift",
+      "operation": "electron_gain",
+      "path": [
+        "M",
+        "fragment C,H,O from C-O bond break(s)",
+        "h_shift_+1",
+        "electron_gain"
+      ],
+      "source_nodes": [
+        "node_0005"
+      ],
+      "fragment_atom_indices": [
+        1,
+        2,
+        6,
+        7,
+        8
+      ],
+      "reaction_site_elements": [
+        "O"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 1,
+      "recombination_loss": "",
+      "rule_pack": "",
+      "trigger_feature": "",
+      "evidence": "",
+      "structure_score": 0.6000000000000001,
+      "ionization_score": 0.55,
+      "path_score": 0.6000000000000001,
+      "formula_score": 0.6900000000000002,
+      "path_count": 2,
+      "mechanism_count": 1,
+      "source_fragment_count": 2
+    },
+    {
+      "node_id": "node_0056",
+      "compound_id": "POMH",
+      "source_name": "Polyoxymethylene Homopolymer",
+      "formula": "CH2O",
+      "counts": {
+        "C": 1,
+        "O": 1,
+        "H": 2
+      },
+      "exact_mass": 30.01056468403,
+      "ion_mode": "positive",
+      "charge": 1,
+      "generation_type": "fragment_h_shift",
+      "operation": "electron_loss",
+      "path": [
+        "M",
+        "fragment C,H,O from C-O bond break(s)",
+        "h_shift_-1",
+        "electron_loss"
+      ],
+      "source_nodes": [
+        "node_0006"
+      ],
+      "fragment_atom_indices": [
+        0,
+        1,
+        3,
+        4,
+        5
+      ],
+      "reaction_site_elements": [
+        "O"
+      ],
+      "broken_bonds": 1,
+      "h_shift": -1,
+      "recombination_loss": "",
+      "rule_pack": "",
+      "trigger_feature": "",
+      "evidence": "",
+      "structure_score": 0.6000000000000001,
+      "ionization_score": 0.55,
+      "path_score": 0.6000000000000001,
+      "formula_score": 0.6900000000000002,
+      "path_count": 2,
+      "mechanism_count": 1,
+      "source_fragment_count": 2
+    },
+    {
+      "node_id": "node_0057",
+      "compound_id": "POMH",
+      "source_name": "Polyoxymethylene Homopolymer",
+      "formula": "CH2O",
+      "counts": {
+        "C": 1,
+        "O": 1,
+        "H": 2
+      },
+      "exact_mass": 30.01056468403,
+      "ion_mode": "negative",
+      "charge": -1,
+      "generation_type": "fragment_h_shift",
+      "operation": "electron_gain",
+      "path": [
+        "M",
+        "fragment C,H,O from C-O bond break(s)",
+        "h_shift_-1",
+        "electron_gain"
+      ],
+      "source_nodes": [
+        "node_0006"
+      ],
+      "fragment_atom_indices": [
+        0,
+        1,
+        3,
+        4,
+        5
+      ],
+      "reaction_site_elements": [
+        "O"
+      ],
+      "broken_bonds": 1,
+      "h_shift": -1,
+      "recombination_loss": "",
+      "rule_pack": "",
+      "trigger_feature": "",
+      "evidence": "",
+      "structure_score": 0.6000000000000001,
+      "ionization_score": 0.55,
+      "path_score": 0.6000000000000001,
+      "formula_score": 0.882,
+      "path_count": 4,
+      "mechanism_count": 2,
+      "source_fragment_count": 2
+    },
+    {
+      "node_id": "node_0058",
+      "compound_id": "POMH",
+      "source_name": "Polyoxymethylene Homopolymer",
+      "formula": "CH4O",
+      "counts": {
+        "C": 1,
+        "O": 1,
+        "H": 4
+      },
+      "exact_mass": 32.02621474849,
+      "ion_mode": "positive",
+      "charge": 1,
+      "generation_type": "fragment_h_shift",
+      "operation": "electron_loss",
+      "path": [
+        "M",
+        "fragment C,H,O from C-O bond break(s)",
+        "h_shift_+1",
+        "electron_loss"
+      ],
+      "source_nodes": [
+        "node_0007"
+      ],
+      "fragment_atom_indices": [
+        0,
+        1,
+        3,
+        4,
+        5
+      ],
+      "reaction_site_elements": [
+        "O"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 1,
+      "recombination_loss": "",
+      "rule_pack": "",
+      "trigger_feature": "",
+      "evidence": "",
+      "structure_score": 0.6000000000000001,
+      "ionization_score": 0.55,
+      "path_score": 0.6000000000000001,
+      "formula_score": 0.882,
+      "path_count": 4,
+      "mechanism_count": 2,
+      "source_fragment_count": 2
+    },
+    {
+      "node_id": "node_0059",
+      "compound_id": "POMH",
+      "source_name": "Polyoxymethylene Homopolymer",
+      "formula": "CH4O",
+      "counts": {
+        "C": 1,
+        "O": 1,
+        "H": 4
+      },
+      "exact_mass": 32.02621474849,
+      "ion_mode": "negative",
+      "charge": -1,
+      "generation_type": "fragment_h_shift",
+      "operation": "electron_gain",
+      "path": [
+        "M",
+        "fragment C,H,O from C-O bond break(s)",
+        "h_shift_+1",
+        "electron_gain"
+      ],
+      "source_nodes": [
+        "node_0007"
+      ],
+      "fragment_atom_indices": [
+        0,
+        1,
+        3,
+        4,
+        5
+      ],
+      "reaction_site_elements": [
+        "O"
+      ],
+      "broken_bonds": 1,
+      "h_shift": 1,
+      "recombination_loss": "",
+      "rule_pack": "",
+      "trigger_feature": "",
+      "evidence": "",
+      "structure_score": 0.6000000000000001,
+      "ionization_score": 0.55,
+      "path_score": 0.6000000000000001,
+      "formula_score": 0.6900000000000002,
+      "path_count": 2,
+      "mechanism_count": 1,
+      "source_fragment_count": 2
+    }
+  ],
+  "edges": [
+    {
+      "edge_id": "edge_0001",
+      "compound_id": "POMH",
+      "source_node": "node_0001",
+      "target_node": "node_0002",
+      "operation": "bond_break",
+      "operation_type": "fragmentation",
+      "weight": 1.0
+    },
+    {
+      "edge_id": "edge_0002",
+      "compound_id": "POMH",
+      "source_node": "node_0001",
+      "target_node": "node_0003",
+      "operation": "bond_break",
+      "operation_type": "fragmentation",
+      "weight": 1.0
+    },
+    {
+      "edge_id": "edge_0003",
+      "compound_id": "POMH",
+      "source_node": "node_0002",
+      "target_node": "node_0004",
+      "operation": "h_shift_-1",
+      "operation_type": "h_shift",
+      "weight": 0.9
+    },
+    {
+      "edge_id": "edge_0004",
+      "compound_id": "POMH",
+      "source_node": "node_0002",
+      "target_node": "node_0005",
+      "operation": "h_shift_+1",
+      "operation_type": "h_shift",
+      "weight": 0.9
+    },
+    {
+      "edge_id": "edge_0005",
+      "compound_id": "POMH",
+      "source_node": "node_0003",
+      "target_node": "node_0006",
+      "operation": "h_shift_-1",
+      "operation_type": "h_shift",
+      "weight": 0.9
+    },
+    {
+      "edge_id": "edge_0006",
+      "compound_id": "POMH",
+      "source_node": "node_0003",
+      "target_node": "node_0007",
+      "operation": "h_shift_+1",
+      "operation_type": "h_shift",
+      "weight": 0.9
+    },
+    {
+      "edge_id": "edge_0007",
+      "compound_id": "POMH",
+      "source_node": "node_0001",
+      "target_node": "node_0008",
+      "operation": "oxonium_CH3O",
+      "operation_type": "feature_rule",
+      "weight": 0.7
+    },
+    {
+      "edge_id": "edge_0008",
+      "compound_id": "POMH",
+      "source_node": "node_0001",
+      "target_node": "node_0009",
+      "operation": "oxonium_C2H3O",
+      "operation_type": "feature_rule",
+      "weight": 0.7
+    },
+    {
+      "edge_id": "edge_0009",
+      "compound_id": "POMH",
+      "source_node": "node_0001",
+      "target_node": "node_0010",
+      "operation": "oxonium_C2H4O",
+      "operation_type": "feature_rule",
+      "weight": 0.7
+    },
+    {
+      "edge_id": "edge_0010",
+      "compound_id": "POMH",
+      "source_node": "node_0001",
+      "target_node": "node_0011",
+      "operation": "oxonium_C2H5O",
+      "operation_type": "feature_rule",
+      "weight": 0.7
+    },
+    {
+      "edge_id": "edge_0011",
+      "compound_id": "POMH",
+      "source_node": "node_0001",
+      "target_node": "node_0012",
+      "operation": "oxonium_C2H3O2",
+      "operation_type": "feature_rule",
+      "weight": 0.7
+    },
+    {
+      "edge_id": "edge_0012",
+      "compound_id": "POMH",
+      "source_node": "node_0001",
+      "target_node": "node_0013",
+      "operation": "oxonium_C2H5O2",
+      "operation_type": "feature_rule",
+      "weight": 0.7
+    },
+    {
+      "edge_id": "edge_0013",
+      "compound_id": "POMH",
+      "source_node": "node_0001",
+      "target_node": "node_0014",
+      "operation": "oxonium_C3H3O",
+      "operation_type": "feature_rule",
+      "weight": 0.7
+    },
+    {
+      "edge_id": "edge_0014",
+      "compound_id": "POMH",
+      "source_node": "node_0001",
+      "target_node": "node_0015",
+      "operation": "oxonium_C3H5O",
+      "operation_type": "feature_rule",
+      "weight": 0.7
+    },
+    {
+      "edge_id": "edge_0015",
+      "compound_id": "POMH",
+      "source_node": "node_0001",
+      "target_node": "node_0016",
+      "operation": "oxonium_C3H5O2",
+      "operation_type": "feature_rule",
+      "weight": 0.7
+    },
+    {
+      "edge_id": "edge_0016",
+      "compound_id": "POMH",
+      "source_node": "node_0001",
+      "target_node": "node_0017",
+      "operation": "oxonium_C3H5O3",
+      "operation_type": "feature_rule",
+      "weight": 0.7
+    },
+    {
+      "edge_id": "edge_0017",
+      "compound_id": "POMH",
+      "source_node": "node_0001",
+      "target_node": "node_0018",
+      "operation": "oxonium_C3H6O",
+      "operation_type": "feature_rule",
+      "weight": 0.7
+    },
+    {
+      "edge_id": "edge_0018",
+      "compound_id": "POMH",
+      "source_node": "node_0001",
+      "target_node": "node_0019",
+      "operation": "oxonium_C3H6O2",
+      "operation_type": "feature_rule",
+      "weight": 0.7
+    },
+    {
+      "edge_id": "edge_0019",
+      "compound_id": "POMH",
+      "source_node": "node_0001",
+      "target_node": "node_0020",
+      "operation": "oxonium_C3H6O3",
+      "operation_type": "feature_rule",
+      "weight": 0.7
+    },
+    {
+      "edge_id": "edge_0020",
+      "compound_id": "POMH",
+      "source_node": "node_0001",
+      "target_node": "node_0021",
+      "operation": "oxonium_C3H7O",
+      "operation_type": "feature_rule",
+      "weight": 0.7
+    },
+    {
+      "edge_id": "edge_0021",
+      "compound_id": "POMH",
+      "source_node": "node_0001",
+      "target_node": "node_0022",
+      "operation": "oxonium_C3H7O2",
+      "operation_type": "feature_rule",
+      "weight": 0.7
+    },
+    {
+      "edge_id": "edge_0022",
+      "compound_id": "POMH",
+      "source_node": "node_0001",
+      "target_node": "node_0023",
+      "operation": "oxonium_C3H7O3",
+      "operation_type": "feature_rule",
+      "weight": 0.7
+    },
+    {
+      "edge_id": "edge_0023",
+      "compound_id": "POMH",
+      "source_node": "node_0001",
+      "target_node": "node_0024",
+      "operation": "oxonium_neg_CHO2",
+      "operation_type": "feature_rule",
+      "weight": 0.7
+    },
+    {
+      "edge_id": "edge_0024",
+      "compound_id": "POMH",
+      "source_node": "node_0001",
+      "target_node": "node_0025",
+      "operation": "oxonium_neg_C2H3O2",
+      "operation_type": "feature_rule",
+      "weight": 0.7
+    },
+    {
+      "edge_id": "edge_0025",
+      "compound_id": "POMH",
+      "source_node": "node_0001",
+      "target_node": "node_0026",
+      "operation": "oxonium_neg_C2H5O2",
+      "operation_type": "feature_rule",
+      "weight": 0.7
+    },
+    {
+      "edge_id": "edge_0026",
+      "compound_id": "POMH",
+      "source_node": "node_0001",
+      "target_node": "node_0027",
+      "operation": "oxonium_neg_C3H5O2",
+      "operation_type": "feature_rule",
+      "weight": 0.7
+    },
+    {
+      "edge_id": "edge_0027",
+      "compound_id": "POMH",
+      "source_node": "node_0001",
+      "target_node": "node_0028",
+      "operation": "oxonium_neg_C3H5O3",
+      "operation_type": "feature_rule",
+      "weight": 0.7
+    },
+    {
+      "edge_id": "edge_0028",
+      "compound_id": "POMH",
+      "source_node": "node_0001",
+      "target_node": "node_0029",
+      "operation": "small_hc_C2H3",
+      "operation_type": "feature_rule",
+      "weight": 0.7
+    },
+    {
+      "edge_id": "edge_0029",
+      "compound_id": "POMH",
+      "source_node": "node_0001",
+      "target_node": "node_0030",
+      "operation": "small_hc_C2H5",
+      "operation_type": "feature_rule",
+      "weight": 0.7
+    },
+    {
+      "edge_id": "edge_0030",
+      "compound_id": "POMH",
+      "source_node": "node_0001",
+      "target_node": "node_0031",
+      "operation": "small_hc_C2",
+      "operation_type": "feature_rule",
+      "weight": 0.7
+    },
+    {
+      "edge_id": "edge_0031",
+      "compound_id": "POMH",
+      "source_node": "node_0001",
+      "target_node": "node_0032",
+      "operation": "small_hc_C2H",
+      "operation_type": "feature_rule",
+      "weight": 0.7
+    },
+    {
+      "edge_id": "edge_0032",
+      "compound_id": "POMH",
+      "source_node": "node_0001",
+      "target_node": "node_0033",
+      "operation": "o_small_CHO",
+      "operation_type": "feature_rule",
+      "weight": 0.7
+    },
+    {
+      "edge_id": "edge_0033",
+      "compound_id": "POMH",
+      "source_node": "node_0001",
+      "target_node": "node_0034",
+      "operation": "o_small_CH3O",
+      "operation_type": "feature_rule",
+      "weight": 0.7
+    },
+    {
+      "edge_id": "edge_0034",
+      "compound_id": "POMH",
+      "source_node": "node_0001",
+      "target_node": "node_0035",
+      "operation": "o_small_C2H3O",
+      "operation_type": "feature_rule",
+      "weight": 0.7
+    },
+    {
+      "edge_id": "edge_0035",
+      "compound_id": "POMH",
+      "source_node": "node_0001",
+      "target_node": "node_0036",
+      "operation": "o_small_C2H5O",
+      "operation_type": "feature_rule",
+      "weight": 0.7
+    },
+    {
+      "edge_id": "edge_0036",
+      "compound_id": "POMH",
+      "source_node": "node_0001",
+      "target_node": "node_0037",
+      "operation": "o_small_CHO",
+      "operation_type": "feature_rule",
+      "weight": 0.7
+    },
+    {
+      "edge_id": "edge_0037",
+      "compound_id": "POMH",
+      "source_node": "node_0001",
+      "target_node": "node_0038",
+      "operation": "o_small_C2HO",
+      "operation_type": "feature_rule",
+      "weight": 0.7
+    },
+    {
+      "edge_id": "edge_0038",
+      "compound_id": "POMH",
+      "source_node": "node_0001",
+      "target_node": "node_0039",
+      "operation": "o_small_C2H3O",
+      "operation_type": "feature_rule",
+      "weight": 0.7
+    },
+    {
+      "edge_id": "edge_0039",
+      "compound_id": "POMH",
+      "source_node": "node_0001",
+      "target_node": "node_0040",
+      "operation": "electron_loss",
+      "operation_type": "ionization",
+      "weight": 1.0
+    },
+    {
+      "edge_id": "edge_0040",
+      "compound_id": "POMH",
+      "source_node": "node_0001",
+      "target_node": "node_0041",
+      "operation": "electron_gain",
+      "operation_type": "ionization",
+      "weight": 1.0
+    },
+    {
+      "edge_id": "edge_0041",
+      "compound_id": "POMH",
+      "source_node": "node_0001",
+      "target_node": "node_0042",
+      "operation": "protonation",
+      "operation_type": "ionization",
+      "weight": 1.0
+    },
+    {
+      "edge_id": "edge_0042",
+      "compound_id": "POMH",
+      "source_node": "node_0001",
+      "target_node": "node_0043",
+      "operation": "deprotonation",
+      "operation_type": "ionization",
+      "weight": 1.0
+    },
+    {
+      "edge_id": "edge_0043",
+      "compound_id": "POMH",
+      "source_node": "node_0002",
+      "target_node": "node_0044",
+      "operation": "electron_loss",
+      "operation_type": "ionization",
+      "weight": 1.0
+    },
+    {
+      "edge_id": "edge_0044",
+      "compound_id": "POMH",
+      "source_node": "node_0002",
+      "target_node": "node_0045",
+      "operation": "electron_gain",
+      "operation_type": "ionization",
+      "weight": 1.0
+    },
+    {
+      "edge_id": "edge_0045",
+      "compound_id": "POMH",
+      "source_node": "node_0002",
+      "target_node": "node_0046",
+      "operation": "protonation",
+      "operation_type": "ionization",
+      "weight": 1.0
+    },
+    {
+      "edge_id": "edge_0046",
+      "compound_id": "POMH",
+      "source_node": "node_0002",
+      "target_node": "node_0047",
+      "operation": "deprotonation",
+      "operation_type": "ionization",
+      "weight": 1.0
+    },
+    {
+      "edge_id": "edge_0047",
+      "compound_id": "POMH",
+      "source_node": "node_0003",
+      "target_node": "node_0048",
+      "operation": "electron_loss",
+      "operation_type": "ionization",
+      "weight": 1.0
+    },
+    {
+      "edge_id": "edge_0048",
+      "compound_id": "POMH",
+      "source_node": "node_0003",
+      "target_node": "node_0049",
+      "operation": "electron_gain",
+      "operation_type": "ionization",
+      "weight": 1.0
+    },
+    {
+      "edge_id": "edge_0049",
+      "compound_id": "POMH",
+      "source_node": "node_0003",
+      "target_node": "node_0050",
+      "operation": "protonation",
+      "operation_type": "ionization",
+      "weight": 1.0
+    },
+    {
+      "edge_id": "edge_0050",
+      "compound_id": "POMH",
+      "source_node": "node_0003",
+      "target_node": "node_0051",
+      "operation": "deprotonation",
+      "operation_type": "ionization",
+      "weight": 1.0
+    },
+    {
+      "edge_id": "edge_0051",
+      "compound_id": "POMH",
+      "source_node": "node_0004",
+      "target_node": "node_0052",
+      "operation": "electron_loss",
+      "operation_type": "ionization",
+      "weight": 1.0
+    },
+    {
+      "edge_id": "edge_0052",
+      "compound_id": "POMH",
+      "source_node": "node_0004",
+      "target_node": "node_0053",
+      "operation": "electron_gain",
+      "operation_type": "ionization",
+      "weight": 1.0
+    },
+    {
+      "edge_id": "edge_0053",
+      "compound_id": "POMH",
+      "source_node": "node_0005",
+      "target_node": "node_0054",
+      "operation": "electron_loss",
+      "operation_type": "ionization",
+      "weight": 1.0
+    },
+    {
+      "edge_id": "edge_0054",
+      "compound_id": "POMH",
+      "source_node": "node_0005",
+      "target_node": "node_0055",
+      "operation": "electron_gain",
+      "operation_type": "ionization",
+      "weight": 1.0
+    },
+    {
+      "edge_id": "edge_0055",
+      "compound_id": "POMH",
+      "source_node": "node_0006",
+      "target_node": "node_0056",
+      "operation": "electron_loss",
+      "operation_type": "ionization",
+      "weight": 1.0
+    },
+    {
+      "edge_id": "edge_0056",
+      "compound_id": "POMH",
+      "source_node": "node_0006",
+      "target_node": "node_0057",
+      "operation": "electron_gain",
+      "operation_type": "ionization",
+      "weight": 1.0
+    },
+    {
+      "edge_id": "edge_0057",
+      "compound_id": "POMH",
+      "source_node": "node_0007",
+      "target_node": "node_0058",
+      "operation": "electron_loss",
+      "operation_type": "ionization",
+      "weight": 1.0
+    },
+    {
+      "edge_id": "edge_0058",
+      "compound_id": "POMH",
+      "source_node": "node_0007",
+      "target_node": "node_0059",
+      "operation": "electron_gain",
+      "operation_type": "ionization",
+      "weight": 1.0
+    }
+  ],
+  "formula_summary": [
+    {
+      "compound_id": "POMH",
+      "source_name": "Polyoxymethylene Homopolymer",
+      "formula": "CH3O",
+      "ion_mode": "positive",
+      "charge": 1,
+      "exact_mass": 31.01838971626,
+      "formula_score": 1.0,
+      "best_path_score": 0.79,
+      "path_count": 4,
+      "mechanism_count": 2,
+      "source_fragment_count": 4,
+      "generation_types": "feature_rule;fragment",
+      "best_node_id": "node_0008",
+      "representative_path": "M | acetal_or_ether | acetal_oxonium_series | oxonium_CH3O",
+      "all_node_ids": "node_0008;node_0034;node_0044;node_0048"
+    },
+    {
+      "compound_id": "POMH",
+      "source_name": "Polyoxymethylene Homopolymer",
+      "formula": "CH2O",
+      "ion_mode": "negative",
+      "charge": -1,
+      "exact_mass": 30.01056468403,
+      "formula_score": 0.882,
+      "best_path_score": 0.692,
+      "path_count": 4,
+      "mechanism_count": 2,
+      "source_fragment_count": 2,
+      "generation_types": "fragment;fragment_h_shift",
+      "best_node_id": "node_0047",
+      "representative_path": "M | fragment C,H,O from C-O bond break(s) | deprotonation",
+      "all_node_ids": "node_0047;node_0051;node_0053;node_0057"
+    },
+    {
+      "compound_id": "POMH",
+      "source_name": "Polyoxymethylene Homopolymer",
+      "formula": "CH4O",
+      "ion_mode": "positive",
+      "charge": 1,
+      "exact_mass": 32.02621474849,
+      "formula_score": 0.882,
+      "best_path_score": 0.692,
+      "path_count": 4,
+      "mechanism_count": 2,
+      "source_fragment_count": 2,
+      "generation_types": "fragment;fragment_h_shift",
+      "best_node_id": "node_0046",
+      "representative_path": "M | fragment C,H,O from C-O bond break(s) | protonation",
+      "all_node_ids": "node_0046;node_0050;node_0054;node_0058"
+    },
+    {
+      "compound_id": "POMH",
+      "source_name": "Polyoxymethylene Homopolymer",
+      "formula": "C2H3O",
+      "ion_mode": "positive",
+      "charge": 1,
+      "exact_mass": 43.01838971626,
+      "formula_score": 0.8800000000000001,
+      "best_path_score": 0.79,
+      "path_count": 2,
+      "mechanism_count": 1,
+      "source_fragment_count": 2,
+      "generation_types": "feature_rule",
+      "best_node_id": "node_0009",
+      "representative_path": "M | acetal_or_ether | acetal_oxonium_series | oxonium_C2H3O",
+      "all_node_ids": "node_0009;node_0035"
+    },
+    {
+      "compound_id": "POMH",
+      "source_name": "Polyoxymethylene Homopolymer",
+      "formula": "C2H5O",
+      "ion_mode": "positive",
+      "charge": 1,
+      "exact_mass": 45.03403978072,
+      "formula_score": 0.8800000000000001,
+      "best_path_score": 0.79,
+      "path_count": 2,
+      "mechanism_count": 1,
+      "source_fragment_count": 2,
+      "generation_types": "feature_rule",
+      "best_node_id": "node_0011",
+      "representative_path": "M | acetal_or_ether | acetal_oxonium_series | oxonium_C2H5O",
+      "all_node_ids": "node_0011;node_0036"
+    },
+    {
+      "compound_id": "POMH",
+      "source_name": "Polyoxymethylene Homopolymer",
+      "formula": "C2H3O2",
+      "ion_mode": "positive",
+      "charge": 1,
+      "exact_mass": 59.01330433583,
+      "formula_score": 0.79,
+      "best_path_score": 0.79,
+      "path_count": 1,
+      "mechanism_count": 1,
+      "source_fragment_count": 1,
+      "generation_types": "feature_rule",
+      "best_node_id": "node_0012",
+      "representative_path": "M | acetal_or_ether | acetal_oxonium_series | oxonium_C2H3O2",
+      "all_node_ids": "node_0012"
+    },
+    {
+      "compound_id": "POMH",
+      "source_name": "Polyoxymethylene Homopolymer",
+      "formula": "C2H3O2",
+      "ion_mode": "negative",
+      "charge": -1,
+      "exact_mass": 59.01330433583,
+      "formula_score": 0.79,
+      "best_path_score": 0.79,
+      "path_count": 1,
+      "mechanism_count": 1,
+      "source_fragment_count": 1,
+      "generation_types": "feature_rule",
+      "best_node_id": "node_0025",
+      "representative_path": "M | acetal_or_ether | acetal_oxonium_series | oxonium_neg_C2H3O2",
+      "all_node_ids": "node_0025"
+    },
+    {
+      "compound_id": "POMH",
+      "source_name": "Polyoxymethylene Homopolymer",
+      "formula": "C2H4O",
+      "ion_mode": "positive",
+      "charge": 1,
+      "exact_mass": 44.02621474849,
+      "formula_score": 0.79,
+      "best_path_score": 0.79,
+      "path_count": 1,
+      "mechanism_count": 1,
+      "source_fragment_count": 1,
+      "generation_types": "feature_rule",
+      "best_node_id": "node_0010",
+      "representative_path": "M | acetal_or_ether | acetal_oxonium_series | oxonium_C2H4O",
+      "all_node_ids": "node_0010"
+    },
+    {
+      "compound_id": "POMH",
+      "source_name": "Polyoxymethylene Homopolymer",
+      "formula": "C2H5O2",
+      "ion_mode": "positive",
+      "charge": 1,
+      "exact_mass": 61.028954400290004,
+      "formula_score": 0.79,
+      "best_path_score": 0.79,
+      "path_count": 1,
+      "mechanism_count": 1,
+      "source_fragment_count": 1,
+      "generation_types": "feature_rule",
+      "best_node_id": "node_0013",
+      "representative_path": "M | acetal_or_ether | acetal_oxonium_series | oxonium_C2H5O2",
+      "all_node_ids": "node_0013"
+    },
+    {
+      "compound_id": "POMH",
+      "source_name": "Polyoxymethylene Homopolymer",
+      "formula": "C2H5O2",
+      "ion_mode": "negative",
+      "charge": -1,
+      "exact_mass": 61.028954400290004,
+      "formula_score": 0.79,
+      "best_path_score": 0.79,
+      "path_count": 1,
+      "mechanism_count": 1,
+      "source_fragment_count": 1,
+      "generation_types": "feature_rule",
+      "best_node_id": "node_0026",
+      "representative_path": "M | acetal_or_ether | acetal_oxonium_series | oxonium_neg_C2H5O2",
+      "all_node_ids": "node_0026"
+    },
+    {
+      "compound_id": "POMH",
+      "source_name": "Polyoxymethylene Homopolymer",
+      "formula": "C3H3O",
+      "ion_mode": "positive",
+      "charge": 1,
+      "exact_mass": 55.01838971626,
+      "formula_score": 0.79,
+      "best_path_score": 0.79,
+      "path_count": 1,
+      "mechanism_count": 1,
+      "source_fragment_count": 1,
+      "generation_types": "feature_rule",
+      "best_node_id": "node_0014",
+      "representative_path": "M | acetal_or_ether | acetal_oxonium_series | oxonium_C3H3O",
+      "all_node_ids": "node_0014"
+    },
+    {
+      "compound_id": "POMH",
+      "source_name": "Polyoxymethylene Homopolymer",
+      "formula": "C3H5O",
+      "ion_mode": "positive",
+      "charge": 1,
+      "exact_mass": 57.03403978072,
+      "formula_score": 0.79,
+      "best_path_score": 0.79,
+      "path_count": 1,
+      "mechanism_count": 1,
+      "source_fragment_count": 1,
+      "generation_types": "feature_rule",
+      "best_node_id": "node_0015",
+      "representative_path": "M | acetal_or_ether | acetal_oxonium_series | oxonium_C3H5O",
+      "all_node_ids": "node_0015"
+    },
+    {
+      "compound_id": "POMH",
+      "source_name": "Polyoxymethylene Homopolymer",
+      "formula": "C3H5O2",
+      "ion_mode": "positive",
+      "charge": 1,
+      "exact_mass": 73.02895440029,
+      "formula_score": 0.79,
+      "best_path_score": 0.79,
+      "path_count": 1,
+      "mechanism_count": 1,
+      "source_fragment_count": 1,
+      "generation_types": "feature_rule",
+      "best_node_id": "node_0016",
+      "representative_path": "M | acetal_or_ether | acetal_oxonium_series | oxonium_C3H5O2",
+      "all_node_ids": "node_0016"
+    },
+    {
+      "compound_id": "POMH",
+      "source_name": "Polyoxymethylene Homopolymer",
+      "formula": "C3H5O2",
+      "ion_mode": "negative",
+      "charge": -1,
+      "exact_mass": 73.02895440029,
+      "formula_score": 0.79,
+      "best_path_score": 0.79,
+      "path_count": 1,
+      "mechanism_count": 1,
+      "source_fragment_count": 1,
+      "generation_types": "feature_rule",
+      "best_node_id": "node_0027",
+      "representative_path": "M | acetal_or_ether | acetal_oxonium_series | oxonium_neg_C3H5O2",
+      "all_node_ids": "node_0027"
+    },
+    {
+      "compound_id": "POMH",
+      "source_name": "Polyoxymethylene Homopolymer",
+      "formula": "C3H5O3",
+      "ion_mode": "positive",
+      "charge": 1,
+      "exact_mass": 89.02386901986,
+      "formula_score": 0.79,
+      "best_path_score": 0.79,
+      "path_count": 1,
+      "mechanism_count": 1,
+      "source_fragment_count": 1,
+      "generation_types": "feature_rule",
+      "best_node_id": "node_0017",
+      "representative_path": "M | acetal_or_ether | acetal_oxonium_series | oxonium_C3H5O3",
+      "all_node_ids": "node_0017"
+    },
+    {
+      "compound_id": "POMH",
+      "source_name": "Polyoxymethylene Homopolymer",
+      "formula": "C3H5O3",
+      "ion_mode": "negative",
+      "charge": -1,
+      "exact_mass": 89.02386901986,
+      "formula_score": 0.79,
+      "best_path_score": 0.79,
+      "path_count": 1,
+      "mechanism_count": 1,
+      "source_fragment_count": 1,
+      "generation_types": "feature_rule",
+      "best_node_id": "node_0028",
+      "representative_path": "M | acetal_or_ether | acetal_oxonium_series | oxonium_neg_C3H5O3",
+      "all_node_ids": "node_0028"
+    },
+    {
+      "compound_id": "POMH",
+      "source_name": "Polyoxymethylene Homopolymer",
+      "formula": "C3H6O",
+      "ion_mode": "positive",
+      "charge": 1,
+      "exact_mass": 58.04186481295,
+      "formula_score": 0.79,
+      "best_path_score": 0.79,
+      "path_count": 1,
+      "mechanism_count": 1,
+      "source_fragment_count": 1,
+      "generation_types": "feature_rule",
+      "best_node_id": "node_0018",
+      "representative_path": "M | acetal_or_ether | acetal_oxonium_series | oxonium_C3H6O",
+      "all_node_ids": "node_0018"
+    },
+    {
+      "compound_id": "POMH",
+      "source_name": "Polyoxymethylene Homopolymer",
+      "formula": "C3H6O2",
+      "ion_mode": "positive",
+      "charge": 1,
+      "exact_mass": 74.03677943252,
+      "formula_score": 0.79,
+      "best_path_score": 0.79,
+      "path_count": 1,
+      "mechanism_count": 1,
+      "source_fragment_count": 1,
+      "generation_types": "feature_rule",
+      "best_node_id": "node_0019",
+      "representative_path": "M | acetal_or_ether | acetal_oxonium_series | oxonium_C3H6O2",
+      "all_node_ids": "node_0019"
+    },
+    {
+      "compound_id": "POMH",
+      "source_name": "Polyoxymethylene Homopolymer",
+      "formula": "C3H6O3",
+      "ion_mode": "positive",
+      "charge": 1,
+      "exact_mass": 90.03169405209,
+      "formula_score": 0.79,
+      "best_path_score": 0.79,
+      "path_count": 1,
+      "mechanism_count": 1,
+      "source_fragment_count": 1,
+      "generation_types": "feature_rule",
+      "best_node_id": "node_0020",
+      "representative_path": "M | acetal_or_ether | acetal_oxonium_series | oxonium_C3H6O3",
+      "all_node_ids": "node_0020"
+    },
+    {
+      "compound_id": "POMH",
+      "source_name": "Polyoxymethylene Homopolymer",
+      "formula": "C3H7O",
+      "ion_mode": "positive",
+      "charge": 1,
+      "exact_mass": 59.04968984518,
+      "formula_score": 0.79,
+      "best_path_score": 0.79,
+      "path_count": 1,
+      "mechanism_count": 1,
+      "source_fragment_count": 1,
+      "generation_types": "feature_rule",
+      "best_node_id": "node_0021",
+      "representative_path": "M | acetal_or_ether | acetal_oxonium_series | oxonium_C3H7O",
+      "all_node_ids": "node_0021"
+    },
+    {
+      "compound_id": "POMH",
+      "source_name": "Polyoxymethylene Homopolymer",
+      "formula": "C3H7O2",
+      "ion_mode": "positive",
+      "charge": 1,
+      "exact_mass": 75.04460446475,
+      "formula_score": 0.79,
+      "best_path_score": 0.79,
+      "path_count": 1,
+      "mechanism_count": 1,
+      "source_fragment_count": 1,
+      "generation_types": "feature_rule",
+      "best_node_id": "node_0022",
+      "representative_path": "M | acetal_or_ether | acetal_oxonium_series | oxonium_C3H7O2",
+      "all_node_ids": "node_0022"
+    },
+    {
+      "compound_id": "POMH",
+      "source_name": "Polyoxymethylene Homopolymer",
+      "formula": "C3H7O3",
+      "ion_mode": "positive",
+      "charge": 1,
+      "exact_mass": 91.03951908432,
+      "formula_score": 0.79,
+      "best_path_score": 0.79,
+      "path_count": 1,
+      "mechanism_count": 1,
+      "source_fragment_count": 1,
+      "generation_types": "feature_rule",
+      "best_node_id": "node_0023",
+      "representative_path": "M | acetal_or_ether | acetal_oxonium_series | oxonium_C3H7O3",
+      "all_node_ids": "node_0023"
+    },
+    {
+      "compound_id": "POMH",
+      "source_name": "Polyoxymethylene Homopolymer",
+      "formula": "CHO2",
+      "ion_mode": "negative",
+      "charge": -1,
+      "exact_mass": 44.99765427137,
+      "formula_score": 0.79,
+      "best_path_score": 0.79,
+      "path_count": 1,
+      "mechanism_count": 1,
+      "source_fragment_count": 1,
+      "generation_types": "feature_rule",
+      "best_node_id": "node_0024",
+      "representative_path": "M | acetal_or_ether | acetal_oxonium_series | oxonium_neg_CHO2",
+      "all_node_ids": "node_0024"
+    },
+    {
+      "compound_id": "POMH",
+      "source_name": "Polyoxymethylene Homopolymer",
+      "formula": "CH3O",
+      "ion_mode": "negative",
+      "charge": -1,
+      "exact_mass": 31.01838971626,
+      "formula_score": 0.7440000000000002,
+      "best_path_score": 0.6540000000000001,
+      "path_count": 2,
+      "mechanism_count": 1,
+      "source_fragment_count": 2,
+      "generation_types": "fragment",
+      "best_node_id": "node_0045",
+      "representative_path": "M | fragment C,H,O from C-O bond break(s) | electron_gain",
+      "all_node_ids": "node_0045;node_0049"
+    },
+    {
+      "compound_id": "POMH",
+      "source_name": "Polyoxymethylene Homopolymer",
+      "formula": "CH2O",
+      "ion_mode": "positive",
+      "charge": 1,
+      "exact_mass": 30.01056468403,
+      "formula_score": 0.6900000000000002,
+      "best_path_score": 0.6000000000000001,
+      "path_count": 2,
+      "mechanism_count": 1,
+      "source_fragment_count": 2,
+      "generation_types": "fragment_h_shift",
+      "best_node_id": "node_0052",
+      "representative_path": "M | fragment C,H,O from C-O bond break(s) | h_shift_-1 | electron_loss",
+      "all_node_ids": "node_0052;node_0056"
+    },
+    {
+      "compound_id": "POMH",
+      "source_name": "Polyoxymethylene Homopolymer",
+      "formula": "CH4O",
+      "ion_mode": "negative",
+      "charge": -1,
+      "exact_mass": 32.02621474849,
+      "formula_score": 0.6900000000000002,
+      "best_path_score": 0.6000000000000001,
+      "path_count": 2,
+      "mechanism_count": 1,
+      "source_fragment_count": 2,
+      "generation_types": "fragment_h_shift",
+      "best_node_id": "node_0055",
+      "representative_path": "M | fragment C,H,O from C-O bond break(s) | h_shift_+1 | electron_gain",
+      "all_node_ids": "node_0055;node_0059"
+    },
+    {
+      "compound_id": "POMH",
+      "source_name": "Polyoxymethylene Homopolymer",
+      "formula": "C2H",
+      "ion_mode": "negative",
+      "charge": -1,
+      "exact_mass": 25.00782503223,
+      "formula_score": 0.6580000000000001,
+      "best_path_score": 0.6580000000000001,
+      "path_count": 1,
+      "mechanism_count": 1,
+      "source_fragment_count": 1,
+      "generation_types": "feature_rule",
+      "best_node_id": "node_0032",
+      "representative_path": "M | universal_hydrocarbon | hydrocarbon_small_fragments | small_hc_C2H",
+      "all_node_ids": "node_0032"
+    },
+    {
+      "compound_id": "POMH",
+      "source_name": "Polyoxymethylene Homopolymer",
+      "formula": "C2H3",
+      "ion_mode": "positive",
+      "charge": 1,
+      "exact_mass": 27.02347509669,
+      "formula_score": 0.6580000000000001,
+      "best_path_score": 0.6580000000000001,
+      "path_count": 1,
+      "mechanism_count": 1,
+      "source_fragment_count": 1,
+      "generation_types": "feature_rule",
+      "best_node_id": "node_0029",
+      "representative_path": "M | universal_hydrocarbon | hydrocarbon_small_fragments | small_hc_C2H3",
+      "all_node_ids": "node_0029"
+    },
+    {
+      "compound_id": "POMH",
+      "source_name": "Polyoxymethylene Homopolymer",
+      "formula": "C2H5",
+      "ion_mode": "positive",
+      "charge": 1,
+      "exact_mass": 29.03912516115,
+      "formula_score": 0.6580000000000001,
+      "best_path_score": 0.6580000000000001,
+      "path_count": 1,
+      "mechanism_count": 1,
+      "source_fragment_count": 1,
+      "generation_types": "feature_rule",
+      "best_node_id": "node_0030",
+      "representative_path": "M | universal_hydrocarbon | hydrocarbon_small_fragments | small_hc_C2H5",
+      "all_node_ids": "node_0030"
+    },
+    {
+      "compound_id": "POMH",
+      "source_name": "Polyoxymethylene Homopolymer",
+      "formula": "C2H3O",
+      "ion_mode": "negative",
+      "charge": -1,
+      "exact_mass": 43.01838971626,
+      "formula_score": 0.6220000000000001,
+      "best_path_score": 0.6220000000000001,
+      "path_count": 1,
+      "mechanism_count": 1,
+      "source_fragment_count": 1,
+      "generation_types": "feature_rule",
+      "best_node_id": "node_0039",
+      "representative_path": "M | oxygenated | oxygenated_small_fragments | o_small_C2H3O",
+      "all_node_ids": "node_0039"
+    },
+    {
+      "compound_id": "POMH",
+      "source_name": "Polyoxymethylene Homopolymer",
+      "formula": "C2HO",
+      "ion_mode": "negative",
+      "charge": -1,
+      "exact_mass": 41.0027396518,
+      "formula_score": 0.6220000000000001,
+      "best_path_score": 0.6220000000000001,
+      "path_count": 1,
+      "mechanism_count": 1,
+      "source_fragment_count": 1,
+      "generation_types": "feature_rule",
+      "best_node_id": "node_0038",
+      "representative_path": "M | oxygenated | oxygenated_small_fragments | o_small_C2HO",
+      "all_node_ids": "node_0038"
+    },
+    {
+      "compound_id": "POMH",
+      "source_name": "Polyoxymethylene Homopolymer",
+      "formula": "CHO",
+      "ion_mode": "positive",
+      "charge": 1,
+      "exact_mass": 29.0027396518,
+      "formula_score": 0.6220000000000001,
+      "best_path_score": 0.6220000000000001,
+      "path_count": 1,
+      "mechanism_count": 1,
+      "source_fragment_count": 1,
+      "generation_types": "feature_rule",
+      "best_node_id": "node_0033",
+      "representative_path": "M | oxygenated | oxygenated_small_fragments | o_small_CHO",
+      "all_node_ids": "node_0033"
+    },
+    {
+      "compound_id": "POMH",
+      "source_name": "Polyoxymethylene Homopolymer",
+      "formula": "CHO",
+      "ion_mode": "negative",
+      "charge": -1,
+      "exact_mass": 29.0027396518,
+      "formula_score": 0.6220000000000001,
+      "best_path_score": 0.6220000000000001,
+      "path_count": 1,
+      "mechanism_count": 1,
+      "source_fragment_count": 1,
+      "generation_types": "feature_rule",
+      "best_node_id": "node_0037",
+      "representative_path": "M | oxygenated | oxygenated_small_fragments | o_small_CHO",
+      "all_node_ids": "node_0037"
+    },
+    {
+      "compound_id": "POMH",
+      "source_name": "Polyoxymethylene Homopolymer",
+      "formula": "C2",
+      "ion_mode": "negative",
+      "charge": -1,
+      "exact_mass": 24.0,
+      "formula_score": 0.6080000000000001,
+      "best_path_score": 0.6080000000000001,
+      "path_count": 1,
+      "mechanism_count": 1,
+      "source_fragment_count": 1,
+      "generation_types": "feature_rule",
+      "best_node_id": "node_0031",
+      "representative_path": "M | universal_hydrocarbon | hydrocarbon_small_fragments | small_hc_C2",
+      "all_node_ids": "node_0031"
+    },
+    {
+      "compound_id": "POMH",
+      "source_name": "Polyoxymethylene Homopolymer",
+      "formula": "C2H5O",
+      "ion_mode": "negative",
+      "charge": -1,
+      "exact_mass": 45.03403978072,
+      "formula_score": 0.5060000000000001,
+      "best_path_score": 0.5060000000000001,
+      "path_count": 1,
+      "mechanism_count": 1,
+      "source_fragment_count": 1,
+      "generation_types": "parent",
+      "best_node_id": "node_0043",
+      "representative_path": "M | deprotonation",
+      "all_node_ids": "node_0043"
+    },
+    {
+      "compound_id": "POMH",
+      "source_name": "Polyoxymethylene Homopolymer",
+      "formula": "C2H7O",
+      "ion_mode": "positive",
+      "charge": 1,
+      "exact_mass": 47.04968984518,
+      "formula_score": 0.5060000000000001,
+      "best_path_score": 0.5060000000000001,
+      "path_count": 1,
+      "mechanism_count": 1,
+      "source_fragment_count": 1,
+      "generation_types": "parent",
+      "best_node_id": "node_0042",
+      "representative_path": "M | protonation",
+      "all_node_ids": "node_0042"
+    },
+    {
+      "compound_id": "POMH",
+      "source_name": "Polyoxymethylene Homopolymer",
+      "formula": "C2H6O",
+      "ion_mode": "positive",
+      "charge": 1,
+      "exact_mass": 46.04186481295,
+      "formula_score": 0.468,
+      "best_path_score": 0.468,
+      "path_count": 1,
+      "mechanism_count": 1,
+      "source_fragment_count": 1,
+      "generation_types": "parent",
+      "best_node_id": "node_0040",
+      "representative_path": "M | electron_loss",
+      "all_node_ids": "node_0040"
+    },
+    {
+      "compound_id": "POMH",
+      "source_name": "Polyoxymethylene Homopolymer",
+      "formula": "C2H6O",
+      "ion_mode": "negative",
+      "charge": -1,
+      "exact_mass": 46.04186481295,
+      "formula_score": 0.468,
+      "best_path_score": 0.468,
+      "path_count": 1,
+      "mechanism_count": 1,
+      "source_fragment_count": 1,
+      "generation_types": "parent",
+      "best_node_id": "node_0041",
+      "representative_path": "M | electron_gain",
+      "all_node_ids": "node_0041"
+    }
+  ]
+}
