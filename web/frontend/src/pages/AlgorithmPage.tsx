@@ -1,273 +1,241 @@
-import { Layers, GitBranch, Zap, Target, Shield, Atom, Scissors } from 'lucide-react'
-
 export default function AlgorithmPage() {
   return (
-    <div className="space-y-6 max-w-4xl">
+    <div className="space-y-6 max-w-5xl">
       <div>
-        <h2 className="text-2xl font-bold text-gray-900">Algorithm Architecture</h2>
-        <p className="text-sm text-gray-500 mt-1">TOF-SIMS Formula Network v4.3 — bond-type-aware fragmentation</p>
+        <h2 className="text-2xl font-bold text-gray-900">Algorithm Reference</h2>
+        <p className="text-sm text-gray-500 mt-1">TOF-SIMS Formula Network v4.3 — complete pipeline documentation</p>
       </div>
 
-      {/* Pipeline Overview */}
-      <div className="bg-white rounded-xl border border-gray-200 p-5">
-        <h3 className="font-semibold text-gray-800 mb-4 flex items-center gap-2">
-          <Layers size={18} className="text-blue-600" /> Pipeline Overview
-        </h3>
-        <div className="flex items-center gap-0 text-xs font-mono flex-wrap">
-          <StepBox color="bg-gray-100"><>SMILES</></StepBox>
-          <Arrow />
-          <StepBox color="bg-blue-50"><>Layer 1<br/>Conservative Frag</></StepBox>
-          <Arrow />
-          <StepBox color="bg-emerald-50"><>Layer 2<br/>Bond-Type-Aware</></StepBox>
-          <Arrow />
-          <StepBox color="bg-amber-50"><>Layer 3<br/>Feature/Pattern</></StepBox>
-          <Arrow />
-          <StepBox color="bg-purple-50"><>Layer 4<br/>Residual Empirical</></StepBox>
-          <Arrow />
-          <StepBox color="bg-gray-100"><>Diagnostic<br/>Scoring</></StepBox>
-        </div>
-        <p className="text-xs text-gray-400 mt-3">
-          v4.3 key insight: per-bond-type selective relaxation replaces one-size-fits-all conservative rules. C-S, Si-O, C-N, C-O(ester), C-F bonds now break under chemically justified conditions, providing structurally traceable paths for fragments previously requiring empirical Layer 4 rules.
+      {/* Main Flow */}
+      <Section title="一、主流程 (network_v2.py)">
+        <pre className="text-xs font-mono text-gray-700 bg-gray-50 rounded-lg p-4 overflow-x-auto leading-relaxed">{`
+  SMILES 输入
+  │
+  ├─ Step 1: RDKit 解析分子 (AddHs)
+  ├─ Step 2: 生成母体节点 (parent neutral)
+  ├─ Step 3: 枚举可断裂键 → 生成 fragment neutral 节点
+  │           └─ v4.0 键型感知规则 (5 种)
+  ├─ Step 4: Fragment H-shift (±H)
+  ├─ Step 5: 位点约束重组 (A+B 组合)
+  ├─ Step 6: Feature rule 候选生成
+  ├─ Step 7: 电离变体 (4 种)
+  ├─ Step 8: Formula 汇总 (去重 + 多路径加分)
+  └─ 输出: nodes.csv / edges.csv / formula_summary.csv / .json`}</pre>
+      </Section>
+
+      {/* Step 3: Bond Break Rules */}
+      <Section title="二、Step 3: 断键规则 (fragmentation.py)">
+        <SubTitle>全局默认</SubTitle>
+        <ul className="text-sm text-gray-600 space-y-0.5 ml-4 mb-3">
+          <li>• 仅单键、仅重原子-重原子</li>
+          <li>• 禁环内键、禁芳香键</li>
+          <li>• 最多 2 键断裂 · 每碎片最少 2 个重原子</li>
+          <li>• 单材料最多 20,000 个碎片</li>
+        </ul>
+
+        <SubTitle>v4.0 键型感知覆盖 (5 种)</SubTitle>
+        <Table>
+          <thead><tr>
+            <Th>键型</Th><Th>允许环内断裂</Th><Th>允许芳香断裂</Th><Th>允许单原子</Th><Th>受影响材料</Th>
+          </tr></thead>
+          <tbody>
+            <Tr v1="C-S" v2="✓" v3="✓" v4="✓" v5="PPS" green />
+            <Tr v1="Si-O" v2="✓" v3="—" v4="✓" v5="PDMS" green />
+            <Tr v1="C-N" v2="✓" v3="—" v4="—" v5="PI" green />
+            <Tr v1="C-O (ester)" v2="✓" v3="—" v4="—" v5="PEI" green />
+            <Tr v1="C-F" v2="—" v3="—" v4="✓" v5="PTFE/PVDF/ETFE/FEP/PFA" green />
+          </tbody>
+        </Table>
+      </Section>
+
+      {/* Step 4: H-shift */}
+      <Section title="三、Step 4: Fragment H-shift">
+        <Table>
+          <thead><tr><Th>操作</Th><Th>配置</Th></tr></thead>
+          <tbody>
+            <Tr v1="fragment − H" v2="shifts: [-1, 1]" />
+            <Tr v1="fragment + H" v2="enabled: true" />
+          </tbody>
+        </Table>
+        <p className="text-xs text-gray-400 mt-2">
+          H-shift 节点 generation_type = fragment_h_shift，仅接 electron_loss/gain 电离，不接 protonation/deprotonation。
         </p>
-      </div>
+      </Section>
 
-      {/* Layer 1 */}
-      <div className="bg-white rounded-xl border border-gray-200 p-5">
-        <h3 className="font-semibold text-gray-800 mb-3 flex items-center gap-2">
-          <Atom size={18} className="text-blue-600" /> Layer 1 — Conservative RDKit Fragmentation
-        </h3>
-        <p className="text-sm text-gray-600 mb-3">
-          Global bond-breaking rules on the parent SMILES. Single bonds between heavy atoms only. Default: no ring/aromatic bond breaks, min 2 heavy atoms per fragment, ≤2 bond breaks.
+      {/* Step 5: Recombination */}
+      <Section title="四、Step 5: 位点约束重组">
+        <Table>
+          <thead><tr><Th>允许配对</Th><Th>机制</Th></tr></thead>
+          <tbody>
+            <Tr v1="F⁻ + G⁻" v2="dehydrogenative_coupling" />
+            <Tr v1="F⁰ + G⁻" v2="single_dehydrogenative_recombination" />
+            <Tr v1="F⁺ + G⁻" v2="h_transfer_recombination" />
+          </tbody>
+        </Table>
+        <p className="text-xs text-gray-400 mt-2">
+          位点兼容: &#123;C,C&#125;, &#123;C,O&#125;, &#123;C,N&#125;, &#123;C,S&#125;, &#123;Si,O&#125; · 最多 5000 对 · 质量 &lt; 2000 Da
         </p>
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-2 text-xs">
-          <RuleBadge label="Parent" desc="Root molecule" />
-          <RuleBadge label="Fragment" desc="Bond breaks (≤2)" />
-          <RuleBadge label="H-Shift" desc="±1 H transfer" />
-          <RuleBadge label="Recombination" desc="Site-constrained pairs" />
-        </div>
-        <div className="mt-2 text-xs text-gray-400">
-          Ionization: e⁻ loss/gain · H⁺ addition/removal · max 300 fragment nodes
-        </div>
-      </div>
+      </Section>
 
-      {/* Layer 2 — NEW in v4.0 */}
-      <div className="bg-white rounded-xl border border-emerald-200 p-5">
-        <div className="flex items-center gap-2 mb-3">
-          <Scissors size={18} className="text-emerald-600" />
-          <h3 className="font-semibold text-gray-800">Layer 2 — Bond-Type-Aware Fragmentation</h3>
-          <span className="text-xs bg-emerald-100 text-emerald-700 px-2 py-0.5 rounded font-medium">v4.0 NEW</span>
+      {/* Step 6: Feature Rules */}
+      <Section title="五、Step 6: Feature Rules (15 个规则包)">
+        <SubTitle>8 个结构特征检测</SubTitle>
+        <Table>
+          <thead><tr><Th>特征</Th><Th>SMARTS / 方法</Th></tr></thead>
+          <tbody>
+            <Tr v1="fluorocarbon_motif" v2="C-F 键存在" />
+            <Tr v1="aromatic_ring" v2="任何芳香原子" />
+            <Tr v1="sulfur_aromatic" v2="S 邻接芳香环" />
+            <Tr v1="acetal_or_ether" v2="O-C-O 或 C-O-C" />
+            <Tr v1="carbonyl" v2="[#6]=[OX1]" />
+            <Tr v1="imide" v2="#7;D3([#6]=[OX1])([#6]=[OX1])" />
+            <Tr v1="amide" v2="[#7;D3]#6(=[OX1])" />
+            <Tr v1="cyclic_aliphatic" v2="非芳香环存在" />
+          </tbody>
+        </Table>
+
+        <SubTitle className="mt-4">15 个规则包</SubTitle>
+        <div className="overflow-x-auto">
+          <Table>
+            <thead><tr>
+              <Th>#</Th><Th>规则包</Th><Th>触发条件</Th><Th>公式数</Th><Th>约束</Th>
+            </tr></thead>
+            <tbody>
+              <Tr v1="1" v2="fluorocarbon" v3="C-F 键" v4="17" v5="strict=False" />
+              <Tr v1="2" v2="hydrofluorocarbon" v3="C-F + C-H 键" v4="8" v5="strict=False" />
+              <Tr v1="3" v2="acetal_oxonium" v3="acetal_or_ether" v4="21" v5="strict=False" />
+              <Tr v1="4" v2="aromatic_stable" v3="aromatic_ring" v4="5" v5="strict=True" />
+              <Tr v1="5" v2="sulfur_aromatic" v3="sulfur_aromatic" v4="7" v5="strict=True" />
+              <Tr v1="6" v2="carbonyl" v3="carbonyl" v4="11" v5="strict=True" />
+              <Tr v1="7" v2="imide" v3="imide" v4="6" v5="strict=True" />
+              <Tr v1="8" v2="amide" v3="amide" v4="6" v5="strict=True" />
+              <Tr v1="9" v2="cyclic_aliphatic" v3="cyclic_aliphatic" v4="22" v5="strict=True" />
+              <Tr v1="10" v2="hydrocarbon_small" v3="任何含 C" v4="30" v5="strict=True" />
+              <Tr v1="11" v2="oxygenated_small" v3="含 O" v4="16" v5="strict=True" />
+              <Tr v1="12" v2="nitrogenated_small" v3="含 N" v4="8" v5="strict=True" />
+              <Tr v1="13" v2="sulfurated_small" v3="含 S" v4="7" v5="strict=True" />
+              <Tr v1="14" v2="siloxane_small" v3="含 Si" v4="23" v5="strict=False" />
+              <Tr v1="15" v2="acetate_ethylene" v3="carbonyl + 无芳香" v4="9" v5="strict=False" />
+            </tbody>
+          </Table>
         </div>
-        <p className="text-sm text-gray-600 mb-3">
-          Per-bond-type selective relaxation of conservative rules. Each bond type has chemical justifications for when ring/aromatic/single-atom exceptions are allowed. Every fragment now answers: "which bond broke and why?"
+      </Section>
+
+      {/* Step 7: Ionization */}
+      <Section title="六、Step 7: 电离变体 (4 种)">
+        <Table>
+          <thead><tr>
+            <Th>操作</Th><Th>ion_mode</Th><Th>charge</Th><Th>公式变化</Th><Th>H-shift</Th>
+          </tr></thead>
+          <tbody>
+            <Tr v1="electron_loss" v2="positive" v3="+1" v4="不变" v5="0" />
+            <Tr v1="electron_gain" v2="negative" v3="−1" v4="不变" v5="0" />
+            <Tr v1="protonation" v2="positive" v3="+1" v4="+H" v5="+1" />
+            <Tr v1="deprotonation" v2="negative" v3="−1" v4="−H" v5="−1" />
+          </tbody>
+        </Table>
+        <p className="text-xs text-gray-400 mt-2">
+          fragment_h_shift 节点仅接 electron_loss/gain。parent 电离有额外 penalty (−0.18)。
         </p>
-        <div className="space-y-2 text-sm">
-          <BondRow type="C-S" ring={true} aromatic={true} singleAtom={true}
-            conditions="—" materials="PPS" impact="+11 nodes, +11pp neg recall"
-            desc="Aromatic C-S bond in PPS now breakable. S⁻/HS⁻ fragments gain structural traceability." />
-          <BondRow type="Si-O" ring={true} aromatic={false} singleAtom={true}
-            conditions="—" materials="PDMS" impact="+48 nodes, +3pp recall"
-            desc="Siloxane backbone Si-O bonds breakable inside rings." />
-          <BondRow type="C-N" ring={true} aromatic={false} singleAtom={false}
-            conditions="—" materials="PI" impact="+127 nodes"
-            desc="Imide ring C-N bonds open. Saturates PI recall (already 78-86%)." />
-          <BondRow type="C-O (ester)" ring={true} aromatic={false} singleAtom={false}
-            conditions="require_carbonyl" materials="PEI" impact="+122 nodes"
-            desc="Carbonyl-adjacent C-O in anhydride rings breakable. PEI recall at ceiling." />
-          <BondRow type="C-F" ring={false} aromatic={false} singleAtom={true}
-            conditions="—" materials="PTFE/PVDF/ETFE/FEP/PFA" impact="+3 each"
-            desc="F⁻ now structurally traceable via C-F bond break path." />
-        </div>
-        <div className="mt-3 p-3 bg-emerald-50 rounded-lg text-xs text-emerald-700">
-          <strong>Total impact:</strong> +311 nodes across 7 materials. 5 empirical Layer 4 rules replaced with structurally traceable Layer 2 paths. Non-target materials: zero impact.
-        </div>
-      </div>
+      </Section>
 
-      {/* Layer 3 */}
-      <div className="bg-white rounded-xl border border-gray-200 p-5">
-        <h3 className="font-semibold text-gray-800 mb-3 flex items-center gap-2">
-          <GitBranch size={18} className="text-amber-600" /> Layer 3 — Structure Feature & Pattern Rules
-        </h3>
-        <p className="text-sm text-gray-600 mb-3">
-          RDKit substructure-triggered rule packs. Feature detectors now include carbonyl, imide, amide, and cyclic_aliphatic (v4.2+).
-        </p>
-        <div className="space-y-1.5 text-sm">
-          <FeatureRow name="fluorocarbon_fragmentation" trigger="C-F bonds" materials="PTFE, PVDF, ETFE, FEP, PFA" />
-          <FeatureRow name="acetal_oxonium_series" trigger="O-C-O acetal motif" materials="POMC, POMH" />
-          <FeatureRow name="aromatic_stable_fragments" trigger="Aromatic rings" materials="PET, PEEK, PEI, PEN, PI, Nomex, PPS" />
-          <FeatureRow name="sulfur_aromatic_fragments" trigger="Aromatic S" materials="PPS" />
-          <FeatureRow name="carbonyl_fragmentation" trigger="C=O carbonyl" materials="PET, PEEK, PEI, PI, Nomex, EVA" />
-          <FeatureRow name="imide_fragmentation" trigger="Imide O=C-N-C=O" materials="PI, PEI" />
-          <FeatureRow name="amide_fragmentation" trigger="Amide N-C=O" materials="Nomex" />
-          <FeatureRow name="cyclic_aliphatic_fragments" trigger="Non-aromatic rings" materials="COC" />
-          <FeatureRow name="acetate_ethylene_fragments" trigger="Carbonyl + NOT aromatic" materials="EVA" />
-        </div>
-      </div>
+      {/* Step 8: Scoring */}
+      <Section title="七、Step 8: 公式层评分">
+        <p className="text-sm text-gray-700 mb-2 font-medium">单节点 path_score:</p>
+        <pre className="text-xs font-mono text-gray-600 bg-gray-50 rounded-lg p-3 mb-3 overflow-x-auto">
+{`path_score = 0.60 × structure_score + 0.40 × ionization_score
+           − 0.03 × |h_shift|
+           − 0.06 (if recombination)
+           + mass_prior (+0.05 if 25–200 Da, −0.02/100Da if >500)`}</pre>
 
-      {/* Layer 4 — Reduced from v3.0 */}
-      <div className="bg-white rounded-xl border border-gray-200 p-5">
-        <h3 className="font-semibold text-gray-800 mb-3 flex items-center gap-2">
-          <Zap size={18} className="text-purple-600" /> Layer 4 — Residual Empirical Fragments
-        </h3>
-        <p className="text-sm text-gray-600 mb-3">
-          Remaining empirical rules not yet covered by bond-type-aware or feature rules. Element-gated. Significantly reduced from v3.0 (5 rules replaced by Layer 2 structural paths).
-        </p>
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-2 text-xs">
-          <RuleBadge label="hydrocarbon_small" desc="C₂–C₆ (C-gated)" />
-          <RuleBadge label="oxygenated_small" desc="C₁–C₃ (O-gated)" />
-          <RuleBadge label="nitrogenated_small" desc="C₁–C₃ (N-gated)" />
-          <RuleBadge label="sulfurated_small" desc="Thio fragments (S-gated)" />
-          <RuleBadge label="siloxane_small" desc="Si₁–₂ (Si-gated, PDMS)" />
-        </div>
-        <div className="mt-3 text-xs text-gray-400">
-          Still empirical: hydrocarbon C2-C6 (needs 3+ C-C breaks), oxygen migration, multi-step F loss, POM oligomer fragments.
-        </div>
-      </div>
+        <p className="text-sm text-gray-700 mb-2 font-medium">structure_score (按 generation_type):</p>
+        <Table>
+          <thead><tr><Th>generation_type</Th><Th>base</Th><Th>rule_pack 覆盖</Th></tr></thead>
+          <tbody>
+            <Tr v1="parent" v2="0.45" v3="—" />
+            <Tr v1="fragment" v2="0.72" v3="—" />
+            <Tr v1="fragment_h_shift" v2="0.68" v3="—" />
+            <Tr v1="recombination" v2="0.64" v3="—" />
+            <Tr v1="feature_rule" v2="0.70" v3="HC=0.48, O/N/S=0.42, siloxane=0.42" />
+          </tbody>
+        </Table>
 
-      {/* Diagnostic Scoring */}
-      <div className="bg-white rounded-xl border border-gray-200 p-5">
-        <h3 className="font-semibold text-gray-800 mb-3 flex items-center gap-2">
-          <Target size={18} className="text-indigo-600" /> Diagnostic Scoring (v2.9→v4.3)
-        </h3>
-        <p className="text-sm text-gray-600 mb-3">
-          Five-tier evidence tagging. v4.3 adds per-rule-pack structure score overrides, allowing bond-type-aware fragments to receive appropriate scores distinct from conservative fragments.
-        </p>
-        <div className="space-y-2 text-sm">
-          <TagRow tag="validated_diagnostic" score="0.80" color="bg-green-100 text-green-800"
-            desc="≤3 materials + manual annotation confirmed. Formula-driven identification." />
-          <TagRow tag="validated_generic" score="0.50" color="bg-blue-100 text-blue-800"
-            desc="4+ materials + annotation confirmed. Shared but validated." />
-          <TagRow tag="feature_supported_candidate" score="0.30" color="bg-amber-100 text-amber-800"
-            desc="Rule-supported (Layer 2 or 3), unvalidated against manual labels." />
-          <TagRow tag="generic_hydrocarbon_background" score="0.00" color="bg-red-100 text-red-800"
-            desc="13+ materials, pure HC. Cross-material background noise." />
-          <TagRow tag="structural_candidate_only" score="0.10" color="bg-gray-100 text-gray-600"
-            desc="RDKit-only candidate. Hidden by default. Now reduced via Layer 2 traceability." />
-        </div>
-      </div>
+        <p className="text-sm text-gray-700 mt-3 mb-2 font-medium">formula_score (去重后):</p>
+        <pre className="text-xs font-mono text-gray-600 bg-gray-50 rounded-lg p-3 overflow-x-auto">
+{`formula_score = best_path_score
+              + path_support_bonus    (2路+0.05, 3路+0.08, 4路+0.10)
+              + mechanism_diversity   (2种+0.05, 3种+0.08)
+              + source_fragment_diversity (2源+0.04, 3源+0.07)`}</pre>
+      </Section>
 
-      {/* Scoring */}
-      <div className="bg-white rounded-xl border border-gray-200 p-5">
-        <h3 className="font-semibold text-gray-800 mb-3 flex items-center gap-2">
-          <Shield size={18} className="text-gray-600" /> Scoring Model (v4.3)
-        </h3>
-        <div className="text-sm text-gray-600 space-y-1">
-          <div><code className="bg-gray-100 px-1 rounded text-xs">formula_score = path_score + path_bonus + mechanism_bonus + fragment_bonus</code></div>
-          <div className="ml-4 text-xs text-gray-400">path_score = 0.60 × structure_score + 0.40 × ionization_score − penalties + mass_prior</div>
-          <div className="ml-4 text-xs text-gray-400">structure_score = base(rule_pack) − 0.08 × n_broken_bonds</div>
-          <div className="mt-2 text-xs text-gray-500">
-            v4.3: <code className="bg-emerald-50 px-1 rounded">rule_pack_structure_scores</code> allow per-rule-pack base overrides.
-            Bond-type-aware fragments get distinct scores from conservative fragments.
-          </div>
-        </div>
-      </div>
-
-      {/* Evidence Strategy */}
-      <div className="bg-white rounded-xl border border-gray-200 p-5">
-        <h3 className="font-semibold text-gray-800 mb-3">Material Identification Strategy</h3>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-3 text-sm">
-          <StrategyCard type="formula-driven" desc="Strong validated_diagnostic formulas. Material identified by individual diagnostic peaks." materials="PDMS" />
-          <StrategyCard type="pattern-driven" desc="No diagnostic single formulas, but fragment pattern combination is unique." materials="POMC, POMH" />
-          <StrategyCard type="mixed" desc="Validated formulas + pattern evidence. Combined approach." materials="COC, EVA, PET, PEEK, PEI, PEN, PI, Nomex, PPS" />
-          <StrategyCard type="validation-limited" desc="Only feature_supported candidates. Insufficient for standalone ID." materials="PTFE, PVDF, ETFE, FEP, PFA" />
-        </div>
-      </div>
-
-      {/* v4.3 Changelog */}
-      <div className="bg-white rounded-xl border border-gray-200 p-5">
-        <h3 className="font-semibold text-gray-800 mb-3">v3.0 → v4.3 Changelog</h3>
-        <div className="space-y-2 text-sm">
-          <ChangeRow version="v4.0-S" desc="C-S bond-type-aware: allow ring + aromatic break + single-atom S. PPS +11 nodes, +11pp neg recall." />
-          <ChangeRow version="v4.0-SiO" desc="Si-O bond-type-aware: allow ring break + single-atom. PDMS +48 nodes, +3pp recall." />
-          <ChangeRow version="v4.0-CN" desc="C-N bond-type-aware: allow ring break. PI +127 nodes (imide ring opening)." />
-          <ChangeRow version="v4.2" desc="C-O(ester) bond-type-aware: carbonyl-adjacent break. PEI +122 nodes." />
-          <ChangeRow version="v4.3" desc="C-F bond-type-aware: single-atom F structural traceability. All fluoropolymers +3 each." />
-          <ChangeRow version="v4.2+" desc="New feature detectors: carbonyl, imide, amide, cyclic_aliphatic. Per-rule-pack scoring." />
-        </div>
-      </div>
+      {/* Post-processing */}
+      <Section title="八、后处理层 (不参与生成，仅用于报告)">
+        <Table>
+          <thead><tr><Th>层</Th><Th>模块</Th><Th>功能</Th></tr></thead>
+          <tbody>
+            <Tr v1="诊断标签" v2="specificity.py" v3="5 标签分类 + 跨材料频率" />
+            <Tr v1="模式诊断" v2="pattern_diagnostics.py" v3="POM pattern score" />
+            <Tr v1="证据整合" v2="evidence_report.py" v3="v3.0 五层报告" />
+            <Tr v1="评分校准" v2="score_calibration.py" v3="v5.1 evidence-prior (实验性)" />
+            <Tr v1="四指标评价" v2="evaluation_annotated.py" v3="0510 标注公式匹配" />
+            <Tr v1="频谱评价" v2="evaluation_v2.py" v3="m/z 容差匹配" />
+            <Tr v1="错误归因" v2="error_attribution.py" v3="missing vs ranking 分类" />
+          </tbody>
+        </Table>
+      </Section>
     </div>
   )
 }
 
-function StepBox({ children, color }: { children: React.ReactNode; color: string }) {
+/* ── Reusable layout components ── */
+
+function Section({ title, children }: { title: string; children: React.ReactNode }) {
   return (
-    <div className={`${color} px-3 py-2 rounded-lg text-center leading-tight`}>
+    <div className="bg-white rounded-xl border border-gray-200 p-5">
+      <h3 className="font-semibold text-gray-800 mb-3">{title}</h3>
       {children}
     </div>
   )
 }
 
-function Arrow() {
-  return <span className="text-gray-300 mx-1">→</span>
+function SubTitle({ children, className = '' }: { children: React.ReactNode; className?: string }) {
+  return <p className={`text-sm font-medium text-gray-600 mb-2 ${className}`}>{children}</p>
 }
 
-function RuleBadge({ label, desc }: { label: string; desc: string }) {
+function Table({ children }: { children: React.ReactNode }) {
   return (
-    <div className="bg-gray-50 rounded-lg p-2">
-      <div className="font-medium text-gray-700">{label}</div>
-      <div className="text-gray-400">{desc}</div>
-    </div>
+    <table className="w-full text-sm border-collapse">
+      {children}
+    </table>
   )
 }
 
-function FeatureRow({ name, trigger, materials }: { name: string; trigger: string; materials: string }) {
+function Th({ children }: { children: React.ReactNode }) {
   return (
-    <div className="flex items-start gap-3 py-1 border-b border-gray-50">
-      <code className="text-xs font-mono text-amber-700 bg-amber-50 px-1.5 py-0.5 rounded shrink-0 w-52">{name}</code>
-      <span className="text-xs text-gray-500 w-52 shrink-0">{trigger}</span>
-      <span className="text-xs text-gray-400">{materials}</span>
-    </div>
+    <th className="text-left text-xs font-medium text-gray-500 bg-gray-50 px-2 py-1.5 border-b border-gray-200 first:rounded-l last:rounded-r">
+      {children}
+    </th>
   )
 }
 
-function BondRow({ type, ring, aromatic, singleAtom, conditions, materials, impact, desc }: {
-  type: string; ring: boolean; aromatic: boolean; singleAtom: boolean; conditions: string; materials: string; impact: string; desc: string
+function Tr({ v1, v2, v3, v4, v5, green }: {
+  v1: string; v2?: string; v3?: string; v4?: string; v5?: string; green?: boolean
 }) {
-  const bool = (v: boolean) => v
-    ? <span className="text-green-600 font-medium">✓</span>
-    : <span className="text-gray-300">—</span>
   return (
-    <div className="border border-gray-100 rounded-lg p-3">
-      <div className="flex items-center gap-3 mb-1">
-        <code className="text-sm font-mono font-semibold text-emerald-700 w-24">{type}</code>
-        <span className="text-xs text-gray-500">
-          Ring:{bool(ring)} Aro:{bool(aromatic)} 1-Atom:{bool(singleAtom)}
-          {conditions !== '—' && <span className="ml-2 text-emerald-600">[{conditions}]</span>}
-        </span>
-        <span className="text-xs text-gray-400 ml-auto font-mono">{materials}</span>
-      </div>
-      <div className="flex items-center gap-3 text-xs">
-        <span className="text-emerald-600 font-medium">{impact}</span>
-        <span className="text-gray-400">{desc}</span>
-      </div>
-    </div>
+    <tr className={`border-b border-gray-100 ${green ? 'bg-green-50/30' : ''}`}>
+      <Td mono={!green}>{v1}</Td>
+      {v2 !== undefined && <Td>{v2}</Td>}
+      {v3 !== undefined && <Td>{v3}</Td>}
+      {v4 !== undefined && <Td>{v4}</Td>}
+      {v5 !== undefined && <Td mono>{v5}</Td>}
+    </tr>
   )
 }
 
-function TagRow({ tag, score, color, desc }: { tag: string; score: string; color: string; desc: string }) {
+function Td({ children, mono }: { children: React.ReactNode; mono?: boolean }) {
   return (
-    <div className="flex items-start gap-3 py-1.5 border-b border-gray-50">
-      <span className={`text-xs px-1.5 py-0.5 rounded font-medium shrink-0 w-60 ${color}`}>{tag.replace(/_/g, ' ')}</span>
-      <span className="text-xs font-mono text-gray-500 w-10 shrink-0">{score}</span>
-      <span className="text-xs text-gray-600">{desc}</span>
-    </div>
-  )
-}
-
-function StrategyCard({ type, desc, materials }: { type: string; desc: string; materials: string }) {
-  return (
-    <div className="border rounded-lg p-3">
-      <div className="font-medium text-sm capitalize mb-1">{type.replace(/-/g, ' ')}</div>
-      <div className="text-xs text-gray-500 mb-1">{desc}</div>
-      <div className="text-xs text-gray-400 font-mono">{materials}</div>
-    </div>
-  )
-}
-
-function ChangeRow({ version, desc }: { version: string; desc: string }) {
-  return (
-    <div className="flex items-start gap-3 py-1">
-      <span className="text-xs font-mono font-medium text-emerald-700 bg-emerald-50 px-1.5 py-0.5 rounded shrink-0 w-24 text-center">{version}</span>
-      <span className="text-xs text-gray-600">{desc}</span>
-    </div>
+    <td className={`px-2 py-1.5 text-xs ${mono ? 'font-mono' : ''} text-gray-700`}>
+      {children}
+    </td>
   )
 }
