@@ -123,7 +123,7 @@ evaluation_v2:
   match_da: 0.03
   match_ppm: 50
   top_n: 50
-  min_main_mz: 25.0
+  min_main_mz: 10.0
   contaminants:
     positive:
       - {label: "Na+", mz: 22.9898, tolerance_da: 0.03}

@@ -95,7 +95,11 @@ def _match_spectrum_file(file_path: Path, material_id: str, db: Session) -> dict
         intensity = float(peak["intensity"])
         category, label, included = classify_peak(mz, ion_mode, cfg)
 
-        if included and not material_network_filtered.empty:
+        # Contaminants and low-mass: match anyway but flag as suspect
+        suspect = category in ("contaminant", "low_mass_background")
+        do_match = included or suspect
+
+        if do_match and not material_network_filtered.empty:
             match_result = _match_peak(mz, material_network_filtered, cfg)
         else:
             match_result = {
@@ -111,7 +115,8 @@ def _match_spectrum_file(file_path: Path, material_id: str, db: Session) -> dict
             "intensity": intensity,
             "category": category,
             "category_label": label,
-            "included": included,
+            "included": included or suspect,  # suspect peaks are "included" for recall calc
+            "suspect": suspect,
             "matched": match_result["matched"],
             "matched_formula": match_result["matched_formula"],
             "mass_error_da": round(float(match_result.get("matched_mass_error_da", 0) or 0), 6),
@@ -120,7 +125,6 @@ def _match_spectrum_file(file_path: Path, material_id: str, db: Session) -> dict
         })
 
         if match_result["matched"]:
-            # Get diagnostic info from DB
             f = next((x for x in formulas if x.formula == match_result["matched_formula"] and x.ion_mode == ion_mode), None)
             matched.append({
                 "mz": round(mz, 4),
@@ -134,12 +138,14 @@ def _match_spectrum_file(file_path: Path, material_id: str, db: Session) -> dict
                 "diagnostic_tag": f.diagnostic_tag if f else "",
                 "generation_types": f.generation_types if f else "",
                 "representative_path": f.representative_path if f else "",
+                "suspect": suspect,
             })
-        elif included:
+        elif included or suspect:
             unmatched.append({
                 "mz": round(mz, 4),
                 "intensity": intensity,
                 "reason": "no_match",
+                "suspect": suspect,
             })
 
     matched.sort(key=lambda x: -x["formula_score"])
