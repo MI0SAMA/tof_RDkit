@@ -1,316 +1,301 @@
 export default function AlgorithmPage() {
   return (
-    <div className="space-y-6 max-w-5xl">
+    <div className="space-y-5 max-w-4xl">
       <div>
         <h2 className="text-2xl font-bold text-gray-900">Algorithm Reference</h2>
-        <p className="text-sm text-gray-500 mt-1">TOF-SIMS Formula Network v5.1 — complete pipeline documentation</p>
+        <p className="text-sm text-gray-500 mt-1">TOF-SIMS Formula Network v5.1 — pipeline documentation</p>
       </div>
 
-      {/* Main Flow */}
-      <Section title="一、主流程 (network_v2.py)">
-        <pre className="text-xs font-mono text-gray-700 bg-gray-50 rounded-lg p-4 overflow-x-auto leading-relaxed">{`
-  SMILES 输入
+      {/* 1. Main Flow */}
+      <Section title="1. Main Pipeline (network_v2.py)">
+        <pre className="text-[11px] font-mono text-gray-600 bg-gray-50 rounded-lg p-4 overflow-x-auto leading-relaxed">
+{`SMILES Input
   │
-  ├─ Step 1: RDKit 解析分子 (AddHs)
-  ├─ Step 2: 生成母体节点 (parent neutral)
-  ├─ Step 3: 枚举可断裂键 → 生成 fragment neutral 节点
-  │           └─ v4.0 键型感知规则 (5 种)
-  ├─ Step 4: Fragment H-shift (±H)
-  ├─ Step 5: 位点约束重组 (A+B 组合)
-  ├─ Step 6: Feature rule 候选生成
-  ├─ Step 7: 电离变体 (4 种)
-  ├─ Step 8: Formula 汇总 (去重 + 多路径加分)
-  └─ 输出: nodes.csv / edges.csv / formula_summary.csv / .json`}</pre>
+  ├─ Step 1: RDKit Parse + AddHs
+  ├─ Step 2: Parent Node (neutral)
+  ├─ Step 3: Bond Enumeration → Fragment Nodes
+  │           └─ v4.0 bond-type-aware (5 types)
+  ├─ Step 4: Fragment H-Shift (±H)
+  ├─ Step 5: Site-Constrained Recombination (A+B pairs)
+  ├─ Step 6: Feature Rule Candidate Generation
+  ├─ Step 7: Ionization Variants (4 types)
+  ├─ Step 8: Formula Aggregation (dedup + multi-path bonus)
+  └─ Output: nodes.csv / edges.csv / formula_summary.csv / .json`}</pre>
       </Section>
 
-      {/* Step 3: Bond Break Rules */}
-      <Section title="二、Step 3: 断键规则 (fragmentation.py)">
-        <SubTitle>全局默认</SubTitle>
-        <ul className="text-sm text-gray-600 space-y-0.5 ml-4 mb-3">
-          <li>• 仅单键、仅重原子-重原子</li>
-          <li>• 禁环内键、禁芳香键</li>
-          <li>• 最多 2 键断裂 · 每碎片最少 2 个重原子</li>
-          <li>• 单材料最多 20,000 个碎片</li>
-        </ul>
-
-        <SubTitle>v4.0 键型感知覆盖 (5 种)</SubTitle>
-        <Table>
-          <thead><tr>
-            <Th>键型</Th><Th>允许环内断裂</Th><Th>允许芳香断裂</Th><Th>允许单原子</Th><Th>受影响材料</Th>
-          </tr></thead>
-          <tbody>
-            <Tr v1="C-S" v2="✓" v3="✓" v4="✓" v5="PPS" green />
-            <Tr v1="Si-O" v2="✓" v3="—" v4="✓" v5="PDMS" green />
-            <Tr v1="C-N" v2="✓" v3="—" v4="—" v5="PI" green />
-            <Tr v1="C-O (ester)" v2="✓" v3="—" v4="—" v5="PEI" green />
-            <Tr v1="C-F" v2="—" v3="—" v4="✓" v5="PTFE/PVDF/ETFE/FEP/PFA" green />
-          </tbody>
-        </Table>
-      </Section>
-
-      {/* Step 4: H-shift */}
-      <Section title="三、Step 4: Fragment H-shift">
-        <Table>
-          <thead><tr><Th>操作</Th><Th>配置</Th></tr></thead>
-          <tbody>
-            <Tr v1="fragment − H" v2="shifts: [-1, 1]" />
-            <Tr v1="fragment + H" v2="enabled: true" />
-          </tbody>
-        </Table>
-        <p className="text-xs text-gray-400 mt-2">
-          H-shift 节点 generation_type = fragment_h_shift，仅接 electron_loss/gain 电离，不接 protonation/deprotonation。
-        </p>
-      </Section>
-
-      {/* Step 5: Recombination */}
-      <Section title="四、Step 5: 位点约束重组">
-        <Table>
-          <thead><tr><Th>允许配对</Th><Th>机制</Th></tr></thead>
-          <tbody>
-            <Tr v1="F⁻ + G⁻" v2="dehydrogenative_coupling" />
-            <Tr v1="F⁰ + G⁻" v2="single_dehydrogenative_recombination" />
-            <Tr v1="F⁺ + G⁻" v2="h_transfer_recombination" />
-          </tbody>
-        </Table>
-        <p className="text-xs text-gray-400 mt-2">
-          位点兼容: &#123;C,C&#125;, &#123;C,O&#125;, &#123;C,N&#125;, &#123;C,S&#125;, &#123;Si,O&#125; · 最多 5000 对 · 质量 &lt; 2000 Da
-        </p>
-      </Section>
-
-      {/* Step 6: Feature Rules */}
-      <Section title="五、Step 6: Feature Rules (15 个规则包)">
-        <SubTitle>8 个结构特征检测</SubTitle>
-        <Table>
-          <thead><tr><Th>特征</Th><Th>SMARTS / 方法</Th></tr></thead>
-          <tbody>
-            <Tr v1="fluorocarbon_motif" v2="C-F 键存在" />
-            <Tr v1="aromatic_ring" v2="任何芳香原子" />
-            <Tr v1="sulfur_aromatic" v2="S 邻接芳香环" />
-            <Tr v1="acetal_or_ether" v2="O-C-O 或 C-O-C" />
-            <Tr v1="carbonyl" v2="[#6]=[OX1]" />
-            <Tr v1="imide" v2="#7;D3([#6]=[OX1])([#6]=[OX1])" />
-            <Tr v1="amide" v2="[#7;D3]#6(=[OX1])" />
-            <Tr v1="cyclic_aliphatic" v2="非芳香环存在" />
-          </tbody>
-        </Table>
-
-        <SubTitle className="mt-4">15 个规则包</SubTitle>
-        <div className="overflow-x-auto">
-          <Table>
-            <thead><tr>
-              <Th>#</Th><Th>规则包</Th><Th>触发条件</Th><Th>公式数</Th><Th>约束</Th>
-            </tr></thead>
-            <tbody>
-              <Tr v1="1" v2="fluorocarbon" v3="C-F 键" v4="17" v5="strict=False" />
-              <Tr v1="2" v2="hydrofluorocarbon" v3="C-F + C-H 键" v4="8" v5="strict=False" />
-              <Tr v1="3" v2="acetal_oxonium" v3="acetal_or_ether" v4="21" v5="strict=False" />
-              <Tr v1="4" v2="aromatic_stable" v3="aromatic_ring" v4="5" v5="strict=True" />
-              <Tr v1="5" v2="sulfur_aromatic" v3="sulfur_aromatic" v4="7" v5="strict=True" />
-              <Tr v1="6" v2="carbonyl" v3="carbonyl" v4="11" v5="strict=True" />
-              <Tr v1="7" v2="imide" v3="imide" v4="6" v5="strict=True" />
-              <Tr v1="8" v2="amide" v3="amide" v4="6" v5="strict=True" />
-              <Tr v1="9" v2="cyclic_aliphatic" v3="cyclic_aliphatic" v4="22" v5="strict=True" />
-              <Tr v1="10" v2="hydrocarbon_small" v3="任何含 C" v4="30" v5="strict=True" />
-              <Tr v1="11" v2="oxygenated_small" v3="含 O" v4="16" v5="strict=True" />
-              <Tr v1="12" v2="nitrogenated_small" v3="含 N" v4="8" v5="strict=True" />
-              <Tr v1="13" v2="sulfurated_small" v3="含 S" v4="7" v5="strict=True" />
-              <Tr v1="14" v2="siloxane_small" v3="含 Si" v4="23" v5="strict=False" />
-              <Tr v1="15" v2="acetate_ethylene" v3="carbonyl + 无芳香" v4="9" v5="strict=False" />
-            </tbody>
-          </Table>
+      {/* 2. Bond Break Rules */}
+      <Section title="2. Bond Break Rules (fragmentation.py)">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-3">
+          <div>
+            <h4 className="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-2">Global Defaults</h4>
+            <ul className="text-xs text-gray-600 space-y-0.5">
+              <li className="flex gap-2"><Dot /> Single bonds only, heavy-atom to heavy-atom</li>
+              <li className="flex gap-2"><Dot /> No ring bonds, no aromatic bonds</li>
+              <li className="flex gap-2"><Dot /> Max 2 bond breaks</li>
+              <li className="flex gap-2"><Dot /> Min 2 heavy atoms per fragment</li>
+              <li className="flex gap-2"><Dot /> Max 20,000 fragments per compound</li>
+            </ul>
+          </div>
+          <div>
+            <h4 className="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-2">v4.0 Bond-Type Overrides</h4>
+            <table className="w-full text-[11px]">
+              <thead>
+                <tr className="text-left text-gray-400 border-b">
+                  <th className="pb-1 font-medium">Bond</th><th className="pb-1 font-medium">Ring</th><th className="pb-1 font-medium">Aro</th><th className="pb-1 font-medium">1-Atom</th><th className="pb-1 font-medium">Materials</th>
+                </tr>
+              </thead>
+              <tbody>
+                <BondRow type="C-S" ring ring_aro atom materials="PPS" />
+                <BondRow type="Si-O" ring atom materials="PDMS" />
+                <BondRow type="C-N" ring materials="PI" />
+                <BondRow type="C-O (ester)" ring materials="PEI" />
+                <BondRow type="C-F" atom materials="PTFE / PVDF / ETFE / FEP / PFA" />
+              </tbody>
+            </table>
+          </div>
         </div>
       </Section>
 
-      {/* Step 7: Ionization */}
-      <Section title="六、Step 7: 电离变体 (4 种)">
-        <Table>
-          <thead><tr>
-            <Th>操作</Th><Th>ion_mode</Th><Th>charge</Th><Th>公式变化</Th><Th>H-shift</Th>
-          </tr></thead>
+      {/* 3. Fragment H-Shift */}
+      <Section title="3. Fragment H-Shift">
+        <div className="flex gap-8 items-start">
+          <KV k="Shifts" v="[-1, +1]" />
+          <KV k="H-shift nodes" v="generation_type = fragment_h_shift" />
+          <KV k="Ionization" v="electron_loss / electron_gain only (no protonation/deprotonation)" />
+        </div>
+      </Section>
+
+      {/* 4. Recombination */}
+      <Section title="4. Site-Constrained Recombination">
+        <table className="w-full max-w-lg text-xs">
+          <thead>
+            <tr className="text-left text-gray-400 border-b">
+              <th className="pb-1 font-medium">Pair</th><th className="pb-1 font-medium">Mechanism</th>
+            </tr>
+          </thead>
           <tbody>
-            <Tr v1="electron_loss" v2="positive" v3="+1" v4="不变" v5="0" />
-            <Tr v1="electron_gain" v2="negative" v3="−1" v4="不变" v5="0" />
-            <Tr v1="protonation" v2="positive" v3="+1" v4="+H" v5="+1" />
-            <Tr v1="deprotonation" v2="negative" v3="−1" v4="−H" v5="−1" />
+            <Tr a="F⁻ + G⁻" b="dehydrogenative_coupling" />
+            <Tr a="F⁰ + G⁻" b="single_dehydrogenative_recombination" />
+            <Tr a="F⁺ + G⁻" b="h_transfer_recombination" />
           </tbody>
-        </Table>
-        <p className="text-xs text-gray-400 mt-2">
-          fragment_h_shift 节点仅接 electron_loss/gain。parent 电离有额外 penalty (−0.18)。
+        </table>
+        <p className="text-[11px] text-gray-400 mt-2">
+          Site compatibility: &#123;C,C&#125; &#123;C,O&#125; &#123;C,N&#125; &#123;C,S&#125; &#123;Si,O&#125; · Max 5,000 pairs · Mass &lt; 2,000 Da
         </p>
       </Section>
 
-      {/* Step 8: Scoring */}
-      <Section title="七、Step 8: 公式层评分">
-        <p className="text-sm text-gray-700 mb-2 font-medium">单节点 path_score:</p>
-        <pre className="text-xs font-mono text-gray-600 bg-gray-50 rounded-lg p-3 mb-3 overflow-x-auto">
-{`path_score = 0.60 × structure_score + 0.40 × ionization_score
-           − 0.03 × |h_shift|
-           − 0.06 (if recombination)
-           + mass_prior (+0.05 if 25–200 Da, −0.02/100Da if >500)`}</pre>
-
-        <p className="text-sm text-gray-700 mb-2 font-medium">structure_score (按 generation_type):</p>
-        <Table>
-          <thead><tr><Th>generation_type</Th><Th>base</Th><Th>rule_pack 覆盖</Th></tr></thead>
-          <tbody>
-            <Tr v1="parent" v2="0.45" v3="—" />
-            <Tr v1="fragment" v2="0.72" v3="—" />
-            <Tr v1="fragment_h_shift" v2="0.68" v3="—" />
-            <Tr v1="recombination" v2="0.64" v3="—" />
-            <Tr v1="feature_rule" v2="0.70" v3="HC=0.48, O/N/S=0.42, siloxane=0.42" />
-          </tbody>
-        </Table>
-
-        <p className="text-sm text-gray-700 mt-3 mb-2 font-medium">formula_score (去重后):</p>
-        <pre className="text-xs font-mono text-gray-600 bg-gray-50 rounded-lg p-3 overflow-x-auto">
-{`formula_score = best_path_score
-              + path_support_bonus    (2路+0.05, 3路+0.08, 4路+0.10)
-              + mechanism_diversity   (2种+0.05, 3种+0.08)
-              + source_fragment_diversity (2源+0.04, 3源+0.07)`}</pre>
+      {/* 5. Feature Rules */}
+      <Section title="5. Feature Rules — 8 Detectors + 15 Rule Packs (feature_rules_v2.py)">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div>
+            <h4 className="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-2">Structure Feature Detectors</h4>
+            <table className="w-full text-[11px]">
+              <thead><tr className="text-left text-gray-400 border-b"><th className="pb-1 font-medium">Feature</th><th className="pb-1 font-medium">SMARTS / Method</th></tr></thead>
+              <tbody>
+                <Tr a="fluorocarbon_motif" b="C-F bond exists" />
+                <Tr a="aromatic_ring" b="Any aromatic atom" />
+                <Tr a="sulfur_aromatic" b="S adjacent to aromatic ring" />
+                <Tr a="acetal_or_ether" b="O-C-O or C-O-C" />
+                <Tr a="carbonyl" b="[#6]=[OX1]" />
+                <Tr a="imide" b="N(C=O)(C=O)" />
+                <Tr a="amide" b="N-C(=O)" />
+                <Tr a="cyclic_aliphatic" b="Non-aromatic ring" />
+              </tbody>
+            </table>
+          </div>
+          <div>
+            <h4 className="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-2">Rule Packs</h4>
+            <table className="w-full text-[11px]">
+              <thead><tr className="text-left text-gray-400 border-b"><th className="pb-1 font-medium">#</th><th className="pb-1 font-medium">Rule Pack</th><th className="pb-1 font-medium">Trigger</th><th className="pb-1 font-medium">N</th></tr></thead>
+              <tbody>
+                <Tr a="1" b="fluorocarbon" c="C-F bonds" d="17" />
+                <Tr a="2" b="hydrofluorocarbon" c="C-F + C-H" d="8" />
+                <Tr a="3" b="acetal_oxonium" c="acetal/ether" d="21" />
+                <Tr a="4" b="aromatic_stable" c="aromatic ring" d="5" />
+                <Tr a="5" b="sulfur_aromatic" c="aromatic S" d="7" />
+                <Tr a="6" b="carbonyl" c="C=O" d="11" />
+                <Tr a="7" b="imide" c="imide group" d="6" />
+                <Tr a="8" b="amide" c="amide group" d="6" />
+                <Tr a="9" b="cyclic_aliphatic" c="non-aromatic ring" d="22" />
+                <Tr a="10" b="hydrocarbon_small" c="any C" d="30" />
+                <Tr a="11" b="oxygenated_small" c="has O" d="16" />
+                <Tr a="12" b="nitrogenated_small" c="has N" d="8" />
+                <Tr a="13" b="sulfurated_small" c="has S" d="7" />
+                <Tr a="14" b="siloxane_small" c="has Si" d="23" />
+                <Tr a="15" b="acetate_ethylene" c="C=O + not aromatic" d="9" />
+              </tbody>
+            </table>
+          </div>
+        </div>
       </Section>
 
-      {/* v5.1 Scoring */}
-      <Section title="九、v5.1 Evidence-Prior 评分校准 (score_calibration.py)">
-        <p className="text-sm text-gray-600 mb-3">
-          v5.1 用无监督信号替代对 validated_diagnostic 的依赖，使所有材料（有/无标注）都有区分度。
+      {/* 6. Ionization */}
+      <Section title="6. Ionization Variants (4 types)">
+        <table className="w-full max-w-xl text-xs">
+          <thead><tr className="text-left text-gray-400 border-b"><th className="pb-1 font-medium">Operation</th><th className="pb-1 font-medium">Mode</th><th className="pb-1 font-medium">Charge</th><th className="pb-1 font-medium">Formula Δ</th><th className="pb-1 font-medium">H-Shift</th></tr></thead>
+          <tbody>
+            <Tr a="electron_loss" b="positive" c="+1" d="none" e="0" />
+            <Tr a="electron_gain" b="negative" c="−1" d="none" e="0" />
+            <Tr a="protonation" b="positive" c="+1" d="+H" e="+1" />
+            <Tr a="deprotonation" b="negative" c="−1" d="−H" e="−1" />
+          </tbody>
+        </table>
+        <p className="text-[11px] text-gray-400 mt-2">
+          fragment_h_shift nodes: electron_loss/gain only · parent ionization has extra penalty (−0.18)
         </p>
+      </Section>
 
-        <p className="text-sm text-gray-700 mb-2 font-medium">最终分数公式:</p>
-        <pre className="text-xs font-mono text-gray-600 bg-gray-50 rounded-lg p-3 mb-3 overflow-x-auto">
-{`v51_score = base_formula_score × 0.60
-          + traceability_score × 0.15   (结构路径质量)
-          + rule_reliability × 0.20     (规则来源可靠性)
-          + material_family_bonus × 0.10 (材料族特征匹配)
-          − complexity_penalty           (复杂度惩罚, 最多 −0.12)`}</pre>
+      {/* 7. Scoring */}
+      <Section title="7. Formula Scoring (Step 8)">
+        <div className="space-y-3">
+          <div>
+            <h4 className="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-1">Per-Node path_score</h4>
+            <CodeBlock>{`path_score = 0.60 × structure_score + 0.40 × ionization_score
+           − 0.03 × |h_shift| − 0.06 (if recombination)
+           + mass_prior (+0.05 for 25–200 Da, −0.02/100 Da if >500)`}</CodeBlock>
+          </div>
+          <div>
+            <h4 className="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-1">structure_score Base Values</h4>
+            <table className="w-full max-w-md text-xs">
+              <thead><tr className="text-left text-gray-400 border-b"><th className="pb-1 font-medium">Generation Type</th><th className="pb-1 font-medium">Base</th><th className="pb-1 font-medium">Rule Pack Override</th></tr></thead>
+              <tbody>
+                <Tr a="parent" b="0.45" c="—" />
+                <Tr a="fragment" b="0.72" c="—" />
+                <Tr a="fragment_h_shift" b="0.68" c="—" />
+                <Tr a="recombination" b="0.64" c="—" />
+                <Tr a="feature_rule" b="0.70" c="HC=0.48, O/N/S=0.42, siloxane=0.42" />
+              </tbody>
+            </table>
+          </div>
+          <div>
+            <h4 className="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-1">Final formula_score (after dedup)</h4>
+            <CodeBlock>{`formula_score = best_path_score
+              + path_support_bonus     (+0.05 / +0.08 / +0.10 for 2/3/4 paths)
+              + mechanism_diversity    (+0.05 / +0.08 for 2/3 types)
+              + fragment_diversity     (+0.04 / +0.07 for 2/3 sources)`}</CodeBlock>
+          </div>
+        </div>
+      </Section>
+
+      {/* 8. v5.1 Scoring */}
+      <Section title="8. v5.1 Evidence-Prior Scoring (score_calibration.py)">
+        <p className="text-xs text-gray-500 mb-3">
+          Replaces dependence on validated_diagnostic labels with unsupervised signals that work for all materials.
+        </p>
+        <CodeBlock>{`v51_score = base × 0.60 + traceability × 0.15 + rule_reliability × 0.20
+          + material_family × 0.10 − complexity_penalty (max −0.12)`}</CodeBlock>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-3">
           <div>
-            <SubTitle>Traceability (结构路径质量)</SubTitle>
-            <Table>
-              <thead><tr><Th>条件</Th><Th>分数</Th></tr></thead>
+            <h4 className="text-[11px] font-semibold text-gray-500 uppercase tracking-wider mb-1">Traceability</h4>
+            <table className="w-full text-[11px]">
+              <thead><tr className="text-left text-gray-400 border-b"><th className="pb-1 font-medium">Condition</th><th className="pb-1 font-medium">Score</th></tr></thead>
               <tbody>
-                <Tr v1="有 fragment 路径" v2="0.60" />
-                <Tr v1="仅有 feature_rule" v2="0.30" />
-                <Tr v1="仅有 recombination" v2="0.25" />
-                <Tr v1="无路径" v2="0.00" />
+                <Tr a="Has fragment path" b="0.60" />
+                <Tr a="Feature rule only" b="0.30" />
+                <Tr a="Recombination only" b="0.25" />
+                <Tr a="No path" b="0.00" />
               </tbody>
-            </Table>
+            </table>
           </div>
           <div>
-            <SubTitle>Rule Reliability (规则可靠性)</SubTitle>
-            <Table>
-              <thead><tr><Th>条件</Th><Th>分数</Th></tr></thead>
+            <h4 className="text-[11px] font-semibold text-gray-500 uppercase tracking-wider mb-1">Rule Reliability</h4>
+            <table className="w-full text-[11px]">
+              <thead><tr className="text-left text-gray-400 border-b"><th className="pb-1 font-medium">Condition</th><th className="pb-1 font-medium">Score</th></tr></thead>
               <tbody>
-                <Tr v1="validated_diagnostic" v2="1.00" />
-                <Tr v1="validated_generic" v2="0.85" />
-                <Tr v1="fragment + feature_rule" v2="0.75" />
-                <Tr v1="fragment only" v2="0.45" />
-                <Tr v1="feature_rule only" v2="0.35" />
-                <Tr v1="recombination" v2="0.30" />
+                <Tr a="validated_diagnostic" b="1.00" />
+                <Tr a="validated_generic" b="0.85" />
+                <Tr a="fragment + feature_rule" b="0.75" />
+                <Tr a="fragment only" b="0.45" />
+                <Tr a="feature_rule only" b="0.35" />
+                <Tr a="recombination" b="0.30" />
               </tbody>
-            </Table>
+            </table>
           </div>
         </div>
-
-        <SubTitle className="mt-4">Material-Family Profile</SubTitle>
-        <p className="text-xs text-gray-500 mb-2">
-          公式含 signature element → +0.04；含 signature + 匹配键型 → +0.08 (最高 +0.10)
-        </p>
-        <div className="overflow-x-auto">
-          <Table>
-            <thead><tr><Th>材料</Th><Th>Signature Elements</Th><Th>Priority Bonds</Th></tr></thead>
-            <tbody>
-              <Tr v1="PPS" v2="S" v3="C-S" />
-              <Tr v1="PDMS" v2="Si" v3="Si-O" />
-              <Tr v1="PI / Nomex" v2="N" v3="C-N" />
-              <Tr v1="PEI" v2="N, O" v3="C-O, C-N" />
-              <Tr v1="PET / PEN / PEEK" v2="O" v3="C-O" />
-              <Tr v1="PTFE / PVDF / ETFE / FEP / PFA" v2="F" v3="C-F" />
-              <Tr v1="POMC / POMH" v2="O" v3="C-O" />
-              <Tr v1="EVA" v2="O" v3="—" />
-              <Tr v1="COC" v2="—" v3="—" />
-            </tbody>
-          </Table>
-        </div>
-
-        <SubTitle className="mt-4">Complexity Penalty</SubTitle>
-        <ul className="text-xs text-gray-500 space-y-0.5 ml-4">
-          <li>• m/z &gt; 300 + 未验证 → −0.06</li>
-          <li>• m/z &gt; 200 + 未验证 → −0.03</li>
-          <li>• &gt;4 重原子 + 未验证 → −0.04</li>
-          <li>• C &gt;15 + 无结构路径 → −0.04</li>
-          <li>• Structural_only → rule_reliability × 0.7</li>
-          <li>• Generic_HC → rule_reliability × 0.5</li>
-        </ul>
       </Section>
 
-      {/* Post-processing */}
-      <Section title="十、后处理层 (不参与生成，仅用于报告)">
-        <Table>
-          <thead><tr><Th>层</Th><Th>模块</Th><Th>功能</Th></tr></thead>
+      {/* 9. Post-processing */}
+      <Section title="9. Post-Processing (reporting only, not used in generation)">
+        <table className="w-full text-xs">
+          <thead><tr className="text-left text-gray-400 border-b"><th className="pb-1 font-medium">Layer</th><th className="pb-1 font-medium">Module</th><th className="pb-1 font-medium">Function</th></tr></thead>
           <tbody>
-            <Tr v1="诊断标签" v2="specificity.py" v3="5 标签分类 + 跨材料频率" />
-            <Tr v1="模式诊断" v2="pattern_diagnostics.py" v3="POM pattern score" />
-            <Tr v1="证据整合" v2="evidence_report.py" v3="v3.0 五层报告" />
-            <Tr v1="评分校准" v2="score_calibration.py" v3="v5.1 evidence-prior (实验性)" />
-            <Tr v1="四指标评价" v2="evaluation_annotated.py" v3="0510 标注公式匹配" />
-            <Tr v1="频谱评价" v2="evaluation_v2.py" v3="m/z 容差匹配" />
-            <Tr v1="错误归因" v2="error_attribution.py" v3="missing vs ranking 分类" />
+            <Tr a="Diagnostic Tags" b="specificity.py" c="5-tier classification + cross-material frequency" />
+            <Tr a="Pattern Diagnostics" b="pattern_diagnostics.py" c="POM pattern scoring" />
+            <Tr a="Evidence Integration" b="evidence_report.py" c="v3.0 five-layer report" />
+            <Tr a="Score Calibration" b="score_calibration.py" c="v5.1 evidence-prior (experimental)" />
+            <Tr a="Annotation Evaluation" b="evaluation_annotated.py" c="0510 manual label matching" />
+            <Tr a="Spectrum Evaluation" b="evaluation_v2.py" c="m/z tolerance matching" />
+            <Tr a="Error Attribution" b="error_attribution.py" c="missing vs ranking classification" />
           </tbody>
-        </Table>
+        </table>
       </Section>
     </div>
   )
 }
 
-/* ── Reusable layout components ── */
+/* ── Components ── */
 
 function Section({ title, children }: { title: string; children: React.ReactNode }) {
   return (
     <div className="bg-white rounded-xl border border-gray-200 p-5">
-      <h3 className="font-semibold text-gray-800 mb-3">{title}</h3>
+      <h3 className="font-semibold text-gray-800 text-sm mb-3">{title}</h3>
       {children}
     </div>
   )
 }
 
-function SubTitle({ children, className = '' }: { children: React.ReactNode; className?: string }) {
-  return <p className={`text-sm font-medium text-gray-600 mb-2 ${className}`}>{children}</p>
-}
-
-function Table({ children }: { children: React.ReactNode }) {
+function CodeBlock({ children }: { children: string }) {
   return (
-    <table className="w-full text-sm border-collapse">
+    <pre className="text-[11px] font-mono text-gray-600 bg-gray-50 rounded-lg p-3 overflow-x-auto leading-relaxed">
       {children}
-    </table>
+    </pre>
   )
 }
 
-function Th({ children }: { children: React.ReactNode }) {
+function Dot() {
+  return <span className="text-gray-300 select-none">·</span>
+}
+
+function KV({ k, v }: { k: string; v: string }) {
   return (
-    <th className="text-left text-xs font-medium text-gray-500 bg-gray-50 px-2 py-1.5 border-b border-gray-200 first:rounded-l last:rounded-r">
-      {children}
-    </th>
+    <div>
+      <div className="text-[11px] text-gray-400">{k}</div>
+      <div className="text-xs text-gray-700 font-mono">{v}</div>
+    </div>
   )
 }
 
-function Tr({ v1, v2, v3, v4, v5, green }: {
-  v1: string; v2?: string; v3?: string; v4?: string; v5?: string; green?: boolean
-}) {
+function Tr({ a, b, c, d, e }: { a: string; b?: string; c?: string; d?: string; e?: string }) {
   return (
-    <tr className={`border-b border-gray-100 ${green ? 'bg-green-50/30' : ''}`}>
-      <Td mono={!green}>{v1}</Td>
-      {v2 !== undefined && <Td>{v2}</Td>}
-      {v3 !== undefined && <Td>{v3}</Td>}
-      {v4 !== undefined && <Td>{v4}</Td>}
-      {v5 !== undefined && <Td mono>{v5}</Td>}
+    <tr className="border-b border-gray-50">
+      <td className="py-1 pr-3 text-gray-700 font-mono text-[11px]">{a}</td>
+      {b !== undefined && <td className="py-1 pr-3 text-gray-600 text-[11px]">{b}</td>}
+      {c !== undefined && <td className="py-1 pr-3 text-gray-600 text-[11px] font-mono">{c}</td>}
+      {d !== undefined && <td className="py-1 pr-3 text-gray-500 text-[11px]">{d}</td>}
+      {e !== undefined && <td className="py-1 text-gray-500 text-[11px]">{e}</td>}
     </tr>
   )
 }
 
-function Td({ children, mono }: { children: React.ReactNode; mono?: boolean }) {
+function BondRow({ type, ring, ring_aro, atom, materials }: {
+  type: string; ring?: boolean; ring_aro?: boolean; atom?: boolean; materials: string
+}) {
   return (
-    <td className={`px-2 py-1.5 text-xs ${mono ? 'font-mono' : ''} text-gray-700`}>
-      {children}
-    </td>
+    <tr className="border-b border-gray-50">
+      <td className="py-1 pr-2 font-mono text-[11px] text-emerald-700">{type}</td>
+      <td className="py-1 pr-2 text-[11px]">{ring ? <Ck /> : <Cross />}</td>
+      <td className="py-1 pr-2 text-[11px]">{ring_aro ? <Ck /> : <Cross />}</td>
+      <td className="py-1 pr-2 text-[11px]">{atom ? <Ck /> : <Cross />}</td>
+      <td className="py-1 text-[11px] text-gray-500">{materials}</td>
+    </tr>
   )
+}
+
+function Ck() {
+  return <span className="text-emerald-500 font-medium">✓</span>
+}
+
+function Cross() {
+  return <span className="text-gray-300">—</span>
 }
