@@ -14,17 +14,17 @@ export default function AlgorithmPage() {
           <Layers size={18} className="text-blue-600" /> Pipeline Overview
         </h3>
         <div className="flex items-center gap-0 text-xs font-mono flex-wrap">
-          <StepBox label="SMILES" color="bg-gray-100" />
+          <StepBox color="bg-gray-100"><>SMILES</></StepBox>
           <Arrow />
-          <StepBox label="Layer 1\nConservative Frag" color="bg-blue-50" />
+          <StepBox color="bg-blue-50"><>Layer 1<br/>Conservative Frag</></StepBox>
           <Arrow />
-          <StepBox label="Layer 2\nBond-Type-Aware" color="bg-emerald-50" />
+          <StepBox color="bg-emerald-50"><>Layer 2<br/>Bond-Type-Aware</></StepBox>
           <Arrow />
-          <StepBox label="Layer 3\nFeature/Pattern" color="bg-amber-50" />
+          <StepBox color="bg-amber-50"><>Layer 3<br/>Feature/Pattern</></StepBox>
           <Arrow />
-          <StepBox label="Layer 4\nResidual Empirical" color="bg-purple-50" />
+          <StepBox color="bg-purple-50"><>Layer 4<br/>Residual Empirical</></StepBox>
           <Arrow />
-          <StepBox label="Diagnostic\nScoring" color="bg-gray-100" />
+          <StepBox color="bg-gray-100"><>Diagnostic<br/>Scoring</></StepBox>
         </div>
         <p className="text-xs text-gray-400 mt-3">
           v4.3 key insight: per-bond-type selective relaxation replaces one-size-fits-all conservative rules. C-S, Si-O, C-N, C-O(ester), C-F bonds now break under chemically justified conditions, providing structurally traceable paths for fragments previously requiring empirical Layer 4 rules.
@@ -188,10 +188,10 @@ export default function AlgorithmPage() {
   )
 }
 
-function StepBox({ label, color }: { label: string; color: string }) {
+function StepBox({ children, color }: { children: React.ReactNode; color: string }) {
   return (
-    <div className={`${color} px-3 py-2 rounded-lg text-center whitespace-pre-line leading-tight`}>
-      {label}
+    <div className={`${color} px-3 py-2 rounded-lg text-center leading-tight`}>
+      {children}
     </div>
   )
 }
