@@ -1,0 +1,15 @@
+﻿material,has_network,rf_peak_rows,network_supported_peak_rows,strict_mode_supported_peak_rows,screened_top10_rows,top10_strict_mode_rows,top10_formula_only_rows
+ETFE,True,896,105,44,10,10,0
+FEP,True,870,25,12,10,10,0
+Nomex,True,1014,90,38,10,10,0
+PAI,False,1067,0,0,0,0,0
+PBI,False,963,0,0,0,0,0
+PCTFE,False,796,0,0,0,0,0
+PEEK,True,1142,137,58,10,10,0
+PEI,True,1089,92,33,10,10,0
+PEN,True,884,146,82,10,10,0
+PFA,True,833,47,24,10,10,0
+PI,True,1136,35,15,10,10,0
+PPS,True,973,33,16,10,9,1
+PTFE,True,967,52,23,10,10,0
+PVDF,True,909,100,55,10,10,0

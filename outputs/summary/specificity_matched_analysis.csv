@@ -1,0 +1,13 @@
+material,polarity,total_matched,diagnostic,semi_specific,common,generic,weighted_diag_recall,generic_at_100,diagnosis
+COC,neg,11,3,0,4,4,0.4182,0.7273,mixed
+COC,pos,17,4,0,6,7,0.3824,0.7647,generic-dominated
+EVA,neg,15,1,2,8,4,0.3333,0.8,generic-dominated
+EVA,pos,22,3,2,10,7,0.3591,0.7727,generic-dominated
+PDMS,neg,14,8,0,2,4,0.6429,0.4286,mixed
+PDMS,pos,15,13,0,0,2,0.88,0.1333,diagnostic-dominated
+PET,neg,39,30,5,4,0,0.8769,0.1026,diagnostic-dominated
+PET,pos,44,30,6,7,1,0.8136,0.1818,diagnostic-dominated
+POMC,neg,6,0,4,2,0,0.5,0.3333,mixed
+POMC,pos,15,0,7,8,0,0.44,0.5333,mixed
+POMH,neg,7,0,3,4,0,0.4286,0.5714,mixed
+POMH,pos,14,0,6,8,0,0.4286,0.5714,mixed

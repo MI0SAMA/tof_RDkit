@@ -6,15 +6,13 @@ ETFE,Ethylene-TFE copolymer,CCC(F)(F)C(F)F,,fluoropolymer,-(CH2-CH2-CF2-CF2)- al
 FEP,Fluorinated Ethylene Propylene,FC(F)(F)C(F)(C(F)(F)F)C(F)(F)F,,fluoropolymer,-(CF2-CF2-CF(CF3)-CF2)- repeat unit,C5F10
 PFA,Perfluoroalkoxy Alkane,FC(F)(F)C(F)(C(F)(F)F)C(F)(F)F,,fluoropolymer,approximated as FEP structure,C5F10
 PEEK,Polyether Ether Ketone,O=C(c1ccc(Oc2ccc(O)cc2)cc1)c1ccc(O)cc1,,engineering_plastic,aromatic ether-ketone repeat unit,C19H12O3
-PEEK20%GFR,PEEK+20%GlassFiber,O=C(c1ccc(Oc2ccc(O)cc2)cc1)c1ccc(O)cc1,,engineering_plastic,same as PEEK; glass fiber inert,C19H12O3
 PEI,Polyetherimide (Ultem),CC(C)(c1ccc(Oc2ccc3c(c2)C(=O)OC3=O)cc1)c1ccc(Oc2ccc3c(c2)C(=O)OC3=O)cc1,,engineering_plastic,BPADA monomer; imide form approximated,C37H24N2O6
 PEN,Polyethylene Naphthalate,O=C(OCCO)c1ccc2ccccc2c1C(=O)OCCO,,engineering_plastic,naphthalate-based polyester,C14H10O4
 PET,Polyethylene Terephthalate,O=C(OCCO)c1ccc(C(=O)OCCO)cc1,,engineering_plastic,terephthalate-based polyester,C10H8O4
 PPS,Polyphenylene Sulfide,Sc1ccc(S)cc1,,engineering_plastic,-(Ph-S)- repeat unit,C6H4S
-PPS40%GFR,PPS+40%GlassFiber,Sc1ccc(S)cc1,,engineering_plastic,same as PPS; glass fiber inert,C6H4S
 PI,Polyimide (Kapton),O=C1N(c2ccc(Oc3ccc(N4C(=O)c5ccc(C(=O)N(C)C5=O)cc4)cc3)cc2)C(=O)c2ccc(C1=O)cc2,,engineering_plastic,PMDA-ODA type polyimide; formula auto-calculated,C22H10N2O5
 PDMS,Polydimethylsiloxane,C[Si](C)(O)[Si](C)(C)O,,siloxane,-(Si(CH3)2-O)- repeat unit dimer,C2H6OSi
-COC,Cyclic Olefin Copolymer,C1CC2C=CC1C2,,specialty,norbornene unit (Topas type),C7H10
+COC,Cyclic Olefin Copolymer,CCC1CC2CCC1C2CC,,specialty,ethylene-norbornene copolymer (50:50); norbornane+2ethyl segment,C9H14
 EVA,Ethylene-Vinyl Acetate,CCC(OC(=O)C)C,,specialty,ethylene-VA copolymer,C6H10O2
 Nomex,meta-Aramid,O=C(Nc1cccc(NC(=O)c2cccc(C(=O))c2)c1),,aramid,poly(m-phenylene isophthalamide),C14H10N2O2
 POMC,Polyoxymethylene Copolymer,COC,,acetal,-(O-CH2)- repeat unit; dimethoxymethane,CH2O

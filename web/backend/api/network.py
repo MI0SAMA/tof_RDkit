@@ -1,0 +1,373 @@
+"""Network API routes — graph data + Sankey diagram."""
+
+from fastapi import APIRouter, Depends, HTTPException, Query
+from sqlalchemy.orm import Session
+
+from ..database import get_db
+from ..models import FormulaSummary, NetworkEdge, NetworkNode
+from ..services import get_material_network
+
+router = APIRouter(prefix="/api", tags=["network"])
+
+
+@router.get("/materials/{material_id}/network")
+def get_network(
+    material_id: str,
+    hide_struct_only: bool = Query(True),
+    db: Session = Depends(get_db),
+):
+    """Get network graph data for Cytoscape.js."""
+    try:
+        return get_material_network(material_id, db, hide_struct_only=hide_struct_only)
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+
+
+def _parse_path_signature(path_str: str, all_node_ids: str = "", node_paths: dict[str, str] | None = None) -> str:
+    """Extract a human-readable path signature from a representative_path string.
+
+    Examples:
+      "M | fragment C,H,O from C-O bond break(s)" -> "C-O break"
+      "M | fragment C,H,O from C-O+C-C bond break(s) | h_shift_-1" -> "C-O + C-C break → H-shift"
+      "node_0002 + node_0061 | recombination" -> "C-O · C-C → recomb" (from source lookup)
+      "M | carbonyl | carbonyl_fragmentation | carbonyl_CO" -> "Carbonyl → CO"
+    """
+    if not path_str:
+        return "Unknown"
+
+    parts = [p.strip() for p in path_str.split("|")]
+
+    # ── Feature rule signatures ──
+    triggers = {
+        "carbonyl": "Carbonyl", "aromatic_ring": "Aromatic",
+        "sulfur_aromatic": "S-Aromatic", "acetal_or_ether": "Acetal",
+        "universal_hydrocarbon": "Small HC", "fluorocarbon_motif": "Fluorocarbon",
+        "siloxane": "Siloxane", "imide": "Imide", "amide": "Amide",
+        "cyclic_aliphatic": "Cyclic Aliphatic",
+    }
+    for trigger, label in triggers.items():
+        if trigger in path_str:
+            last = parts[-1] if len(parts) > 1 else ""
+            if "_" in last:
+                hint = last.split("_")[-1]
+                return f"{label} → {hint}" if hint else label
+            return label
+
+    # ── Direct bond break (non-recombination) ──
+    if "bond break" in path_str.lower():
+        has_h_shift = "h_shift" in path_str.lower()
+        bonds = _extract_bonds(parts)
+        label = " + ".join(bonds) + " break" if bonds else "RDKit break"
+        if has_h_shift:
+            label += " → H-shift"
+        return label
+
+    # ── Recombination: look up source fragment bond types ──
+    if "recombination" in path_str.lower() or ("node_" in parts[0] and "+" in parts[0]):
+        left_bonds, right_bonds = _recomb_source_bonds(parts[0], all_node_ids, node_paths or {})
+        if left_bonds and right_bonds:
+            left_str = "+".join(left_bonds)
+            right_str = "+".join(right_bonds)
+            return f"{left_str} · {right_str} → recomb"
+        if left_bonds:
+            return "+".join(left_bonds) + " break · ? → recomb"
+        return "Fragment recomb"
+
+    if path_str.strip() == "M":
+        return "Parent"
+
+    return "Other"
+
+
+def _extract_bonds(parts: list[str]) -> list[str]:
+    """Extract sorted bond types from path parts. e.g. ['C-O', 'C-C']"""
+    for part in parts:
+        if "from" in part.lower():
+            raw = part.split("from")[-1].rstrip(")")
+            raw = raw.split(" bond break")[0].strip().rstrip("(").strip()
+            return sorted(raw.split("+"))
+    return []
+
+
+def _recomb_source_bonds(first_part: str, all_node_ids: str, node_paths: dict[str, str]) -> tuple[list[str], list[str]]:
+    """Look up source fragment nodes and return (left_bonds, right_bonds)."""
+    node_ids = []
+    if "+" in first_part:
+        for token in first_part.split("+"):
+            token = token.strip()
+            if token.startswith("node_"):
+                node_ids.append(token)
+    if not node_ids and all_node_ids:
+        ids = [nid.strip() for nid in all_node_ids.split(";") if nid.strip().startswith("node_")]
+        node_ids = ids[:2]
+
+    left_bonds = _bonds_for_node(node_ids[0] if len(node_ids) > 0 else "", node_paths)
+    right_bonds = _bonds_for_node(node_ids[1] if len(node_ids) > 1 else "", node_paths)
+    return left_bonds, right_bonds
+
+
+def _bonds_for_node(node_id: str, node_paths: dict[str, str]) -> list[str]:
+    """Get sorted bond types for a single node."""
+    path = node_paths.get(node_id, "")
+    if path and "bond break" in path.lower():
+        return _extract_bonds([p.strip() for p in path.split("|")])
+    return []
+
+
+@router.get("/materials/{material_id}/network-tree")
+def get_network_tree(material_id: str, max_depth: int = Query(4), max_children: int = Query(8), db: Session = Depends(get_db)):
+    """Get tree structure: parent → edge(label) → fragment → edge(label) → ..."""
+
+    nodes = db.query(NetworkNode).filter(NetworkNode.compound_id == material_id).all()
+    edges = db.query(NetworkEdge).filter(NetworkEdge.compound_id == material_id).all()
+
+    if not nodes:
+        return {"name": material_id, "children": []}
+
+    # Build adjacency: node_id → [(target_node_id, edge_label)]
+    children_map: dict[str, list[tuple[str, str]]] = {}
+    node_map: dict[str, NetworkNode] = {n.node_id: n for n in nodes}
+
+    for e in edges:
+        if e.source_node not in children_map:
+            children_map[e.source_node] = []
+        label = _edge_label(e.operation, e.operation_type)
+        children_map[e.source_node].append((e.target_node, label))
+
+    # Find parent
+    parent = next((n for n in nodes if n.generation_type == "parent"), None)
+    if not parent:
+        return {"name": material_id, "children": []}
+
+    root_id = parent.node_id
+
+    def build_subtree(node_id: str, depth: int, seen: set) -> dict:
+        if depth >= max_depth or node_id in seen:
+            return None
+        seen.add(node_id)
+        node = node_map.get(node_id)
+        if not node:
+            return None
+
+        # Group children by edge label, summarizing formulas
+        children = children_map.get(node_id, [])
+        edge_groups: dict[str, list[tuple[str, str, NetworkNode]]] = {}
+        for target_id, edge_label in children:
+            target = node_map.get(target_id)
+            if not target:
+                continue
+            # For bond_break/fragmentation edges, extract bond type from target path
+            if edge_label == "RDKit break" and target.path:
+                bond_info = _extract_bond_label(target.path)
+                if bond_info:
+                    edge_label = bond_info
+            elif edge_label == "RDKit break" and target.operation == "bond_break":
+                # fallback: show generation_type directly
+                edge_label = "bond break"
+            key = edge_label
+            if key not in edge_groups:
+                edge_groups[key] = []
+            edge_groups[key].append((target_id, edge_label, target))
+
+        kids = []
+        for edge_label, items in sorted(edge_groups.items()):
+            # If only one child, show its formula; if many, group them
+            sub_children = []
+            for target_id, _, target in items[:max_children]:
+                subtree = build_subtree(target_id, depth + 1, seen.copy())
+                if subtree:
+                    sub_children.append(subtree)
+                else:
+                    # Leaf node: show formula + ion_mode
+                    leaf = {
+                        "name": target.formula,
+                        "ion_mode": target.ion_mode,
+                        "score": round(target.path_score, 3) if target.path_score else 0,
+                    }
+                    sub_children.append(leaf)
+
+            # Collapse identical leaf children
+            collapsed = _collapse_leaves(sub_children)
+
+            kids.append({
+                "name": edge_label,
+                "edge": True,
+                "children": collapsed[:max_children],
+            })
+
+        formula_str = node.formula
+        if node.ion_mode != "neutral":
+            formula_str += f" [{node.ion_mode}]"
+
+        return {
+            "name": formula_str,
+            "formula": node.formula,
+            "ion_mode": node.ion_mode,
+            "generation_type": node.generation_type,
+            "children": kids[:max_children],
+        }
+
+    tree = build_subtree(root_id, 0, set())
+    tree["total_nodes"] = len(nodes)
+    tree["total_edges"] = len(edges)
+    return tree
+
+
+def _edge_label(operation: str, operation_type: str) -> str:
+    """Make a short human-readable edge label."""
+    LABELS = {
+        "bond_break": "RDKit break",
+        "h_shift_-1": "H-shift −1",
+        "h_shift_+1": "H-shift +1",
+        "h_shift_0": "H-shift",
+        "protonation": "+H⁺",
+        "deprotonation": "−H⁺",
+        "electron_loss": "−e⁻",
+        "electron_gain": "+e⁻",
+        "source_molecule": "parent",
+        "single_dehydrogenative_recombination": "recomb (−H₂)",
+        "dehydrogenative_coupling": "recomb (−2H)",
+        "h_transfer_recombination": "recomb (H transf)",
+        "neutral_fragment_association": "recomb (neut)",
+    }
+    if operation in LABELS:
+        return LABELS[operation]
+    if operation_type == "fragmentation":
+        return "RDKit break"
+    if operation_type == "h_shift":
+        return f"H-shift {operation}"
+    if operation_type == "ionization":
+        return operation.replace("_", " ")
+    if operation_type == "recombination":
+        return "recomb"
+    if operation_type == "feature_rule":
+        return operation.replace("_", " ")
+    return operation.replace("_", " ")
+
+
+def _extract_bond_label(path_str: str) -> str:
+    """Extract bond type label from a node path, e.g. 'C-O break'."""
+    if not path_str or "bond break" not in path_str.lower():
+        return ""
+    parts = [p.strip() for p in path_str.split("|")]
+    bonds = _extract_bonds(parts)
+    return " + ".join(bonds) + " break" if bonds else ""
+
+
+def _collapse_leaves(children: list[dict]) -> list[dict]:
+    """Merge identical formula leaves into one node with count."""
+    groups: dict[str, list[dict]] = {}
+    others = []
+    for c in children:
+        if "children" not in c or not c["children"]:
+            key = c.get("name", "")
+            if key not in groups:
+                groups[key] = []
+            groups[key].append(c)
+        else:
+            others.append(c)
+
+    result = []
+    for key, items in groups.items():
+        if len(items) == 1:
+            result.append(items[0])
+        else:
+            result.append({
+                "name": f"{key} (×{len(items)})",
+                "ion_mode": items[0].get("ion_mode", ""),
+                "score": max(i.get("score", 0) for i in items),
+            })
+    result.extend(others)
+    return result
+
+
+@router.get("/materials/{material_id}/network-sankey")
+def get_network_sankey(material_id: str, db: Session = Depends(get_db)):
+    """Get Sankey diagram: parent → actual path → ion_mode → evidence_tag."""
+
+    formulas = (
+        db.query(FormulaSummary)
+        .filter(
+            FormulaSummary.compound_id == material_id,
+            FormulaSummary.ion_mode != "neutral",
+        )
+        .all()
+    )
+
+    if not formulas:
+        return {"nodes": [], "links": []}
+
+    # Pre-load node paths for recombination lookup
+    node_paths = {}
+    nodes = db.query(NetworkNode).filter(NetworkNode.compound_id == material_id).all()
+    for n in nodes:
+        node_paths[n.node_id] = n.path or ""
+
+    # Layer structure: path_signature → ion_mode → evidence_tag
+    path_counts = {}       # "Carbonyl → CO" → count
+    path_to_ion = {}       # ("Carbonyl → CO", "positive") → count
+    ion_to_tag = {}        # ("positive", "validated_diagnostic") → count
+    tag_counts = {}        # "validated_diagnostic" → count
+
+    for f in formulas:
+        ion = f.ion_mode
+        tag = f.diagnostic_tag or "unlabeled"
+
+        path_sig = _parse_path_signature(f.representative_path, f.all_node_ids, node_paths)
+
+        path_counts[path_sig] = path_counts.get(path_sig, 0) + 1
+        key_p2i = (path_sig, ion)
+        path_to_ion[key_p2i] = path_to_ion.get(key_p2i, 0) + 1
+        key_i2t = (ion, tag)
+        ion_to_tag[key_i2t] = ion_to_tag.get(key_i2t, 0) + 1
+        tag_counts[tag] = tag_counts.get(tag, 0) + 1
+
+    # Build nodes and links
+    nodes = []
+    links = []
+
+    # Color palette for path signatures
+    PATH_COLORS = [
+        "#60a5fa", "#34d399", "#fbbf24", "#f87171", "#a78bfa",
+        "#fb923c", "#4ade80", "#f472b6", "#2dd4bf", "#eab308",
+    ]
+    color_idx = 0
+
+    # Layer 1: Path signatures (sorted by count desc)
+    for path_sig, _ in sorted(path_counts.items(), key=lambda x: -x[1]):
+        color = PATH_COLORS[color_idx % len(PATH_COLORS)]
+        color_idx += 1
+        nodes.append({"name": f"path:{path_sig}", "label": path_sig, "itemStyle": {"color": color}})
+
+    # Layer 2: Ion modes
+    for ion in ["positive", "negative"]:
+        if any(k[0] == ion for k in ion_to_tag):
+            color = "#2563eb" if ion == "positive" else "#dc2626"
+            nodes.append({"name": f"ion:{ion}", "label": "Positive (+)" if ion == "positive" else "Negative (−)", "itemStyle": {"color": color}})
+
+    # Layer 3: Evidence tags
+    TAG_COLORS = {
+        "validated_diagnostic": "#22c55e",
+        "validated_generic": "#3b82f6",
+        "feature_supported_candidate": "#f59e0b",
+        "generic_hydrocarbon_background": "#ef4444",
+        "structural_candidate_only": "#d1d5db",
+        "unlabeled": "#9ca3af",
+    }
+    for tag, _ in sorted(tag_counts.items(), key=lambda x: -x[1]):
+        nodes.append({"name": f"tag:{tag}", "label": tag.replace("_", " ").title(), "itemStyle": {"color": TAG_COLORS.get(tag, "#9ca3af")}})
+
+    # Links: Path → Ion
+    for (path_sig, ion), count in path_to_ion.items():
+        links.append({"source": f"path:{path_sig}", "target": f"ion:{ion}", "value": count})
+
+    # Links: Ion → Tag
+    for (ion, tag), count in ion_to_tag.items():
+        links.append({"source": f"ion:{ion}", "target": f"tag:{tag}", "value": count})
+
+    return {
+        "compound_id": material_id,
+        "total_formulas": len(formulas),
+        "nodes": nodes,
+        "links": links,
+    }

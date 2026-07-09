@@ -15,6 +15,7 @@ from __future__ import annotations
 
 import json
 import re
+from collections import Counter
 from datetime import datetime
 from pathlib import Path
 
@@ -177,6 +178,10 @@ def match_annotations(
         intensity_matched = sum(a["intensity"] for a in matched)
         intensity_total = sum(a["intensity"] for a in filtered_ann)
         intensity_coverage = intensity_matched / intensity_total * 100 if intensity_total else 0
+        generation_type_counts = Counter(a["generation_type"] for a in matched)
+        generation_type_intensity = Counter()
+        for ann in matched:
+            generation_type_intensity[ann["generation_type"]] += ann["intensity"]
 
         results[key] = {
             "material": material,
@@ -192,6 +197,8 @@ def match_annotations(
             "intensity_coverage_pct": round(intensity_coverage, 1),
             "matched_list": matched,
             "unmatched_list": unmatched,
+            "generation_type_counts": dict(generation_type_counts),
+            "generation_type_intensity": {k: round(v, 3) for k, v in generation_type_intensity.items()},
             "network_size": len(net[net["source_compound_id"] == compound_id]),
             "network_unique_formulas": len(network_formulas),
         }
@@ -318,7 +325,20 @@ def generate_report(results: dict, output_dir: str = "outputs") -> str:
     w()
     w("---")
     w()
-    w("## 3. Unmatched Peaks Analysis")
+    w("## 3. Rule Contribution")
+    w()
+    w("| Material | Pol | Generation type | Matched | Intensity |")
+    w("|---|---:|---|---:|---:|")
+    for key in sorted(results.keys()):
+        r = results[key]
+        for gen_type, count in sorted(r["generation_type_counts"].items(), key=lambda item: (-item[1], item[0])):
+            intensity = r["generation_type_intensity"].get(gen_type, 0.0)
+            w(f"| {r['material']} | {r['polarity']} | {gen_type} | {count} | {intensity:.2f} |")
+
+    w()
+    w("---")
+    w()
+    w("## 4. Unmatched Peaks Analysis")
     w()
     w("Top 10 unmatched peaks per material (by intensity), after excluding atomic/diatomic ions:")
     w()
@@ -344,7 +364,7 @@ def generate_report(results: dict, output_dir: str = "outputs") -> str:
     # Matched examples
     w("---")
     w()
-    w("## 4. Matched Examples (Top 5 by network score per material)")
+    w("## 5. Matched Examples (Top 5 by network score per material)")
     w()
     for key in sorted(results.keys()):
         r = results[key]
@@ -366,7 +386,7 @@ def generate_report(results: dict, output_dir: str = "outputs") -> str:
 
     w("---")
     w()
-    w("## 5. Filter Statistics")
+    w("## 6. Filter Statistics")
     w()
     w(f"Total annotations removed by atomic/diatomic filter: **{total_excluded}**")
     w()
@@ -391,6 +411,66 @@ def generate_report(results: dict, output_dir: str = "outputs") -> str:
     report_path.write_text(report_text, encoding="utf-8")
     print(f"Report saved to {report_path}")
     return report_text
+
+
+def write_detail_csvs(results: dict, output_dir: str = "outputs") -> None:
+    summary_dir = Path(output_dir) / "summary"
+    summary_dir.mkdir(parents=True, exist_ok=True)
+    unmatched_rows = []
+    matched_rows = []
+    rule_rows = []
+
+    for key, r in results.items():
+        for ann in r["unmatched_list"]:
+            unmatched_rows.append({
+                "spectrum_key": key,
+                "material": r["material"],
+                "polarity": r["polarity"],
+                "compound_id": r["compound_id"],
+                "formula": ann["formula"],
+                "raw_formula": ann["raw_formula"],
+                "mz": ann["mz"],
+                "intensity": ann["intensity"],
+                "heavy_atoms": ann["heavy_atoms"],
+            })
+        for ann in r["matched_list"]:
+            matched_rows.append({
+                "spectrum_key": key,
+                "material": r["material"],
+                "polarity": r["polarity"],
+                "compound_id": r["compound_id"],
+                "formula": ann["formula"],
+                "raw_formula": ann["raw_formula"],
+                "mz": ann["mz"],
+                "intensity": ann["intensity"],
+                "network_score": ann["network_score"],
+                "generation_type": ann["generation_type"],
+                "matched_ion_mode": ann["matched_ion_mode"],
+                "network_path": ann["network_path"],
+            })
+        for gen_type, count in r["generation_type_counts"].items():
+            rule_rows.append({
+                "spectrum_key": key,
+                "material": r["material"],
+                "polarity": r["polarity"],
+                "generation_type": gen_type,
+                "matched": count,
+                "matched_intensity": r["generation_type_intensity"].get(gen_type, 0.0),
+            })
+
+    pd.DataFrame(unmatched_rows).sort_values(
+        ["material", "polarity", "intensity"],
+        ascending=[True, True, False],
+    ).to_csv(summary_dir / "0510_unmatched_formulas.csv", index=False)
+    pd.DataFrame(matched_rows).sort_values(
+        ["material", "polarity", "intensity"],
+        ascending=[True, True, False],
+    ).to_csv(summary_dir / "0510_matched_formulas.csv", index=False)
+    pd.DataFrame(rule_rows).sort_values(
+        ["material", "polarity", "matched"],
+        ascending=[True, True, False],
+    ).to_csv(summary_dir / "0510_rule_contribution.csv", index=False)
+    print(f"Detail CSVs saved to {summary_dir}")
 
 
 # ═══════════════════════════════════════════════════════════════════════════════
@@ -477,6 +557,8 @@ def main():
             "intensity_coverage_pct": v["intensity_coverage_pct"],
             "network_size": v["network_size"],
             "network_unique_formulas": v["network_unique_formulas"],
+            "generation_type_counts": v["generation_type_counts"],
+            "generation_type_intensity": v["generation_type_intensity"],
             "matched_formulas": [
                 {"formula": a["formula"], "raw": a["raw_formula"],
                  "mz": a["mz"], "intensity": a["intensity"],
@@ -502,6 +584,7 @@ def main():
     json_path.parent.mkdir(parents=True, exist_ok=True)
     json_path.write_text(json.dumps(output, ensure_ascii=False, indent=2))
     print(f"\nJSON data saved to {json_path}")
+    write_detail_csvs(results, args.output_dir)
 
     # Generate Markdown report
     print()

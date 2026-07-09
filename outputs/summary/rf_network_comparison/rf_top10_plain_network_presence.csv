@@ -1,0 +1,141 @@
+﻿material,top_order,peak_index,rank,mz,intensity,polarity,rf_formula_raw,normalized_formula,rf_score,rf_ppm,same_material_mode_match,same_material_formula_match,all_network_compound_count,all_network_compounds,formula_all_network_compound_count,formula_all_network_compounds,plain_presence_note,generation_types,network_formula_modes
+ETFE,1,17,1,19.0009,9283993.47,-,F⁻,F,64,-102.5,False,True,0,,3,ETFE; PTFE; PVDF,公式在network中出现但极性未对应,,neutral
+ETFE,2,222,1,77.0238,1808046.67,+,C₂H₅O₃⁺,C2H5O3,91,-6.2,False,False,0,,5,EVA; PEN; PET; POMC; POMH,公式在network中出现但极性未对应,,
+ETFE,3,62,2,39.0088,4766494.32,-,F₂H⁻,F2H,76,-92.8,False,False,0,,0,,network未出现,,
+ETFE,4,212,2,75.0076,1079420.2,+,C₂H₃O₃⁺,C2H3O3,85,0.9,False,False,0,,5,EVA; PEN; PET; POMC; POMH,公式在network中出现但极性未对应,,
+ETFE,5,2,3,1.0083,1806529.73,-,H⁻,H,100,73.4,False,False,0,,8,EVA; Nomex; PEEK; PEEK20%GFR; PEN; PET; POMC; POMH,公式在network中出现但极性未对应,,
+ETFE,6,183,3,68.9995,1056925.06,+,C₃HO₂⁺,C3HO2,57,-34.7,False,False,4,EVA; PET; POMC; POMH,5,EVA; PEN; PET; POMC; POMH,公式+极性在network中出现,,
+ETFE,7,44,4,30.9992,1010130.6,+,CF⁺,CF,90,-43.4,False,True,0,,5,ETFE; FEP; PFA; PTFE; PVDF,公式在network中出现但极性未对应,,negative; neutral
+ETFE,8,27,4,25.0078,632483.01,-,C₂H⁻,C2H,100,23.0,False,True,4,EVA; PEN; PET; PVDF,7,COC; ETFE; EVA; PEI; PEN; PET; PVDF,公式+极性在network中出现,,neutral
+ETFE,9,289,5,95.0129,969473.92,+,C₅H₃O₂⁺,C5H3O2,100,-1.5,False,False,4,EVA; PET; POMC; POMH,6,EVA; PEEK; PEEK20%GFR; PET; POMC; POMH,公式+极性在network中出现,,
+ETFE,10,94,5,48.0001,547887.81,-,CHFO⁻,CHFO,86,33.2,True,True,3,ETFE; PTFE; PVDF,3,ETFE; PTFE; PVDF,公式+极性在network中出现,adduct,negative
+FEP,1,15,1,19.004,15600123.36,-,F⁻,F,100,-265.6,False,False,0,,3,ETFE; PTFE; PVDF,公式在network中出现但极性未对应,,
+FEP,2,150,1,68.9944,3092261.49,+,C₃HO₂⁺,C3HO2,100,39.2,False,False,4,EVA; PET; POMC; POMH,5,EVA; PEN; PET; POMC; POMH,公式+极性在network中出现,,
+FEP,3,337,2,130.9908,3089212.09,+,C₃F₅⁺,C3F5,66,5.1,False,True,0,,3,FEP; PFA; PTFE,公式在network中出现但极性未对应,,neutral
+FEP,4,151,2,69.0002,3051644.88,-,CF₃⁻,CF3,100,-64.4,True,True,3,FEP; PFA; PTFE,4,ETFE; FEP; PFA; PTFE,公式+极性在network中出现,adduct,negative; neutral
+FEP,5,225,3,92.997,3071922.53,+,C₅HO₂⁺,C5HO2,100,1.1,False,False,4,EVA; PET; POMC; POMH,6,EVA; PEEK; PEEK20%GFR; PET; POMC; POMH,公式+极性在network中出现,,
+FEP,6,47,3,38.0024,2984574.62,-,F₂⁻,F2,100,-132.8,False,False,0,,3,ETFE; PTFE; PVDF,公式在network中出现但极性未对应,,
+FEP,7,34,4,30.9991,3071310.68,+,CF⁺,CF,91,-40.2,False,True,0,,5,ETFE; FEP; PFA; PTFE; PVDF,公式在network中出现但极性未对应,,neutral
+FEP,8,302,4,118.9991,1164153.92,-,C₂F₅⁻,C2F5,100,-54.9,False,False,1,PTFE,1,PTFE,公式+极性在network中出现,,
+FEP,9,253,5,99.9957,2926803.7,+,CHF₃NO⁺,CHF3NO,51,47.7,False,False,0,,0,,network未出现,,
+FEP,10,63,5,43.0034,1010067.97,-,C₂F⁻,C2F,92,-103.4,False,False,0,,2,ETFE; PVDF,公式在network中出现但极性未对应,,
+Nomex,1,2,1,1.0091,5248520.27,-,H⁻,H,15,-719.5,False,True,0,,8,EVA; Nomex; PEEK; PEEK20%GFR; PEN; PET; POMC; POMH,公式在network中出现但极性未对应,,neutral
+Nomex,2,475,1,132.9044,1294831.36,+,Cs⁺,Cs,90,3.8,False,False,0,,0,,network未出现,,
+Nomex,3,39,2,26.0064,4604632.59,-,CN⁻,CN,60,-106.8,False,True,0,,1,Nomex,公式在network中出现但极性未对应,,neutral
+Nomex,4,91,2,41.0383,945462.03,+,C₃H₅⁺,C3H5,100,6.7,False,False,6,COC; EVA; PEI; PET; POMC; POMH,7,COC; ETFE; EVA; PEI; PET; POMC; POMH,公式+极性在network中出现,,
+Nomex,5,94,3,42.0002,2303986.71,-,CNO⁻,CNO,100,-39.6,True,True,1,Nomex,1,Nomex,公式+极性在network中出现,adduct,negative; neutral
+Nomex,6,31,3,22.9892,682650.38,+,Na⁺,Na,89,0.9,False,False,0,,0,,network未出现,,
+Nomex,7,262,4,79.9559,1663724.33,-,NaCaOH⁻,CaHNaO,31,-3.1,False,False,0,,0,,network未出现,,
+Nomex,8,81,4,39.0222,554535.15,+,C₃H₃⁺,C3H3,100,18.6,False,False,5,COC; EVA; PET; POMC; POMH,7,COC; ETFE; EVA; PEI; PET; POMC; POMH,公式+极性在network中出现,,
+Nomex,9,36,5,25.008,1639609.37,-,C₂H⁻,C2H,100,15.0,False,False,4,EVA; PEN; PET; PVDF,7,COC; ETFE; EVA; PEI; PEN; PET; PVDF,公式+极性在network中出现,,
+Nomex,10,101,5,43.0548,529717.03,+,C₃H₇⁺,C3H7,100,-13.3,False,False,6,COC; EVA; PEI; PET; POMC; POMH,6,COC; EVA; PEI; PET; POMC; POMH,公式+极性在network中出现,,
+PAI,1,507,1,132.9089,7370269.13,+,Cs⁺,Cs,93,-30.1,False,False,0,,0,,network未出现,,
+PAI,2,1,1,1.0069,5409953.09,-,H⁻,H,15,1463.9,False,False,0,,8,EVA; Nomex; PEEK; PEEK20%GFR; PEN; PET; POMC; POMH,公式在network中出现但极性未对应,,
+PAI,3,41,2,26.0134,4686465.54,-,CN⁻,CN,18,-375.8,False,False,0,,1,Nomex,公式在network中出现但极性未对应,,
+PAI,4,104,2,41.0386,1133892.78,+,C₃H₅⁺,C3H5,100,-0.6,False,False,6,COC; EVA; PEI; PET; POMC; POMH,7,COC; ETFE; EVA; PEI; PET; POMC; POMH,公式+极性在network中出现,,
+PAI,5,36,3,25.0158,2645204.51,-,C₂H⁻,C2H,100,-296.9,False,False,4,EVA; PEN; PET; PVDF,7,COC; ETFE; EVA; PEI; PEN; PET; PVDF,公式+极性在network中出现,,
+PAI,6,56,3,29.039,688116.52,+,C₂H₅⁺,C2H5,100,-14.6,False,False,6,COC; ETFE; EVA; PEN; PET; PVDF,9,COC; ETFE; EVA; PEI; PEN; PET; POMC; POMH; PVDF,公式+极性在network中出现,,
+PAI,7,17,4,15.9982,1643571.14,-,O⁻,O,15,-171.0,False,False,0,,6,EVA; Nomex; PEN; PET; POMC; POMH,公式在network中出现但极性未对应,,
+PAI,8,46,4,27.0227,624689.76,+,C₂H₃⁺,C2H3,100,8.4,False,False,4,EVA; PEN; PET; PVDF,9,COC; ETFE; EVA; PEI; PEN; PET; POMC; POMH; PVDF,公式+极性在network中出现,,
+PAI,9,110,5,42.0153,1542045.47,-,C₂H₂O⁻,C2H2O,63,-99.6,False,False,4,EVA; PEN; PET; PVDF,6,EVA; PEN; PET; POMC; POMH; PVDF,公式+极性在network中出现,,
+PAI,10,30,5,22.9906,618870.46,+,Na⁺,Na,98,-60.0,False,False,0,,0,,network未出现,,
+PBI,1,3,1,1.009,7246419.42,-,H⁻,H,100,-620.4,False,False,0,,8,EVA; Nomex; PEEK; PEEK20%GFR; PEN; PET; POMC; POMH,公式在network中出现但极性未对应,,
+PBI,2,90,1,38.9704,3881287.68,+,K⁺,K,15,-185.9,False,False,0,,0,,network未出现,,
+PBI,3,37,2,22.9939,3794307.12,+,Na⁺,Na,15,-203.5,False,False,0,,0,,network未出现,,
+PBI,4,42,2,25.0096,1993865.2,-,C₂H⁻,C2H,100,-49.0,False,False,4,EVA; PEN; PET; PVDF,7,COC; ETFE; EVA; PEI; PEN; PET; PVDF,公式+极性在network中出现,,
+PBI,5,445,3,132.9196,3260176.94,+,Cs⁺,Cs,67,-110.6,False,False,0,,0,,network未出现,,
+PBI,6,44,3,26.006,1678514.91,-,CN⁻,CN,70,-91.4,False,False,0,,1,Nomex,公式在network中出现但极性未对应,,
+PBI,7,14,4,13.0084,1015170.67,-,CH⁻,CH,100,-2.0,False,False,0,,12,COC; ETFE; EVA; Nomex; PEEK; PEEK20%GFR; PEN; PET; POMC; POMH; PTFE; PVDF,公式在network中出现但极性未对应,,
+PBI,8,103,4,41.0402,866079.63,+,C₃H₅⁺,C3H5,100,-39.6,False,False,6,COC; EVA; PEI; PET; POMC; POMH,7,COC; ETFE; EVA; PEI; PET; POMC; POMH,公式+极性在network中出现,,
+PBI,9,22,5,15.9952,849927.17,-,O⁻,O,84,16.5,False,False,0,,6,EVA; Nomex; PEN; PET; POMC; POMH,公式在network中出现但极性未对应,,
+PBI,10,155,5,55.0568,554935.88,+,C₄H₇⁺,C4H7,100,-46.8,False,False,5,COC; EVA; PET; POMC; POMH,5,COC; EVA; PET; POMC; POMH,公式+极性在network中出现,,
+PCTFE,1,26,1,19.0008,8982939.76,-,F⁻,F,64,-97.3,False,False,0,,3,ETFE; PTFE; PVDF,公式在network中出现但极性未对应,,
+PCTFE,2,258,1,84.9709,752763.91,+,CHCaO₂⁺,CHCaO2,39,-131.9,False,False,0,,0,,network未出现,,
+PCTFE,3,68,2,34.9714,6716999.25,-,Cl⁻,Cl,85,-57.1,False,False,0,,0,,network未出现,,
+PCTFE,4,92,2,41.0411,703657.69,+,C₃H₅⁺,C3H5,100,-61.5,False,False,6,COC; EVA; PEI; PET; POMC; POMH,7,COC; ETFE; EVA; PEI; PET; POMC; POMH,公式+极性在network中出现,,
+PCTFE,5,2,3,1.0088,3601595.55,-,H⁻,H,15,-422.3,False,False,0,,8,EVA; Nomex; PEEK; PEEK20%GFR; PEN; PET; POMC; POMH,公式在network中出现但极性未对应,,
+PCTFE,6,58,3,30.9991,694407.08,+,CF⁺,CF,95,-40.2,False,False,0,,5,ETFE; FEP; PFA; PTFE; PVDF,公式在network中出现但极性未对应,,
+PCTFE,7,74,4,36.9667,3019494.64,-,³⁷Cl⁻,Cl,85,11.4,False,False,0,,0,,network未出现,,
+PCTFE,8,196,4,68.9975,662794.79,+,C₃HO₂⁺,C3HO2,97,-5.7,False,False,4,EVA; PET; POMC; POMH,5,EVA; PEN; PET; POMC; POMH,公式+极性在network中出现,,
+PCTFE,9,200,5,69.9349,1080711.72,-,Cl₂⁻,Cl2,85,48.0,False,False,0,,0,,network未出现,,
+PCTFE,10,429,5,130.9894,555018.37,+,C₅H₄ClO₂⁺,C5H4ClO2,46,0.3,False,False,0,,0,,network未出现,,
+PEEK,1,2,1,1.0083,7607716.64,-,H⁻,H,57,73.4,False,True,0,,8,EVA; Nomex; PEEK; PEEK20%GFR; PEN; PET; POMC; POMH,公式在network中出现但极性未对应,,neutral
+PEEK,2,492,1,132.9052,2562380.44,+,Cs⁺,Cs,89,-2.2,False,False,0,,0,,network未出现,,
+PEEK,3,35,2,25.0085,2520443.21,-,C₂H⁻,C2H,100,-5.0,False,False,4,EVA; PEN; PET; PVDF,7,COC; ETFE; EVA; PEI; PEN; PET; PVDF,公式+极性在network中出现,,
+PEEK,4,89,2,41.0385,853346.75,+,C₃H₅⁺,C3H5,100,1.9,False,False,6,COC; EVA; PEI; PET; POMC; POMH,7,COC; ETFE; EVA; PEI; PET; POMC; POMH,公式+极性在network中出现,,
+PEEK,5,130,3,49.0087,1077553.21,-,C₄H⁻,C4H,100,-6.7,False,False,5,COC; EVA; PET; POMC; POMH,5,COC; EVA; PET; POMC; POMH,公式+极性在network中出现,,
+PEEK,6,29,3,22.9895,602434.21,+,Na⁺,Na,97,-12.2,False,False,0,,0,,network未出现,,
+PEEK,7,11,4,13.0076,766494.17,-,CH⁻,CH,100,59.5,False,True,0,,12,COC; ETFE; EVA; Nomex; PEEK; PEEK20%GFR; PEN; PET; POMC; POMH; PTFE; PVDF,公式在network中出现但极性未对应,,neutral
+PEEK,8,152,4,55.0546,578481.87,+,C₄H₇⁺,C4H7,100,-6.8,False,False,5,COC; EVA; PET; POMC; POMH,5,COC; EVA; PET; POMC; POMH,公式+极性在network中出现,,
+PEEK,9,239,5,73.0081,634456.48,-,C₆H⁻,C6H,100,3.8,True,True,12,COC; EVA; Nomex; PEEK; PEEK20%GFR; PEI; PET; PI; POMC; POMH; PPS; PPS40%GFR,13,COC; EVA; Nomex; PEEK; PEEK20%GFR; PEI; PET; PI; POMC; POMH; PPS; PPS40%GFR,公式+极性在network中出现,adduct,negative; neutral
+PEEK,10,100,5,43.0549,567203.3,+,C₃H₇⁺,C3H7,100,-15.7,False,False,6,COC; EVA; PEI; PET; POMC; POMH,6,COC; EVA; PEI; PET; POMC; POMH,公式+极性在network中出现,,
+PEI,1,3,1,1.0084,9459460.99,-,H⁻,H,15,-25.8,False,False,0,,8,EVA; Nomex; PEEK; PEEK20%GFR; PEN; PET; POMC; POMH,公式在network中出现但极性未对应,,
+PEI,2,98,1,41.0396,1484180.8,+,C₃H₅⁺,C3H5,100,-25.0,True,True,6,COC; EVA; PEI; PET; POMC; POMH,7,COC; ETFE; EVA; PEI; PET; POMC; POMH,公式+极性在network中出现,adduct,negative; neutral; positive
+PEI,3,38,2,25.0086,2579126.98,-,C₂H⁻,C2H,100,-9.0,False,True,4,EVA; PEN; PET; PVDF,7,COC; ETFE; EVA; PEI; PEN; PET; PVDF,公式+极性在network中出现,,neutral
+PEI,4,163,2,55.0557,772105.89,+,C₄H₇⁺,C4H7,100,-26.8,False,False,5,COC; EVA; PET; POMC; POMH,5,COC; EVA; PET; POMC; POMH,公式+极性在network中出现,,
+PEI,5,40,3,26.0052,2105037.73,-,CN⁻,CN,70,-60.6,False,False,0,,1,Nomex,公式在network中出现但极性未对应,,
+PEI,6,110,3,43.0554,769823.1,+,C₃H₇⁺,C3H7,100,-27.3,True,True,6,COC; EVA; PEI; PET; POMC; POMH,6,COC; EVA; PEI; PET; POMC; POMH,公式+极性在network中出现,adduct,negative; neutral; positive
+PEI,7,103,4,42.001,1529700.15,-,CNO⁻,CNO,64,-58.6,False,False,1,Nomex,1,Nomex,公式+极性在network中出现,,
+PEI,8,55,4,29.0388,740107.94,+,C₂H₅⁺,C2H5,100,-7.7,False,True,6,COC; ETFE; EVA; PEN; PET; PVDF,9,COC; ETFE; EVA; PEI; PEN; PET; POMC; POMH; PVDF,公式+极性在network中出现,,neutral
+PEI,9,12,5,13.0072,1040253.1,-,CH⁻,CH,91,90.3,False,False,0,,12,COC; ETFE; EVA; Nomex; PEEK; PEEK20%GFR; PEN; PET; POMC; POMH; PTFE; PVDF,公式在network中出现但极性未对应,,
+PEI,10,44,5,27.0225,671636.69,+,C₂H₃⁺,C2H3,100,15.8,False,True,4,EVA; PEN; PET; PVDF,9,COC; ETFE; EVA; PEI; PEN; PET; POMC; POMH; PVDF,公式+极性在network中出现,,neutral
+PEN,1,2,1,1.0085,4796206.05,-,H⁻,H,15,-124.9,False,True,0,,8,EVA; Nomex; PEEK; PEEK20%GFR; PEN; PET; POMC; POMH,公式在network中出现但极性未对应,,neutral
+PEN,2,474,1,132.9038,926737.03,+,Cs⁺,Cs,89,8.3,False,False,0,,0,,network未出现,,
+PEN,3,34,2,25.009,3531023.56,-,C₂H⁻,C2H,100,-25.0,True,True,4,EVA; PEN; PET; PVDF,7,COC; ETFE; EVA; PEI; PEN; PET; PVDF,公式+极性在network中出现,adduct,negative; neutral
+PEN,4,449,2,126.044,809486.02,+,C₁₀H₆⁺,C10H6,84,19.0,True,True,6,COC; EVA; PEN; PET; POMC; POMH,6,COC; EVA; PEN; PET; POMC; POMH,公式+极性在network中出现,adduct,negative; neutral; positive
+PEN,5,121,3,49.0093,1736002.99,-,C₄H⁻,C4H,100,-18.9,False,False,5,COC; EVA; PET; POMC; POMH,5,COC; EVA; PET; POMC; POMH,公式+极性在network中出现,,
+PEN,6,542,3,154.0411,565928.88,+,C₁₁H₆O⁺,C11H6O,83,1.4,True,True,5,EVA; PEN; PET; POMC; POMH,8,EVA; PEEK; PEEK20%GFR; PEN; PET; PI; POMC; POMH,公式+极性在network中出现,adduct,negative; neutral; positive
+PEN,7,17,4,15.9956,1354092.11,-,O⁻,O,100,-8.5,False,True,0,,6,EVA; Nomex; PEN; PET; POMC; POMH,公式在network中出现但极性未对应,,neutral
+PEN,8,452,4,127.0511,552887.08,+,C₁₀H₇⁺,C10H7,85,24.6,True,True,6,COC; EVA; PEN; PET; POMC; POMH,6,COC; EVA; PEN; PET; POMC; POMH,公式+极性在network中出现,adduct,negative; neutral; positive
+PEN,9,32,5,24.0004,1208639.29,-,C₂⁻,C2,100,6.2,False,True,0,,4,EVA; PEN; PET; PVDF,公式在network中出现但极性未对应,,neutral
+PEN,10,83,5,41.0387,521627.5,+,C₃H₅⁺,C3H5,100,-3.0,False,False,6,COC; EVA; PEI; PET; POMC; POMH,7,COC; ETFE; EVA; PEI; PET; POMC; POMH,公式+极性在network中出现,,
+PFA,1,18,1,18.9994,14547136.51,-,F⁻,F,100,-23.6,False,False,0,,3,ETFE; PTFE; PVDF,公式在network中出现但极性未对应,,
+PFA,2,418,1,130.9942,3931172.38,+,C₄H₃O₅⁺,C4H3O5,64,25.2,False,False,0,,0,,network未出现,,
+PFA,3,557,2,184.9913,10717480.01,-,C₅F₅NO⁻,C5F5NO,100,-4.0,False,False,0,,0,,network未出现,,
+PFA,4,180,2,68.9948,3869462.03,+,C₃HO₂⁺,C3HO2,90,33.4,False,False,4,EVA; PET; POMC; POMH,5,EVA; PEN; PET; POMC; POMH,公式+极性在network中出现,,
+PFA,5,279,3,92.9988,3747675.71,+,C₅HO₂⁺,C5HO2,84,-18.2,False,False,4,EVA; PET; POMC; POMH,6,EVA; PEEK; PEEK20%GFR; PET; POMC; POMH,公式+极性在network中出现,,
+PFA,6,54,3,37.9977,3409139.47,-,F₂⁻,F2,100,-9.1,False,False,0,,3,ETFE; PTFE; PVDF,公式在network中出现但极性未对应,,
+PFA,7,39,4,30.9983,3746447.59,+,CF⁺,CF,100,-14.4,False,True,0,,5,ETFE; FEP; PFA; PTFE; PVDF,公式在network中出现但极性未对应,,neutral
+PFA,8,374,4,118.9927,3168609.48,-,C₂F₅⁻,C2F5,100,-1.1,False,False,1,PTFE,1,PTFE,公式+极性在network中出现,,
+PFA,9,309,5,99.9969,3717599.56,+,CHF₃NO⁺,CHF3NO,45,35.7,False,False,0,,0,,network未出现,,
+PFA,10,181,5,68.9957,2575085.69,-,CF₃⁻,CF3,100,0.8,True,True,3,FEP; PFA; PTFE,4,ETFE; FEP; PFA; PTFE,公式+极性在network中出现,adduct,negative; neutral
+PI,1,462,1,132.9096,16178833.61,+,Cs⁺,Cs,84,-35.3,False,False,0,,0,,network未出现,,
+PI,2,35,1,26.0059,3856092.64,-,CN⁻,CN,67,-87.6,False,False,0,,1,Nomex,公式在network中出现但极性未对应,,
+PI,3,2,2,1.0084,3535538.84,-,H⁻,H,15,-25.8,False,False,0,,8,EVA; Nomex; PEEK; PEEK20%GFR; PEN; PET; POMC; POMH,公式在network中出现但极性未对应,,
+PI,4,847,2,291.8141,2529964.0,+,C₄H₂Cl₆O₂⁺,C4H2Cl6O2,50,13.5,False,False,0,,0,,network未出现,,
+PI,5,95,3,42.0008,2518416.73,-,CNO⁻,CNO,81,-53.9,False,False,1,Nomex,1,Nomex,公式+极性在network中出现,,
+PI,6,877,3,307.8088,1335419.7,+,C₃H₇Br₃N₂⁺,C3H7Br3N2,32,21.4,False,False,0,,0,,network未出现,,
+PI,7,34,4,25.0081,1170484.84,-,C₂H⁻,C2H,100,11.0,False,False,4,EVA; PEN; PET; PVDF,7,COC; ETFE; EVA; PEI; PEN; PET; PVDF,公式+极性在network中出现,,
+PI,8,92,4,41.0388,1069846.3,+,C₃H₅⁺,C3H5,100,-5.5,False,False,6,COC; EVA; PEI; PET; POMC; POMH,7,COC; ETFE; EVA; PEI; PET; POMC; POMH,公式+极性在network中出现,,
+PI,9,131,5,50.0044,1090950.29,-,C₃N⁻,C3N,100,-15.5,False,False,0,,0,,network未出现,,
+PI,10,102,5,43.0553,863608.52,+,C₃H₇⁺,C3H7,100,-24.9,False,False,6,COC; EVA; PEI; PET; POMC; POMH,6,COC; EVA; PEI; PET; POMC; POMH,公式+极性在network中出现,,
+PPS,1,492,1,132.9057,6597085.38,+,Cs⁺,Cs,89,-6.0,False,False,0,,0,,network未出现,,
+PPS,2,2,1,1.0085,3229763.07,-,H⁻,H,100,-124.9,False,False,0,,8,EVA; Nomex; PEEK; PEEK20%GFR; PEN; PET; POMC; POMH,公式在network中出现但极性未对应,,
+PPS,3,520,2,139.9794,2037959.74,-,H₁₂S₄⁻,H12S4,100,23.8,False,False,0,,0,,network未出现,,
+PPS,4,62,2,38.9634,583449.77,+,K⁺,K,100,-6.2,False,False,0,,0,,network未出现,,
+PPS,5,23,3,25.0085,1965749.01,-,C₂H⁻,C2H,100,-5.0,False,False,4,EVA; PEN; PET; PVDF,7,COC; ETFE; EVA; PEI; PEN; PET; PVDF,公式+极性在network中出现,,
+PPS,6,18,3,22.9894,471431.85,+,Na⁺,Na,95,-7.8,False,False,0,,0,,network未出现,,
+PPS,7,136,4,56.9808,1012731.11,-,C₂HS⁻,C2HS,100,-6.2,False,False,0,,0,,network未出现,,
+PPS,8,982,4,300.7691,190029.76,+,I₂OP⁺,I2OP,30,26.5,False,False,0,,0,,network未出现,,
+PPS,9,108,5,49.0086,990796.08,-,C₄H⁻,C4H,100,-4.6,False,False,5,COC; EVA; PET; POMC; POMH,5,COC; EVA; PET; POMC; POMH,公式+极性在network中出现,,
+PPS,10,74,5,41.0385,174045.79,+,C₃H₅⁺,C3H5,100,1.9,False,False,6,COC; EVA; PEI; PET; POMC; POMH,7,COC; ETFE; EVA; PEI; PET; POMC; POMH,公式+极性在network中出现,,
+PTFE,1,20,1,19.001,18352176.78,-,F⁻,F,15,-107.8,False,True,0,,3,ETFE; PTFE; PVDF,公式在network中出现但极性未对应,,neutral
+PTFE,2,190,1,69.0023,3156662.74,+,C₃HO₂⁺,C3HO2,100,-75.3,False,False,4,EVA; PET; POMC; POMH,5,EVA; PEN; PET; POMC; POMH,公式+极性在network中出现,,
+PTFE,3,50,2,31.0009,3077970.45,+,H₃Si⁺,H3Si,32,-33.8,False,False,1,PDMS,1,PDMS,公式+极性在network中出现,,
+PTFE,4,2,2,1.0086,1496352.22,-,H⁻,H,100,-224.1,False,False,0,,8,EVA; Nomex; PEEK; PEEK20%GFR; PEN; PET; POMC; POMH,公式在network中出现但极性未对应,,
+PTFE,5,381,3,130.9965,2325518.46,+,C₅H₄ClO₂⁺,C5H4ClO2,67,-53.9,False,False,0,,0,,network未出现,,
+PTFE,6,66,3,37.997,1167866.82,-,F₂⁻,F2,73,9.3,False,True,0,,3,ETFE; PTFE; PVDF,公式在network中出现但极性未对应,,neutral
+PTFE,7,273,4,92.9976,1863309.35,+,C₅HO₂⁺,C5HO2,100,-5.3,False,False,4,EVA; PET; POMC; POMH,6,EVA; PEEK; PEEK20%GFR; PET; POMC; POMH,公式+极性在network中出现,,
+PTFE,8,189,4,68.9953,716289.43,-,CF₃⁻,CF3,100,6.6,True,True,3,FEP; PFA; PTFE,4,ETFE; FEP; PFA; PTFE,公式+极性在network中出现,adduct,negative; neutral
+PTFE,9,385,5,132.9069,1825280.27,+,Cs⁺,Cs,86,-15.0,False,False,0,,0,,network未出现,,
+PTFE,10,87,5,42.9985,482253.71,-,C₂F⁻,C2F,86,10.5,False,False,0,,2,ETFE; PVDF,公式在network中出现但极性未对应,,
+PVDF,1,19,1,19.0007,7035579.87,-,F⁻,F,100,-92.0,False,True,0,,3,ETFE; PTFE; PVDF,公式在network中出现但极性未对应,,neutral
+PVDF,2,439,1,113.0019,2034082.78,+,C₈HO⁺,C8HO,66,2.6,False,False,4,EVA; PET; POMC; POMH,5,EVA; Nomex; PET; POMC; POMH,公式+极性在network中出现,,
+PVDF,3,70,2,39.0088,4707986.43,-,F₂H⁻,F2H,91,-92.8,False,False,0,,0,,network未出现,,
+PVDF,4,520,2,133.0066,1498252.24,+,C₁₁H⁺,C11H,78,5.1,False,False,5,COC; EVA; PET; POMC; POMH,5,COC; EVA; PET; POMC; POMH,公式+极性在network中出现,,
+PVDF,5,2,3,1.0084,2096814.43,-,H⁻,H,15,-25.8,False,False,0,,8,EVA; Nomex; PEEK; PEEK20%GFR; PEN; PET; POMC; POMH,公式在network中出现但极性未对应,,
+PVDF,6,227,3,68.999,1454701.55,+,C₃HO₂⁺,C3HO2,75,-27.4,False,False,4,EVA; PET; POMC; POMH,5,EVA; PEN; PET; POMC; POMH,公式+极性在network中出现,,
+PVDF,7,361,4,95.0113,1281508.18,+,C₅H₃O₂⁺,C5H3O2,99,15.3,False,False,4,EVA; PET; POMC; POMH,6,EVA; PEEK; PEEK20%GFR; PET; POMC; POMH,公式+极性在network中出现,,
+PVDF,8,30,4,25.0085,638372.08,-,C₂H⁻,C2H,100,-5.0,True,True,4,EVA; PEN; PET; PVDF,7,COC; ETFE; EVA; PEI; PEN; PET; PVDF,公式+极性在network中出现,adduct,negative; neutral
+PVDF,9,271,5,77.0208,1134354.22,+,C₂H₅O₃⁺,C2H5O3,86,32.7,False,False,0,,5,EVA; PEN; PET; POMC; POMH,公式在network中出现但极性未对应,,
+PVDF,10,60,5,34.9712,630038.91,-,Cl⁻,Cl,100,-51.4,False,False,0,,0,,network未出现,,

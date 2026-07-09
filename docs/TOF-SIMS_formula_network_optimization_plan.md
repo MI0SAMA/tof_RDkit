@@ -10,7 +10,7 @@
 - 可以为每个谱图生成 Markdown 报告。
 - 现有 `unittest` 测试可以通过。
 
-但从当前结果看，项目的主要瓶颈已经不是“能不能跑通”，而是“候选是否可信、是否可解释、是否能真正校准 RF 输出”。
+但从当前结果看，项目的主要瓶颈已经不是“能不能跑通”，而是“候选是否可信、是否可解释、是否能真正校准 AI 生成标注输出”。历史文件夹和字段中仍可能保留 `RF` / `rf_` 命名，但这里不再将其理解为 Random Forest。
 
 ## 2. 核心不足
 
@@ -24,15 +24,15 @@
 
 这是当前结果可信度的最大风险。
 
-### 2.2 RF 校准链路尚未真正闭环
+### 2.2 AI 生成候选校准链路尚未真正闭环
 
 当前 `rf_formula_matches.csv` 只有表头，说明流程主要依赖 m/z 匹配，而不是实施方案中设计的：
 
 ```text
-RF候选分子式 ∩ 结构网络生成分子式 = 更可信候选
+AI生成候选分子式 ∩ 结构网络生成分子式 = 更可信候选
 ```
 
-如果后续目标是校准随机森林输出，必须把 RF 候选接入、规范化、评分融合和报告展示做成主链路。
+如果后续目标是校准 AI 生成标注输出，必须把候选接入、规范化、评分融合和报告展示做成主链路。
 
 ### 2.3 正负离子模式没有参与筛选
 
@@ -48,7 +48,7 @@ RF候选分子式 ∩ 结构网络生成分子式 = 更可信候选
 
 - 按 compound 聚合的解释峰数、解释强度、最高分。
 - 未解释高强峰。
-- RF 支持候选与仅 m/z 支持候选的区分。
+- AI 生成候选支持与仅 m/z 支持候选的区分。
 - 候选爆炸风险提示。
 - 各规则类型的命中统计。
 
@@ -63,7 +63,7 @@ RF候选分子式 ∩ 结构网络生成分子式 = 更可信候选
 优先级如下：
 
 1. 降低假阳性候选数量。
-2. 让 RF 候选校准成为主流程。
+2. 让 AI 生成候选校准成为主流程。
 3. 让正负离子模式、样品来源和网络来源参与过滤。
 4. 提升报告的人工判读价值。
 5. 建立规则命中统计，为后续权重校准提供依据。
@@ -136,9 +136,9 @@ matching:
 - PET 谱图默认不再将 COC/POMC 作为 Top compound。
 - 报告中明确显示当前使用的是 sample-restricted matching。
 
-### 阶段二：RF 候选校准主链路
+### 阶段二：AI 生成候选校准主链路
 
-#### 4.4 标准化 RF 输入格式
+#### 4.4 标准化 AI 生成候选输入格式
 
 支持以下最小格式：
 
@@ -146,9 +146,9 @@ matching:
 spectrum_id,peak_mz,candidate_formula,rf_rank,rf_score
 ```
 
-其中 `rf_rank` 和 `rf_score` 允许缺失。
+其中 `rf_rank` 和 `rf_score` 是历史字段名，可理解为 AI 生成候选的原始排序和置信分数，允许缺失。
 
-如果 RF 当前只有分子式列表，也应允许：
+如果 AI 生成输出当前只有分子式列表，也应允许：
 
 ```csv
 spectrum_id,peak_mz,candidate_formula
@@ -160,9 +160,9 @@ spectrum_id,peak_mz,candidate_formula
 
 | match_type | 含义 |
 |---|---|
-| rf_network_formula | RF 分子式与结构网络公式一致 |
+| rf_network_formula | AI 生成分子式与结构网络公式一致 |
 | mass_only | 仅 m/z 与结构网络质量匹配 |
-| rf_only_unexplained | RF 给出但结构网络无法解释 |
+| rf_only_unexplained | AI 生成输出给出但结构网络无法解释 |
 
 推荐排序优先级：
 
@@ -186,15 +186,15 @@ final_score =
 
 其中：
 
-- `rf_match_bonus` 只给 RF 与 network 公式交集。
+- `rf_match_bonus` 只给 AI 生成候选与 network 公式交集。
 - `ion_mode_bonus` 只给正负模式一致的候选。
 - `compound_support_bonus` 来自同一 compound 在同一谱图中解释的峰数和总强度。
 - `broad_rule_penalty` 用于 neutral_loss、dimer、recombination 等低特异性规则。
 
 #### 验收指标
 
-- 有 RF 输入时，报告优先展示 RF 与网络共同支持的候选。
-- RF 未被网络解释的候选可以单独列出，供检查规则缺口。
+- 有 AI 生成候选输入时，报告优先展示 AI 生成输出与网络共同支持的候选。
+- AI 生成输出未被网络解释的候选可以单独列出，供检查规则缺口。
 - `rf_formula_matches.csv` 不再只是空表头。
 
 ### 阶段三：报告增强
@@ -360,7 +360,7 @@ python -m pytest
 
 1. 新增 spectrum-to-compound 映射和 ion_mode 过滤。
 2. 调整 mass matching，默认只匹配同名 compound 且排除 neutral。
-3. 接入真实 RF 候选输入，补 `match_type`。
+3. 接入真实 AI 生成候选输入，补 `match_type`。
 4. 增强报告：compound support、unmatched peaks、rule performance。
 5. 拆分 `fragmentation.py` 和 `ion_rules.py`。
 6. 补齐 YAML 配置和测试。
@@ -376,7 +376,7 @@ python -m pytest
 - 每个谱图默认只匹配对应 compound 或显式配置允许的 related compounds。
 - 正谱只匹配 positive，负谱只匹配 negative。
 - `spectrum_mass_matches.csv` 中候选数显著下降。
-- 有 RF 输入时，`rf_formula_matches.csv` 有实际结果。
+- 有 AI 生成候选输入时，`rf_formula_matches.csv` 有实际结果。
 - 每个报告包含：
   - Top matched peaks。
   - Compound-level support。
@@ -417,4 +417,3 @@ TOF-SIMS 实验检测的是离子信号。neutral 记录可保留在 network 中
 - Bi 源或基底相关特异规则。
 - 标准品数据驱动的规则权重学习。
 - 网络图可视化和交互式筛选界面。
-

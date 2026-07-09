@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+  tof-network-web:
+    build:
+      context: ..
+      dockerfile: web/Dockerfile
+    container_name: tof-network-web
+    ports:
+      - "8080:80"
+    environment:
+      - DATA_DIR=/app/data
+      - OUTPUTS_DIR=/app/outputs
+      - WEB_DB_DIR=/app/web_data
+    volumes:
+      - ../data:/app/data:ro
+      - ../outputs:/app/outputs:ro
+      - web_data:/app/web_data
+    restart: unless-stopped
+
+volumes:
+  web_data:
