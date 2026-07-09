@@ -3,7 +3,7 @@ export default function AlgorithmPage() {
     <div className="space-y-6 max-w-5xl">
       <div>
         <h2 className="text-2xl font-bold text-gray-900">Algorithm Reference</h2>
-        <p className="text-sm text-gray-500 mt-1">TOF-SIMS Formula Network v4.3 — complete pipeline documentation</p>
+        <p className="text-sm text-gray-500 mt-1">TOF-SIMS Formula Network v5.1 — complete pipeline documentation</p>
       </div>
 
       {/* Main Flow */}
@@ -168,8 +168,83 @@ export default function AlgorithmPage() {
               + source_fragment_diversity (2源+0.04, 3源+0.07)`}</pre>
       </Section>
 
+      {/* v5.1 Scoring */}
+      <Section title="九、v5.1 Evidence-Prior 评分校准 (score_calibration.py)">
+        <p className="text-sm text-gray-600 mb-3">
+          v5.1 用无监督信号替代对 validated_diagnostic 的依赖，使所有材料（有/无标注）都有区分度。
+        </p>
+
+        <p className="text-sm text-gray-700 mb-2 font-medium">最终分数公式:</p>
+        <pre className="text-xs font-mono text-gray-600 bg-gray-50 rounded-lg p-3 mb-3 overflow-x-auto">
+{`v51_score = base_formula_score × 0.60
+          + traceability_score × 0.15   (结构路径质量)
+          + rule_reliability × 0.20     (规则来源可靠性)
+          + material_family_bonus × 0.10 (材料族特征匹配)
+          − complexity_penalty           (复杂度惩罚, 最多 −0.12)`}</pre>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-3">
+          <div>
+            <SubTitle>Traceability (结构路径质量)</SubTitle>
+            <Table>
+              <thead><tr><Th>条件</Th><Th>分数</Th></tr></thead>
+              <tbody>
+                <Tr v1="有 fragment 路径" v2="0.60" />
+                <Tr v1="仅有 feature_rule" v2="0.30" />
+                <Tr v1="仅有 recombination" v2="0.25" />
+                <Tr v1="无路径" v2="0.00" />
+              </tbody>
+            </Table>
+          </div>
+          <div>
+            <SubTitle>Rule Reliability (规则可靠性)</SubTitle>
+            <Table>
+              <thead><tr><Th>条件</Th><Th>分数</Th></tr></thead>
+              <tbody>
+                <Tr v1="validated_diagnostic" v2="1.00" />
+                <Tr v1="validated_generic" v2="0.85" />
+                <Tr v1="fragment + feature_rule" v2="0.75" />
+                <Tr v1="fragment only" v2="0.45" />
+                <Tr v1="feature_rule only" v2="0.35" />
+                <Tr v1="recombination" v2="0.30" />
+              </tbody>
+            </Table>
+          </div>
+        </div>
+
+        <SubTitle className="mt-4">Material-Family Profile</SubTitle>
+        <p className="text-xs text-gray-500 mb-2">
+          公式含 signature element → +0.04；含 signature + 匹配键型 → +0.08 (最高 +0.10)
+        </p>
+        <div className="overflow-x-auto">
+          <Table>
+            <thead><tr><Th>材料</Th><Th>Signature Elements</Th><Th>Priority Bonds</Th></tr></thead>
+            <tbody>
+              <Tr v1="PPS" v2="S" v3="C-S" />
+              <Tr v1="PDMS" v2="Si" v3="Si-O" />
+              <Tr v1="PI / Nomex" v2="N" v3="C-N" />
+              <Tr v1="PEI" v2="N, O" v3="C-O, C-N" />
+              <Tr v1="PET / PEN / PEEK" v2="O" v3="C-O" />
+              <Tr v1="PTFE / PVDF / ETFE / FEP / PFA" v2="F" v3="C-F" />
+              <Tr v1="POMC / POMH" v2="O" v3="C-O" />
+              <Tr v1="EVA" v2="O" v3="—" />
+              <Tr v1="COC" v2="—" v3="—" />
+            </tbody>
+          </Table>
+        </div>
+
+        <SubTitle className="mt-4">Complexity Penalty</SubTitle>
+        <ul className="text-xs text-gray-500 space-y-0.5 ml-4">
+          <li>• m/z &gt; 300 + 未验证 → −0.06</li>
+          <li>• m/z &gt; 200 + 未验证 → −0.03</li>
+          <li>• &gt;4 重原子 + 未验证 → −0.04</li>
+          <li>• C &gt;15 + 无结构路径 → −0.04</li>
+          <li>• Structural_only → rule_reliability × 0.7</li>
+          <li>• Generic_HC → rule_reliability × 0.5</li>
+        </ul>
+      </Section>
+
       {/* Post-processing */}
-      <Section title="八、后处理层 (不参与生成，仅用于报告)">
+      <Section title="十、后处理层 (不参与生成，仅用于报告)">
         <Table>
           <thead><tr><Th>层</Th><Th>模块</Th><Th>功能</Th></tr></thead>
           <tbody>

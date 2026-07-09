@@ -48,7 +48,7 @@ export default function Dashboard() {
       <div>
         <h2 className="text-2xl font-bold text-gray-900">Dashboard</h2>
         <p className="text-sm text-gray-500 mt-1">
-          {materials.length} materials · v4.3 · pos / neg recall
+          {materials.length} materials · v5.1 · pos / neg recall
         </p>
       </div>
 

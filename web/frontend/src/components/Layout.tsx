@@ -11,7 +11,7 @@ export default function Layout() {
             <FlaskConical size={18} className="text-blue-600" />
             TOF-SIMS Network
           </h1>
-          <p className="text-xs text-gray-400 mt-1">Formula Network v4.3</p>
+          <p className="text-xs text-gray-400 mt-1">Formula Network v5.1</p>
         </div>
         <nav className="flex-1 p-3 space-y-1">
           <NavLink
@@ -61,7 +61,7 @@ export default function Layout() {
           </NavLink>
         </nav>
         <div className="p-3 border-t border-gray-200 text-xs text-gray-400">
-          v0.3.0
+          v5.1
         </div>
       </aside>
 
