@@ -319,8 +319,9 @@ def get_dashboard_data(db: Session) -> dict:
     evidence_reports = db.query(EvidenceReport).all()
     materials = db.query(Material).all()
 
-    # Load evaluation match rates from CSV
+    # Load evaluation match rates + metrics from CSV
     match_rates = _load_match_rates()
+    eval_metrics = _load_eval_metrics()
 
     total_formulas = sum(r.total_formulas for r in evidence_reports)
     total_val_diag = sum(r.val_diag for r in evidence_reports)
@@ -370,6 +371,7 @@ def get_dashboard_data(db: Session) -> dict:
             "strategy_distribution": strategies,
         },
         "materials": sorted(material_cards, key=lambda x: -x["match_rate"]),
+        "evaluation_metrics": eval_metrics,
     }
 
 
@@ -395,6 +397,43 @@ def _load_match_rates() -> dict[str, dict[str, float]]:
         return rates
     except Exception:
         return {}
+
+
+def _load_eval_metrics() -> list[dict]:
+    """Load per-material evaluation metrics: Recall, Recall@50, Precision@50."""
+    csv_path = SUMMARY_DIR / "network_v2_evaluation_summary.csv"
+    if not csv_path.exists():
+        return []
+    try:
+        df = pd.read_csv(csv_path)
+        metrics = []
+        for material in sorted(df["material"].unique()):
+            mat_df = df[df["material"] == material]
+            pos = mat_df[mat_df["ion_mode"] == "positive"]
+            neg = mat_df[mat_df["ion_mode"] == "negative"]
+
+            def _val(sub_df, col):
+                if sub_df.empty:
+                    return None
+                return round(float(sub_df[col].iloc[0]) * 100, 1)
+
+            entry = {
+                "material": material,
+                "pos_recall": _val(pos, "network_recall"),
+                "neg_recall": _val(neg, "network_recall"),
+                "pos_recall50": _val(pos, "top_n_peak_hit_rate"),
+                "neg_recall50": _val(neg, "top_n_peak_hit_rate"),
+                "pos_precision50": _val(pos, "top_n_network_precision_proxy"),
+                "neg_precision50": _val(neg, "top_n_network_precision_proxy"),
+                "pos_included": int(pos["included_peaks"].iloc[0]) if not pos.empty else None,
+                "neg_included": int(neg["included_peaks"].iloc[0]) if not neg.empty else None,
+            }
+            # Only include materials that have experimental data
+            if entry["pos_included"] is not None or entry["neg_included"] is not None:
+                metrics.append(entry)
+        return metrics
+    except Exception:
+        return []
 
 
 def get_material_network(compound_id: str, db: Session, hide_struct_only: bool = True) -> dict:

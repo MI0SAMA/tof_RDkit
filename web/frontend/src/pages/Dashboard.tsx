@@ -27,7 +27,7 @@ export default function Dashboard() {
     )
   }
 
-  const { materials } = data
+  const { materials, evaluation_metrics: metrics } = data
 
   const getEvidenceColor = (strategy: string) => {
     if (strategy === 'formula-driven') return 'bg-green-100 text-green-800'
@@ -104,6 +104,60 @@ export default function Dashboard() {
           </div>
         ))}
       </div>
+
+      {/* Evaluation Metrics Table */}
+      {metrics && metrics.length > 0 && (
+        <div className="bg-white rounded-xl border border-gray-200 overflow-hidden">
+          <div className="px-4 py-3 border-b border-gray-100">
+            <h3 className="font-semibold text-gray-800 text-sm">Evaluation Metrics by Material</h3>
+          </div>
+          <div className="overflow-x-auto">
+            <table className="w-full text-xs">
+              <thead>
+                <tr className="text-left text-gray-400 bg-gray-50">
+                  <th className="px-3 py-2 font-medium">Material</th>
+                  <th className="px-3 py-2 font-medium text-center" colSpan={2}>Recall</th>
+                  <th className="px-3 py-2 font-medium text-center" colSpan={2}>Recall@50</th>
+                  <th className="px-3 py-2 font-medium text-center" colSpan={2}>Precision@50</th>
+                  <th className="px-3 py-2 font-medium text-center" colSpan={2}>Peaks</th>
+                </tr>
+                <tr className="text-left text-gray-400 bg-gray-50 text-[10px]">
+                  <th className="px-3 py-1"></th>
+                  <th className="px-2 py-1 text-center text-blue-500">+</th>
+                  <th className="px-2 py-1 text-center text-red-500">−</th>
+                  <th className="px-2 py-1 text-center text-blue-500">+</th>
+                  <th className="px-2 py-1 text-center text-red-500">−</th>
+                  <th className="px-2 py-1 text-center text-blue-500">+</th>
+                  <th className="px-2 py-1 text-center text-red-500">−</th>
+                  <th className="px-2 py-1 text-center text-blue-500">+</th>
+                  <th className="px-2 py-1 text-center text-red-500">−</th>
+                </tr>
+              </thead>
+              <tbody>
+                {metrics.map((m) => (
+                  <tr key={m.material} className="border-b border-gray-50 hover:bg-gray-50">
+                    <td className="px-3 py-1.5 font-medium text-gray-700">{m.material}</td>
+                    <TdColor v={m.pos_recall} />
+                    <TdColor v={m.neg_recall} />
+                    <TdColor v={m.pos_recall50} />
+                    <TdColor v={m.neg_recall50} />
+                    <TdColor v={m.pos_precision50} />
+                    <TdColor v={m.neg_precision50} />
+                    <td className="px-2 py-1.5 text-center text-gray-400">{m.pos_included ?? '—'}</td>
+                    <td className="px-2 py-1.5 text-center text-gray-400">{m.neg_included ?? '—'}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </div>
+      )}
     </div>
   )
+}
+
+function TdColor({ v }: { v: number | null }) {
+  if (v === null) return <td className="px-2 py-1.5 text-center text-gray-300">—</td>
+  const color = v >= 80 ? 'text-green-600' : v >= 50 ? 'text-amber-600' : 'text-red-500'
+  return <td className={`px-2 py-1.5 text-center font-mono font-medium ${color}`}>{v}%</td>
 }

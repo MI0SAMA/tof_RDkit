@@ -35,6 +35,19 @@ export interface DashboardData {
     strategy_distribution: Record<string, number>
   }
   materials: MaterialCard[]
+  evaluation_metrics: EvalMetric[]
+}
+
+export interface EvalMetric {
+  material: string
+  pos_recall: number | null
+  neg_recall: number | null
+  pos_recall50: number | null
+  neg_recall50: number | null
+  pos_precision50: number | null
+  neg_precision50: number | null
+  pos_included: number | null
+  neg_included: number | null
 }
 
 export interface MaterialCard {
