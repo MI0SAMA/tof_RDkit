@@ -49,7 +49,8 @@ export interface MaterialCard {
   struct_only: number
   val_diag_pct: number
   match_rate: number
-  match_rate_raw: number
+  match_rate_pos: number | null
+  match_rate_neg: number | null
   formula_evidence: string
   pattern_evidence: string
   final_evidence: string

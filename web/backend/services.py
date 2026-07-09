@@ -336,7 +336,7 @@ def get_dashboard_data(db: Session) -> dict:
     material_cards = []
     for r in evidence_reports:
         mat = next((m for m in materials if m.compound_id == r.compound_id), None)
-        mr = match_rates.get(r.compound_id, 0)
+        mr = match_rates.get(r.compound_id, {})
         material_cards.append({
             "compound_id": r.compound_id,
             "name": mat.name if mat else r.compound_id,
@@ -348,8 +348,9 @@ def get_dashboard_data(db: Session) -> dict:
             "gen_hc": r.gen_hc,
             "struct_only": r.struct_only,
             "val_diag_pct": round(r.val_diag / max(r.total_formulas, 1) * 100, 1),
-            "match_rate": round(mr * 100, 1),
-            "match_rate_raw": round(mr, 3),
+            "match_rate": mr.get("avg", 0),
+            "match_rate_pos": mr.get("positive"),
+            "match_rate_neg": mr.get("negative"),
             "formula_evidence": r.formula_evidence,
             "pattern_evidence": r.pattern_evidence,
             "final_evidence": r.final_evidence,
@@ -372,15 +373,25 @@ def get_dashboard_data(db: Session) -> dict:
     }
 
 
-def _load_match_rates() -> dict[str, float]:
-    """Load per-material match rates from evaluation summary CSV."""
+def _load_match_rates() -> dict[str, dict[str, float]]:
+    """Load per-material, per-polarity match rates from evaluation summary CSV.
+
+    Returns {material_id: {"positive": rate, "negative": rate, "avg": rate}}
+    """
     csv_path = SUMMARY_DIR / "network_v2_evaluation_summary.csv"
     if not csv_path.exists():
         return {}
     try:
         df = pd.read_csv(csv_path)
-        # Average recall across ion modes per material
-        rates = df.groupby("material")["network_recall"].mean().to_dict()
+        rates = {}
+        for material in df["material"].unique():
+            mat_df = df[df["material"] == material]
+            pos = mat_df[mat_df["ion_mode"] == "positive"]["network_recall"]
+            neg = mat_df[mat_df["ion_mode"] == "negative"]["network_recall"]
+            pos_val = round(float(pos.iloc[0]) * 100, 1) if len(pos) > 0 else None
+            neg_val = round(float(neg.iloc[0]) * 100, 1) if len(neg) > 0 else None
+            avg_val = round(mat_df["network_recall"].mean() * 100, 1)
+            rates[material] = {"positive": pos_val, "negative": neg_val, "avg": avg_val}
         return rates
     except Exception:
         return {}
